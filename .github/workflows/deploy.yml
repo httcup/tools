@@ -27,6 +27,9 @@ jobs:
           rm -rf site
           mkdir site
           unzip -q site-root.zip -d site
+          shopt -s dotglob
+          mv site/dist/* site/
+          rmdir site/dist
           cp CNAME site/CNAME
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

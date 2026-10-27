@@ -12,7 +12,342 @@
     <link href="https://httcup.github.io/tools/"/>
     <id>https://httcup.github.io/tools/</id>
     <updated>2026-10-27T02:54:58Z</updated>
-    <summary type="text">在浏览器本地运行的 140 个工具，文件不上传。</summary>
+    <summary type="text">在浏览器本地运行的 182 个工具，文件不上传。</summary>
+  </entry>
+  <entry>
+    <title type="text">小费计算器</title>
+    <link href="https://httcup.github.io/tools/tip-calculator/"/>
+    <id>https://httcup.github.io/tools/tip-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">聚餐 AA 与小费一步算清。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">会议成本计算器</title>
+    <link href="https://httcup.github.io/tools/meeting-cost-calculator/"/>
+    <id>https://httcup.github.io/tools/meeting-cost-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">一场会到底烧多少钱。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">时间戳转换器</title>
+    <link href="https://httcup.github.io/tools/time-tools-seconds-converter/"/>
+    <id>https://httcup.github.io/tools/time-tools-seconds-converter/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">时间戳与日期双向换算。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">摩斯电码互译</title>
+    <link href="https://httcup.github.io/tools/morse-code-translator/"/>
+    <id>https://httcup.github.io/tools/morse-code-translator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">文本与摩斯电码双向转换并播放。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">花体字与特殊符号生成</title>
+    <link href="https://httcup.github.io/tools/fancy-text-generator/"/>
+    <id>https://httcup.github.io/tools/fancy-text-generator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">把文字变成花体、方框等特殊字符。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">占位文本生成器</title>
+    <link href="https://httcup.github.io/tools/lorem-ipsum-generator/"/>
+    <id>https://httcup.github.io/tools/lorem-ipsum-generator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">生成拉丁或中文假文占位。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">Emoji 搜索与复制</title>
+    <link href="https://httcup.github.io/tools/emoji-finder/"/>
+    <id>https://httcup.github.io/tools/emoji-finder/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">按关键词找 emoji，点击复制。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">字幕时间轴修复</title>
+    <link href="https://httcup.github.io/tools/subtitle-repair/"/>
+    <id>https://httcup.github.io/tools/subtitle-repair/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">整体平移或缩放 SRT 字幕时间轴。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">ASCII 横幅与艺术字</title>
+    <link href="https://httcup.github.io/tools/ascii-art/"/>
+    <id>https://httcup.github.io/tools/ascii-art/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">把大写字母变成点阵横幅。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">Markdown 编辑器</title>
+    <link href="https://httcup.github.io/tools/markdown-editor/"/>
+    <id>https://httcup.github.io/tools/markdown-editor/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">左边写 Markdown，右边实时预览。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">图片裁剪</title>
+    <link href="https://httcup.github.io/tools/image-crop/"/>
+    <id>https://httcup.github.io/tools/image-crop/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">按比例框选并裁出想要的部分。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">圆形头像裁剪</title>
+    <link href="https://httcup.github.io/tools/circle-crop/"/>
+    <id>https://httcup.github.io/tools/circle-crop/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">裁出正圆形头像并保留透明底。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">图片翻转</title>
+    <link href="https://httcup.github.io/tools/flip-image/"/>
+    <id>https://httcup.github.io/tools/flip-image/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">水平或垂直镜像翻转图片。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">轮播图无缝切分</title>
+    <link href="https://httcup.github.io/tools/carousel-splitter/"/>
+    <id>https://httcup.github.io/tools/carousel-splitter/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">把长图切成多张衔接的轮播图。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">九宫格切图</title>
+    <link href="https://httcup.github.io/tools/image-grid-split/"/>
+    <id>https://httcup.github.io/tools/image-grid-split/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">把图片切成宫格并逐格导出。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">像素画转换器</title>
+    <link href="https://httcup.github.io/tools/pixel-art-converter/"/>
+    <id>https://httcup.github.io/tools/pixel-art-converter/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">把照片变成复古像素风。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">丝网印刷滤镜</title>
+    <link href="https://httcup.github.io/tools/silk-screen/"/>
+    <id>https://httcup.github.io/tools/silk-screen/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">三色半调网点风格化照片。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">AI 图片元数据查看</title>
+    <link href="https://httcup.github.io/tools/ai-image-metadata-viewer/"/>
+    <id>https://httcup.github.io/tools/ai-image-metadata-viewer/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">查看 AI 生成图片里的提示词。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">MP3 转 WAV</title>
+    <link href="https://httcup.github.io/tools/mp3-to-wav/"/>
+    <id>https://httcup.github.io/tools/mp3-to-wav/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">解码为 WAV，本地转换不依赖服务。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">白噪音发生器</title>
+    <link href="https://httcup.github.io/tools/noise-generator/"/>
+    <id>https://httcup.github.io/tools/noise-generator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">白粉棕噪音与雨声助眠音。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">BPM 节拍检测</title>
+    <link href="https://httcup.github.io/tools/bpm-detector/"/>
+    <id>https://httcup.github.io/tools/bpm-detector/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">测一段音乐每分钟节拍数。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">节拍器</title>
+    <link href="https://httcup.github.io/tools/metronome/"/>
+    <id>https://httcup.github.io/tools/metronome/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">可调速度与拍号的练习节拍器。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">LRC 歌词播放器</title>
+    <link href="https://httcup.github.io/tools/lyric-visualizer/"/>
+    <id>https://httcup.github.io/tools/lyric-visualizer/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">本地音频配 LRC 歌词同步播放。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">虚拟键盘钢琴</title>
+    <link href="https://httcup.github.io/tools/midi-keyboard/"/>
+    <id>https://httcup.github.io/tools/midi-keyboard/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">用电脑键盘弹钢琴。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">取色器与颜色转换</title>
+    <link href="https://httcup.github.io/tools/color-picker/"/>
+    <id>https://httcup.github.io/tools/color-picker/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">屏幕取色、HEX/RGB/HSL 互转。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">渐变生成器</title>
+    <link href="https://httcup.github.io/tools/gradient-generator/"/>
+    <id>https://httcup.github.io/tools/gradient-generator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">调线性与径向渐变，复制 CSS。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">图表制作器</title>
+    <link href="https://httcup.github.io/tools/chart-maker/"/>
+    <id>https://httcup.github.io/tools/chart-maker/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">输入数据生成柱状或折线图。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">简易收据生成器</title>
+    <link href="https://httcup.github.io/tools/invoice-generator/"/>
+    <id>https://httcup.github.io/tools/invoice-generator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">生成可打印的收据或报价单。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">手写签名板</title>
+    <link href="https://httcup.github.io/tools/signature-maker/"/>
+    <id>https://httcup.github.io/tools/signature-maker/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">鼠标或手指写出签名导出 PNG。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">涂鸦白板</title>
+    <link href="https://httcup.github.io/tools/whiteboard/"/>
+    <id>https://httcup.github.io/tools/whiteboard/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">随手画草图，导出 PNG。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">反应速度测试</title>
+    <link href="https://httcup.github.io/tools/reaction-time-test/"/>
+    <id>https://httcup.github.io/tools/reaction-time-test/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">测你的视觉反应时间。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">打靶训练</title>
+    <link href="https://httcup.github.io/tools/aim-trainer/"/>
+    <id>https://httcup.github.io/tools/aim-trainer/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">30 秒内点中尽可能多的目标。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">手速测试</title>
+    <link href="https://httcup.github.io/tools/cps-test/"/>
+    <id>https://httcup.github.io/tools/cps-test/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">10 秒内你能点多少下。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">键盘测试</title>
+    <link href="https://httcup.github.io/tools/keyboard-tester/"/>
+    <id>https://httcup.github.io/tools/keyboard-tester/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">逐键检查键盘有没有坏键。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">打字速度测试</title>
+    <link href="https://httcup.github.io/tools/typing-test/"/>
+    <id>https://httcup.github.io/tools/typing-test/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">测中文或英文打字速度。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">呼吸放松引导</title>
+    <link href="https://httcup.github.io/tools/breathing-relaxation/"/>
+    <id>https://httcup.github.io/tools/breathing-relaxation/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">4-7-8 呼吸法动画引导。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">麦克风与摄像头自检</title>
+    <link href="https://httcup.github.io/tools/mic-camera-test/"/>
+    <id>https://httcup.github.io/tools/mic-camera-test/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">检测麦克风与摄像头是否正常。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">番茄钟</title>
+    <link href="https://httcup.github.io/tools/pomodoro-timer/"/>
+    <id>https://httcup.github.io/tools/pomodoro-timer/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">25 分钟专注 + 5 分钟休息。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">秒表</title>
+    <link href="https://httcup.github.io/tools/stopwatch/"/>
+    <id>https://httcup.github.io/tools/stopwatch/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">带计次功能的精确秒表。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">倒计时</title>
+    <link href="https://httcup.github.io/tools/countdown-timer/"/>
+    <id>https://httcup.github.io/tools/countdown-timer/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">大字倒计时，结束提醒。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">世界时钟</title>
+    <link href="https://httcup.github.io/tools/world-clock/"/>
+    <id>https://httcup.github.io/tools/world-clock/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">多城市当前时间实时对照。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">闪卡制作与复习</title>
+    <link href="https://httcup.github.io/tools/flashcard-maker/"/>
+    <id>https://httcup.github.io/tools/flashcard-maker/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">自制学习卡片并翻面复习。</summary>
   </entry>
   <entry>
     <title type="text">订单利润率与手续费估算器</title>

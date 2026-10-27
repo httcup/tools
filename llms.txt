@@ -1,6 +1,6 @@
 # 本地工具箱 Local Web Tools
 
-> 140 个单用途浏览器工具：图片压缩与转换、PDF 处理、视频音频编辑、文本编码、密码生成、双设备直连。所有处理在浏览器本地完成，文件不上传、无需注册。
+> 182 个单用途浏览器工具：图片压缩与转换、PDF 处理、视频音频编辑、文本编码、密码生成、双设备直连。所有处理在浏览器本地完成，文件不上传、无需注册。
 
 页面地址以 https://httcup.github.io/tools/ 为前缀。
 
@@ -151,6 +151,50 @@
 - [商品 CSV 检查器](https://httcup.github.io/tools/shopify-product-csv-checker/): 导入前检查 Shopify 商品 CSV。
 - [电商 UTM 链接生成器](https://httcup.github.io/tools/utm-builder/): 生成规范的 UTM 追踪链接。
 - [Google Shopping Feed 检查器](https://httcup.github.io/tools/google-shopping-feed-readiness-checker/): 上传前检查 Google Shopping 数据源。
+
+### 创作与设计
+- [小费计算器](https://httcup.github.io/tools/tip-calculator/): 聚餐 AA 与小费一步算清。
+- [会议成本计算器](https://httcup.github.io/tools/meeting-cost-calculator/): 一场会到底烧多少钱。
+- [时间戳转换器](https://httcup.github.io/tools/time-tools-seconds-converter/): 时间戳与日期双向换算。
+- [摩斯电码互译](https://httcup.github.io/tools/morse-code-translator/): 文本与摩斯电码双向转换并播放。
+- [花体字与特殊符号生成](https://httcup.github.io/tools/fancy-text-generator/): 把文字变成花体、方框等特殊字符。
+- [占位文本生成器](https://httcup.github.io/tools/lorem-ipsum-generator/): 生成拉丁或中文假文占位。
+- [Emoji 搜索与复制](https://httcup.github.io/tools/emoji-finder/): 按关键词找 emoji，点击复制。
+- [字幕时间轴修复](https://httcup.github.io/tools/subtitle-repair/): 整体平移或缩放 SRT 字幕时间轴。
+- [ASCII 横幅与艺术字](https://httcup.github.io/tools/ascii-art/): 把大写字母变成点阵横幅。
+- [Markdown 编辑器](https://httcup.github.io/tools/markdown-editor/): 左边写 Markdown，右边实时预览。
+- [图片裁剪](https://httcup.github.io/tools/image-crop/): 按比例框选并裁出想要的部分。
+- [圆形头像裁剪](https://httcup.github.io/tools/circle-crop/): 裁出正圆形头像并保留透明底。
+- [图片翻转](https://httcup.github.io/tools/flip-image/): 水平或垂直镜像翻转图片。
+- [轮播图无缝切分](https://httcup.github.io/tools/carousel-splitter/): 把长图切成多张衔接的轮播图。
+- [九宫格切图](https://httcup.github.io/tools/image-grid-split/): 把图片切成宫格并逐格导出。
+- [像素画转换器](https://httcup.github.io/tools/pixel-art-converter/): 把照片变成复古像素风。
+- [丝网印刷滤镜](https://httcup.github.io/tools/silk-screen/): 三色半调网点风格化照片。
+- [AI 图片元数据查看](https://httcup.github.io/tools/ai-image-metadata-viewer/): 查看 AI 生成图片里的提示词。
+- [MP3 转 WAV](https://httcup.github.io/tools/mp3-to-wav/): 解码为 WAV，本地转换不依赖服务。
+- [白噪音发生器](https://httcup.github.io/tools/noise-generator/): 白粉棕噪音与雨声助眠音。
+- [BPM 节拍检测](https://httcup.github.io/tools/bpm-detector/): 测一段音乐每分钟节拍数。
+- [节拍器](https://httcup.github.io/tools/metronome/): 可调速度与拍号的练习节拍器。
+- [LRC 歌词播放器](https://httcup.github.io/tools/lyric-visualizer/): 本地音频配 LRC 歌词同步播放。
+- [虚拟键盘钢琴](https://httcup.github.io/tools/midi-keyboard/): 用电脑键盘弹钢琴。
+- [取色器与颜色转换](https://httcup.github.io/tools/color-picker/): 屏幕取色、HEX/RGB/HSL 互转。
+- [渐变生成器](https://httcup.github.io/tools/gradient-generator/): 调线性与径向渐变，复制 CSS。
+- [图表制作器](https://httcup.github.io/tools/chart-maker/): 输入数据生成柱状或折线图。
+- [简易收据生成器](https://httcup.github.io/tools/invoice-generator/): 生成可打印的收据或报价单。
+- [手写签名板](https://httcup.github.io/tools/signature-maker/): 鼠标或手指写出签名导出 PNG。
+- [涂鸦白板](https://httcup.github.io/tools/whiteboard/): 随手画草图，导出 PNG。
+- [反应速度测试](https://httcup.github.io/tools/reaction-time-test/): 测你的视觉反应时间。
+- [打靶训练](https://httcup.github.io/tools/aim-trainer/): 30 秒内点中尽可能多的目标。
+- [手速测试](https://httcup.github.io/tools/cps-test/): 10 秒内你能点多少下。
+- [键盘测试](https://httcup.github.io/tools/keyboard-tester/): 逐键检查键盘有没有坏键。
+- [打字速度测试](https://httcup.github.io/tools/typing-test/): 测中文或英文打字速度。
+- [呼吸放松引导](https://httcup.github.io/tools/breathing-relaxation/): 4-7-8 呼吸法动画引导。
+- [麦克风与摄像头自检](https://httcup.github.io/tools/mic-camera-test/): 检测麦克风与摄像头是否正常。
+- [番茄钟](https://httcup.github.io/tools/pomodoro-timer/): 25 分钟专注 + 5 分钟休息。
+- [秒表](https://httcup.github.io/tools/stopwatch/): 带计次功能的精确秒表。
+- [倒计时](https://httcup.github.io/tools/countdown-timer/): 大字倒计时，结束提醒。
+- [世界时钟](https://httcup.github.io/tools/world-clock/): 多城市当前时间实时对照。
+- [闪卡制作与复习](https://httcup.github.io/tools/flashcard-maker/): 自制学习卡片并翻面复习。
 
 ## 本地快用
 - [本地快用](https://httcup.github.io/tools/quick/): 编解码、哈希、时间戳等小工具合集。

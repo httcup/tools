@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "tools-browser-tools",
+      "type": "skill-md",
+      "description": "Use this skill when a person asks to find or use a browser tool for a supported file or text task, including image, PDF and structured-data work. Choose a matching Tools tool for conversion, compression, inspection or editing within its documented formats, limits and privacy boundaries.",
+      "url": "https://httcup.github.io/.well-known/agent-skills/tools-browser-tools/SKILL.md",
+      "digest": "sha256:29d06b3921474709a8162424243319a8cdf2b80370462dd0642a3076b7088e9d"
+    }
+  ]
+}

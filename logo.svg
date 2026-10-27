@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Tools">
+  <title>Tools</title>
+  <!--
+    The site mark: a plain tool box with its lid on, a red handle over the lid
+    and a white latch on the box. One box, one idea - browser tools that run
+    locally on the device. The handle is the only part drawn in the accent red,
+    and the latch doubles as the mark's smallest readable element at 16px.
+  -->
+  <style>
+    .logo-handle { fill: none; stroke: #d94a4a; stroke-width: 4.5; stroke-linecap: round; }
+    .logo-lid    { fill: #7db4e8; }
+    .logo-box    { fill: #2b6cb0; }
+    .logo-latch  { fill: #ffffff; }
+    @media (prefers-color-scheme: dark) {
+      .logo-handle { stroke: #ef8080; }
+      .logo-lid    { fill: #5b9bd8; }
+      .logo-box    { fill: #4a8fd4; }
+      .logo-latch  { fill: #16202b; }
+    }
+  </style>
+  <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+  <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+  <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+  <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+</svg>

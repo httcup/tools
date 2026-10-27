@@ -13,7 +13,7 @@ import{createVoiceIdentityCache}from'./shared/voice-identity.js?v=20e7f94b47';
 activateChannel();
 const privacyToggle=document.getElementById('privacy-toggle');
 const privacyPanel=document.getElementById('privacy-panel');
-privacyToggle.addEventListener('click',()=>{
+privacyToggle&&privacyToggle&&privacyToggle.addEventListener('click',()=>{
 const open=privacyPanel.hidden;
 privacyPanel.hidden=!open;
 privacyToggle.setAttribute('aria-expanded',String(open));

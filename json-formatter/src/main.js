@@ -279,7 +279,7 @@ column:error.column,
 return error?.message?phrase(error.message,fill(error.values)):String(error);
 }
 const indentString=()=>(el.indent.value==='tab'?'\t':' '.repeat(Number(el.indent.value)));
-el.privacyToggle.addEventListener('click',()=>{
+el.privacyToggle&&el.privacyToggle&&el.privacyToggle.addEventListener('click',()=>{
 const open=el.privacyPanel.hidden;
 el.privacyPanel.hidden=!open;
 el.privacyToggle.setAttribute('aria-expanded',String(open));

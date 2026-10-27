@@ -329,7 +329,7 @@ el.code39Check,el.foreground,el.background,el.transparent,el.size]){
 control.addEventListener('input',update);
 control.addEventListener('change',update);
 }
-el.privacyToggle.addEventListener('click',()=>{
+el.privacyToggle&&el.privacyToggle&&el.privacyToggle.addEventListener('click',()=>{
 const open=el.privacyPanel.hidden;
 el.privacyPanel.hidden=!open;
 el.privacyToggle.setAttribute('aria-expanded',String(open));

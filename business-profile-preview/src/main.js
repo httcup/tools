@@ -415,7 +415,7 @@ const file=ui.jsonFile.files?.[0];
 ui.jsonFile.value='';
 if(file)readSaved(file);
 });
-ui.privacyToggle.addEventListener('click',()=>{
+ui.privacyToggle&&privacyToggle&&privacyToggle.addEventListener('click',()=>{
 const open=ui.privacyPanel.hidden;
 ui.privacyPanel.hidden=!open;
 ui.privacyToggle.setAttribute('aria-expanded',String(open));

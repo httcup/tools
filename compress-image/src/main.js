@@ -473,7 +473,7 @@ hint.textContent=phrase('compare.hint');
 panel.appendChild(hint);
 return panel;
 }
-el.privacyToggle.addEventListener('click',()=>{
+el.privacyToggle&&el.privacyToggle&&el.privacyToggle.addEventListener('click',()=>{
 const open=el.privacyPanel.hidden;
 el.privacyPanel.hidden=!open;
 el.privacyToggle.setAttribute('aria-expanded',String(open));

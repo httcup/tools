@@ -340,7 +340,7 @@ link.click();
 globalThis.aboxToolComplete?.();
 setTimeout(()=>URL.revokeObjectURL(url),60000);
 }
-el.privacyToggle.addEventListener('click',()=>{
+el.privacyToggle&&el.privacyToggle&&el.privacyToggle.addEventListener('click',()=>{
 const open=el.privacyPanel.hidden;
 el.privacyPanel.hidden=!open;
 el.privacyToggle.setAttribute('aria-expanded',String(open));

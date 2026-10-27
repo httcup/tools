@@ -912,7 +912,7 @@ el.loadError.hidden=true;
 el.modeHint.textContent=phrase('mode.window');
 el.viewport.dataset.mode='window';
 el.viewport.tabIndex=0;
-el.privacyToggle.addEventListener('click',()=>{
+el.privacyToggle&&el.privacyToggle&&el.privacyToggle.addEventListener('click',()=>{
 const opening=el.privacyPanel.hidden;
 el.privacyPanel.hidden=!opening;
 el.privacyToggle.setAttribute('aria-expanded',String(opening));

@@ -430,7 +430,7 @@ const fileFactsText=(pages,bytes)=>`${countOf('pages', pages)} · ${size(bytes)}
 function baseName(name){
 return name.replace(/\.[^.]+$/,'')||'tables';
 }
-el.privacyToggle.addEventListener('click',()=>{
+el.privacyToggle&&el.privacyToggle&&el.privacyToggle.addEventListener('click',()=>{
 const open=el.privacyPanel.hidden;
 el.privacyPanel.hidden=!open;
 el.privacyToggle.setAttribute('aria-expanded',String(open));

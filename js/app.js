@@ -105,9 +105,35 @@
         c.setAttribute('aria-pressed', c === chip ? 'true' : 'false');
       });
       apply();
+      chip.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
       if (window.scrollY > 260) window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   });
+
+  /* ---------- 分类 chips 滚动箭头 ---------- */
+  (function () {
+    var wrap = document.querySelector('.chips-wrap');
+    var box = document.querySelector('.chips');
+    if (!wrap || !box) return;
+    var prev = wrap.querySelector('.chip-nav.prev');
+    var next = wrap.querySelector('.chip-nav.next');
+    function sync() {
+      var max = box.scrollWidth - box.clientWidth;
+      var left = box.scrollLeft;
+      wrap.classList.toggle('can-left', left > 2);
+      wrap.classList.toggle('can-right', left < max - 2);
+      if (prev) prev.hidden = left <= 2;
+      if (next) next.hidden = left >= max - 2;
+    }
+    function page(dir) {
+      box.scrollBy({ left: dir * Math.max(240, box.clientWidth * 0.7), behavior: 'smooth' });
+    }
+    if (prev) prev.addEventListener('click', function () { page(-1); });
+    if (next) next.addEventListener('click', function () { page(1); });
+    box.addEventListener('scroll', sync, { passive: true });
+    window.addEventListener('resize', sync);
+    sync();
+  })();
 
   if (searchEl) {
     searchEl.addEventListener('input', function () {

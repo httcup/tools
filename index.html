@@ -49,12 +49,16 @@
 
 <div class="filters">
   <div class="wrap">
-    <div class="chips" role="group" aria-label="按分类筛选">
+    <div class="chips-wrap">
+      <button class="chip-nav prev" type="button" aria-label="向前滚动分类" hidden>&#8249;</button>
+      <div class="chips" role="group" aria-label="按分类筛选">
       <button class="chip" type="button" data-cat="all" aria-pressed="true">全部 <b>182</b></button><button class="chip" type="button" data-cat="images" aria-pressed="false">图片 <b>27</b></button><button class="chip" type="button" data-cat="video-and-animation" aria-pressed="false">视频与动画 <b>14</b></button><button class="chip" type="button" data-cat="documents-and-audio" aria-pressed="false">文档与音频 <b>20</b></button><button class="chip" type="button" data-cat="text-codes-and-passwords" aria-pressed="false">文本、编码与密码 <b>20</b></button><button class="chip" type="button" data-cat="connect-devices" aria-pressed="false">连接设备 <b>5</b></button><button class="chip" type="button" data-cat="calc-utility" aria-pressed="false">计算与实用 <b>13</b></button><button class="chip" type="button" data-cat="dtc-ecommerce" aria-pressed="false">Shopify/DTC电商工具 <b>53</b></button>
             <button class="chip" type="button" data-cat="creative-design" aria-pressed="false">创作与设计 <b>6</b></button>
             <button class="chip" type="button" data-cat="time-focus" aria-pressed="false">时间与专注 <b>6</b></button>
             <button class="chip" type="button" data-cat="test-fun" aria-pressed="false">测试与解压 <b>7</b></button>
             <button class="chip" type="button" data-cat="quick" aria-pressed="false">本地快用 <b>11</b></button>
+      </div>
+      <button class="chip-nav next" type="button" aria-label="向后滚动分类" hidden>&#8250;</button>
     </div>
   </div>
 </div>
@@ -91,5 +95,11 @@
 </footer>
 
 <script src="js/app.js" defer></script>
+<link rel="stylesheet" href="sidebar.css">
+<div id="site-sidebar" data-base="" data-home="1"></div>
+<div id="sidebar-backdrop"></div>
+<button id="sidebar-toggle" type="button" aria-label="打开分类导航"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>分类</button>
+<script src="js/sidebar-data.js"></script>
+<script src="sidebar.js"></script>
 </body>
 </html>

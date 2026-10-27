@@ -145,18 +145,56 @@ a { color: inherit; }
   border-bottom: 1px solid var(--line);
   padding: 12px 0;
 }
-.chips { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; }
+.chips-wrap { display: flex; align-items: center; gap: 6px; }
+.chips {
+  display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none;
+  scroll-behavior: smooth; flex: 1; min-width: 0; padding: 2px;
+}
+.chips-wrap.can-left.can-right .chips {
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 20px, #000 calc(100% - 20px), transparent 100%);
+          mask-image: linear-gradient(90deg, transparent 0, #000 20px, #000 calc(100% - 20px), transparent 100%);
+}
+.chips-wrap.can-left:not(.can-right) .chips {
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 20px, #000 100%);
+          mask-image: linear-gradient(90deg, transparent 0, #000 20px, #000 100%);
+}
+.chips-wrap.can-right:not(.can-left) .chips {
+  -webkit-mask-image: linear-gradient(90deg, #000 0, #000 calc(100% - 20px), transparent 100%);
+          mask-image: linear-gradient(90deg, #000 0, #000 calc(100% - 20px), transparent 100%);
+}
 .chips::-webkit-scrollbar { display: none; }
 .chip {
   flex: 0 0 auto; display: inline-flex; align-items: center; gap: 7px;
   padding: 7px 14px; border-radius: 999px; cursor: pointer;
   border: 1px solid var(--line); background: var(--surface); color: var(--muted);
   font-size: 14px; font-family: inherit; transition: .15s ease;
+  scroll-snap-align: start; user-select: none;
 }
-.chip b { font-weight: 600; font-size: 12px; color: var(--muted); }
-.chip:hover { color: var(--text); border-color: var(--line-strong); }
-.chip[aria-pressed="true"] { background: var(--text); color: var(--bg); border-color: var(--text); }
-.chip[aria-pressed="true"] b { color: inherit; opacity: .6; }
+.chip b {
+  font-weight: 600; font-size: 12px; color: var(--muted);
+  background: var(--surface-2); border: 1px solid var(--line);
+  border-radius: 999px; padding: 0 7px; line-height: 17px; transition: .15s ease;
+}
+.chip:hover { color: var(--text); border-color: var(--line-strong); transform: translateY(-1px); }
+.chip[aria-pressed="true"] {
+  background: var(--accent-soft); color: var(--accent-ink); border-color: var(--accent);
+  box-shadow: 0 1px 2px rgba(37, 99, 235, .12);
+}
+.chip[aria-pressed="true"] b { color: var(--accent-ink); background: #fff; border-color: var(--accent); opacity: .85; }
+.chip-nav {
+  flex: 0 0 auto; width: 28px; height: 28px; border-radius: 50%;
+  display: grid; place-items: center; cursor: pointer;
+  border: 1px solid var(--line); background: var(--surface); color: var(--muted);
+  font-size: 15px; line-height: 1; padding: 0;
+  box-shadow: var(--shadow-sm); transition: .15s ease;
+}
+.chip-nav:hover { color: var(--text); border-color: var(--line-strong); }
+.chip-nav[hidden] { display: none; }
+
+/* 桌面端分类导航移到左侧边栏，顶部 chips 条不再显示 */
+@media (min-width: 1200px) {
+  .filters { display: none; }
+}
 
 /* ---------- 分类区块 ---------- */
 main { flex: 1; padding-bottom: 48px; }

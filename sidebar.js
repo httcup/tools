@@ -49,6 +49,8 @@
         if (cur) isCurCat = true;
         return '<li' + (cur ? ' class="sb-cur"' : '') + '><a href="' + toolHref(t) + '">' + esc(t.name) + '</a></li>';
       }).join('');
+      /* quick 聚合页本身也视为「本地快用」分类的当前页 */
+      if (!IS_HOME && CUR === 'quick' && cat.cat === 'quick') isCurCat = true;
       var open = expanded[cat.cat] === true || (!IS_HOME && isCurCat) || (IS_HOME && cat.cat === currentFilter());
       html += '<div class="sb-group' + (open ? ' sb-exp' : '') + ' sb-cat-' + cat.cat + '">' +
         '<button type="button" class="sb-cat' + (isCurCat && !IS_HOME ? ' sb-active' : '') + '" data-cat="' + cat.cat + '" aria-expanded="' + (open ? 'true' : 'false') + '">' +
@@ -155,6 +157,23 @@
   build();
   bind();
   document.body.classList.add('sb-body');
+
+  /* 页面自带的页内工具导航（如 quick 页）与全局侧栏内容重复，隐藏之。
+   * 用内联样式而非 hidden 属性，避免被页面自身样式干扰；元素保留在
+   * DOM 中，页面脚本对其的引用（搜索框监听等）不受影响。 */
+  var ownNav = document.querySelector('.layout > aside.sidebar');
+  if (ownNav) ownNav.style.display = 'none';
+
+  /* quick 页切换工具（hash 变化）时同步侧栏当前项高亮；
+   * 面板切换由页面自身脚本处理，这里只更新导航状态 */
+  if (!IS_HOME && CUR === 'quick') {
+    window.addEventListener('hashchange', function () {
+      root.querySelectorAll('.sb-tools li').forEach(function (li) {
+        var a = li.querySelector('a');
+        li.classList.toggle('sb-cur', !!a && a.hash === location.hash && location.hash.length > 1);
+      });
+    });
+  }
   if (IS_HOME) {
     var chipsBox = document.querySelector('.chips');
     if (chipsBox) {

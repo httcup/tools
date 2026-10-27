@@ -1,5 +1,5 @@
 {
-  "id": "/tools/watermark-pdf/",
+  "id": "../watermark-pdf/",
   "name": "PDF \u6c34\u5370",
   "short_name": "PDF \u6c34\u5370",
   "description": "\u4e00\u4efd\u5199\u7740\u81ea\u5df1\u53bb\u4e86\u54ea\u91cc\u7684\u626b\u63cf\u4ef6\uff0c\u5c31\u6ca1\u6cd5\u6084\u6084\u518d\u53bb\u522b\u7684\u5730\u65b9\u3002",
@@ -12,12 +12,12 @@
   "theme_color": "#f6f7f9",
   "icons": [
     {
-      "src": "/tools/icon.png",
+      "src": "../icon.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "/tools/icon-maskable.png",
+      "src": "../icon-maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

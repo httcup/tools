@@ -46,10 +46,10 @@ return`${JSON.stringify({
     name,
     short_name: name,
     icons: [
-      { src: '/tools/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
-      { src: '/tools/android-chrome-512x512.png', sizes: '512x512', type: 'image/png' },
+      { src: '../../android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
+      { src: '../../android-chrome-512x512.png', sizes: '512x512', type: 'image/png' },
       {
-        src: '/tools/android-chrome-maskable-512x512.png',
+        src: '../../android-chrome-maskable-512x512.png',
         sizes: '512x512',
         type: 'image/png',
         purpose: 'maskable',
@@ -66,7 +66,7 @@ return`<?xml version="1.0" encoding="utf-8"?>
 <browserconfig>
   <msapplication>
     <tile>
-      <square150x150logo src="/tools/mstile-150x150.png"/>
+      <square150x150logo src="../../mstile-150x150.png"/>
       <TileColor>${tile}</TileColor>
     </tile>
   </msapplication>
@@ -77,10 +77,10 @@ return`<?xml version="1.0" encoding="utf-8"?>
 export function headSnippet(t){
 const comment=wrap(t('head.comment'),WIDTH-5).split('\n').join('\n     ');
 return`<!-- ${comment} -->
-<link rel="icon" type="image/png" sizes="32x32" href="/tools/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/tools/favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/tools/apple-touch-icon.png">
-<link rel="manifest" href="/tools/site.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+<link rel="manifest" href="../../site.webmanifest">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 `

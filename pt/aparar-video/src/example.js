@@ -1,5 +1,0 @@
-/* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
-import{exampleVideoWithSound}from'./shared/example-video-sound.js?v=0b0df07a29';
-export function makeExample(){
-return exampleVideoWithSound('example.mp4',{width:960,height:540,seconds:8});
-}

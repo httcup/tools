@@ -1,5 +1,5 @@
 {
-  "id": "/tools/svg-to-image/",
+  "id": "../svg-to-image/",
   "name": "SVG \u8f6c\u56fe\u7247",
   "short_name": "SVG \u8f6c\u56fe\u7247",
   "description": "\u8bf4\u4e2a\u5c3a\u5bf8\u3002\u77e2\u91cf\u56fe\u672c\u6765\u5c31\u6ca1\u6709\u5c3a\u5bf8\u53ef\u4e22\u3002",
@@ -12,12 +12,12 @@
   "theme_color": "#f6f7f9",
   "icons": [
     {
-      "src": "/tools/icon.png",
+      "src": "../icon.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "/tools/icon-maskable.png",
+      "src": "../icon-maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

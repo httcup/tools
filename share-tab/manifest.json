@@ -1,5 +1,5 @@
 {
-  "id": "/tools/share-tab/",
+  "id": "../share-tab/",
   "name": "Share a Browser Tab",
   "short_name": "Share a Browser Tab",
   "description": "Choose a tab on your computer and let one approved viewer watch it using Direct or Cloud relay. Invite by link, network discovery or a private group. No extension, sound or remote control.",
@@ -12,12 +12,12 @@
   "theme_color": "#f6f7f9",
   "icons": [
     {
-      "src": "/tools/icon.png",
+      "src": "../icon.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "/tools/icon-maskable.png",
+      "src": "../icon-maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

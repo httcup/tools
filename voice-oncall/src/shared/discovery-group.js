@@ -2,7 +2,7 @@
 const ALPHABET='0123456789ABCDEFGHJKMNPQRSTVWXYZ';
 const CODE=/^[0-9A-HJKMNP-TV-Z]{26}$/;
 const IDENTIFIER=/^[a-f0-9]{64}$/;
-const DOMAIN='httcup.github.io/tools/private-discovery/v1\n';
+const DOMAIN='httcup.github.io../../../private-discovery/v1\n';
 export function normalizeGroupCode(value){
 if(typeof value!=='string'||value.length>80)return null;
 const code=value.replace(/[ -]/g,'').toUpperCase();

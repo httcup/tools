@@ -1,7 +1,0 @@
-/* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
-import{photographedPage}from'./shared/example-document.js?v=6998115ca9';
-import{canvasFile}from'./shared/example-photo.js?v=6998115ca9';
-export function makeExample(){
-const{canvas}=photographedPage(1400,1050);
-return canvasFile(canvas,'example-photo.jpg','image/jpeg',0.9);
-}

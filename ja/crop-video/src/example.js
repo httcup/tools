@@ -1,5 +1,0 @@
-/* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
-import{exampleVideoFile}from'./shared/example-video.js?v=80f60e3af2';
-export function makeExample(){
-return exampleVideoFile('example.mp4',{width:1280,height:720,seconds:6});
-}

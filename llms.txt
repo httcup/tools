@@ -1,126 +1,79 @@
-# Tools
+# 本地工具箱 Local Web Tools
 
-> Free single-purpose browser tools for local file processing: compress, resize, crop, trim, convert and inspect. No processing uploads or accounts. Intentional browser-to-browser sharing and optional online features are explained on their own pages.
+> 70 个单用途浏览器工具：图片压缩与转换、PDF 处理、视频音频编辑、文本编码、密码生成、双设备直连。所有处理在浏览器本地完成，文件不上传、无需注册。
 
-Files are processed on the device running the browser, without processing uploads. Device sharing and live voice/video tools deliberately transmit content between browsers. Optional image imports, receipt exchange-rate lookups and email-app handoffs have their own boundaries. Read the selected tool's page and [Privacy](https://httcup.github.io/tools/privacy/) for connection modes, relay metadata and optional requests.
+页面地址以 https://httcup.github.io/tools/ 为前缀。
 
-The tools need a browser; there is no processing API, CLI or file-upload endpoint. An agent's cloud browser means the file has already left the person's device. The agent provider's access to files, screenshots and instructions is separate from this site's processing. [Can an AI agent use these tools?](https://httcup.github.io/tools/guides/can-an-ai-agent-use-these-tools/) explains the distinction.
+## 工具
 
-Tools and guides have a Markdown copy: append `index.md` to the page URL, for example https://httcup.github.io/tools/compress-image/index.md. These copies contain explanations and limitations without the interface. Code is MIT licensed; prose is CC BY 4.0.
+### 图片
+- [图片压缩](https://httcup.github.io/tools/compress-image/): 说个大小，剩下的它来算。
+- [图片缩放](https://httcup.github.io/tools/resize-image/): 说个尺寸，拉个框，挑个格式。
+- [图片拼版](https://httcup.github.io/tools/image-layout/): 把图片拼成拼贴、联系表或长条，留在本机。
+- [HEIC 转 JPG](https://httcup.github.io/tools/heic-to-jpg/): iPhone 拍的照片，换成什么都打得开的格式。
+- [WebP 转 JPG](https://httcup.github.io/tools/webp-to-jpg/): 把网页保存的图片，变成所有软件仍然接受的格式。
+- [PNG 转 WebP](https://httcup.github.io/tools/png-to-webp/): 同一张图片，常常减少三分之一体积，透明区域保持完整。
+- [AVIF 转 JPG](https://httcup.github.io/tools/avif-to-jpg/): 把网站如今保存的格式，变成所有软件一直支持的格式。
+- [证件照制作](https://httcup.github.io/tools/id-photo/): 选择支持的国家和证件。公布的要求与指导值均有标注。
+- [图片堆栈](https://httcup.github.io/tools/stack-images/): 二十张变一张，不用传二十次，也不用 RAW 转换器。
+- [图片涂黑与打码](https://httcup.github.io/tools/redact-image/): 你遮住的那块是从文件里删掉的，不是藏在文件里。
+- [EXIF 查看与清除](https://httcup.github.io/tools/exif-editor/): 看看一张照片把你交代了多少，然后删掉。
+- [DICOM 阅片器](https://httcup.github.io/tools/dicom-viewer/): CT、MR、X 光和超声，连窗宽窗位、头信息和测量一起。
+- [图片转 ICO](https://httcup.github.io/tools/image-to-ico/): 进去一张图，出来的是浏览器、Windows 和 Mac 各自要的每一个尺寸。
+- [图片转 Data URI](https://httcup.github.io/tools/image-to-data-uri/): 整张图变成一行文本，直接粘进 CSS 或者 HTML。
+- [SVG 转图片](https://httcup.github.io/tools/svg-to-image/): 说个尺寸。矢量图本来就没有尺寸可丢。
+- [图片转 SVG](https://httcup.github.io/tools/image-to-svg/): 一个形状，一条轮廓。不该有的东西，点一下就好。
+- [身高对比图](https://httcup.github.io/tools/compare-heights/): 把身高打进去，把图带走。为了画它，不会往外送任何东西。
+- [商家资料预览](https://httcup.github.io/tools/business-profile-preview/): 把内容打进去，它就变成 Google 会画的那张卡片。为了画它，不会往外送任何东西。
 
-This index is generated from the site's configuration and page metadata. It describes available tools; it does not measure whether an AI search system has indexed or cited them.
+### 视频与动画
+- [视频压缩](https://httcup.github.io/tools/compress-video/): 说一个它最多能有多大。剩下的工具来算，做完先量一遍再交给你。
+- [MP4 转换](https://httcup.github.io/tools/convert-to-mp4/): 不管从录屏、压制还是相机里出来的是什么，都变成 MP4 里的 H.264 和 AAC。能复制的原样复制，非改不可的才重新编码。
+- [视频旋转](https://httcup.github.io/tools/rotate-video/): 转四分之一圈、半圈，或者往另一边转。使用文件头旋转时，每一帧画面保持原样。
+- [图片转视频](https://httcup.github.io/tools/images-to-video/): 一个文件夹的图片，变成一段视频。
+- [视频剪切](https://httcup.github.io/tools/trim-video/): 一边看一边标出要留的段落，最后拿回一个视频。
+- [视频裁剪](https://httcup.github.io/tools/crop-video/): 把片子切到只剩要紧的那块。
+- [视频倒放](https://httcup.github.io/tools/reverse-video/): 最后一帧排在最前，连声音一起。
+- [延时视频](https://httcup.github.io/tools/timelapse-video/): 一小时的素材，二十秒看完。
+- [视频截帧](https://httcup.github.io/tools/grab-frame/): 任意位置，一张原画质静帧。
+- [GIF 转 MP4](https://httcup.github.io/tools/gif-to-mp4/): 每一帧都带着 GIF 给它的延时，变成 MP4 里的 H.264。在你的机器上转，文件从不上传。
+- [视频转 GIF](https://httcup.github.io/tools/video-to-gif/): 挑好段落、尺寸和帧率。
+- [GIF 制作](https://httcup.github.io/tools/gif-maker/): 把一组图片变成一段动画。
+- [GIF 拆帧](https://httcup.github.io/tools/split-gif/): 每一帧都单独存成一张 PNG。
+- [GIF 分析](https://httcup.github.io/tools/gif-analyzer/): 帧、延时、调色板，以及每个字节的去向。
 
-[Browser workflow skill](https://httcup.github.io/tools/.well-known/agent-skills/tools-browser-tools/SKILL.md)
+### 文档与音频
+- [PDF 合并与拆分](https://httcup.github.io/tools/merge-pdf/): 挪动页面，不用往服务器跑一趟。
+- [PDF 压缩](https://httcup.github.io/tools/compress-pdf/): 文档变小，不用送去任何地方。
+- [PDF 解锁](https://httcup.github.io/tools/unlock-pdf/): 权限限制与打开密码不同。页面会说明你的 PDF 使用哪种保护。
+- [PDF 加密](https://httcup.github.io/tools/protect-pdf/): 把文档锁上，而不是为了锁它先把它交给一个网站。
+- [PDF 水印](https://httcup.github.io/tools/watermark-pdf/): 一份写着自己去了哪里的扫描件，就没法悄悄再去别的地方。
+- [PDF 涂黑](https://httcup.github.io/tools/redact-pdf/): 字从文件里删掉，然后再搜一遍这个文件来证明。
+- [PDF 转 CSV](https://httcup.github.io/tools/pdf-to-csv/): 将检测到的 PDF 文本表格转换成电子表格可打开的行。
+- [收据与发票识别](https://httcup.github.io/tools/receipt-invoice-extractor/): 读取照片，检查字段和裁剪结果，准备供邮件应用使用的压缩附件和合计。
+- [图片转 PDF](https://httcup.github.io/tools/images-to-pdf/): 把你的图片装进一个文档。
+- [文档扫描](https://httcup.github.io/tools/document-scanner/): 把纸拍下来，回来的是一份看着像扫描的东西。
+- [从视频里提取音频](https://httcup.github.io/tools/extract-audio-from-video/): 把视频拖进来，声音就取出来了。画面从不解码，也不上传任何东西。
+- [音频剪辑](https://httcup.github.io/tools/trim-audio/): 边听边标出值得留的段落。它们会合成一个文件回来，就切在你说的位置。
+- [音频编辑](https://httcup.github.io/tools/edit-audio/): 倒着放、快慢随你调、把录轻了的声音提上来，全在你这台机器上。
 
-## 图片
+### 文本、编码与密码
+- [JSON 格式化](https://httcup.github.io/tools/json-formatter/): JSON、XML、HTML、CSS 和 YAML，格式化或转换。没有一个字被贴进别人的服务器。
+- [YAML 转 JSON](https://httcup.github.io/tools/yaml-to-json/): 两个方向都有，而且会告诉你各自的代价。这些都不会粘进别人的服务器。
+- [XML 格式化](https://httcup.github.io/tools/xml-formatter/): 排开了好读的 XML，压平了好发的 XML，还有两个方向的 JSON 转换。这些都不会粘进别人的服务器。
+- [文本比对](https://httcup.github.io/tools/text-diff/): 两段文本进来，每处差异都被标出来，逐行、逐词。没有一个字被贴进别人的服务器。
+- [Base64 编码解码](https://httcup.github.io/tools/base64/): Base64、百分号编码、HTML 实体、十六进制和反斜杠转义，双向都行。没有一个字被贴进别人的服务器。
+- [二维码与条形码生成](https://httcup.github.io/tools/qr-barcode/): 打进去，就变成一个码。生成过程不往外送任何东西。
+- [二维码与条形码识读](https://httcup.github.io/tools/qr-barcode-reader/): 把摄像头对准码，或者把拍下来的图丢进来。读这件事只发生在这里，别处都没有。
+- [哈希与校验和](https://httcup.github.io/tools/hash-checksum/): 把下载来的文件和发布方公布的那串数字对一下，不用把它发给任何人。
+- [密码与密码短语生成器](https://httcup.github.io/tools/password-generator/): 在这里生成，由你自己的浏览器生成，不发往任何地方。什么都不保存，也没有历史记录。
 
-压缩、改尺寸，或者抹掉照片悄悄记下的那些信息，全都不出这台机器。
-
-- [图片压缩](https://httcup.github.io/tools/compress-image/): 把 JPEG、PNG 和 WebP 压到你指定的大小。工具去找刚好塞得进目标的最高画质，只有画质单独够不到时才缩尺寸，并把结果跟原图量一遍。全程在浏览器里跑，不上传。
-- [图片缩放](https://httcup.github.io/tools/resize-image/): 在浏览器里给 JPEG、PNG 和 WebP 改尺寸、裁切、转格式。可以按精确像素、百分比或者长边定尺寸，可以拖裁剪框或者锁定比例，结果写成 JPEG、PNG 或 WebP。支持批量，什么都不上传。
-- [Image Layout](https://httcup.github.io/tools/image-layout/): Arrange pictures into a grid, contact sheet or strip with ready-to-use presets, per-image pan and zoom, reordering, size and spacing controls. Preview and save one PNG, JPEG or WebP entirely in the browser.
-- [HEIC 转 JPG](https://httcup.github.io/tools/heic-to-jpg/): 把 iPhone 的 HEIC 和 HEIF 照片转成 JPEG、PNG 或 WebP。HEIC 解码器是页面自己带着的 WebAssembly，照片在你自己的机器上解码，不上传。日期、相机和位置可以带进 JPEG，也可以丢掉。 元数据复选框和预览仅适用于 HEIC，AVIF 元数据一律不保留。
-- [WebP 转 JPG](https://httcup.github.io/tools/webp-to-jpg/): 在浏览器中把 WebP 图片转为 JPG。浏览器自带解码器读取 WebP，自带编码器写 JPEG，无需上传或下载编解码器。透明区域填充选定颜色，动态 WebP 输出第一帧，批量结果可打包为 ZIP。
-- [PNG 转 WebP](https://httcup.github.io/tools/png-to-webp/): 在浏览器中把 PNG 转为无损或指定质量的 WebP。两种模式都保留透明，结果报告实际写出的编码。无需上传，也不下载编解码器。
-- [AVIF 转 JPG](https://httcup.github.io/tools/avif-to-jpg/): 在浏览器中将 AVIF 图片转为 JPG。浏览器自带的 AVIF 解码器读取文件，自带编码器写出 JPEG，无需上传或下载编解码器。透明区域填充你选择的颜色，多文件结果可打包为 ZIP。
-- [证件照制作](https://httcup.github.io/tools/id-photo/): 在浏览器里按某个国家公布的规格制作护照、签证或身份证件照片。套用所选证件的打印尺寸、DPI、头高区间、眼线和背景色，实时显示并测量每一项，检查背景，排出带裁切标记的可打印 10x15 拼版，并按规定的像素尺寸写出落在门户 KB 区间内的上传文件。什么都不上传。 Each of 73 rules with published figures also has a page of its own stating them, with the authority and the date it was read - https://httcup.github.io/tools/id-photo/us-passport/ is the United States passport - and the tool's page lists them all.
-- [图片堆栈](https://httcup.github.io/tools/stack-images/): 在浏览器里堆栈连拍：平均值、中位数、Sigma 裁剪平均、最亮、最暗、相加和景深合成，先用相位相关对齐各帧。读取内含可用 JPEG 预览图的相机 RAW，不解码传感器数据。什么都不会上传。
-- [图片涂黑与打码](https://httcup.github.io/tools/redact-image/): 在浏览器里给图片涂黑：在不该被看到的地方拉框，然后涂成纯色、打码或者模糊。被遮的像素在文件编码之前就被覆盖，所以结果里没有图层、没有批注，也没有元数据。什么都不上传。
-- [EXIF 查看与清除](https://httcup.github.io/tools/exif-editor/): 查看、编辑或删除 EXIF 和 GPS 数据。JPEG、PNG 和 WebP 保持图片编码，AVIF 清理会转换为新的 PNG。不上传文件。
-- [DICOM 阅片器](https://httcup.github.io/tools/dicom-viewer/): 在浏览器里运行的 DCM 文件打开工具和 DICOM 阅片器：CT、MR、X 光和超声，带窗宽窗位、按顺序叠好的整套序列、毫米级测量，以及头信息里的每一个标签。什么都不会上传。
-- [图片转 ICO](https://httcup.github.io/tools/image-to-ico/): 在浏览器里把一张图做成多尺寸的 Windows ICO 文件，或者 macOS 的 ICNS 文件。带网站图标、Windows 应用图标和高分屏应用图标的预设，苹果那十个 icns 槽位，每个尺寸按真实像素大小的预览，以及可选的一整套网站用图（苹果、安卓、Windows 磁贴）。什么都不上传。
-- [图片转 Data URI](https://httcup.github.io/tools/image-to-data-uri/): 把 PNG、JPEG、SVG 或 WebP 变成能粘进 CSS 和 HTML 的 data URI。UTF-8 SVG 走百分号编码而不是 base64，所以还看得懂，也更短。在浏览器里跑，什么都不上传。
-- [SVG 转图片](https://httcup.github.io/tools/svg-to-image/): 在浏览器里把 SVG 光栅化成 PNG、JPEG 或 WebP，尺寸随你定。可按倍数、宽度、高度、最长边或者一个框来定尺寸，可加出 @2x 和 @3x，透明可留可压平，也支持整批转换。什么都不上传。
-- [图片转 SVG](https://httcup.github.io/tools/image-to-svg/): 在浏览器里把黑白图片描成 SVG 轮廓。按明暗分开，或者从背景里找出主体，给形状贴上曲线，不该描的东西点一下就能去掉。什么都不上传。
-- [身高对比图](https://httcup.github.io/tools/compare-heights/): 在浏览器里画一张身高对比图。加入男性、女性、男孩、女孩和物件，用厘米或者英尺英寸标注身高，排好顺序，配上颜色，再把结果下载成 PNG 或 SVG。什么都不上传。
-- [商家资料预览](https://httcup.github.io/tools/business-profile-preview/): 在浏览器里预览一份 Google 商家资料。由商家名称、类别、评分、评价数、地址、电话号码、网站、简介、属性、营业时间和封面照片，画出知识面板、手机上的地点卡片和本地搜索结果，并从营业时间推算出"营业中"或"已关门"那一行状态，再把结果下载成 PNG 或 SVG。已有的资料可以粘贴导入，也可以打开 Business Profile API 的导出文件。什么都不上传。
-
-## 视频与动画
-
-剪片、转格式，或者用照片拼一段，素材都不出这台机器。
-
-- [视频压缩](https://httcup.github.io/tools/compress-video/): 在浏览器里把视频压到指定的兆字节数以下。工具选出数字允许的画面尺寸和码率，在你的机器上编码成 MP4 里的 H.264，声音原样复制，再量结果。什么都不上传。
-- [MP4 转换](https://httcup.github.io/tools/convert-to-mp4/): 在浏览器里把 WebM、MKV、MOV 或 MP4 转成装着 H.264 画面和 AAC 声音的 MP4。已经是 H.264 或 AAC 的轨道原样复制；其余的在你的机器上重新编码。什么都不上传。
-- [视频旋转](https://httcup.github.io/tools/rotate-video/): 在浏览器里把视频转四分之一圈或半圈。使用文件头旋转时，每一帧画面原样复制；把旋转烧进画面时，画面会重新编码。AAC 声音原样复制，其他能解码的声音重新编码为 AAC，也可以去掉声音。什么都不上传。
-- [图片转视频](https://httcup.github.io/tools/images-to-video/): 把一个文件夹的图片做成 MP4 幻灯片视频。每一步都在你的浏览器里跑，图片从头到尾不上传。
-- [视频剪切](https://httcup.github.io/tools/trim-video/): 标记要保留或删除的片段，在浏览器中连接剩余内容。当选定区间和轨道兼容时，MP4、MOV、M4V 支持保留原始字节的复制。精确剪切重新编码视频；录制重新编码画面和声音。无需上传。
-- [视频裁剪](https://httcup.github.io/tools/crop-video/): 在浏览器里把视频裁成任意形状，或者精确到像素的一个框。MP4、MOV 和 M4V 逐帧解码重编，原来的音频原样带过去；其他浏览器能播的格式改用录制的方式裁。什么都不上传。
-- [视频倒放](https://httcup.github.io/tools/reverse-video/): 在浏览器里把视频倒过来放，声音也算在内。MP4、MOV 和 M4V 从尾部一组一组地解码，再按原来的帧时间重新编码；其他浏览器能播的内容则改用一步步往回走的方式。什么都不上传。
-- [延时视频](https://httcup.github.io/tools/timelapse-video/): 在浏览器里把长视频做成延时视频。从原片每隔几秒取一帧，把这些帧写成一段 24、30 或 60 帧每秒的短 MP4。MP4、MOV 和 M4V 直接读，而且只读需要的时刻前后那几段；浏览器能播的其他格式改用挪动播放位置的方式读。什么都不上传。
-- [视频截帧](https://httcup.github.io/tools/grab-frame/): 在浏览器里把视频的任意一帧存成原尺寸 PNG、JPEG 或 WebP。MP4、MOV 和 M4V 通过 WebCodecs 逐帧读取，你要的那一帧就是存下的那一帧；其他浏览器能播的内容则从播放器上取。什么都不上传。
-- [GIF 转 MP4](https://httcup.github.io/tools/gif-to-mp4/): 在浏览器里把动态 GIF 转成 MP4。每一帧保留 GIF 自己的延时，画面尺寸不变，结果是 MP4 里的 H.264，体积只有 GIF 的零头。什么都不上传。
-- [视频转 GIF](https://httcup.github.io/tools/video-to-gif/): 在浏览器里把视频中的一段做成 GIF 动图。按你选的帧率取帧，用中位切分法为整段动画选一份 256 色配色板，每一帧只写画面里变了的那块区域。什么都不上传。
-- [GIF 制作](https://httcup.github.io/tools/gif-maker/): 把一组图片做成 GIF 动图。帧、调色板和压缩全都在你的浏览器里算出来，所以任何图片都不会被上传。
-- [GIF 拆帧](https://httcup.github.io/tools/split-gif/): 把动图 GIF 拆成一帧一帧，每帧单独存成 PNG。文件是在你的浏览器里解压的，所以动图从不会被上传。
-- [GIF 分析](https://httcup.github.io/tools/gif-analyzer/): 在浏览器里把 GIF 拆开看：每一帧的延时、矩形和处置方式，颜色表，循环次数，各种元数据，以及文件体积的逐字节账目。什么都不上传。
-
-## 文档与音频
-
-拼文档、剪录音，两样都不用送出去处理。
-
-- [PDF 合并与拆分](https://httcup.github.io/tools/merge-pdf/): 在浏览器里合并 PDF、把一个拆成多个文件，并重排、旋转或删除页面。页面是在本地于文档之间复制的，所以任何文件都不会被上传。
-- [PDF 压缩](https://httcup.github.io/tools/compress-pdf/): 在浏览器里压缩 PDF。图片按它在页面上实际画多大来重新压缩，文档在本地重写，文件从头到尾不上传。
-- [PDF 解锁](https://httcup.github.io/tools/unlock-pdf/): 在浏览器里去掉 PDF 的密码，以及不许打印、复制、编辑这些限制。它会说这个文件是哪一种保护、那层保护值多少，从不猜密码，什么都不上传。
-- [PDF 加密](https://httcup.github.io/tools/protect-pdf/): 在浏览器里给 PDF 加上密码，或者限制打印、复制、编辑。默认 AES-256，老阅读器另有一个老方案，什么都不上传，做好的文件会在这里重新打开一次、证明锁得住。
-- [PDF 水印](https://httcup.github.io/tools/watermark-pdf/): 在浏览器里给 PDF 的每一页加上水印：这份副本是给谁的、日期、名字，任意角度、大小和透明度，任何语言。页面本身不动，什么都不上传，结果会重新打开一次，证明每一页都盖上了。
-- [PDF 涂黑](https://httcup.github.io/tools/redact-pdf/): 在浏览器里涂黑 PDF：删掉文字，而不是盖住。字从页面的 content stream 里拿走，做好的文件会被重新打开搜一遍来证明它们没了，什么都不会上传。
-- [PDF 转 CSV](https://httcup.github.io/tools/pdf-to-csv/): 在浏览器中将含文本的 PDF 表格提取为 CSV，适用于账单、发票、价目表和报告。检测依赖可读取文本的位置，可能遗漏特殊布局；扫描页需先进行 OCR。不会上传文件。
-- [收据与发票识别](https://httcup.github.io/tools/receipt-invoice-extractor/): 在设备上识别英文收据和发票照片，核对字段与裁剪范围，再准备压缩 JPEG 邮件附件。报告包含每份单据金额、数量和统一币种总额，汇率可手动填写或选择查询历史汇率。
-- [图片转 PDF](https://httcup.github.io/tools/images-to-pdf/): 把 JPG、PNG、WebP 和 AVIF 图片合成一个 PDF 文档。每一页都在你的浏览器里写出来，图片从头到尾不上传。
-- [文档扫描](https://httcup.github.io/tools/document-scanner/): 在浏览器里扫描文档：把一张纸拍下来，四个角自动找到，透视掰正，不匀的光除掉，结果写成 PDF。多页会合成一份文档。什么都不会上传。
-- [从视频里提取音频](https://httcup.github.io/tools/extract-audio-from-video/): 把 MP4、MOV 或 WebM 里的音轨取出来，存成 WAV。只有音频会被解码，画面从不读取，也不上传任何东西。
-- [音频剪辑](https://httcup.github.io/tools/trim-audio/): 在录音播放时随手标出任意多个段落，然后把这些段落存成一个文件，或者反过来把它们剪掉、留下其余部分。切点精确落在标记的采样上，接缝可选加上几毫秒淡入淡出以免咔哒。什么都不上传，结果写成 WAV，因此没有任何东西被重新编码。
-- [音频编辑](https://httcup.github.io/tools/edit-audio/): 在浏览器里给音频倒放、变速（音高可动可不动）、调音量。视频里的音轨也能处理。什么都不上传，结果写成 WAV，所以没有任何一步是重新编码。
-
-## 文本、编码与密码
-
-看一看、核一核，或者就在这里生成。令牌、配置文件和密码都不会落到别人的服务器上。
-
-- [JSON 格式化](https://httcup.github.io/tools/json-formatter/): 格式化和压缩 JSON、XML、HTML、CSS 和 YAML，把 JSON 转成 YAML 或 XML 再转回来。解析器在浏览器里跑，什么都不上传。
-- [YAML 转 JSON](https://httcup.github.io/tools/yaml-to-json/): 在浏览器中将支持的 YAML 1.2 子集转换为 JSON，也可将 JSON 转回 YAML。拒绝锚点、别名、标签和多文档流；JSON 会丢失注释。不会上传内容。
-- [XML 格式化](https://httcup.github.io/tools/xml-formatter/): 格式化、缩进和压缩 XML，把 XML 转成 JSON 或者把 JSON 转回 XML。解析器在浏览器里跑，不解析任何外部实体，也不上传任何东西。
-- [文本比对](https://httcup.github.io/tools/text-diff/): 用逐行加逐词的差异比对两段文本，并排或单列显示，并把结果下载成统一格式的补丁。比对在浏览器里跑，什么都不上传。
-- [Base64 编码解码](https://httcup.github.io/tools/base64/): 用两套字母表编码和解码 Base64，给单个值或整个 URL 做百分号编码，转义并读回 HTML 实体、十六进制字节和反斜杠转义。全都在浏览器里跑，什么都不上传。
-- [二维码与条形码生成](https://httcup.github.io/tools/qr-barcode/): 在浏览器里从一串字符生成二维码或者一维条形码。二维码支持链接、Wi-Fi、名片、邮件、短信、电话和坐标，四个纠错等级齐全；条形码支持 EAN-13、EAN-8、UPC-A、ITF-14、交叉二五码、Code 128 和 Code 39，并带校验位。可下载 SVG 或 PNG。什么都不上传。
-- [二维码与条形码识读](https://httcup.github.io/tools/qr-barcode-reader/): 在浏览器里完成，从图片、截图或实时摄像头读取二维码或一维条形码。显示解码出来的字符串；如果是链接，还会在打开任何东西之前给出真正会落到的主机。支持带里德-所罗门纠错的二维码版本 1 到 40，以及 EAN-13、EAN-8、UPC-A、UPC-E、ITF-14、交叉二五码、Code 128 和 Code 39。什么都不上传，摄像头画面一帧也不记录。
-- [哈希与校验和](https://httcup.github.io/tools/hash-checksum/): 在浏览器里计算任意文件的 MD5、SHA-1、SHA-256、SHA-384 或 SHA-512 校验和，并与下载页面公布的值比对。文件分块读取，从不上传。
-- [密码与密码短语生成器](https://httcup.github.io/tools/password-generator/): 在浏览器里生成强随机密码和 diceware 密码短语。字符用 crypto.getRandomValues 抽取，词来自随页面下发的 EFF 7776 词词表，页面还会给出生成结果的精确熵值。不上传，也不保存。
-
-## 连接设备
-
-分享文本和文件、实时通话，或在另一台设备上观看摄像头或浏览器标签页。每个工具都会说明发送哪些内容，以及浏览器如何连接。
-
+### 连接设备
 - [文本与文件分享](https://httcup.github.io/tools/share-text/): 从打开的浏览器加密分享文本与文件。默认直连，也可选择云中转。你可以逐一批准读者。
-- [Local Walkie-Talkie](https://httcup.github.io/tools/walkie-talkie/): Browser-hosted voice from one host to up to ten receive-only browsers, with direct WebRTC audio and secure internet pairing.
-- [Voice Oncall](https://httcup.github.io/tools/voice-oncall/): A browser-hosted live voice pager with nearby discovery, host approval and optional password admission, direct audio and per-participant host controls.
-- [Remote Camera](https://httcup.github.io/tools/remote-camera/): Watch a device camera in another browser with optional viewer approval, camera switching, Direct or optional Cloud relay, microphone audio and viewer activity notifications, without recording.
-- [Share a Browser Tab](https://httcup.github.io/tools/share-tab/): Stream one selected browser tab as encrypted live video to an approved viewer using Direct or optional Cloud relay and internet introductions.
+- [本地对讲机](https://httcup.github.io/tools/walkie-talkie/): 建个频道，按住说话或免提；局域网直连或走云中转。
+- [语音寻呼台](https://httcup.github.io/tools/voice-oncall/): 打开寻呼机就听到实时语音，可设密码、单独静音或移除。
+- [远程摄像头](https://httcup.github.io/tools/remote-camera/): 一台设备开摄像头，另一台浏览器观看，可要求批准。
+- [分享浏览器标签页](https://httcup.github.io/tools/share-tab/): 把一个标签页分享给一位批准者，无需扩展、不传声音。
 
-## Guides
-
-[全部指南](https://httcup.github.io/tools/guides/llms.txt)
-
-## Other languages
-
-The same tools, fully translated, each at its own addresses. Only languages that
-have finished every page are listed.
-
-- [German](https://httcup.github.io/tools/de/): Deutsch - de
-- [Spanish](https://httcup.github.io/tools/es/): Español - es
-- [French](https://httcup.github.io/tools/fr/): Français - fr
-- [Japanese](https://httcup.github.io/tools/ja/): 日本語 - ja
-- [Portuguese (Brazil)](https://httcup.github.io/tools/pt/): Português - pt-BR
-
-## Optional
-
-Background rather than answers. Skip these if you are short of room.
-
-- [全部指南](https://httcup.github.io/tools/guides/): 压缩、缩放、裁剪、剪辑、转格式，一件一件说清楚。设置到底动了什么，代价在哪儿，为什么这些都用不着上传。
-- [路线图](https://httcup.github.io/tools/roadmap/): Tools 的工具计划和已完成项目，公开列出并分类。文件处理都在浏览器里完成。
-- [github.com/httcup/tools](https://github.com/httcup/tools): The site source, tool READMEs, shared parsers and writers, and any bundled engine licences. First-party code is MIT; prose is CC BY 4.0. No JavaScript package installation is needed to build the site.
-- [Sitemap](https://httcup.github.io/tools/sitemap.xml): Pages offered for indexing in maintained languages, with their last modification dates. Frozen, unfinished and deliberately excluded pages are not listed.
-- [关于 Tools](https://httcup.github.io/tools/about/): 一个独立、自负盈亏的项目：59 个完全在浏览器里跑的工具，为什么要这么做，站点的开销从哪来，以及这里写的每一句话你怎么自己去核实。
-- [联系](https://httcup.github.io/tools/contact/): 怎么找到做 Tools 的那个人：一个邮箱地址，一个公开的问题追踪页，各自适合什么，以及你写完之后会发生什么。
-- [隐私与 Cookie](https://httcup.github.io/tools/privacy/): 本地文件处理、主动分享、可选在线汇率、统计、本地存储和托管：各功能发送什么，谁能看到。
-- [使用条款](https://httcup.github.io/tools/terms/): 本站按什么条件提供给你：免费、按现状、不用注册、不作担保，而你的文件完全是你自己的，因为它们从来没发给过我们。
-
+## 本地快用
+- [本地快用](https://httcup.github.io/tools/quick/): 编解码、哈希、时间戳等小工具合集。

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>快速工具 · 本地工具箱</title>
+<meta name="description" content="编解码、哈希、UUID、时间戳、JSON 等常用小工具，打开即用，全部在浏览器本地完成。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{}</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../">Local <span>WebTools</span></a>
+  <div class="topbar-actions">
+    <a class="back-link" href="../">← 全部工具</a>
+    <span class="privacy-note">全部本地处理 · 数据不上传</span>
+    <button id="theme" aria-label="切换主题" title="切换主题">◐</button>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <label class="search-label" for="search">搜索工具</label>
+    <input id="search" type="search" placeholder="搜索名称或算法，例如 Base64" autocomplete="off">
+    <nav id="tool-nav" class="tool-nav"></nav>
+  </aside>
+
+  <main id="panels" class="panels">
+    <!-- 工具面板由 app.js 渲染 -->
+    <noscript><p>此工具箱需要启用 JavaScript 才能使用。</p></noscript>
+  </main>
+</div>
+
+<footer class="footer">
+  <p>纯前端本地工具，所有计算均在您的浏览器中完成，不会上传任何数据。<a href="../">返回全部工具</a></p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

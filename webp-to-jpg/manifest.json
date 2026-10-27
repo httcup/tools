@@ -1,5 +1,5 @@
 {
-  "id": "/tools/webp-to-jpg/",
+  "id": "../webp-to-jpg/",
   "name": "WebP \u8f6c JPG",
   "short_name": "WebP \u8f6c JPG",
   "description": "\u628a\u7f51\u9875\u4fdd\u5b58\u7684\u56fe\u7247\uff0c\u53d8\u6210\u6240\u6709\u8f6f\u4ef6\u4ecd\u7136\u63a5\u53d7\u7684\u683c\u5f0f\u3002",
@@ -12,12 +12,12 @@
   "theme_color": "#f6f7f9",
   "icons": [
     {
-      "src": "/tools/icon.png",
+      "src": "../icon.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "/tools/icon-maskable.png",
+      "src": "../icon-maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

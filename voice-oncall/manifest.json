@@ -1,5 +1,5 @@
 {
-  "id": "/tools/voice-oncall/",
+  "id": "../voice-oncall/",
   "name": "Voice Oncall",
   "short_name": "Voice Oncall",
   "description": "Open a pager and hear live voice from people who connect. Use Direct on your local network or choose Cloud relay over the internet, with a password and individual mute or remove controls.",
@@ -12,12 +12,12 @@
   "theme_color": "#f6f7f9",
   "icons": [
     {
-      "src": "/tools/icon.png",
+      "src": "../icon.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "/tools/icon-maskable.png",
+      "src": "../icon-maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

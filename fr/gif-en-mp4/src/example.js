@@ -1,5 +1,0 @@
-/* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
-import{exampleGifFile}from'./shared/example-gif.js?v=da18598b1d';
-export async function makeExample(name='animation.gif'){
-return exampleGifFile(name,{frames:24,delay:8});
-}

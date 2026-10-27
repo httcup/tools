@@ -1,5 +1,5 @@
 {
-  "id": "/tools/image-layout/",
+  "id": "../image-layout/",
   "name": "Image Layout",
   "short_name": "Image Layout",
   "description": "Put your pictures together. Keep them on your machine.",
@@ -12,12 +12,12 @@
   "theme_color": "#f6f7f9",
   "icons": [
     {
-      "src": "/tools/icon.png",
+      "src": "../icon.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "/tools/icon-maskable.png",
+      "src": "../icon-maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

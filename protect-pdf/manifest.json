@@ -1,5 +1,5 @@
 {
-  "id": "/tools/protect-pdf/",
+  "id": "../protect-pdf/",
   "name": "PDF \u52a0\u5bc6",
   "short_name": "PDF \u52a0\u5bc6",
   "description": "\u628a\u6587\u6863\u9501\u4e0a\uff0c\u800c\u4e0d\u662f\u4e3a\u4e86\u9501\u5b83\u5148\u628a\u5b83\u4ea4\u7ed9\u4e00\u4e2a\u7f51\u7ad9\u3002",
@@ -12,12 +12,12 @@
   "theme_color": "#f6f7f9",
   "icons": [
     {
-      "src": "/tools/icon.png",
+      "src": "../icon.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "/tools/icon-maskable.png",
+      "src": "../icon-maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

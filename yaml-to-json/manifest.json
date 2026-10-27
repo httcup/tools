@@ -1,5 +1,5 @@
 {
-  "id": "/tools/yaml-to-json/",
+  "id": "../yaml-to-json/",
   "name": "YAML \u8f6c JSON",
   "short_name": "YAML \u8f6c JSON",
   "description": "\u4e24\u4e2a\u65b9\u5411\u90fd\u6709\uff0c\u800c\u4e14\u4f1a\u544a\u8bc9\u4f60\u5404\u81ea\u7684\u4ee3\u4ef7\u3002\u8fd9\u4e9b\u90fd\u4e0d\u4f1a\u7c98\u8fdb\u522b\u4eba\u7684\u670d\u52a1\u5668\u3002",
@@ -12,12 +12,12 @@
   "theme_color": "#f6f7f9",
   "icons": [
     {
-      "src": "/tools/icon.png",
+      "src": "../icon.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "/tools/icon-maskable.png",
+      "src": "../icon-maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

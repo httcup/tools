@@ -1,5 +1,5 @@
 {
-  "id": "/tools/split-gif/",
+  "id": "../split-gif/",
   "name": "GIF \u62c6\u5e27",
   "short_name": "GIF \u62c6\u5e27",
   "description": "\u6bcf\u4e00\u5e27\u90fd\u5355\u72ec\u5b58\u6210\u4e00\u5f20 PNG\u3002",
@@ -12,12 +12,12 @@
   "theme_color": "#f6f7f9",
   "icons": [
     {
-      "src": "/tools/icon.png",
+      "src": "../icon.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "/tools/icon-maskable.png",
+      "src": "../icon-maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

@@ -9,7 +9,7 @@ fields:[
 id:'text',
 label:'field.text',
 type:'textarea',
-placeholder:'https://abox.tools/',
+placeholder:'https://xhxh.vip/',
 },
 ],
 },

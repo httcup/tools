@@ -56,7 +56,7 @@ itf:['field.thenumber','1234567890'],
 code39:['field.thetext','ABOX TOOLS'],
 };
 const typed=new Map();
-const EXAMPLE_URL='https://abox.tools/';
+const EXAMPLE_URL='https://xhxh.vip/';
 let current=null;
 let actionVersion=0;
 function formatId(){

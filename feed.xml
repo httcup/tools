@@ -12,7 +12,430 @@
     <link href="https://httcup.github.io/tools/"/>
     <id>https://httcup.github.io/tools/</id>
     <updated>2026-10-27T02:54:58Z</updated>
-    <summary type="text">在浏览器本地运行的 87 个工具，文件不上传。</summary>
+    <summary type="text">在浏览器本地运行的 140 个工具，文件不上传。</summary>
+  </entry>
+  <entry>
+    <title type="text">订单利润率与手续费估算器</title>
+    <link href="https://httcup.github.io/tools/shopify-stripe-fee-profit-margin-calculator/"/>
+    <id>https://httcup.github.io/tools/shopify-stripe-fee-profit-margin-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">扣除商品、履约、支付与广告成本后的订单贡献利润。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">盈亏平衡 ROAS 计算器</title>
+    <link href="https://httcup.github.io/tools/break-even-roas-calculator/"/>
+    <id>https://httcup.github.io/tools/break-even-roas-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">算出覆盖成本的最低广告回报率与 CPA 上限。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">Stripe 手续费计算器</title>
+    <link href="https://httcup.github.io/tools/stripe-payment-gateway-fee-calculator/"/>
+    <id>https://httcup.github.io/tools/stripe-payment-gateway-fee-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">估算收款手续费与扣费后到账金额。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">跨境到岸总成本计算器</title>
+    <link href="https://httcup.github.io/tools/cross-border-landed-cost-calculator/"/>
+    <id>https://httcup.github.io/tools/cross-border-landed-cost-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">把头程、关税与杂费摊到每件商品。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">美国进口关税计算器</title>
+    <link href="https://httcup.github.io/tools/us-import-duty-calculator/"/>
+    <id>https://httcup.github.io/tools/us-import-duty-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">按从价税率估算美国进口关税。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">保本售价计算器</title>
+    <link href="https://httcup.github.io/tools/shopify-break-even-price-calculator/"/>
+    <id>https://httcup.github.io/tools/shopify-break-even-price-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">覆盖全部成本所需的最低售价。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">加价率与利润率换算器</title>
+    <link href="https://httcup.github.io/tools/markup-vs-margin-calculator/"/>
+    <id>https://httcup.github.io/tools/markup-vs-margin-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">在成本、加价率、利润率与售价之间换算。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">目标利润定价计算器</title>
+    <link href="https://httcup.github.io/tools/target-profit-pricing-calculator/"/>
+    <id>https://httcup.github.io/tools/target-profit-pricing-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">从利润目标反推所需售价。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">批发定价计算器</title>
+    <link href="https://httcup.github.io/tools/shopify-wholesale-pricing-calculator/"/>
+    <id>https://httcup.github.io/tools/shopify-wholesale-pricing-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">算批发底价与零售商毛利空间。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">阶梯定价计算器</title>
+    <link href="https://httcup.github.io/tools/quantity-break-pricing-calculator/"/>
+    <id>https://httcup.github.io/tools/quantity-break-pricing-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">最多六档阶梯价的利润对比。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">含运费毛利计算器</title>
+    <link href="https://httcup.github.io/tools/gross-margin-calculator-with-shipping/"/>
+    <id>https://httcup.github.io/tools/gross-margin-calculator-with-shipping/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">把运费补贴也算进毛利。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">店铺净利润计算器</title>
+    <link href="https://httcup.github.io/tools/shopify-net-profit-calculator/"/>
+    <id>https://httcup.github.io/tools/shopify-net-profit-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">按月核算店铺净利润。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">组合装与买一赠一利润计算器</title>
+    <link href="https://httcup.github.io/tools/bundle-bogo-profit-calculator/"/>
+    <id>https://httcup.github.io/tools/bundle-bogo-profit-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">核算组合装 / BOGO 的每单贡献。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">折扣利润影响计算器</title>
+    <link href="https://httcup.github.io/tools/discount-margin-impact-calculator/"/>
+    <id>https://httcup.github.io/tools/discount-margin-impact-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">打折后每单利润与所需订单量。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">优惠券利润计算器</title>
+    <link href="https://httcup.github.io/tools/coupon-profitability-calculator/"/>
+    <id>https://httcup.github.io/tools/coupon-profitability-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">优惠券活动的净影响与保本条件。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">包邮门槛计算器</title>
+    <link href="https://httcup.github.io/tools/free-shipping-threshold-calculator/"/>
+    <id>https://httcup.github.io/tools/free-shipping-threshold-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">算不亏本的包邮门槛与购物车文案。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">运费加价计算器</title>
+    <link href="https://httcup.github.io/tools/shipping-rate-markup-calculator/"/>
+    <id>https://httcup.github.io/tools/shipping-rate-markup-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">按成本设定客户运费并看补贴。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">单均运费计算器</title>
+    <link href="https://httcup.github.io/tools/shipping-cost-per-order-calculator/"/>
+    <id>https://httcup.github.io/tools/shipping-cost-per-order-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">把附加费合成真实单均运费。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">体积重计算器</title>
+    <link href="https://httcup.github.io/tools/dimensional-weight-calculator/"/>
+    <id>https://httcup.github.io/tools/dimensional-weight-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">算包裹计费重，避免运费惊吓。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">退货成本与利润影响计算器</title>
+    <link href="https://httcup.github.io/tools/ecommerce-return-cost-calculator/"/>
+    <id>https://httcup.github.io/tools/ecommerce-return-cost-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">估算退货率对一段订单的贡献侵蚀。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">退款损失计算器</title>
+    <link href="https://httcup.github.io/tools/refund-loss-calculator/"/>
+    <id>https://httcup.github.io/tools/refund-loss-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">单笔退款的真实现金影响。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">换货与退款成本对比计算器</title>
+    <link href="https://httcup.github.io/tools/exchange-vs-refund-cost-calculator/"/>
+    <id>https://httcup.github.io/tools/exchange-vs-refund-cost-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">一次售后走换货还是退款更划算。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">电商转化率计算器</title>
+    <link href="https://httcup.github.io/tools/ecommerce-conversion-rate-calculator/"/>
+    <id>https://httcup.github.io/tools/ecommerce-conversion-rate-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">五步漏斗找最大流失环节。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">客单价与访客收入计算器</title>
+    <link href="https://httcup.github.io/tools/aov-revenue-per-visitor-calculator/"/>
+    <id>https://httcup.github.io/tools/aov-revenue-per-visitor-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">算 RPV 并分渠道对比。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">库存补货计划器</title>
+    <link href="https://httcup.github.io/tools/inventory-reorder-planner/"/>
+    <id>https://httcup.github.io/tools/inventory-reorder-planner/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">按日销与提前期算覆盖天数与补货量。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">SKU 利润体检器</title>
+    <link href="https://httcup.github.io/tools/bulk-sku-profit-auditor/"/>
+    <id>https://httcup.github.io/tools/bulk-sku-profit-auditor/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">单 SKU 的贡献利润与广告空间。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">安全库存计算器</title>
+    <link href="https://httcup.github.io/tools/safety-stock-calculator/"/>
+    <id>https://httcup.github.io/tools/safety-stock-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">按服务水平算安全库存与补货点。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">库存覆盖天数计算器</title>
+    <link href="https://httcup.github.io/tools/inventory-days-of-supply-calculator/"/>
+    <id>https://httcup.github.io/tools/inventory-days-of-supply-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">可用库存还能撑多少天。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">季节化补货点计算器</title>
+    <link href="https://httcup.github.io/tools/reorder-point-calculator/"/>
+    <id>https://httcup.github.io/tools/reorder-point-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">按季节系数调整的补货点。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">EOQ 经济订货批量计算器</title>
+    <link href="https://httcup.github.io/tools/eoq-calculator/"/>
+    <id>https://httcup.github.io/tools/eoq-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">订多少次、订多少最划算。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">库存持有成本计算器</title>
+    <link href="https://httcup.github.io/tools/inventory-carrying-cost-calculator/"/>
+    <id>https://httcup.github.io/tools/inventory-carrying-cost-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">仓储、资金与损耗拆开算。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">缺货成本计算器</title>
+    <link href="https://httcup.github.io/tools/stockout-cost-calculator/"/>
+    <id>https://httcup.github.io/tools/stockout-cost-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">断货几天会损失多少贡献。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">盈亏销售额计算器</title>
+    <link href="https://httcup.github.io/tools/break-even-sales-calculator/"/>
+    <id>https://httcup.github.io/tools/break-even-sales-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">覆盖固定成本要卖多少单。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">混合获客成本计算器</title>
+    <link href="https://httcup.github.io/tools/blended-cac-calculator/"/>
+    <id>https://httcup.github.io/tools/blended-cac-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">各渠道合成混合 CAC 并对比。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">LTV 与 CAC 计算器</title>
+    <link href="https://httcup.github.io/tools/ltv-cac-calculator/"/>
+    <id>https://httcup.github.io/tools/ltv-cac-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">客户终身价值与回本周期。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">ROAS 利润计算器</title>
+    <link href="https://httcup.github.io/tools/roas-profit-calculator/"/>
+    <id>https://httcup.github.io/tools/roas-profit-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">把 ROAS 换算成真实利润。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">目标 ROAS 计算器</title>
+    <link href="https://httcup.github.io/tools/target-roas-calculator/"/>
+    <id>https://httcup.github.io/tools/target-roas-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">从目标利润倒推投放红线。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">MER 营销效率计算器</title>
+    <link href="https://httcup.github.io/tools/mer-calculator/"/>
+    <id>https://httcup.github.io/tools/mer-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">整体口径的营销效率比。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">FBA 与 FBM 利润对比计算器</title>
+    <link href="https://httcup.github.io/tools/amazon-fba-vs-fbm-profit-calculator/"/>
+    <id>https://httcup.github.io/tools/amazon-fba-vs-fbm-profit-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">并排比较 FBA 与自发货运费利润。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">Etsy 费用计算器</title>
+    <link href="https://httcup.github.io/tools/etsy-fee-calculator/"/>
+    <id>https://httcup.github.io/tools/etsy-fee-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">拆解 Etsy 各项费用与净利润。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">TikTok Shop 费用计算器</title>
+    <link href="https://httcup.github.io/tools/tiktok-shop-fee-calculator/"/>
+    <id>https://httcup.github.io/tools/tiktok-shop-fee-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">拆解 TikTok Shop 佣金与净利润。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">平台费用对比计算器</title>
+    <link href="https://httcup.github.io/tools/marketplace-fee-comparison-calculator/"/>
+    <id>https://httcup.github.io/tools/marketplace-fee-comparison-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">同一订单在四个平台的净收入。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">WooCommerce 成本计算器</title>
+    <link href="https://httcup.github.io/tools/woocommerce-cost-calculator/"/>
+    <id>https://httcup.github.io/tools/woocommerce-cost-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">自建站每月真实运营成本。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">Amazon 卖家费用计算器</title>
+    <link href="https://httcup.github.io/tools/amazon-seller-fee-calculator/"/>
+    <id>https://httcup.github.io/tools/amazon-seller-fee-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">拆解 Amazon 佣金与 FBA 费用。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">订阅 LTV 计算器</title>
+    <link href="https://httcup.github.io/tools/subscription-ltv-calculator/"/>
+    <id>https://httcup.github.io/tools/subscription-ltv-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">订阅模式的客户终身价值。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">复购率与留存计算器</title>
+    <link href="https://httcup.github.io/tools/repeat-purchase-rate-calculator/"/>
+    <id>https://httcup.github.io/tools/repeat-purchase-rate-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">复购率、流失率与复购收入。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">Shopify 平台费计算器</title>
+    <link href="https://httcup.github.io/tools/shopify-transaction-fee-calculator/"/>
+    <id>https://httcup.github.io/tools/shopify-transaction-fee-calculator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">对比各套餐的月费与交易费。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">商品结构化数据生成器</title>
+    <link href="https://httcup.github.io/tools/shopify-product-schema-generator/"/>
+    <id>https://httcup.github.io/tools/shopify-product-schema-generator/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">生成 Product 与 Offer 的 JSON-LD 脚本。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">标题与描述 SEO 检查器</title>
+    <link href="https://httcup.github.io/tools/product-title-meta-description-seo-checker/"/>
+    <id>https://httcup.github.io/tools/product-title-meta-description-seo-checker/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">检查商品标题与描述的字数与预览。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">商品描述 HTML 清洗器</title>
+    <link href="https://httcup.github.io/tools/shopify-description-html-cleaner/"/>
+    <id>https://httcup.github.io/tools/shopify-description-html-cleaner/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">去掉粘贴内容里的样式与不安全标签。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">商品 CSV 检查器</title>
+    <link href="https://httcup.github.io/tools/shopify-product-csv-checker/"/>
+    <id>https://httcup.github.io/tools/shopify-product-csv-checker/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">导入前检查 Shopify 商品 CSV。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">电商 UTM 链接生成器</title>
+    <link href="https://httcup.github.io/tools/utm-builder/"/>
+    <id>https://httcup.github.io/tools/utm-builder/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">生成规范的 UTM 追踪链接。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">Google Shopping Feed 检查器</title>
+    <link href="https://httcup.github.io/tools/google-shopping-feed-readiness-checker/"/>
+    <id>https://httcup.github.io/tools/google-shopping-feed-readiness-checker/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">上传前检查 Google Shopping 数据源。</summary>
   </entry>
   <entry>
     <title type="text">Markdown 转 Word</title>

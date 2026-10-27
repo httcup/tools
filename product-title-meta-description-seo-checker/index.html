@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>标题与描述 SEO 检查器：检查商品标题与描述的字数与预览。 | 本地工具箱</title>
+<meta name="description" content="检查商品页标题与 Meta Description 的字数（全角半角）、目标关键词位置，并预览搜索结果摘要样式。">
+<link rel="canonical" href="https://httcup.github.io/tools/product-title-meta-description-seo-checker/">
+<meta name="theme-color" content="#f6f7f9">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; frame-ancestors 'none'">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="本地工具箱">
+<meta property="og:url" content="https://httcup.github.io/tools/product-title-meta-description-seo-checker/">
+<meta property="og:title" content="标题与描述 SEO 检查器 — 全程本地处理">
+<meta property="og:description" content="检查商品页标题与 Meta Description 的字数（全角半角）、目标关键词位置，并预览搜索结果摘要样式。">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="../toolkit.css">
+<link rel="stylesheet" href="../dtc.css">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="hub-head">
+  <div class="head-row">
+    <p class="brand"><a class="brand-home" href="../"><svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+  <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+  <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+  <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+  <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+</svg>Tools</a></p>
+  </div>
+  <nav class="crumbs" aria-label="位置">
+    <a href="../">全部工具</a><span aria-hidden="true">›</span><span aria-current="page">标题与描述 SEO 检查器</span>
+  </nav>
+  <h1>标题与描述 SEO 检查器</h1>
+  <p class="lede">检查商品页标题与 Meta Description 的字数（全角半角）、目标关键词位置，并预览搜索结果摘要样式。</p>
+</header>
+
+<main id="main" class="tool-main">
+<section class="tool-card">
+  <h2>待检查内容</h2>
+  <div class="row">
+    <label class="field"><span>页面标题（Title）</span><input type="text" id="tIn" value="羊毛混纺针织开衫 | 秋冬保暖女款 - Example Brand" style="min-width:26rem"></label>
+  </div>
+  <div class="row">
+    <label class="field"><span>目标关键词（选填）</span><input type="text" id="kwIn" value="针织开衫"></label>
+  </div>
+  <div class="row" style="width:100%">
+    <label class="field" style="width:100%"><span>Meta Description</span><textarea id="dIn" rows="3">羊毛混纺针织开衫，秋冬保暖不臃肿，多色可选。全场包邮，30 天无理由退换，立即选购。</textarea></label>
+  </div>
+</section>
+<section class="tool-card">
+  <div class="card-head"><h2>检查结果</h2></div>
+  <dl class="kv" id="res"></dl>
+  <p class="note">字数按「全角 = 1、半角 = 0.5」折算成全角当量：标题建议 20–30，描述建议 60–85。超长会在搜索结果里被截断。</p>
+</section>
+<section class="tool-card">
+  <h2>搜索结果预览</h2>
+  <div id="serp" style="background:#fff;color:#202124;border:1px solid var(--border);border-radius:8px;padding:0.9rem 1rem;font-family:Arial,sans-serif;line-height:1.5">
+    <div style="font-size:0.78rem;color:#4d5156" id="serpUrl"></div>
+    <div style="font-size:1.2rem;color:#1a0dab;margin:0.15rem 0" id="serpTitle"></div>
+    <div style="font-size:0.86rem;color:#4d5156" id="serpDesc"></div>
+  </div>
+</section>
+<section class="facts" aria-label="处理方式">
+  <article class="fact"><h2>全程本地</h2><p>所有计算都在这个页面里完成，过程不发起任何网络请求，输入的内容不会离开这台设备。</p></article>
+  <article class="fact"><h2>不用注册</h2><p>没有账号、没有上传、没有水印。打开就用，关掉页面数据就没了，也不保存任何草稿。</p></article>
+</section>
+</main>
+
+<footer>
+  <div class="footer-cols">
+    <div class="footer-col footer-brand">
+      <a class="home-link" href="../"><svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+  <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+  <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+  <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+  <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+</svg>Tools</a>
+      <p>在你的设备上处理文件的工具。无需上传文件进行处理，也无需创建账户。</p>
+    </div>
+    <div class="footer-col footer-site">
+      <strong>本站</strong>
+      <ul>
+        <li><a href="../">全部工具</a></li>
+        <li><a href="../guides/">全部指南</a></li>
+        <li><a href="../about/">关于本站</a></li>
+        <li><a href="../privacy/">隐私与 Cookie</a></li>
+        <li><a href="../sitemap.xml">站点地图</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <strong>相关工具</strong>
+      <ul>
+        <li><a href="../md-to-word/">Markdown 转 Word</a></li>
+        <li><a href="../images-to-pdf/">图片合成 PDF</a></li>
+        <li><a href="../format-json/">JSON 格式化</a></li>
+        <li><a href="../hash-checksum/">哈希与校验和</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="footer-base">所有处理都在你的浏览器里完成。</p>
+</footer>
+
+<script src="../toolkit.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

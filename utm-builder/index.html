@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>电商 UTM 链接生成器：生成规范的 UTM 追踪链接。 | 本地工具箱</title>
+<meta name="description" content="输入落地页与 UTM 参数，在本地生成规范链接：保留已有查询参数，并检查大小写、空格、覆盖参数与个人信息。">
+<link rel="canonical" href="https://httcup.github.io/tools/utm-builder/">
+<meta name="theme-color" content="#f6f7f9">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; frame-ancestors 'none'">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="本地工具箱">
+<meta property="og:url" content="https://httcup.github.io/tools/utm-builder/">
+<meta property="og:title" content="电商 UTM 链接生成器 — 全程本地处理">
+<meta property="og:description" content="输入落地页与 UTM 参数，在本地生成规范链接：保留已有查询参数，并检查大小写、空格、覆盖参数与个人信息。">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="../toolkit.css">
+<link rel="stylesheet" href="../dtc.css">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="hub-head">
+  <div class="head-row">
+    <p class="brand"><a class="brand-home" href="../"><svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+  <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+  <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+  <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+  <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+</svg>Tools</a></p>
+  </div>
+  <nav class="crumbs" aria-label="位置">
+    <a href="../">全部工具</a><span aria-hidden="true">›</span><span aria-current="page">电商 UTM 链接生成器</span>
+  </nav>
+  <h1>电商 UTM 链接生成器</h1>
+  <p class="lede">输入落地页与 UTM 参数，在本地生成规范链接：保留已有查询参数，并检查大小写、空格、覆盖参数与个人信息。</p>
+</header>
+
+<main id="main" class="tool-main">
+<section class="tool-card">
+  <h2>参数</h2>
+  <div class="row">
+    <label class="field"><span>落地页 URL *</span><input type="text" id="uBase" value="https://example.com/products/knit" style="min-width:24rem"></label>
+  </div>
+  <div class="row">
+    <label class="field"><span>utm_source *</span><input type="text" id="uSource" value="instagram"></label>
+    <label class="field"><span>utm_medium *</span><input type="text" id="uMedium" value="cpc"></label>
+    <label class="field"><span>utm_campaign</span><input type="text" id="uCampaign" value="autumn-sale"></label>
+  </div>
+  <div class="row">
+    <label class="field"><span>utm_term</span><input type="text" id="uTerm" value=""></label>
+    <label class="field"><span>utm_content</span><input type="text" id="uContent" value="story-a"></label>
+  </div>
+</section>
+<section class="tool-card">
+  <div class="card-head"><h2>生成的链接</h2><button class="btn btn-ghost" type="button" data-copy-target="#uOut">复制</button></div>
+  <textarea id="uOut" class="out" rows="2" readonly></textarea>
+  <div class="card-head" style="margin-top:0.8rem"><h2>检查</h2></div>
+  <ul class="result-list" id="warns"></ul>
+</section>
+<section class="facts" aria-label="处理方式">
+  <article class="fact"><h2>全程本地</h2><p>所有计算都在这个页面里完成，过程不发起任何网络请求，输入的内容不会离开这台设备。</p></article>
+  <article class="fact"><h2>不用注册</h2><p>没有账号、没有上传、没有水印。打开就用，关掉页面数据就没了，也不保存任何草稿。</p></article>
+</section>
+</main>
+
+<footer>
+  <div class="footer-cols">
+    <div class="footer-col footer-brand">
+      <a class="home-link" href="../"><svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+  <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+  <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+  <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+  <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+</svg>Tools</a>
+      <p>在你的设备上处理文件的工具。无需上传文件进行处理，也无需创建账户。</p>
+    </div>
+    <div class="footer-col footer-site">
+      <strong>本站</strong>
+      <ul>
+        <li><a href="../">全部工具</a></li>
+        <li><a href="../guides/">全部指南</a></li>
+        <li><a href="../about/">关于本站</a></li>
+        <li><a href="../privacy/">隐私与 Cookie</a></li>
+        <li><a href="../sitemap.xml">站点地图</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <strong>相关工具</strong>
+      <ul>
+        <li><a href="../md-to-word/">Markdown 转 Word</a></li>
+        <li><a href="../images-to-pdf/">图片合成 PDF</a></li>
+        <li><a href="../format-json/">JSON 格式化</a></li>
+        <li><a href="../hash-checksum/">哈希与校验和</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="footer-base">所有处理都在你的浏览器里完成。</p>
+</footer>
+
+<script src="../toolkit.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

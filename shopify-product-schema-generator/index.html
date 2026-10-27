@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>商品结构化数据生成器：生成 Product 与 Offer 的 JSON-LD 脚本。 | 本地工具箱</title>
+<meta name="description" content="根据商品名称、描述、品牌、价格、库存状态等信息，在本地生成可直接放进商品页的 Product JSON-LD 结构化数据脚本。">
+<link rel="canonical" href="https://httcup.github.io/tools/shopify-product-schema-generator/">
+<meta name="theme-color" content="#f6f7f9">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; frame-ancestors 'none'">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="本地工具箱">
+<meta property="og:url" content="https://httcup.github.io/tools/shopify-product-schema-generator/">
+<meta property="og:title" content="商品结构化数据生成器 — 全程本地处理">
+<meta property="og:description" content="根据商品名称、描述、品牌、价格、库存状态等信息，在本地生成可直接放进商品页的 Product JSON-LD 结构化数据脚本。">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="../toolkit.css">
+<link rel="stylesheet" href="../dtc.css">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="hub-head">
+  <div class="head-row">
+    <p class="brand"><a class="brand-home" href="../"><svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+  <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+  <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+  <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+  <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+</svg>Tools</a></p>
+  </div>
+  <nav class="crumbs" aria-label="位置">
+    <a href="../">全部工具</a><span aria-hidden="true">›</span><span aria-current="page">商品结构化数据生成器</span>
+  </nav>
+  <h1>商品结构化数据生成器</h1>
+  <p class="lede">根据商品名称、描述、品牌、价格、库存状态等信息，在本地生成可直接放进商品页的 Product JSON-LD 结构化数据脚本。</p>
+</header>
+
+<main id="main" class="tool-main">
+<section class="tool-card">
+  <h2>商品信息</h2>
+  <div class="row">
+    <label class="field"><span>商品名称 *</span><input type="text" id="pName" value="羊毛混纺针织开衫" style="min-width:15rem"></label>
+    <label class="field"><span>品牌</span><input type="text" id="pBrand" value="Example Brand"></label>
+    <label class="field"><span>SKU</span><input type="text" id="pSku" value="KNIT-001"></label>
+  </div>
+  <div class="row">
+    <label class="field"><span>售价 *</span><input type="number" id="pPrice" value="299" step="any"></label>
+    <label class="field"><span>货币</span><select id="pCur"><option value="CNY">CNY ¥</option><option value="USD">USD $</option><option value="EUR">EUR €</option></select></label>
+    <label class="field"><span>库存状态</span><select id="pAvail"><option value="InStock">有货</option><option value="OutOfStock">缺货</option><option value="PreOrder">预售</option></select></label>
+  </div>
+  <div class="row">
+    <label class="field"><span>商品页链接 *</span><input type="text" id="pUrl" value="https://example.com/products/knit-cardigan" style="min-width:18rem"></label>
+    <label class="field"><span>主图链接</span><input type="text" id="pImg" value="https://example.com/cdn/knit.jpg" style="min-width:18rem"></label>
+  </div>
+  <div class="row">
+    <label class="field"><span>商品描述</span><textarea id="pDesc" rows="2" style="min-width:24rem">秋冬保暖，羊毛混纺，多色可选。</textarea></label>
+  </div>
+  <div class="row">
+    <label class="field"><span>评分（4–5，选填）</span><input type="number" id="pRating" value="4.7" step="0.1" min="0" max="5"></label>
+    <label class="field"><span>评价数（选填）</span><input type="number" id="pReviews" value="128"></label>
+  </div>
+</section>
+<section class="tool-card">
+  <div class="card-head"><h2>JSON-LD 脚本</h2><button class="btn btn-ghost" type="button" data-copy-target="#ldOut">复制脚本</button></div>
+  <textarea id="ldOut" class="out" rows="12" readonly></textarea>
+  <p class="note">把整段脚本（含 &lt;script&gt; 标签）粘贴到商品页模板的 &lt;head&gt; 或正文末尾即可；发布后可用 Google 富媒体测试工具复查。商品信息不会离开本页。</p>
+</section>
+<section class="facts" aria-label="处理方式">
+  <article class="fact"><h2>全程本地</h2><p>所有计算都在这个页面里完成，过程不发起任何网络请求，输入的内容不会离开这台设备。</p></article>
+  <article class="fact"><h2>不用注册</h2><p>没有账号、没有上传、没有水印。打开就用，关掉页面数据就没了，也不保存任何草稿。</p></article>
+</section>
+</main>
+
+<footer>
+  <div class="footer-cols">
+    <div class="footer-col footer-brand">
+      <a class="home-link" href="../"><svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+  <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+  <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+  <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+  <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+</svg>Tools</a>
+      <p>在你的设备上处理文件的工具。无需上传文件进行处理，也无需创建账户。</p>
+    </div>
+    <div class="footer-col footer-site">
+      <strong>本站</strong>
+      <ul>
+        <li><a href="../">全部工具</a></li>
+        <li><a href="../guides/">全部指南</a></li>
+        <li><a href="../about/">关于本站</a></li>
+        <li><a href="../privacy/">隐私与 Cookie</a></li>
+        <li><a href="../sitemap.xml">站点地图</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <strong>相关工具</strong>
+      <ul>
+        <li><a href="../md-to-word/">Markdown 转 Word</a></li>
+        <li><a href="../images-to-pdf/">图片合成 PDF</a></li>
+        <li><a href="../format-json/">JSON 格式化</a></li>
+        <li><a href="../hash-checksum/">哈希与校验和</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="footer-base">所有处理都在你的浏览器里完成。</p>
+</footer>
+
+<script src="../toolkit.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

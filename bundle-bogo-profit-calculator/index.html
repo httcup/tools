@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>组合装与买一赠一利润计算器：核算组合装 / BOGO 的每单贡献。 | 本地工具箱</title>
+<meta name="description" content="选择组合装或买一赠一模式，输入单件售价与成本、组合价格、履约、支付与广告成本，核算每种促销形态扣除全部成本后的贡献利润。">
+<link rel="canonical" href="https://httcup.github.io/tools/bundle-bogo-profit-calculator/">
+<meta name="theme-color" content="#f6f7f9">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; frame-ancestors 'none'">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="本地工具箱">
+<meta property="og:url" content="https://httcup.github.io/tools/bundle-bogo-profit-calculator/">
+<meta property="og:title" content="组合装与买一赠一利润计算器 — 全程本地处理">
+<meta property="og:description" content="选择组合装或买一赠一模式，输入单件售价与成本、组合价格、履约、支付与广告成本，核算每种促销形态扣除全部成本后的贡献利润。">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="../toolkit.css">
+<link rel="stylesheet" href="../dtc.css">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="hub-head">
+  <div class="head-row">
+    <p class="brand"><a class="brand-home" href="../"><svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+  <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+  <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+  <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+  <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+</svg>Tools</a></p>
+  </div>
+  <nav class="crumbs" aria-label="位置">
+    <a href="../">全部工具</a><span aria-hidden="true">›</span><span aria-current="page">组合装与买一赠一利润计算器</span>
+  </nav>
+  <h1>组合装与买一赠一利润计算器</h1>
+  <p class="lede">选择组合装或买一赠一模式，输入单件售价与成本、组合价格、履约、支付与广告成本，核算每种促销形态扣除全部成本后的贡献利润。</p>
+</header>
+
+<main id="main" class="tool-main">
+<section class="tool-card">
+  <h2>输入</h2>
+  <div class="row">
+    <label class="field"><span>促销形态</span><select id="mode"><option value="bogo" selected>买一赠一（第二件 0 元）</option><option value="bundle">组合装（N 件一口价）</option></select></label>
+    <label class="field"><span>单件售价（元）</span><input type="number" id="price" value="99" step="any" inputmode="decimal"></label>
+    <label class="field"><span>单件商品成本（元）</span><input type="number" id="cost" value="30" step="any" inputmode="decimal"></label>
+    <label class="field"><span>组合装件数</span><input type="number" id="n" value="3" step="any" inputmode="decimal"></label>
+    <label class="field"><span>组合装一口价（元）</span><input type="number" id="bundlePrice" value="249" step="any" inputmode="decimal"></label>
+    <label class="field"><span>履约与运费（元/单）</span><input type="number" id="ship" value="12" step="any" inputmode="decimal"></label>
+    <label class="field"><span>支付费率（%）</span><input type="number" id="payRate" value="2.9" step="any" inputmode="decimal"></label>
+    <label class="field"><span>单笔广告费（元）</span><input type="number" id="ad" value="30" step="any" inputmode="decimal"></label>
+  </div>
+</section>
+<section class="tool-card">
+  <div class="card-head"><h2>结果</h2><span class="stats">输入即算，实时更新</span></div>
+  <div id="out"></div>
+  <p class="note">买一赠一的真实成本是送出那一件的商品成本，而不是售价的一半。</p>
+</section>
+
+<section class="facts" aria-label="处理方式">
+  <article class="fact"><h2>全程本地</h2><p>所有计算都在这个页面里完成，过程不发起任何网络请求，输入的内容不会离开这台设备。</p></article>
+  <article class="fact"><h2>不用注册</h2><p>没有账号、没有上传、没有水印。打开就用，关掉页面数据就没了，也不保存任何草稿。</p></article>
+</section>
+</main>
+
+<footer>
+  <div class="footer-cols">
+    <div class="footer-col footer-brand">
+      <a class="home-link" href="../"><svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+  <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+  <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+  <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+  <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+</svg>Tools</a>
+      <p>在你的设备上处理文件的工具。无需上传文件进行处理，也无需创建账户。</p>
+    </div>
+    <div class="footer-col footer-site">
+      <strong>本站</strong>
+      <ul>
+        <li><a href="../">全部工具</a></li>
+        <li><a href="../guides/">全部指南</a></li>
+        <li><a href="../about/">关于本站</a></li>
+        <li><a href="../privacy/">隐私与 Cookie</a></li>
+        <li><a href="../sitemap.xml">站点地图</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <strong>相关工具</strong>
+      <ul>
+        <li><a href="../md-to-word/">Markdown 转 Word</a></li>
+        <li><a href="../images-to-pdf/">图片合成 PDF</a></li>
+        <li><a href="../format-json/">JSON 格式化</a></li>
+        <li><a href="../hash-checksum/">哈希与校验和</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="footer-base">所有处理都在你的浏览器里完成。</p>
+</footer>
+
+<script src="../toolkit.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

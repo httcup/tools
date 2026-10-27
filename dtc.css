@@ -1,0 +1,14 @@
+/* DTC 电商工具页补充样式（配合 toolkit.css 使用）。 */
+.res-h {
+  margin: 0.9rem 0 0.45rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  letter-spacing: 0.02em;
+}
+
+#out dl.kv + dl.kv, #out dl.kv + .scroll-x, #out .scroll-x + dl.kv { margin-top: 0.6rem; }
+
+#out table.tbl td, #out table.tbl th { font-variant-numeric: tabular-nums; }
+
+textarea#ldOut, textarea#uOut { font-size: 0.82rem; }

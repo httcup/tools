@@ -1,6 +1,6 @@
 # 本地工具箱 Local Web Tools
 
-> 70 个单用途浏览器工具：图片压缩与转换、PDF 处理、视频音频编辑、文本编码、密码生成、双设备直连。所有处理在浏览器本地完成，文件不上传、无需注册。
+> 87 个单用途浏览器工具：图片压缩与转换、PDF 处理、视频音频编辑、文本编码、密码生成、双设备直连。所有处理在浏览器本地完成，文件不上传、无需注册。
 
 页面地址以 https://httcup.github.io/tools/ 为前缀。
 
@@ -25,6 +25,8 @@
 - [图片转 SVG](https://httcup.github.io/tools/image-to-svg/): 一个形状，一条轮廓。不该有的东西，点一下就好。
 - [身高对比图](https://httcup.github.io/tools/compare-heights/): 把身高打进去，把图带走。为了画它，不会往外送任何东西。
 - [商家资料预览](https://httcup.github.io/tools/business-profile-preview/): 把内容打进去，它就变成 Google 会画的那张卡片。为了画它，不会往外送任何东西。
+- [图片格式转换](https://httcup.github.io/tools/image-format-converter/): JPG、PNG、WebP 互转，批量处理，透明背景可选填色。
+
 
 ### 视频与动画
 - [视频压缩](https://httcup.github.io/tools/compress-video/): 说一个它最多能有多大。剩下的工具来算，做完先量一遍再交给你。
@@ -56,6 +58,8 @@
 - [从视频里提取音频](https://httcup.github.io/tools/extract-audio-from-video/): 把视频拖进来，声音就取出来了。画面从不解码，也不上传任何东西。
 - [音频剪辑](https://httcup.github.io/tools/trim-audio/): 边听边标出值得留的段落。它们会合成一个文件回来，就切在你说的位置。
 - [音频编辑](https://httcup.github.io/tools/edit-audio/): 倒着放、快慢随你调、把录轻了的声音提上来，全在你这台机器上。
+- [Markdown 转 Word](https://httcup.github.io/tools/md-to-word/): 把 AI 回答或 Markdown 下载成可编辑的 .docx，公式表格保留。
+
 
 ### 文本、编码与密码
 - [JSON 格式化](https://httcup.github.io/tools/json-formatter/): JSON、XML、HTML、CSS 和 YAML，格式化或转换。没有一个字被贴进别人的服务器。
@@ -67,6 +71,11 @@
 - [二维码与条形码识读](https://httcup.github.io/tools/qr-barcode-reader/): 把摄像头对准码，或者把拍下来的图丢进来。读这件事只发生在这里，别处都没有。
 - [哈希与校验和](https://httcup.github.io/tools/hash-checksum/): 把下载来的文件和发布方公布的那串数字对一下，不用把它发给任何人。
 - [密码与密码短语生成器](https://httcup.github.io/tools/password-generator/): 在这里生成，由你自己的浏览器生成，不发往任何地方。什么都不保存，也没有历史记录。
+- [删除重复行](https://httcup.github.io/tools/dedupe-lines/): 粘贴名单，重复的行只留一条，可忽略大小写和首尾空格。
+- [删除换行](https://httcup.github.io/tools/remove-line-breaks/): 修掉从 PDF 复制出来的断行，段落结构可以保留。
+- [文本排序](https://httcup.github.io/tools/sort-lines/): 按字母、拼音、长度排序，也能反转或随机打乱。
+- [随机抽签](https://httcup.github.io/tools/random-picker/): 贴名单抽中奖者，加密级随机数，也能整队打乱。
+
 
 ### 连接设备
 - [文本与文件分享](https://httcup.github.io/tools/share-text/): 从打开的浏览器加密分享文本与文件。默认直连，也可选择云中转。你可以逐一批准读者。
@@ -74,6 +83,19 @@
 - [语音寻呼台](https://httcup.github.io/tools/voice-oncall/): 打开寻呼机就听到实时语音，可设密码、单独静音或移除。
 - [远程摄像头](https://httcup.github.io/tools/remote-camera/): 一台设备开摄像头，另一台浏览器观看，可要求批准。
 - [分享浏览器标签页](https://httcup.github.io/tools/share-tab/): 把一个标签页分享给一位批准者，无需扩展、不传声音。
+
+### 计算与实用
+- [BMI 计算器](https://httcup.github.io/tools/bmi/): 身高体重一填，按中国成人标准给结论与健康体重范围。
+- [房贷计算器](https://httcup.github.io/tools/loan/): 等额本息或等额本金，月供、利息总额当场算清。
+- [百分比计算器](https://httcup.github.io/tools/percentage/): 占比、求百分之几、增减幅，三种问法都算。
+- [复利计算器](https://httcup.github.io/tools/compound-interest/): 本金加每月定投，按复利滚到未来值多少。
+- [日期天数计算](https://httcup.github.io/tools/date-diff/): 两个日期差几天、几周、几个工作日。
+- [年龄计算器](https://httcup.github.io/tools/age/): 生日填进去：精确周岁、活了多少天、生日倒计时。
+- [打折计算器](https://httcup.github.io/tools/discount/): 「打 7.5 折」和「25% OFF」都认，折后价立省多少一秒出。
+- [单位换算](https://httcup.github.io/tools/unit-converter/): 长度、重量、温度、面积、数据体积，一个页面换完。
+- [时区换算](https://httcup.github.io/tools/timezone-converter/): 填一个时间，常用时区的对应时间一次排开。
+- [文字转语音](https://httcup.github.io/tools/text-to-speech/): 用系统自带语音朗读文本，调语速音调，中文英文都行。
+- [在线录音](https://httcup.github.io/tools/voice-recorder/): 浏览器直接录音，录完试听、下载，不经过服务器。
 
 ## 本地快用
 - [本地快用](https://httcup.github.io/tools/quick/): 编解码、哈希、时间戳等小工具合集。

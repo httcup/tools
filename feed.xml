@@ -12,7 +12,142 @@
     <link href="https://httcup.github.io/tools/"/>
     <id>https://httcup.github.io/tools/</id>
     <updated>2026-10-27T02:54:58Z</updated>
-    <summary type="text">在浏览器本地运行的 70 个工具，文件不上传。</summary>
+    <summary type="text">在浏览器本地运行的 87 个工具，文件不上传。</summary>
+  </entry>
+  <entry>
+    <title type="text">Markdown 转 Word</title>
+    <link href="https://httcup.github.io/tools/md-to-word/"/>
+    <id>https://httcup.github.io/tools/md-to-word/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">把 AI 回答或 Markdown 下载成可编辑的 .docx，公式表格保留。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">删除重复行</title>
+    <link href="https://httcup.github.io/tools/dedupe-lines/"/>
+    <id>https://httcup.github.io/tools/dedupe-lines/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">粘贴名单，重复的行只留一条，可忽略大小写和首尾空格。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">删除换行</title>
+    <link href="https://httcup.github.io/tools/remove-line-breaks/"/>
+    <id>https://httcup.github.io/tools/remove-line-breaks/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">修掉从 PDF 复制出来的断行，段落结构可以保留。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">文本排序</title>
+    <link href="https://httcup.github.io/tools/sort-lines/"/>
+    <id>https://httcup.github.io/tools/sort-lines/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">按字母、拼音、长度排序，也能反转或随机打乱。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">随机抽签</title>
+    <link href="https://httcup.github.io/tools/random-picker/"/>
+    <id>https://httcup.github.io/tools/random-picker/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">贴名单抽中奖者，加密级随机数，也能整队打乱。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">BMI 计算器</title>
+    <link href="https://httcup.github.io/tools/bmi/"/>
+    <id>https://httcup.github.io/tools/bmi/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">身高体重一填，按中国成人标准给结论与健康体重范围。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">房贷计算器</title>
+    <link href="https://httcup.github.io/tools/loan/"/>
+    <id>https://httcup.github.io/tools/loan/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">等额本息或等额本金，月供、利息总额当场算清。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">百分比计算器</title>
+    <link href="https://httcup.github.io/tools/percentage/"/>
+    <id>https://httcup.github.io/tools/percentage/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">占比、求百分之几、增减幅，三种问法都算。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">复利计算器</title>
+    <link href="https://httcup.github.io/tools/compound-interest/"/>
+    <id>https://httcup.github.io/tools/compound-interest/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">本金加每月定投，按复利滚到未来值多少。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">日期天数计算</title>
+    <link href="https://httcup.github.io/tools/date-diff/"/>
+    <id>https://httcup.github.io/tools/date-diff/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">两个日期差几天、几周、几个工作日。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">年龄计算器</title>
+    <link href="https://httcup.github.io/tools/age/"/>
+    <id>https://httcup.github.io/tools/age/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">生日填进去：精确周岁、活了多少天、生日倒计时。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">打折计算器</title>
+    <link href="https://httcup.github.io/tools/discount/"/>
+    <id>https://httcup.github.io/tools/discount/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">「打 7.5 折」和「25% OFF」都认，折后价立省多少一秒出。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">单位换算</title>
+    <link href="https://httcup.github.io/tools/unit-converter/"/>
+    <id>https://httcup.github.io/tools/unit-converter/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">长度、重量、温度、面积、数据体积，一个页面换完。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">时区换算</title>
+    <link href="https://httcup.github.io/tools/timezone-converter/"/>
+    <id>https://httcup.github.io/tools/timezone-converter/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">填一个时间，常用时区的对应时间一次排开。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">文字转语音</title>
+    <link href="https://httcup.github.io/tools/text-to-speech/"/>
+    <id>https://httcup.github.io/tools/text-to-speech/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">用系统自带语音朗读文本，调语速音调，中文英文都行。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">在线录音</title>
+    <link href="https://httcup.github.io/tools/voice-recorder/"/>
+    <id>https://httcup.github.io/tools/voice-recorder/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">浏览器直接录音，录完试听、下载，不经过服务器。</summary>
+  </entry>
+
+  <entry>
+    <title type="text">图片格式转换</title>
+    <link href="https://httcup.github.io/tools/image-format-converter/"/>
+    <id>https://httcup.github.io/tools/image-format-converter/</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <summary type="text">JPG、PNG、WebP 互转，批量处理，透明背景可选填色。</summary>
   </entry>
   <entry>
     <title type="text">图片压缩</title>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Markdown 转 Word：AI 回答粘贴成 .docx，公式表格都保留 | 本地工具箱</title>
+<meta name="description" content="把 AI 回答或 Markdown 粘贴进来，或导入 .md / .txt，选好字体字号行距，直接下载可编辑的 Word 文档。标题、列表、表格、LaTeX 公式都转成 Word 原生结构，全程在浏览器本地完成，正文不上传。">
+<link rel="canonical" href="https://httcup.github.io/tools/md-to-word/">
+<meta name="theme-color" content="#f6f7f9">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'; frame-ancestors 'none'">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="本地工具箱">
+<meta property="og:url" content="https://httcup.github.io/tools/md-to-word/">
+<meta property="og:title" content="把 AI 回答存成能继续编辑的 Word">
+<meta property="og:description" content="粘贴 Markdown，选好排版，下载 .docx。公式是 Word 里的公式，表格是 Word 里的表格，正文一个字都不上传。">
+<meta name="twitter:card" content="summary">
+<link rel="alternate" type="text/markdown" href="index.md">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="hub-head">
+  <div class="head-row">
+    <p class="brand">
+      <a class="brand-home" href="../">
+        <svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+          <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+          <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+          <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+        </svg>
+        Tools
+      </a>
+    </p>
+  </div>
+  <nav class="crumbs" aria-label="位置">
+    <a href="../">全部工具</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">Markdown 转 Word</span>
+  </nav>
+  <h1>把 AI 回答转成 Word</h1>
+  <p class="lede">粘贴回答或 Markdown 文本，或导入 .md / .txt，选一套排版，预览没问题就下载 .docx。标题、列表、表格、常见 LaTeX 公式都会变成 Word 里的原生结构，下载后还能接着改。</p>
+</header>
+
+<main id="main" class="tool-main">
+
+  <section class="settings" aria-label="排版设置">
+    <label class="field">
+      <span>字体</span>
+      <select id="opt-font">
+        <option value="微软雅黑" selected>微软雅黑</option>
+        <option value="宋体">宋体</option>
+        <option value="黑体">黑体</option>
+        <option value="等线">等线</option>
+        <option value="楷体">楷体</option>
+      </select>
+    </label>
+    <label class="field">
+      <span>字号</span>
+      <select id="opt-size">
+        <option value="10.5">五号 · 10.5 pt</option>
+        <option value="12" selected>小四 · 12 pt</option>
+        <option value="14">四号 · 14 pt</option>
+        <option value="16">三号 · 16 pt</option>
+      </select>
+    </label>
+    <label class="field">
+      <span>行距</span>
+      <select id="opt-line">
+        <option value="1">单倍</option>
+        <option value="1.15">1.15 倍</option>
+        <option value="1.5" selected>1.5 倍</option>
+        <option value="2">2 倍</option>
+      </select>
+    </label>
+    <label class="field">
+      <span>页边距</span>
+      <select id="opt-margin">
+        <option value="1.91">窄 · 1.91 cm</option>
+        <option value="2.54" selected>普通 · 2.54 cm</option>
+        <option value="3.17">宽 · 3.17 cm</option>
+      </select>
+    </label>
+    <label class="field field-check">
+      <input type="checkbox" id="opt-indent">
+      <span>正文首行缩进 2 字符</span>
+    </label>
+    <label class="field field-name">
+      <span>文件名</span>
+      <input type="text" id="opt-name" value="文档" autocomplete="off" spellcheck="false">
+    </label>
+    <button type="button" class="btn btn-primary" id="download">下载 Word</button>
+  </section>
+
+  <div class="work">
+    <section class="panel panel-editor" aria-label="Markdown 输入">
+      <div class="panel-head">
+        <h2>粘贴内容</h2>
+        <div class="panel-actions">
+          <label class="btn btn-ghost" for="file">导入 .md / .txt</label>
+          <input type="file" id="file" accept=".md,.markdown,.txt,text/plain,text/markdown" hidden>
+          <button type="button" class="btn btn-ghost" id="sample">载入示例</button>
+          <button type="button" class="btn btn-ghost" id="clear">清空</button>
+        </div>
+      </div>
+      <textarea id="input" spellcheck="false" autocomplete="off" placeholder="把 AI 回答或 Markdown 粘到这里，例如：
+
+# 标题
+正文段落，支持 **加粗**、*斜体*、`行内代码`。
+- 列表项
+- 另一个
+
+| 项目 | 数值 |
+| --- | --- |
+| 转化率 | 3.2% |
+
+行内公式 $E = mc^2$，块级公式：
+
+$$
+\int_0^1 x^2\,dx = \frac{1}{3}
+$$"></textarea>
+      <p class="panel-foot" id="stats" aria-live="polite">等待输入</p>
+    </section>
+
+    <section class="panel panel-preview" aria-label="预览">
+      <div class="panel-head">
+        <h2>预览</h2>
+        <span class="panel-note">示意用，分页与字体细节以下载后的 Word 为准</span>
+      </div>
+      <div class="paper-scroll">
+        <div class="paper" id="preview">
+          <p class="pv-empty">左边粘贴内容，这里会实时显示排版效果。</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <p class="notice" id="notice" role="status" hidden></p>
+
+  <section class="facts" aria-label="处理方式">
+    <article class="fact">
+      <h2>正文不上传</h2>
+      <p>解析和打包都在这个页面里完成。转换过程不发起任何网络请求，关掉页面内容就没了，也不存草稿。</p>
+    </article>
+    <article class="fact">
+      <h2>公式是真公式</h2>
+      <p>识别 <code>$…$</code>、<code>$$…$$</code>、<code>\(…\)</code>、<code>\[…\]</code>，写成 Word 的公式对象，可以继续编辑。认不出的语法按原样保留，不丢内容。</p>
+    </article>
+    <article class="fact">
+      <h2>图片只留文字</h2>
+      <p>不访问内容里的图片地址，图片按「［图片：说明］」保留位置提示，避免转换时向外请求图片源站。</p>
+    </article>
+  </section>
+
+  <section class="faq" aria-label="常见问题">
+    <h2>常见问题</h2>
+    <details>
+      <summary>会把 ChatGPT、DeepSeek、Claude 的回答转成 Word 吗？</summary>
+      <p>会。复制回答里的 Markdown 原文（不是截图）粘到左边，预览确认后点「下载 Word」。公式要保留成可编辑形式，就得是 LaTeX 标记，截图的公式认不出来。</p>
+    </details>
+    <details>
+      <summary>为什么不直接复制粘贴到 Word？</summary>
+      <p>网页复制到 Word 常常丢掉标题层级、表格边框和公式。这里先把 Markdown 解析成结构，再写成 Word 自己的标题、列表编号、表格和公式对象，排版稳定得多。</p>
+    </details>
+    <details>
+      <summary>支持哪些公式语法？</summary>
+      <p>分式、根号、上下标、求和与积分、括号、常用希腊字母与运算符、矩阵和 cases 环境。语法错误或不支持的写法会原样保留并给出提示，可以下载后在 Word 里手改。</p>
+    </details>
+    <details>
+      <summary>生成的 .docx 用什么打开？</summary>
+      <p>Word 2007 及以上、WPS、Pages、Google Docs、LibreOffice 都能打开。字体按你选的走，机器上没装该字体会自动替换，最终分页以本机 Word 为准。</p>
+    </details>
+    <details>
+      <summary>内容会留在浏览器里吗？</summary>
+      <p>不会。没有本地存储、没有草稿、没有历史记录，刷新或关闭页面内容就消失。要留就先下载。</p>
+    </details>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-cols">
+    <div class="footer-col footer-brand">
+      <a class="home-link" href="../">
+        <svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+          <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+          <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+          <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+        </svg>
+        Tools
+      </a>
+      <p>在你的设备上处理文件的工具。无需上传文件进行处理，也无需创建账户。</p>
+    </div>
+    <div class="footer-col footer-site">
+      <strong>本站</strong>
+      <ul>
+        <li><a href="../">全部工具</a></li>
+        <li><a href="../guides/">全部指南</a></li>
+        <li><a href="../about/">关于本站</a></li>
+        <li><a href="../privacy/">隐私与 Cookie</a></li>
+        <li><a href="../sitemap.xml">站点地图</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <strong>相关工具</strong>
+      <ul>
+        <li><a href="../images-to-pdf/">图片合成 PDF</a></li>
+        <li><a href="../merge-pdf/">PDF 合并与拆分</a></li>
+        <li><a href="../text-diff/">文本比对</a></li>
+        <li><a href="../format-json/">JSON 格式化</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="footer-base">所有处理都在你的浏览器里完成。</p>
+</footer>
+
+<script src="js/markdown.js"></script>
+<script src="js/math.js"></script>
+<script src="js/docx.js"></script>
+<script src="js/docx-preview.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

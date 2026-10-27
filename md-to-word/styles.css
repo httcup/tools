@@ -1,0 +1,430 @@
+/* Markdown 转 Word —— 页面样式。变量沿用 site.css，深色模式自动跟随系统。 */
+
+.hub-head,
+footer { max-width: 1180px; }
+
+.tool-main { max-width: 1180px; }
+
+.crumbs { padding-top: 0.6rem; }
+
+/* ---------- 设置条 ---------- */
+
+.settings {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.75rem 1rem;
+  margin: 1.6rem 0 1rem;
+  padding: 0.9rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.28rem;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+
+.field > span { letter-spacing: 0.02em; }
+
+.field select,
+.field input[type="text"] {
+  min-height: 38px;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.88rem;
+}
+
+.field input[type="text"] { width: 9.5rem; }
+
+.field select:focus-visible,
+.field input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.field-check {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 38px;
+  color: var(--text);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.field-check input { width: 1rem; height: 1rem; accent-color: var(--accent); }
+
+.field-name { margin-inline-start: auto; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0.4rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: border-color 0.12s, background 0.12s, color 0.12s;
+}
+
+.btn:hover { border-color: var(--accent); color: var(--accent); }
+
+.btn-primary {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--accent-text);
+  font-weight: 600;
+  padding-inline: 1.15rem;
+}
+
+.btn-primary:hover {
+  background: var(--accent-deep);
+  border-color: var(--accent-deep);
+  color: var(--accent-text);
+}
+
+.btn-primary[disabled] { opacity: 0.6; cursor: progress; }
+
+.btn-ghost {
+  min-height: 32px;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.8rem;
+  background: transparent;
+  color: var(--text-dim);
+}
+
+/* ---------- 两块面板 ---------- */
+
+.work {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: min(66vh, 720px);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.panel-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem 0.75rem;
+  padding: 0.7rem 0.9rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-2);
+}
+
+.panel-head h2 {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.panel-actions { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+
+.panel-note { font-size: 0.75rem; color: var(--text-dim); }
+
+#input {
+  flex: 1;
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 0;
+  resize: none;
+  background: var(--surface);
+  color: var(--text);
+  font: 0.87rem/1.65 ui-monospace, SFMono-Regular, "Cascadia Mono", Consolas, "PingFang SC", monospace;
+  tab-size: 2;
+}
+
+#input:focus-visible { outline: none; }
+
+.panel-editor:focus-within { border-color: var(--accent); }
+
+.panel-foot {
+  margin: 0;
+  padding: 0.5rem 0.9rem;
+  border-top: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text-dim);
+  font-size: 0.76rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.paper-scroll {
+  flex: 1;
+  overflow: auto;
+  padding: 1rem;
+  background: var(--surface-2);
+}
+
+/* 预览纸面：代表 Word 里的正文，固定白底，不跟随深色模式 */
+
+.paper {
+  --pv-font: "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+  --pv-size: 16px;
+  --pv-line: 1.5;
+  --pv-pad: 2.54cm;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: var(--pv-pad);
+  background: #ffffff;
+  color: #16191d;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgb(16 24 40 / 12%), 0 8px 24px -12px rgb(16 24 40 / 24%);
+  font-family: var(--pv-font);
+  font-size: var(--pv-size);
+  line-height: var(--pv-line);
+  overflow-wrap: break-word;
+}
+
+.paper h1, .paper h2, .paper h3,
+.paper h4, .paper h5, .paper h6 {
+  margin: 1.1em 0 0.45em;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #16191d;
+}
+
+.paper h1 { font-size: 1.75em; margin-top: 0; }
+.paper h2 { font-size: 1.45em; }
+.paper h3 { font-size: 1.25em; }
+.paper h4 { font-size: 1.1em; }
+.paper h5, .paper h6 { font-size: 1em; }
+
+.paper p { margin: 0 0 0.75em; }
+
+.paper.indent p { text-indent: 2em; }
+
+.paper ul, .paper ol { margin: 0 0 0.8em; padding-inline-start: 1.7em; }
+.paper li { margin: 0.2em 0; }
+.paper li > ul, .paper li > ol { margin: 0.2em 0 0.2em; }
+
+.paper blockquote {
+  margin: 0 0 0.9em;
+  padding: 0.15em 0 0.15em 0.85em;
+  border-left: 3px solid #c9d0d9;
+  color: #4a5260;
+  font-style: italic;
+}
+
+.paper blockquote p:last-child { margin-bottom: 0; }
+
+.paper code {
+  padding: 0.1em 0.3em;
+  background: #f1f3f5;
+  border-radius: 4px;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.9em;
+}
+
+.paper pre.pv-code {
+  margin: 0 0 0.9em;
+  padding: 0.7em 0.85em;
+  background: #f6f8fa;
+  border: 1px solid #e4e8ec;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.85em;
+  line-height: 1.55;
+}
+
+.paper pre.pv-code code { padding: 0; background: none; font-size: 1em; }
+
+.paper a { color: #0563c1; text-decoration: underline; }
+
+.paper hr { margin: 1.2em 0; border: 0; border-top: 1px solid #e4e8ec; }
+
+.pv-table-wrap { margin: 0 0 0.9em; overflow-x: auto; }
+
+.paper table { width: 100%; border-collapse: collapse; font-size: 0.92em; }
+
+.paper th, .paper td {
+  padding: 0.4em 0.6em;
+  border: 1px solid #d5dae0;
+  vertical-align: top;
+  text-align: start;
+}
+
+.paper thead th { background: #f2f4f7; font-weight: 700; }
+
+.pv-img, .pv-img-row { color: #8a94a6; font-style: italic; }
+
+.pv-empty { color: #8a94a6; }
+
+.pv-math-row { margin: 0.6em 0; text-align: center; }
+
+/* ---------- 公式预览 ---------- */
+
+.pv-math {
+  font-family: "Cambria Math", "Latin Modern Math", "STIX Two Math", serif;
+  font-size: 1.06em;
+  white-space: nowrap;
+}
+
+.pv-math-block { display: inline-block; }
+
+.m-frac {
+  display: inline-flex;
+  flex-direction: column;
+  vertical-align: -0.45em;
+  text-align: center;
+  margin: 0 0.12em;
+}
+
+.m-frac > .m-num,
+.m-frac > .m-den { padding: 0 0.2em; line-height: 1.25; }
+
+.m-frac > .m-den { border-top: 1px solid currentColor; }
+.m-nobar > .m-den { border-top: 0; }
+
+.m-sqrt { display: inline-flex; align-items: baseline; }
+.m-deg { font-size: 0.62em; vertical-align: 0.6em; margin-inline-end: -0.2em; }
+.m-radic { padding-inline-end: 0.02em; }
+.m-under { border-top: 1px solid currentColor; padding: 0 0.12em; }
+
+.pv-math sup, .pv-math sub { font-size: 0.68em; line-height: 0; }
+
+.m-ss {
+  display: inline-flex;
+  flex-direction: column;
+  font-size: 0.68em;
+  line-height: 1.05;
+  vertical-align: -0.15em;
+}
+
+.m-ss sup, .m-ss sub { font-size: 1em; line-height: 1.05; vertical-align: baseline; }
+
+.m-limits {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  line-height: 1.05;
+  margin: 0 0.15em;
+}
+
+.m-lim-sup, .m-lim-sub { font-size: 0.62em; }
+
+.m-bigop { font-size: 1.5em; line-height: 1; }
+
+.m-int { display: inline-flex; align-items: center; }
+.m-int-scripts { display: flex; flex-direction: column; font-size: 0.6em; line-height: 1.05; }
+
+.m-delim { display: inline-flex; align-items: center; gap: 0.06em; }
+
+.m-matrix { display: inline-flex; flex-direction: column; vertical-align: middle; margin: 0 0.1em; }
+.m-mrow { display: flex; }
+.m-mcell { padding: 0.05em 0.35em; text-align: center; }
+
+.m-up { font-style: normal; }
+.m-b { font-weight: 700; }
+.m-sp { display: inline-block; width: 0.22em; }
+
+.m-acc { position: relative; display: inline-block; }
+.m-acc-mark { position: absolute; inset-inline-start: 50%; top: -0.7em; transform: translateX(-50%); font-size: 0.85em; }
+.m-acc-body { display: inline-block; }
+
+.m-bar-top { text-decoration: overline; }
+.m-bar-bot { text-decoration: underline; }
+.m-boxed { border: 1px solid currentColor; padding: 0 0.2em; }
+
+/* ---------- 提示与说明 ---------- */
+
+.notice {
+  margin: 0.9rem 0 0;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, var(--border));
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.notice[hidden] { display: none; }
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.9rem;
+  margin: 1.5rem 0 0;
+}
+
+.fact {
+  padding: 0.95rem 1.1rem;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.fact h2 {
+  margin: 0 0 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.fact p { margin: 0; font-size: 0.84rem; line-height: 1.6; color: var(--text-dim); }
+.fact code { font-size: 0.85em; }
+
+.faq { max-width: 68ch; margin: 1.75rem 0 0; }
+.faq h2 { margin: 0 0 0.6rem; font-size: 1.05rem; }
+
+.faq details {
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.faq summary {
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  list-style-position: inside;
+}
+
+.faq summary::marker { color: var(--text-dim); }
+
+.faq details p {
+  margin: 0.5rem 0 0.1rem;
+  font-size: 0.87rem;
+  line-height: 1.65;
+  color: var(--text-dim);
+}
+
+@media (max-width: 900px) {
+  .work { grid-template-columns: minmax(0, 1fr); }
+  .panel { height: auto; }
+  .panel-editor { min-height: 46vh; }
+  .panel-preview { min-height: 60vh; }
+  .field-name { margin-inline-start: 0; }
+  .field-name input[type="text"] { width: 100%; }
+  .settings { align-items: stretch; }
+  .field { flex: 1 1 8rem; }
+  .field-check { flex: 1 1 100%; }
+  .btn-primary { flex: 1 1 100%; }
+}

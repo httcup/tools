@@ -37,6 +37,9 @@
       '<a class="sb-home" href="' + BASE + '">' +
       '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>' +
       '全部工具</a>' +
+      '<button type="button" class="sb-scan" aria-label="用手机扫码打开本页" title="用手机扫码打开本页">' +
+      '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4z"/><path d="M14 14h2.5v2.5h-2.5zM17.5 17.5H20V20h-2.5zM14 17.5h2.5V20H14zM17.5 14H20v2.5h-2.5z"/></svg>' +
+      '<span>手机扫码</span></button>' +
       '<button type="button" class="sb-close" aria-label="关闭导航">&times;</button>' +
       '</div>';
     html += '<div class="sb-search"><input type="search" placeholder="搜索工具…" aria-label="搜索工具"></div>';
@@ -99,6 +102,7 @@
         return;
       }
       if (e.target.closest('.sb-close')) { setOpen(false); }
+      if (e.target.closest('.sb-scan')) { openQr(); }
     });
 
     /* 展开分类后若列表很长，让当前项滚进视野 */
@@ -144,6 +148,55 @@
     var backdrop = document.getElementById('sidebar-backdrop');
     if (backdrop) backdrop.classList.toggle('sb-show', open);
   }
+
+  /* ---------- 手机扫码：弹出当前页二维码，手机扫码直接打开 ---------- */
+
+  function loadQrLib() {
+    if (window.qrcode) return Promise.resolve();
+    return new Promise(function (ok, fail) {
+      var s = document.createElement('script');
+      s.src = BASE + 'js/qrcode.min.js';
+      s.onload = ok;
+      s.onerror = fail;
+      document.head.appendChild(s);
+    });
+  }
+
+  function closeQr() {
+    var back = document.querySelector('.sb-qr-backdrop');
+    if (back) back.remove();
+  }
+
+  function openQr() {
+    closeQr();
+    var back = document.createElement('div');
+    back.className = 'sb-qr-backdrop';
+    back.innerHTML =
+      '<div class="sb-qr-modal" role="dialog" aria-modal="true" aria-label="手机扫码打开本页">' +
+      '<button type="button" class="sb-qr-close" aria-label="关闭">&times;</button>' +
+      '<h3>用手机打开本页</h3>' +
+      '<div class="sb-qr-box">生成中…</div>' +
+      '<p>用手机扫码，随时随地打开这个页面</p>' +
+      '<code class="sb-qr-url"></code>' +
+      '</div>';
+    back.addEventListener('click', function (e) { if (e.target === back) closeQr(); });
+    back.querySelector('.sb-qr-close').addEventListener('click', closeQr);
+    back.querySelector('.sb-qr-url').textContent = location.href;
+    document.body.appendChild(back);
+    loadQrLib().then(function () {
+      var q = window.qrcode(0, 'M');
+      q.addData(location.href);
+      q.make();
+      back.querySelector('.sb-qr-box').innerHTML =
+        q.createSvgTag({ cellSize: 4, margin: 0, scalable: true });
+    }).catch(function () {
+      back.querySelector('.sb-qr-box').textContent = '二维码生成失败';
+    });
+  }
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeQr();
+  });
 
   /* 首页：外部筛选变化时同步侧栏高亮（chips 点击 / 搜索重置） */
   function syncHome() {

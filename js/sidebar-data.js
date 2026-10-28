@@ -325,6 +325,11 @@ window.SIDEBAR_CATS = [
     "slug": "midi-keyboard",
     "name": "虚拟键盘钢琴",
     "href": "./midi-keyboard/"
+   },
+   {
+    "slug": "md-notes",
+    "name": "笔记存为.md",
+    "href": "./md-notes/"
    }
   ]
  },

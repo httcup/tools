@@ -1,0 +1,27 @@
+# 笔记存为 .md：随手记，一键导出 Markdown 文件
+
+左边写、右边看效果，每敲一句自动保存在浏览器里；写完点「下载 .md」就得到一份干净的纯文本笔记。可以同时开多本笔记、导入已有的 .md 文件、把全部笔记备份成一个文件。笔记只存在这台设备的浏览器里，不上传、不同步、不注册。
+
+页面地址：https://httcup.github.io/tools/md-notes/
+
+## 怎么用
+
+1. 点左侧「新建笔记」，在标题栏写名字，正文里按 Markdown 语法记录内容。
+2. 右侧实时预览；顶部工具条可以插入标题、粗体、列表、待办、表格、代码块。
+3. 点「下载 .md」保存当前这本，或点「备份全部」把所有笔记合成一份 .md 文件。
+4. 换设备或重装系统前，先用「备份全部」导出一份文件；「导入 .md」可以把它读回来。
+
+## 能力与限制
+
+- 支持标题、粗体／斜体／删除线、行内代码、围栏代码块、引用、有序／无序／嵌套列表、待办清单、管道表格、分割线、链接与裸网址。
+- 快捷键：⌘/Ctrl + S 立即保存，⌘/Ctrl + B 粗体，⌘/Ctrl + I 斜体，⌘/Ctrl + K 插入链接，Tab 缩进两格。
+- 预览只渲染语法，不执行原文里的 HTML 和脚本，也不加载远端图片。
+- 笔记保存在浏览器 localStorage 中：清理站点数据会一起删除，重要内容请导出留档。
+- 全程本地完成：不发起网络请求、不上传正文、没有账号与同步。
+
+## 相关工具
+
+- [Markdown 转 Word](https://httcup.github.io/tools/md-to-word/)
+- [Markdown 编辑器](https://httcup.github.io/tools/markdown-editor/)
+- [文本比对](https://httcup.github.io/tools/text-diff/)
+- [文本统计](https://httcup.github.io/tools/quick/#textstats)

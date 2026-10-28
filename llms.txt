@@ -1,6 +1,6 @@
 # 本地工具箱 Local Web Tools
 
-> 183 个单用途浏览器工具：图片压缩与转换、PDF 处理、视频音频编辑、文本编码、密码生成、双设备直连。所有处理在浏览器本地完成，文件不上传、无需注册。
+> 184 个单用途浏览器工具：图片压缩与转换、PDF 处理、视频音频编辑、文本编码、密码生成、双设备直连。所有处理在浏览器本地完成，文件不上传、无需注册。
 
 页面地址以 https://httcup.github.io/tools/ 为前缀。
 
@@ -59,7 +59,7 @@
 - [音频剪辑](https://httcup.github.io/tools/trim-audio/): 边听边标出值得留的段落。它们会合成一个文件回来，就切在你说的位置。
 - [音频编辑](https://httcup.github.io/tools/edit-audio/): 倒着放、快慢随你调、把录轻了的声音提上来，全在你这台机器上。
 - [Markdown 转 Word](https://httcup.github.io/tools/md-to-word/): 把 AI 回答或 Markdown 下载成可编辑的 .docx，公式表格保留。
-
+- [笔记存为.md](https://httcup.github.io/tools/md-notes/): 记完直接存成 .md 文件。
 
 ### 文本、编码与密码
 - [JSON 格式化](https://httcup.github.io/tools/json-formatter/): JSON、XML、HTML、CSS 和 YAML，格式化或转换。没有一个字被贴进别人的服务器。

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>笔记存为 .md：随手记，一键导出 Markdown 文件 | 本地工具箱</title>
+<meta name="description" content="左边写、右边看，多本笔记自动存在浏览器里；写完点一下就是干净的 .md 文件，也能导入已有 Markdown、一次性备份全部笔记。全程本地处理，笔记不上传。">
+<link rel="canonical" href="https://httcup.github.io/tools/md-notes/">
+<meta name="theme-color" content="#f6f7f9">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'; frame-ancestors 'none'">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="本地工具箱">
+<meta property="og:url" content="https://httcup.github.io/tools/md-notes/">
+<meta property="og:title" content="笔记存为 .md — 写完就是一份 Markdown 文件">
+<meta property="og:description" content="多本笔记、实时预览、自动保存，导出就是干净的 .md。笔记只留在这台设备的浏览器里。">
+<meta name="twitter:card" content="summary">
+<link rel="alternate" type="text/markdown" href="index.md">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="nb-page">
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="hub-head">
+  <div class="head-row">
+    <p class="brand">
+      <a class="brand-home" href="../">
+        <svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+          <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+          <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+          <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+        </svg>
+        Tools
+      </a>
+    </p>
+  </div>
+  <nav class="crumbs" aria-label="位置">
+    <a href="../">全部工具</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">笔记存为.md</span>
+  </nav>
+  <h1>笔记存为.md</h1>
+  <p class="lede">左边记事，右边就是最终样子；每敲一句都自动留在浏览器里。写完点「下载 .md」，得到一份直接能丢进 Obsidian、Typora 或仓库的纯文本笔记。可以开多本、导入旧文件、一次备份全部。</p>
+</header>
+
+<main id="main" class="tool-main">
+
+  <section class="nb-app" aria-label="Markdown 笔记本">
+    <aside class="nb-side" aria-label="笔记列表">
+      <div class="nb-side-head">
+        <button class="nb-new" id="newNote" type="button">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          新建笔记
+        </button>
+        <label class="nb-search">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.2 16.2 4.3 4.3"/></svg>
+          <input id="q" type="search" placeholder="搜索标题或内容" aria-label="搜索笔记" autocomplete="off">
+        </label>
+      </div>
+      <ul class="nb-notes" id="noteList"></ul>
+      <p class="nb-empty" id="noteEmpty" hidden>还没有匹配的笔记</p>
+      <div class="nb-side-foot">
+        <button class="nb-ghost" id="importBtn" type="button">导入 .md</button>
+        <button class="nb-ghost" id="exportAll" type="button">备份全部</button>
+        <input id="file" type="file" accept=".md,.markdown,.txt,text/markdown,text/plain" multiple hidden>
+      </div>
+    </aside>
+
+    <section class="nb-editor" aria-label="编辑与预览">
+      <div class="nb-bar">
+        <input id="title" class="nb-title" placeholder="无标题笔记" aria-label="笔记标题" autocomplete="off" spellcheck="false">
+        <span class="nb-state" id="state" aria-live="polite">已保存</span>
+        <div class="nb-actions">
+          <button class="btn btn-primary" id="download" type="button">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 21h16"/></svg>
+            下载 .md
+          </button>
+          <button class="btn" id="copy" type="button">复制</button>
+          <button class="btn btn-quiet" id="remove" type="button">删除</button>
+        </div>
+      </div>
+
+      <div class="nb-views" role="tablist" aria-label="视图切换">
+        <button class="nb-view is-on" type="button" role="tab" aria-selected="true" data-view="write">编辑</button>
+        <button class="nb-view" type="button" role="tab" aria-selected="false" data-view="read">预览</button>
+      </div>
+
+      <div class="nb-split" id="split" data-view="write">
+        <div class="nb-pane nb-write">
+          <div class="nb-tools" id="toolbar" role="toolbar" aria-label="插入 Markdown 语法">
+            <button type="button" data-md="h2" title="二级标题">H2</button>
+            <button type="button" data-md="h3" title="三级标题">H3</button>
+            <span class="nb-sep" aria-hidden="true"></span>
+            <button type="button" data-md="bold" title="粗体（⌘/Ctrl + B）"><b>B</b></button>
+            <button type="button" data-md="italic" title="斜体（⌘/Ctrl + I）"><i>I</i></button>
+            <button type="button" data-md="strike" title="删除线"><s>S</s></button>
+            <button type="button" data-md="code" title="行内代码">`code`</button>
+            <span class="nb-sep" aria-hidden="true"></span>
+            <button type="button" data-md="ul" title="无序列表">• 列表</button>
+            <button type="button" data-md="ol" title="有序列表">1. 列表</button>
+            <button type="button" data-md="task" title="待办清单">☐ 待办</button>
+            <button type="button" data-md="quote" title="引用">❝</button>
+            <span class="nb-sep" aria-hidden="true"></span>
+            <button type="button" data-md="link" title="链接（⌘/Ctrl + K）">链接</button>
+            <button type="button" data-md="table" title="插入表格">表格</button>
+            <button type="button" data-md="codeblock" title="代码块">代码块</button>
+            <button type="button" data-md="hr" title="分割线">—</button>
+          </div>
+          <textarea id="src" spellcheck="false" aria-label="Markdown 正文"
+            placeholder="在这里写点什么……&#10;&#10;支持 # 标题、**粗体**、- 列表、> 引用、| 表格 |、``` 代码块 ```"></textarea>
+        </div>
+        <div class="nb-pane nb-read">
+          <article id="prev" class="nb-prev" aria-label="预览"></article>
+          <p class="nb-prev-empty" id="prevEmpty" hidden>还没有内容，随便写一句试试。</p>
+        </div>
+      </div>
+
+      <div class="nb-status">
+        <span id="stat">0 字 · 1 行</span>
+        <span class="nb-hint">⌘/Ctrl + S 保存 · Tab 缩进 · 笔记只存在这台设备</span>
+      </div>
+    </section>
+  </section>
+
+  <p class="nb-toast" id="toast" role="status" aria-live="polite" hidden></p>
+
+  <section class="facts" aria-label="处理方式">
+    <article class="fact"><h2>只留在本机</h2><p>笔记写进浏览器的本地存储，没有账号、没有同步、没有任何请求发出。清理浏览器站点数据会把它们一起删掉，重要的内容记得点「下载 .md」留一份文件。</p></article>
+    <article class="fact"><h2>打开就是 .md</h2><p>导出的就是纯文本 Markdown，不夹带样式和内嵌数据。Obsidian、Typora、VS Code、GitHub 都能直接打开，也能再导入回来接着改。</p></article>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-cols">
+    <div class="footer-col footer-brand">
+      <a class="home-link" href="../">
+        <svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+          <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+          <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+          <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+        </svg>
+        Tools
+      </a>
+      <p>在你的设备上处理文件的工具。无需上传文件进行处理，也无需创建账户。</p>
+    </div>
+    <div class="footer-col footer-site">
+      <strong>本站</strong>
+      <ul>
+        <li><a href="../">全部工具</a></li>
+        <li><a href="../guides/">全部指南</a></li>
+        <li><a href="../about/">关于本站</a></li>
+        <li><a href="../privacy/">隐私与 Cookie</a></li>
+        <li><a href="../sitemap.xml">站点地图</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <strong>相关工具</strong>
+      <ul>
+        <li><a href="../md-to-word/">Markdown 转 Word</a></li>
+        <li><a href="../markdown-editor/">Markdown 编辑器</a></li>
+        <li><a href="../text-diff/">文本比对</a></li>
+        <li><a href="../quick/#textstats">文本统计</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="markdown.js"></script>
+<script src="app.js"></script>
+<script src="../toolkit.js"></script>
+<link rel="stylesheet" href="../sidebar.css">
+<div id="site-sidebar" data-base="../"></div>
+<div id="sidebar-backdrop"></div>
+<button id="sidebar-toggle" type="button" aria-label="打开分类导航"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>分类</button>
+<script src="../js/sidebar-data.js"></script>
+<script src="../sidebar.js"></script>
+</body>
+</html>

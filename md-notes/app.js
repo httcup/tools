@@ -498,6 +498,40 @@
     hr: function () { insertAtCaret('\n\n---\n\n'); }
   };
 
+  /* ---------- 界面折叠（左侧列表 / 右侧预览） ---------- */
+
+  var UIKEY = 'mdnotes.ui.v1';
+  var appEl = document.querySelector('.nb-app');
+  var sideToggle = $('sideToggle');
+  var prevToggle = $('prevToggle');
+  var ui = { side: true, prev: true };
+
+  try {
+    var savedUi = JSON.parse(localStorage.getItem(UIKEY) || 'null');
+    if (savedUi && typeof savedUi.side === 'boolean' && typeof savedUi.prev === 'boolean') {
+      ui = savedUi;
+    }
+  } catch (e) { /* 状态坏了就当默认展开 */ }
+
+  function applyUi() {
+    appEl.classList.toggle('side-hidden', !ui.side);
+    splitEl.classList.toggle('prev-hidden', !ui.prev);
+    sideToggle.setAttribute('aria-pressed', String(ui.side));
+    prevToggle.setAttribute('aria-pressed', String(ui.prev));
+    try { localStorage.setItem(UIKEY, JSON.stringify(ui)); } catch (e) {}
+  }
+
+  sideToggle.addEventListener('click', function () {
+    ui.side = !ui.side;
+    applyUi();
+  });
+
+  prevToggle.addEventListener('click', function () {
+    ui.prev = !ui.prev;
+    applyUi();
+    if (ui.prev) renderPreview();
+  });
+
   /* ---------- 事件绑定 ---------- */
 
   listEl.addEventListener('click', function (e) {
@@ -584,5 +618,6 @@
 
   load();
   paint();
+  applyUi();
   if (!data.notes.length) newNote();
 })();

@@ -70,6 +70,15 @@
 
     <section class="nb-editor" aria-label="编辑与预览">
       <div class="nb-bar">
+        <div class="nb-bar-toggles">
+          <button class="btn btn-icon" id="sideToggle" type="button" title="收起 / 展开左侧笔记列表" aria-pressed="true">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </button>
+          <button class="btn btn-icon btn-prev" id="prevToggle" type="button" title="收起 / 展开右侧实时预览" aria-pressed="true">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12Z"/><circle cx="12" cy="12" r="2.6"/></svg>
+            预览
+          </button>
+        </div>
         <input id="title" class="nb-title" placeholder="无标题笔记" aria-label="笔记标题" autocomplete="off" spellcheck="false">
         <span class="nb-state" id="state" aria-live="polite">已保存</span>
         <div class="nb-actions">
@@ -109,7 +118,7 @@
             <button type="button" data-md="hr" title="分割线">—</button>
           </div>
           <textarea id="src" spellcheck="false" aria-label="Markdown 正文"
-            placeholder="在这里写点什么……&#10;&#10;支持 # 标题、**粗体**、- 列表、> 引用、| 表格 |、``` 代码块 ```"></textarea>
+            placeholder="在这里写点什么……&#10;&#10;支持 # 标题、**粗体**、- 列表、> 引用、| 表格 |、``` 代码块 ```&#10;&#10;提示：笔记只存在当前浏览器里（不同步），换设备或清理浏览器数据前记得点「下载 .md」导出一份，建议是记完就直接下载一份。"></textarea>
         </div>
         <div class="nb-pane nb-read">
           <article id="prev" class="nb-prev" aria-label="预览"></article>

@@ -13,7 +13,7 @@ footer { max-width: 1180px; }
   display: grid;
   grid-template-columns: 236px minmax(0, 1fr);
   grid-template-rows: minmax(0, 1fr);
-  height: min(74vh, 720px);
+  height: min(78vh, 780px);
   min-height: 480px;
   margin: 1.5rem 0 0;
   background: var(--surface);
@@ -21,6 +21,15 @@ footer { max-width: 1180px; }
   border-radius: 12px;
   box-shadow: var(--shadow);
   overflow: hidden;
+  transition: grid-template-columns 0.2s ease;
+}
+
+/* 折叠态：左侧列表收起 */
+.nb-app.side-hidden { grid-template-columns: 0 minmax(0, 1fr); }
+.nb-app.side-hidden .nb-side {
+  visibility: hidden;
+  border-inline-end-color: transparent;
+  transition: visibility 0.2s;
 }
 
 /* ---------- 左侧笔记列表 ---------- */
@@ -28,7 +37,9 @@ footer { max-width: 1180px; }
 .nb-side {
   display: flex;
   flex-direction: column;
+  min-width: 0;
   min-height: 0;
+  overflow: hidden;
   background: var(--surface-2);
   border-inline-end: 1px solid var(--border);
 }
@@ -54,9 +65,10 @@ footer { max-width: 1180px; }
   font-size: 0.84rem;
   font-weight: 600;
   cursor: pointer;
+  transition: filter 0.12s ease, box-shadow 0.12s ease;
 }
 
-.nb-new:hover { filter: brightness(1.06); }
+.nb-new:hover { filter: brightness(1.06); box-shadow: 0 2px 8px color-mix(in srgb, var(--accent) 30%, transparent); }
 
 .nb-search {
   display: flex;
@@ -107,6 +119,7 @@ footer { max-width: 1180px; }
   font: inherit;
   text-align: start;
   cursor: pointer;
+  transition: background 0.12s ease, border-color 0.12s ease, box-shadow 0.12s ease;
 }
 
 .nb-note:hover { background: color-mix(in srgb, var(--accent) 8%, transparent); }
@@ -114,7 +127,7 @@ footer { max-width: 1180px; }
 .nb-note[aria-current="true"] {
   background: var(--surface);
   border-color: var(--border);
-  box-shadow: 0 1px 2px rgb(16 24 40 / 6%);
+  box-shadow: inset 3px 0 0 var(--accent), 0 1px 2px rgb(16 24 40 / 6%);
 }
 
 .nb-note-t {
@@ -230,6 +243,7 @@ footer { max-width: 1180px; }
   font: inherit;
   font-size: 0.8rem;
   cursor: pointer;
+  transition: border-color 0.12s ease, color 0.12s ease, background 0.12s ease, filter 0.12s ease;
 }
 
 .btn:hover { border-color: var(--accent); color: var(--accent); }
@@ -245,6 +259,34 @@ footer { max-width: 1180px; }
 
 .btn-quiet { border-color: transparent; color: var(--text-dim); }
 .btn-quiet:hover { border-color: color-mix(in srgb, #d94a4a 45%, var(--border)); color: #d94a4a; }
+
+/* 顶栏折叠按钮 */
+
+.nb-bar-toggles {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  flex: none;
+}
+
+.btn-icon {
+  min-height: 34px;
+  min-width: 34px;
+  padding: 0.3rem 0.45rem;
+  color: var(--text-dim);
+}
+
+.btn-icon:hover { background: var(--surface-2); }
+
+.btn-icon[aria-pressed="false"] {
+  border-color: transparent;
+  background: none;
+  color: var(--text-dim);
+  opacity: 0.62;
+}
+
+.btn-prev { padding-inline: 0.6rem; font-size: 0.78rem; }
+.btn-prev[aria-pressed="false"] { text-decoration: line-through; }
 
 /* 移动端视图切换（桌面隐藏） */
 
@@ -272,7 +314,13 @@ footer { max-width: 1180px; }
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   grid-template-rows: minmax(0, 1fr);
   min-height: 0;
+  transition: grid-template-columns 0.2s ease;
 }
+
+/* 折叠态：右侧预览收起，编辑区占满 */
+.nb-split.prev-hidden { grid-template-columns: minmax(0, 1fr); }
+.nb-split.prev-hidden .nb-read { display: none; }
+.nb-split.prev-hidden .nb-write { border-inline-end: 0; }
 
 .nb-pane {
   display: flex;
@@ -331,7 +379,7 @@ footer { max-width: 1180px; }
 .nb-read {
   overflow-y: auto;
   overscroll-behavior: contain;
-  background: var(--surface);
+  background: color-mix(in srgb, var(--accent) 2.5%, var(--surface));
 }
 
 .nb-prev { padding: 0.85rem 1.15rem 1.4rem; }
@@ -493,6 +541,11 @@ footer { max-width: 1180px; }
     height: auto;
     min-height: 0;
   }
+
+  /* 折叠按钮是桌面端功能，窄屏用「编辑 / 预览」切换 */
+  .nb-bar-toggles { display: none; }
+  .nb-app.side-hidden { grid-template-columns: minmax(0, 1fr); }
+  .nb-app.side-hidden .nb-side { visibility: visible; border-inline-end-color: var(--border); }
 
   .nb-side {
     border-inline-end: 0;

@@ -12,6 +12,7 @@ footer { max-width: 1180px; }
 .nb-app {
   display: grid;
   grid-template-columns: 236px minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
   height: min(74vh, 720px);
   min-height: 480px;
   margin: 1.5rem 0 0;
@@ -175,6 +176,7 @@ footer { max-width: 1180px; }
 }
 
 .nb-bar {
+  grid-row: 1;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -246,7 +248,7 @@ footer { max-width: 1180px; }
 
 /* 移动端视图切换（桌面隐藏） */
 
-.nb-views { display: none; gap: 0.3rem; padding: 0.4rem 0.85rem 0; }
+.nb-views { grid-row: 2; display: none; gap: 0.3rem; padding: 0.4rem 0.85rem 0; }
 
 .nb-view {
   flex: 1;
@@ -265,8 +267,10 @@ footer { max-width: 1180px; }
 /* ---------- 编辑 + 预览 ---------- */
 
 .nb-split {
+  grid-row: 3;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
   min-height: 0;
 }
 
@@ -308,16 +312,16 @@ footer { max-width: 1180px; }
 .nb-sep { flex: none; width: 1px; margin: 0.25rem 0.2rem; background: var(--border); }
 
 #src {
-  flex: 1;
+  flex: 1 1 0;
   min-height: 0;
   width: 100%;
-  padding: 0.85rem 1rem;
+  padding: 1rem 1.1rem 1.2rem;
   border: 0;
   background: none;
   color: var(--text);
   font-family: ui-monospace, SFMono-Regular, "SF Mono", "Cascadia Mono", Consolas, "Noto Sans Mono CJK SC", monospace;
-  font-size: 0.88rem;
-  line-height: 1.75;
+  font-size: 0.9rem;
+  line-height: 1.8;
   resize: none;
   tab-size: 2;
 }
@@ -439,6 +443,7 @@ footer { max-width: 1180px; }
 /* ---------- 状态条 ---------- */
 
 .nb-status {
+  grid-row: 4;
   display: flex;
   flex-wrap: wrap;
   align-items: center;

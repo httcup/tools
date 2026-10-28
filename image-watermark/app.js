@@ -37,7 +37,7 @@
     cv.width = exportW; cv.height = exportH;
     /* 首次加载时按图宽给一个合适的默认字号 */
     if (!onImage.done) {
-      $('fsize').value = Math.max(16, Math.min(96, Math.round(exportW / 26)));
+      $('fsize').value = Math.max(12, Math.min(72, Math.round(exportW / 42)));
       onImage.done = true;
     }
     document.getElementById('editor').hidden = false;

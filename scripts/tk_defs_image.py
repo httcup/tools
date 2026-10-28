@@ -580,9 +580,9 @@ WATERMARK_BODY = """
     <button type="button" data-t="复印件仅限本次办理使用，再次复印无效。">复印件专用</button>
   </div>
   <div class="wm-grid" style="margin-top:0.7rem">
-    <label class="field"><span>字体颜色</span><input type="color" id="color" value="#e53e3e"></label>
+    <label class="field"><span>字体颜色</span><input type="color" id="color" value="#808080"></label>
     <label class="field"><span>不透明度<b id="op-v">30%</b></span><input type="range" id="opacity" min="5" max="100" value="30"></label>
-    <label class="field"><span>字号<b id="fs-v">36</b></span><input type="range" id="fsize" min="12" max="140" value="36"></label>
+    <label class="field"><span>字号<b id="fs-v">24</b></span><input type="range" id="fsize" min="12" max="140" value="24"></label>
     <label class="field"><span>旋转角度<b id="rot-v">-30&deg;</b></span><input type="range" id="rot" min="-90" max="90" value="-30"></label>
     <label class="field"><span>水平间距<b id="gx-v">70</b></span><input type="range" id="gapx" min="10" max="400" value="70"></label>
     <label class="field"><span>垂直间距<b id="gy-v">100</b></span><input type="range" id="gapy" min="10" max="400" value="100"></label>
@@ -641,7 +641,7 @@ WATERMARK_JS = r"""(function () {
     cv.width = exportW; cv.height = exportH;
     /* 首次加载时按图宽给一个合适的默认字号 */
     if (!onImage.done) {
-      $('fsize').value = Math.max(16, Math.min(96, Math.round(exportW / 26)));
+      $('fsize').value = Math.max(12, Math.min(72, Math.round(exportW / 42)));
       onImage.done = true;
     }
     document.getElementById('editor').hidden = false;

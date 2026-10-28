@@ -7,6 +7,30 @@ footer { max-width: 1180px; }
 
 .crumbs { padding-top: 0.6rem; }
 
+/* ---------- 顶栏书签小窗 ---------- */
+
+.head-actions { display: flex; align-items: center; gap: 0.9rem; }
+
+.bm-hint { font-size: 0.82rem; color: var(--text-dim); }
+
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 8px;
+  color: var(--text-dim);
+  text-decoration: none;
+}
+
+.icon-link:hover, .icon-link:focus-visible { color: var(--accent); background: var(--surface-2); }
+.icon-link svg { width: 1.05rem; height: 1.05rem; fill: currentColor; }
+
+@media (max-width: 800px) {
+  .bm-hint { display: none; }
+}
+
 /* ---------- 整体骨架 ---------- */
 
 .nb-app {

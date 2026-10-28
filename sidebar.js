@@ -136,11 +136,27 @@
 
     var toggle = document.getElementById('sidebar-toggle');
     var backdrop = document.getElementById('sidebar-backdrop');
-    if (toggle) toggle.addEventListener('click', function () { setOpen(true); });
+    if (toggle) toggle.addEventListener('click', function () {
+      if (window.innerWidth >= 1200) {
+        /* 桌面端：展开/收起常驻侧栏 */
+        document.body.classList.toggle('sb-collapsed');
+      } else {
+        setOpen(!root.classList.contains('sb-open'));
+      }
+    });
     if (backdrop) backdrop.addEventListener('click', function () { setOpen(false); });
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') setOpen(false);
+      if (e.key !== 'Escape') return;
+      if (closeQrCheck()) return;
+      if (window.innerWidth >= 1200) document.body.classList.add('sb-collapsed');
+      else setOpen(false);
     });
+  }
+
+  function closeQrCheck() {
+    var back = document.querySelector('.sb-qr-backdrop');
+    if (back) { back.remove(); return true; }
+    return false;
   }
 
   function setOpen(open) {
@@ -193,10 +209,6 @@
       back.querySelector('.sb-qr-box').textContent = '二维码生成失败';
     });
   }
-
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') closeQr();
-  });
 
   /* 首页：外部筛选变化时同步侧栏高亮（chips 点击 / 搜索重置） */
   function syncHome() {

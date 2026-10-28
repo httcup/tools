@@ -45,23 +45,37 @@ html[data-theme="dark"] #sidebar-toggle {
 }
 #site-sidebar.sb-open { transform: translateX(0); visibility: visible; }
 
-/* 桌面端：常驻左侧，内容整体右移 */
+/* 桌面端：常驻左侧，内容整体右移；分类按钮可折叠侧栏 */
 @media (min-width: 1200px) {
   #site-sidebar { transform: none; visibility: visible; }
-  body.sb-body { margin-left: 252px; }
-  #sidebar-toggle, #sidebar-backdrop { display: none !important; }
+  body.sb-body { margin-left: 252px; transition: margin-left .22s ease; }
+  #sidebar-backdrop { display: none !important; }
+  body.sb-body.sb-collapsed { margin-left: 0; }
+  body.sb-body.sb-collapsed #site-sidebar { transform: translateX(-100%); visibility: hidden; }
+  body.sb-body:not(.sb-collapsed) #sidebar-toggle { left: 266px; }
 }
 
-/* 窄屏：悬浮开关 + 抽屉 + 遮罩 */
+/* 悬浮开关：明眼色 + 大号 */
 #sidebar-toggle {
-  position: fixed; left: 14px; bottom: 18px; z-index: 59;
-  display: inline-flex; align-items: center; gap: 6px;
-  padding: 9px 14px; border-radius: 999px; cursor: pointer;
-  border: 1px solid var(--sb-line); background: var(--sb-bg); color: var(--sb-text);
-  font-size: 13px; font-family: inherit;
-  box-shadow: var(--sb-shadow);
+  position: fixed; left: 14px; bottom: 18px; z-index: 70;
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 11px 18px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--sb-accent); background: var(--sb-accent); color: #fff;
+  font-size: 14px; font-weight: 600; font-family: inherit;
+  box-shadow: 0 6px 18px -4px rgba(29, 78, 216, .55);
+  transition: left .22s ease, transform .15s ease, box-shadow .15s ease;
 }
-#sidebar-toggle:hover { border-color: var(--sb-accent); color: var(--sb-accent); }
+#sidebar-toggle:hover { transform: translateY(-2px); box-shadow: 0 10px 26px -6px rgba(29, 78, 216, .6); }
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) #sidebar-toggle {
+    color: #0b1220;
+    box-shadow: 0 6px 18px -4px rgba(0, 0, 0, .6);
+  }
+}
+html[data-theme="dark"] #sidebar-toggle {
+  color: #0b1220;
+  box-shadow: 0 6px 18px -4px rgba(0, 0, 0, .6);
+}
 #sidebar-backdrop {
   position: fixed; inset: 0; z-index: 58;
   background: rgba(16, 24, 40, .45);

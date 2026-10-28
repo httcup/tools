@@ -252,7 +252,7 @@ window.SIDEBAR_CATS = [
    },
    {
     "slug": "md-notes",
-    "name": "笔记存为.md",
+    "name": "随手记存为.md",
     "href": "./md-notes/"
    }
   ]

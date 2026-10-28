@@ -59,7 +59,7 @@
 - [音频剪辑](https://httcup.github.io/tools/trim-audio/): 边听边标出值得留的段落。它们会合成一个文件回来，就切在你说的位置。
 - [音频编辑](https://httcup.github.io/tools/edit-audio/): 倒着放、快慢随你调、把录轻了的声音提上来，全在你这台机器上。
 - [Markdown 转 Word](https://httcup.github.io/tools/md-to-word/): 把 AI 回答或 Markdown 下载成可编辑的 .docx，公式表格保留。
-- [笔记存为.md](https://httcup.github.io/tools/md-notes/): 记完直接存成 .md 文件。
+- [随手记存为.md](https://httcup.github.io/tools/md-notes/): 记完直接存成 .md 文件。
 
 ### 文本、编码与密码
 - [JSON 格式化](https://httcup.github.io/tools/json-formatter/): JSON、XML、HTML、CSS 和 YAML，格式化或转换。没有一个字被贴进别人的服务器。

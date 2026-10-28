@@ -112,7 +112,30 @@
       .replace(/\s+/g, ' ')
       .trim()
       .slice(0, 60);
-    return (base || '未命名笔记') + '.md';
+    /* 文件名里不能有冒号（macOS/Windows 都不允许），时间用 - 代替 */
+    var d = new Date();
+    var ts = String(d.getFullYear()).slice(2) + '年' + (d.getMonth() + 1) + '月' + d.getDate() +
+      '日 ' + pad(d.getHours()) + '-' + pad(d.getMinutes());
+    return (base || '未命名笔记') + '-' + ts + '.md';
+  }
+
+  /* 每本笔记前的分隔标记：HTML 注释在 Markdown 里不可见，正文里写 --- 不会误切 */
+  var NOTE_MARK = '<!-- mdnotes-note -->';
+
+  /* 识别「备份全部」生成的合并文件，只按 NOTE_MARK 标记拆分，不做 --- 兜底 */
+  function splitBackup(text) {
+    var t = String(text || '').replace(/^\uFEFF/, '');
+    if (t.indexOf(NOTE_MARK) === -1) return null;
+    var parts = t.split(NOTE_MARK)
+      .map(function (s) { return s.replace(/^\s+|\s+$/g, ''); })
+      .filter(Boolean);
+    return parts.map(function (part) {
+      var m = part.match(/^#\s+(.+)/);
+      if (m) {
+        return { title: m[1].trim(), body: part.slice(m[0].length).replace(/^\s+/, '') };
+      }
+      return { title: '', body: part };
+    });
   }
 
   function toast(msg) {
@@ -352,7 +375,8 @@
     });
     var d = new Date();
     var name = '笔记备份-' + d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate()) + '.md';
-    download(name, parts.join('\n\n---\n\n') + '\n');
+    /* 文件头也放一个标记，这样哪怕只备份了一本也能正确拆分 */
+    download(name, [NOTE_MARK].concat(parts).join('\n\n' + NOTE_MARK + '\n\n') + '\n');
     toast('已备份 ' + data.notes.length + ' 本笔记');
   }
 
@@ -398,6 +422,19 @@
 
     Promise.all(list.map(function (f) {
       return readFile(f).then(function (text) {
+        /* 备份文件（含 NOTE_MARK 标记）先拆回多本笔记 */
+        var split = splitBackup(text);
+        if (split && split.length) {
+          return split.map(function (p) {
+            return {
+              id: uid(),
+              title: p.title,
+              body: p.body,
+              created: Date.now(),
+              updated: Date.now()
+            };
+          });
+        }
         var name = (f.name || '未命名').replace(/\.[^.]+$/, '');
         return {
           id: uid(),
@@ -407,13 +444,15 @@
           updated: Date.now()
         };
       });
-    })).then(function (notes) {
+    })).then(function (groups) {
+      var notes = [];
+      groups.forEach(function (g) { notes = notes.concat(g); });
       notes.forEach(function (n) { data.notes.push(n); });
       data.cur = notes[0].id;
       qEl.value = '';
       paint();
       persist();
-      toast('已导入 ' + notes.length + ' 个文件');
+      toast('已导入 ' + notes.length + ' 篇笔记');
     }).catch(function () {
       toast('读取失败，换一个文件试试');
     });

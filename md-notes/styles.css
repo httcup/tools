@@ -285,8 +285,34 @@ footer { max-width: 1180px; }
   opacity: 0.62;
 }
 
-.btn-prev { padding-inline: 0.6rem; font-size: 0.78rem; }
-.btn-prev[aria-pressed="false"] { text-decoration: line-through; }
+.btn-prev {
+  --nb-green: #199d55;
+  padding-inline: 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 650;
+  border-color: var(--nb-green);
+  background: var(--nb-green);
+  color: #ffffff;
+}
+
+.btn-prev:hover {
+  border-color: var(--nb-green);
+  background: var(--nb-green);
+  color: #ffffff;
+  filter: brightness(1.07);
+}
+
+.btn-prev[aria-pressed="false"] {
+  background: none;
+  border-color: var(--nb-green);
+  color: var(--nb-green);
+  opacity: 0.85;
+  text-decoration: line-through;
+}
+
+@media (prefers-color-scheme: dark) {
+  .btn-prev { --nb-green: #2fa367; }
+}
 
 /* 移动端视图切换（桌面隐藏） */
 

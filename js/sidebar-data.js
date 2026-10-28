@@ -536,182 +536,7 @@ window.SIDEBAR_CATS = [
    }
   ]
  },
- 
  {
-  "cat": "creative-design",
-  "name": "创作与设计",
-  "tools": [
-   {
-    "slug": "color-picker",
-    "name": "取色器与颜色转换",
-    "href": "./color-picker/"
-   },
-   {
-    "slug": "gradient-generator",
-    "name": "渐变生成器",
-    "href": "./gradient-generator/"
-   },
-   {
-    "slug": "chart-maker",
-    "name": "图表制作器",
-    "href": "./chart-maker/"
-   },
-   {
-    "slug": "invoice-generator",
-    "name": "简易收据生成器",
-    "href": "./invoice-generator/"
-   },
-   {
-    "slug": "signature-maker",
-    "name": "手写签名板",
-    "href": "./signature-maker/"
-   },
-   {
-    "slug": "whiteboard",
-    "name": "涂鸦白板",
-    "href": "./whiteboard/"
-   }
-  ]
- },
- {
-  "cat": "time-focus",
-  "name": "时间与专注",
-  "tools": [
-   {
-    "slug": "time-tools-seconds-converter",
-    "name": "时间戳转换器",
-    "href": "./time-tools-seconds-converter/"
-   },
-   {
-    "slug": "pomodoro-timer",
-    "name": "番茄钟",
-    "href": "./pomodoro-timer/"
-   },
-   {
-    "slug": "stopwatch",
-    "name": "秒表",
-    "href": "./stopwatch/"
-   },
-   {
-    "slug": "countdown-timer",
-    "name": "倒计时",
-    "href": "./countdown-timer/"
-   },
-   {
-    "slug": "world-clock",
-    "name": "世界时钟",
-    "href": "./world-clock/"
-   },
-   {
-    "slug": "flashcard-maker",
-    "name": "闪卡制作与复习",
-    "href": "./flashcard-maker/"
-   }
-  ]
- },
- {
-  "cat": "test-fun",
-  "name": "测试与解压",
-  "tools": [
-   {
-    "slug": "reaction-time-test",
-    "name": "反应速度测试",
-    "href": "./reaction-time-test/"
-   },
-   {
-    "slug": "aim-trainer",
-    "name": "打靶训练",
-    "href": "./aim-trainer/"
-   },
-   {
-    "slug": "cps-test",
-    "name": "手速测试",
-    "href": "./cps-test/"
-   },
-   {
-    "slug": "keyboard-tester",
-    "name": "键盘测试",
-    "href": "./keyboard-tester/"
-   },
-   {
-    "slug": "typing-test",
-    "name": "打字速度测试",
-    "href": "./typing-test/"
-   },
-   {
-    "slug": "breathing-relaxation",
-    "name": "呼吸放松引导",
-    "href": "./breathing-relaxation/"
-   },
-   {
-    "slug": "mic-camera-test",
-    "name": "麦克风与摄像头自检",
-    "href": "./mic-camera-test/"
-   }
-  ]
- },
- {
-  "cat": "quick",
-  "name": "本地快用",
-  "tools": [
-   {
-    "slug": "base64",
-    "name": "Base64 编解码",
-    "href": "./quick/#base64"
-   },
-   {
-    "slug": "url",
-    "name": "URL 编解码",
-    "href": "./quick/#url"
-   },
-   {
-    "slug": "html",
-    "name": "HTML 实体编解码",
-    "href": "./quick/#html"
-   },
-   {
-    "slug": "hex",
-    "name": "Hex 编解码",
-    "href": "./quick/#hex"
-   },
-   {
-    "slug": "hash",
-    "name": "哈希计算器",
-    "href": "./quick/#hash"
-   },
-   {
-    "slug": "uuid",
-    "name": "UUID 生成器",
-    "href": "./quick/#uuid"
-   },
-   {
-    "slug": "password",
-    "name": "随机密码生成",
-    "href": "./quick/#password"
-   },
-   {
-    "slug": "timestamp",
-    "name": "时间戳转换",
-    "href": "./quick/#timestamp"
-   },
-   {
-    "slug": "json",
-    "name": "JSON 格式化",
-    "href": "./quick/#json"
-   },
-   {
-    "slug": "textstats",
-    "name": "文本统计",
-    "href": "./quick/#textstats"
-   },
-   {
-    "slug": "case",
-    "name": "大小写转换",
-    "href": "./quick/#case"
-   }
-  ]
- },
-{
   "cat": "dtc-ecommerce",
   "name": "Shopify/DTC电商工具",
   "tools": [
@@ -979,6 +804,180 @@ window.SIDEBAR_CATS = [
     "slug": "google-shopping-feed-readiness-checker",
     "name": "Google Shopping Feed 检查器",
     "href": "./google-shopping-feed-readiness-checker/"
+   }
+  ]
+ },
+ {
+  "cat": "creative-design",
+  "name": "创作与设计",
+  "tools": [
+   {
+    "slug": "color-picker",
+    "name": "取色器与颜色转换",
+    "href": "./color-picker/"
+   },
+   {
+    "slug": "gradient-generator",
+    "name": "渐变生成器",
+    "href": "./gradient-generator/"
+   },
+   {
+    "slug": "chart-maker",
+    "name": "图表制作器",
+    "href": "./chart-maker/"
+   },
+   {
+    "slug": "invoice-generator",
+    "name": "简易收据生成器",
+    "href": "./invoice-generator/"
+   },
+   {
+    "slug": "signature-maker",
+    "name": "手写签名板",
+    "href": "./signature-maker/"
+   },
+   {
+    "slug": "whiteboard",
+    "name": "涂鸦白板",
+    "href": "./whiteboard/"
+   }
+  ]
+ },
+ {
+  "cat": "time-focus",
+  "name": "时间与专注",
+  "tools": [
+   {
+    "slug": "time-tools-seconds-converter",
+    "name": "时间戳转换器",
+    "href": "./time-tools-seconds-converter/"
+   },
+   {
+    "slug": "pomodoro-timer",
+    "name": "番茄钟",
+    "href": "./pomodoro-timer/"
+   },
+   {
+    "slug": "stopwatch",
+    "name": "秒表",
+    "href": "./stopwatch/"
+   },
+   {
+    "slug": "countdown-timer",
+    "name": "倒计时",
+    "href": "./countdown-timer/"
+   },
+   {
+    "slug": "world-clock",
+    "name": "世界时钟",
+    "href": "./world-clock/"
+   },
+   {
+    "slug": "flashcard-maker",
+    "name": "闪卡制作与复习",
+    "href": "./flashcard-maker/"
+   }
+  ]
+ },
+ {
+  "cat": "test-fun",
+  "name": "测试与解压",
+  "tools": [
+   {
+    "slug": "reaction-time-test",
+    "name": "反应速度测试",
+    "href": "./reaction-time-test/"
+   },
+   {
+    "slug": "aim-trainer",
+    "name": "打靶训练",
+    "href": "./aim-trainer/"
+   },
+   {
+    "slug": "cps-test",
+    "name": "手速测试",
+    "href": "./cps-test/"
+   },
+   {
+    "slug": "keyboard-tester",
+    "name": "键盘测试",
+    "href": "./keyboard-tester/"
+   },
+   {
+    "slug": "typing-test",
+    "name": "打字速度测试",
+    "href": "./typing-test/"
+   },
+   {
+    "slug": "breathing-relaxation",
+    "name": "呼吸放松引导",
+    "href": "./breathing-relaxation/"
+   },
+   {
+    "slug": "mic-camera-test",
+    "name": "麦克风与摄像头自检",
+    "href": "./mic-camera-test/"
+   }
+  ]
+ },
+ {
+  "cat": "quick",
+  "name": "本地快用",
+  "tools": [
+   {
+    "slug": "base64",
+    "name": "Base64 编解码",
+    "href": "./quick/#base64"
+   },
+   {
+    "slug": "url",
+    "name": "URL 编解码",
+    "href": "./quick/#url"
+   },
+   {
+    "slug": "html",
+    "name": "HTML 实体编解码",
+    "href": "./quick/#html"
+   },
+   {
+    "slug": "hex",
+    "name": "Hex 编解码",
+    "href": "./quick/#hex"
+   },
+   {
+    "slug": "hash",
+    "name": "哈希计算器",
+    "href": "./quick/#hash"
+   },
+   {
+    "slug": "uuid",
+    "name": "UUID 生成器",
+    "href": "./quick/#uuid"
+   },
+   {
+    "slug": "password",
+    "name": "随机密码生成",
+    "href": "./quick/#password"
+   },
+   {
+    "slug": "timestamp",
+    "name": "时间戳转换",
+    "href": "./quick/#timestamp"
+   },
+   {
+    "slug": "json",
+    "name": "JSON 格式化",
+    "href": "./quick/#json"
+   },
+   {
+    "slug": "textstats",
+    "name": "文本统计",
+    "href": "./quick/#textstats"
+   },
+   {
+    "slug": "case",
+    "name": "大小写转换",
+    "href": "./quick/#case"
    }
   ]
  }

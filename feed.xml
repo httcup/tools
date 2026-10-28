@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>本地工具箱</title>
+  <title>小胡的工具箱</title>
   <subtitle>在浏览器本地运行的工具集</subtitle>
   <link href="https://httcup.github.io/tools/feed.xml" rel="self"/>
   <link href="https://httcup.github.io/tools/"/>
@@ -8,7 +8,7 @@
   <updated>2026-10-27T02:54:58Z</updated>
   <author><name>httcup</name></author>
   <entry>
-    <title type="text">本地工具箱</title>
+    <title type="text">小胡的工具箱</title>
     <link href="https://httcup.github.io/tools/"/>
     <id>https://httcup.github.io/tools/</id>
     <updated>2026-10-27T02:54:58Z</updated>

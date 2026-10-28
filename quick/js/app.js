@@ -1,4 +1,4 @@
-/* 本地工具箱 Local Web Tools —— 所有逻辑均在浏览器本地执行，数据不上传 */
+/* 小胡的工具箱 Local Web Tools —— 所有逻辑均在浏览器本地执行，数据不上传 */
 (function () {
   'use strict';
 

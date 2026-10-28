@@ -147,82 +147,6 @@ window.SIDEBAR_CATS = [
   ]
  },
  {
-  "cat": "video-and-animation",
-  "name": "视频与动画",
-  "tools": [
-   {
-    "slug": "compress-video",
-    "name": "视频压缩",
-    "href": "./compress-video/"
-   },
-   {
-    "slug": "convert-to-mp4",
-    "name": "MP4 转换",
-    "href": "./convert-to-mp4/"
-   },
-   {
-    "slug": "rotate-video",
-    "name": "视频旋转",
-    "href": "./rotate-video/"
-   },
-   {
-    "slug": "images-to-video",
-    "name": "图片转视频",
-    "href": "./images-to-video/"
-   },
-   {
-    "slug": "trim-video",
-    "name": "视频剪切",
-    "href": "./trim-video/"
-   },
-   {
-    "slug": "crop-video",
-    "name": "视频裁剪",
-    "href": "./crop-video/"
-   },
-   {
-    "slug": "reverse-video",
-    "name": "视频倒放",
-    "href": "./reverse-video/"
-   },
-   {
-    "slug": "timelapse-video",
-    "name": "延时视频",
-    "href": "./timelapse-video/"
-   },
-   {
-    "slug": "grab-frame",
-    "name": "视频截帧",
-    "href": "./grab-frame/"
-   },
-   {
-    "slug": "gif-to-mp4",
-    "name": "GIF 转 MP4",
-    "href": "./gif-to-mp4/"
-   },
-   {
-    "slug": "video-to-gif",
-    "name": "视频转 GIF",
-    "href": "./video-to-gif/"
-   },
-   {
-    "slug": "gif-maker",
-    "name": "GIF 制作",
-    "href": "./gif-maker/"
-   },
-   {
-    "slug": "split-gif",
-    "name": "GIF 拆帧",
-    "href": "./split-gif/"
-   },
-   {
-    "slug": "gif-analyzer",
-    "name": "GIF 分析",
-    "href": "./gif-analyzer/"
-   }
-  ]
- },
- {
   "cat": "documents-and-audio",
   "name": "文档与音频",
   "tools": [
@@ -330,6 +254,82 @@ window.SIDEBAR_CATS = [
     "slug": "md-notes",
     "name": "笔记存为.md",
     "href": "./md-notes/"
+   }
+  ]
+ },
+ {
+  "cat": "video-and-animation",
+  "name": "视频与动画",
+  "tools": [
+   {
+    "slug": "compress-video",
+    "name": "视频压缩",
+    "href": "./compress-video/"
+   },
+   {
+    "slug": "convert-to-mp4",
+    "name": "MP4 转换",
+    "href": "./convert-to-mp4/"
+   },
+   {
+    "slug": "rotate-video",
+    "name": "视频旋转",
+    "href": "./rotate-video/"
+   },
+   {
+    "slug": "images-to-video",
+    "name": "图片转视频",
+    "href": "./images-to-video/"
+   },
+   {
+    "slug": "trim-video",
+    "name": "视频剪切",
+    "href": "./trim-video/"
+   },
+   {
+    "slug": "crop-video",
+    "name": "视频裁剪",
+    "href": "./crop-video/"
+   },
+   {
+    "slug": "reverse-video",
+    "name": "视频倒放",
+    "href": "./reverse-video/"
+   },
+   {
+    "slug": "timelapse-video",
+    "name": "延时视频",
+    "href": "./timelapse-video/"
+   },
+   {
+    "slug": "grab-frame",
+    "name": "视频截帧",
+    "href": "./grab-frame/"
+   },
+   {
+    "slug": "gif-to-mp4",
+    "name": "GIF 转 MP4",
+    "href": "./gif-to-mp4/"
+   },
+   {
+    "slug": "video-to-gif",
+    "name": "视频转 GIF",
+    "href": "./video-to-gif/"
+   },
+   {
+    "slug": "gif-maker",
+    "name": "GIF 制作",
+    "href": "./gif-maker/"
+   },
+   {
+    "slug": "split-gif",
+    "name": "GIF 拆帧",
+    "href": "./split-gif/"
+   },
+   {
+    "slug": "gif-analyzer",
+    "name": "GIF 分析",
+    "href": "./gif-analyzer/"
    }
   ]
  },
@@ -538,6 +538,119 @@ window.SIDEBAR_CATS = [
     "slug": "meeting-cost-calculator",
     "name": "会议成本计算器",
     "href": "./meeting-cost-calculator/"
+   }
+  ]
+ },
+ {
+  "cat": "creative-design",
+  "name": "创作与设计",
+  "tools": [
+   {
+    "slug": "color-picker",
+    "name": "取色器与颜色转换",
+    "href": "./color-picker/"
+   },
+   {
+    "slug": "gradient-generator",
+    "name": "渐变生成器",
+    "href": "./gradient-generator/"
+   },
+   {
+    "slug": "chart-maker",
+    "name": "图表制作器",
+    "href": "./chart-maker/"
+   },
+   {
+    "slug": "invoice-generator",
+    "name": "简易收据生成器",
+    "href": "./invoice-generator/"
+   },
+   {
+    "slug": "signature-maker",
+    "name": "手写签名板",
+    "href": "./signature-maker/"
+   },
+   {
+    "slug": "whiteboard",
+    "name": "涂鸦白板",
+    "href": "./whiteboard/"
+   }
+  ]
+ },
+ {
+  "cat": "time-focus",
+  "name": "时间与专注",
+  "tools": [
+   {
+    "slug": "time-tools-seconds-converter",
+    "name": "时间戳转换器",
+    "href": "./time-tools-seconds-converter/"
+   },
+   {
+    "slug": "pomodoro-timer",
+    "name": "番茄钟",
+    "href": "./pomodoro-timer/"
+   },
+   {
+    "slug": "stopwatch",
+    "name": "秒表",
+    "href": "./stopwatch/"
+   },
+   {
+    "slug": "countdown-timer",
+    "name": "倒计时",
+    "href": "./countdown-timer/"
+   },
+   {
+    "slug": "world-clock",
+    "name": "世界时钟",
+    "href": "./world-clock/"
+   },
+   {
+    "slug": "flashcard-maker",
+    "name": "闪卡制作与复习",
+    "href": "./flashcard-maker/"
+   }
+  ]
+ },
+ {
+  "cat": "test-fun",
+  "name": "测试与解压",
+  "tools": [
+   {
+    "slug": "reaction-time-test",
+    "name": "反应速度测试",
+    "href": "./reaction-time-test/"
+   },
+   {
+    "slug": "aim-trainer",
+    "name": "打靶训练",
+    "href": "./aim-trainer/"
+   },
+   {
+    "slug": "cps-test",
+    "name": "手速测试",
+    "href": "./cps-test/"
+   },
+   {
+    "slug": "keyboard-tester",
+    "name": "键盘测试",
+    "href": "./keyboard-tester/"
+   },
+   {
+    "slug": "typing-test",
+    "name": "打字速度测试",
+    "href": "./typing-test/"
+   },
+   {
+    "slug": "breathing-relaxation",
+    "name": "呼吸放松引导",
+    "href": "./breathing-relaxation/"
+   },
+   {
+    "slug": "mic-camera-test",
+    "name": "麦克风与摄像头自检",
+    "href": "./mic-camera-test/"
    }
   ]
  },
@@ -809,119 +922,6 @@ window.SIDEBAR_CATS = [
     "slug": "google-shopping-feed-readiness-checker",
     "name": "Google Shopping Feed 检查器",
     "href": "./google-shopping-feed-readiness-checker/"
-   }
-  ]
- },
- {
-  "cat": "creative-design",
-  "name": "创作与设计",
-  "tools": [
-   {
-    "slug": "color-picker",
-    "name": "取色器与颜色转换",
-    "href": "./color-picker/"
-   },
-   {
-    "slug": "gradient-generator",
-    "name": "渐变生成器",
-    "href": "./gradient-generator/"
-   },
-   {
-    "slug": "chart-maker",
-    "name": "图表制作器",
-    "href": "./chart-maker/"
-   },
-   {
-    "slug": "invoice-generator",
-    "name": "简易收据生成器",
-    "href": "./invoice-generator/"
-   },
-   {
-    "slug": "signature-maker",
-    "name": "手写签名板",
-    "href": "./signature-maker/"
-   },
-   {
-    "slug": "whiteboard",
-    "name": "涂鸦白板",
-    "href": "./whiteboard/"
-   }
-  ]
- },
- {
-  "cat": "time-focus",
-  "name": "时间与专注",
-  "tools": [
-   {
-    "slug": "time-tools-seconds-converter",
-    "name": "时间戳转换器",
-    "href": "./time-tools-seconds-converter/"
-   },
-   {
-    "slug": "pomodoro-timer",
-    "name": "番茄钟",
-    "href": "./pomodoro-timer/"
-   },
-   {
-    "slug": "stopwatch",
-    "name": "秒表",
-    "href": "./stopwatch/"
-   },
-   {
-    "slug": "countdown-timer",
-    "name": "倒计时",
-    "href": "./countdown-timer/"
-   },
-   {
-    "slug": "world-clock",
-    "name": "世界时钟",
-    "href": "./world-clock/"
-   },
-   {
-    "slug": "flashcard-maker",
-    "name": "闪卡制作与复习",
-    "href": "./flashcard-maker/"
-   }
-  ]
- },
- {
-  "cat": "test-fun",
-  "name": "测试与解压",
-  "tools": [
-   {
-    "slug": "reaction-time-test",
-    "name": "反应速度测试",
-    "href": "./reaction-time-test/"
-   },
-   {
-    "slug": "aim-trainer",
-    "name": "打靶训练",
-    "href": "./aim-trainer/"
-   },
-   {
-    "slug": "cps-test",
-    "name": "手速测试",
-    "href": "./cps-test/"
-   },
-   {
-    "slug": "keyboard-tester",
-    "name": "键盘测试",
-    "href": "./keyboard-tester/"
-   },
-   {
-    "slug": "typing-test",
-    "name": "打字速度测试",
-    "href": "./typing-test/"
-   },
-   {
-    "slug": "breathing-relaxation",
-    "name": "呼吸放松引导",
-    "href": "./breathing-relaxation/"
-   },
-   {
-    "slug": "mic-camera-test",
-    "name": "麦克风与摄像头自检",
-    "href": "./mic-camera-test/"
    }
   ]
  },

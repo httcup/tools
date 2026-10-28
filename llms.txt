@@ -1,6 +1,6 @@
 # 本地工具箱 Local Web Tools
 
-> 182 个单用途浏览器工具：图片压缩与转换、PDF 处理、视频音频编辑、文本编码、密码生成、双设备直连。所有处理在浏览器本地完成，文件不上传、无需注册。
+> 183 个单用途浏览器工具：图片压缩与转换、PDF 处理、视频音频编辑、文本编码、密码生成、双设备直连。所有处理在浏览器本地完成，文件不上传、无需注册。
 
 页面地址以 https://httcup.github.io/tools/ 为前缀。
 
@@ -26,7 +26,7 @@
 - [身高对比图](https://httcup.github.io/tools/compare-heights/): 把身高打进去，把图带走。为了画它，不会往外送任何东西。
 - [商家资料预览](https://httcup.github.io/tools/business-profile-preview/): 把内容打进去，它就变成 Google 会画的那张卡片。为了画它，不会往外送任何东西。
 - [图片格式转换](https://httcup.github.io/tools/image-format-converter/): JPG、PNG、WebP 互转，批量处理，透明背景可选填色。
-
+- [证件加水印](https://httcup.github.io/tools/image-watermark/): 给身份证等图片平铺水印文字，防止复印件被盗用。
 
 ### 视频与动画
 - [视频压缩](https://httcup.github.io/tools/compress-video/): 说一个它最多能有多大。剩下的工具来算，做完先量一遍再交给你。

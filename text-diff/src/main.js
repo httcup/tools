@@ -408,7 +408,7 @@ if(bytes<1024)return`${bytes} B`;
 if(bytes<1024*1024)return`${(bytes / 1024).toFixed(1)} KB`;
 return`${(bytes / (1024 * 1024)).toFixed(2)} MB`;
 }
-el.privacyToggle&&el.privacyToggle&&el.privacyToggle.addEventListener('click',()=>{
+el.privacyToggle&&el.privacyToggle.addEventListener('click',()=>{
 const open=el.privacyPanel.hidden;
 el.privacyPanel.hidden=!open;
 el.privacyToggle.setAttribute('aria-expanded',String(open));

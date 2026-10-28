@@ -608,7 +608,7 @@ renderRun();
 function plural(count,one,many=`${one}s`){
 return phrase(count===1?`count.${one}`:`count.${many}`,{count:tally(count)});
 }
-el.privacyToggle&&el.privacyToggle&&el.privacyToggle.addEventListener('click',()=>{
+el.privacyToggle&&el.privacyToggle.addEventListener('click',()=>{
 const opening=el.privacyPanel.hidden;
 el.privacyPanel.hidden=!opening;
 el.privacyToggle.setAttribute('aria-expanded',String(opening));

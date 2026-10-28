@@ -364,7 +364,7 @@ none:phrase('out.exif.none'),
 }[result.metadata]);
 return phrase('out.line',{list:parts.reduce((a,b)=>phrase('join.dot',{a,b}))});
 }
-el.privacyToggle&&el.privacyToggle&&el.privacyToggle.addEventListener('click',()=>{
+el.privacyToggle&&el.privacyToggle.addEventListener('click',()=>{
 const open=el.privacyPanel.hidden;
 el.privacyPanel.hidden=!open;
 el.privacyToggle.setAttribute('aria-expanded',String(open));

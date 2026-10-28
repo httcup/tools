@@ -96,10 +96,17 @@ def patch_js(path):
     s = path.read_text(encoding='utf-8')
     orig = s
     # guard event binding on removed button (covers both el.privacyToggle and bare privacyToggle)
+    # 幂等：已经带 && 判空的不重复加
     s2 = re.sub(
         r'\b((?:el\.)?privacyToggle)\.addEventListener',
         r'\1&&\1.addEventListener',
         s,
+    )
+    # 清理历史版本可能产生的重复前缀：a&&a&&a&&a.addEventListener -> a&&a.addEventListener
+    s2 = re.sub(
+        r'\b((?:el\.)?privacyToggle)(?:&&\1)+\.addEventListener',
+        r'\1&&\1.addEventListener',
+        s2,
     )
     if s2 != orig:
         path.write_text(s2, encoding='utf-8')

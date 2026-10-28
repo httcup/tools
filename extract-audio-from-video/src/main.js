@@ -221,7 +221,7 @@ const m=Math.floor(whole/60)%60;
 const h=Math.floor(whole/3600);
 return h?`${h}:${String(m).padStart(2, '0')}:${s}`:`${m}:${s}`;
 }
-el.privacyToggle&&el.privacyToggle&&el.privacyToggle.addEventListener('click',()=>{
+el.privacyToggle&&el.privacyToggle.addEventListener('click',()=>{
 const open=el.privacyPanel.hidden;
 el.privacyPanel.hidden=!open;
 el.privacyToggle.setAttribute('aria-expanded',String(open));

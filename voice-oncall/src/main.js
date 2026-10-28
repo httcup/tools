@@ -14,7 +14,7 @@ import{validCode,validKey,makeSenderKey,makeInboxIdentity,codeForKey,derivePassw
 activateOncall();
 const privacyToggle=document.getElementById('privacy-toggle');
 const privacyPanel=document.getElementById('privacy-panel');
-privacyToggle&&privacyToggle&&privacyToggle.addEventListener('click',()=>{
+privacyToggle&&privacyToggle.addEventListener('click',()=>{
 const open=privacyPanel.hidden;
 privacyPanel.hidden=!open;
 privacyToggle.setAttribute('aria-expanded',String(open));

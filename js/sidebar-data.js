@@ -138,6 +138,11 @@ window.SIDEBAR_CATS = [
     "slug": "ai-image-metadata-viewer",
     "name": "AI 图片元数据查看",
     "href": "./ai-image-metadata-viewer/"
+   },
+   {
+    "slug": "image-watermark",
+    "name": "证件加水印",
+    "href": "./image-watermark/"
    }
   ]
  },

@@ -484,7 +484,7 @@ el.transparent,el.size]){
 control.addEventListener('input',draw);
 control.addEventListener('change',draw);
 }
-el.privacyToggle&&el.privacyToggle&&el.privacyToggle.addEventListener('click',()=>{
+el.privacyToggle&&el.privacyToggle.addEventListener('click',()=>{
 const open=el.privacyPanel.hidden;
 el.privacyPanel.hidden=!open;
 el.privacyToggle.setAttribute('aria-expanded',String(open));

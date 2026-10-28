@@ -430,7 +430,7 @@ const EMPTY='\u2013';
 function formatDuration(seconds){
 return Number.isFinite(seconds)?clockText(seconds,{decimals:1}):EMPTY;
 }
-el.privacyToggle&&el.privacyToggle&&el.privacyToggle.addEventListener('click',()=>{
+el.privacyToggle&&el.privacyToggle.addEventListener('click',()=>{
 const open=el.privacyPanel.hidden;
 el.privacyPanel.hidden=!open;
 el.privacyToggle.setAttribute('aria-expanded',String(open));

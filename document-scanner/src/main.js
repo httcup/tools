@@ -706,7 +706,7 @@ if(preview)schedulePreview();
 el.savePdf.addEventListener('click',()=>run('pdf'));
 el.saveImages.addEventListener('click',()=>run('images'));
 el.cancel.addEventListener('click',cancelExport);
-el.privacyToggle&&el.privacyToggle&&el.privacyToggle.addEventListener('click',()=>{
+el.privacyToggle&&el.privacyToggle.addEventListener('click',()=>{
 const open=el.privacyPanel.hidden;
 el.privacyPanel.hidden=!open;
 el.privacyToggle.setAttribute('aria-expanded',String(open));

@@ -527,3 +527,204 @@ t("ai-image-metadata-viewer", "AI 图片元数据查看",
   document.getElementById('file').addEventListener('change', function (e) { load(e.target.files[0]); });
 })();""",
   "提示词通常在 parameters / prompt / Description 等键下。")
+
+
+WATERMARK_BODY = """
+<style>
+  .wm-preview { display:flex; justify-content:center; }
+  .wm-preview canvas { max-width:100%; border:1px solid var(--border); border-radius:8px;
+    background:repeating-conic-gradient(#eceff3 0 25%, #fff 0 50%) 0 0/16px 16px; }
+  .wm-presets { display:flex; flex-wrap:wrap; gap:0.4rem; margin:0.55rem 0 0.2rem; }
+  .wm-presets button { font:inherit; font-size:0.78rem; padding:0.22rem 0.6rem; border-radius:999px;
+    border:1px solid var(--border); background:var(--surface-2, var(--surface)); color:var(--text-dim, var(--muted));
+    cursor:pointer; transition:0.15s; }
+  .wm-presets button:hover { border-color:var(--accent); color:var(--accent); }
+  .wm-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(15rem, 1fr)); gap:0.8rem 1.4rem; }
+  .wm-grid .field { margin:0; }
+  .wm-grid .field > span { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.3rem; }
+  .wm-grid .field b { font-variant-numeric:tabular-nums; color:var(--accent); font-size:0.8rem; }
+  .wm-tips { margin:0.4rem 0 0; padding-inline-start:1.2rem; color:var(--text-dim, var(--muted));
+    font-size:0.86rem; line-height:1.8; }
+</style>
+
+<section class="tool-card">
+  <div class="drop" id="drop">
+    <p style="margin:0"><b>拖入图片</b>、直接粘贴（Ctrl / ⌘ + V）或</p>
+    <label class="btn btn-primary">选择图片<input type="file" id="file" accept="image/*" hidden></label>
+  </div>
+  <p style="margin:0.7rem 0 0;font-size:0.82rem;color:var(--text-dim,var(--muted))">
+    身份证、户口本、银行卡等照片建议先加水印再交给别人，防止复印件被冒用。</p>
+</section>
+
+<section class="tool-card" id="editor" hidden>
+  <div class="card-head"><h2>实时预览</h2><span class="stats" id="stats"></span></div>
+  <div class="wm-preview"><canvas id="cv"></canvas></div>
+  <div class="row" style="margin-top:0.8rem;align-items:center">
+    <button class="btn btn-primary" id="dl" type="button">下载带水印图片</button>
+    <label class="field"><span>导出格式</span>
+      <select id="fmt"><option value="png">PNG（无损）</option><option value="jpeg">JPG（体积更小）</option></select>
+    </label>
+    <button class="btn" id="replace" type="button">换一张</button>
+  </div>
+</section>
+
+<section class="tool-card" id="ctrls" hidden>
+  <h2>水印设置</h2>
+  <div class="field"><span>水印文案（支持多行，一行一句）</span>
+    <textarea class="in" id="text" rows="2">仅用于办理业务证明，他用无效。</textarea></div>
+  <div class="wm-presets" id="presets">
+    <button type="button" data-t="仅用于办理业务证明，他用无效。">通用证明</button>
+    <button type="button" data-t="仅供实名认证使用">实名认证</button>
+    <button type="button" data-t="仅供求职应聘使用，他用无效。">求职应聘</button>
+    <button type="button" data-t="仅用于办理入住登记，他用无效。">入住登记</button>
+    <button type="button" data-t="复印件仅限本次办理使用，再次复印无效。">复印件专用</button>
+  </div>
+  <div class="wm-grid" style="margin-top:0.7rem">
+    <label class="field"><span>字体颜色</span><input type="color" id="color" value="#e53e3e"></label>
+    <label class="field"><span>不透明度<b id="op-v">30%</b></span><input type="range" id="opacity" min="5" max="100" value="30"></label>
+    <label class="field"><span>字号<b id="fs-v">36</b></span><input type="range" id="fsize" min="12" max="140" value="36"></label>
+    <label class="field"><span>旋转角度<b id="rot-v">-30&deg;</b></span><input type="range" id="rot" min="-90" max="90" value="-30"></label>
+    <label class="field"><span>水平间距<b id="gx-v">70</b></span><input type="range" id="gapx" min="10" max="400" value="70"></label>
+    <label class="field"><span>垂直间距<b id="gy-v">100</b></span><input type="range" id="gapy" min="10" max="400" value="100"></label>
+    <label class="check" style="align-self:end"><input type="checkbox" id="bold" checked> 加粗</label>
+    <label class="check" style="align-self:end"><input type="checkbox" id="stroke"> 白色描边（花底图更清晰）</label>
+  </div>
+</section>
+
+<section class="tool-card">
+  <h2>使用建议</h2>
+  <ul class="wm-tips">
+    <li>文案写明<b>具体用途</b>（如&ldquo;仅用于办理XX银行信用卡&rdquo;），比泛泛的&ldquo;他用无效&rdquo;更安全。</li>
+    <li>水印盖在关键信息上但别完全遮住号码，保证证件本身仍可辨认。</li>
+    <li>透明度 25%&ndash;40% 比较均衡：既清晰可读，又不影响核验。</li>
+    <li>所有处理都在本页完成，图片不会上传到任何服务器。</li>
+  </ul>
+</section>
+"""
+
+WATERMARK_JS = r"""(function () {
+  'use strict';
+  var cv = document.getElementById('cv'), ctx = cv.getContext('2d');
+  var img = null, baseName = 'image', exportW = 0, exportH = 0;
+  var MAX_DIM = 4096;
+  var $ = function (id) { return document.getElementById(id); };
+
+  function loadFile(f) {
+    if (!f || f.type.indexOf('image/') !== 0) return;
+    baseName = (f.name || 'image').replace(/\.[^.]+$/, '') || 'image';
+    var url = URL.createObjectURL(f);
+    var im = new Image();
+    im.onload = function () { img = im; URL.revokeObjectURL(url); onImage(); };
+    im.src = url;
+  }
+
+  var drop = document.getElementById('drop');
+  ['dragover', 'dragleave', 'drop'].forEach(function (ev) {
+    drop.addEventListener(ev, function (e) {
+      e.preventDefault();
+      drop.classList.toggle('over', ev === 'dragover');
+      if (ev === 'drop') loadFile(e.dataTransfer.files[0]);
+    });
+  });
+  document.getElementById('file').addEventListener('change', function (e) { loadFile(e.target.files[0]); });
+  document.getElementById('replace').addEventListener('click', function () { document.getElementById('file').click(); });
+  document.addEventListener('paste', function (e) {
+    var files = (e.clipboardData || {}).files;
+    if (files && files.length) loadFile(files[0]);
+  });
+
+  function onImage() {
+    var w = img.naturalWidth, h = img.naturalHeight;
+    var scale = Math.min(1, MAX_DIM / Math.max(w, h));
+    exportW = Math.round(w * scale);
+    exportH = Math.round(h * scale);
+    cv.width = exportW; cv.height = exportH;
+    /* 首次加载时按图宽给一个合适的默认字号 */
+    if (!onImage.done) {
+      $('fsize').value = Math.max(16, Math.min(96, Math.round(exportW / 26)));
+      onImage.done = true;
+    }
+    document.getElementById('editor').hidden = false;
+    document.getElementById('ctrls').hidden = false;
+    $('stats').textContent = w + ' \u00d7 ' + h + (scale < 1 ? ' \u2192 导出 ' + exportW + ' \u00d7 ' + exportH : '');
+    render();
+  }
+
+  function render() {
+    if (!img) return;
+    $('op-v').textContent = $('opacity').value + '%';
+    $('fs-v').textContent = $('fsize').value;
+    $('rot-v').innerHTML = $('rot').value + '&deg;';
+    $('gx-v').textContent = $('gapx').value;
+    $('gy-v').textContent = $('gapy').value;
+    ctx.clearRect(0, 0, cv.width, cv.height);
+    ctx.drawImage(img, 0, 0, exportW, exportH);
+    var text = $('text').value;
+    if (!text.trim()) return;
+    var ls = text.split('\n');
+    var fs = +$('fsize').value;
+    var lh = fs * 1.45;
+    ctx.save();
+    ctx.globalAlpha = +$('opacity').value / 100;
+    ctx.font = ($('bold').checked ? 'bold ' : '') + fs + 'px "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillStyle = $('color').value;
+    var stroke = $('stroke').checked;
+    if (stroke) { ctx.strokeStyle = 'rgba(255,255,255,0.9)'; ctx.lineWidth = Math.max(2, fs / 12); ctx.lineJoin = 'round'; }
+    var tw = 0;
+    ls.forEach(function (l) { tw = Math.max(tw, ctx.measureText(l).width); });
+    var gx = tw + +$('gapx').value, gy = lh * ls.length + +$('gapy').value;
+    var rad = +$('rot').value * Math.PI / 180;
+    var diag = Math.sqrt(cv.width * cv.width + cv.height * cv.height) / 2 + gx + gy;
+    for (var y = cv.height / 2 - diag; y <= cv.height / 2 + diag; y += gy) {
+      for (var x = cv.width / 2 - diag; x <= cv.width / 2 + diag; x += gx) {
+        ctx.save();
+        ctx.translate(x, y);
+        ctx.rotate(rad);
+        for (var i = 0; i < ls.length; i++) {
+          var yy = (i - (ls.length - 1) / 2) * lh;
+          if (stroke) ctx.strokeText(ls[i], 0, yy);
+          ctx.fillText(ls[i], 0, yy);
+        }
+        ctx.restore();
+      }
+    }
+    ctx.restore();
+  }
+
+  ['text', 'color', 'opacity', 'fsize', 'rot', 'gapx', 'gapy', 'bold', 'stroke'].forEach(function (id) {
+    $(id).addEventListener('input', render);
+    $(id).addEventListener('change', render);
+  });
+
+  document.getElementById('presets').addEventListener('click', function (e) {
+    var b = e.target.closest('button[data-t]');
+    if (!b) return;
+    $('text').value = b.dataset.t;
+    render();
+  });
+
+  document.getElementById('dl').addEventListener('click', function () {
+    if (!img) return;
+    var fmt = $('fmt').value;
+    cv.toBlob(function (b) {
+      if (!b) return;
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(b);
+      a.download = baseName + '-watermark.' + (fmt === 'jpeg' ? 'jpg' : 'png');
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(function () { URL.revokeObjectURL(a.href); }, 4000);
+    }, 'image/' + fmt, 0.92);
+  });
+})();"""
+
+
+t("image-watermark", "证件加水印",
+  "给身份证等图片平铺水印文字，防止复印件被盗用。",
+  "上传证件或任意图片，平铺自定义水印文案（用途、颜色、透明度、字号、角度、间距均可调），实时预览并导出 PNG/JPG。全程本地处理，图片不上传。",
+  "水印 watermark 证件 身份证 防盗用 复印件",
+  "images", "stamp",
+  WATERMARK_BODY, WATERMARK_JS)

@@ -68,32 +68,7 @@ SHELL = """<!DOCTYPE html>
 </main>
 
 <footer>
-  <div class="footer-cols">
-    <div class="footer-col footer-brand">
-      <a class="home-link" href="../">@@LOGO@@Tools</a>
-      <p>在你的设备上处理文件的工具。无需上传文件进行处理，也无需创建账户。</p>
-    </div>
-    <div class="footer-col footer-site">
-      <strong>本站</strong>
-      <ul>
-        <li><a href="../">全部工具</a></li>
-        <li><a href="../guides/">全部指南</a></li>
-        <li><a href="../about/">关于本站</a></li>
-        <li><a href="../privacy/">隐私与 Cookie</a></li>
-        <li><a href="../sitemap.xml">站点地图</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <strong>相关工具</strong>
-      <ul>
-        <li><a href="../md-to-word/">Markdown 转 Word</a></li>
-        <li><a href="../images-to-pdf/">图片合成 PDF</a></li>
-        <li><a href="../format-json/">JSON 格式化</a></li>
-        <li><a href="../hash-checksum/">哈希与校验和</a></li>
-      </ul>
-    </div>
-  </div>
-  <p class="footer-base">所有处理都在你的浏览器里完成。</p>
+  <p><a class="home-link" href="../">小胡的工具箱</a> · 所有文件都在你的浏览器内本地处理，不上传服务器 · <a href="../privacy/">隐私</a></p>
 </footer>
 
 <script src="../toolkit.js"></script>

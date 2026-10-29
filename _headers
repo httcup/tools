@@ -17,7 +17,7 @@
   Content-Security-Policy: frame-ancestors 'none'
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
-  Referrer-Policy: no-referrer
+  Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(self), microphone=(self), geolocation=(), usb=(), payment=()
 
 # camera=(self) rather than camera=(): /qr-barcode-reader/ reads a code from a

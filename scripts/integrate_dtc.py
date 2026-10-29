@@ -18,7 +18,7 @@ from dtc_defs_calc_a import TOOLS as CALC_A  # noqa: E402
 from dtc_defs_calc_b import TOOLS as CALC_B  # noqa: E402
 from dtc_defs_custom import TOOLS as CUSTOM  # noqa: E402
 
-BASE = "https://httcup.github.io/tools/"
+BASE = "https://139t.cn/"
 TODAY = date.today().isoformat()
 
 CAT = "dtc-ecommerce"

@@ -4,7 +4,7 @@
 
 > 生成一个强随机密码，或者用页面自带的 7776 个词的词表生成一条 diceware 密码短语。由浏览器自身的加密随机数生成，不发往任何地方，也不保存。免费，不用注册。
 
-This is an interactive browser tool at https://httcup.github.io/tools/password-generator/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/password-generator/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 密码和密码短语 are **processed in your browser**. No processing upload.
 
@@ -27,14 +27,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/password-g
 
 ## The longer version
 
-[用在线密码生成器安全吗？](https://httcup.github.io/tools/guides/is-it-safe-to-use-an-online-password-generator/): 这份疑心是对的，值得认真对待：浏览器的随机数从哪儿来，一个生成页面可能错在哪儿，以及哪些检查能看出眼前这个页面留没留它造出来的东西。
+[用在线密码生成器安全吗？](https://139t.cn/guides/is-it-safe-to-use-an-online-password-generator/): 这份疑心是对的，值得认真对待：浏览器的随机数从哪儿来，一个生成页面可能错在哪儿，以及哪些检查能看出眼前这个页面留没留它造出来的东西。
 
 ## Also in the box
 
-- [JSON 格式化](https://httcup.github.io/tools/json-formatter/): JSON、XML、HTML、CSS 和 YAML，格式化或转换。没有一个字被贴进别人的服务器。
-- [YAML 转 JSON](https://httcup.github.io/tools/yaml-to-json/): 两个方向都有，而且会告诉你各自的代价。这些都不会粘进别人的服务器。
-- [XML 格式化](https://httcup.github.io/tools/xml-formatter/): 排开了好读的 XML，压平了好发的 XML，还有两个方向的 JSON 转换。这些都不会粘进别人的服务器。
-- [文本比对](https://httcup.github.io/tools/text-diff/): 两段文本进来，每处差异都被标出来，逐行、逐词。没有一个字被贴进别人的服务器。
+- [JSON 格式化](https://139t.cn/json-formatter/): JSON、XML、HTML、CSS 和 YAML，格式化或转换。没有一个字被贴进别人的服务器。
+- [YAML 转 JSON](https://139t.cn/yaml-to-json/): 两个方向都有，而且会告诉你各自的代价。这些都不会粘进别人的服务器。
+- [XML 格式化](https://139t.cn/xml-formatter/): 排开了好读的 XML，压平了好发的 XML，还有两个方向的 JSON 转换。这些都不会粘进别人的服务器。
+- [文本比对](https://139t.cn/text-diff/): 两段文本进来，每处差异都被标出来，逐行、逐词。没有一个字被贴进别人的服务器。
 
 ## Questions
 

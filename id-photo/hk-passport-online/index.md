@@ -14,7 +14,7 @@ Immigration Department, HKSAR 对这种证件的照片有什么要求，以 2026
 | 背景 | 纯白 |
 | 网上申请用照片 | 至少 ⁦1200 x 1600⁩ px，JPEG，最多 5.00 MB |
 
-[按这条规定制作照片](https://httcup.github.io/tools/id-photo/#hk-passport-online) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
+[按这条规定制作照片](https://139t.cn/id-photo/#hk-passport-online) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
 
 ## 这条规定还说了什么
 
@@ -34,6 +34,6 @@ Immigration Department, HKSAR 对这种证件的照片有什么要求，以 2026
 
 ## 香港 的其他证件
 
-- [护照 (⁦特區護照⁩)](https://httcup.github.io/tools/id-photo/hk-passport/) — ⁦40 x 50⁩ 毫米
+- [护照 (⁦特區護照⁩)](https://139t.cn/id-photo/hk-passport/) — ⁦40 x 50⁩ 毫米
 
-[在证件照工具里查看所有国家和证件](https://httcup.github.io/tools/id-photo/)
+[在证件照工具里查看所有国家和证件](https://139t.cn/id-photo/)

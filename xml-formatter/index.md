@@ -4,7 +4,7 @@
 
 > 格式化、缩进和压缩 XML，把 XML 转成 JSON 或者把 JSON 转回 XML。解析器在你的浏览器里跑，什么都不上传，所以一个订阅源、一张发票或者一份配置文件永远不会离开你的设备。
 
-This is an interactive browser tool at https://httcup.github.io/tools/xml-formatter/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/xml-formatter/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your XML 和 JSON are **processed in your browser**. No processing upload.
 
@@ -26,14 +26,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/xml-format
 
 ## The longer version
 
-[如何格式化并检查 XML](https://httcup.github.io/tools/guides/format-and-check-xml/): 在本地格式化、压缩和检查 XML。定位解析错误，在转换为 JSON 前了解属性、文本和数组的映射。
+[如何格式化并检查 XML](https://139t.cn/guides/format-and-check-xml/): 在本地格式化、压缩和检查 XML。定位解析错误，在转换为 JSON 前了解属性、文本和数组的映射。
 
 ## Also in the box
 
-- [文本比对](https://httcup.github.io/tools/text-diff/): 两段文本进来，每处差异都被标出来，逐行、逐词。没有一个字被贴进别人的服务器。
-- [Base64 编码解码](https://httcup.github.io/tools/base64/): Base64、百分号编码、HTML 实体、十六进制和反斜杠转义，双向都行。没有一个字被贴进别人的服务器。
-- [二维码与条形码生成](https://httcup.github.io/tools/qr-barcode/): 打进去，就变成一个码。生成过程不往外送任何东西。
-- [二维码与条形码识读](https://httcup.github.io/tools/qr-barcode-reader/): 把摄像头对准码，或者把拍下来的图丢进来。读这件事只发生在这里，别处都没有。
+- [文本比对](https://139t.cn/text-diff/): 两段文本进来，每处差异都被标出来，逐行、逐词。没有一个字被贴进别人的服务器。
+- [Base64 编码解码](https://139t.cn/base64/): Base64、百分号编码、HTML 实体、十六进制和反斜杠转义，双向都行。没有一个字被贴进别人的服务器。
+- [二维码与条形码生成](https://139t.cn/qr-barcode/): 打进去，就变成一个码。生成过程不往外送任何东西。
+- [二维码与条形码识读](https://139t.cn/qr-barcode-reader/): 把摄像头对准码，或者把拍下来的图丢进来。读这件事只发生在这里，别处都没有。
 
 ## Questions
 

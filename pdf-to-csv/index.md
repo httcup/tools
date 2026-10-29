@@ -4,7 +4,7 @@
 
 > 在浏览器中将含文本的 PDF 表格提取为 CSV，适用于账单、发票、价目表和报告。检测依赖可读取文本的位置，可能遗漏特殊布局；扫描页需先进行 OCR。不会上传文件。
 
-This is an interactive browser tool at https://httcup.github.io/tools/pdf-to-csv/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/pdf-to-csv/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 文件 are **processed in your browser**. No processing upload.
 
@@ -25,14 +25,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/pdf-to-csv
 
 ## The longer version
 
-[上传银行账单安全吗？](https://httcup.github.io/tools/guides/is-it-safe-to-upload-a-bank-statement/): 账单把收款人、金额和余额放在一个文件中。了解转换器得到什么，谨慎服务如何处理，以及如何分辨上传是否必要。
+[上传银行账单安全吗？](https://139t.cn/guides/is-it-safe-to-upload-a-bank-statement/): 账单把收款人、金额和余额放在一个文件中。了解转换器得到什么，谨慎服务如何处理，以及如何分辨上传是否必要。
 
 ## Also in the box
 
-- [收据与发票识别](https://httcup.github.io/tools/receipt-invoice-extractor/): 读取照片，检查字段和裁剪结果，准备供邮件应用使用的压缩附件和合计。
-- [图片转 PDF](https://httcup.github.io/tools/images-to-pdf/): 把你的图片装进一个文档。
-- [文档扫描](https://httcup.github.io/tools/document-scanner/): 把纸拍下来，回来的是一份看着像扫描的东西。
-- [从视频里提取音频](https://httcup.github.io/tools/extract-audio-from-video/): 把视频拖进来，声音就取出来了。画面从不解码，也不上传任何东西。
+- [收据与发票识别](https://139t.cn/receipt-invoice-extractor/): 读取照片，检查字段和裁剪结果，准备供邮件应用使用的压缩附件和合计。
+- [图片转 PDF](https://139t.cn/images-to-pdf/): 把你的图片装进一个文档。
+- [文档扫描](https://139t.cn/document-scanner/): 把纸拍下来，回来的是一份看着像扫描的东西。
+- [从视频里提取音频](https://139t.cn/extract-audio-from-video/): 把视频拖进来，声音就取出来了。画面从不解码，也不上传任何东西。
 
 ## Questions
 
@@ -62,7 +62,7 @@ This is an interactive browser tool at https://httcup.github.io/tools/pdf-to-csv
 
 ### 带密码的 PDF 它能打开吗？
 
-不能，而且这是故意的。银行会给很多对账单上锁，通常用出生日期或者账号的后几位。把这层保护取掉，跟读出一张表是两回事，所以工具会拒绝，并且指给你几条不用把文件交出去的路。最好的一条是本站的 [PDF 解锁工具](https://httcup.github.io/unlock-pdf/)：它在你自己的浏览器里把密码取下来，页面上一个字都不改写，所以文字会原样落在它当初被印上去的位置。用 Chrome 或者 Edge 输入密码打开再打印回 PDF，或者在 Mac 上用「预览」导出，也一样可以。不要用别的那些说能替你解锁的网站，那正是把这一页存在的意义所要挡住的那份文件传上去。
+不能，而且这是故意的。银行会给很多对账单上锁，通常用出生日期或者账号的后几位。把这层保护取掉，跟读出一张表是两回事，所以工具会拒绝，并且指给你几条不用把文件交出去的路。最好的一条是本站的 [PDF 解锁工具](https://139t.cn/unlock-pdf/)：它在你自己的浏览器里把密码取下来，页面上一个字都不改写，所以文字会原样落在它当初被印上去的位置。用 Chrome 或者 Edge 输入密码打开再打印回 PDF，或者在 Mac 上用「预览」导出，也一样可以。不要用别的那些说能替你解锁的网站，那正是把这一页存在的意义所要挡住的那份文件传上去。
 
 ### 我的 PDF 会被上传到什么地方吗？
 
@@ -85,7 +85,7 @@ This is an interactive browser tool at https://httcup.github.io/tools/pdf-to-csv
 - **人们拿来转换的 PDF，恰恰是最经不起上传的那些。** 没有人会为一张自己能重新敲一遍的表去找转换工具。来到这里的是对账单、发票、工资条和报告：一份你付给了谁、付完还剩多少的名单，一位客户的报价，一家公司的数字。把这些交给陌生人的服务器去换一张表格，意味着他们拿到了、留下了，并且因此成了一个值得攻击的目标。这一页没有另一头：根本没有可以发过去的地方。
 - **余额核对会比较净变动，也会说明核对范围。** 在 PDF 里找表格是推断，栏位边界和行的归属都可能出错。工具把两个可读余额之间的金额合计与余额变化比较，说明有多少次比较相符、哪些行无法核对。第一个余额之前、最后一个余额之后的金额，以及含有缺失或无法读取金额的区间，都不能核对。相符是有用的线索，不是每个值都正确的证明：互相抵消的错误仍可能通过。无法识别余额的表格不会显示余额核对结果。
 - **表格是从纸面上看出来的，不是靠每家银行、每种表单一套模板。** 这个工具里没有银行列表，也没有版式列表，也就不存在「你的版式不在里面」。一页纸会在旁边有一栏小字的地方被分开，然后在每一块里找那些单元格对得齐的连续几行。所以它在一家没人听说过的银行的对账单上、在一份没人见过的报告上也能用，而碰上栏与栏真的挤在一起的那种表，它也真的会失败。
-- **密码不由它来取，页面会告诉你去哪里取。** 带密码的 PDF 会被拒绝，而不是被打开。把一份文件的保护取掉，跟读出里面的表格是两回事，一声不响地替你做掉，是一个工具不该有的举动。页面做的是另一件事：把那些不用把文件交出去的办法列给你。头一条是本站的 [PDF 解锁工具](https://httcup.github.io/unlock-pdf/)，它在你自己的浏览器里把密码取下来，页面上什么都不改写；也可以用浏览器或者「预览」把它打印、导出成一份新的 PDF。它仍然明明白白地说，不要把这份文件交给别的任何一个说能替你解锁的网站，那正是这一页要挡住的那一次上传。
+- **密码不由它来取，页面会告诉你去哪里取。** 带密码的 PDF 会被拒绝，而不是被打开。把一份文件的保护取掉，跟读出里面的表格是两回事，一声不响地替你做掉，是一个工具不该有的举动。页面做的是另一件事：把那些不用把文件交出去的办法列给你。头一条是本站的 [PDF 解锁工具](https://139t.cn/unlock-pdf/)，它在你自己的浏览器里把密码取下来，页面上什么都不改写；也可以用浏览器或者「预览」把它打印、导出成一份新的 PDF。它仍然明明白白地说，不要把这份文件交给别的任何一个说能替你解锁的网站，那正是这一页要挡住的那一次上传。
 - **它读不了一页纸的照片，也不假装能读。** 扫描件是一张图：那些行是像素，文件里根本没有可以对齐成栏的文字。这一点会被如实报告，同时给出不用上传任何东西的几条路；如果那是一份对账单，头一条是大多数人都有、却想不起来的那条，银行几乎一定可以直接给你同一份对账单的 CSV。从图里认字叫 OCR，那是另一个工具，不是这一个。
 - **Google 加载了什么，又没拿到什么。** 广告和统计脚本来自 Google。这两个都没有拿到关于你文件的任何东西：不是文件，不是某张表、某一行，不是某个数字、文件名或者页数。每一行读 PDF 或者写 CSV 的代码都由这个源站发出，并且列在代码仓库里。
 - **打赏按钮加载了什么，又没拿到什么。** 页眉上那个「Buy me a coffee」按钮，是由 cdnjs.buymeacoffee.com 的一段脚本画出来的，字体取自 Google Fonts。它就是一个链接，仅此而已：它不上报访问，也拿不到任何关于你或者你文件的东西。你不点它就什么都不会发生，而点下去要去的是别人的网站。

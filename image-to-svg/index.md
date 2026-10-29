@@ -4,7 +4,7 @@
 
 > 在浏览器里把黑白图片描成真正的 SVG 轮廓。logo、镂空模板、签名、线稿和剪影都变成能放大到任意尺寸的曲线。描多了的部分，点一下就去掉。什么都不上传。
 
-This is an interactive browser tool at https://httcup.github.io/tools/image-to-svg/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/image-to-svg/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 图片 are **processed in your browser**. No processing upload.
 
@@ -27,14 +27,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/image-to-s
 
 ## The longer version
 
-[怎么把图片描成 SVG](https://httcup.github.io/tools/guides/trace-an-image-into-an-svg/): 在浏览器里把 logo、镂空模板、签名或剪影变成真正的矢量轮廓。哪些图片描得好，哪些永远描不好，以及怎么改掉描图器弄错的地方。
+[怎么把图片描成 SVG](https://139t.cn/guides/trace-an-image-into-an-svg/): 在浏览器里把 logo、镂空模板、签名或剪影变成真正的矢量轮廓。哪些图片描得好，哪些永远描不好，以及怎么改掉描图器弄错的地方。
 
 ## Also in the box
 
-- [身高对比图](https://httcup.github.io/tools/compare-heights/): 把身高打进去，把图带走。为了画它，不会往外送任何东西。
-- [商家资料预览](https://httcup.github.io/tools/business-profile-preview/): 把内容打进去，它就变成 Google 会画的那张卡片。为了画它，不会往外送任何东西。
-- [图片压缩](https://httcup.github.io/tools/compress-image/): 说个大小，剩下的它来算。
-- [图片缩放](https://httcup.github.io/tools/resize-image/): 说个尺寸，拉个框，挑个格式。
+- [身高对比图](https://139t.cn/compare-heights/): 把身高打进去，把图带走。为了画它，不会往外送任何东西。
+- [商家资料预览](https://139t.cn/business-profile-preview/): 把内容打进去，它就变成 Google 会画的那张卡片。为了画它，不会往外送任何东西。
+- [图片压缩](https://139t.cn/compress-image/): 说个大小，剩下的它来算。
+- [图片缩放](https://139t.cn/resize-image/): 说个尺寸，拉个框，挑个格式。
 
 ## Questions
 

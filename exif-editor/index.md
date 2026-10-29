@@ -4,7 +4,7 @@
 
 > 查看、编辑或删除 EXIF 和 GPS 数据。JPEG、PNG 和 WebP 保持图片编码，AVIF 清理会转换为新的 PNG。不上传文件。
 
-This is an interactive browser tool at https://httcup.github.io/tools/exif-editor/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/exif-editor/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 照片 are **processed in your browser**. No processing upload.
 
@@ -25,14 +25,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/exif-edito
 
 ## The longer version
 
-[一张照片把你交代了多少，以及怎么把它删掉](https://httcup.github.io/tools/guides/remove-exif-and-gps-data/): 手机拍的照片通常带着精确的拍摄地点、精确到秒的时间，还有相机的序列号。里面到底有什么，谁读得到，以及怎么在不动画面的前提下把它们清掉。
+[一张照片把你交代了多少，以及怎么把它删掉](https://139t.cn/guides/remove-exif-and-gps-data/): 手机拍的照片通常带着精确的拍摄地点、精确到秒的时间，还有相机的序列号。里面到底有什么，谁读得到，以及怎么在不动画面的前提下把它们清掉。
 
 ## Also in the box
 
-- [DICOM 阅片器](https://httcup.github.io/tools/dicom-viewer/): CT、MR、X 光和超声，连窗宽窗位、头信息和测量一起。
-- [图片转 ICO](https://httcup.github.io/tools/image-to-ico/): 进去一张图，出来的是浏览器、Windows 和 Mac 各自要的每一个尺寸。
-- [图片转 Data URI](https://httcup.github.io/tools/image-to-data-uri/): 整张图变成一行文本，直接粘进 CSS 或者 HTML。
-- [SVG 转图片](https://httcup.github.io/tools/svg-to-image/): 说个尺寸。矢量图本来就没有尺寸可丢。
+- [DICOM 阅片器](https://139t.cn/dicom-viewer/): CT、MR、X 光和超声，连窗宽窗位、头信息和测量一起。
+- [图片转 ICO](https://139t.cn/image-to-ico/): 进去一张图，出来的是浏览器、Windows 和 Mac 各自要的每一个尺寸。
+- [图片转 Data URI](https://139t.cn/image-to-data-uri/): 整张图变成一行文本，直接粘进 CSS 或者 HTML。
+- [SVG 转图片](https://139t.cn/svg-to-image/): 说个尺寸。矢量图本来就没有尺寸可丢。
 
 ## Questions
 

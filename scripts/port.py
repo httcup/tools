@@ -47,7 +47,7 @@ RE_LOCALE_HREF = re.compile(r'href="(?:\.\./)?/?(' + LOCALE + r')/', re.I)
 
 def rewrite_text(text, path):
     text = text.replace("/tools/", "../")
-    text = text.replace("https://httcup.github.io/toolss", "https://httcup.github.io/tools")
+    text = text.replace("https://139t.cn/toolss", "https://139t.cn/tools")
     if path.endswith((".html", ".htm")):
         text = RE_HREFLANG_LOCALE.sub("", text)
         text = RE_HREFLANG_LOCALE_ALT.sub("", text)

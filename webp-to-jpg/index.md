@@ -4,7 +4,7 @@
 
 > 在浏览器中将 WebP 和 AVIF 图片转为 JPG。浏览器已经能解码 WebP，因此无需上传或账号，也可离线使用。透明区域填充你选择的颜色。
 
-This is an interactive browser tool at https://httcup.github.io/tools/webp-to-jpg/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/webp-to-jpg/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 图片 are **processed in your browser**. No processing upload.
 
@@ -25,14 +25,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/webp-to-jp
 
 ## The longer version
 
-[把网页保存的图片变成所有软件仍接受的格式](https://httcup.github.io/tools/guides/convert-webp-to-jpg/): 网页保存的 .webp 没有软件能打开？这里解释 WebP、转换为何增大文件、透明会怎样，以及如何无需上传完成。
+[把网页保存的图片变成所有软件仍接受的格式](https://139t.cn/guides/convert-webp-to-jpg/): 网页保存的 .webp 没有软件能打开？这里解释 WebP、转换为何增大文件、透明会怎样，以及如何无需上传完成。
 
 ## Also in the box
 
-- [PNG 转 WebP](https://httcup.github.io/tools/png-to-webp/): 同一张图片，常常减少三分之一体积，透明区域保持完整。
-- [AVIF 转 JPG](https://httcup.github.io/tools/avif-to-jpg/): 把网站如今保存的格式，变成所有软件一直支持的格式。
-- [证件照制作](https://httcup.github.io/tools/id-photo/): 选择支持的国家和证件。公布的要求与指导值均有标注。
-- [图片堆栈](https://httcup.github.io/tools/stack-images/): 二十张变一张，不用传二十次，也不用 RAW 转换器。
+- [PNG 转 WebP](https://139t.cn/png-to-webp/): 同一张图片，常常减少三分之一体积，透明区域保持完整。
+- [AVIF 转 JPG](https://139t.cn/avif-to-jpg/): 把网站如今保存的格式，变成所有软件一直支持的格式。
+- [证件照制作](https://139t.cn/id-photo/): 选择支持的国家和证件。公布的要求与指导值均有标注。
+- [图片堆栈](https://139t.cn/stack-images/): 二十张变一张，不用传二十次，也不用 RAW 转换器。
 
 ## Questions
 
@@ -46,11 +46,11 @@ This is an interactive browser tool at https://httcup.github.io/tools/webp-to-jp
 
 ### 透明区域会怎样？
 
-会填充你选择的颜色，页面在转换前就会说明。JPEG 没有透明通道，所以透明无法保留，能选择的只有背景颜色。决定权在你而非转换器。默认白色适合放入文档的徽标。若要透明，请保留 WebP，或用[图片压缩器](https://httcup.github.io/compress-image/)转为 PNG；它也能输出 PNG 和 WebP。
+会填充你选择的颜色，页面在转换前就会说明。JPEG 没有透明通道，所以透明无法保留，能选择的只有背景颜色。决定权在你而非转换器。默认白色适合放入文档的徽标。若要透明，请保留 WebP，或用[图片压缩器](https://139t.cn/compress-image/)转为 PNG；它也能输出 PNG 和 WebP。
 
 ### 能转换动态 WebP 吗？
 
-只转换第一帧，转换前的文件行和转换后的结果都会说明。JPEG 只能保存一张图片，无法容纳其余帧。若需要每帧单独文件或动画视频，可先转成 GIF，再使用[拆分 GIF](https://httcup.github.io/split-gif/) 或 [GIF 转 MP4](https://httcup.github.io/gif-to-mp4/)。
+只转换第一帧，转换前的文件行和转换后的结果都会说明。JPEG 只能保存一张图片，无法容纳其余帧。若需要每帧单独文件或动画视频，可先转成 GIF，再使用[拆分 GIF](https://139t.cn/split-gif/) 或 [GIF 转 MP4](https://139t.cn/gif-to-mp4/)。
 
 ### 图片会被重新压缩吗？
 
@@ -58,11 +58,11 @@ This is an interactive browser tool at https://httcup.github.io/tools/webp-to-jp
 
 ### JPG 会比 WebP 大吗？
 
-经常会，结果明确显示差别。WebP 在相同可见质量下比 JPEG 更高效，因此网页开始使用它。反向转换通常会增加大小。这是用体积换兼容性，对不接受 WebP 的目标很合理。需要再限制大小时，[图片压缩器](https://httcup.github.io/compress-image/)可把 JPEG 压到指定值。
+经常会，结果明确显示差别。WebP 在相同可见质量下比 JPEG 更高效，因此网页开始使用它。反向转换通常会增加大小。这是用体积换兼容性，对不接受 WebP 的目标很合理。需要再限制大小时，[图片压缩器](https://139t.cn/compress-image/)可把 JPEG 压到指定值。
 
 ### 日期、相机和位置会保留吗？
 
-不会。画布只有像素，所以 EXIF、GPS、色彩配置和 XMP 全部丢弃。实际网页上的 WebP 大多已经移除这些内容，发送图片的人通常也希望如此。[EXIF 查看与移除工具](https://httcup.github.io/exif-editor/)可查看和编辑 JPEG、PNG 和 WebP 元数据，不重新编码图片。AVIF 支持只读查看提取到的 EXIF，清理时将第一张解码后的图片转换为新的 PNG，颜色或 HDR 可能改变。
+不会。画布只有像素，所以 EXIF、GPS、色彩配置和 XMP 全部丢弃。实际网页上的 WebP 大多已经移除这些内容，发送图片的人通常也希望如此。[EXIF 查看与移除工具](https://139t.cn/exif-editor/)可查看和编辑 JPEG、PNG 和 WebP 元数据，不重新编码图片。AVIF 支持只读查看提取到的 EXIF，清理时将第一张解码后的图片转换为新的 PNG，颜色或 HDR 可能改变。
 
 ### 能一次转换整个文件夹吗？
 
@@ -83,9 +83,9 @@ This is an interactive browser tool at https://httcup.github.io/tools/webp-to-jp
 ## How the privacy claim is verifiable
 
 - **处理在这个浏览器里完成。** 本工具在浏览器里处理输入和结果，处理代码不把它们上传去处理。Content-Security-Policy 限制可用资源和连接目的地，但已允许的主机仍可接收请求。策略不检查载荷，不能单独证明什么都没有发出。请把具体操作的请求与源码核对，或断网完成该本地操作。
-- **无需提供解码器，所以无需服务器。** 2020 年以来的每个浏览器都能解码 WebP，也早就能写 JPEG。因此本工具没有引擎，第一次使用也不下载任何内容，没有服务器存在的理由。这正是要求上传的转换器没告诉你的事。这里唯一提供编解码器的是 [HEIC 转换器](https://httcup.github.io/heic-to-jpg/)，因为 HEIC 的确只有 Safari 能打开，其页面已详细说明。
+- **无需提供解码器，所以无需服务器。** 2020 年以来的每个浏览器都能解码 WebP，也早就能写 JPEG。因此本工具没有引擎，第一次使用也不下载任何内容，没有服务器存在的理由。这正是要求上传的转换器没告诉你的事。这里唯一提供编解码器的是 [HEIC 转换器](https://139t.cn/heic-to-jpg/)，因为 HEIC 的确只有 Safari 能打开，其页面已详细说明。
 - **透明区域，以及它们背后的颜色。** WebP 可以透明，JPEG 没有透明通道，必须填充背景。本页询问颜色并默认白色，仅在文件确实有透明像素时询问，检查的是解码后的像素而非格式。没询问的转换器不是保留透明，而是替你选择了黑色，这就是徽标黑底的来源。
-- **画布不会保留的内容。** 图片解码并绘制到画布，画布只有像素，因此 EXIF、ICC 色彩配置、XMP 和版权信息都无法保留。多数人认为这是好处，另一些人认为是损失，所以事先说明。[EXIF 查看与移除工具](https://httcup.github.io/exif-editor/)可查看和编辑 JPEG、PNG 和 WebP 元数据，不重新编码图片。AVIF 支持只读查看提取到的 EXIF，清理时将第一张解码后的图片转换为新的 PNG，颜色或 HDR 可能改变。
+- **画布不会保留的内容。** 图片解码并绘制到画布，画布只有像素，因此 EXIF、ICC 色彩配置、XMP 和版权信息都无法保留。多数人认为这是好处，另一些人认为是损失，所以事先说明。[EXIF 查看与移除工具](https://139t.cn/exif-editor/)可查看和编辑 JPEG、PNG 和 WebP 元数据，不重新编码图片。AVIF 支持只读查看提取到的 EXIF，清理时将第一张解码后的图片转换为新的 PNG，颜色或 HDR 可能改变。
 - **Google 加载什么，又拿不到什么。** 广告和统计脚本来自 Google，捐赠按钮来自 Buy Me a Coffee。它们都不会获得你的图片信息。读取、解码和写入文件的每一行代码都来自本站，并列在代码仓库中。
 - **可以离线使用。** 先加载页面再断开网络，工具仍然照常工作。这是最简单的证明：如果转换器把图片发送出去处理，它就不可能做到这一点。
 

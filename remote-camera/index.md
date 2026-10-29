@@ -25,14 +25,14 @@ Your camera video and enabled audio go to accepted viewers over separate encrypt
 
 ## The longer version
 
-[如何在另一台设备上查看摄像头](https://httcup.github.io/tools/guides/watch-camera-from-another-device/): 在另一个浏览器查看摄像头，并在传送视频前批准观看者。可在互相可达的本地网络上直接连接，也可选择经 Cloudflare 转发的加密云中继。
+[如何在另一台设备上查看摄像头](https://139t.cn/guides/watch-camera-from-another-device/): 在另一个浏览器查看摄像头，并在传送视频前批准观看者。可在互相可达的本地网络上直接连接，也可选择经 Cloudflare 转发的加密云中继。
 
 ## Also in the box
 
-- [Share a Browser Tab](https://httcup.github.io/tools/share-tab/): Choose a tab on your computer and let one approved viewer watch it using Direct or Cloud relay. Invite by link, network discovery or a private group. No extension, sound or remote control.
-- [文本与文件分享](https://httcup.github.io/tools/share-text/): 从打开的浏览器加密分享文本与文件。默认直连，也可选择云中转。你可以逐一批准读者。
-- [Local Walkie-Talkie](https://httcup.github.io/tools/walkie-talkie/): Start a named channel, then hold to talk or speak hands-free. Connect directly on your local network, or choose Cloud relay for listeners over the internet.
-- [Voice Oncall](https://httcup.github.io/tools/voice-oncall/): Open a pager and hear live voice from people who connect. Use Direct on your local network or choose Cloud relay over the internet, with a password and individual mute or remove controls.
+- [Share a Browser Tab](https://139t.cn/share-tab/): Choose a tab on your computer and let one approved viewer watch it using Direct or Cloud relay. Invite by link, network discovery or a private group. No extension, sound or remote control.
+- [文本与文件分享](https://139t.cn/share-text/): 从打开的浏览器加密分享文本与文件。默认直连，也可选择云中转。你可以逐一批准读者。
+- [Local Walkie-Talkie](https://139t.cn/walkie-talkie/): Start a named channel, then hold to talk or speak hands-free. Connect directly on your local network, or choose Cloud relay for listeners over the internet.
+- [Voice Oncall](https://139t.cn/voice-oncall/): Open a pager and hear live voice from people who connect. Use Direct on your local network or choose Cloud relay over the internet, with a password and individual mute or remove controls.
 
 ## Questions
 

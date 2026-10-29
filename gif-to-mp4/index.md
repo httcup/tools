@@ -4,7 +4,7 @@
 
 > 在浏览器里把动态 GIF 变成 MP4，体积只剩零头。每一帧保留 GIF 自己的时间，不做重采样。MP4 里的 H.264，每个平台都收的文件。什么都不上传。
 
-This is an interactive browser tool at https://httcup.github.io/tools/gif-to-mp4/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/gif-to-mp4/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your GIF are **processed in your browser**. No processing upload.
 
@@ -24,14 +24,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/gif-to-mp4
 
 ## The longer version
 
-[如何把 GIF 转为 MP4，为什么会小得多](https://httcup.github.io/tools/guides/convert-a-gif-to-mp4/): 为什么同一动画的 MP4 只有 GIF 的十分之一，视频缺少哪些 GIF 能力，为什么时序易错，以及如何在浏览器中无需上传地转换。
+[如何把 GIF 转为 MP4，为什么会小得多](https://139t.cn/guides/convert-a-gif-to-mp4/): 为什么同一动画的 MP4 只有 GIF 的十分之一，视频缺少哪些 GIF 能力，为什么时序易错，以及如何在浏览器中无需上传地转换。
 
 ## Also in the box
 
-- [视频转 GIF](https://httcup.github.io/tools/video-to-gif/): 挑好段落、尺寸和帧率。
-- [GIF 制作](https://httcup.github.io/tools/gif-maker/): 把一组图片变成一段动画。
-- [GIF 拆帧](https://httcup.github.io/tools/split-gif/): 每一帧都单独存成一张 PNG。
-- [GIF 分析](https://httcup.github.io/tools/gif-analyzer/): 帧、延时、调色板，以及每个字节的去向。
+- [视频转 GIF](https://139t.cn/video-to-gif/): 挑好段落、尺寸和帧率。
+- [GIF 制作](https://139t.cn/gif-maker/): 把一组图片变成一段动画。
+- [GIF 拆帧](https://139t.cn/split-gif/): 每一帧都单独存成一张 PNG。
+- [GIF 分析](https://139t.cn/gif-analyzer/): 帧、延时、调色板，以及每个字节的去向。
 
 ## Questions
 

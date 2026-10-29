@@ -4,7 +4,7 @@
 
 > 把 JPG、PNG、WebP 或 AVIF 做成 MP4 幻灯片视频，免费，全程在你的浏览器里跑。什么都不上传，不用注册，断网也能用。
 
-This is an interactive browser tool at https://httcup.github.io/tools/images-to-video/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/images-to-video/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 图片 are **processed in your browser**. No processing upload.
 
@@ -25,14 +25,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/images-to-
 
 ## The longer version
 
-[怎么把一个文件夹的图片做成视频](https://httcup.github.io/tools/guides/turn-images-into-a-video/): 用照片做一段 MP4 幻灯片：帧率和停留时间各管什么，比例不对的照片怎么办，以及成品为什么没有配乐。
+[怎么把一个文件夹的图片做成视频](https://139t.cn/guides/turn-images-into-a-video/): 用照片做一段 MP4 幻灯片：帧率和停留时间各管什么，比例不对的照片怎么办，以及成品为什么没有配乐。
 
 ## Also in the box
 
-- [视频剪切](https://httcup.github.io/tools/trim-video/): 一边看一边标出要留的段落，最后拿回一个视频。
-- [视频裁剪](https://httcup.github.io/tools/crop-video/): 把片子切到只剩要紧的那块。
-- [视频倒放](https://httcup.github.io/tools/reverse-video/): 最后一帧排在最前，连声音一起。
-- [延时视频](https://httcup.github.io/tools/timelapse-video/): 一小时的素材，二十秒看完。
+- [视频剪切](https://139t.cn/trim-video/): 一边看一边标出要留的段落，最后拿回一个视频。
+- [视频裁剪](https://139t.cn/crop-video/): 把片子切到只剩要紧的那块。
+- [视频倒放](https://139t.cn/reverse-video/): 最后一帧排在最前，连声音一起。
+- [延时视频](https://139t.cn/timelapse-video/): 一小时的素材，二十秒看完。
 
 ## Questions
 

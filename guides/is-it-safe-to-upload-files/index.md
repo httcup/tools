@@ -14,9 +14,9 @@
 
 ## 先定任务，再查边界
 
-**附件太大。**按文件选[图片](https://httcup.github.io/tools/guides/compress-an-image-to-a-target-size/)、[PDF](https://httcup.github.io/tools/guides/make-a-pdf-smaller/) 或[视频](https://httcup.github.io/tools/guides/compress-a-video/)指南。从副本开始，用接收方实际限额，检查下载件文字可读、动作可播。多个附件可能共用总上限。
+**附件太大。**按文件选[图片](https://139t.cn/guides/compress-an-image-to-a-target-size/)、[PDF](https://139t.cn/guides/make-a-pdf-smaller/) 或[视频](https://139t.cn/guides/compress-a-video/)指南。从副本开始，用接收方实际限额，检查下载件文字可读、动作可播。多个附件可能共用总上限。
 
-**材料包或客服示例。**先[选择并排序所需页](https://httcup.github.io/tools/guides/merge-and-split-pdf-files/)、[去掉截图私密细节](https://httcup.github.io/tools/guides/redact-an-image/)或[遮盖支持的 PDF 文字](https://httcup.github.io/tools/guides/redact-a-pdf/)，再主动交付。本地准备不替你决定收件人。
+**材料包或客服示例。**先[选择并排序所需页](https://139t.cn/guides/merge-and-split-pdf-files/)、[去掉截图私密细节](https://139t.cn/guides/redact-an-image/)或[遮盖支持的 PDF 文字](https://139t.cn/guides/redact-a-pdf/)，再主动交付。本地准备不替你决定收件人。
 
 陌生转换器先用虚构内容完整演练并执行下文检查。这样能在使用真实文件前发现格式不支持、提前上传和输出难读的问题。
 
@@ -42,7 +42,7 @@
 
 ### 1. 断网做本地操作
 
-等工具完全加载，若有离线缓存，就等状态显示就绪。断网后处理设备上的文件。完成能证明这次操作在断网时不需要服务器。失败也可能因为资源缺失或浏览器功能不支持，不能证明上传。成功离线运行也不能说明重连后的行为；[离线指南](https://httcup.github.io/tools/guides/how-can-a-web-page-work-offline/)解释这个边界。
+等工具完全加载，若有离线缓存，就等状态显示就绪。断网后处理设备上的文件。完成能证明这次操作在断网时不需要服务器。失败也可能因为资源缺失或浏览器功能不支持，不能证明上传。成功离线运行也不能说明重连后的行为；[离线指南](https://139t.cn/guides/how-can-a-web-page-work-offline/)解释这个边界。
 
 ### 2. 检查请求
 
@@ -80,10 +80,10 @@
 - **策略。**多数工具继承平台目的地。收据工具加入 Frankfurter，分享和远程摄像头加入引见服务器。策略约束目的地，不能证明每条载荷。
 - **源码。**[源码公开](https://github.com/A-Box-of-Tools/website)，可以自行构建并比较输出。共享模块和内置引擎与本站代码一起可读。
 
-[隐私页](https://httcup.github.io/tools/privacy/)完整说明边界：[网址图片导入](https://httcup.github.io/tools/images-to-video/)、可选的[收据汇率和应用交接](https://httcup.github.io/tools/receipt-invoice-extractor/)、[浏览器间分享](https://httcup.github.io/tools/share-text/)、[远程摄像头](https://httcup.github.io/tools/remote-camera/)，以及广告、Analytics 和固定反馈。主动传送不同于上传文件去处理。
+[隐私页](https://139t.cn/privacy/)完整说明边界：[网址图片导入](https://139t.cn/images-to-video/)、可选的[收据汇率和应用交接](https://139t.cn/receipt-invoice-extractor/)、[浏览器间分享](https://139t.cn/share-text/)、[远程摄像头](https://139t.cn/remote-camera/)，以及广告、Analytics 和固定反馈。主动传送不同于上传文件去处理。
 
-本地处理的例子包括[按目标大小压缩](https://httcup.github.io/tools/compress-image/)、[裁剪视频](https://httcup.github.io/tools/crop-video/)、[删除 EXIF 和 GPS](https://httcup.github.io/tools/exif-editor/)、[图片合成 PDF](https://httcup.github.io/tools/images-to-pdf/)。要核查支持格式和下载结果。这些任务无须上传处理或账号。
+本地处理的例子包括[按目标大小压缩](https://139t.cn/compress-image/)、[裁剪视频](https://139t.cn/crop-video/)、[删除 EXIF 和 GPS](https://139t.cn/exif-editor/)、[图片合成 PDF](https://139t.cn/images-to-pdf/)。要核查支持格式和下载结果。这些任务无须上传处理或账号。
 
-![工具的隐私面板，显示本地处理说明、源码位置和已加载资源的实时摘要。](https://httcup.github.io/screens/is-it-safe-to-upload-files/pledge.webp)
+![工具的隐私面板，显示本地处理说明、源码位置和已加载资源的实时摘要。](https://139t.cn/screens/is-it-safe-to-upload-files/pledge.webp)
 
 面板把主张和对应源码放在眼前。资源摘要能提醒你检查浏览器自己的请求，但不能独立检查载荷。

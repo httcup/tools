@@ -14,7 +14,7 @@
 | 背景 | 素净而浅——没公布颜色 |
 | 上传规定 | 没有公布——这一条是给打印的 |
 
-[按这条规定制作照片](https://httcup.github.io/tools/id-photo/#jp-driving-licence) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
+[按这条规定制作照片](https://139t.cn/id-photo/#jp-driving-licence) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
 
 ## 这条规定还说了什么
 
@@ -34,8 +34,8 @@
 
 ## 日本 的其他证件
 
-- [护照 (⁦旅券（パスポート）⁩)](https://httcup.github.io/tools/id-photo/jp-passport/) — ⁦35 x 45⁩ 毫米
-- [个人编号卡（マイナンバーカード）](https://httcup.github.io/tools/id-photo/jp-mynumber/) — ⁦35 x 45⁩ 毫米 · ⁦480 x 617⁩ px
-- [居留卡 (⁦在留カード⁩)](https://httcup.github.io/tools/id-photo/jp-residence-card/) — ⁦30 x 40⁩ 毫米
+- [护照 (⁦旅券（パスポート）⁩)](https://139t.cn/id-photo/jp-passport/) — ⁦35 x 45⁩ 毫米
+- [个人编号卡（マイナンバーカード）](https://139t.cn/id-photo/jp-mynumber/) — ⁦35 x 45⁩ 毫米 · ⁦480 x 617⁩ px
+- [居留卡 (⁦在留カード⁩)](https://139t.cn/id-photo/jp-residence-card/) — ⁦30 x 40⁩ 毫米
 
-[在证件照工具里查看所有国家和证件](https://httcup.github.io/tools/id-photo/)
+[在证件照工具里查看所有国家和证件](https://139t.cn/id-photo/)

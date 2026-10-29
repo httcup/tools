@@ -15,7 +15,7 @@ from datetime import date
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from build_toolknit import ROOT, NEW_CATS, tool_list  # noqa: E402
 
-BASE = "https://httcup.github.io/tools/"
+BASE = "https://139t.cn/"
 TODAY = date.today().isoformat()
 TOOLS = tool_list()
 

@@ -4,7 +4,7 @@
 
 > 把 MP4、MOV 或 WebM 里的声音取出来，存成 WAV。视频不会离开你的设备，画面也从不解码，整个过程都在你自己的浏览器里跑。
 
-This is an interactive browser tool at https://httcup.github.io/tools/extract-audio-from-video/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/extract-audio-from-video/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 视频 are **processed in your browser**. No processing upload.
 
@@ -26,14 +26,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/extract-au
 
 ## The longer version
 
-[如何从视频提取声音](https://httcup.github.io/tools/guides/extract-audio-from-a-video/): 在本地将视频音轨提取为 WAV。选择 PCM16 或 Float32，保留声道或混为单声道，并在保存前检查。
+[如何从视频提取声音](https://139t.cn/guides/extract-audio-from-a-video/): 在本地将视频音轨提取为 WAV。选择 PCM16 或 Float32，保留声道或混为单声道，并在保存前检查。
 
 ## Also in the box
 
-- [音频剪辑](https://httcup.github.io/tools/trim-audio/): 边听边标出值得留的段落。它们会合成一个文件回来，就切在你说的位置。
-- [音频编辑](https://httcup.github.io/tools/edit-audio/): 倒着放、快慢随你调、把录轻了的声音提上来，全在你这台机器上。
-- [PDF 合并与拆分](https://httcup.github.io/tools/merge-pdf/): 挪动页面，不用往服务器跑一趟。
-- [PDF 压缩](https://httcup.github.io/tools/compress-pdf/): 文档变小，不用送去任何地方。
+- [音频剪辑](https://139t.cn/trim-audio/): 边听边标出值得留的段落。它们会合成一个文件回来，就切在你说的位置。
+- [音频编辑](https://139t.cn/edit-audio/): 倒着放、快慢随你调、把录轻了的声音提上来，全在你这台机器上。
+- [PDF 合并与拆分](https://139t.cn/merge-pdf/): 挪动页面，不用往服务器跑一趟。
+- [PDF 压缩](https://139t.cn/compress-pdf/): 文档变小，不用送去任何地方。
 
 ## Questions
 
@@ -71,7 +71,7 @@ WAV 音频未压缩。44.1 kHz 的 16 位立体声每分钟约 10 MB。浮点会
 
 ### 能剪短或者调大音量吗？
 
-能，但不在这里，这个页面只做一件事。有结果之后，下载旁边会出现一排链接，不用先保存就把它直接送进[音频剪辑](https://httcup.github.io/trim-audio/)或者[音频编辑](https://httcup.github.io/edit-audio/)，那两个也一样不上传。
+能，但不在这里，这个页面只做一件事。有结果之后，下载旁边会出现一排链接，不用先保存就把它直接送进[音频剪辑](https://139t.cn/trim-audio/)或者[音频编辑](https://139t.cn/edit-audio/)，那两个也一样不上传。
 
 ### 免费吗？需要注册吗？
 

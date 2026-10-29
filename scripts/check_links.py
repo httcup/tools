@@ -22,7 +22,7 @@ def resolve(base_dir, ref):
         return None
     parsed = urlparse(ref)
     if parsed.scheme in ("http", "https"):
-        if parsed.netloc == "httcup.github.io":
+        if parsed.netloc == "139t.cn":
             path = parsed.path
         else:
             return None

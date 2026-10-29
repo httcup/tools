@@ -4,7 +4,7 @@
 
 > 在浏览器中将 AVIF 图片转换为 JPG。浏览器已经能解码 AVIF，因此无需上传、注册，也能离线使用。透明区域会填充你选择的颜色。
 
-This is an interactive browser tool at https://httcup.github.io/tools/avif-to-jpg/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/avif-to-jpg/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 图片 are **processed in your browser**. No processing upload.
 
@@ -24,14 +24,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/avif-to-jp
 
 ## The longer version
 
-[只有你正在阅读的浏览器能打开的文件](https://httcup.github.io/tools/guides/convert-avif-to-jpg/): 下载图片得到无法打开的 .avif？浏览器能读取，所以转换无需上传。这里解释 AVIF、JPEG 无法保留的内容和文件为何大数倍。
+[只有你正在阅读的浏览器能打开的文件](https://139t.cn/guides/convert-avif-to-jpg/): 下载图片得到无法打开的 .avif？浏览器能读取，所以转换无需上传。这里解释 AVIF、JPEG 无法保留的内容和文件为何大数倍。
 
 ## Also in the box
 
-- [证件照制作](https://httcup.github.io/tools/id-photo/): 选择支持的国家和证件。公布的要求与指导值均有标注。
-- [图片堆栈](https://httcup.github.io/tools/stack-images/): 二十张变一张，不用传二十次，也不用 RAW 转换器。
-- [图片涂黑与打码](https://httcup.github.io/tools/redact-image/): 你遮住的那块是从文件里删掉的，不是藏在文件里。
-- [EXIF 查看与清除](https://httcup.github.io/tools/exif-editor/): 看看一张照片把你交代了多少，然后删掉。
+- [证件照制作](https://139t.cn/id-photo/): 选择支持的国家和证件。公布的要求与指导值均有标注。
+- [图片堆栈](https://139t.cn/stack-images/): 二十张变一张，不用传二十次，也不用 RAW 转换器。
+- [图片涂黑与打码](https://139t.cn/redact-image/): 你遮住的那块是从文件里删掉的，不是藏在文件里。
+- [EXIF 查看与清除](https://139t.cn/exif-editor/): 看看一张照片把你交代了多少，然后删掉。
 
 ## Questions
 
@@ -45,11 +45,11 @@ This is an interactive browser tool at https://httcup.github.io/tools/avif-to-jp
 
 ### JPG 会比 AVIF 更大吗？
 
-几乎一定会，经常大数倍。结果会明确显示差别。AVIF 是最高效的静态图像编码之一，JPEG 则是最老的一批。40 KB 的 AVIF 在相同可见质量下变成 200 KB 的 JPEG 很正常。这是用体积换兼容性。如果之后还要限制大小，[图片压缩器](https://httcup.github.io/compress-image/)可以把 JPEG 压到指定大小。
+几乎一定会，经常大数倍。结果会明确显示差别。AVIF 是最高效的静态图像编码之一，JPEG 则是最老的一批。40 KB 的 AVIF 在相同可见质量下变成 200 KB 的 JPEG 很正常。这是用体积换兼容性。如果之后还要限制大小，[图片压缩器](https://139t.cn/compress-image/)可以把 JPEG 压到指定大小。
 
 ### 透明区域会怎样？
 
-会填充你选择的颜色，而且页面在转换前就会说明。AVIF 有透明通道，JPEG 没有，因此这次转换无法保留透明，只能由你决定垫什么颜色。多数 AVIF 是不透明的照片，颜色控件便不会出现。需要保留透明时，可用[图片压缩器](https://httcup.github.io/compress-image/)转为 PNG 或 WebP，它能读取 AVIF 并输出两者。
+会填充你选择的颜色，而且页面在转换前就会说明。AVIF 有透明通道，JPEG 没有，因此这次转换无法保留透明，只能由你决定垫什么颜色。多数 AVIF 是不透明的照片，颜色控件便不会出现。需要保留透明时，可用[图片压缩器](https://139t.cn/compress-image/)转为 PNG 或 WebP，它能读取 AVIF 并输出两者。
 
 ### HDR 和十位色彩呢？
 
@@ -65,7 +65,7 @@ This is an interactive browser tool at https://httcup.github.io/tools/avif-to-jp
 
 ### 日期、相机和位置会保留吗？
 
-不会。图片绘制到画布上，而画布只有像素，所以 EXIF、GPS、色彩配置和 XMP 都会丢弃。网页上的图片通常本来就没有这些信息。需要查看或编辑文件携带的内容时，[EXIF 查看与移除工具](https://httcup.github.io/exif-editor/)可以完成，而且不会重新压缩图片。
+不会。图片绘制到画布上，而画布只有像素，所以 EXIF、GPS、色彩配置和 XMP 都会丢弃。网页上的图片通常本来就没有这些信息。需要查看或编辑文件携带的内容时，[EXIF 查看与移除工具](https://139t.cn/exif-editor/)可以完成，而且不会重新压缩图片。
 
 ### 能一次转换整个文件夹吗？
 

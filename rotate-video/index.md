@@ -4,7 +4,7 @@
 
 > 在浏览器里旋转视频。使用文件头旋转时，每一帧画面原样复制；为老播放器把旋转烧进画面时，画面会重新编码。AAC 声音原样复制，其他能解码的声音重新编码为 AAC，也可以去掉声音。MP4、MOV、WebM、MKV 进，MP4 出。什么都不上传。
 
-This is an interactive browser tool at https://httcup.github.io/tools/rotate-video/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/rotate-video/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 视频 are **processed in your browser**. No processing upload.
 
@@ -24,14 +24,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/rotate-vid
 
 ## The longer version
 
-[如何无损旋转视频](https://httcup.github.io/tools/guides/rotate-a-video/): 手机视频为什么横着播放，文件头九个数字做什么，为什么多数旋转器白白重编码，什么时候该转像素，以及怎样无需上传。
+[如何无损旋转视频](https://139t.cn/guides/rotate-a-video/): 手机视频为什么横着播放，文件头九个数字做什么，为什么多数旋转器白白重编码，什么时候该转像素，以及怎样无需上传。
 
 ## Also in the box
 
-- [图片转视频](https://httcup.github.io/tools/images-to-video/): 一个文件夹的图片，变成一段视频。
-- [视频剪切](https://httcup.github.io/tools/trim-video/): 一边看一边标出要留的段落，最后拿回一个视频。
-- [视频裁剪](https://httcup.github.io/tools/crop-video/): 把片子切到只剩要紧的那块。
-- [视频倒放](https://httcup.github.io/tools/reverse-video/): 最后一帧排在最前，连声音一起。
+- [图片转视频](https://139t.cn/images-to-video/): 一个文件夹的图片，变成一段视频。
+- [视频剪切](https://139t.cn/trim-video/): 一边看一边标出要留的段落，最后拿回一个视频。
+- [视频裁剪](https://139t.cn/crop-video/): 把片子切到只剩要紧的那块。
+- [视频倒放](https://139t.cn/reverse-video/): 最后一帧排在最前，连声音一起。
 
 ## Questions
 

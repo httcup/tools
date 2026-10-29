@@ -2,13 +2,13 @@
 
 扫描副本写明收件方，会显示预期用途。这很有用，但不同于锁住文档。下面说明写什么、怎么添加，以及它的限制。
 
-[打开PDF 水印](https://httcup.github.io/tools/watermark-pdf/): 一份写着自己去了哪里的扫描件，就没法悄悄再去别的地方。
+[打开PDF 水印](https://139t.cn/watermark-pdf/): 一份写着自己去了哪里的扫描件，就没法悄悄再去别的地方。
 
 最后更新 2026年10月13日
 
 ## 简短答案
 
-打开 [PDF 水印工具](https://httcup.github.io/tools/watermark-pdf/)，拖入文档，写收件方和日期，例如“仅供 Acme Lettings · 2026 年 9 月 12 日”，点击按钮。文字按选定角度、大小、透明度覆盖每页。结果重新打开核对每页都有，无需上传，断网也一样。
+打开 [PDF 水印工具](https://139t.cn/watermark-pdf/)，拖入文档，写收件方和日期，例如“仅供 Acme Lettings · 2026 年 9 月 12 日”，点击按钮。文字按选定角度、大小、透明度覆盖每页。结果重新打开核对每页都有，无需上传，断网也一样。
 
 下面说明它做到什么、没有做到什么。两者很容易混淆，界限比印记本身重要。
 
@@ -28,7 +28,7 @@
 
 它不阻止复制、读取或转发，有 PDF 编辑器的人一分钟就能移除。水印是标签，不是锁。说否则的页面是在推销。
 
-若不能让错误的人读到，用 [PDF 保护工具](https://httcup.github.io/tools/protect-pdf/)加密码，加密后无密码无法读。两者可配合：先水印，后锁。结果下方提供保护入口。[如何为 PDF 加密码](https://httcup.github.io/tools/guides/protect-a-pdf/)解释锁的效果。
+若不能让错误的人读到，用 [PDF 保护工具](https://139t.cn/protect-pdf/)加密码，加密后无密码无法读。两者可配合：先水印，后锁。结果下方提供保护入口。[如何为 PDF 加密码](https://139t.cn/guides/protect-a-pdf/)解释锁的效果。
 
 ## 写什么
 
@@ -46,15 +46,15 @@
 
 淡到能读原文，深到复印还保留。工具默认约三分之一不透明度，灰色最不干扰页面。希望水印突出时用红色。
 
-预览是与首页同大小的空白纸，水印放在最终准确位置。不显示原页面，因为网站刻意没有 PDF 渲染器，[关于页](https://httcup.github.io/tools/about/)解释原因。用阅读器打开成品看两者叠加。
+预览是与首页同大小的空白纸，水印放在最终准确位置。不显示原页面，因为网站刻意没有 PDF 渲染器，[关于页](https://139t.cn/about/)解释原因。用阅读器打开成品看两者叠加。
 
 ## 奇怪的其实是上传
 
 你标明扫描给谁，正是因为它要离开手中而你担心去向。在线水印工具先让你交给无法核查保留方式的服务器。水印要防的转交，在防护前又发生了一次。
 
-这无需发生。往 PDF 加字只需少量计算：添加一个图像，再让各页绘制它，浏览器能完成。[本工具](https://httcup.github.io/tools/watermark-pdf/)让文档和文字留在标签页。策略列出全部可联系地址，没有一个属于本站，断网也工作。亲自断开连接验证即可。
+这无需发生。往 PDF 加字只需少量计算：添加一个图像，再让各页绘制它，浏览器能完成。[本工具](https://139t.cn/watermark-pdf/)让文档和文字留在标签页。策略列出全部可联系地址，没有一个属于本站，断网也工作。亲自断开连接验证即可。
 
-一般解释见[上传文件安全吗](https://httcup.github.io/tools/guides/is-it-safe-to-upload-files/)，最常需盖章的情况见[上传证件照片安全吗](https://httcup.github.io/tools/guides/is-it-safe-to-upload-a-photo-of-your-id/)。
+一般解释见[上传文件安全吗](https://139t.cn/guides/is-it-safe-to-upload-files/)，最常需盖章的情况见[上传证件照片安全吗](https://139t.cn/guides/is-it-safe-to-upload-a-photo-of-your-id/)。
 
 ## 会发生两件事，不会发生一件事
 
@@ -66,4 +66,4 @@
 
 ## 之前与之后
 
-水印最后加，覆盖最终文档。先[真正删掉不该出现的内容](https://httcup.github.io/tools/redact-pdf/)、[整理页序](https://httcup.github.io/tools/merge-pdf/)，再盖印。若不让错误的人读取，之后[加锁](https://httcup.github.io/tools/protect-pdf/)。锁住的文件必须先解锁才可加水印，所以顺序如此。
+水印最后加，覆盖最终文档。先[真正删掉不该出现的内容](https://139t.cn/redact-pdf/)、[整理页序](https://139t.cn/merge-pdf/)，再盖印。若不让错误的人读取，之后[加锁](https://139t.cn/protect-pdf/)。锁住的文件必须先解锁才可加水印，所以顺序如此。

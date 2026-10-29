@@ -2,7 +2,7 @@
 
 无需上传即可重新缩进 XML，找到解析错误的位置，并了解文档转换为 JSON 后有哪些变化。
 
-[打开XML 格式化](https://httcup.github.io/tools/xml-formatter/): 排开了好读的 XML，压平了好发的 XML，还有两个方向的 JSON 转换。这些都不会粘进别人的服务器。
+[打开XML 格式化](https://139t.cn/xml-formatter/): 排开了好读的 XML，压平了好发的 XML，还有两个方向的 JSON 转换。这些都不会粘进别人的服务器。
 
 最后更新 2026年10月13日
 
@@ -12,7 +12,7 @@
 
 解析器在本地运行，检查文档语法；不会验证 XSD 或 DTD，不保证配置适用于你的应用，也不会访问文本中的 URL。
 
-![XML 输入及其 JSON 映射，展示属性、字符串值和重复元素。](https://httcup.github.io/screens/format-and-check-xml/mapping.webp)
+![XML 输入及其 JSON 映射，展示属性、字符串值和重复元素。](https://139t.cn/screens/format-and-check-xml/mapping.webp)
 
 属性变成@region，port 保留为字符串，重复的 feature 元素变成数组。
 
@@ -20,7 +20,7 @@
 
 单行 API 响应或 RSS 源展开后更易检查。导入保存的 XML，选两空格，解析停止时用“跳到错误”。核对根元素、属性和重复条目。普通 XML 文字或属性中的地址含 & 时必须写 `&amp;`，不能直接用裸 &。修好后用接收应用再检查，这里不验证订阅规则或 XSD。
 
-XML 配置迁移 JSON 时转换副本，检查 `@` 属性、重复元素数组和字符串值，再与拟用 JSON 比较。先[统一两份 JSON 格式](https://httcup.github.io/tools/guides/compare-two-json-files/)。适合数据文档；映射会丢注释和混合内容顺序，不适合保存文章结构。
+XML 配置迁移 JSON 时转换副本，检查 `@` 属性、重复元素数组和字符串值，再与拟用 JSON 比较。先[统一两份 JSON 格式](https://139t.cn/guides/compare-two-json-files/)。适合数据文档；映射会丢注释和混合内容顺序，不适合保存文章结构。
 
 ## 定位解析错误
 
@@ -44,4 +44,4 @@ DOCTYPE 文本原样保留，不解析外部实体；声明中出现文件或网
 
 JSON 映射会丢失注释，以及混合文本和子元素的交错顺序。因此转回 XML 不保证还原原文。请保存原始副本，并对比应用使用的字段。
 
-只格式化 JSON、不进行上述映射时，请使用 [JSON 格式化工具](https://httcup.github.io/tools/json-formatter/)。
+只格式化 JSON、不进行上述映射时，请使用 [JSON 格式化工具](https://139t.cn/json-formatter/)。

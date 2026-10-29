@@ -4,7 +4,7 @@
 
 > 在本地移除 PDF 权限限制，或移除你提供的打开密码。页面会先识别文件的保护类型，再请求密码。不上传内容，也不猜测密码。
 
-This is an interactive browser tool at https://httcup.github.io/tools/unlock-pdf/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/unlock-pdf/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 文档 are **processed in your browser**. No processing upload.
 
@@ -25,14 +25,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/unlock-pdf
 
 ## The longer version
 
-[如何解锁 PDF，先知道是哪种锁](https://httcup.github.io/tools/guides/unlock-a-pdf/): 不能打印与不能打开是两个问题。了解为何一个一键解决，另一个必须有密码，以及如何辨别。
+[如何解锁 PDF，先知道是哪种锁](https://139t.cn/guides/unlock-a-pdf/): 不能打印与不能打开是两个问题。了解为何一个一键解决，另一个必须有密码，以及如何辨别。
 
 ## Also in the box
 
-- [PDF 加密](https://httcup.github.io/tools/protect-pdf/): 把文档锁上，而不是为了锁它先把它交给一个网站。
-- [PDF 水印](https://httcup.github.io/tools/watermark-pdf/): 一份写着自己去了哪里的扫描件，就没法悄悄再去别的地方。
-- [PDF 涂黑](https://httcup.github.io/tools/redact-pdf/): 字从文件里删掉，然后再搜一遍这个文件来证明。
-- [PDF 转 CSV](https://httcup.github.io/tools/pdf-to-csv/): 将检测到的 PDF 文本表格转换成电子表格可打开的行。
+- [PDF 加密](https://139t.cn/protect-pdf/): 把文档锁上，而不是为了锁它先把它交给一个网站。
+- [PDF 水印](https://139t.cn/watermark-pdf/): 一份写着自己去了哪里的扫描件，就没法悄悄再去别的地方。
+- [PDF 涂黑](https://139t.cn/redact-pdf/): 字从文件里删掉，然后再搜一遍这个文件来证明。
+- [PDF 转 CSV](https://139t.cn/pdf-to-csv/): 将检测到的 PDF 文本表格转换成电子表格可打开的行。
 
 ## Questions
 
@@ -85,7 +85,7 @@ PDF 可以有两种密码。*用户*密码用于打开文档；*所有者*密码
 - **页面区分权限限制和打开密码。** 一份 PDF 可以带着两种完全不同的东西。*打开密码*是真的：没有它，这个文件谁都读不了，这里也找不出来。*限制*，不许打印、不许复制、不许编辑，则不是。只带着限制的文件谁都打得开，这就意味着它必须自己装着推导出自身密钥所需要的一切，因为你的阅读器就是这么推出来的。真正拦着阅读器不让打印的，是文档里面的一个权限字段，靠的是行为端正的程序之间的约定。Adobe 从一开始就是这么写的。把它去掉不是在破解什么，只是不再自愿配合。这一页会告诉你手上是两种里的哪一种，并且只在真的需要密码的时候才开口要。
 - **它不猜密码，里面也没有哪个循环能拿来猜。** 如果一份文档有打开密码，那要么你给出来，要么它就一直关着。这里没有字典，没有词表，也没有去碰 1990 年代那种真的搜得出来的 40 位密钥。这是一条故意划下的线，不是谁没顾上补的缺口：一个悄悄替你试上几百万个密码的页面，是另一个名字的另一个工具，不是这一个。打开文档的那个密码，和解除限制的权限密码，两个都收，因为不管哪一个，都是别人给你的密码。
 - **密码在这里打进去，也在这里用掉。** 你打进去的东西进的是一段跑在这个标签页里的密钥推导，别处都不去。它不会被存下来，不会在两个文件之间被记住，也不会被写进地址栏；页面的 `Content-Security-Policy` 列出了这一页可以联系的每一个地址，其中没有一个属于本站。一个工具问你要文档密码、然后发起一次网络请求，是这类工具能做的最坏的一件事。
-- **做好的文件在交给你之前，会在这里重新打开一次。** 在那之前，上面这些话都只是这个工具在给自己判卷。所以那些马上就要变成你下载的字节，会被交给[压缩器](https://httcup.github.io/compress-pdf/)、[合并器](https://httcup.github.io/merge-pdf/)和[涂黑工具](https://httcup.github.io/redact-pdf/)用的同一个读取器，一个碰到加密文档就直接拒绝的读取器，而它必须在不给任何密码的情况下打开，并且页数跟原来一样。一个还带着任何加密的文件是过不了这一关的。过不了，这次运行就报告为失败，也不会有下载。
+- **做好的文件在交给你之前，会在这里重新打开一次。** 在那之前，上面这些话都只是这个工具在给自己判卷。所以那些马上就要变成你下载的字节，会被交给[压缩器](https://139t.cn/compress-pdf/)、[合并器](https://139t.cn/merge-pdf/)和[涂黑工具](https://139t.cn/redact-pdf/)用的同一个读取器，一个碰到加密文档就直接拒绝的读取器，而它必须在不给任何密码的情况下打开，并且页数跟原来一样。一个还带着任何加密的文件是过不了这一关的。过不了，这次运行就报告为失败，也不会有下载。
 - **页面本身不会被重新渲染、重新编码，也不会重排。** 变的是文档外面那层加密，不是文档。每一页的绘制指令、每一个嵌入字体、每一张图片，都按原样写回去，所以文字还能选、还能搜，扫描件还是扫描时的分辨率，页面上什么都不会移位。唯一会变的是任何一次重写都会变的东西：早先编辑留下的、已经被取代的旧对象不再带过来，通常还会让文件小一点。
 - **数字签名过不了这一关，有签名的时候页面会说。** 签名覆盖的是它当初签的那个文件的确切字节，所以任何重写都会让它失效，这正是签名的用处。这个工具写的是一个新文件，所以你拿回去的那份是没有签名的；发现文件带着签名时，它会在结果里说明。你的原件仍然是那份签过名的。这件事没有绕过去的办法，也没有哪个工具有。
 - **它会说那层保护到底值多少。** 一份 1998 年用 40 位 RC4 锁上的文档，和一份去年用 AES-256 锁上的文档，在阅读器里都写着「已加密」，而它们之间差了几十年。这一页会说出方案、密钥长度和修订号，并且直说其中哪些早就被攻破、哪些只是过时、哪一个还是当前的。对一份别人告诉你「很安全」的文件来说，这值得知道，而没有哪个阅读器会摆给你看。

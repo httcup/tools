@@ -14,7 +14,7 @@ Jabatan Pengangkutan Jalan Malaysia 对这种证件的照片有什么要求，�
 | 背景 | 纯白 |
 | 上传规定 | 没有公布——这一条是给打印的 |
 
-[按这条规定制作照片](https://httcup.github.io/tools/id-photo/#my-driving-licence) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
+[按这条规定制作照片](https://139t.cn/id-photo/#my-driving-licence) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
 
 ## 这条规定还说了什么
 
@@ -34,7 +34,7 @@ Jabatan Pengangkutan Jalan Malaysia 对这种证件的照片有什么要求，�
 
 ## 马来西亚 的其他证件
 
-- [护照 (⁦Pasport Malaysia⁩)](https://httcup.github.io/tools/id-photo/my-passport/) — ⁦35 x 50⁩ 毫米
-- [外籍人士准证（ESD Online）](https://httcup.github.io/tools/id-photo/my-expat-pass/) — ⁦35 x 50⁩ 毫米 · ⁦413 x 591⁩ px
+- [护照 (⁦Pasport Malaysia⁩)](https://139t.cn/id-photo/my-passport/) — ⁦35 x 50⁩ 毫米
+- [外籍人士准证（ESD Online）](https://139t.cn/id-photo/my-expat-pass/) — ⁦35 x 50⁩ 毫米 · ⁦413 x 591⁩ px
 
-[在证件照工具里查看所有国家和证件](https://httcup.github.io/tools/id-photo/)
+[在证件照工具里查看所有国家和证件](https://139t.cn/id-photo/)

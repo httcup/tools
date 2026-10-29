@@ -2,13 +2,13 @@
 
 Google 表单填好后，别人搜索才知道样子，顺序反了，导致名称堆城市、电话号码缺失。这里教你先预览，并说明检查什么。
 
-[打开商家资料预览](https://httcup.github.io/tools/business-profile-preview/): 把内容打进去，它就变成 Google 会画的那张卡片。为了画它，不会往外送任何东西。
+[打开商家资料预览](https://139t.cn/business-profile-preview/): 把内容打进去，它就变成 Google 会画的那张卡片。为了画它，不会往外送任何东西。
 
 最后更新 2026年10月13日
 
 ## 简短答案
 
-打开[商家资料预览](https://httcup.github.io/tools/business-profile-preview/)。表单已有咖啡店示例，改成你的资料，或在顶部折叠区粘贴已有商家信息自动填充。切换知识面板、手机、搜索结果三种预览，留意最窄视图缺少什么。
+打开[商家资料预览](https://139t.cn/business-profile-preview/)。表单已有咖啡店示例，改成你的资料，或在顶部折叠区粘贴已有商家信息自动填充。切换知识面板、手机、搜索结果三种预览，留意最窄视图缺少什么。
 
 操作几乎就这些。下面解释商家资料的四个主要决定，以及哪些发布后仍能轻易改变。
 
@@ -39,7 +39,7 @@ Google 编辑器只显示表单，看不出这些。要知道资料长什么样�
 
 你最常看它，却相对最不重要，因为按名称搜索的人已经知道你。检查后继续其他视图。
 
-![知识面板预览：封面图、商家名称、星级及评论数、类别与价位、路线、网站、致电、保存和分享按钮，然后是地址、营业状态、电话和网站。](https://httcup.github.io/screens/preview-a-google-business-profile/panel.webp)
+![知识面板预览：封面图、商家名称、星级及评论数、类别与价位、路线、网站、致电、保存和分享按钮，然后是地址、营业状态、电话和网站。](https://139t.cn/screens/preview-a-google-business-profile/panel.webp)
 
 所有字段同时显示，适合先检查，不应只据此决定。名称下按钮就是第 2 步的三个字段。
 
@@ -59,7 +59,7 @@ Google 要求真实商家名称，不加城市、行业或*第一名*等宣传�
 
 即使不看规则，也达不到目标。本地列表只给名称一行，空间用尽就截断，比知识面板早得多。追加关键词都在被砍的半截，在你最想显示的位置消失，名字反而像没写完。
 
-![本地搜索条目的商家名称为“Blue Bottle Coffee Roasters Downtown Toronto - Best...”，最后三个词前就被省略号截断。](https://httcup.github.io/screens/preview-a-google-business-profile/search-result.webp)
+![本地搜索条目的商家名称为“Blue Bottle Coffee Roasters Downtown Toronto - Best...”，最后三个词前就被省略号截断。](https://139t.cn/screens/preview-a-google-business-profile/search-result.webp)
 
 名称末尾追加城市和行业，在最短的视图全部被截掉。
 
@@ -92,7 +92,7 @@ Google 要求真实商家名称，不加城市、行业或*第一名*等宣传�
 
 预览根据填写的营业时间和你的时钟，或指定的预览日期与时间，计算这行状态。把某天改成休息，状态会马上改变。有三点值得检查：
 
-![周一至周日七行时间，各有休息勾选框和开始结束时间。周日勾选休息，时间变暗，下方显示当前资料状态。](https://httcup.github.io/screens/preview-a-google-business-profile/hours.webp)
+![周一至周日七行时间，各有休息勾选框和开始结束时间。周日勾选休息，时间变暗，下方显示当前资料状态。](https://139t.cn/screens/preview-a-google-business-profile/hours.webp)
 
 周时间下的行就是卡片状态，按这些营业时间和本机时钟计算。勾选休息会实时变化。
 
@@ -112,13 +112,13 @@ Google 要求真实商家名称，不加城市、行业或*第一名*等宣传�
 
 已经存在就不必重打。在 Google 打开，选择卡片、复制，粘到工具顶部。可识别名称、评分、评论数、类别、价位、地址、电话、网站；复制前展开时间还能识别整周。
 
-![框内是从商家资料复制的文字：名称、网站、路线、评分、类别、地址和电话；下方说明识别了哪些字段。](https://httcup.github.io/screens/preview-a-google-business-profile/import.webp)
+![框内是从商家资料复制的文字：名称、网站、路线、评分、类别、地址和电话；下方说明识别了哪些字段。](https://139t.cn/screens/preview-a-google-business-profile/import.webp)
 
 下方说明工具认为填了哪些字段，让猜错变成易修正内容，而非意外。
 
 两点值得知道：每个填入字段都会报告，错误只需五秒修正。若有 Business Profile API 导出，可直接读取精确结构。导出没有评分、评论数和照片，这三项仍自行补。
 
-工具不会替你联网获取资料，它无法联系服务。这就是重点：能取资料的页也能发你的数据。一般解释见[把文字粘进在线工具安全吗](https://httcup.github.io/tools/guides/is-it-safe-to-paste-into-an-online-tool/)。
+工具不会替你联网获取资料，它无法联系服务。这就是重点：能取资料的页也能发你的数据。一般解释见[把文字粘进在线工具安全吗](https://139t.cn/guides/is-it-safe-to-paste-into-an-online-tool/)。
 
 ## 怎样使用图片
 

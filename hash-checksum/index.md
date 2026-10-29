@@ -4,7 +4,7 @@
 
 > 计算任意文件的 MD5、SHA-1、SHA-256、SHA-384 或 SHA-512，并和下载页面上公布的校验和对照。文件在浏览器里读取，多大都不会上传。
 
-This is an interactive browser tool at https://httcup.github.io/tools/hash-checksum/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/hash-checksum/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 文件 are **processed in your browser**. No processing upload.
 
@@ -26,14 +26,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/hash-check
 
 ## The longer version
 
-[怎样用校验和核对下载的文件](https://httcup.github.io/tools/guides/verify-a-file-checksum/): 在 Windows、macOS、Linux 或浏览器里比对 MD5 与 SHA-256 校验和的办法，对上了究竟证明了什么，以及那个让整件事白做的错误。
+[怎样用校验和核对下载的文件](https://139t.cn/guides/verify-a-file-checksum/): 在 Windows、macOS、Linux 或浏览器里比对 MD5 与 SHA-256 校验和的办法，对上了究竟证明了什么，以及那个让整件事白做的错误。
 
 ## Also in the box
 
-- [密码与密码短语生成器](https://httcup.github.io/tools/password-generator/): 在这里生成，由你自己的浏览器生成，不发往任何地方。什么都不保存，也没有历史记录。
-- [JSON 格式化](https://httcup.github.io/tools/json-formatter/): JSON、XML、HTML、CSS 和 YAML，格式化或转换。没有一个字被贴进别人的服务器。
-- [YAML 转 JSON](https://httcup.github.io/tools/yaml-to-json/): 两个方向都有，而且会告诉你各自的代价。这些都不会粘进别人的服务器。
-- [XML 格式化](https://httcup.github.io/tools/xml-formatter/): 排开了好读的 XML，压平了好发的 XML，还有两个方向的 JSON 转换。这些都不会粘进别人的服务器。
+- [密码与密码短语生成器](https://139t.cn/password-generator/): 在这里生成，由你自己的浏览器生成，不发往任何地方。什么都不保存，也没有历史记录。
+- [JSON 格式化](https://139t.cn/json-formatter/): JSON、XML、HTML、CSS 和 YAML，格式化或转换。没有一个字被贴进别人的服务器。
+- [YAML 转 JSON](https://139t.cn/yaml-to-json/): 两个方向都有，而且会告诉你各自的代价。这些都不会粘进别人的服务器。
+- [XML 格式化](https://139t.cn/xml-formatter/): 排开了好读的 XML，压平了好发的 XML，还有两个方向的 JSON 转换。这些都不会粘进别人的服务器。
 
 ## Questions
 

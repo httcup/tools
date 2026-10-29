@@ -2,19 +2,19 @@
 
 照片索引、前后对比，或一串截图，都可以合成一个文件。先确定顺序，再选每张图的框形，最后决定能不能为了填满框而裁掉边缘。
 
-[打开Image Layout](https://httcup.github.io/tools/image-layout/): Put your pictures together. Keep them on your machine.
+[打开Image Layout](https://139t.cn/image-layout/): Put your pictures together. Keep them on your machine.
 
 最后更新 2026年10月13日
 
 ## 先排好顺序
 
-打开[图片布局工具](https://httcup.github.io/tools/image-layout/)，选择图片，把缩略图排成需要的顺序。可以拖动，也可以用箭头按钮操作，方便键盘使用。在分配空间前，先删除不需要的图片。
+打开[图片布局工具](https://139t.cn/image-layout/)，选择图片，把缩略图排成需要的顺序。可以拖动，也可以用箭头按钮操作，方便键盘使用。在分配空间前，先删除不需要的图片。
 
 **网格**适合照片索引，也适合需要在一屏内展示的图片集合。列数决定每行放多少张图。**横向长条**适合并排对比。**纵向长条**适合按从上到下的顺序阅读截图。
 
 预设提供方形格子、照片索引、横向或纵向长条、竖形格子，以及没有间距的网格。先选一个，再调整宽度和留白。切换预设会保留文件名和每张图片的取景。如果已经缩放或移动过图片，可以用 **Reset all frames** 恢复初始适配。成品形状还取决于图片数量。方形格子不代表最后一定得到方形图片。
 
-![四张图片用竖向拼贴预设排列。一个图片框已选中，可以看到缩放和位置控件。](https://httcup.github.io/screens/arrange-images/layout.webp)
+![四张图片用竖向拼贴预设排列。一个图片框已选中，可以看到缩放和位置控件。](https://139t.cn/screens/arrange-images/layout.webp)
 
 预览和导出使用相同的位置与裁切。调整列数或间距，就能看到图片会放在哪里。选中的图片框可以单独移动和缩放。
 
@@ -70,7 +70,7 @@
 
 ## 保留了什么，改变了什么
 
-成品是一张静态图片。动画 GIF、WebP 或 AVIF 只提供浏览器解码出的第一帧。如果想把 GIF 各帧排成照片索引，先用 [GIF 拆帧工具](https://httcup.github.io/tools/split-gif/)，再排列得到的静态图片。
+成品是一张静态图片。动画 GIF、WebP 或 AVIF 只提供浏览器解码出的第一帧。如果想把 GIF 各帧排成照片索引，先用 [GIF 拆帧工具](https://139t.cn/split-gif/)，再排列得到的静态图片。
 
 浏览器画布生成的是 8 位 SDR 图像。调整尺寸会改变像素，半透明颜色可能偏移，广色域颜色或 HDR 也可能改变。原文件中的 EXIF、GPS、相机和日期标签不会复制到成品。如果还需要相机或其他应用导出的原始文件，请同时保留原件。
 

@@ -2,17 +2,17 @@
 
 格式化 JSON 该动的只是空白，别的什么都不该动。大多数愿意替你做这件事的工具动得更多，而且没有一个会提。下面说的是该留神什么、文件读不出来时那条错误该怎么读，以及你把一个配置文件粘进去的那个框，值得先想一想。
 
-[打开JSON 格式化](https://httcup.github.io/tools/json-formatter/): JSON、XML、HTML、CSS 和 YAML，格式化或转换。没有一个字被贴进别人的服务器。
+[打开JSON 格式化](https://139t.cn/json-formatter/): JSON、XML、HTML、CSS 和 YAML，格式化或转换。没有一个字被贴进别人的服务器。
 
 最后更新 2026年10月13日
 
 ## 简短的回答
 
-打开 [JSON 格式化](https://httcup.github.io/tools/json-formatter/)，把 JSON 粘进框里，读它。排版是你打字的时候就发生的，语言是从文本本身认出来的，缩进默认两个空格，除非你另有吩咐。什么都不会被上传，因为它没有地方可去：解析器不过是几百行 JavaScript，跑在你已经打开的这个标签页里。
+打开 [JSON 格式化](https://139t.cn/json-formatter/)，把 JSON 粘进框里，读它。排版是你打字的时候就发生的，语言是从文本本身认出来的，缩进默认两个空格，除非你另有吩咐。什么都不会被上传，因为它没有地方可去：解析器不过是几百行 JavaScript，跑在你已经打开的这个标签页里。
 
 下面这些内容，值得在向其他工具粘贴配置文件前了解。格式化工具可以改什么，不谨慎的实现可能额外改什么，以及文件完全无法解析时怎么读错误信息。
 
-![两个窗格：左边是一行 JSON，右边是同一份文档以两个空格缩进排好的样子。](https://httcup.github.io/screens/format-json-without-uploading-it/panes.webp)
+![两个窗格：左边是一行 JSON，右边是同一份文档以两个空格缩进排好的样子。](https://139t.cn/screens/format-json-without-uploading-it/panes.webp)
 
 一行进去，能读的东西出来。为此没有把任何东西送到任何地方。
 
@@ -94,7 +94,7 @@ JSON.stringify(JSON.parse('{"size":1e999}'))
 
 还有一样不是错误、却长得像错误的东西：以字节序标记开头的文件。它在多数编辑器里看不见，它也不是空白，它让文档的第一个字符变得出人意料。要是一份看上去毫无问题的文件报错在第 1 行第 1 列，那就是它。
 
-![同一个工具遇到一份坏掉的文档：错误提示指出多余逗号所在的行和列，输入窗格里正显示那一行。](https://httcup.github.io/screens/format-json-without-uploading-it/error.webp)
+![同一个工具遇到一份坏掉的文档：错误提示指出多余逗号所在的行和列，输入窗格里正显示那一行。](https://139t.cn/screens/format-json-without-uploading-it/error.webp)
 
 读不动的时候，提示会说清在哪里。多余的逗号是最常见的原因，也是肉眼最难发现的原因。
 
@@ -120,7 +120,7 @@ JSON.stringify(JSON.parse('{"size":1e999}'))
 
 靠谱的做法是先把两份用同样的方式格式化一遍。两份说着同一件事的文档，只要一份压过、另一份没压，就能每一行都不一样，而没有哪个 diff 能看穿这一层。
 
-先格式化第一份，再格式化第二份，把结果粘贴到[文本比较工具](https://httcup.github.io/tools/text-diff/)。比较有独立页面。如果对象键的顺序也不同，格式化时把两份副本都排序。[比较指南](https://httcup.github.io/tools/guides/compare-two-json-files/)介绍完整步骤，以及排序无法消除的差异。
+先格式化第一份，再格式化第二份，把结果粘贴到[文本比较工具](https://139t.cn/text-diff/)。比较有独立页面。如果对象键的顺序也不同，格式化时把两份副本都排序。[比较指南](https://139t.cn/guides/compare-two-json-files/)介绍完整步骤，以及排序无法消除的差异。
 
 ## 没人写在页面上的那部分
 
@@ -133,11 +133,11 @@ JSON.stringify(JSON.parse('{"size":1e999}'))
 1. **打开 DevTools，盯着 Network 标签，格式化点东西。**要是你的文本正在被送出去，就一定有一条请求驮着它。同一时刻不可能有别的解释。
 2. **断开网络再试一次。**在你浏览器里干活的工具毫无影响。把你的文本送去别处的工具会立刻、彻底地停摆。
 
-这两条还有更长的版本，外加另外两条检查，都在[把文件传上去安全吗](https://httcup.github.io/tools/guides/is-it-safe-to-upload-files/)那一页。
+这两条还有更长的版本，外加另外两条检查，都在[把文件传上去安全吗](https://139t.cn/guides/is-it-safe-to-upload-files/)那一页。
 
 ## 那 YAML、XML 和其余的呢
 
-同一个页面还处理 XML、HTML、CSS 和 YAML，并可在 JSON 与 XML 或 YAML 之间转换。[XML 指南](https://httcup.github.io/tools/guides/format-and-check-xml/)和 [YAML 转换指南](https://httcup.github.io/tools/guides/convert-yaml-and-json/)分别介绍这些用途。上面有两点同样适用：
+同一个页面还处理 XML、HTML、CSS 和 YAML，并可在 JSON 与 XML 或 YAML 之间转换。[XML 指南](https://139t.cn/guides/format-and-check-xml/)和 [YAML 转换指南](https://139t.cn/guides/convert-yaml-and-json/)分别介绍这些用途。上面有两点同样适用：
 
 - **把 YAML 转成 JSON 会丢掉注释**，因为 JSON 没有地方放注释。锚点和别名——YAML 用来说「同一个节点出现两次」的办法——也没法表达，所以这里选择直接拒绝，而不是替你猜。
 - **`no` 是一个字符串。**在 YAML 1.1 里，`yes`、`no`、`on` 和 `off` 是布尔值，所以一份含挪威的国家代码列表，从前回来时里面会多出一个 `false`。YAML 1.2 把这条去掉了，这里也一样——但这些词写回去时仍然带引号，因为下一个打开这份文件的，可能是个 1.1 的读者。

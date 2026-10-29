@@ -2,7 +2,7 @@
 
 把 AI 回答或 Markdown 文本粘贴进来，或导入 .md / .txt 文件，选好字体、字号、行距和页边距，预览后下载 .docx。多级标题、列表、基础表格和常见 LaTeX 公式（`$…$`、`$$…$$`、`\(…\)`、`\[…\]`）都会转成 Word 原生结构，下载后可以在 Word、WPS、Pages 里继续编辑。
 
-页面地址：https://httcup.github.io/tools/md-to-word/
+页面地址：https://139t.cn/md-to-word/
 
 ## 怎么用
 
@@ -19,6 +19,6 @@
 
 ## 相关工具
 
-- [图片合成 PDF](https://httcup.github.io/tools/images-to-pdf/)
-- [PDF 合并与拆分](https://httcup.github.io/tools/merge-pdf/)
-- [文本比对](https://httcup.github.io/tools/text-diff/)
+- [图片合成 PDF](https://139t.cn/images-to-pdf/)
+- [PDF 合并与拆分](https://139t.cn/merge-pdf/)
+- [文本比对](https://139t.cn/text-diff/)

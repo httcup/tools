@@ -4,7 +4,7 @@
 
 > 把手机拍的纸张照片变成一份摆正、亮度均匀的 PDF。四个角替你找好，透视给你掰正，阴影除掉。全部在你的浏览器里跑，什么都不上传。
 
-This is an interactive browser tool at https://httcup.github.io/tools/document-scanner/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/document-scanner/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 文档 are **processed in your browser**. No processing upload.
 
@@ -26,14 +26,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/document-s
 
 ## The longer version
 
-[怎么用手机扫描文档](https://httcup.github.io/tools/guides/scan-a-document-with-your-phone/): 一张纸的照片和这张纸的扫描件之间差在哪里：倾斜、不匀的光，还有文件大小。照片怎么拍，之后要修什么，以及为什么这些都不需要服务器。
+[怎么用手机扫描文档](https://139t.cn/guides/scan-a-document-with-your-phone/): 一张纸的照片和这张纸的扫描件之间差在哪里：倾斜、不匀的光，还有文件大小。照片怎么拍，之后要修什么，以及为什么这些都不需要服务器。
 
 ## Also in the box
 
-- [从视频里提取音频](https://httcup.github.io/tools/extract-audio-from-video/): 把视频拖进来，声音就取出来了。画面从不解码，也不上传任何东西。
-- [音频剪辑](https://httcup.github.io/tools/trim-audio/): 边听边标出值得留的段落。它们会合成一个文件回来，就切在你说的位置。
-- [音频编辑](https://httcup.github.io/tools/edit-audio/): 倒着放、快慢随你调、把录轻了的声音提上来，全在你这台机器上。
-- [PDF 合并与拆分](https://httcup.github.io/tools/merge-pdf/): 挪动页面，不用往服务器跑一趟。
+- [从视频里提取音频](https://139t.cn/extract-audio-from-video/): 把视频拖进来，声音就取出来了。画面从不解码，也不上传任何东西。
+- [音频剪辑](https://139t.cn/trim-audio/): 边听边标出值得留的段落。它们会合成一个文件回来，就切在你说的位置。
+- [音频编辑](https://139t.cn/edit-audio/): 倒着放、快慢随你调、把录轻了的声音提上来，全在你这台机器上。
+- [PDF 合并与拆分](https://139t.cn/merge-pdf/): 挪动页面，不用往服务器跑一趟。
 
 ## Questions
 

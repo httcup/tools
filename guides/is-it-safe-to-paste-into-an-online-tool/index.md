@@ -12,9 +12,9 @@
 
 ## 排查响应，不必粘贴整份记录
 
-**损坏的 API 响应。**保留括号、类型和出错字段，替换凭据与无关个人值，再用[格式化工具](https://httcup.github.io/tools/guides/format-json-without-uploading-it/)定位语法问题。错误依赖特定值时，先用形状相同的虚构值复现再分享。格式化成功不证明应用接受数据。
+**损坏的 API 响应。**保留括号、类型和出错字段，替换凭据与无关个人值，再用[格式化工具](https://139t.cn/guides/format-json-without-uploading-it/)定位语法问题。错误依赖特定值时，先用形状相同的虚构值复现再分享。格式化成功不证明应用接受数据。
 
-**配置回归。**正常和失败副本用相同格式化设置，再[比较](https://httcup.github.io/tools/guides/compare-two-json-files/)。顺序有意义的数组不改顺序。本地比较可找出改动字段，不发布配置。
+**配置回归。**正常和失败副本用相同格式化设置，再[比较](https://139t.cn/guides/compare-two-json-files/)。顺序有意义的数组不改顺序。本地比较可找出改动字段，不发布配置。
 
 随后可从差异做小型客服示例。检查保存文本和编辑器，注释、URL、标识符及复制输出可能仍带密码字段之外的信息。
 
@@ -33,16 +33,16 @@
 
 一个技术事实就能把问题了结：格式化、校验、转换、对比文字，是计算机世界里最轻省的几样活儿。解析 JSON，给 XML 缩进，对比两个文件，编码 base64，浏览器几毫秒就做完，就在本地，而且多年前就做得到。服务器帮不上任何忙。一个粘贴模样的工具要是上传你的文字，那是架构的陈年旧习，或者是运营者图省事，绝不是活儿本身的需要。
 
-这个站的文字工具就是反例。[JSON 格式化工具](https://httcup.github.io/tools/format-json/)解析、格式化并转换 JSON、XML、HTML、CSS 和 YAML；[文本对比工具](https://httcup.github.io/tools/compare-text/)把两段文字的每一处差别逐行逐词标出来；[Base64 编解码工具](https://httcup.github.io/tools/encode-text/)在文字和它的各种编码之间双向走。三个都在你的机器上跑，你粘贴的东西无处可去，这些页面里没有一条能把它发出去的代码路径。
+这个站的文字工具就是反例。[JSON 格式化工具](https://139t.cn/format-json/)解析、格式化并转换 JSON、XML、HTML、CSS 和 YAML；[文本对比工具](https://139t.cn/compare-text/)把两段文字的每一处差别逐行逐词标出来；[Base64 编解码工具](https://139t.cn/encode-text/)在文字和它的各种编码之间双向走。三个都在你的机器上跑，你粘贴的东西无处可去，这些页面里没有一条能把它发出去的代码路径。
 
-其中两个已经有作伴的指南：[不上传就格式化 JSON](https://httcup.github.io/tools/guides/format-json-without-uploading-it/)，还有[对比两个 JSON 文件](https://httcup.github.io/tools/guides/compare-two-json-files/)。
+其中两个已经有作伴的指南：[不上传就格式化 JSON](https://139t.cn/guides/format-json-without-uploading-it/)，还有[对比两个 JSON 文件](https://139t.cn/guides/compare-two-json-files/)。
 
 ## 怎么看出你用的是哪一种
 
-检查的办法和文件工具一样，全文写在[上传那一页](https://httcup.github.io/tools/guides/is-it-safe-to-upload-files/)。按粘贴的口径说个短版：
+检查的办法和文件工具一样，全文写在[上传那一页](https://139t.cn/guides/is-it-safe-to-upload-files/)。按粘贴的口径说个短版：
 
 - **断网试试。**加载页面，断网，粘贴，再按按钮。本地工具能继续，服务器工具会停止。完成只能证明这次操作在断网时有效，不能排除内容被保存并在重新联网后发送。
 - **按格式化时观察网络面板。**此时出现请求，就检查地址和请求内容。大小不能单独证明载荷是什么，小请求或稍后的请求也可能携带敏感文字。
-- **检查方便的附加功能。**分享片段、跨设备历史、发给同事的链接，都有传输或存储边界。有些服务保存文字，[浏览器直接分享](https://httcup.github.io/tools/guides/share-text-between-devices/)则传给指定读者，不存到服务器。无论哪种，发送片段都是独立于格式化的另一个操作。
+- **检查方便的附加功能。**分享片段、跨设备历史、发给同事的链接，都有传输或存储边界。有些服务保存文字，[浏览器直接分享](https://139t.cn/guides/share-text-between-devices/)则传给指定读者，不存到服务器。无论哪种，发送片段都是独立于格式化的另一个操作。
 
 还有一个习惯，比三条检查都顶用：少贴。校验一份配置的格式，用不着真密码，`"REDACTED"` 解析出来一模一样。至于粘贴的东西本身就是秘密的那种情形，规矩缩成更短的一句：世上配收到密码的页面只有一个，就是那个密码所属的登录页。

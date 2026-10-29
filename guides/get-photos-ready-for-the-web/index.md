@@ -6,9 +6,9 @@
 
 ## 简短的答案
 
-1. **iPhone 照片先来：**把 HEIC 文件过一遍 [HEIC 转换器](https://httcup.github.io/tools/heic-to-jpg/)，选择把元数据留在外面。转换任何东西之前，它会告诉你哪些照片带着 GPS 坐标。本来就是 JPEG 的照片跳过这一步。
-2. **取景和尺寸：**把这一批丢到[图片缩放器](https://httcup.github.io/tools/resize-image/)上。定一条长边——大多数页面 1600 像素合适，读者要放大就 2000——或者一键把整批裁成同一个比例。
-3. **压到预算内：**在[图片压缩器](https://httcup.github.io/tools/compress-image/)里收尾。它收的是以 KB 计的目标而不是画质滑块，一批交回来是一个 zip。
+1. **iPhone 照片先来：**把 HEIC 文件过一遍 [HEIC 转换器](https://139t.cn/heic-to-jpg/)，选择把元数据留在外面。转换任何东西之前，它会告诉你哪些照片带着 GPS 坐标。本来就是 JPEG 的照片跳过这一步。
+2. **取景和尺寸：**把这一批丢到[图片缩放器](https://139t.cn/resize-image/)上。定一条长边——大多数页面 1600 像素合适，读者要放大就 2000——或者一键把整批裁成同一个比例。
+3. **压到预算内：**在[图片压缩器](https://139t.cn/compress-image/)里收尾。它收的是以 KB 计的目标而不是画质滑块，一批交回来是一个 zip。
 
 一切都在你的浏览器里跑。原图——全分辨率、GPS、什么都在——从不离开你的机器，这正是在本地做而不是交给转换网站的意义。
 
@@ -18,16 +18,16 @@
 
 **构图一致的商品卡片。**先在缩放工具裁成卡片比例，再逐张检查；共用裁框可能切掉位置不同的商品。边缘必须全留就用留白凑精确尺寸。放大查看另留大副本，不拉伸缩略图。
 
-**同篇文章的图表和截图。**小字和硬边用 PNG 或确认无损的 WebP，照片用 JPEG 或有损 WebP。[PNG 转 WebP](https://httcup.github.io/tools/png-to-webp/) 会报告浏览器是否真的写入无损编码。看页面里的最小字，不只看文件大小。
+**同篇文章的图表和截图。**小字和硬边用 PNG 或确认无损的 WebP，照片用 JPEG 或有损 WebP。[PNG 转 WebP](https://139t.cn/png-to-webp/) 会报告浏览器是否真的写入无损编码。看页面里的最小字，不只看文件大小。
 
 ## 元数据去了哪里
 
 手机照片悄悄的风险不在像素，在标签。EXIF 元数据记着相机、时间戳，还有——几乎每部手机上——照片拍摄地的 GPS 坐标。发出去，你可能就把家庭住址用谁都读得懂的形式公开了。
 
-实际缩放或压缩的文件从像素重新绘制，不复制原标签。但两种工具都会原样返回已合适的文件。既不需要缩放也不需要压缩的小照片，仍可能带有 EXIF 和 GPS。发布前检查最终副本，需要清理未改动的文件时，用 [EXIF 查看与清除工具](https://httcup.github.io/tools/exif-editor/)。还要做两个选择：
+实际缩放或压缩的文件从像素重新绘制，不复制原标签。但两种工具都会原样返回已合适的文件。既不需要缩放也不需要压缩的小照片，仍可能带有 EXIF 和 GPS。发布前检查最终副本，需要清理未改动的文件时，用 [EXIF 查看与清除工具](https://139t.cn/exif-editor/)。还要做两个选择：
 
 - **转换 HEIC 时：**转换器可以把元数据带过去，也可以留下——就是一个复选框——并且它会提醒哪些照片载着 GPS。凡是要公开的，都留下。
-- **不打算缩放的照片：**要是像素得逐字节原封不动，就用 [EXIF 编辑器](https://httcup.github.io/tools/exif-editor/)，它不重新编码图像就把标签去掉。[元数据指南](https://httcup.github.io/tools/guides/remove-exif-and-gps-data/)是详细版。
+- **不打算缩放的照片：**要是像素得逐字节原封不动，就用 [EXIF 编辑器](https://139t.cn/exif-editor/)，它不重新编码图像就把标签去掉。[元数据指南](https://139t.cn/guides/remove-exif-and-gps-data/)是详细版。
 
 ## 为什么先缩放后压缩
 
@@ -35,9 +35,9 @@
 
 没别的办法达到目标时压缩器也会自己缩图，但它把那当成最后一招。取景自己在缩放器里做，是把决定——裁掉什么、哪条边要紧——留在它该在的地方。
 
-[缩放指南](https://httcup.github.io/tools/guides/resize-an-image/)和[压缩指南](https://httcup.github.io/tools/guides/compress-an-image-to-a-target-size/)各自把自己那一半讲得更深，包括画质数字到底在量什么。
+[缩放指南](https://139t.cn/guides/resize-an-image/)和[压缩指南](https://139t.cn/guides/compress-an-image-to-a-target-size/)各自把自己那一半讲得更深，包括画质数字到底在量什么。
 
-![改尺寸工具设为最长边，填了 1600，旁边是常用的长边数值。](https://httcup.github.io/screens/get-photos-ready-for-the-web/long-edge.webp)
+![改尺寸工具设为最长边，填了 1600，旁边是常用的长边数值。](https://139t.cn/screens/get-photos-ready-for-the-web/long-edge.webp)
 
 先定长边，因为这是唯一一个对竖幅照片和横幅照片一视同仁的设置。
 
@@ -45,7 +45,7 @@
 
 链上每个工具都一次收一整个文件夹：转换器处理每个 HEIC，连拍也算；缩放器给整批套同一个取景，或者让你每张单裁；压缩器把全部装进一个 zip 交回来。二十张照片费的心思比一张多不了多少——机器时间是你机器的，比任何上传都快。
 
-![三行结果，每行一张从几 MB 降到大约 150 kB 的照片，以及各自落在的质量值。](https://httcup.github.io/screens/get-photos-ready-for-the-web/quality.webp)
+![三行结果，每行一张从几 MB 降到大约 150 kB 的照片，以及各自落在的质量值。](https://139t.cn/screens/get-photos-ready-for-the-web/quality.webp)
 
 然后才是质量，一次处理整批。顺序是有讲究的，上面一节说明了原因。
 

@@ -4,7 +4,7 @@
 
 > 把照片或截图里的姓名、地址、账号遮住再存一份，被遮的像素是从文件里没了，不是压在一个矩形下面。全程在浏览器里跑。
 
-This is an interactive browser tool at https://httcup.github.io/tools/redact-image/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/redact-image/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 图片 are **processed in your browser**. No processing upload.
 
@@ -25,14 +25,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/redact-ima
 
 ## The longer version
 
-[图片怎么涂黑，才能让被遮住的那块真的没了](https://httcup.github.io/tools/guides/redact-an-image/): 大多数软件画出来的黑色方块只是压在图片上面，随手就能挪开。真正的涂黑和只是遮住差在哪里，打过码的文字为什么能被读回来，以及发出去之前怎么检查一个文件。
+[图片怎么涂黑，才能让被遮住的那块真的没了](https://139t.cn/guides/redact-an-image/): 大多数软件画出来的黑色方块只是压在图片上面，随手就能挪开。真正的涂黑和只是遮住差在哪里，打过码的文字为什么能被读回来，以及发出去之前怎么检查一个文件。
 
 ## Also in the box
 
-- [EXIF 查看与清除](https://httcup.github.io/tools/exif-editor/): 看看一张照片把你交代了多少，然后删掉。
-- [DICOM 阅片器](https://httcup.github.io/tools/dicom-viewer/): CT、MR、X 光和超声，连窗宽窗位、头信息和测量一起。
-- [图片转 ICO](https://httcup.github.io/tools/image-to-ico/): 进去一张图，出来的是浏览器、Windows 和 Mac 各自要的每一个尺寸。
-- [图片转 Data URI](https://httcup.github.io/tools/image-to-data-uri/): 整张图变成一行文本，直接粘进 CSS 或者 HTML。
+- [EXIF 查看与清除](https://139t.cn/exif-editor/): 看看一张照片把你交代了多少，然后删掉。
+- [DICOM 阅片器](https://139t.cn/dicom-viewer/): CT、MR、X 光和超声，连窗宽窗位、头信息和测量一起。
+- [图片转 ICO](https://139t.cn/image-to-ico/): 进去一张图，出来的是浏览器、Windows 和 Mac 各自要的每一个尺寸。
+- [图片转 Data URI](https://139t.cn/image-to-data-uri/): 整张图变成一行文本，直接粘进 CSS 或者 HTML。
 
 ## Questions
 
@@ -54,7 +54,7 @@ This is an interactive browser tool at https://httcup.github.io/tools/redact-ima
 
 ### 它会不会一并去掉 EXIF 和 GPS 信息？
 
-会，顺带的。保存的意思是把一块画满像素的画布写出来，而画布不带任何标签，所以拍摄地点、相机型号、时间戳和内嵌缩略图根本不会被写进新文件。缩略图在这里尤其要紧：它是图片的第二份小副本，照片被编辑之后不一定会重新生成，一张涂黑过的照片带着没涂黑的缩略图出门，整件事就白做了。[EXIF 查看与清除](https://httcup.github.io/exif-editor/)可查看和编辑 JPEG、PNG 和 WebP 元数据，不重新编码图片。AVIF 支持只读查看提取到的 EXIF，清理时将第一张解码后的图片转换为新的 PNG，颜色或 HDR 可能改变。
+会，顺带的。保存的意思是把一块画满像素的画布写出来，而画布不带任何标签，所以拍摄地点、相机型号、时间戳和内嵌缩略图根本不会被写进新文件。缩略图在这里尤其要紧：它是图片的第二份小副本，照片被编辑之后不一定会重新生成，一张涂黑过的照片带着没涂黑的缩略图出门，整件事就白做了。[EXIF 查看与清除](https://139t.cn/exif-editor/)可查看和编辑 JPEG、PNG 和 WebP 元数据，不重新编码图片。AVIF 支持只读查看提取到的 EXIF，清理时将第一张解码后的图片转换为新的 PNG，颜色或 HDR 可能改变。
 
 ### 它能读能写哪些格式？
 

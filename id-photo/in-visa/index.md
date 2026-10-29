@@ -14,7 +14,7 @@ Government of India, Bureau of Immigration 对这种证件的照片有什么要�
 | 背景 | 白色或素净的浅色 |
 | 网上申请用照片 | ⁦350+ x 350+⁩ px，最大到 ⁦1000 x 1000⁩，JPEG，10.0 KB 到 300.0 KB |
 
-[按这条规定制作照片](https://httcup.github.io/tools/id-photo/#in-visa) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
+[按这条规定制作照片](https://139t.cn/id-photo/#in-visa) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
 
 ## 这条规定还说了什么
 
@@ -33,9 +33,9 @@ Government of India, Bureau of Immigration 对这种证件的照片有什么要�
 
 ## 印度 的其他证件
 
-- [护照 (⁦पासपोर्ट⁩)](https://httcup.github.io/tools/id-photo/in-passport/) — ⁦51 x 51⁩ 毫米
-- [电子签证](https://httcup.github.io/tools/id-photo/in-evisa/) — ⁦600 x 600⁩ px（参考）
-- [驾驶证](https://httcup.github.io/tools/id-photo/in-driving-licence/) — ⁦35 x 45⁩ 毫米 · ⁦420 x 525⁩ px
-- [IBPS 线上申请照片](https://httcup.github.io/tools/id-photo/in-exam-photo/) — ⁦200 x 230⁩ px（参考）
+- [护照 (⁦पासपोर्ट⁩)](https://139t.cn/id-photo/in-passport/) — ⁦51 x 51⁩ 毫米
+- [电子签证](https://139t.cn/id-photo/in-evisa/) — ⁦600 x 600⁩ px（参考）
+- [驾驶证](https://139t.cn/id-photo/in-driving-licence/) — ⁦35 x 45⁩ 毫米 · ⁦420 x 525⁩ px
+- [IBPS 线上申请照片](https://139t.cn/id-photo/in-exam-photo/) — ⁦200 x 230⁩ px（参考）
 
-[在证件照工具里查看所有国家和证件](https://httcup.github.io/tools/id-photo/)
+[在证件照工具里查看所有国家和证件](https://139t.cn/id-photo/)

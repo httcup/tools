@@ -6,9 +6,9 @@
 
 ## 简短的答案
 
-1. **取帧。**打开[视频取帧工具](https://httcup.github.io/tools/grab-frame/)，放入视频，沿文件实际帧列表定位。保存为 PNG，先避免额外的有损编码。
-2. **安排画面。**把 PNG 放进[图片尺寸工具](https://httcup.github.io/tools/resize-image/)，按平台比例裁切，选择适合原图和目的地的尺寸。YouTube 当前建议普通视频用 16:9，Shorts 用 9:16。下面分别说明。
-3. **满足大小限制。**最后用[图片压缩器](https://httcup.github.io/tools/compress-image/)，以平台当前限制为目标，并留余量。照片型 YouTube 缩略图选 JPEG。目的地要求 JPG 或 PNG 时，不要保留 Auto。
+1. **取帧。**打开[视频取帧工具](https://139t.cn/grab-frame/)，放入视频，沿文件实际帧列表定位。保存为 PNG，先避免额外的有损编码。
+2. **安排画面。**把 PNG 放进[图片尺寸工具](https://139t.cn/resize-image/)，按平台比例裁切，选择适合原图和目的地的尺寸。YouTube 当前建议普通视频用 16:9，Shorts 用 9:16。下面分别说明。
+3. **满足大小限制。**最后用[图片压缩器](https://139t.cn/compress-image/)，以平台当前限制为目标，并留余量。照片型 YouTube 缩略图选 JPEG。目的地要求 JPG 或 PNG 时，不要保留 Auto。
 
 这条链上没有任何一环上传任何东西——视频还没发布时这一点很要紧，而封面图之所以要做，恰恰是因为视频还没公开。
 
@@ -26,17 +26,17 @@
 
 即使最终缩略图用 JPEG，取帧也先保存为 PNG。PNG 保留画布上的静态像素，不增加一轮有损编码。之后只在最后按大小预算压缩一次，避免损失累积。
 
-![一段视频里时间码可见的静帧，旁边是逐帧与拖动的控件，以及它取自的精确时刻。](https://httcup.github.io/screens/make-a-video-thumbnail/frame.webp)
+![一段视频里时间码可见的静帧，旁边是逐帧与拖动的控件，以及它取自的精确时刻。](https://139t.cn/screens/make-a-video-thumbnail/frame.webp)
 
 走到那一帧，而不是暂停后截屏。这两者的差别究竟在哪，上面一节说得清楚。
 
 ## 平台的算术
 
-先裁切再压缩，原因与[照片指南](https://httcup.github.io/tools/guides/get-photos-ready-for-the-web/)相同。像素就是预算。裁成 16:9，再缩到 ⁦1280×720⁩，是一个可用的小尺寸示例，不是 YouTube 当前建议。[缩略图说明](https://support.google.com/youtube/answer/72431?hl=en)现在建议普通视频用 ⁦3840×2160⁩，Shorts 用 ⁦2160×3840⁩，可接受格式举例包括 JPG 和 PNG。桌面上传允许最大 50 MB，手机视频缩略图要低于 2 MB。检查实际上传方式的要求，不要只为达到建议数字放大小图。自定义上传需要已验证账号，Shorts 自定义上传当前使用电脑上的 YouTube Studio。
+先裁切再压缩，原因与[照片指南](https://139t.cn/guides/get-photos-ready-for-the-web/)相同。像素就是预算。裁成 16:9，再缩到 ⁦1280×720⁩，是一个可用的小尺寸示例，不是 YouTube 当前建议。[缩略图说明](https://support.google.com/youtube/answer/72431?hl=en)现在建议普通视频用 ⁦3840×2160⁩，Shorts 用 ⁦2160×3840⁩，可接受格式举例包括 JPG 和 PNG。桌面上传允许最大 50 MB，手机视频缩略图要低于 2 MB。检查实际上传方式的要求，不要只为达到建议数字放大小图。自定义上传需要已验证账号，Shorts 自定义上传当前使用电脑上的 YouTube Studio。
 
 裁切框可以锁定 16:9 或 9:16，不用自己计算。把文字和脸放在中间三分之二内，因为信息流可能圆角裁边，右下角还会覆盖时长。
 
-![尺寸工具填写了 1280 宽和 720 高，并显示静态图片的输出摘要。](https://httcup.github.io/screens/make-a-video-thumbnail/size.webp)
+![尺寸工具填写了 1280 宽和 720 高，并显示静态图片的输出摘要。](https://139t.cn/screens/make-a-video-thumbnail/size.webp)
 
 1280 乘 720 的导出示例。根据目的地当前要求，以及原图实际细节选择尺寸。
 

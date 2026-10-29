@@ -4,7 +4,7 @@
 
 > 把一串连拍的照片合成一张：取平均值消噪点，取中位数把人从画面里去掉，取最亮做星轨，或者给微距做景深合成。CR2、NEF、ARW、DNG、RAF 和 CR3 靠读出相机自己的预览图来打开。全部在你的浏览器里跑。
 
-This is an interactive browser tool at https://httcup.github.io/tools/stack-images/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/stack-images/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 照片 are **processed in your browser**. No processing upload.
 
@@ -26,14 +26,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/stack-imag
 
 ## The longer version
 
-[怎么堆栈照片来压噪点，或者把人去掉](https://httcup.github.io/tools/guides/stack-photos-to-reduce-noise/): 堆栈把一串连拍合成一张。用哪种手法，取决于你想失去什么：噪点、路人，还是微距那浅得可怜的景深。每种手法怎么运作、代价是什么，以及 RAW 文件在这里是什么位置。
+[怎么堆栈照片来压噪点，或者把人去掉](https://139t.cn/guides/stack-photos-to-reduce-noise/): 堆栈把一串连拍合成一张。用哪种手法，取决于你想失去什么：噪点、路人，还是微距那浅得可怜的景深。每种手法怎么运作、代价是什么，以及 RAW 文件在这里是什么位置。
 
 ## Also in the box
 
-- [图片涂黑与打码](https://httcup.github.io/tools/redact-image/): 你遮住的那块是从文件里删掉的，不是藏在文件里。
-- [EXIF 查看与清除](https://httcup.github.io/tools/exif-editor/): 看看一张照片把你交代了多少，然后删掉。
-- [DICOM 阅片器](https://httcup.github.io/tools/dicom-viewer/): CT、MR、X 光和超声，连窗宽窗位、头信息和测量一起。
-- [图片转 ICO](https://httcup.github.io/tools/image-to-ico/): 进去一张图，出来的是浏览器、Windows 和 Mac 各自要的每一个尺寸。
+- [图片涂黑与打码](https://139t.cn/redact-image/): 你遮住的那块是从文件里删掉的，不是藏在文件里。
+- [EXIF 查看与清除](https://139t.cn/exif-editor/): 看看一张照片把你交代了多少，然后删掉。
+- [DICOM 阅片器](https://139t.cn/dicom-viewer/): CT、MR、X 光和超声，连窗宽窗位、头信息和测量一起。
+- [图片转 ICO](https://139t.cn/image-to-ico/): 进去一张图，出来的是浏览器、Windows 和 Mac 各自要的每一个尺寸。
 
 ## Questions
 

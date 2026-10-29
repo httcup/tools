@@ -14,7 +14,7 @@ U.S. Department of State 对这种证件的照片有什么要求，以 2026-10-1
 | 背景 | 白或米白 |
 | 网上申请用照片 | ⁦600+ x 600+⁩ px，最大到 ⁦1200 x 1200⁩，JPEG，最多 240.0 KB |
 
-[按这条规定制作照片](https://httcup.github.io/tools/id-photo/#us-visa) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
+[按这条规定制作照片](https://139t.cn/id-photo/#us-visa) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
 
 ## 这条规定还说了什么
 
@@ -33,7 +33,7 @@ U.S. Department of State 对这种证件的照片有什么要求，以 2026-10-1
 
 ## 美国 的其他证件
 
-- [护照和绿卡](https://httcup.github.io/tools/id-photo/us-passport/) — ⁦51 x 51⁩ 毫米 · ⁦600 x 600⁩ px
-- [多元化签证抽签报名](https://httcup.github.io/tools/id-photo/us-dv/) — ⁦51 x 51⁩ 毫米 · ⁦600 x 600⁩ px
+- [护照和绿卡](https://139t.cn/id-photo/us-passport/) — ⁦51 x 51⁩ 毫米 · ⁦600 x 600⁩ px
+- [多元化签证抽签报名](https://139t.cn/id-photo/us-dv/) — ⁦51 x 51⁩ 毫米 · ⁦600 x 600⁩ px
 
-[在证件照工具里查看所有国家和证件](https://httcup.github.io/tools/id-photo/)
+[在证件照工具里查看所有国家和证件](https://139t.cn/id-photo/)

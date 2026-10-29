@@ -2,13 +2,13 @@
 
 Show someone the website you are using while you keep control of it. Your browser captures one chosen tab and sends its changing picture to the viewer. Direct uses a reachable local network; Cloud relay is an explicit option that forwards encrypted video through Cloudflare. Invite by link or nearby discovery and approve the viewer before sending video.
 
-[打开Share a Browser Tab](https://httcup.github.io/tools/share-tab/): Choose a tab on your computer and let one approved viewer watch it using Direct or Cloud relay. Invite by link, network discovery or a private group. No extension, sound or remote control.
+[打开Share a Browser Tab](https://139t.cn/share-tab/): Choose a tab on your computer and let one approved viewer watch it using Direct or Cloud relay. Invite by link, network discovery or a private group. No extension, sound or remote control.
 
 最后更新 15 October 2026
 
 ## Connect the devices and choose the tab
 
-Open the website in one tab and [Share a Browser Tab](https://httcup.github.io/tools/share-tab/) in another on your computer. Both devices need internet access for pairing. The default Direct choice also needs a network that lets them reach each other. Home Wi-Fi or Ethernet is a useful starting point. Choose Cloud relay before starting if Direct cannot reach the other device; the invitation carries that choice. Then click *Choose a tab to share* and select the website tab in your browser's own picker. Choose a browser tab, rather than a window or your whole screen: this tool refuses those broader sources. Check the local preview before sending the link.
+Open the website in one tab and [Share a Browser Tab](https://139t.cn/share-tab/) in another on your computer. Both devices need internet access for pairing. The default Direct choice also needs a network that lets them reach each other. Home Wi-Fi or Ethernet is a useful starting point. Choose Cloud relay before starting if Direct cannot reach the other device; the invitation carries that choice. Then click *Choose a tab to share* and select the website tab in your browser's own picker. Choose a browser tab, rather than a window or your whole screen: this tool refuses those broader sources. Check the local preview before sending the link.
 
 Choose *Copy viewer link* and send it to the other person. They open it, read the connection notice, optionally add a short introduction and choose *Request to watch*. Return to the sharing page to approve the request you expect. The connection first carries only encrypted control messages; video begins after your approval and the viewer's acknowledgement. One viewer can watch at a time, with up to four requests waiting.
 
@@ -32,7 +32,7 @@ Use a network that lets the devices communicate directly. A phone hotspot is an 
 
 The viewer sees a live video picture. Your scrolling, page navigation, menus and visible account content in that tab become part of the picture. Simply activating another browser tab does not select a new capture source, but anything you reveal inside the selected tab is shared. Check the browser's capture indicator and stop before opening private information there.
 
-The viewer's clicks and typing cannot operate your browser. They do not receive your login cookies or a working copy of the website. Text in a video is not selectable, so this version cannot provide webpage copying. Use [Share Text & Files](https://httcup.github.io/tools/share-text/) alongside it when the other person needs a link, note or file they can copy. Some protected content may be black or unavailable in a capture.
+The viewer's clicks and typing cannot operate your browser. They do not receive your login cookies or a working copy of the website. Text in a video is not selectable, so this version cannot provide webpage copying. Use [Share Text & Files](https://139t.cn/share-text/) alongside it when the other person needs a link, note or file they can copy. Some protected content may be black or unavailable in a capture.
 
 No audio is requested or sent, including tab sound. The tool does not request camera or microphone access and makes no recording. A viewer can still record their own view or take screenshots. Ending the link stops future video; it cannot erase anything already kept.
 

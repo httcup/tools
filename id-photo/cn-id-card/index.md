@@ -14,7 +14,7 @@
 | 背景 | 纯白 |
 | 上传规定 | 没有公布——这一条是给打印的 |
 
-[按这条规定制作照片](https://httcup.github.io/tools/id-photo/#cn-id-card) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
+[按这条规定制作照片](https://139t.cn/id-photo/#cn-id-card) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
 
 ## 这条规定还说了什么
 
@@ -34,7 +34,7 @@
 
 ## 中国 的其他证件
 
-- [护照和签证](https://httcup.github.io/tools/id-photo/cn-passport/) — ⁦33 x 48⁩ 毫米 · ⁦354 x 472⁩ px
-- [驾驶证 (⁦机动车驾驶证⁩)](https://httcup.github.io/tools/id-photo/cn-driving-licence/) — ⁦22 x 32⁩ 毫米
+- [护照和签证](https://139t.cn/id-photo/cn-passport/) — ⁦33 x 48⁩ 毫米 · ⁦354 x 472⁩ px
+- [驾驶证 (⁦机动车驾驶证⁩)](https://139t.cn/id-photo/cn-driving-licence/) — ⁦22 x 32⁩ 毫米
 
-[在证件照工具里查看所有国家和证件](https://httcup.github.io/tools/id-photo/)
+[在证件照工具里查看所有国家和证件](https://139t.cn/id-photo/)

@@ -6,9 +6,9 @@
 
 ## 简短的答案
 
-每页拍一张照，然后把所有照片一次性丢到[文档扫描器](https://httcup.github.io/tools/document-scanner/)上。它找出每页的四角，把每张照片扶正，写出*一张照片一页的一个 PDF*——没有单独的合并步骤要做，页面按你添加的顺序排好。
+每页拍一张照，然后把所有照片一次性丢到[文档扫描器](https://139t.cn/document-scanner/)上。它找出每页的四角，把每张照片扶正，写出*一张照片一页的一个 PDF*——没有单独的合并步骤要做，页面按你添加的顺序排好。
 
-扫描器停下的地方，有两个工具接手。如果文档的一部分本来*就是* PDF——邮件发来的合同，中间要夹上你刚扫的签字页——就用 [PDF 合并器](https://httcup.github.io/tools/merge-pdf/)把它们穿插到一起。要是成品还是比邮箱允许的大，[PDF 压缩器](https://httcup.github.io/tools/compress-pdf/)能把它压到限制以下。
+扫描器停下的地方，有两个工具接手。如果文档的一部分本来*就是* PDF——邮件发来的合同，中间要夹上你刚扫的签字页——就用 [PDF 合并器](https://139t.cn/merge-pdf/)把它们穿插到一起。要是成品还是比邮箱允许的大，[PDF 压缩器](https://139t.cn/compress-pdf/)能把它压到限制以下。
 
 两处接力都只隔一次点击：扫描器写好 PDF 后，下载按钮下方就有一行提议把结果直接带到合并工具或压缩工具，到那边已经装好——合并工具也会用同样的方式把自己的成品交给压缩工具。
 
@@ -28,9 +28,9 @@
 - **从正上方拍**，大致垂直。透视能纠正，但斜拍时远端那条边像素本来就少，纠正变不出像素来。
 - **一张照片一页**，按阅读顺序。事后调顺序也行，但拍摄的顺序就是拿到的顺序，按顺序拍不花一分钱。
 
-其余的在[扫描指南](https://httcup.github.io/tools/guides/scan-a-document-with-your-phone/)里：四角是怎么找的，什么时候该自己拖，黑白模式对文件体积做了什么。
+其余的在[扫描指南](https://139t.cn/guides/scan-a-document-with-your-phone/)里：四角是怎么找的，什么时候该自己拖，黑白模式对文件体积做了什么。
 
-![扫描工具里有一条排着三页照片的条带，第一页已经打开并标好了四角。](https://httcup.github.io/screens/scan-multiple-pages-into-one-pdf/pages.webp)
+![扫描工具里有一条排着三页照片的条带，第一页已经打开并标好了四角。](https://139t.cn/screens/scan-multiple-pages-into-one-pdf/pages.webp)
 
 三页一起拍，一起拉正。每一页都保留自己的四角，所以一张拍坏了也不会毁掉整叠。
 
@@ -40,7 +40,7 @@
 
 不同日子扫的件也一样：每次扫出的 PDF 作为一块页面落进来，块变成一个文件的地方就是合并器。
 
-![PDF 生成工具的列表里是清理好的三页，上面是页面尺寸、方向和页边距的设置。](https://httcup.github.io/screens/scan-multiple-pages-into-one-pdf/document.webp)
+![PDF 生成工具的列表里是清理好的三页，上面是页面尺寸、方向和页边距的设置。](https://139t.cn/screens/scan-multiple-pages-into-one-pdf/document.webp)
 
 然后同样这三页变成一份文档，合并工具正是在这一步派上用场。
 

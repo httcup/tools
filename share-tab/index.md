@@ -26,14 +26,14 @@ You choose a browser tab in your browser's own picker and approve the viewer bef
 
 ## The longer version
 
-[How to share a browser tab live without an extension](https://httcup.github.io/tools/guides/share-a-browser-tab/): Show a browser tab to an approved viewer. Choose Direct on a reachable local network or an optional encrypted Cloud relay. No extension or remote control.
+[How to share a browser tab live without an extension](https://139t.cn/guides/share-a-browser-tab/): Show a browser tab to an approved viewer. Choose Direct on a reachable local network or an optional encrypted Cloud relay. No extension or remote control.
 
 ## Also in the box
 
-- [文本与文件分享](https://httcup.github.io/tools/share-text/): 从打开的浏览器加密分享文本与文件。默认直连，也可选择云中转。你可以逐一批准读者。
-- [Local Walkie-Talkie](https://httcup.github.io/tools/walkie-talkie/): Start a named channel, then hold to talk or speak hands-free. Connect directly on your local network, or choose Cloud relay for listeners over the internet.
-- [Voice Oncall](https://httcup.github.io/tools/voice-oncall/): Open a pager and hear live voice from people who connect. Use Direct on your local network or choose Cloud relay over the internet, with a password and individual mute or remove controls.
-- [Remote Camera](https://httcup.github.io/tools/remote-camera/): Open a camera on one device and watch it in another browser, with optional viewer approval. Choose Direct or Cloud relay for encrypted live video.
+- [文本与文件分享](https://139t.cn/share-text/): 从打开的浏览器加密分享文本与文件。默认直连，也可选择云中转。你可以逐一批准读者。
+- [Local Walkie-Talkie](https://139t.cn/walkie-talkie/): Start a named channel, then hold to talk or speak hands-free. Connect directly on your local network, or choose Cloud relay for listeners over the internet.
+- [Voice Oncall](https://139t.cn/voice-oncall/): Open a pager and hear live voice from people who connect. Use Direct on your local network or choose Cloud relay over the internet, with a password and individual mute or remove controls.
+- [Remote Camera](https://139t.cn/remote-camera/): Open a camera on one device and watch it in another browser, with optional viewer approval. Choose Direct or Cloud relay for encrypted live video.
 
 ## Questions
 

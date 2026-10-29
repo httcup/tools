@@ -4,7 +4,7 @@ iPhone 拍的照片，换成什么都打得开的格式。
 
 > 在浏览器里把 iPhone 的 HEIC 和 AVIF 照片转成 JPG。解码器跑在你自己的机器上，不上传，不注册，断网也能用，拍摄日期和相机信息可以一起带过去。 元数据复选框和预览仅适用于 HEIC，AVIF 元数据一律不保留。
 
-This is an interactive browser tool at https://httcup.github.io/tools/heic-to-jpg/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/heic-to-jpg/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 照片 are **processed in your browser**. No processing upload.
 
@@ -25,14 +25,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/heic-to-jp
 
 ## The longer version
 
-[手机存下的那张照片，和那个什么都打不开的格式](https://httcup.github.io/tools/guides/convert-heic-to-jpg/): iPhone 把照片存成 HEIC，而半个互联网打不开它。这个格式是什么，为什么只有 Safari 解得了，转换要拿画质换多少，以及怎么做到不把照片交给任何人。
+[手机存下的那张照片，和那个什么都打不开的格式](https://139t.cn/guides/convert-heic-to-jpg/): iPhone 把照片存成 HEIC，而半个互联网打不开它。这个格式是什么，为什么只有 Safari 解得了，转换要拿画质换多少，以及怎么做到不把照片交给任何人。
 
 ## Also in the box
 
-- [WebP 转 JPG](https://httcup.github.io/tools/webp-to-jpg/): 把网页保存的图片，变成所有软件仍然接受的格式。
-- [PNG 转 WebP](https://httcup.github.io/tools/png-to-webp/): 同一张图片，常常减少三分之一体积，透明区域保持完整。
-- [AVIF 转 JPG](https://httcup.github.io/tools/avif-to-jpg/): 把网站如今保存的格式，变成所有软件一直支持的格式。
-- [证件照制作](https://httcup.github.io/tools/id-photo/): 选择支持的国家和证件。公布的要求与指导值均有标注。
+- [WebP 转 JPG](https://139t.cn/webp-to-jpg/): 把网页保存的图片，变成所有软件仍然接受的格式。
+- [PNG 转 WebP](https://139t.cn/png-to-webp/): 同一张图片，常常减少三分之一体积，透明区域保持完整。
+- [AVIF 转 JPG](https://139t.cn/avif-to-jpg/): 把网站如今保存的格式，变成所有软件一直支持的格式。
+- [证件照制作](https://139t.cn/id-photo/): 选择支持的国家和证件。公布的要求与指导值均有标注。
 
 ## Questions
 
@@ -50,7 +50,7 @@ This is an interactive browser tool at https://httcup.github.io/tools/heic-to-jp
 
 ### 它会去掉 GPS 坐标吗？
 
-它先告诉你坐标在那儿，然后照你说的办。还没开始转，每张照片那一行就已经写明文件里有没有坐标，这一步比手机做得多。取消勾选“保留日期、相机和参数”，坐标跟别的一切一起被挡在 JPEG 之外；勾着，它们就跟过去。想逐条细看那些标签，或者把已经是 JPEG 的照片里的标签清掉，那是 [EXIF 查看与清除](https://httcup.github.io/exif-editor/)干的活，而且它不重新压缩画面。
+它先告诉你坐标在那儿，然后照你说的办。还没开始转，每张照片那一行就已经写明文件里有没有坐标，这一步比手机做得多。取消勾选“保留日期、相机和参数”，坐标跟别的一切一起被挡在 JPEG 之外；勾着，它们就跟过去。想逐条细看那些标签，或者把已经是 JPEG 的照片里的标签清掉，那是 [EXIF 查看与清除](https://139t.cn/exif-editor/)干的活，而且它不重新压缩画面。
 
 ### 画面会重新压缩吗？
 

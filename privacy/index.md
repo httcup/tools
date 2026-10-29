@@ -22,11 +22,11 @@
 
 以下工具只有你主动操作时才会联网，平时打开页面、处理文件都不发请求。
 
-**[图片转视频](https://httcup.github.io/tools/images-to-video/)**：填写图片网址导入时，那台服务器会收到你的 IP 地址和完整请求 URL。图片到达后只在本地内存中处理，不会发送你从设备上选择的文件。
+**[图片转视频](https://139t.cn/images-to-video/)**：填写图片网址导入时，那台服务器会收到你的 IP 地址和完整请求 URL。图片到达后只在本地内存中处理，不会发送你从设备上选择的文件。
 
-**[收据与发票提取](https://httcup.github.io/tools/receipt-invoice-extractor/)**：照片和文字识别全部在本地完成。可选的「历史汇率」按钮会向 Frankfurter（frankfurter.dev）请求货币对和你选的日期，对方只会看到你的 IP 和这个请求，收据内容不会发送。手动填汇率则完全不联网。
+**[收据与发票提取](https://139t.cn/receipt-invoice-extractor/)**：照片和文字识别全部在本地完成。可选的「历史汇率」按钮会向 Frankfurter（frankfurter.dev）请求货币对和你选的日期，对方只会看到你的 IP 和这个请求，收据内容不会发送。手动填汇率则完全不联网。
 
-**配对工具**（[文本与文件分享](https://httcup.github.io/tools/share-text/)、[分享浏览器标签页](https://httcup.github.io/tools/share-tab/)、[远程摄像头](https://httcup.github.io/tools/remote-camera/)）：把文字、文件、画面或摄像头视频经加密连接传给你批准的另一台设备。建立连接需要经过引见服务器，它能看到房间代码、IP 地址、时间和连接协商消息，看不到传输内容；使用中继方式时，Cloudflare 会转发加密流量并保留约七天的连接元数据日志。没有你的批准，对方看不到任何内容。
+**配对工具**（[文本与文件分享](https://139t.cn/share-text/)、[分享浏览器标签页](https://139t.cn/share-tab/)、[远程摄像头](https://139t.cn/remote-camera/)）：把文字、文件、画面或摄像头视频经加密连接传给你批准的另一台设备。建立连接需要经过引见服务器，它能看到房间代码、IP 地址、时间和连接协商消息，看不到传输内容；使用中继方式时，Cloudflare 会转发加密流量并保留约七天的连接元数据日志。没有你的批准，对方看不到任何内容。
 
 ## 被收集了什么
 

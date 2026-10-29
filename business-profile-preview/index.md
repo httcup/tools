@@ -4,7 +4,7 @@
 
 > 在上线之前就看到你的 Google 商家资料长什么样：知识面板、手机上的地点卡片和本地搜索结果，全部由你打进去的名称、类别、营业时间、评分和照片画出来。已有的商家资料可以粘贴进来导入。做好的图能下载成 PNG 或 SVG。整个过程都发生在你的浏览器里。
 
-This is an interactive browser tool at https://httcup.github.io/tools/business-profile-preview/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/business-profile-preview/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 商家资料和它们的图 are **processed in your browser**. No processing upload.
 
@@ -27,14 +27,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/business-p
 
 ## The longer version
 
-[如何在上线前预览 Google 商家资料](https://httcup.github.io/tools/guides/preview-a-google-business-profile/): 桌面、手机和本地结果里资料长什么样：名称保留多少、类别作用、哪些字段成为按钮，以及无人看时营业状态怎样。
+[如何在上线前预览 Google 商家资料](https://139t.cn/guides/preview-a-google-business-profile/): 桌面、手机和本地结果里资料长什么样：名称保留多少、类别作用、哪些字段成为按钮，以及无人看时营业状态怎样。
 
 ## Also in the box
 
-- [图片压缩](https://httcup.github.io/tools/compress-image/): 说个大小，剩下的它来算。
-- [图片缩放](https://httcup.github.io/tools/resize-image/): 说个尺寸，拉个框，挑个格式。
-- [Image Layout](https://httcup.github.io/tools/image-layout/): Put your pictures together. Keep them on your machine.
-- [HEIC 转 JPG](https://httcup.github.io/tools/heic-to-jpg/): iPhone 拍的照片，换成什么都打得开的格式。
+- [图片压缩](https://139t.cn/compress-image/): 说个大小，剩下的它来算。
+- [图片缩放](https://139t.cn/resize-image/): 说个尺寸，拉个框，挑个格式。
+- [Image Layout](https://139t.cn/image-layout/): Put your pictures together. Keep them on your machine.
+- [HEIC 转 JPG](https://139t.cn/heic-to-jpg/): iPhone 拍的照片，换成什么都打得开的格式。
 
 ## Questions
 

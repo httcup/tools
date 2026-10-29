@@ -14,7 +14,7 @@ Cục Quản lý xuất nhập cảnh, Bộ Công an 对这种证件的照片有
 | 背景 | 纯白 |
 | 上传规定 | 没有公布——这一条是给打印的 |
 
-[按这条规定制作照片](https://httcup.github.io/tools/id-photo/#vn-passport) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
+[按这条规定制作照片](https://139t.cn/id-photo/#vn-passport) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
 
 ## 这条规定还说了什么
 
@@ -34,6 +34,6 @@ Cục Quản lý xuất nhập cảnh, Bộ Công an 对这种证件的照片有
 
 ## 越南 的其他证件
 
-- [驾驶证 (⁦Giấy phép lái xe⁩)](https://httcup.github.io/tools/id-photo/vn-driving-licence/) — ⁦30 x 40⁩ 毫米 · ⁦473 x 630⁩ px
+- [驾驶证 (⁦Giấy phép lái xe⁩)](https://139t.cn/id-photo/vn-driving-licence/) — ⁦30 x 40⁩ 毫米 · ⁦473 x 630⁩ px
 
-[在证件照工具里查看所有国家和证件](https://httcup.github.io/tools/id-photo/)
+[在证件照工具里查看所有国家和证件](https://139t.cn/id-photo/)

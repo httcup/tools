@@ -4,7 +4,7 @@
 
 > 从照片、截图或摄像头读取二维码，在打开之前就看清这个链接到底通向哪里。EAN、UPC、Code 128、Code 39 和 ITF 条形码也能读。什么都不上传。
 
-This is an interactive browser tool at https://httcup.github.io/tools/qr-barcode-reader/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/qr-barcode-reader/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 图片和图片里的码 are **processed in your browser**. No processing upload.
 
@@ -27,14 +27,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/qr-barcode
 
 ## The longer version
 
-[怎么做一个二维码，并证明它扫得出来](https://httcup.github.io/tools/guides/make-a-qr-code-and-prove-it-scans/): 生成二维码，再用同一个网站的识别器验证：一字不差的内容、真正的链接，按印刷尺寸、用一张照片，在批量印刷之前。全在浏览器里，什么都不上传。
+[怎么做一个二维码，并证明它扫得出来](https://139t.cn/guides/make-a-qr-code-and-prove-it-scans/): 生成二维码，再用同一个网站的识别器验证：一字不差的内容、真正的链接，按印刷尺寸、用一张照片，在批量印刷之前。全在浏览器里，什么都不上传。
 
 ## Also in the box
 
-- [哈希与校验和](https://httcup.github.io/tools/hash-checksum/): 把下载来的文件和发布方公布的那串数字对一下，不用把它发给任何人。
-- [密码与密码短语生成器](https://httcup.github.io/tools/password-generator/): 在这里生成，由你自己的浏览器生成，不发往任何地方。什么都不保存，也没有历史记录。
-- [JSON 格式化](https://httcup.github.io/tools/json-formatter/): JSON、XML、HTML、CSS 和 YAML，格式化或转换。没有一个字被贴进别人的服务器。
-- [YAML 转 JSON](https://httcup.github.io/tools/yaml-to-json/): 两个方向都有，而且会告诉你各自的代价。这些都不会粘进别人的服务器。
+- [哈希与校验和](https://139t.cn/hash-checksum/): 把下载来的文件和发布方公布的那串数字对一下，不用把它发给任何人。
+- [密码与密码短语生成器](https://139t.cn/password-generator/): 在这里生成，由你自己的浏览器生成，不发往任何地方。什么都不保存，也没有历史记录。
+- [JSON 格式化](https://139t.cn/json-formatter/): JSON、XML、HTML、CSS 和 YAML，格式化或转换。没有一个字被贴进别人的服务器。
+- [YAML 转 JSON](https://139t.cn/yaml-to-json/): 两个方向都有，而且会告诉你各自的代价。这些都不会粘进别人的服务器。
 
 ## Questions
 

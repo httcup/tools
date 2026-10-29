@@ -4,7 +4,7 @@
 
 > 把 MP4、MOV 或 WebM 裁成任意形状，方图、9:16 竖屏，或者精确到像素的一个框。在浏览器里跑，不上传，声音留着，断网也能用。
 
-This is an interactive browser tool at https://httcup.github.io/tools/crop-video/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/crop-video/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 视频 are **processed in your browser**. No processing upload.
 
@@ -25,14 +25,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/crop-video
 
 ## The longer version
 
-[怎么把视频画面裁成另一个形状](https://httcup.github.io/tools/guides/crop-a-video/): 把片子裁成方图、9:16 竖屏，或者精确到像素的一个框。各家平台要哪个比例，为什么剪时长不用重编而裁画面非重编不可，以及这一下的代价。
+[怎么把视频画面裁成另一个形状](https://139t.cn/guides/crop-a-video/): 把片子裁成方图、9:16 竖屏，或者精确到像素的一个框。各家平台要哪个比例，为什么剪时长不用重编而裁画面非重编不可，以及这一下的代价。
 
 ## Also in the box
 
-- [视频倒放](https://httcup.github.io/tools/reverse-video/): 最后一帧排在最前，连声音一起。
-- [延时视频](https://httcup.github.io/tools/timelapse-video/): 一小时的素材，二十秒看完。
-- [视频截帧](https://httcup.github.io/tools/grab-frame/): 任意位置，一张原画质静帧。
-- [GIF 转 MP4](https://httcup.github.io/tools/gif-to-mp4/): 每一帧都带着 GIF 给它的延时，变成 MP4 里的 H.264。在你的机器上转，文件从不上传。
+- [视频倒放](https://139t.cn/reverse-video/): 最后一帧排在最前，连声音一起。
+- [延时视频](https://139t.cn/timelapse-video/): 一小时的素材，二十秒看完。
+- [视频截帧](https://139t.cn/grab-frame/): 任意位置，一张原画质静帧。
+- [GIF 转 MP4](https://139t.cn/gif-to-mp4/): 每一帧都带着 GIF 给它的延时，变成 MP4 里的 H.264。在你的机器上转，文件从不上传。
 
 ## Questions
 
@@ -58,7 +58,7 @@ MP4、M4V 和 MOV 直接读，里面装的是 H.264、HEVC、AV1 还是 VP9 都�
 
 ### 能顺便剪时长吗？
 
-这里不行，隔壁可以。这个工具只改画面的形状，别的都不动，出来的片子跟进去的一样长，时间轴和声音原封不动。剪时长是另一件活，也是另一个工具，[视频剪切](https://httcup.github.io/trim-video/)把片子里值得留的段落标出来，存成一个文件，而且一帧都不重编。
+这里不行，隔壁可以。这个工具只改画面的形状，别的都不动，出来的片子跟进去的一样长，时间轴和声音原封不动。剪时长是另一件活，也是另一个工具，[视频剪切](https://139t.cn/trim-video/)把片子里值得留的段落标出来，存成一个文件，而且一帧都不重编。
 
 ### 宽和高为什么只能按 2 跳？
 

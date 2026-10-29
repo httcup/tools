@@ -4,7 +4,7 @@
 
 > 一边播放录音，一边把值得留下的段落随手标出来，然后把这些段落存成一个文件。切点精确到采样，接缝不咔哒，什么都不上传。
 
-This is an interactive browser tool at https://httcup.github.io/tools/trim-audio/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/trim-audio/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 录音 are **processed in your browser**. No processing upload.
 
@@ -27,14 +27,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/trim-audio
 
 ## The longer version
 
-[怎么剪音频而不掉音质](https://httcup.github.io/tools/guides/trim-an-audio-file/): 一刀落在哪儿、为什么音频能剪得准而视频不能、为什么接缝有时会「咔」一声，以及那五毫秒的淡入淡出到底在做什么。
+[怎么剪音频而不掉音质](https://139t.cn/guides/trim-an-audio-file/): 一刀落在哪儿、为什么音频能剪得准而视频不能、为什么接缝有时会「咔」一声，以及那五毫秒的淡入淡出到底在做什么。
 
 ## Also in the box
 
-- [音频编辑](https://httcup.github.io/tools/edit-audio/): 倒着放、快慢随你调、把录轻了的声音提上来，全在你这台机器上。
-- [PDF 合并与拆分](https://httcup.github.io/tools/merge-pdf/): 挪动页面，不用往服务器跑一趟。
-- [PDF 压缩](https://httcup.github.io/tools/compress-pdf/): 文档变小，不用送去任何地方。
-- [PDF 解锁](https://httcup.github.io/tools/unlock-pdf/): 权限限制与打开密码不同。页面会说明你的 PDF 使用哪种保护。
+- [音频编辑](https://139t.cn/edit-audio/): 倒着放、快慢随你调、把录轻了的声音提上来，全在你这台机器上。
+- [PDF 合并与拆分](https://139t.cn/merge-pdf/): 挪动页面，不用往服务器跑一趟。
+- [PDF 压缩](https://139t.cn/compress-pdf/): 文档变小，不用送去任何地方。
+- [PDF 解锁](https://139t.cn/unlock-pdf/): 权限限制与打开密码不同。页面会说明你的 PDF 使用哪种保护。
 
 ## Questions
 

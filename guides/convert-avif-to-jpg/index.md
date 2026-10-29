@@ -2,19 +2,19 @@
 
 网页图片保存为 `.avif`，照片查看器拒绝，浏览器却正常显示。这个差距解释了全部问题，也是转换不必离开你设备的原因。
 
-[打开AVIF 转 JPG](https://httcup.github.io/tools/avif-to-jpg/): 把网站如今保存的格式，变成所有软件一直支持的格式。
+[打开AVIF 转 JPG](https://139t.cn/avif-to-jpg/): 把网站如今保存的格式，变成所有软件一直支持的格式。
 
 最后更新 2026年10月13日
 
 ## 简短答案
 
-打开 [AVIF 转 JPG 转换器](https://httcup.github.io/tools/avif-to-jpg/)，拖入文件，点击“转换”。质量保留 92。每张 JPEG 都可单独下载，多张还可打包为 ZIP。
+打开 [AVIF 转 JPG 转换器](https://139t.cn/avif-to-jpg/)，拖入文件，点击“转换”。质量保留 92。每张 JPEG 都可单独下载，多张还可打包为 ZIP。
 
 无需上传，也不用预先下载。解码器就在你阅读本页的浏览器中，这是最值得理解的部分，下方有专门解释。
 
 ## 需要兼容性时再用 JPEG
 
-**下载图片用于文档或表单。**从 AVIF 原件转换，先用质量 92，在原来拒收的应用里打开 JPEG。表单还限字节就检查新大小，转换可能让文件变大；再用[图片压缩](https://httcup.github.io/tools/compress-image/)明确选 JPEG 满足限额。
+**下载图片用于文档或表单。**从 AVIF 原件转换，先用质量 92，在原来拒收的应用里打开 JPEG。表单还限字节就检查新大小，转换可能让文件变大；再用[图片压缩](https://139t.cn/compress-image/)明确选 JPEG 满足限额。
 
 **相框、打印机或旧设备的副本。**先在设备试一张再批量转换。有尺寸要求就另行缩放；只改扩展名不会改编码或尺寸。保留 AVIF 原件，尤其是 HDR 图。这里只生成 SDR 静态兼容副本，序列只取首张解码图。透明标志要保留透明，就在缩放工具里选 PNG 或 WebP。
 
@@ -35,7 +35,7 @@ AVIF 像现代视频帧一样存储静态图片：视频编码 **AV1** 的一个
 
 把打不开的文件拖进浏览器标签页，它就正常显示。Chrome 和 Firefox 自 2021 年起解码 AVIF，Safari 自 2023 年起支持。
 
-这不是小趣闻，而是转换不需要服务器的原因。转换器只需读取 AVIF、写出 JPEG，浏览器两者都能做。[本工具](https://httcup.github.io/tools/avif-to-jpg/)给现成解码器加上保存按钮：打开文件、绘制图片，再要求输出 JPEG。
+这不是小趣闻，而是转换不需要服务器的原因。转换器只需读取 AVIF、写出 JPEG，浏览器两者都能做。[本工具](https://139t.cn/avif-to-jpg/)给现成解码器加上保存按钮：打开文件、绘制图片，再要求输出 JPEG。
 
 要求你上传 AVIF 的转换器，只是在运行你已经拥有的软件副本，并在此期间拿着你的图片。
 
@@ -49,7 +49,7 @@ AVIF 的近亲是 **HEIC**，iPhone 的保存格式。设计几乎相同：一�
 | 能编码的浏览器 | 没有 | 没有 |
 | 因此转换器必须提供 | 约 1.4 MB 的解码器 | 什么都不必提供 |
 
-这就是[本网站的 HEIC 转换器](https://httcup.github.io/tools/heic-to-jpg/)首次使用要下载编码库并详细说明，而本工具完全不用下载的原因。同一网站、同一承诺，诚实答案不同，因为格式的确不同。
+这就是[本网站的 HEIC 转换器](https://139t.cn/heic-to-jpg/)首次使用要下载编码库并详细说明，而本工具完全不用下载的原因。同一网站、同一承诺，诚实答案不同，因为格式的确不同。
 
 由此可问任何转换器：*我的浏览器已经能做吗？*若能，上传是网站的选择，不是任务所必需。
 
@@ -59,13 +59,13 @@ AVIF 的近亲是 **HEIC**，iPhone 的保存格式。设计几乎相同：一�
 
 原因仍然是 AVIF 是最优秀的静态图像编码之一，JPEG 则很古老。你用体积换兼容性。目标不接受 AVIF 时，这是正确的交换，但仍有代价。
 
-若之后还要限制大小，[图片压缩器](https://httcup.github.io/tools/compress-image/)可将 JPEG 压到指定值，工具在结果下方提供入口。
+若之后还要限制大小，[图片压缩器](https://139t.cn/compress-image/)可将 JPEG 压到指定值，工具在结果下方提供入口。
 
 ## 本次转换不保留的内容
 
 两件事，多数图片都不受影响：
 
-**透明。**AVIF 可有透明背景，JPEG 没有，必须填色。工具询问颜色，默认白色，只有文件确实透明时才询问。网页保存的 AVIF 多数是不透明照片，通常不会出现。要保留透明，可用[图片压缩器](https://httcup.github.io/tools/compress-image/)转为 PNG 或 WebP，它读取 AVIF 并写出两者。
+**透明。**AVIF 可有透明背景，JPEG 没有，必须填色。工具询问颜色，默认白色，只有文件确实透明时才询问。网页保存的 AVIF 多数是不透明照片，通常不会出现。要保留透明，可用[图片压缩器](https://139t.cn/compress-image/)转为 PNG 或 WebP，它读取 AVIF 并写出两者。
 
 **HDR 和高位深。**本工具从浏览器画布输出普通的 8 位 SDR JPEG，不保留 AVIF 额外的位深或 HDR 信息，颜色和高亮部分可能改变。归档时请保留原文件。基于 JPEG 的 HDR 格式确实存在：[Android 的 Ultra HDR 规范](https://developer.android.com/media/platform/hdr-image-format)描述了增益图，但本工具不会生成它。
 
@@ -79,4 +79,4 @@ AVIF 的近亲是 **HEIC**，iPhone 的保存格式。设计几乎相同：一�
 
 图片被解码重绘，只剩像素。EXIF、GPS、色彩配置和 XMP 都丢弃。网页保存的图片通常本来就没有这些数据。
 
-若要先查看携带信息再决定，[EXIF 查看与移除工具](https://httcup.github.io/tools/exif-editor/)可处理而不重新压缩。详细解释见[转换照片会移除元数据吗](https://httcup.github.io/tools/guides/does-converting-a-photo-remove-its-metadata/)。
+若要先查看携带信息再决定，[EXIF 查看与移除工具](https://139t.cn/exif-editor/)可处理而不重新压缩。详细解释见[转换照片会移除元数据吗](https://139t.cn/guides/does-converting-a-photo-remove-its-metadata/)。

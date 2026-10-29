@@ -4,7 +4,7 @@ Base64、百分号编码、HTML 实体、十六进制和反斜杠转义，双向
 
 > 用两套字母表编码和解码 Base64，给 URL 做百分号编码，转义 HTML 实体，读十六进制和反斜杠转义。全都在你的浏览器里跑，什么都不上传——token 从不离开你的机器。
 
-This is an interactive browser tool at https://httcup.github.io/tools/base64/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/base64/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 文本 are **processed in your browser**. No processing upload.
 
@@ -26,14 +26,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/base64/. F
 
 ## The longer version
 
-[Base64 算加密吗？](https://httcup.github.io/tools/guides/is-base64-encryption/): 不算。而且这个区别在实际里很要命。编码、加密、哈希解决的是三个不同的问题：第一个谁都能还原，第二个持有密钥的人能还原，第三个谁也还原不了。哪个是哪个，一眼怎么认。
+[Base64 算加密吗？](https://139t.cn/guides/is-base64-encryption/): 不算。而且这个区别在实际里很要命。编码、加密、哈希解决的是三个不同的问题：第一个谁都能还原，第二个持有密钥的人能还原，第三个谁也还原不了。哪个是哪个，一眼怎么认。
 
 ## Also in the box
 
-- [二维码与条形码生成](https://httcup.github.io/tools/qr-barcode/): 打进去，就变成一个码。生成过程不往外送任何东西。
-- [二维码与条形码识读](https://httcup.github.io/tools/qr-barcode-reader/): 把摄像头对准码，或者把拍下来的图丢进来。读这件事只发生在这里，别处都没有。
-- [哈希与校验和](https://httcup.github.io/tools/hash-checksum/): 把下载来的文件和发布方公布的那串数字对一下，不用把它发给任何人。
-- [密码与密码短语生成器](https://httcup.github.io/tools/password-generator/): 在这里生成，由你自己的浏览器生成，不发往任何地方。什么都不保存，也没有历史记录。
+- [二维码与条形码生成](https://139t.cn/qr-barcode/): 打进去，就变成一个码。生成过程不往外送任何东西。
+- [二维码与条形码识读](https://139t.cn/qr-barcode-reader/): 把摄像头对准码，或者把拍下来的图丢进来。读这件事只发生在这里，别处都没有。
+- [哈希与校验和](https://139t.cn/hash-checksum/): 把下载来的文件和发布方公布的那串数字对一下，不用把它发给任何人。
+- [密码与密码短语生成器](https://139t.cn/password-generator/): 在这里生成，由你自己的浏览器生成，不发往任何地方。什么都不保存，也没有历史记录。
 
 ## Questions
 

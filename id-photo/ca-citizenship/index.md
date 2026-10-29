@@ -14,7 +14,7 @@ Immigration, Refugees and Citizenship Canada 对这种证件的照片有什么�
 | 背景 | 白色或素净的浅色 |
 | 网上申请用照片 | 至少 ⁦420 x 588⁩ px，JPEG，最多 4.00 MB |
 
-[按这条规定制作照片](https://httcup.github.io/tools/id-photo/#ca-citizenship) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
+[按这条规定制作照片](https://139t.cn/id-photo/#ca-citizenship) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
 
 ## 这条规定还说了什么
 
@@ -34,9 +34,9 @@ Immigration, Refugees and Citizenship Canada 对这种证件的照片有什么�
 
 ## 加拿大 的其他证件
 
-- [护照 (⁦Passeport⁩)](https://httcup.github.io/tools/id-photo/ca-passport/) — ⁦50 x 70⁩ 毫米
-- [永久居留与枫叶卡 (⁦Résidents permanents⁩)](https://httcup.github.io/tools/id-photo/ca-pr-card/) — ⁦50 x 70⁩ 毫米 · ⁦715 x 1000⁩ px
-- [访客签证（临时居民签证） (⁦Visa de résident temporaire⁩)](https://httcup.github.io/tools/id-photo/ca-visa/) — ⁦35 x 45⁩ 毫米
-- [持枪许可证（PAL）](https://httcup.github.io/tools/id-photo/ca-firearms-licence/) — ⁦45 x 57⁩ 毫米 · ⁦531 x 673⁩ px
+- [护照 (⁦Passeport⁩)](https://139t.cn/id-photo/ca-passport/) — ⁦50 x 70⁩ 毫米
+- [永久居留与枫叶卡 (⁦Résidents permanents⁩)](https://139t.cn/id-photo/ca-pr-card/) — ⁦50 x 70⁩ 毫米 · ⁦715 x 1000⁩ px
+- [访客签证（临时居民签证） (⁦Visa de résident temporaire⁩)](https://139t.cn/id-photo/ca-visa/) — ⁦35 x 45⁩ 毫米
+- [持枪许可证（PAL）](https://139t.cn/id-photo/ca-firearms-licence/) — ⁦45 x 57⁩ 毫米 · ⁦531 x 673⁩ px
 
-[在证件照工具里查看所有国家和证件](https://httcup.github.io/tools/id-photo/)
+[在证件照工具里查看所有国家和证件](https://139t.cn/id-photo/)

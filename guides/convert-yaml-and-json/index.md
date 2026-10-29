@@ -2,7 +2,7 @@
 
 在本地转换单个文档，使用结果前核对值。YAML 注释在 JSON 中消失，本解析器有意拒绝未支持的 YAML 结构。
 
-[打开YAML 转 JSON](https://httcup.github.io/tools/yaml-to-json/): 两个方向都有，而且会告诉你各自的代价。这些都不会粘进别人的服务器。
+[打开YAML 转 JSON](https://139t.cn/yaml-to-json/): 两个方向都有，而且会告诉你各自的代价。这些都不会粘进别人的服务器。
 
 最后更新 2026年10月13日
 
@@ -12,7 +12,7 @@
 
 转换在浏览器中运行，不会上传配置。请保留原本：即使数据未变，格式和注释的变化仍可能影响维护人员。
 
-![YAML 输入和 JSON 输出，以及丢弃的注释数量。](https://httcup.github.io/screens/convert-yaml-and-json/values.webp)
+![YAML 输入和 JSON 输出，以及丢弃的注释数量。](https://139t.cn/screens/convert-yaml-and-json/values.webp)
 
 注释被移除，no 仍是字符串，大整数保留全部数字。
 
@@ -20,7 +20,7 @@
 
 一个应用要 YAML、另一个要 JSON 时，从单份配置副本开始。选择方向和两空格缩进，现有分组便于检查就别排序。核对引号中的标识符仍是字符串、开关仍是布尔值、列表条目正确。另名保存，替换工作文件前跑目标应用自己的配置检查。转换成功只证明本解析器读懂了支持的语法，不证明配置适用于应用。
 
-比较不同格式的两套环境也有用。把 YAML 副本转 JSON，再按 [JSON 比较流程](https://httcup.github.io/tools/guides/compare-two-json-files/)统一格式。检查主机名、上限和开关，保留带注释的 YAML 原件。多文档分别转换；配置含锚点、别名或标签时用更完整的解析器。
+比较不同格式的两套环境也有用。把 YAML 副本转 JSON，再按 [JSON 比较流程](https://139t.cn/guides/compare-two-json-files/)统一格式。检查主机名、上限和开关，保留带注释的 YAML 原件。多文档分别转换；配置含锚点、别名或标签时用更完整的解析器。
 
 ## 使用支持的 YAML 子集
 
@@ -44,4 +44,4 @@ JSON 不支持注释，所以 YAML 注释被丢弃，工具会报告读取的注
 
 数据模型会保留，但结果是重新写出的 YAML，不会恢复之前的注释或格式。歧义词会加引号，以兼容仍使用 YAML 1.1 的读取器。请检查接收应用的 YAML 版本和模式，尤其是部署配置。
 
-[YAML 规范](https://yaml.org/spec/1.2.2/)描述完整语言。仅需检查或压缩 JSON 时，请使用 [JSON 格式化工具](https://httcup.github.io/tools/json-formatter/)。
+[YAML 规范](https://yaml.org/spec/1.2.2/)描述完整语言。仅需检查或压缩 JSON 时，请使用 [JSON 格式化工具](https://139t.cn/json-formatter/)。

@@ -71,7 +71,7 @@
 
 ## 观察结果及其局限
 
-已发布表格可下载为[含来源说明和局限的 JSON](https://httcup.github.io/data/converter-observations-2026-09-17.json) 或 [CSV 数据行](https://httcup.github.io/data/converter-observations-2026-09-17.csv)。这些文件转录本文，并非新测试。按表格统计，选择时上传的站点有十三个，修正了正文此前的十一个。
+已发布表格可下载为[含来源说明和局限的 JSON](https://139t.cn/data/converter-observations-2026-09-17.json) 或 [CSV 数据行](https://139t.cn/data/converter-observations-2026-09-17.csv)。这些文件转录本文，并非新测试。按表格统计，选择时上传的站点有十三个，修正了正文此前的十一个。
 
 本文没有保留原始请求日志、浏览器版本、确切的随机测试文件或历史政策快照。因此，这些数字是报告的观察结果，而不是读者能独立核验的原始数据集。钩子并未覆盖所有传输途径：表单导航、其他框架、工作线程和 WebRTC 需要分别检查。表格中的零表示本测试未记录上传，并不能证明不存在传输可能。
 
@@ -160,23 +160,23 @@ SimpleImageResizer 展示方法陷阱。表单有文件输入，却用 `enctype=
 - **看网络面板。**打开开发者工具，选择 Network，按大小排序并操作工具。检查请求载荷，不能只看传输大小列，因为它通常描述响应。缩略图、分块上传或编码文件的大小可能不同。按转换*之前*和之后都看，这是上文的主要发现。
 - **读 `connect-src`。**源码中的 `Content-Security-Policy` 列出可联系地址，浏览器强制执行。若包含本站地址，页面能向那里发文件。
 
-三种测试及值得做的第四种，详见[上传文件到在线转换器安全吗](https://httcup.github.io/tools/guides/is-it-safe-to-upload-files/)。
+三种测试及值得做的第四种，详见[上传文件到在线转换器安全吗](https://139t.cn/guides/is-it-safe-to-upload-files/)。
 
 ## 本网站怎样回答
 
-本站源码与上面的历史转换器测量是两类证据。当前实现作出以下说明；请针对要用的功能，按[四项检查](https://httcup.github.io/tools/guides/is-it-safe-to-upload-files/)自行核查。
+本站源码与上面的历史转换器测量是两类证据。当前实现作出以下说明；请针对要用的功能，按[四项检查](https://139t.cn/guides/is-it-safe-to-upload-files/)自行核查。
 
 - **离线。**本地处理在资源加载、缓存就绪后可以断网完成。网址图片、在线汇率和浏览器引见需要各自连接。
 - **请求。**处理代码不上传所选文件。页面访问和主动的固定反馈属于另一类请求。汇率请求包含货币对和日期；主动的对等功能向选定浏览器发送内容。**策略。**多数工具继承平台目的地。收据工具加入 Frankfurter，分享和远程摄像头加入引见服务器。策略约束目的地，不能证明每条载荷。
 - **保存。**abox.tools 不接收文件去处理，因此这类操作没有需要删除的服务器副本。本地浏览器记录、引见服务七天的连接日志，以及分享或邮件收件人保留的内容，属于隐私页说明的其他数据路径。
 - **源码。**[源码公开](https://github.com/A-Box-of-Tools/website)，可以自行构建并比较输出。共享模块和内置引擎与本站代码一起可读。
 
-[隐私页](https://httcup.github.io/tools/privacy/)完整说明边界：[网址图片导入](https://httcup.github.io/tools/images-to-video/)、可选的[收据汇率和应用交接](https://httcup.github.io/tools/receipt-invoice-extractor/)、[浏览器间分享](https://httcup.github.io/tools/share-text/)、[远程摄像头](https://httcup.github.io/tools/remote-camera/)，以及广告、Analytics 和固定反馈。主动传送不同于上传文件去处理。
+[隐私页](https://139t.cn/privacy/)完整说明边界：[网址图片导入](https://139t.cn/images-to-video/)、可选的[收据汇率和应用交接](https://139t.cn/receipt-invoice-extractor/)、[浏览器间分享](https://139t.cn/share-text/)、[远程摄像头](https://139t.cn/remote-camera/)，以及广告、Analytics 和固定反馈。主动传送不同于上传文件去处理。
 
-本地处理的例子包括[按目标大小压缩](https://httcup.github.io/tools/compress-image/)、[裁剪视频](https://httcup.github.io/tools/crop-video/)、[删除 EXIF 和 GPS](https://httcup.github.io/tools/exif-editor/)、[图片合成 PDF](https://httcup.github.io/tools/images-to-pdf/)。要核查支持格式和下载结果。这些任务无须上传处理或账号。
+本地处理的例子包括[按目标大小压缩](https://139t.cn/compress-image/)、[裁剪视频](https://139t.cn/crop-video/)、[删除 EXIF 和 GPS](https://139t.cn/exif-editor/)、[图片合成 PDF](https://139t.cn/images-to-pdf/)。要核查支持格式和下载结果。这些任务无须上传处理或账号。
 
 ## 使用这些数字
 
 可自由引用并重测。主要结果是：2026 年 9 月 17 日测二十个免费在线转换器，十九个上传，十三个按转换前就上传，四个已测成品都能无会话从公共地址取回。
 
-欢迎链接本页，但不强制。重测有不同结果请告诉我们，网站会变，这只是一个下午的快照。通过[联系页](https://httcup.github.io/tools/contact/)提交带字节数的更正，我们会发布。
+欢迎链接本页，但不强制。重测有不同结果请告诉我们，网站会变，这只是一个下午的快照。通过[联系页](https://139t.cn/contact/)提交带字节数的更正，我们会发布。

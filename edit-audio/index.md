@@ -4,7 +4,7 @@
 
 > 把一段声音倒着放、放快或放慢，把录轻了的录音提上来。视频里的声音也能抽出来。在浏览器里跑，什么都不上传。
 
-This is an interactive browser tool at https://httcup.github.io/tools/edit-audio/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/edit-audio/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 录音 are **processed in your browser**. No processing upload.
 
@@ -26,14 +26,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/edit-audio
 
 ## The longer version
 
-[怎么在发出去之前整理好语音备忘录](https://httcup.github.io/tools/guides/clean-up-a-voice-memo/): 剪掉空白和口误重来的开头，再把音量提到满格线的正下方。两个浏览器工具接力，按保住音质的顺序来，录音从不离开你的电脑。
+[怎么在发出去之前整理好语音备忘录](https://139t.cn/guides/clean-up-a-voice-memo/): 剪掉空白和口误重来的开头，再把音量提到满格线的正下方。两个浏览器工具接力，按保住音质的顺序来，录音从不离开你的电脑。
 
 ## Also in the box
 
-- [PDF 合并与拆分](https://httcup.github.io/tools/merge-pdf/): 挪动页面，不用往服务器跑一趟。
-- [PDF 压缩](https://httcup.github.io/tools/compress-pdf/): 文档变小，不用送去任何地方。
-- [PDF 解锁](https://httcup.github.io/tools/unlock-pdf/): 权限限制与打开密码不同。页面会说明你的 PDF 使用哪种保护。
-- [PDF 加密](https://httcup.github.io/tools/protect-pdf/): 把文档锁上，而不是为了锁它先把它交给一个网站。
+- [PDF 合并与拆分](https://139t.cn/merge-pdf/): 挪动页面，不用往服务器跑一趟。
+- [PDF 压缩](https://139t.cn/compress-pdf/): 文档变小，不用送去任何地方。
+- [PDF 解锁](https://139t.cn/unlock-pdf/): 权限限制与打开密码不同。页面会说明你的 PDF 使用哪种保护。
+- [PDF 加密](https://139t.cn/protect-pdf/): 把文档锁上，而不是为了锁它先把它交给一个网站。
 
 ## Questions
 
@@ -43,7 +43,7 @@ This is an interactive browser tool at https://httcup.github.io/tools/edit-audio
 
 ### 能把视频里的声音抽出来吗？
 
-能，在这儿这跟打开一个 MP3 是同一件事。丢一个 MP4、MOV 或者 WebM 进来，只有音轨会被解码，画面根本不读，出来的是一个纯声音文件，里头没有视频。要是你要的就只有这个——声音，原样不动——那[从视频里提取音频](https://httcup.github.io/extract-audio-from-video/)在一个别无他物的页面上干的就是同一件事。声音也需要改动的时候，再回到这儿来。
+能，在这儿这跟打开一个 MP3 是同一件事。丢一个 MP4、MOV 或者 WebM 进来，只有音轨会被解码，画面根本不读，出来的是一个纯声音文件，里头没有视频。要是你要的就只有这个——声音，原样不动——那[从视频里提取音频](https://139t.cn/extract-audio-from-video/)在一个别无他物的页面上干的就是同一件事。声音也需要改动的时候，再回到这儿来。
 
 ### 变速会连音高一起变吗？
 

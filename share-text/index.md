@@ -4,7 +4,7 @@
 
 > 从打开的浏览器加密分享文本与文件。默认直连，也可选择云中转。你可以逐一批准读者。
 
-This is an interactive browser tool at https://httcup.github.io/tools/share-text/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/share-text/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 分享的文本与文件 are **processed in your browser**. No processing upload.
 
@@ -27,14 +27,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/share-text
 
 ## The longer version
 
-[如何分享文本与文件而不在服务器保存副本](https://httcup.github.io/tools/guides/share-text-between-devices/): 在浏览器之间分享文本与文件，默认直接连接，也可选择经 Cloudflare 转发的加密云中继。不用账号，服务器不保存分享副本；接收方仍可自行保存收到的内容。
+[如何分享文本与文件而不在服务器保存副本](https://139t.cn/guides/share-text-between-devices/): 在浏览器之间分享文本与文件，默认直接连接，也可选择经 Cloudflare 转发的加密云中继。不用账号，服务器不保存分享副本；接收方仍可自行保存收到的内容。
 
 ## Also in the box
 
-- [Local Walkie-Talkie](https://httcup.github.io/tools/walkie-talkie/): Start a named channel, then hold to talk or speak hands-free. Connect directly on your local network, or choose Cloud relay for listeners over the internet.
-- [Voice Oncall](https://httcup.github.io/tools/voice-oncall/): Open a pager and hear live voice from people who connect. Use Direct on your local network or choose Cloud relay over the internet, with a password and individual mute or remove controls.
-- [Remote Camera](https://httcup.github.io/tools/remote-camera/): Open a camera on one device and watch it in another browser, with optional viewer approval. Choose Direct or Cloud relay for encrypted live video.
-- [Share a Browser Tab](https://httcup.github.io/tools/share-tab/): Choose a tab on your computer and let one approved viewer watch it using Direct or Cloud relay. Invite by link, network discovery or a private group. No extension, sound or remote control.
+- [Local Walkie-Talkie](https://139t.cn/walkie-talkie/): Start a named channel, then hold to talk or speak hands-free. Connect directly on your local network, or choose Cloud relay for listeners over the internet.
+- [Voice Oncall](https://139t.cn/voice-oncall/): Open a pager and hear live voice from people who connect. Use Direct on your local network or choose Cloud relay over the internet, with a password and individual mute or remove controls.
+- [Remote Camera](https://139t.cn/remote-camera/): Open a camera on one device and watch it in another browser, with optional viewer approval. Choose Direct or Cloud relay for encrypted live video.
+- [Share a Browser Tab](https://139t.cn/share-tab/): Choose a tab on your computer and let one approved viewer watch it using Direct or Cloud relay. Invite by link, network discovery or a private group. No extension, sound or remote control.
 
 ## Questions
 

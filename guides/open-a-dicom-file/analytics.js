@@ -1,13 +1,13 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
-window.dataLayer=window.dataLayer||[];
+var GA4_ID='G-XXXXXXXXXX';/* TODO: 换成你的 GA4 测量 ID */window.dataLayer=window.dataLayer||[];
 function gtag(){dataLayer.push(arguments);}
 window.gtag=gtag;
-var notAVisit=navigator.webdriver||location.origin+'/'!=='https://httcup.github.io/tools/';
+var notAVisit=navigator.webdriver||location.origin+'/'!=='https://139t.cn/';
 if(notAVisit){
-window['ga-disable-']=true;
+window['ga-disable-'+GA4_ID]=true;
 }
 var canonical=document.querySelector('link[rel="canonical"]');
-var measurementPage=new URL(canonical?canonical.href:'https://httcup.github.io/tools/404.html');
+var measurementPage=new URL(canonical?canonical.href:'https://139t.cn/404.html');
 var campaign=new URLSearchParams(location.search);
 ['utm_source','utm_medium','utm_campaign','utm_id','utm_content','utm_term',
 'gclid','dclid','gbraid','wbraid'].forEach(function(key){
@@ -21,8 +21,8 @@ if(referrer.protocol==='https:'||referrer.protocol==='http:'){
 measurementReferrer=referrer.origin+'/';
 }
 }catch(err){}
-gtag('js',new Date());
-gtag('config','',{
+if(!notAVisit){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA4_ID;document.head.appendChild(s);}gtag('js',new Date());
+gtag('config',GA4_ID,{
 page_location:measurementPage.href,
 page_title:document.title,
 page_referrer:measurementReferrer,
@@ -36,7 +36,7 @@ window.aboxToolComplete=function(){
 if(complete)return;
 try{
 gtag('event','tool_complete',{
-send_to:'',
+send_to:GA4_ID,
 tool_slug:slug,
 });
 complete=true;
@@ -45,7 +45,7 @@ complete=true;
 };
 try{
 gtag('event','tool_view',{
-send_to:'',
+send_to:GA4_ID,
 tool_slug:slug,
 });
 }catch(err){}
@@ -63,7 +63,7 @@ if(typeof step!=='string'||!Object.prototype.hasOwnProperty.call(stages,step)
 ||reached[step])return;
 try{
 gtag('event',stages[step],{
-send_to:'',
+send_to:GA4_ID,
 tool_slug:slug,
 });
 reached[step]=true;
@@ -95,7 +95,7 @@ link.addEventListener('click',function(event){
 if((event&&event.defaultPrevented)||selected[target])return;
 try{
 gtag('event','workflow_link',{
-send_to:'',
+send_to:GA4_ID,
 source_page:source,
 target_page:target,
 });

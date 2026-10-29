@@ -4,7 +4,7 @@
 
 > 把动图 GIF 拆成一帧一帧，每帧单独存成 PNG，免费，全程在浏览器里完成。透明和时长都保留下来。什么都不上传，断网也能用。
 
-This is an interactive browser tool at https://httcup.github.io/tools/split-gif/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/split-gif/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your GIF are **processed in your browser**. No processing upload.
 
@@ -26,14 +26,14 @@ GIF 的读取、解压和绘制都由你自己的浏览器完成，每一张 PNG
 
 ## The longer version
 
-[怎么把 GIF 拆成一帧一帧](https://httcup.github.io/tools/guides/split-a-gif-into-frames/): 把动图 GIF 的每一帧存成 PNG：为什么有些帧只是画面里的一小块、透明会怎么样，以及怎么把时间留住，好把它再拼回去。
+[怎么把 GIF 拆成一帧一帧](https://139t.cn/guides/split-a-gif-into-frames/): 把动图 GIF 的每一帧存成 PNG：为什么有些帧只是画面里的一小块、透明会怎么样，以及怎么把时间留住，好把它再拼回去。
 
 ## Also in the box
 
-- [GIF 分析](https://httcup.github.io/tools/gif-analyzer/): 帧、延时、调色板，以及每个字节的去向。
-- [视频压缩](https://httcup.github.io/tools/compress-video/): 说一个它最多能有多大。剩下的工具来算，做完先量一遍再交给你。
-- [MP4 转换](https://httcup.github.io/tools/convert-to-mp4/): 不管从录屏、压制还是相机里出来的是什么，都变成 MP4 里的 H.264 和 AAC。能复制的原样复制，非改不可的才重新编码。
-- [视频旋转](https://httcup.github.io/tools/rotate-video/): 转四分之一圈、半圈，或者往另一边转。使用文件头旋转时，每一帧画面保持原样。
+- [GIF 分析](https://139t.cn/gif-analyzer/): 帧、延时、调色板，以及每个字节的去向。
+- [视频压缩](https://139t.cn/compress-video/): 说一个它最多能有多大。剩下的工具来算，做完先量一遍再交给你。
+- [MP4 转换](https://139t.cn/convert-to-mp4/): 不管从录屏、压制还是相机里出来的是什么，都变成 MP4 里的 H.264 和 AAC。能复制的原样复制，非改不可的才重新编码。
+- [视频旋转](https://139t.cn/rotate-video/): 转四分之一圈、半圈，或者往另一边转。使用文件头旋转时，每一帧画面保持原样。
 
 ## Questions
 
@@ -57,11 +57,11 @@ GIF 里每帧延时是按百分之一秒存的，而从九十年代起，浏览�
 
 ### 拆出来的帧还能拼回去吗？
 
-能，用本站的 [GIF 制作](https://httcup.github.io/gif-maker/)，或者任何接受一文件夹图片的工具都行。ZIP 里那个 `frames.txt` 就是为这个准备的：拆动图会把时间信息丢掉，因为 PNG 没有地方记自己停留了多久，所以由这份清单把每帧的延时和位置一起带出来。
+能，用本站的 [GIF 制作](https://139t.cn/gif-maker/)，或者任何接受一文件夹图片的工具都行。ZIP 里那个 `frames.txt` 就是为这个准备的：拆动图会把时间信息丢掉，因为 PNG 没有地方记自己停留了多久，所以由这份清单把每帧的延时和位置一起带出来。
 
 ### 帧可以存成哪些格式？
 
-PNG，而且是有意只给 PNG。GIF 的一帧最多 256 色、一位透明，PNG 能原样无损地存下来；换成 JPEG 就会把透明丢掉，凭空造出这一帧本来没有的颜色，而且对平涂画面来说通常还会更*大*。要是你确实需要 JPEG，事后用[图片尺寸调整](https://httcup.github.io/resize-image/)转一遍。
+PNG，而且是有意只给 PNG。GIF 的一帧最多 256 色、一位透明，PNG 能原样无损地存下来；换成 JPEG 就会把透明丢掉，凭空造出这一帧本来没有的颜色，而且对平涂画面来说通常还会更*大*。要是你确实需要 JPEG，事后用[图片尺寸调整](https://139t.cn/resize-image/)转一遍。
 
 ### 能读的帧数有上限吗？
 

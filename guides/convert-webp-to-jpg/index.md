@@ -2,7 +2,7 @@
 
 右键保存如今的网页图片，常得到 `.webp`。浏览器正常读取，许多软件仍拒绝。这里说明格式、转换代价，以及为什么 JPEG 通常更大。
 
-[打开WebP 转 JPG](https://httcup.github.io/tools/webp-to-jpg/): 把网页保存的图片，变成所有软件仍然接受的格式。
+[打开WebP 转 JPG](https://139t.cn/webp-to-jpg/): 把网页保存的图片，变成所有软件仍然接受的格式。
 
 最后更新 2026年10月13日
 
@@ -10,13 +10,13 @@
 
 ## 简短答案
 
-打开 [WebP 转 JPG 转换器](https://httcup.github.io/tools/webp-to-jpg/)，拖入文件并点击“转换”。没有特殊理由就保留质量 92。结果 JPEG 可逐个下载，多文件可打包 ZIP。
+打开 [WebP 转 JPG 转换器](https://139t.cn/webp-to-jpg/)，拖入文件并点击“转换”。没有特殊理由就保留质量 92。结果 JPEG 可逐个下载，多文件可打包 ZIP。
 
 无需上传，因为根本不需要。这也解释为什么很快：解码器已经在浏览器中。
 
 ## 文档副本和设备副本
 
-**演示、印刷或表单图片。**先用质量 92，把 JPEG 放进原来拒收 WebP 的系统。透明标志选实际页面或幻灯片底色，检查轮廓和小字；纯色背景已经写进图片，之后换主题不会跟着变。支持 PNG 时可用[图片缩放](https://httcup.github.io/tools/resize-image/)保留透明制作副本。
+**演示、印刷或表单图片。**先用质量 92，把 JPEG 放进原来拒收 WebP 的系统。透明标志选实际页面或幻灯片底色，检查轮廓和小字；纯色背景已经写进图片，之后换主题不会跟着变。支持 PNG 时可用[图片缩放](https://139t.cn/resize-image/)保留透明制作副本。
 
 **旧数码相框的整批照片。**先转换一张在相框测试，再处理整批。尺寸用缩放工具适配，字节大小单独检查。动画来源这里只变成一张静图，不会提取所有 WebP 帧或转成视频。保留 WebP 原件供支持该格式的用途。
 
@@ -41,7 +41,7 @@ WebP 是 Google 的图片格式，同质量下通常比 JPEG 小四分之一到�
 
 WebP 编码比 JPEG 更高效。JPEG 在 1992 年完成，WebP 在 2010 年带着二十年额外研究出现。从新格式转到旧格式，是让能力较弱的压缩器描述同一张图，需要更多字节。你用体积换兼容性，目标不接受 WebP 时很合理，但转换器应如实说明。
 
-若之后要限制大小，[图片压缩器](https://httcup.github.io/tools/compress-image/)可以把 JPEG 压到指定值，工具在结果下提供入口。
+若之后要限制大小，[图片压缩器](https://139t.cn/compress-image/)可以把 JPEG 压到指定值，工具在结果下提供入口。
 
 ## 透明必须有去处
 
@@ -49,15 +49,15 @@ WebP 编码比 JPEG 更高效。JPEG 在 1992 年完成，WebP 在 2010 年带�
 
 WebP 可以透明，JPEG 没有透明通道，不能表示“这里什么都没有”。必须在背后画一种颜色。不询问的转换器不是保留透明，而是替你选择，常常默认黑色。
 
-[本转换器](https://httcup.github.io/tools/webp-to-jpg/)询问并默认白色，而且只在文件真的有透明时出现。检查的是解码像素，因为很多带透明通道的 WebP 实际完全不透明。不会改变任何东西的颜色控件反而多余。
+[本转换器](https://139t.cn/webp-to-jpg/)询问并默认白色，而且只在文件真的有透明时出现。检查的是解码像素，因为很多带透明通道的 WebP 实际完全不透明。不会改变任何东西的颜色控件反而多余。
 
-若需要保留透明，就不要转 JPEG。保留 WebP，或用[图片压缩器](https://httcup.github.io/tools/compress-image/)转 PNG，它能读 WebP、写 PNG。
+若需要保留透明，就不要转 JPEG。保留 WebP，或用[图片压缩器](https://139t.cn/compress-image/)转 PNG，它能读 WebP、写 PNG。
 
 ## 动态 WebP 只得到一帧
 
 WebP 可像 GIF 一样包含动画，JPEG 只能装一张图片，无法保留其余帧。
 
-工具在点击前的文件行和转换后的结果中都说明，得到的是第一帧。要保留可播放动画，应转视频而非静态图，见 [GIF 转 MP4](https://httcup.github.io/tools/guides/convert-a-gif-to-mp4/)。
+工具在点击前的文件行和转换后的结果中都说明，得到的是第一帧。要保留可播放动画，应转视频而非静态图，见 [GIF 转 MP4](https://139t.cn/guides/convert-a-gif-to-mp4/)。
 
 ## 图片会重压缩，无法绕过
 
@@ -71,7 +71,7 @@ WebP 和 JPEG 是不同编码，不能靠换包装转换。必须解码成像素
 
 浏览器画布只带像素，EXIF、GPS 坐标、色彩配置和版权信息全部丢弃。
 
-发图片的人通常正希望如此。若不是，或想先查信息再决定，[EXIF 查看与移除工具](https://httcup.github.io/tools/exif-editor/)可读写而不重新压缩。详见[转换照片会移除元数据吗](https://httcup.github.io/tools/guides/does-converting-a-photo-remove-its-metadata/)。
+发图片的人通常正希望如此。若不是，或想先查信息再决定，[EXIF 查看与移除工具](https://139t.cn/exif-editor/)可读写而不重新压缩。详见[转换照片会移除元数据吗](https://139t.cn/guides/does-converting-a-photo-remove-its-metadata/)。
 
 ## 为什么本工具不要求上传
 
@@ -79,4 +79,4 @@ WebP 和 JPEG 是不同编码，不能靠换包装转换。必须解码成像素
 
 读取 WebP 要解码器，浏览器从 2020 年起已有，这是原网页显示图片的方式。写 JPEG 要编码器，浏览器从诞生起就有。两半都已安装在你的设备。上传网站只是运行同类软件，同时拿着你的图片。
 
-不是所有转换都这样。[HEIC 转换器](https://httcup.github.io/tools/guides/convert-heic-to-jpg/)确实需要浏览器没有的解码器，所以本网站提供它并详细解释。诚实答案随格式而变，要问自己处于哪种情况。一般讨论见[上传文件安全吗](https://httcup.github.io/tools/guides/is-it-safe-to-upload-files/)。
+不是所有转换都这样。[HEIC 转换器](https://139t.cn/guides/convert-heic-to-jpg/)确实需要浏览器没有的解码器，所以本网站提供它并详细解释。诚实答案随格式而变，要问自己处于哪种情况。一般讨论见[上传文件安全吗](https://139t.cn/guides/is-it-safe-to-upload-files/)。

@@ -24,14 +24,14 @@ People send live voice to one listening host. Local network discovery groups pag
 
 ## The longer version
 
-[How to receive live voice from nearby people](https://httcup.github.io/tools/guides/receive-voice-from-nearby-devices/): Open a browser voice pager with password admission and individual speaker controls. Choose Direct or an optional encrypted Cloud relay before hosting.
+[How to receive live voice from nearby people](https://139t.cn/guides/receive-voice-from-nearby-devices/): Open a browser voice pager with password admission and individual speaker controls. Choose Direct or an optional encrypted Cloud relay before hosting.
 
 ## Also in the box
 
-- [Remote Camera](https://httcup.github.io/tools/remote-camera/): Open a camera on one device and watch it in another browser, with optional viewer approval. Choose Direct or Cloud relay for encrypted live video.
-- [Share a Browser Tab](https://httcup.github.io/tools/share-tab/): Choose a tab on your computer and let one approved viewer watch it using Direct or Cloud relay. Invite by link, network discovery or a private group. No extension, sound or remote control.
-- [文本与文件分享](https://httcup.github.io/tools/share-text/): 从打开的浏览器加密分享文本与文件。默认直连，也可选择云中转。你可以逐一批准读者。
-- [Local Walkie-Talkie](https://httcup.github.io/tools/walkie-talkie/): Start a named channel, then hold to talk or speak hands-free. Connect directly on your local network, or choose Cloud relay for listeners over the internet.
+- [Remote Camera](https://139t.cn/remote-camera/): Open a camera on one device and watch it in another browser, with optional viewer approval. Choose Direct or Cloud relay for encrypted live video.
+- [Share a Browser Tab](https://139t.cn/share-tab/): Choose a tab on your computer and let one approved viewer watch it using Direct or Cloud relay. Invite by link, network discovery or a private group. No extension, sound or remote control.
+- [文本与文件分享](https://139t.cn/share-text/): 从打开的浏览器加密分享文本与文件。默认直连，也可选择云中转。你可以逐一批准读者。
+- [Local Walkie-Talkie](https://139t.cn/walkie-talkie/): Start a named channel, then hold to talk or speak hands-free. Connect directly on your local network, or choose Cloud relay for listeners over the internet.
 
 ## Questions
 

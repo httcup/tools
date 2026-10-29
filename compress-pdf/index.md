@@ -4,7 +4,7 @@
 
 > 不上传也能给 PDF 瘦身。读取、重新压缩、重新写出，全由你自己的浏览器完成，而且动手之前先告诉你这份文件的体积到底压在哪儿。
 
-This is an interactive browser tool at https://httcup.github.io/tools/compress-pdf/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/compress-pdf/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 文档 are **processed in your browser**. No processing upload.
 
@@ -25,14 +25,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/compress-p
 
 ## The longer version
 
-[怎么给 PDF 瘦身，以及有些为什么压不动](https://httcup.github.io/tools/guides/make-a-pdf-smaller/): 一份 PDF 的体积到底压在哪儿，扫描件为什么能小 80% 而合同几乎纹丝不动，这里的 DPI 是什么意思，以及压缩工具绝不该对你的文档做什么。
+[怎么给 PDF 瘦身，以及有些为什么压不动](https://139t.cn/guides/make-a-pdf-smaller/): 一份 PDF 的体积到底压在哪儿，扫描件为什么能小 80% 而合同几乎纹丝不动，这里的 DPI 是什么意思，以及压缩工具绝不该对你的文档做什么。
 
 ## Also in the box
 
-- [PDF 解锁](https://httcup.github.io/tools/unlock-pdf/): 权限限制与打开密码不同。页面会说明你的 PDF 使用哪种保护。
-- [PDF 加密](https://httcup.github.io/tools/protect-pdf/): 把文档锁上，而不是为了锁它先把它交给一个网站。
-- [PDF 水印](https://httcup.github.io/tools/watermark-pdf/): 一份写着自己去了哪里的扫描件，就没法悄悄再去别的地方。
-- [PDF 涂黑](https://httcup.github.io/tools/redact-pdf/): 字从文件里删掉，然后再搜一遍这个文件来证明。
+- [PDF 解锁](https://139t.cn/unlock-pdf/): 权限限制与打开密码不同。页面会说明你的 PDF 使用哪种保护。
+- [PDF 加密](https://139t.cn/protect-pdf/): 把文档锁上，而不是为了锁它先把它交给一个网站。
+- [PDF 水印](https://139t.cn/watermark-pdf/): 一份写着自己去了哪里的扫描件，就没法悄悄再去别的地方。
+- [PDF 涂黑](https://139t.cn/redact-pdf/): 字从文件里删掉，然后再搜一遍这个文件来证明。
 
 ## Questions
 

@@ -2,7 +2,7 @@
 
 WebP 无损模式保留 PNG 像素却更小；有损模式可把照片压到十分之一。选择完全取决于图片内容，这里教你判断。
 
-[打开PNG 转 WebP](https://httcup.github.io/tools/png-to-webp/): 同一张图片，常常减少三分之一体积，透明区域保持完整。
+[打开PNG 转 WebP](https://139t.cn/png-to-webp/): 同一张图片，常常减少三分之一体积，透明区域保持完整。
 
 最后更新 2026年10月13日
 
@@ -10,7 +10,7 @@ WebP 无损模式保留 PNG 像素却更小；有损模式可把照片压到十�
 
 ## 简短答案
 
-打开 [PNG 转 WebP 转换器](https://httcup.github.io/tools/png-to-webp/)，拖入文件，选择以下一种：
+打开 [PNG 转 WebP 转换器](https://139t.cn/png-to-webp/)，拖入文件，选择以下一种：
 
 - **无损**适合文字、平坦色块和锐利边缘：截图、示意图、徽标、图表，任何绘制而非拍摄的图片。每个不透明像素完全不变，文件仍然更小。
 - **更小**适合照片。节省巨大，差别很难看出。
@@ -53,7 +53,7 @@ WebP 有无损模式，比 PNG 更新、方法更多，压缩更好。对适合 
 
 通常最担心的事答案很简单：WebP 与 PNG 一样有真正的透明通道，透明背景的徽标依然透明，不用填色。
 
-另一方向则不同，转*为* JPEG 会破坏透明，因为它没有透明通道。[WebP 转 JPG](https://httcup.github.io/tools/guides/convert-webp-to-jpg/) 有专门解释。WebP 没有这个问题，所以可以选择时通常更适合。
+另一方向则不同，转*为* JPEG 会破坏透明，因为它没有透明通道。[WebP 转 JPG](https://139t.cn/guides/convert-webp-to-jpg/) 有专门解释。WebP 没有这个问题，所以可以选择时通常更适合。
 
 精确承诺也要附上测量限制：*部分*透明的像素，其背后储存的颜色可能略变。这是浏览器画布先把颜色乘以透明度、无法精确逆转造成的，不是 WebP。它不可见，因为变动最多的颜色也最不显眼。不透明像素逐位不变。
 
@@ -61,16 +61,16 @@ WebP 有无损模式，比 PNG 更新、方法更多，压缩更好。对适合 
 
 网页上可以。Chrome、Edge、Firefox 和 Safari 从 2020 年起都能显示，目标是网站就不用准备备用格式。这也是转换的主要理由：网页更小，图片一样。
 
-浏览器之外不一致。Windows 和 macOS 已能预览，旧桌面软件、一些表单和多数电子书阅读器仍不接受。为这些目标，应使用相反工具 [WebP 转 JPG](https://httcup.github.io/tools/webp-to-jpg/) 和它的[指南](https://httcup.github.io/tools/guides/convert-webp-to-jpg/)。
+浏览器之外不一致。Windows 和 macOS 已能预览，旧桌面软件、一些表单和多数电子书阅读器仍不接受。为这些目标，应使用相反工具 [WebP 转 JPG](https://139t.cn/webp-to-jpg/) 和它的[指南](https://139t.cn/guides/convert-webp-to-jpg/)。
 
 ## 不会保留的内容
 
 像素保留，周围的信息不保留。经过画布，PNG 文本块、ICC 色彩配置和 XMP 都丢弃。
 
-多数 PNG 没有重要的相机数据，截图也没有。需要知道文件携带什么时，[EXIF 查看与移除工具](https://httcup.github.io/tools/exif-editor/)可读写而不重新压缩。
+多数 PNG 没有重要的相机数据，截图也没有。需要知道文件携带什么时，[EXIF 查看与移除工具](https://139t.cn/exif-editor/)可读写而不重新压缩。
 
 ## 为什么不用上传
 
 任务的两半已在你设备中。浏览器显然能解码 PNG，也从 2020 年起能编码 WebP，这正是网站能使用 WebP 的基础。
 
-把文件发到服务器的转换器是在运行你已有软件的副本，并持有你的图片。[本工具](https://httcup.github.io/tools/png-to-webp/)在页面中工作，因此断网也可用，这是没有发送的最简单证明。一般解释见[上传文件安全吗](https://httcup.github.io/tools/guides/is-it-safe-to-upload-files/)。
+把文件发到服务器的转换器是在运行你已有软件的副本，并持有你的图片。[本工具](https://139t.cn/png-to-webp/)在页面中工作，因此断网也可用，这是没有发送的最简单证明。一般解释见[上传文件安全吗](https://139t.cn/guides/is-it-safe-to-upload-files/)。

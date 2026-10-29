@@ -4,7 +4,7 @@
 
 > 把长视频做成延时摄影，10 倍、60 倍，或者你自己填的倍数。在浏览器里跑，不上传，没有水印，断网也能用。
 
-This is an interactive browser tool at https://httcup.github.io/tools/timelapse-video/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/timelapse-video/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 视频 are **processed in your browser**. No processing upload.
 
@@ -25,14 +25,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/timelapse-
 
 ## The longer version
 
-[怎么把长视频变成延时摄影](https://httcup.github.io/tools/guides/turn-a-long-video-into-a-timelapse/): 一小时的素材浓缩成看得下去的一分钟：怎么选速度，为什么直接说成片多长比做除法更好，以及什么时候成品该做成 GIF。
+[怎么把长视频变成延时摄影](https://139t.cn/guides/turn-a-long-video-into-a-timelapse/): 一小时的素材浓缩成看得下去的一分钟：怎么选速度，为什么直接说成片多长比做除法更好，以及什么时候成品该做成 GIF。
 
 ## Also in the box
 
-- [视频截帧](https://httcup.github.io/tools/grab-frame/): 任意位置，一张原画质静帧。
-- [GIF 转 MP4](https://httcup.github.io/tools/gif-to-mp4/): 每一帧都带着 GIF 给它的延时，变成 MP4 里的 H.264。在你的机器上转，文件从不上传。
-- [视频转 GIF](https://httcup.github.io/tools/video-to-gif/): 挑好段落、尺寸和帧率。
-- [GIF 制作](https://httcup.github.io/tools/gif-maker/): 把一组图片变成一段动画。
+- [视频截帧](https://139t.cn/grab-frame/): 任意位置，一张原画质静帧。
+- [GIF 转 MP4](https://139t.cn/gif-to-mp4/): 每一帧都带着 GIF 给它的延时，变成 MP4 里的 H.264。在你的机器上转，文件从不上传。
+- [视频转 GIF](https://139t.cn/video-to-gif/): 挑好段落、尺寸和帧率。
+- [GIF 制作](https://139t.cn/gif-maker/): 把一组图片变成一段动画。
 
 ## Questions
 
@@ -50,7 +50,7 @@ MP4、M4V 和 MOV 直接读，里面装的是 H.264、HEVC、AV1 还是 VP9 都�
 
 ### 延时视频为什么没声音？
 
-因为没什么值得留的。快三十倍的声音既不是说话也不是音乐，只剩一串尖响。反过来把原速的声音垫在早就跑到前头的画面下面，那就成了另一段片子，不是你要的那段。所以音轨直接丢掉。一小时的视频最后只有几兆，主要也是因为这个。你要是想单留声音，[音频编辑](https://httcup.github.io/edit-audio/)能存。
+因为没什么值得留的。快三十倍的声音既不是说话也不是音乐，只剩一串尖响。反过来把原速的声音垫在早就跑到前头的画面下面，那就成了另一段片子，不是你要的那段。所以音轨直接丢掉。一小时的视频最后只有几兆，主要也是因为这个。你要是想单留声音，[音频编辑](https://139t.cn/edit-audio/)能存。
 
 ### 这比整段转码快吗？
 
@@ -66,7 +66,7 @@ MP4、M4V 和 MOV 直接读，里面装的是 H.264、HEVC、AV1 还是 VP9 都�
 
 ### 能只加速其中一段吗？
 
-这里不行。这个工具从第一帧一直取到最后一帧。想要哪一段，先用[视频剪切](https://httcup.github.io/trim-video/)切出来，那边一帧都不用重编，再把切出来的文件拿到这里加速。
+这里不行。这个工具从第一帧一直取到最后一帧。想要哪一段，先用[视频剪切](https://139t.cn/trim-video/)切出来，那边一帧都不用重编，再把切出来的文件拿到这里加速。
 
 ### 免费吗？要注册吗？
 

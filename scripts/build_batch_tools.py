@@ -32,13 +32,13 @@ SHELL = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>@@NAME@@：@@SHORT@@ | 本地工具箱</title>
 <meta name="description" content="@@LONG@@">
-<link rel="canonical" href="https://httcup.github.io/tools/@@SLUG@@/">
+<link rel="canonical" href="https://139t.cn/@@SLUG@@/">
 <meta name="theme-color" content="#f6f7f9">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
 <meta http-equiv="Content-Security-Policy" content="@@CSP@@">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="本地工具箱">
-<meta property="og:url" content="https://httcup.github.io/tools/@@SLUG@@/">
+<meta property="og:url" content="https://139t.cn/@@SLUG@@/">
 <meta property="og:title" content="@@NAME@@ — 全程本地处理">
 <meta property="og:description" content="@@LONG@@">
 <meta name="twitter:card" content="summary">

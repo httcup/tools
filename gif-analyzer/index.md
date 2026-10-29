@@ -4,7 +4,7 @@
 
 > 在浏览器里把 GIF 拆开看：每一帧的延时和处置方式、颜色表、循环次数，以及体积去了哪里的逐字节明细。什么都不上传。
 
-This is an interactive browser tool at https://httcup.github.io/tools/gif-analyzer/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/gif-analyzer/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your GIF are **processed in your browser**. No processing upload.
 
@@ -27,14 +27,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/gif-analyz
 
 ## The longer version
 
-[一个 GIF 里到底装着什么](https://httcup.github.io/tools/guides/whats-inside-a-gif/): 帧、延时、处置方式和调色板都讲清楚：浏览器为什么不认最短的延时，以及怎么查出一个 GIF 的体积究竟花在了哪里。
+[一个 GIF 里到底装着什么](https://139t.cn/guides/whats-inside-a-gif/): 帧、延时、处置方式和调色板都讲清楚：浏览器为什么不认最短的延时，以及怎么查出一个 GIF 的体积究竟花在了哪里。
 
 ## Also in the box
 
-- [视频压缩](https://httcup.github.io/tools/compress-video/): 说一个它最多能有多大。剩下的工具来算，做完先量一遍再交给你。
-- [MP4 转换](https://httcup.github.io/tools/convert-to-mp4/): 不管从录屏、压制还是相机里出来的是什么，都变成 MP4 里的 H.264 和 AAC。能复制的原样复制，非改不可的才重新编码。
-- [视频旋转](https://httcup.github.io/tools/rotate-video/): 转四分之一圈、半圈，或者往另一边转。使用文件头旋转时，每一帧画面保持原样。
-- [图片转视频](https://httcup.github.io/tools/images-to-video/): 一个文件夹的图片，变成一段视频。
+- [视频压缩](https://139t.cn/compress-video/): 说一个它最多能有多大。剩下的工具来算，做完先量一遍再交给你。
+- [MP4 转换](https://139t.cn/convert-to-mp4/): 不管从录屏、压制还是相机里出来的是什么，都变成 MP4 里的 H.264 和 AAC。能复制的原样复制，非改不可的才重新编码。
+- [视频旋转](https://139t.cn/rotate-video/): 转四分之一圈、半圈，或者往另一边转。使用文件头旋转时，每一帧画面保持原样。
+- [图片转视频](https://139t.cn/images-to-video/): 一个文件夹的图片，变成一段视频。
 
 ## Questions
 

@@ -2,15 +2,15 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>小胡的工具箱</title>
   <subtitle>在浏览器本地运行的工具集</subtitle>
-  <link href="https://httcup.github.io/tools/feed.xml" rel="self"/>
-  <link href="https://httcup.github.io/tools/"/>
-  <id>https://httcup.github.io/tools/</id>
+  <link href="https://139t.cn/feed.xml" rel="self"/>
+  <link href="https://139t.cn/"/>
+  <id>https://139t.cn/</id>
   <updated>2026-10-27T02:54:58Z</updated>
   <author><name>httcup</name></author>
   <entry>
     <title type="text">小胡的工具箱</title>
-    <link href="https://httcup.github.io/tools/"/>
-    <id>https://httcup.github.io/tools/</id>
+    <link href="https://139t.cn/"/>
+    <id>https://139t.cn/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">在浏览器本地运行的 185 个工具，文件不上传。</summary>
   </entry>
@@ -23,1370 +23,1370 @@
   </entry>
   <entry>
     <title type="text">随手记存为.md</title>
-    <link href="https://httcup.github.io/tools/md-notes/"/>
-    <id>https://httcup.github.io/tools/md-notes/</id>
+    <link href="https://139t.cn/md-notes/"/>
+    <id>https://139t.cn/md-notes/</id>
     <updated>2026-10-28T00:00:00Z</updated>
     <summary type="text">记完直接存成 .md 文件。</summary>
   </entry>
   <entry>
     <title type="text">证件加水印</title>
-    <link href="https://httcup.github.io/tools/image-watermark/"/>
-    <id>https://httcup.github.io/tools/image-watermark/</id>
+    <link href="https://139t.cn/image-watermark/"/>
+    <id>https://139t.cn/image-watermark/</id>
     <updated>2026-10-28T00:00:00Z</updated>
     <summary type="text">给身份证等图片平铺水印文字，防止复印件被盗用。</summary>
   </entry>
   <entry>
     <title type="text">小费计算器</title>
-    <link href="https://httcup.github.io/tools/tip-calculator/"/>
-    <id>https://httcup.github.io/tools/tip-calculator/</id>
+    <link href="https://139t.cn/tip-calculator/"/>
+    <id>https://139t.cn/tip-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">聚餐 AA 与小费一步算清。</summary>
   </entry>
 
   <entry>
     <title type="text">会议成本计算器</title>
-    <link href="https://httcup.github.io/tools/meeting-cost-calculator/"/>
-    <id>https://httcup.github.io/tools/meeting-cost-calculator/</id>
+    <link href="https://139t.cn/meeting-cost-calculator/"/>
+    <id>https://139t.cn/meeting-cost-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">一场会到底烧多少钱。</summary>
   </entry>
 
   <entry>
     <title type="text">时间戳转换器</title>
-    <link href="https://httcup.github.io/tools/time-tools-seconds-converter/"/>
-    <id>https://httcup.github.io/tools/time-tools-seconds-converter/</id>
+    <link href="https://139t.cn/time-tools-seconds-converter/"/>
+    <id>https://139t.cn/time-tools-seconds-converter/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">时间戳与日期双向换算。</summary>
   </entry>
 
   <entry>
     <title type="text">摩斯电码互译</title>
-    <link href="https://httcup.github.io/tools/morse-code-translator/"/>
-    <id>https://httcup.github.io/tools/morse-code-translator/</id>
+    <link href="https://139t.cn/morse-code-translator/"/>
+    <id>https://139t.cn/morse-code-translator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">文本与摩斯电码双向转换并播放。</summary>
   </entry>
 
   <entry>
     <title type="text">花体字与特殊符号生成</title>
-    <link href="https://httcup.github.io/tools/fancy-text-generator/"/>
-    <id>https://httcup.github.io/tools/fancy-text-generator/</id>
+    <link href="https://139t.cn/fancy-text-generator/"/>
+    <id>https://139t.cn/fancy-text-generator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">把文字变成花体、方框等特殊字符。</summary>
   </entry>
 
   <entry>
     <title type="text">占位文本生成器</title>
-    <link href="https://httcup.github.io/tools/lorem-ipsum-generator/"/>
-    <id>https://httcup.github.io/tools/lorem-ipsum-generator/</id>
+    <link href="https://139t.cn/lorem-ipsum-generator/"/>
+    <id>https://139t.cn/lorem-ipsum-generator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">生成拉丁或中文假文占位。</summary>
   </entry>
 
   <entry>
     <title type="text">Emoji 搜索与复制</title>
-    <link href="https://httcup.github.io/tools/emoji-finder/"/>
-    <id>https://httcup.github.io/tools/emoji-finder/</id>
+    <link href="https://139t.cn/emoji-finder/"/>
+    <id>https://139t.cn/emoji-finder/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">按关键词找 emoji，点击复制。</summary>
   </entry>
 
   <entry>
     <title type="text">字幕时间轴修复</title>
-    <link href="https://httcup.github.io/tools/subtitle-repair/"/>
-    <id>https://httcup.github.io/tools/subtitle-repair/</id>
+    <link href="https://139t.cn/subtitle-repair/"/>
+    <id>https://139t.cn/subtitle-repair/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">整体平移或缩放 SRT 字幕时间轴。</summary>
   </entry>
 
   <entry>
     <title type="text">ASCII 横幅与艺术字</title>
-    <link href="https://httcup.github.io/tools/ascii-art/"/>
-    <id>https://httcup.github.io/tools/ascii-art/</id>
+    <link href="https://139t.cn/ascii-art/"/>
+    <id>https://139t.cn/ascii-art/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">把大写字母变成点阵横幅。</summary>
   </entry>
 
   <entry>
     <title type="text">Markdown 编辑器</title>
-    <link href="https://httcup.github.io/tools/markdown-editor/"/>
-    <id>https://httcup.github.io/tools/markdown-editor/</id>
+    <link href="https://139t.cn/markdown-editor/"/>
+    <id>https://139t.cn/markdown-editor/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">左边写 Markdown，右边实时预览。</summary>
   </entry>
 
   <entry>
     <title type="text">图片裁剪</title>
-    <link href="https://httcup.github.io/tools/image-crop/"/>
-    <id>https://httcup.github.io/tools/image-crop/</id>
+    <link href="https://139t.cn/image-crop/"/>
+    <id>https://139t.cn/image-crop/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">按比例框选并裁出想要的部分。</summary>
   </entry>
 
   <entry>
     <title type="text">圆形头像裁剪</title>
-    <link href="https://httcup.github.io/tools/circle-crop/"/>
-    <id>https://httcup.github.io/tools/circle-crop/</id>
+    <link href="https://139t.cn/circle-crop/"/>
+    <id>https://139t.cn/circle-crop/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">裁出正圆形头像并保留透明底。</summary>
   </entry>
 
   <entry>
     <title type="text">图片翻转</title>
-    <link href="https://httcup.github.io/tools/flip-image/"/>
-    <id>https://httcup.github.io/tools/flip-image/</id>
+    <link href="https://139t.cn/flip-image/"/>
+    <id>https://139t.cn/flip-image/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">水平或垂直镜像翻转图片。</summary>
   </entry>
 
   <entry>
     <title type="text">轮播图无缝切分</title>
-    <link href="https://httcup.github.io/tools/carousel-splitter/"/>
-    <id>https://httcup.github.io/tools/carousel-splitter/</id>
+    <link href="https://139t.cn/carousel-splitter/"/>
+    <id>https://139t.cn/carousel-splitter/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">把长图切成多张衔接的轮播图。</summary>
   </entry>
 
   <entry>
     <title type="text">九宫格切图</title>
-    <link href="https://httcup.github.io/tools/image-grid-split/"/>
-    <id>https://httcup.github.io/tools/image-grid-split/</id>
+    <link href="https://139t.cn/image-grid-split/"/>
+    <id>https://139t.cn/image-grid-split/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">把图片切成宫格并逐格导出。</summary>
   </entry>
 
   <entry>
     <title type="text">像素画转换器</title>
-    <link href="https://httcup.github.io/tools/pixel-art-converter/"/>
-    <id>https://httcup.github.io/tools/pixel-art-converter/</id>
+    <link href="https://139t.cn/pixel-art-converter/"/>
+    <id>https://139t.cn/pixel-art-converter/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">把照片变成复古像素风。</summary>
   </entry>
 
   <entry>
     <title type="text">丝网印刷滤镜</title>
-    <link href="https://httcup.github.io/tools/silk-screen/"/>
-    <id>https://httcup.github.io/tools/silk-screen/</id>
+    <link href="https://139t.cn/silk-screen/"/>
+    <id>https://139t.cn/silk-screen/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">三色半调网点风格化照片。</summary>
   </entry>
 
   <entry>
     <title type="text">AI 图片元数据查看</title>
-    <link href="https://httcup.github.io/tools/ai-image-metadata-viewer/"/>
-    <id>https://httcup.github.io/tools/ai-image-metadata-viewer/</id>
+    <link href="https://139t.cn/ai-image-metadata-viewer/"/>
+    <id>https://139t.cn/ai-image-metadata-viewer/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">查看 AI 生成图片里的提示词。</summary>
   </entry>
 
   <entry>
     <title type="text">MP3 转 WAV</title>
-    <link href="https://httcup.github.io/tools/mp3-to-wav/"/>
-    <id>https://httcup.github.io/tools/mp3-to-wav/</id>
+    <link href="https://139t.cn/mp3-to-wav/"/>
+    <id>https://139t.cn/mp3-to-wav/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">解码为 WAV，本地转换不依赖服务。</summary>
   </entry>
 
   <entry>
     <title type="text">白噪音发生器</title>
-    <link href="https://httcup.github.io/tools/noise-generator/"/>
-    <id>https://httcup.github.io/tools/noise-generator/</id>
+    <link href="https://139t.cn/noise-generator/"/>
+    <id>https://139t.cn/noise-generator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">白粉棕噪音与雨声助眠音。</summary>
   </entry>
 
   <entry>
     <title type="text">BPM 节拍检测</title>
-    <link href="https://httcup.github.io/tools/bpm-detector/"/>
-    <id>https://httcup.github.io/tools/bpm-detector/</id>
+    <link href="https://139t.cn/bpm-detector/"/>
+    <id>https://139t.cn/bpm-detector/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">测一段音乐每分钟节拍数。</summary>
   </entry>
 
   <entry>
     <title type="text">节拍器</title>
-    <link href="https://httcup.github.io/tools/metronome/"/>
-    <id>https://httcup.github.io/tools/metronome/</id>
+    <link href="https://139t.cn/metronome/"/>
+    <id>https://139t.cn/metronome/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">可调速度与拍号的练习节拍器。</summary>
   </entry>
 
   <entry>
     <title type="text">LRC 歌词播放器</title>
-    <link href="https://httcup.github.io/tools/lyric-visualizer/"/>
-    <id>https://httcup.github.io/tools/lyric-visualizer/</id>
+    <link href="https://139t.cn/lyric-visualizer/"/>
+    <id>https://139t.cn/lyric-visualizer/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">本地音频配 LRC 歌词同步播放。</summary>
   </entry>
 
   <entry>
     <title type="text">虚拟键盘钢琴</title>
-    <link href="https://httcup.github.io/tools/midi-keyboard/"/>
-    <id>https://httcup.github.io/tools/midi-keyboard/</id>
+    <link href="https://139t.cn/midi-keyboard/"/>
+    <id>https://139t.cn/midi-keyboard/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">用电脑键盘弹钢琴。</summary>
   </entry>
 
   <entry>
     <title type="text">取色器与颜色转换</title>
-    <link href="https://httcup.github.io/tools/color-picker/"/>
-    <id>https://httcup.github.io/tools/color-picker/</id>
+    <link href="https://139t.cn/color-picker/"/>
+    <id>https://139t.cn/color-picker/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">屏幕取色、HEX/RGB/HSL 互转。</summary>
   </entry>
 
   <entry>
     <title type="text">渐变生成器</title>
-    <link href="https://httcup.github.io/tools/gradient-generator/"/>
-    <id>https://httcup.github.io/tools/gradient-generator/</id>
+    <link href="https://139t.cn/gradient-generator/"/>
+    <id>https://139t.cn/gradient-generator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">调线性与径向渐变，复制 CSS。</summary>
   </entry>
 
   <entry>
     <title type="text">图表制作器</title>
-    <link href="https://httcup.github.io/tools/chart-maker/"/>
-    <id>https://httcup.github.io/tools/chart-maker/</id>
+    <link href="https://139t.cn/chart-maker/"/>
+    <id>https://139t.cn/chart-maker/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">输入数据生成柱状或折线图。</summary>
   </entry>
 
   <entry>
     <title type="text">简易收据生成器</title>
-    <link href="https://httcup.github.io/tools/invoice-generator/"/>
-    <id>https://httcup.github.io/tools/invoice-generator/</id>
+    <link href="https://139t.cn/invoice-generator/"/>
+    <id>https://139t.cn/invoice-generator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">生成可打印的收据或报价单。</summary>
   </entry>
 
   <entry>
     <title type="text">手写签名板</title>
-    <link href="https://httcup.github.io/tools/signature-maker/"/>
-    <id>https://httcup.github.io/tools/signature-maker/</id>
+    <link href="https://139t.cn/signature-maker/"/>
+    <id>https://139t.cn/signature-maker/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">鼠标或手指写出签名导出 PNG。</summary>
   </entry>
 
   <entry>
     <title type="text">涂鸦白板</title>
-    <link href="https://httcup.github.io/tools/whiteboard/"/>
-    <id>https://httcup.github.io/tools/whiteboard/</id>
+    <link href="https://139t.cn/whiteboard/"/>
+    <id>https://139t.cn/whiteboard/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">随手画草图，导出 PNG。</summary>
   </entry>
 
   <entry>
     <title type="text">反应速度测试</title>
-    <link href="https://httcup.github.io/tools/reaction-time-test/"/>
-    <id>https://httcup.github.io/tools/reaction-time-test/</id>
+    <link href="https://139t.cn/reaction-time-test/"/>
+    <id>https://139t.cn/reaction-time-test/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">测你的视觉反应时间。</summary>
   </entry>
 
   <entry>
     <title type="text">打靶训练</title>
-    <link href="https://httcup.github.io/tools/aim-trainer/"/>
-    <id>https://httcup.github.io/tools/aim-trainer/</id>
+    <link href="https://139t.cn/aim-trainer/"/>
+    <id>https://139t.cn/aim-trainer/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">30 秒内点中尽可能多的目标。</summary>
   </entry>
 
   <entry>
     <title type="text">手速测试</title>
-    <link href="https://httcup.github.io/tools/cps-test/"/>
-    <id>https://httcup.github.io/tools/cps-test/</id>
+    <link href="https://139t.cn/cps-test/"/>
+    <id>https://139t.cn/cps-test/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">10 秒内你能点多少下。</summary>
   </entry>
 
   <entry>
     <title type="text">键盘测试</title>
-    <link href="https://httcup.github.io/tools/keyboard-tester/"/>
-    <id>https://httcup.github.io/tools/keyboard-tester/</id>
+    <link href="https://139t.cn/keyboard-tester/"/>
+    <id>https://139t.cn/keyboard-tester/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">逐键检查键盘有没有坏键。</summary>
   </entry>
 
   <entry>
     <title type="text">打字速度测试</title>
-    <link href="https://httcup.github.io/tools/typing-test/"/>
-    <id>https://httcup.github.io/tools/typing-test/</id>
+    <link href="https://139t.cn/typing-test/"/>
+    <id>https://139t.cn/typing-test/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">测中文或英文打字速度。</summary>
   </entry>
 
   <entry>
     <title type="text">呼吸放松引导</title>
-    <link href="https://httcup.github.io/tools/breathing-relaxation/"/>
-    <id>https://httcup.github.io/tools/breathing-relaxation/</id>
+    <link href="https://139t.cn/breathing-relaxation/"/>
+    <id>https://139t.cn/breathing-relaxation/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">4-7-8 呼吸法动画引导。</summary>
   </entry>
 
   <entry>
     <title type="text">麦克风与摄像头自检</title>
-    <link href="https://httcup.github.io/tools/mic-camera-test/"/>
-    <id>https://httcup.github.io/tools/mic-camera-test/</id>
+    <link href="https://139t.cn/mic-camera-test/"/>
+    <id>https://139t.cn/mic-camera-test/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">检测麦克风与摄像头是否正常。</summary>
   </entry>
 
   <entry>
     <title type="text">番茄钟</title>
-    <link href="https://httcup.github.io/tools/pomodoro-timer/"/>
-    <id>https://httcup.github.io/tools/pomodoro-timer/</id>
+    <link href="https://139t.cn/pomodoro-timer/"/>
+    <id>https://139t.cn/pomodoro-timer/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">25 分钟专注 + 5 分钟休息。</summary>
   </entry>
 
   <entry>
     <title type="text">秒表</title>
-    <link href="https://httcup.github.io/tools/stopwatch/"/>
-    <id>https://httcup.github.io/tools/stopwatch/</id>
+    <link href="https://139t.cn/stopwatch/"/>
+    <id>https://139t.cn/stopwatch/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">带计次功能的精确秒表。</summary>
   </entry>
 
   <entry>
     <title type="text">倒计时</title>
-    <link href="https://httcup.github.io/tools/countdown-timer/"/>
-    <id>https://httcup.github.io/tools/countdown-timer/</id>
+    <link href="https://139t.cn/countdown-timer/"/>
+    <id>https://139t.cn/countdown-timer/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">大字倒计时，结束提醒。</summary>
   </entry>
 
   <entry>
     <title type="text">世界时钟</title>
-    <link href="https://httcup.github.io/tools/world-clock/"/>
-    <id>https://httcup.github.io/tools/world-clock/</id>
+    <link href="https://139t.cn/world-clock/"/>
+    <id>https://139t.cn/world-clock/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">多城市当前时间实时对照。</summary>
   </entry>
 
   <entry>
     <title type="text">闪卡制作与复习</title>
-    <link href="https://httcup.github.io/tools/flashcard-maker/"/>
-    <id>https://httcup.github.io/tools/flashcard-maker/</id>
+    <link href="https://139t.cn/flashcard-maker/"/>
+    <id>https://139t.cn/flashcard-maker/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">自制学习卡片并翻面复习。</summary>
   </entry>
   <entry>
     <title type="text">订单利润率与手续费估算器</title>
-    <link href="https://httcup.github.io/tools/shopify-stripe-fee-profit-margin-calculator/"/>
-    <id>https://httcup.github.io/tools/shopify-stripe-fee-profit-margin-calculator/</id>
+    <link href="https://139t.cn/shopify-stripe-fee-profit-margin-calculator/"/>
+    <id>https://139t.cn/shopify-stripe-fee-profit-margin-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">扣除商品、履约、支付与广告成本后的订单贡献利润。</summary>
   </entry>
 
   <entry>
     <title type="text">盈亏平衡 ROAS 计算器</title>
-    <link href="https://httcup.github.io/tools/break-even-roas-calculator/"/>
-    <id>https://httcup.github.io/tools/break-even-roas-calculator/</id>
+    <link href="https://139t.cn/break-even-roas-calculator/"/>
+    <id>https://139t.cn/break-even-roas-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">算出覆盖成本的最低广告回报率与 CPA 上限。</summary>
   </entry>
 
   <entry>
     <title type="text">Stripe 手续费计算器</title>
-    <link href="https://httcup.github.io/tools/stripe-payment-gateway-fee-calculator/"/>
-    <id>https://httcup.github.io/tools/stripe-payment-gateway-fee-calculator/</id>
+    <link href="https://139t.cn/stripe-payment-gateway-fee-calculator/"/>
+    <id>https://139t.cn/stripe-payment-gateway-fee-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">估算收款手续费与扣费后到账金额。</summary>
   </entry>
 
   <entry>
     <title type="text">跨境到岸总成本计算器</title>
-    <link href="https://httcup.github.io/tools/cross-border-landed-cost-calculator/"/>
-    <id>https://httcup.github.io/tools/cross-border-landed-cost-calculator/</id>
+    <link href="https://139t.cn/cross-border-landed-cost-calculator/"/>
+    <id>https://139t.cn/cross-border-landed-cost-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">把头程、关税与杂费摊到每件商品。</summary>
   </entry>
 
   <entry>
     <title type="text">美国进口关税计算器</title>
-    <link href="https://httcup.github.io/tools/us-import-duty-calculator/"/>
-    <id>https://httcup.github.io/tools/us-import-duty-calculator/</id>
+    <link href="https://139t.cn/us-import-duty-calculator/"/>
+    <id>https://139t.cn/us-import-duty-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">按从价税率估算美国进口关税。</summary>
   </entry>
 
   <entry>
     <title type="text">保本售价计算器</title>
-    <link href="https://httcup.github.io/tools/shopify-break-even-price-calculator/"/>
-    <id>https://httcup.github.io/tools/shopify-break-even-price-calculator/</id>
+    <link href="https://139t.cn/shopify-break-even-price-calculator/"/>
+    <id>https://139t.cn/shopify-break-even-price-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">覆盖全部成本所需的最低售价。</summary>
   </entry>
 
   <entry>
     <title type="text">加价率与利润率换算器</title>
-    <link href="https://httcup.github.io/tools/markup-vs-margin-calculator/"/>
-    <id>https://httcup.github.io/tools/markup-vs-margin-calculator/</id>
+    <link href="https://139t.cn/markup-vs-margin-calculator/"/>
+    <id>https://139t.cn/markup-vs-margin-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">在成本、加价率、利润率与售价之间换算。</summary>
   </entry>
 
   <entry>
     <title type="text">目标利润定价计算器</title>
-    <link href="https://httcup.github.io/tools/target-profit-pricing-calculator/"/>
-    <id>https://httcup.github.io/tools/target-profit-pricing-calculator/</id>
+    <link href="https://139t.cn/target-profit-pricing-calculator/"/>
+    <id>https://139t.cn/target-profit-pricing-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">从利润目标反推所需售价。</summary>
   </entry>
 
   <entry>
     <title type="text">批发定价计算器</title>
-    <link href="https://httcup.github.io/tools/shopify-wholesale-pricing-calculator/"/>
-    <id>https://httcup.github.io/tools/shopify-wholesale-pricing-calculator/</id>
+    <link href="https://139t.cn/shopify-wholesale-pricing-calculator/"/>
+    <id>https://139t.cn/shopify-wholesale-pricing-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">算批发底价与零售商毛利空间。</summary>
   </entry>
 
   <entry>
     <title type="text">阶梯定价计算器</title>
-    <link href="https://httcup.github.io/tools/quantity-break-pricing-calculator/"/>
-    <id>https://httcup.github.io/tools/quantity-break-pricing-calculator/</id>
+    <link href="https://139t.cn/quantity-break-pricing-calculator/"/>
+    <id>https://139t.cn/quantity-break-pricing-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">最多六档阶梯价的利润对比。</summary>
   </entry>
 
   <entry>
     <title type="text">含运费毛利计算器</title>
-    <link href="https://httcup.github.io/tools/gross-margin-calculator-with-shipping/"/>
-    <id>https://httcup.github.io/tools/gross-margin-calculator-with-shipping/</id>
+    <link href="https://139t.cn/gross-margin-calculator-with-shipping/"/>
+    <id>https://139t.cn/gross-margin-calculator-with-shipping/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">把运费补贴也算进毛利。</summary>
   </entry>
 
   <entry>
     <title type="text">店铺净利润计算器</title>
-    <link href="https://httcup.github.io/tools/shopify-net-profit-calculator/"/>
-    <id>https://httcup.github.io/tools/shopify-net-profit-calculator/</id>
+    <link href="https://139t.cn/shopify-net-profit-calculator/"/>
+    <id>https://139t.cn/shopify-net-profit-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">按月核算店铺净利润。</summary>
   </entry>
 
   <entry>
     <title type="text">组合装与买一赠一利润计算器</title>
-    <link href="https://httcup.github.io/tools/bundle-bogo-profit-calculator/"/>
-    <id>https://httcup.github.io/tools/bundle-bogo-profit-calculator/</id>
+    <link href="https://139t.cn/bundle-bogo-profit-calculator/"/>
+    <id>https://139t.cn/bundle-bogo-profit-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">核算组合装 / BOGO 的每单贡献。</summary>
   </entry>
 
   <entry>
     <title type="text">折扣利润影响计算器</title>
-    <link href="https://httcup.github.io/tools/discount-margin-impact-calculator/"/>
-    <id>https://httcup.github.io/tools/discount-margin-impact-calculator/</id>
+    <link href="https://139t.cn/discount-margin-impact-calculator/"/>
+    <id>https://139t.cn/discount-margin-impact-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">打折后每单利润与所需订单量。</summary>
   </entry>
 
   <entry>
     <title type="text">优惠券利润计算器</title>
-    <link href="https://httcup.github.io/tools/coupon-profitability-calculator/"/>
-    <id>https://httcup.github.io/tools/coupon-profitability-calculator/</id>
+    <link href="https://139t.cn/coupon-profitability-calculator/"/>
+    <id>https://139t.cn/coupon-profitability-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">优惠券活动的净影响与保本条件。</summary>
   </entry>
 
   <entry>
     <title type="text">包邮门槛计算器</title>
-    <link href="https://httcup.github.io/tools/free-shipping-threshold-calculator/"/>
-    <id>https://httcup.github.io/tools/free-shipping-threshold-calculator/</id>
+    <link href="https://139t.cn/free-shipping-threshold-calculator/"/>
+    <id>https://139t.cn/free-shipping-threshold-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">算不亏本的包邮门槛与购物车文案。</summary>
   </entry>
 
   <entry>
     <title type="text">运费加价计算器</title>
-    <link href="https://httcup.github.io/tools/shipping-rate-markup-calculator/"/>
-    <id>https://httcup.github.io/tools/shipping-rate-markup-calculator/</id>
+    <link href="https://139t.cn/shipping-rate-markup-calculator/"/>
+    <id>https://139t.cn/shipping-rate-markup-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">按成本设定客户运费并看补贴。</summary>
   </entry>
 
   <entry>
     <title type="text">单均运费计算器</title>
-    <link href="https://httcup.github.io/tools/shipping-cost-per-order-calculator/"/>
-    <id>https://httcup.github.io/tools/shipping-cost-per-order-calculator/</id>
+    <link href="https://139t.cn/shipping-cost-per-order-calculator/"/>
+    <id>https://139t.cn/shipping-cost-per-order-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">把附加费合成真实单均运费。</summary>
   </entry>
 
   <entry>
     <title type="text">体积重计算器</title>
-    <link href="https://httcup.github.io/tools/dimensional-weight-calculator/"/>
-    <id>https://httcup.github.io/tools/dimensional-weight-calculator/</id>
+    <link href="https://139t.cn/dimensional-weight-calculator/"/>
+    <id>https://139t.cn/dimensional-weight-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">算包裹计费重，避免运费惊吓。</summary>
   </entry>
 
   <entry>
     <title type="text">退货成本与利润影响计算器</title>
-    <link href="https://httcup.github.io/tools/ecommerce-return-cost-calculator/"/>
-    <id>https://httcup.github.io/tools/ecommerce-return-cost-calculator/</id>
+    <link href="https://139t.cn/ecommerce-return-cost-calculator/"/>
+    <id>https://139t.cn/ecommerce-return-cost-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">估算退货率对一段订单的贡献侵蚀。</summary>
   </entry>
 
   <entry>
     <title type="text">退款损失计算器</title>
-    <link href="https://httcup.github.io/tools/refund-loss-calculator/"/>
-    <id>https://httcup.github.io/tools/refund-loss-calculator/</id>
+    <link href="https://139t.cn/refund-loss-calculator/"/>
+    <id>https://139t.cn/refund-loss-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">单笔退款的真实现金影响。</summary>
   </entry>
 
   <entry>
     <title type="text">换货与退款成本对比计算器</title>
-    <link href="https://httcup.github.io/tools/exchange-vs-refund-cost-calculator/"/>
-    <id>https://httcup.github.io/tools/exchange-vs-refund-cost-calculator/</id>
+    <link href="https://139t.cn/exchange-vs-refund-cost-calculator/"/>
+    <id>https://139t.cn/exchange-vs-refund-cost-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">一次售后走换货还是退款更划算。</summary>
   </entry>
 
   <entry>
     <title type="text">电商转化率计算器</title>
-    <link href="https://httcup.github.io/tools/ecommerce-conversion-rate-calculator/"/>
-    <id>https://httcup.github.io/tools/ecommerce-conversion-rate-calculator/</id>
+    <link href="https://139t.cn/ecommerce-conversion-rate-calculator/"/>
+    <id>https://139t.cn/ecommerce-conversion-rate-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">五步漏斗找最大流失环节。</summary>
   </entry>
 
   <entry>
     <title type="text">客单价与访客收入计算器</title>
-    <link href="https://httcup.github.io/tools/aov-revenue-per-visitor-calculator/"/>
-    <id>https://httcup.github.io/tools/aov-revenue-per-visitor-calculator/</id>
+    <link href="https://139t.cn/aov-revenue-per-visitor-calculator/"/>
+    <id>https://139t.cn/aov-revenue-per-visitor-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">算 RPV 并分渠道对比。</summary>
   </entry>
 
   <entry>
     <title type="text">库存补货计划器</title>
-    <link href="https://httcup.github.io/tools/inventory-reorder-planner/"/>
-    <id>https://httcup.github.io/tools/inventory-reorder-planner/</id>
+    <link href="https://139t.cn/inventory-reorder-planner/"/>
+    <id>https://139t.cn/inventory-reorder-planner/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">按日销与提前期算覆盖天数与补货量。</summary>
   </entry>
 
   <entry>
     <title type="text">SKU 利润体检器</title>
-    <link href="https://httcup.github.io/tools/bulk-sku-profit-auditor/"/>
-    <id>https://httcup.github.io/tools/bulk-sku-profit-auditor/</id>
+    <link href="https://139t.cn/bulk-sku-profit-auditor/"/>
+    <id>https://139t.cn/bulk-sku-profit-auditor/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">单 SKU 的贡献利润与广告空间。</summary>
   </entry>
 
   <entry>
     <title type="text">安全库存计算器</title>
-    <link href="https://httcup.github.io/tools/safety-stock-calculator/"/>
-    <id>https://httcup.github.io/tools/safety-stock-calculator/</id>
+    <link href="https://139t.cn/safety-stock-calculator/"/>
+    <id>https://139t.cn/safety-stock-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">按服务水平算安全库存与补货点。</summary>
   </entry>
 
   <entry>
     <title type="text">库存覆盖天数计算器</title>
-    <link href="https://httcup.github.io/tools/inventory-days-of-supply-calculator/"/>
-    <id>https://httcup.github.io/tools/inventory-days-of-supply-calculator/</id>
+    <link href="https://139t.cn/inventory-days-of-supply-calculator/"/>
+    <id>https://139t.cn/inventory-days-of-supply-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">可用库存还能撑多少天。</summary>
   </entry>
 
   <entry>
     <title type="text">季节化补货点计算器</title>
-    <link href="https://httcup.github.io/tools/reorder-point-calculator/"/>
-    <id>https://httcup.github.io/tools/reorder-point-calculator/</id>
+    <link href="https://139t.cn/reorder-point-calculator/"/>
+    <id>https://139t.cn/reorder-point-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">按季节系数调整的补货点。</summary>
   </entry>
 
   <entry>
     <title type="text">EOQ 经济订货批量计算器</title>
-    <link href="https://httcup.github.io/tools/eoq-calculator/"/>
-    <id>https://httcup.github.io/tools/eoq-calculator/</id>
+    <link href="https://139t.cn/eoq-calculator/"/>
+    <id>https://139t.cn/eoq-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">订多少次、订多少最划算。</summary>
   </entry>
 
   <entry>
     <title type="text">库存持有成本计算器</title>
-    <link href="https://httcup.github.io/tools/inventory-carrying-cost-calculator/"/>
-    <id>https://httcup.github.io/tools/inventory-carrying-cost-calculator/</id>
+    <link href="https://139t.cn/inventory-carrying-cost-calculator/"/>
+    <id>https://139t.cn/inventory-carrying-cost-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">仓储、资金与损耗拆开算。</summary>
   </entry>
 
   <entry>
     <title type="text">缺货成本计算器</title>
-    <link href="https://httcup.github.io/tools/stockout-cost-calculator/"/>
-    <id>https://httcup.github.io/tools/stockout-cost-calculator/</id>
+    <link href="https://139t.cn/stockout-cost-calculator/"/>
+    <id>https://139t.cn/stockout-cost-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">断货几天会损失多少贡献。</summary>
   </entry>
 
   <entry>
     <title type="text">盈亏销售额计算器</title>
-    <link href="https://httcup.github.io/tools/break-even-sales-calculator/"/>
-    <id>https://httcup.github.io/tools/break-even-sales-calculator/</id>
+    <link href="https://139t.cn/break-even-sales-calculator/"/>
+    <id>https://139t.cn/break-even-sales-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">覆盖固定成本要卖多少单。</summary>
   </entry>
 
   <entry>
     <title type="text">混合获客成本计算器</title>
-    <link href="https://httcup.github.io/tools/blended-cac-calculator/"/>
-    <id>https://httcup.github.io/tools/blended-cac-calculator/</id>
+    <link href="https://139t.cn/blended-cac-calculator/"/>
+    <id>https://139t.cn/blended-cac-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">各渠道合成混合 CAC 并对比。</summary>
   </entry>
 
   <entry>
     <title type="text">LTV 与 CAC 计算器</title>
-    <link href="https://httcup.github.io/tools/ltv-cac-calculator/"/>
-    <id>https://httcup.github.io/tools/ltv-cac-calculator/</id>
+    <link href="https://139t.cn/ltv-cac-calculator/"/>
+    <id>https://139t.cn/ltv-cac-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">客户终身价值与回本周期。</summary>
   </entry>
 
   <entry>
     <title type="text">ROAS 利润计算器</title>
-    <link href="https://httcup.github.io/tools/roas-profit-calculator/"/>
-    <id>https://httcup.github.io/tools/roas-profit-calculator/</id>
+    <link href="https://139t.cn/roas-profit-calculator/"/>
+    <id>https://139t.cn/roas-profit-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">把 ROAS 换算成真实利润。</summary>
   </entry>
 
   <entry>
     <title type="text">目标 ROAS 计算器</title>
-    <link href="https://httcup.github.io/tools/target-roas-calculator/"/>
-    <id>https://httcup.github.io/tools/target-roas-calculator/</id>
+    <link href="https://139t.cn/target-roas-calculator/"/>
+    <id>https://139t.cn/target-roas-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">从目标利润倒推投放红线。</summary>
   </entry>
 
   <entry>
     <title type="text">MER 营销效率计算器</title>
-    <link href="https://httcup.github.io/tools/mer-calculator/"/>
-    <id>https://httcup.github.io/tools/mer-calculator/</id>
+    <link href="https://139t.cn/mer-calculator/"/>
+    <id>https://139t.cn/mer-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">整体口径的营销效率比。</summary>
   </entry>
 
   <entry>
     <title type="text">FBA 与 FBM 利润对比计算器</title>
-    <link href="https://httcup.github.io/tools/amazon-fba-vs-fbm-profit-calculator/"/>
-    <id>https://httcup.github.io/tools/amazon-fba-vs-fbm-profit-calculator/</id>
+    <link href="https://139t.cn/amazon-fba-vs-fbm-profit-calculator/"/>
+    <id>https://139t.cn/amazon-fba-vs-fbm-profit-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">并排比较 FBA 与自发货运费利润。</summary>
   </entry>
 
   <entry>
     <title type="text">Etsy 费用计算器</title>
-    <link href="https://httcup.github.io/tools/etsy-fee-calculator/"/>
-    <id>https://httcup.github.io/tools/etsy-fee-calculator/</id>
+    <link href="https://139t.cn/etsy-fee-calculator/"/>
+    <id>https://139t.cn/etsy-fee-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">拆解 Etsy 各项费用与净利润。</summary>
   </entry>
 
   <entry>
     <title type="text">TikTok Shop 费用计算器</title>
-    <link href="https://httcup.github.io/tools/tiktok-shop-fee-calculator/"/>
-    <id>https://httcup.github.io/tools/tiktok-shop-fee-calculator/</id>
+    <link href="https://139t.cn/tiktok-shop-fee-calculator/"/>
+    <id>https://139t.cn/tiktok-shop-fee-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">拆解 TikTok Shop 佣金与净利润。</summary>
   </entry>
 
   <entry>
     <title type="text">平台费用对比计算器</title>
-    <link href="https://httcup.github.io/tools/marketplace-fee-comparison-calculator/"/>
-    <id>https://httcup.github.io/tools/marketplace-fee-comparison-calculator/</id>
+    <link href="https://139t.cn/marketplace-fee-comparison-calculator/"/>
+    <id>https://139t.cn/marketplace-fee-comparison-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">同一订单在四个平台的净收入。</summary>
   </entry>
 
   <entry>
     <title type="text">WooCommerce 成本计算器</title>
-    <link href="https://httcup.github.io/tools/woocommerce-cost-calculator/"/>
-    <id>https://httcup.github.io/tools/woocommerce-cost-calculator/</id>
+    <link href="https://139t.cn/woocommerce-cost-calculator/"/>
+    <id>https://139t.cn/woocommerce-cost-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">自建站每月真实运营成本。</summary>
   </entry>
 
   <entry>
     <title type="text">Amazon 卖家费用计算器</title>
-    <link href="https://httcup.github.io/tools/amazon-seller-fee-calculator/"/>
-    <id>https://httcup.github.io/tools/amazon-seller-fee-calculator/</id>
+    <link href="https://139t.cn/amazon-seller-fee-calculator/"/>
+    <id>https://139t.cn/amazon-seller-fee-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">拆解 Amazon 佣金与 FBA 费用。</summary>
   </entry>
 
   <entry>
     <title type="text">订阅 LTV 计算器</title>
-    <link href="https://httcup.github.io/tools/subscription-ltv-calculator/"/>
-    <id>https://httcup.github.io/tools/subscription-ltv-calculator/</id>
+    <link href="https://139t.cn/subscription-ltv-calculator/"/>
+    <id>https://139t.cn/subscription-ltv-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">订阅模式的客户终身价值。</summary>
   </entry>
 
   <entry>
     <title type="text">复购率与留存计算器</title>
-    <link href="https://httcup.github.io/tools/repeat-purchase-rate-calculator/"/>
-    <id>https://httcup.github.io/tools/repeat-purchase-rate-calculator/</id>
+    <link href="https://139t.cn/repeat-purchase-rate-calculator/"/>
+    <id>https://139t.cn/repeat-purchase-rate-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">复购率、流失率与复购收入。</summary>
   </entry>
 
   <entry>
     <title type="text">Shopify 平台费计算器</title>
-    <link href="https://httcup.github.io/tools/shopify-transaction-fee-calculator/"/>
-    <id>https://httcup.github.io/tools/shopify-transaction-fee-calculator/</id>
+    <link href="https://139t.cn/shopify-transaction-fee-calculator/"/>
+    <id>https://139t.cn/shopify-transaction-fee-calculator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">对比各套餐的月费与交易费。</summary>
   </entry>
 
   <entry>
     <title type="text">商品结构化数据生成器</title>
-    <link href="https://httcup.github.io/tools/shopify-product-schema-generator/"/>
-    <id>https://httcup.github.io/tools/shopify-product-schema-generator/</id>
+    <link href="https://139t.cn/shopify-product-schema-generator/"/>
+    <id>https://139t.cn/shopify-product-schema-generator/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">生成 Product 与 Offer 的 JSON-LD 脚本。</summary>
   </entry>
 
   <entry>
     <title type="text">标题与描述 SEO 检查器</title>
-    <link href="https://httcup.github.io/tools/product-title-meta-description-seo-checker/"/>
-    <id>https://httcup.github.io/tools/product-title-meta-description-seo-checker/</id>
+    <link href="https://139t.cn/product-title-meta-description-seo-checker/"/>
+    <id>https://139t.cn/product-title-meta-description-seo-checker/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">检查商品标题与描述的字数与预览。</summary>
   </entry>
 
   <entry>
     <title type="text">商品描述 HTML 清洗器</title>
-    <link href="https://httcup.github.io/tools/shopify-description-html-cleaner/"/>
-    <id>https://httcup.github.io/tools/shopify-description-html-cleaner/</id>
+    <link href="https://139t.cn/shopify-description-html-cleaner/"/>
+    <id>https://139t.cn/shopify-description-html-cleaner/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">去掉粘贴内容里的样式与不安全标签。</summary>
   </entry>
 
   <entry>
     <title type="text">商品 CSV 检查器</title>
-    <link href="https://httcup.github.io/tools/shopify-product-csv-checker/"/>
-    <id>https://httcup.github.io/tools/shopify-product-csv-checker/</id>
+    <link href="https://139t.cn/shopify-product-csv-checker/"/>
+    <id>https://139t.cn/shopify-product-csv-checker/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">导入前检查 Shopify 商品 CSV。</summary>
   </entry>
 
   <entry>
     <title type="text">电商 UTM 链接生成器</title>
-    <link href="https://httcup.github.io/tools/utm-builder/"/>
-    <id>https://httcup.github.io/tools/utm-builder/</id>
+    <link href="https://139t.cn/utm-builder/"/>
+    <id>https://139t.cn/utm-builder/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">生成规范的 UTM 追踪链接。</summary>
   </entry>
 
   <entry>
     <title type="text">Google Shopping Feed 检查器</title>
-    <link href="https://httcup.github.io/tools/google-shopping-feed-readiness-checker/"/>
-    <id>https://httcup.github.io/tools/google-shopping-feed-readiness-checker/</id>
+    <link href="https://139t.cn/google-shopping-feed-readiness-checker/"/>
+    <id>https://139t.cn/google-shopping-feed-readiness-checker/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">上传前检查 Google Shopping 数据源。</summary>
   </entry>
   <entry>
     <title type="text">Markdown 转 Word</title>
-    <link href="https://httcup.github.io/tools/md-to-word/"/>
-    <id>https://httcup.github.io/tools/md-to-word/</id>
+    <link href="https://139t.cn/md-to-word/"/>
+    <id>https://139t.cn/md-to-word/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">把 AI 回答或 Markdown 下载成可编辑的 .docx，公式表格保留。</summary>
   </entry>
 
   <entry>
     <title type="text">删除重复行</title>
-    <link href="https://httcup.github.io/tools/dedupe-lines/"/>
-    <id>https://httcup.github.io/tools/dedupe-lines/</id>
+    <link href="https://139t.cn/dedupe-lines/"/>
+    <id>https://139t.cn/dedupe-lines/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">粘贴名单，重复的行只留一条，可忽略大小写和首尾空格。</summary>
   </entry>
 
   <entry>
     <title type="text">删除换行</title>
-    <link href="https://httcup.github.io/tools/remove-line-breaks/"/>
-    <id>https://httcup.github.io/tools/remove-line-breaks/</id>
+    <link href="https://139t.cn/remove-line-breaks/"/>
+    <id>https://139t.cn/remove-line-breaks/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">修掉从 PDF 复制出来的断行，段落结构可以保留。</summary>
   </entry>
 
   <entry>
     <title type="text">文本排序</title>
-    <link href="https://httcup.github.io/tools/sort-lines/"/>
-    <id>https://httcup.github.io/tools/sort-lines/</id>
+    <link href="https://139t.cn/sort-lines/"/>
+    <id>https://139t.cn/sort-lines/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">按字母、拼音、长度排序，也能反转或随机打乱。</summary>
   </entry>
 
   <entry>
     <title type="text">随机抽签</title>
-    <link href="https://httcup.github.io/tools/random-picker/"/>
-    <id>https://httcup.github.io/tools/random-picker/</id>
+    <link href="https://139t.cn/random-picker/"/>
+    <id>https://139t.cn/random-picker/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">贴名单抽中奖者，加密级随机数，也能整队打乱。</summary>
   </entry>
 
   <entry>
     <title type="text">BMI 计算器</title>
-    <link href="https://httcup.github.io/tools/bmi/"/>
-    <id>https://httcup.github.io/tools/bmi/</id>
+    <link href="https://139t.cn/bmi/"/>
+    <id>https://139t.cn/bmi/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">身高体重一填，按中国成人标准给结论与健康体重范围。</summary>
   </entry>
 
   <entry>
     <title type="text">房贷计算器</title>
-    <link href="https://httcup.github.io/tools/loan/"/>
-    <id>https://httcup.github.io/tools/loan/</id>
+    <link href="https://139t.cn/loan/"/>
+    <id>https://139t.cn/loan/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">等额本息或等额本金，月供、利息总额当场算清。</summary>
   </entry>
 
   <entry>
     <title type="text">百分比计算器</title>
-    <link href="https://httcup.github.io/tools/percentage/"/>
-    <id>https://httcup.github.io/tools/percentage/</id>
+    <link href="https://139t.cn/percentage/"/>
+    <id>https://139t.cn/percentage/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">占比、求百分之几、增减幅，三种问法都算。</summary>
   </entry>
 
   <entry>
     <title type="text">复利计算器</title>
-    <link href="https://httcup.github.io/tools/compound-interest/"/>
-    <id>https://httcup.github.io/tools/compound-interest/</id>
+    <link href="https://139t.cn/compound-interest/"/>
+    <id>https://139t.cn/compound-interest/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">本金加每月定投，按复利滚到未来值多少。</summary>
   </entry>
 
   <entry>
     <title type="text">日期天数计算</title>
-    <link href="https://httcup.github.io/tools/date-diff/"/>
-    <id>https://httcup.github.io/tools/date-diff/</id>
+    <link href="https://139t.cn/date-diff/"/>
+    <id>https://139t.cn/date-diff/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">两个日期差几天、几周、几个工作日。</summary>
   </entry>
 
   <entry>
     <title type="text">年龄计算器</title>
-    <link href="https://httcup.github.io/tools/age/"/>
-    <id>https://httcup.github.io/tools/age/</id>
+    <link href="https://139t.cn/age/"/>
+    <id>https://139t.cn/age/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">生日填进去：精确周岁、活了多少天、生日倒计时。</summary>
   </entry>
 
   <entry>
     <title type="text">打折计算器</title>
-    <link href="https://httcup.github.io/tools/discount/"/>
-    <id>https://httcup.github.io/tools/discount/</id>
+    <link href="https://139t.cn/discount/"/>
+    <id>https://139t.cn/discount/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">「打 7.5 折」和「25% OFF」都认，折后价立省多少一秒出。</summary>
   </entry>
 
   <entry>
     <title type="text">单位换算</title>
-    <link href="https://httcup.github.io/tools/unit-converter/"/>
-    <id>https://httcup.github.io/tools/unit-converter/</id>
+    <link href="https://139t.cn/unit-converter/"/>
+    <id>https://139t.cn/unit-converter/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">长度、重量、温度、面积、数据体积，一个页面换完。</summary>
   </entry>
 
   <entry>
     <title type="text">时区换算</title>
-    <link href="https://httcup.github.io/tools/timezone-converter/"/>
-    <id>https://httcup.github.io/tools/timezone-converter/</id>
+    <link href="https://139t.cn/timezone-converter/"/>
+    <id>https://139t.cn/timezone-converter/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">填一个时间，常用时区的对应时间一次排开。</summary>
   </entry>
 
   <entry>
     <title type="text">文字转语音</title>
-    <link href="https://httcup.github.io/tools/text-to-speech/"/>
-    <id>https://httcup.github.io/tools/text-to-speech/</id>
+    <link href="https://139t.cn/text-to-speech/"/>
+    <id>https://139t.cn/text-to-speech/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">用系统自带语音朗读文本，调语速音调，中文英文都行。</summary>
   </entry>
 
   <entry>
     <title type="text">在线录音</title>
-    <link href="https://httcup.github.io/tools/voice-recorder/"/>
-    <id>https://httcup.github.io/tools/voice-recorder/</id>
+    <link href="https://139t.cn/voice-recorder/"/>
+    <id>https://139t.cn/voice-recorder/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">浏览器直接录音，录完试听、下载，不经过服务器。</summary>
   </entry>
 
   <entry>
     <title type="text">图片格式转换</title>
-    <link href="https://httcup.github.io/tools/image-format-converter/"/>
-    <id>https://httcup.github.io/tools/image-format-converter/</id>
+    <link href="https://139t.cn/image-format-converter/"/>
+    <id>https://139t.cn/image-format-converter/</id>
     <updated>2026-10-27T00:00:00Z</updated>
     <summary type="text">JPG、PNG、WebP 互转，批量处理，透明背景可选填色。</summary>
   </entry>
   <entry>
     <title type="text">图片压缩</title>
-    <link href="https://httcup.github.io/tools/compress-image/"/>
-    <id>https://httcup.github.io/tools/compress-image/</id>
+    <link href="https://139t.cn/compress-image/"/>
+    <id>https://139t.cn/compress-image/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">说个大小，剩下的它来算。</summary>
   </entry>
   <entry>
     <title type="text">图片缩放</title>
-    <link href="https://httcup.github.io/tools/resize-image/"/>
-    <id>https://httcup.github.io/tools/resize-image/</id>
+    <link href="https://139t.cn/resize-image/"/>
+    <id>https://139t.cn/resize-image/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">说个尺寸，拉个框，挑个格式。</summary>
   </entry>
   <entry>
     <title type="text">图片拼版</title>
-    <link href="https://httcup.github.io/tools/image-layout/"/>
-    <id>https://httcup.github.io/tools/image-layout/</id>
+    <link href="https://139t.cn/image-layout/"/>
+    <id>https://139t.cn/image-layout/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">把图片拼成拼贴、联系表或长条，留在本机。</summary>
   </entry>
   <entry>
     <title type="text">HEIC 转 JPG</title>
-    <link href="https://httcup.github.io/tools/heic-to-jpg/"/>
-    <id>https://httcup.github.io/tools/heic-to-jpg/</id>
+    <link href="https://139t.cn/heic-to-jpg/"/>
+    <id>https://139t.cn/heic-to-jpg/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">iPhone 拍的照片，换成什么都打得开的格式。</summary>
   </entry>
   <entry>
     <title type="text">WebP 转 JPG</title>
-    <link href="https://httcup.github.io/tools/webp-to-jpg/"/>
-    <id>https://httcup.github.io/tools/webp-to-jpg/</id>
+    <link href="https://139t.cn/webp-to-jpg/"/>
+    <id>https://139t.cn/webp-to-jpg/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">把网页保存的图片，变成所有软件仍然接受的格式。</summary>
   </entry>
   <entry>
     <title type="text">PNG 转 WebP</title>
-    <link href="https://httcup.github.io/tools/png-to-webp/"/>
-    <id>https://httcup.github.io/tools/png-to-webp/</id>
+    <link href="https://139t.cn/png-to-webp/"/>
+    <id>https://139t.cn/png-to-webp/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">同一张图片，常常减少三分之一体积，透明区域保持完整。</summary>
   </entry>
   <entry>
     <title type="text">AVIF 转 JPG</title>
-    <link href="https://httcup.github.io/tools/avif-to-jpg/"/>
-    <id>https://httcup.github.io/tools/avif-to-jpg/</id>
+    <link href="https://139t.cn/avif-to-jpg/"/>
+    <id>https://139t.cn/avif-to-jpg/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">把网站如今保存的格式，变成所有软件一直支持的格式。</summary>
   </entry>
   <entry>
     <title type="text">证件照制作</title>
-    <link href="https://httcup.github.io/tools/id-photo/"/>
-    <id>https://httcup.github.io/tools/id-photo/</id>
+    <link href="https://139t.cn/id-photo/"/>
+    <id>https://139t.cn/id-photo/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">选择支持的国家和证件。公布的要求与指导值均有标注。</summary>
   </entry>
   <entry>
     <title type="text">图片堆栈</title>
-    <link href="https://httcup.github.io/tools/stack-images/"/>
-    <id>https://httcup.github.io/tools/stack-images/</id>
+    <link href="https://139t.cn/stack-images/"/>
+    <id>https://139t.cn/stack-images/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">二十张变一张，不用传二十次，也不用 RAW 转换器。</summary>
   </entry>
   <entry>
     <title type="text">图片涂黑与打码</title>
-    <link href="https://httcup.github.io/tools/redact-image/"/>
-    <id>https://httcup.github.io/tools/redact-image/</id>
+    <link href="https://139t.cn/redact-image/"/>
+    <id>https://139t.cn/redact-image/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">你遮住的那块是从文件里删掉的，不是藏在文件里。</summary>
   </entry>
   <entry>
     <title type="text">EXIF 查看与清除</title>
-    <link href="https://httcup.github.io/tools/exif-editor/"/>
-    <id>https://httcup.github.io/tools/exif-editor/</id>
+    <link href="https://139t.cn/exif-editor/"/>
+    <id>https://139t.cn/exif-editor/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">看看一张照片把你交代了多少，然后删掉。</summary>
   </entry>
   <entry>
     <title type="text">DICOM 阅片器</title>
-    <link href="https://httcup.github.io/tools/dicom-viewer/"/>
-    <id>https://httcup.github.io/tools/dicom-viewer/</id>
+    <link href="https://139t.cn/dicom-viewer/"/>
+    <id>https://139t.cn/dicom-viewer/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">CT、MR、X 光和超声，连窗宽窗位、头信息和测量一起。</summary>
   </entry>
   <entry>
     <title type="text">图片转 ICO</title>
-    <link href="https://httcup.github.io/tools/image-to-ico/"/>
-    <id>https://httcup.github.io/tools/image-to-ico/</id>
+    <link href="https://139t.cn/image-to-ico/"/>
+    <id>https://139t.cn/image-to-ico/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">进去一张图，出来的是浏览器、Windows 和 Mac 各自要的每一个尺寸。</summary>
   </entry>
   <entry>
     <title type="text">图片转 Data URI</title>
-    <link href="https://httcup.github.io/tools/image-to-data-uri/"/>
-    <id>https://httcup.github.io/tools/image-to-data-uri/</id>
+    <link href="https://139t.cn/image-to-data-uri/"/>
+    <id>https://139t.cn/image-to-data-uri/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">整张图变成一行文本，直接粘进 CSS 或者 HTML。</summary>
   </entry>
   <entry>
     <title type="text">SVG 转图片</title>
-    <link href="https://httcup.github.io/tools/svg-to-image/"/>
-    <id>https://httcup.github.io/tools/svg-to-image/</id>
+    <link href="https://139t.cn/svg-to-image/"/>
+    <id>https://139t.cn/svg-to-image/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">说个尺寸。矢量图本来就没有尺寸可丢。</summary>
   </entry>
   <entry>
     <title type="text">图片转 SVG</title>
-    <link href="https://httcup.github.io/tools/image-to-svg/"/>
-    <id>https://httcup.github.io/tools/image-to-svg/</id>
+    <link href="https://139t.cn/image-to-svg/"/>
+    <id>https://139t.cn/image-to-svg/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">一个形状，一条轮廓。不该有的东西，点一下就好。</summary>
   </entry>
   <entry>
     <title type="text">身高对比图</title>
-    <link href="https://httcup.github.io/tools/compare-heights/"/>
-    <id>https://httcup.github.io/tools/compare-heights/</id>
+    <link href="https://139t.cn/compare-heights/"/>
+    <id>https://139t.cn/compare-heights/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">把身高打进去，把图带走。为了画它，不会往外送任何东西。</summary>
   </entry>
   <entry>
     <title type="text">商家资料预览</title>
-    <link href="https://httcup.github.io/tools/business-profile-preview/"/>
-    <id>https://httcup.github.io/tools/business-profile-preview/</id>
+    <link href="https://139t.cn/business-profile-preview/"/>
+    <id>https://139t.cn/business-profile-preview/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">把内容打进去，它就变成 Google 会画的那张卡片。为了画它，不会往外送任何东西。</summary>
   </entry>
   <entry>
     <title type="text">视频压缩</title>
-    <link href="https://httcup.github.io/tools/compress-video/"/>
-    <id>https://httcup.github.io/tools/compress-video/</id>
+    <link href="https://139t.cn/compress-video/"/>
+    <id>https://139t.cn/compress-video/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">说一个它最多能有多大。剩下的工具来算，做完先量一遍再交给你。</summary>
   </entry>
   <entry>
     <title type="text">MP4 转换</title>
-    <link href="https://httcup.github.io/tools/convert-to-mp4/"/>
-    <id>https://httcup.github.io/tools/convert-to-mp4/</id>
+    <link href="https://139t.cn/convert-to-mp4/"/>
+    <id>https://139t.cn/convert-to-mp4/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">不管从录屏、压制还是相机里出来的是什么，都变成 MP4 里的 H.264 和 AAC。能复制的原样复制，非改不可的才重新编码。</summary>
   </entry>
   <entry>
     <title type="text">视频旋转</title>
-    <link href="https://httcup.github.io/tools/rotate-video/"/>
-    <id>https://httcup.github.io/tools/rotate-video/</id>
+    <link href="https://139t.cn/rotate-video/"/>
+    <id>https://139t.cn/rotate-video/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">转四分之一圈、半圈，或者往另一边转。使用文件头旋转时，每一帧画面保持原样。</summary>
   </entry>
   <entry>
     <title type="text">图片转视频</title>
-    <link href="https://httcup.github.io/tools/images-to-video/"/>
-    <id>https://httcup.github.io/tools/images-to-video/</id>
+    <link href="https://139t.cn/images-to-video/"/>
+    <id>https://139t.cn/images-to-video/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">一个文件夹的图片，变成一段视频。</summary>
   </entry>
   <entry>
     <title type="text">视频剪切</title>
-    <link href="https://httcup.github.io/tools/trim-video/"/>
-    <id>https://httcup.github.io/tools/trim-video/</id>
+    <link href="https://139t.cn/trim-video/"/>
+    <id>https://139t.cn/trim-video/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">一边看一边标出要留的段落，最后拿回一个视频。</summary>
   </entry>
   <entry>
     <title type="text">视频裁剪</title>
-    <link href="https://httcup.github.io/tools/crop-video/"/>
-    <id>https://httcup.github.io/tools/crop-video/</id>
+    <link href="https://139t.cn/crop-video/"/>
+    <id>https://139t.cn/crop-video/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">把片子切到只剩要紧的那块。</summary>
   </entry>
   <entry>
     <title type="text">视频倒放</title>
-    <link href="https://httcup.github.io/tools/reverse-video/"/>
-    <id>https://httcup.github.io/tools/reverse-video/</id>
+    <link href="https://139t.cn/reverse-video/"/>
+    <id>https://139t.cn/reverse-video/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">最后一帧排在最前，连声音一起。</summary>
   </entry>
   <entry>
     <title type="text">延时视频</title>
-    <link href="https://httcup.github.io/tools/timelapse-video/"/>
-    <id>https://httcup.github.io/tools/timelapse-video/</id>
+    <link href="https://139t.cn/timelapse-video/"/>
+    <id>https://139t.cn/timelapse-video/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">一小时的素材，二十秒看完。</summary>
   </entry>
   <entry>
     <title type="text">视频截帧</title>
-    <link href="https://httcup.github.io/tools/grab-frame/"/>
-    <id>https://httcup.github.io/tools/grab-frame/</id>
+    <link href="https://139t.cn/grab-frame/"/>
+    <id>https://139t.cn/grab-frame/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">任意位置，一张原画质静帧。</summary>
   </entry>
   <entry>
     <title type="text">GIF 转 MP4</title>
-    <link href="https://httcup.github.io/tools/gif-to-mp4/"/>
-    <id>https://httcup.github.io/tools/gif-to-mp4/</id>
+    <link href="https://139t.cn/gif-to-mp4/"/>
+    <id>https://139t.cn/gif-to-mp4/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">每一帧都带着 GIF 给它的延时，变成 MP4 里的 H.264。在你的机器上转，文件从不上传。</summary>
   </entry>
   <entry>
     <title type="text">视频转 GIF</title>
-    <link href="https://httcup.github.io/tools/video-to-gif/"/>
-    <id>https://httcup.github.io/tools/video-to-gif/</id>
+    <link href="https://139t.cn/video-to-gif/"/>
+    <id>https://139t.cn/video-to-gif/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">挑好段落、尺寸和帧率。</summary>
   </entry>
   <entry>
     <title type="text">GIF 制作</title>
-    <link href="https://httcup.github.io/tools/gif-maker/"/>
-    <id>https://httcup.github.io/tools/gif-maker/</id>
+    <link href="https://139t.cn/gif-maker/"/>
+    <id>https://139t.cn/gif-maker/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">把一组图片变成一段动画。</summary>
   </entry>
   <entry>
     <title type="text">GIF 拆帧</title>
-    <link href="https://httcup.github.io/tools/split-gif/"/>
-    <id>https://httcup.github.io/tools/split-gif/</id>
+    <link href="https://139t.cn/split-gif/"/>
+    <id>https://139t.cn/split-gif/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">每一帧都单独存成一张 PNG。</summary>
   </entry>
   <entry>
     <title type="text">GIF 分析</title>
-    <link href="https://httcup.github.io/tools/gif-analyzer/"/>
-    <id>https://httcup.github.io/tools/gif-analyzer/</id>
+    <link href="https://139t.cn/gif-analyzer/"/>
+    <id>https://139t.cn/gif-analyzer/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">帧、延时、调色板，以及每个字节的去向。</summary>
   </entry>
   <entry>
     <title type="text">PDF 合并与拆分</title>
-    <link href="https://httcup.github.io/tools/merge-pdf/"/>
-    <id>https://httcup.github.io/tools/merge-pdf/</id>
+    <link href="https://139t.cn/merge-pdf/"/>
+    <id>https://139t.cn/merge-pdf/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">挪动页面，不用往服务器跑一趟。</summary>
   </entry>
   <entry>
     <title type="text">PDF 压缩</title>
-    <link href="https://httcup.github.io/tools/compress-pdf/"/>
-    <id>https://httcup.github.io/tools/compress-pdf/</id>
+    <link href="https://139t.cn/compress-pdf/"/>
+    <id>https://139t.cn/compress-pdf/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">文档变小，不用送去任何地方。</summary>
   </entry>
   <entry>
     <title type="text">PDF 解锁</title>
-    <link href="https://httcup.github.io/tools/unlock-pdf/"/>
-    <id>https://httcup.github.io/tools/unlock-pdf/</id>
+    <link href="https://139t.cn/unlock-pdf/"/>
+    <id>https://139t.cn/unlock-pdf/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">权限限制与打开密码不同。页面会说明你的 PDF 使用哪种保护。</summary>
   </entry>
   <entry>
     <title type="text">PDF 加密</title>
-    <link href="https://httcup.github.io/tools/protect-pdf/"/>
-    <id>https://httcup.github.io/tools/protect-pdf/</id>
+    <link href="https://139t.cn/protect-pdf/"/>
+    <id>https://139t.cn/protect-pdf/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">把文档锁上，而不是为了锁它先把它交给一个网站。</summary>
   </entry>
   <entry>
     <title type="text">PDF 水印</title>
-    <link href="https://httcup.github.io/tools/watermark-pdf/"/>
-    <id>https://httcup.github.io/tools/watermark-pdf/</id>
+    <link href="https://139t.cn/watermark-pdf/"/>
+    <id>https://139t.cn/watermark-pdf/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">一份写着自己去了哪里的扫描件，就没法悄悄再去别的地方。</summary>
   </entry>
   <entry>
     <title type="text">PDF 涂黑</title>
-    <link href="https://httcup.github.io/tools/redact-pdf/"/>
-    <id>https://httcup.github.io/tools/redact-pdf/</id>
+    <link href="https://139t.cn/redact-pdf/"/>
+    <id>https://139t.cn/redact-pdf/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">字从文件里删掉，然后再搜一遍这个文件来证明。</summary>
   </entry>
   <entry>
     <title type="text">PDF 转 CSV</title>
-    <link href="https://httcup.github.io/tools/pdf-to-csv/"/>
-    <id>https://httcup.github.io/tools/pdf-to-csv/</id>
+    <link href="https://139t.cn/pdf-to-csv/"/>
+    <id>https://139t.cn/pdf-to-csv/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">将检测到的 PDF 文本表格转换成电子表格可打开的行。</summary>
   </entry>
   <entry>
     <title type="text">收据与发票识别</title>
-    <link href="https://httcup.github.io/tools/receipt-invoice-extractor/"/>
-    <id>https://httcup.github.io/tools/receipt-invoice-extractor/</id>
+    <link href="https://139t.cn/receipt-invoice-extractor/"/>
+    <id>https://139t.cn/receipt-invoice-extractor/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">读取照片，检查字段和裁剪结果，准备供邮件应用使用的压缩附件和合计。</summary>
   </entry>
   <entry>
     <title type="text">图片转 PDF</title>
-    <link href="https://httcup.github.io/tools/images-to-pdf/"/>
-    <id>https://httcup.github.io/tools/images-to-pdf/</id>
+    <link href="https://139t.cn/images-to-pdf/"/>
+    <id>https://139t.cn/images-to-pdf/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">把你的图片装进一个文档。</summary>
   </entry>
   <entry>
     <title type="text">文档扫描</title>
-    <link href="https://httcup.github.io/tools/document-scanner/"/>
-    <id>https://httcup.github.io/tools/document-scanner/</id>
+    <link href="https://139t.cn/document-scanner/"/>
+    <id>https://139t.cn/document-scanner/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">把纸拍下来，回来的是一份看着像扫描的东西。</summary>
   </entry>
   <entry>
     <title type="text">从视频里提取音频</title>
-    <link href="https://httcup.github.io/tools/extract-audio-from-video/"/>
-    <id>https://httcup.github.io/tools/extract-audio-from-video/</id>
+    <link href="https://139t.cn/extract-audio-from-video/"/>
+    <id>https://139t.cn/extract-audio-from-video/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">把视频拖进来，声音就取出来了。画面从不解码，也不上传任何东西。</summary>
   </entry>
   <entry>
     <title type="text">音频剪辑</title>
-    <link href="https://httcup.github.io/tools/trim-audio/"/>
-    <id>https://httcup.github.io/tools/trim-audio/</id>
+    <link href="https://139t.cn/trim-audio/"/>
+    <id>https://139t.cn/trim-audio/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">边听边标出值得留的段落。它们会合成一个文件回来，就切在你说的位置。</summary>
   </entry>
   <entry>
     <title type="text">音频编辑</title>
-    <link href="https://httcup.github.io/tools/edit-audio/"/>
-    <id>https://httcup.github.io/tools/edit-audio/</id>
+    <link href="https://139t.cn/edit-audio/"/>
+    <id>https://139t.cn/edit-audio/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">倒着放、快慢随你调、把录轻了的声音提上来，全在你这台机器上。</summary>
   </entry>
   <entry>
     <title type="text">JSON 格式化</title>
-    <link href="https://httcup.github.io/tools/json-formatter/"/>
-    <id>https://httcup.github.io/tools/json-formatter/</id>
+    <link href="https://139t.cn/json-formatter/"/>
+    <id>https://139t.cn/json-formatter/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">JSON、XML、HTML、CSS 和 YAML，格式化或转换。没有一个字被贴进别人的服务器。</summary>
   </entry>
   <entry>
     <title type="text">YAML 转 JSON</title>
-    <link href="https://httcup.github.io/tools/yaml-to-json/"/>
-    <id>https://httcup.github.io/tools/yaml-to-json/</id>
+    <link href="https://139t.cn/yaml-to-json/"/>
+    <id>https://139t.cn/yaml-to-json/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">两个方向都有，而且会告诉你各自的代价。这些都不会粘进别人的服务器。</summary>
   </entry>
   <entry>
     <title type="text">XML 格式化</title>
-    <link href="https://httcup.github.io/tools/xml-formatter/"/>
-    <id>https://httcup.github.io/tools/xml-formatter/</id>
+    <link href="https://139t.cn/xml-formatter/"/>
+    <id>https://139t.cn/xml-formatter/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">排开了好读的 XML，压平了好发的 XML，还有两个方向的 JSON 转换。这些都不会粘进别人的服务器。</summary>
   </entry>
   <entry>
     <title type="text">文本比对</title>
-    <link href="https://httcup.github.io/tools/text-diff/"/>
-    <id>https://httcup.github.io/tools/text-diff/</id>
+    <link href="https://139t.cn/text-diff/"/>
+    <id>https://139t.cn/text-diff/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">两段文本进来，每处差异都被标出来，逐行、逐词。没有一个字被贴进别人的服务器。</summary>
   </entry>
   <entry>
     <title type="text">Base64 编码解码</title>
-    <link href="https://httcup.github.io/tools/base64/"/>
-    <id>https://httcup.github.io/tools/base64/</id>
+    <link href="https://139t.cn/base64/"/>
+    <id>https://139t.cn/base64/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">Base64、百分号编码、HTML 实体、十六进制和反斜杠转义，双向都行。没有一个字被贴进别人的服务器。</summary>
   </entry>
   <entry>
     <title type="text">二维码与条形码生成</title>
-    <link href="https://httcup.github.io/tools/qr-barcode/"/>
-    <id>https://httcup.github.io/tools/qr-barcode/</id>
+    <link href="https://139t.cn/qr-barcode/"/>
+    <id>https://139t.cn/qr-barcode/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">打进去，就变成一个码。生成过程不往外送任何东西。</summary>
   </entry>
   <entry>
     <title type="text">二维码与条形码识读</title>
-    <link href="https://httcup.github.io/tools/qr-barcode-reader/"/>
-    <id>https://httcup.github.io/tools/qr-barcode-reader/</id>
+    <link href="https://139t.cn/qr-barcode-reader/"/>
+    <id>https://139t.cn/qr-barcode-reader/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">把摄像头对准码，或者把拍下来的图丢进来。读这件事只发生在这里，别处都没有。</summary>
   </entry>
   <entry>
     <title type="text">哈希与校验和</title>
-    <link href="https://httcup.github.io/tools/hash-checksum/"/>
-    <id>https://httcup.github.io/tools/hash-checksum/</id>
+    <link href="https://139t.cn/hash-checksum/"/>
+    <id>https://139t.cn/hash-checksum/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">把下载来的文件和发布方公布的那串数字对一下，不用把它发给任何人。</summary>
   </entry>
   <entry>
     <title type="text">密码与密码短语生成器</title>
-    <link href="https://httcup.github.io/tools/password-generator/"/>
-    <id>https://httcup.github.io/tools/password-generator/</id>
+    <link href="https://139t.cn/password-generator/"/>
+    <id>https://139t.cn/password-generator/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">在这里生成，由你自己的浏览器生成，不发往任何地方。什么都不保存，也没有历史记录。</summary>
   </entry>
   <entry>
     <title type="text">文本与文件分享</title>
-    <link href="https://httcup.github.io/tools/share-text/"/>
-    <id>https://httcup.github.io/tools/share-text/</id>
+    <link href="https://139t.cn/share-text/"/>
+    <id>https://139t.cn/share-text/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">从打开的浏览器加密分享文本与文件。默认直连，也可选择云中转。你可以逐一批准读者。</summary>
   </entry>
   <entry>
     <title type="text">本地对讲机</title>
-    <link href="https://httcup.github.io/tools/walkie-talkie/"/>
-    <id>https://httcup.github.io/tools/walkie-talkie/</id>
+    <link href="https://139t.cn/walkie-talkie/"/>
+    <id>https://139t.cn/walkie-talkie/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">建个频道，按住说话或免提；局域网直连或走云中转。</summary>
   </entry>
   <entry>
     <title type="text">语音寻呼台</title>
-    <link href="https://httcup.github.io/tools/voice-oncall/"/>
-    <id>https://httcup.github.io/tools/voice-oncall/</id>
+    <link href="https://139t.cn/voice-oncall/"/>
+    <id>https://139t.cn/voice-oncall/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">打开寻呼机就听到实时语音，可设密码、单独静音或移除。</summary>
   </entry>
   <entry>
     <title type="text">远程摄像头</title>
-    <link href="https://httcup.github.io/tools/remote-camera/"/>
-    <id>https://httcup.github.io/tools/remote-camera/</id>
+    <link href="https://139t.cn/remote-camera/"/>
+    <id>https://139t.cn/remote-camera/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">一台设备开摄像头，另一台浏览器观看，可要求批准。</summary>
   </entry>
   <entry>
     <title type="text">分享浏览器标签页</title>
-    <link href="https://httcup.github.io/tools/share-tab/"/>
-    <id>https://httcup.github.io/tools/share-tab/</id>
+    <link href="https://139t.cn/share-tab/"/>
+    <id>https://139t.cn/share-tab/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">把一个标签页分享给一位批准者，无需扩展、不传声音。</summary>
   </entry>
   <entry>
     <title type="text">本地快用</title>
-    <link href="https://httcup.github.io/tools/quick/"/>
-    <id>https://httcup.github.io/tools/quick/</id>
+    <link href="https://139t.cn/quick/"/>
+    <id>https://139t.cn/quick/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text">编解码、哈希、时间戳等常用小工具。</summary>
   </entry>
   <entry>
     <title type="text"></title>
-    <link href="https://httcup.github.io/tools/about/"/>
-    <id>https://httcup.github.io/tools/about/</id>
+    <link href="https://139t.cn/about/"/>
+    <id>https://139t.cn/about/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text"></summary>
   </entry>
   <entry>
     <title type="text"></title>
-    <link href="https://httcup.github.io/tools/privacy/"/>
-    <id>https://httcup.github.io/tools/privacy/</id>
+    <link href="https://139t.cn/privacy/"/>
+    <id>https://139t.cn/privacy/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text"></summary>
   </entry>
   <entry>
     <title type="text"></title>
-    <link href="https://httcup.github.io/tools/terms/"/>
-    <id>https://httcup.github.io/tools/terms/</id>
+    <link href="https://139t.cn/terms/"/>
+    <id>https://139t.cn/terms/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text"></summary>
   </entry>
   <entry>
     <title type="text"></title>
-    <link href="https://httcup.github.io/tools/contact/"/>
-    <id>https://httcup.github.io/tools/contact/</id>
+    <link href="https://139t.cn/contact/"/>
+    <id>https://139t.cn/contact/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text"></summary>
   </entry>
   <entry>
     <title type="text"></title>
-    <link href="https://httcup.github.io/tools/roadmap/"/>
-    <id>https://httcup.github.io/tools/roadmap/</id>
+    <link href="https://139t.cn/roadmap/"/>
+    <id>https://139t.cn/roadmap/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text"></summary>
   </entry>
   <entry>
     <title type="text"></title>
-    <link href="https://httcup.github.io/tools/guides/"/>
-    <id>https://httcup.github.io/tools/guides/</id>
+    <link href="https://139t.cn/guides/"/>
+    <id>https://139t.cn/guides/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text"></summary>
   </entry>

@@ -14,7 +14,7 @@ International Civil Aviation Organization 对这种证件的照片有什么要�
 | 背景 | 纯浅灰 |
 | 机读采集图 | 至少 ⁦413 x 531⁩ px，JPEG，没有写明文件大小的规定 |
 
-[按这条规定制作照片](https://httcup.github.io/tools/id-photo/#icao) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
+[按这条规定制作照片](https://139t.cn/id-photo/#icao) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
 
 ## 这条规定还说了什么
 
@@ -32,4 +32,4 @@ International Civil Aviation Organization 对这种证件的照片有什么要�
 - 读取背景的颜色，以及光线是否均匀；有问题的时候，说明是两者中的哪一个。
 - 按精确的毫米写出打印文件，分辨率写在文件里；再生成一张带裁切标记的拼版，以及符合这条规定的像素和体积的上传文件。
 
-[在证件照工具里查看所有国家和证件](https://httcup.github.io/tools/id-photo/)
+[在证件照工具里查看所有国家和证件](https://139t.cn/id-photo/)

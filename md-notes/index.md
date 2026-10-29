@@ -2,7 +2,7 @@
 
 左边写、右边看效果，每敲一句自动保存在浏览器里；写完点「下载 .md」就得到一份干净的纯文本笔记。可以同时开多本笔记、导入已有的 .md 文件、把全部笔记备份成一个文件。笔记只存在这台设备的浏览器里，不上传、不同步、不注册。
 
-页面地址：https://httcup.github.io/tools/md-notes/
+页面地址：https://139t.cn/md-notes/
 
 ## 怎么用
 
@@ -21,7 +21,7 @@
 
 ## 相关工具
 
-- [Markdown 转 Word](https://httcup.github.io/tools/md-to-word/)
-- [Markdown 编辑器](https://httcup.github.io/tools/markdown-editor/)
-- [文本比对](https://httcup.github.io/tools/text-diff/)
-- [文本统计](https://httcup.github.io/tools/quick/#textstats)
+- [Markdown 转 Word](https://139t.cn/md-to-word/)
+- [Markdown 编辑器](https://139t.cn/markdown-editor/)
+- [文本比对](https://139t.cn/text-diff/)
+- [文本统计](https://139t.cn/quick/#textstats)

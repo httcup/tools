@@ -4,7 +4,7 @@
 
 > 标记要保留的片段，在浏览器中保存为一个视频。复制模式保留已编码的帧；精确剪切和录制会重新编码。无需上传，可离线使用。
 
-This is an interactive browser tool at https://httcup.github.io/tools/trim-video/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/trim-video/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 视频 are **processed in your browser**. No processing upload.
 
@@ -27,14 +27,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/trim-video
 
 ## The longer version
 
-[怎么剪视频而不重新编码](https://httcup.github.io/tools/guides/trim-a-video/): 剪一段片子可以一个字节的画质都不掉。为什么下刀的位置有时候比你标的早，关键帧跟这有什么关系，以及什么时候该认下那次重新编码。
+[怎么剪视频而不重新编码](https://139t.cn/guides/trim-a-video/): 剪一段片子可以一个字节的画质都不掉。为什么下刀的位置有时候比你标的早，关键帧跟这有什么关系，以及什么时候该认下那次重新编码。
 
 ## Also in the box
 
-- [视频裁剪](https://httcup.github.io/tools/crop-video/): 把片子切到只剩要紧的那块。
-- [视频倒放](https://httcup.github.io/tools/reverse-video/): 最后一帧排在最前，连声音一起。
-- [延时视频](https://httcup.github.io/tools/timelapse-video/): 一小时的素材，二十秒看完。
-- [视频截帧](https://httcup.github.io/tools/grab-frame/): 任意位置，一张原画质静帧。
+- [视频裁剪](https://139t.cn/crop-video/): 把片子切到只剩要紧的那块。
+- [视频倒放](https://139t.cn/reverse-video/): 最后一帧排在最前，连声音一起。
+- [延时视频](https://139t.cn/timelapse-video/): 一小时的素材，二十秒看完。
+- [视频截帧](https://139t.cn/grab-frame/): 任意位置，一张原画质静帧。
 
 ## Questions
 

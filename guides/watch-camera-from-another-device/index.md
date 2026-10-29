@@ -2,7 +2,7 @@
 
 让旧手机用于查看宠物、门口或难以观察的位置。在浏览器打开摄像头并批准观看者。直接连接需要设备在本地网络上互相可达；选择云中继后，加密视频会经 Cloudflare 转发。
 
-[打开Remote Camera](https://httcup.github.io/tools/remote-camera/): Open a camera on one device and watch it in another browser, with optional viewer approval. Choose Direct or Cloud relay for encrypted live video.
+[打开Remote Camera](https://139t.cn/remote-camera/): Open a camera on one device and watch it in another browser, with optional viewer approval. Choose Direct or Cloud relay for encrypted live video.
 
 最后更新 2026年10月15日
 

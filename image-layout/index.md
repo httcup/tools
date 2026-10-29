@@ -4,7 +4,7 @@ Put your pictures together. Keep them on your machine.
 
 > Arrange images in a grid or strip with ready-to-use presets. Adjust each picture with pan and zoom, then save one PNG, JPEG or WebP. Free, offline and no upload.
 
-This is an interactive browser tool at https://httcup.github.io/tools/image-layout/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/image-layout/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your images are **processed in your browser**. No processing upload.
 
@@ -27,14 +27,14 @@ Your images are read, arranged and written by your own browser, using the canvas
 
 ## The longer version
 
-[如何把多张图片排列成一张图](https://httcup.github.io/tools/guides/arrange-images/): 制作拼贴、照片索引或长条图。选择网格，保留完整图片或裁切填满，设置间距，保存为 PNG、JPEG 或 WebP。无需上传。
+[如何把多张图片排列成一张图](https://139t.cn/guides/arrange-images/): 制作拼贴、照片索引或长条图。选择网格，保留完整图片或裁切填满，设置间距，保存为 PNG、JPEG 或 WebP。无需上传。
 
 ## Also in the box
 
-- [HEIC 转 JPG](https://httcup.github.io/tools/heic-to-jpg/): iPhone 拍的照片，换成什么都打得开的格式。
-- [WebP 转 JPG](https://httcup.github.io/tools/webp-to-jpg/): 把网页保存的图片，变成所有软件仍然接受的格式。
-- [PNG 转 WebP](https://httcup.github.io/tools/png-to-webp/): 同一张图片，常常减少三分之一体积，透明区域保持完整。
-- [AVIF 转 JPG](https://httcup.github.io/tools/avif-to-jpg/): 把网站如今保存的格式，变成所有软件一直支持的格式。
+- [HEIC 转 JPG](https://139t.cn/heic-to-jpg/): iPhone 拍的照片，换成什么都打得开的格式。
+- [WebP 转 JPG](https://139t.cn/webp-to-jpg/): 把网页保存的图片，变成所有软件仍然接受的格式。
+- [PNG 转 WebP](https://139t.cn/png-to-webp/): 同一张图片，常常减少三分之一体积，透明区域保持完整。
+- [AVIF 转 JPG](https://139t.cn/avif-to-jpg/): 把网站如今保存的格式，变成所有软件一直支持的格式。
 
 ## Questions
 
@@ -64,11 +64,11 @@ Yes, when you choose PNG or WebP and turn on transparency. That also preserves s
 
 ### Which formats can I use?
 
-The input must be an image your browser can decode, including JPEG, PNG, WebP, GIF, BMP, AVIF and supported SVG files. HEIC support depends on your browser; [HEIC to JPG](https://httcup.github.io/heic-to-jpg/) can convert one first. Output is PNG, JPEG or WebP. If the browser cannot write WebP, that choice is disabled rather than saving a PNG with a WebP extension.
+The input must be an image your browser can decode, including JPEG, PNG, WebP, GIF, BMP, AVIF and supported SVG files. HEIC support depends on your browser; [HEIC to JPG](https://139t.cn/heic-to-jpg/) can convert one first. Output is PNG, JPEG or WebP. If the browser cannot write WebP, that choice is disabled rather than saving a PNG with a WebP extension.
 
 ### Does it keep an animation?
 
-No. This is a still-image layout. An animated GIF, WebP or AVIF is reduced to the first frame the browser decodes. To arrange separate frames from a GIF, extract them first with [GIF Splitter](https://httcup.github.io/split-gif/).
+No. This is a still-image layout. An animated GIF, WebP or AVIF is reduced to the first frame the browser decodes. To arrange separate frames from a GIF, extract them first with [GIF Splitter](https://139t.cn/split-gif/).
 
 ### Does the preview use the full-resolution pictures?
 

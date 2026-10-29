@@ -4,7 +4,7 @@
 
 > 把 JPG、PNG、WebP 或 AVIF 合成一个 PDF，免费，全程在你的浏览器里跑。JPEG 照片进去不重新编码，什么都不上传。
 
-This is an interactive browser tool at https://httcup.github.io/tools/images-to-pdf/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/images-to-pdf/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 图片 are **processed in your browser**. No processing upload.
 
@@ -25,14 +25,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/images-to-
 
 ## The longer version
 
-[怎么把多张图片合成一个 PDF](https://httcup.github.io/tools/guides/combine-images-into-a-pdf/): 把照片或者扫描件做成一个 PDF：页面大小、顺序和旋转，JPEG 为什么进去时可以一点不掉画质，以及这份 PDF 会向收件人交代些什么。
+[怎么把多张图片合成一个 PDF](https://139t.cn/guides/combine-images-into-a-pdf/): 把照片或者扫描件做成一个 PDF：页面大小、顺序和旋转，JPEG 为什么进去时可以一点不掉画质，以及这份 PDF 会向收件人交代些什么。
 
 ## Also in the box
 
-- [文档扫描](https://httcup.github.io/tools/document-scanner/): 把纸拍下来，回来的是一份看着像扫描的东西。
-- [从视频里提取音频](https://httcup.github.io/tools/extract-audio-from-video/): 把视频拖进来，声音就取出来了。画面从不解码，也不上传任何东西。
-- [音频剪辑](https://httcup.github.io/tools/trim-audio/): 边听边标出值得留的段落。它们会合成一个文件回来，就切在你说的位置。
-- [音频编辑](https://httcup.github.io/tools/edit-audio/): 倒着放、快慢随你调、把录轻了的声音提上来，全在你这台机器上。
+- [文档扫描](https://139t.cn/document-scanner/): 把纸拍下来，回来的是一份看着像扫描的东西。
+- [从视频里提取音频](https://139t.cn/extract-audio-from-video/): 把视频拖进来，声音就取出来了。画面从不解码，也不上传任何东西。
+- [音频剪辑](https://139t.cn/trim-audio/): 边听边标出值得留的段落。它们会合成一个文件回来，就切在你说的位置。
+- [音频编辑](https://139t.cn/edit-audio/): 倒着放、快慢随你调、把录轻了的声音提上来，全在你这台机器上。
 
 ## Questions
 

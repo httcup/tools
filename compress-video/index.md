@@ -4,7 +4,7 @@
 
 > 在浏览器里把视频压到 8、16、25 或任意兆字节以下。说出大小，工具选画面尺寸和码率，编码，再量结果。什么都不上传，声音原样复制过去。
 
-This is an interactive browser tool at https://httcup.github.io/tools/compress-video/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/compress-video/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 视频 are **processed in your browser**. No processing upload.
 
@@ -25,14 +25,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/compress-v
 
 ## The longer version
 
-[如何把视频压到可以发送的大小](https://httcup.github.io/tools/guides/compress-a-video/): 大小上限让视频付出什么，容量花在哪里，为什么先降低尺寸，以及怎样在浏览器中少损失、无需上传地压缩。
+[如何把视频压到可以发送的大小](https://139t.cn/guides/compress-a-video/): 大小上限让视频付出什么，容量花在哪里，为什么先降低尺寸，以及怎样在浏览器中少损失、无需上传地压缩。
 
 ## Also in the box
 
-- [MP4 转换](https://httcup.github.io/tools/convert-to-mp4/): 不管从录屏、压制还是相机里出来的是什么，都变成 MP4 里的 H.264 和 AAC。能复制的原样复制，非改不可的才重新编码。
-- [视频旋转](https://httcup.github.io/tools/rotate-video/): 转四分之一圈、半圈，或者往另一边转。使用文件头旋转时，每一帧画面保持原样。
-- [图片转视频](https://httcup.github.io/tools/images-to-video/): 一个文件夹的图片，变成一段视频。
-- [视频剪切](https://httcup.github.io/tools/trim-video/): 一边看一边标出要留的段落，最后拿回一个视频。
+- [MP4 转换](https://139t.cn/convert-to-mp4/): 不管从录屏、压制还是相机里出来的是什么，都变成 MP4 里的 H.264 和 AAC。能复制的原样复制，非改不可的才重新编码。
+- [视频旋转](https://139t.cn/rotate-video/): 转四分之一圈、半圈，或者往另一边转。使用文件头旋转时，每一帧画面保持原样。
+- [图片转视频](https://139t.cn/images-to-video/): 一个文件夹的图片，变成一段视频。
+- [视频剪切](https://139t.cn/trim-video/): 一边看一边标出要留的段落，最后拿回一个视频。
 
 ## Questions
 
@@ -70,7 +70,7 @@ MP4 和 MOV，也就是手机、相机和录屏软件写出来的那种，里面
 
 ### 手机上能用吗？
 
-浏览器能编码视频的手机上能用，而且手机自带的硬件编码器很快。手机缺的是内存：做好的文件会一直放在内存里直到你保存它，所以一段很长的视频可能超出手机能装下的量。先用[视频剪辑](https://httcup.github.io/trim-video/)剪短，或者在笔记本上压。
+浏览器能编码视频的手机上能用，而且手机自带的硬件编码器很快。手机缺的是内存：做好的文件会一直放在内存里直到你保存它，所以一段很长的视频可能超出手机能装下的量。先用[视频剪辑](https://139t.cn/trim-video/)剪短，或者在笔记本上压。
 
 ### 有大小限制吗？要钱吗？
 

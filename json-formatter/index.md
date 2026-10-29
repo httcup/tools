@@ -4,7 +4,7 @@ JSON、XML、HTML、CSS 和 YAML，格式化或转换。没有一个字被贴进
 
 > 格式化和压缩 JSON、XML、HTML、CSS 和 YAML，把 JSON 转成 YAML 或 XML 再转回来。解析器在你的浏览器里跑，什么都不上传——token 和配置文件从不离开你的机器。
 
-This is an interactive browser tool at https://httcup.github.io/tools/json-formatter/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/json-formatter/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 文本和代码 are **processed in your browser**. No processing upload.
 
@@ -27,14 +27,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/json-forma
 
 ## The longer version
 
-[怎么不把 JSON 交给任何人也能格式化](https://httcup.github.io/tools/guides/format-json-without-uploading-it/): 在自己的浏览器里排版、检查和压缩 JSON：一个格式化工具绝不该改动你文件的哪些地方、错误信息该怎么读，以及你把东西粘进哪个框里为什么要紧。
+[怎么不把 JSON 交给任何人也能格式化](https://139t.cn/guides/format-json-without-uploading-it/): 在自己的浏览器里排版、检查和压缩 JSON：一个格式化工具绝不该改动你文件的哪些地方、错误信息该怎么读，以及你把东西粘进哪个框里为什么要紧。
 
 ## Also in the box
 
-- [YAML 转 JSON](https://httcup.github.io/tools/yaml-to-json/): 两个方向都有，而且会告诉你各自的代价。这些都不会粘进别人的服务器。
-- [XML 格式化](https://httcup.github.io/tools/xml-formatter/): 排开了好读的 XML，压平了好发的 XML，还有两个方向的 JSON 转换。这些都不会粘进别人的服务器。
-- [文本比对](https://httcup.github.io/tools/text-diff/): 两段文本进来，每处差异都被标出来，逐行、逐词。没有一个字被贴进别人的服务器。
-- [Base64 编码解码](https://httcup.github.io/tools/base64/): Base64、百分号编码、HTML 实体、十六进制和反斜杠转义，双向都行。没有一个字被贴进别人的服务器。
+- [YAML 转 JSON](https://139t.cn/yaml-to-json/): 两个方向都有，而且会告诉你各自的代价。这些都不会粘进别人的服务器。
+- [XML 格式化](https://139t.cn/xml-formatter/): 排开了好读的 XML，压平了好发的 XML，还有两个方向的 JSON 转换。这些都不会粘进别人的服务器。
+- [文本比对](https://139t.cn/text-diff/): 两段文本进来，每处差异都被标出来，逐行、逐词。没有一个字被贴进别人的服务器。
+- [Base64 编码解码](https://139t.cn/base64/): Base64、百分号编码、HTML 实体、十六进制和反斜杠转义，双向都行。没有一个字被贴进别人的服务器。
 
 ## Questions
 

@@ -4,7 +4,7 @@
 
 > 在浏览器里把 PNG、JPEG 或 SVG 做成一个真正多尺寸的 .ico，或者一个 macOS 的 .icns。网站图标、Windows 应用图标、Mac 应用图标，加上网站需要的苹果和安卓那几个文件。什么都不上传。
 
-This is an interactive browser tool at https://httcup.github.io/tools/image-to-ico/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/image-to-ico/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 图片 are **processed in your browser**. No processing upload.
 
@@ -27,14 +27,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/image-to-i
 
 ## The longer version
 
-[怎么做一个到十六像素还看得清的网站图标](https://httcup.github.io/tools/guides/make-a-favicon/): favicon.ico 里到底该装哪几个尺寸，iPhone、安卓和 Mac 另外要哪些文件，以及为什么一个在海报上好好的 logo，到了十六像素就没了。
+[怎么做一个到十六像素还看得清的网站图标](https://139t.cn/guides/make-a-favicon/): favicon.ico 里到底该装哪几个尺寸，iPhone、安卓和 Mac 另外要哪些文件，以及为什么一个在海报上好好的 logo，到了十六像素就没了。
 
 ## Also in the box
 
-- [图片转 Data URI](https://httcup.github.io/tools/image-to-data-uri/): 整张图变成一行文本，直接粘进 CSS 或者 HTML。
-- [SVG 转图片](https://httcup.github.io/tools/svg-to-image/): 说个尺寸。矢量图本来就没有尺寸可丢。
-- [图片转 SVG](https://httcup.github.io/tools/image-to-svg/): 一个形状，一条轮廓。不该有的东西，点一下就好。
-- [身高对比图](https://httcup.github.io/tools/compare-heights/): 把身高打进去，把图带走。为了画它，不会往外送任何东西。
+- [图片转 Data URI](https://139t.cn/image-to-data-uri/): 整张图变成一行文本，直接粘进 CSS 或者 HTML。
+- [SVG 转图片](https://139t.cn/svg-to-image/): 说个尺寸。矢量图本来就没有尺寸可丢。
+- [图片转 SVG](https://139t.cn/image-to-svg/): 一个形状，一条轮廓。不该有的东西，点一下就好。
+- [身高对比图](https://139t.cn/compare-heights/): 把身高打进去，把图带走。为了画它，不会往外送任何东西。
 
 ## Questions
 

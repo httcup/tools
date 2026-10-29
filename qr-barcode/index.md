@@ -4,7 +4,7 @@
 
 > 生成链接、Wi-Fi 或者名片二维码，也生成 EAN-13、UPC-A、Code 128 和 Code 39 条形码。可下载 SVG 或 PNG。全部在你的浏览器里完成。
 
-This is an interactive browser tool at https://httcup.github.io/tools/qr-barcode/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/qr-barcode/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 码和码里的文字 are **processed in your browser**. No processing upload.
 
@@ -27,14 +27,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/qr-barcode
 
 ## The longer version
 
-[怎么做一个到了别人手机上还扫得出来的二维码](https://httcup.github.io/tools/guides/make-a-qr-code/): 纠错等级该选哪个，二维码周围那圈白为什么是码的一部分，印多大合适，还有免费生成器的“动态码”日后要你付出什么。
+[怎么做一个到了别人手机上还扫得出来的二维码](https://139t.cn/guides/make-a-qr-code/): 纠错等级该选哪个，二维码周围那圈白为什么是码的一部分，印多大合适，还有免费生成器的“动态码”日后要你付出什么。
 
 ## Also in the box
 
-- [二维码与条形码识读](https://httcup.github.io/tools/qr-barcode-reader/): 把摄像头对准码，或者把拍下来的图丢进来。读这件事只发生在这里，别处都没有。
-- [哈希与校验和](https://httcup.github.io/tools/hash-checksum/): 把下载来的文件和发布方公布的那串数字对一下，不用把它发给任何人。
-- [密码与密码短语生成器](https://httcup.github.io/tools/password-generator/): 在这里生成，由你自己的浏览器生成，不发往任何地方。什么都不保存，也没有历史记录。
-- [JSON 格式化](https://httcup.github.io/tools/json-formatter/): JSON、XML、HTML、CSS 和 YAML，格式化或转换。没有一个字被贴进别人的服务器。
+- [二维码与条形码识读](https://139t.cn/qr-barcode-reader/): 把摄像头对准码，或者把拍下来的图丢进来。读这件事只发生在这里，别处都没有。
+- [哈希与校验和](https://139t.cn/hash-checksum/): 把下载来的文件和发布方公布的那串数字对一下，不用把它发给任何人。
+- [密码与密码短语生成器](https://139t.cn/password-generator/): 在这里生成，由你自己的浏览器生成，不发往任何地方。什么都不保存，也没有历史记录。
+- [JSON 格式化](https://139t.cn/json-formatter/): JSON、XML、HTML、CSS 和 YAML，格式化或转换。没有一个字被贴进别人的服务器。
 
 ## Questions
 
@@ -64,7 +64,7 @@ This is an interactive browser tool at https://httcup.github.io/tools/qr-barcode
 
 ### 它能扫码吗，还是只能生成？
 
-这一页做不到，隔壁那页可以：[识读工具](https://httcup.github.io/qr-barcode-reader/)接一张照片、一张截图或者你的摄像头，把里面那串字符还给你。这比画一个码大得多——在一张图里找出那个图形、把拍摄角度纠正回来、再把破损的地方修回来，这三件事这一页压根不用面对——所以它是一个单独的工具，而不是这里的一个按钮。它按这里一贯的规矩来：什么都不上传，摄像头的画面也一帧不留。
+这一页做不到，隔壁那页可以：[识读工具](https://139t.cn/qr-barcode-reader/)接一张照片、一张截图或者你的摄像头，把里面那串字符还给你。这比画一个码大得多——在一张图里找出那个图形、把拍摄角度纠正回来、再把破损的地方修回来，这三件事这一页压根不用面对——所以它是一个单独的工具，而不是这里的一个按钮。它按这里一贯的规矩来：什么都不上传，摄像头的画面也一帧不留。
 
 ### 留白是干什么的，能不能少留点？
 

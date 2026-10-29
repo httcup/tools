@@ -2,7 +2,7 @@
 
 一个人讲话，其他人通过浏览器收听。在本网站开设频道，分享链接或显示在附近列表中。直接连接需要设备在本地网络上互相可达。如果主持端选择云中继，听众确认后，加密语音才会经 Cloudflare 转发。
 
-[打开Local Walkie-Talkie](https://httcup.github.io/tools/walkie-talkie/): Start a named channel, then hold to talk or speak hands-free. Connect directly on your local network, or choose Cloud relay for listeners over the internet.
+[打开Local Walkie-Talkie](https://139t.cn/walkie-talkie/): Start a named channel, then hold to talk or speak hands-free. Connect directly on your local network, or choose Cloud relay for listeners over the internet.
 
 最后更新 2026年10月14日
 

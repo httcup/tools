@@ -4,7 +4,7 @@
 
 > 在浏览器里给 JPEG、PNG 和 WebP 改尺寸、裁切、转格式。精确到像素、按百分比，或者定长边，一张也行，一整个文件夹也行。什么都不上传。
 
-This is an interactive browser tool at https://httcup.github.io/tools/resize-image/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/resize-image/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 图片 are **processed in your browser**. No processing upload.
 
@@ -25,14 +25,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/resize-ima
 
 ## The longer version
 
-[怎么改图片尺寸而不把它弄坏](https://httcup.github.io/tools/guides/resize-an-image/): 调整尺寸会改变什么：缩小丢失细节、放大需要插值、适配不同形状的框，以及何时应先裁剪。
+[怎么改图片尺寸而不把它弄坏](https://139t.cn/guides/resize-an-image/): 调整尺寸会改变什么：缩小丢失细节、放大需要插值、适配不同形状的框，以及何时应先裁剪。
 
 ## Also in the box
 
-- [Image Layout](https://httcup.github.io/tools/image-layout/): Put your pictures together. Keep them on your machine.
-- [HEIC 转 JPG](https://httcup.github.io/tools/heic-to-jpg/): iPhone 拍的照片，换成什么都打得开的格式。
-- [WebP 转 JPG](https://httcup.github.io/tools/webp-to-jpg/): 把网页保存的图片，变成所有软件仍然接受的格式。
-- [PNG 转 WebP](https://httcup.github.io/tools/png-to-webp/): 同一张图片，常常减少三分之一体积，透明区域保持完整。
+- [Image Layout](https://139t.cn/image-layout/): Put your pictures together. Keep them on your machine.
+- [HEIC 转 JPG](https://139t.cn/heic-to-jpg/): iPhone 拍的照片，换成什么都打得开的格式。
+- [WebP 转 JPG](https://139t.cn/webp-to-jpg/): 把网页保存的图片，变成所有软件仍然接受的格式。
+- [PNG 转 WebP](https://139t.cn/png-to-webp/): 同一张图片，常常减少三分之一体积，透明区域保持完整。
 
 ## Questions
 
@@ -66,11 +66,11 @@ This is an interactive browser tool at https://httcup.github.io/tools/resize-ima
 
 ### 它会去掉 EXIF 和 GPS 信息吗？
 
-真正被处理过的图会，属于顺带的效果：裁切或者缩放都得把画面解码成像素、再把像素编回去，而一张画布上只有像素，不带任何标签，所以位置、相机型号和时间戳干脆就没写进新文件。你完全没动过的文件是另一回事，它逐字节原样还给你，标签一个不少。[EXIF 查看与清除](https://httcup.github.io/exif-editor/)可查看和编辑 JPEG、PNG 和 WebP 元数据，不重新编码图片。AVIF 支持只读查看提取到的 EXIF，清理时将第一张解码后的图片转换为新的 PNG，颜色或 HDR 可能改变。
+真正被处理过的图会，属于顺带的效果：裁切或者缩放都得把画面解码成像素、再把像素编回去，而一张画布上只有像素，不带任何标签，所以位置、相机型号和时间戳干脆就没写进新文件。你完全没动过的文件是另一回事，它逐字节原样还给你，标签一个不少。[EXIF 查看与清除](https://139t.cn/exif-editor/)可查看和编辑 JPEG、PNG 和 WebP 元数据，不重新编码图片。AVIF 支持只读查看提取到的 EXIF，清理时将第一张解码后的图片转换为新的 PNG，颜色或 HDR 可能改变。
 
 ### 这个跟图片压缩有什么区别？
 
-这个管的是尺寸：你说要多少像素，它就给你多少像素。[图片压缩](https://httcup.github.io/compress-image/)管的是文件大小：你说只准多少 KB，它去找刚好塞得进去的最高画质，只有画质单独够不到才动尺寸。人家跟你说“宽 1200 像素”，你就来对了地方；人家说“不能超过 500 KB”，那边更对路。
+这个管的是尺寸：你说要多少像素，它就给你多少像素。[图片压缩](https://139t.cn/compress-image/)管的是文件大小：你说只准多少 KB，它去找刚好塞得进去的最高画质，只有画质单独够不到才动尺寸。人家跟你说“宽 1200 像素”，你就来对了地方；人家说“不能超过 500 KB”，那边更对路。
 
 ### 免费吗？要注册吗？
 

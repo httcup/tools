@@ -4,7 +4,7 @@
 
 > 在浏览器里把 SVG 转成 PNG、JPEG 或 WebP，尺寸随你定。给宽度、给倍数，或者给一个框，还能顺手出 @2x 和 @3x。透明保住，什么都不上传。
 
-This is an interactive browser tool at https://httcup.github.io/tools/svg-to-image/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/svg-to-image/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your SVG 文件 are **processed in your browser**. No processing upload.
 
@@ -27,14 +27,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/svg-to-ima
 
 ## The longer version
 
-[怎么把 SVG 转成合适尺寸的 PNG](https://httcup.github.io/tools/guides/convert-an-svg-to-png/): 矢量图自己没有像素尺寸，所以这个数字由你定。屏幕、应用图标和印刷各自的数字从哪儿来，以及一张图纸变成像素那一刻会发生什么变化。
+[怎么把 SVG 转成合适尺寸的 PNG](https://139t.cn/guides/convert-an-svg-to-png/): 矢量图自己没有像素尺寸，所以这个数字由你定。屏幕、应用图标和印刷各自的数字从哪儿来，以及一张图纸变成像素那一刻会发生什么变化。
 
 ## Also in the box
 
-- [图片转 SVG](https://httcup.github.io/tools/image-to-svg/): 一个形状，一条轮廓。不该有的东西，点一下就好。
-- [身高对比图](https://httcup.github.io/tools/compare-heights/): 把身高打进去，把图带走。为了画它，不会往外送任何东西。
-- [商家资料预览](https://httcup.github.io/tools/business-profile-preview/): 把内容打进去，它就变成 Google 会画的那张卡片。为了画它，不会往外送任何东西。
-- [图片压缩](https://httcup.github.io/tools/compress-image/): 说个大小，剩下的它来算。
+- [图片转 SVG](https://139t.cn/image-to-svg/): 一个形状，一条轮廓。不该有的东西，点一下就好。
+- [身高对比图](https://139t.cn/compare-heights/): 把身高打进去，把图带走。为了画它，不会往外送任何东西。
+- [商家资料预览](https://139t.cn/business-profile-preview/): 把内容打进去，它就变成 Google 会画的那张卡片。为了画它，不会往外送任何东西。
+- [图片压缩](https://139t.cn/compress-image/): 说个大小，剩下的它来算。
 
 ## Questions
 
@@ -76,7 +76,7 @@ PNG 和 WebP 都保住。JPEG 根本没有 alpha 通道，所以不管你要不�
 
 ### 这个跟图片缩放有什么区别？
 
-区别在源头。[图片缩放](https://httcup.github.io/resize-image/)从像素出发，JPEG 或者 PNG，所以放大就得编造本来不存在的细节。这个从一张图纸出发，没什么可编造，也没有值得操心的上限。你手上是 SVG，这边能给你锐利的结果；你手上是照片，那边才对路。
+区别在源头。[图片缩放](https://139t.cn/resize-image/)从像素出发，JPEG 或者 PNG，所以放大就得编造本来不存在的细节。这个从一张图纸出发，没什么可编造，也没有值得操心的上限。你手上是 SVG，这边能给你锐利的结果；你手上是照片，那边才对路。
 
 ### 免费吗？要注册吗？
 

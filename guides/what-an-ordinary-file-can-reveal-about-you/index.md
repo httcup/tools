@@ -46,7 +46,7 @@ Visible content is only one part of some file formats. Microsoft documents how O
 
 Photos can contain location metadata when it was recorded. Apple explains that recipients of a photo carrying that information may learn where it was taken in its [location metadata guidance](https://support.apple.com/en-gb/guide/personal-safety/ips0d7a5df82/1.0/web/1.0).
 
-Inspect the actual file with an appropriate viewer or its originating application. These examples do not mean every photograph contains coordinates or every document contains hidden comments. Check what is present. The guides to [what a PDF remembers](https://httcup.github.io/tools/guides/what-a-pdf-remembers/) and [photo metadata](https://httcup.github.io/tools/guides/remove-exif-and-gps-data/) explain those formats in more detail.
+Inspect the actual file with an appropriate viewer or its originating application. These examples do not mean every photograph contains coordinates or every document contains hidden comments. Check what is present. The guides to [what a PDF remembers](https://139t.cn/guides/what-a-pdf-remembers/) and [photo metadata](https://139t.cn/guides/remove-exif-and-gps-data/) explain those formats in more detail.
 
 ## Make a small review plan before editing
 
@@ -61,4 +61,4 @@ Inspect the actual file with an appropriate viewer or its originating applicatio
 
 The aim is a useful, proportionate sharing copy. The ICO's [data minimisation guidance](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/a-guide-to-the-data-protection-principles/data-minimisation/) balances limiting information with keeping enough for the stated purpose. Apply that review principle to the file and audience in front of you.
 
-Keep a price with its quantity and currency, an error with the context needed to diagnose it, or an attendance total with the event and date it describes. Once you know what should remain, choose the appropriate editing or metadata tool. For an image, the [redaction guide](https://httcup.github.io/tools/guides/redact-an-image/) explains removal and output checks. Check the final file against your plan before sharing it.
+Keep a price with its quantity and currency, an error with the context needed to diagnose it, or an attendance total with the event and date it describes. Once you know what should remain, choose the appropriate editing or metadata tool. For an image, the [redaction guide](https://139t.cn/guides/redact-an-image/) explains removal and output checks. Check the final file against your plan before sharing it.

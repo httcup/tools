@@ -4,7 +4,7 @@
 
 > 把字从 PDF 里拿掉，而不是在上面画个黑块。字是从绘制这一页的指令里删掉的，做好的文件会被重新打开搜一遍，证明它们真的没了，而且什么都不会上传。
 
-This is an interactive browser tool at https://httcup.github.io/tools/redact-pdf/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/redact-pdf/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 文档 are **processed in your browser**. No processing upload.
 
@@ -25,14 +25,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/redact-pdf
 
 ## The longer version
 
-[怎么把 PDF 涂黑，让文字真的消失](https://httcup.github.io/tools/guides/redact-a-pdf/): 在 PDF 阅读器里画的黑块，通常把词原封不动地留在了下面，复制粘贴就能拿回去。真正的涂黑拿掉的是什么，词在页面之外藏身的四个地方，以及发出去之前怎么检查一个文件。
+[怎么把 PDF 涂黑，让文字真的消失](https://139t.cn/guides/redact-a-pdf/): 在 PDF 阅读器里画的黑块，通常把词原封不动地留在了下面，复制粘贴就能拿回去。真正的涂黑拿掉的是什么，词在页面之外藏身的四个地方，以及发出去之前怎么检查一个文件。
 
 ## Also in the box
 
-- [PDF 转 CSV](https://httcup.github.io/tools/pdf-to-csv/): 将检测到的 PDF 文本表格转换成电子表格可打开的行。
-- [收据与发票识别](https://httcup.github.io/tools/receipt-invoice-extractor/): 读取照片，检查字段和裁剪结果，准备供邮件应用使用的压缩附件和合计。
-- [图片转 PDF](https://httcup.github.io/tools/images-to-pdf/): 把你的图片装进一个文档。
-- [文档扫描](https://httcup.github.io/tools/document-scanner/): 把纸拍下来，回来的是一份看着像扫描的东西。
+- [PDF 转 CSV](https://139t.cn/pdf-to-csv/): 将检测到的 PDF 文本表格转换成电子表格可打开的行。
+- [收据与发票识别](https://139t.cn/receipt-invoice-extractor/): 读取照片，检查字段和裁剪结果，准备供邮件应用使用的压缩附件和合计。
+- [图片转 PDF](https://139t.cn/images-to-pdf/): 把你的图片装进一个文档。
+- [文档扫描](https://139t.cn/document-scanner/): 把纸拍下来，回来的是一份看着像扫描的东西。
 
 ## Questions
 
@@ -50,7 +50,7 @@ This is an interactive browser tool at https://httcup.github.io/tools/redact-pdf
 
 ### 扫描出来的文档能涂黑吗？
 
-图不能，而且它照实说，不装。扫描件是一页纸的照片，上面的词是像素，没有可拿走的文字。不过扫描件常常还带着一层看不见的文字，是扫描仪的 OCR 写在图上面、为了让这一页可以搜索的。这个工具会找到那一层，从里面拿掉你挑的内容，并在页面上告诉你图没有变。于是搜索和复制再也找不到那个词，而看着这一页的人还是读得到。要处理图本身，[图片涂黑](https://httcup.github.io/redact-image/)会去覆盖像素。
+图不能，而且它照实说，不装。扫描件是一页纸的照片，上面的词是像素，没有可拿走的文字。不过扫描件常常还带着一层看不见的文字，是扫描仪的 OCR 写在图上面、为了让这一页可以搜索的。这个工具会找到那一层，从里面拿掉你挑的内容，并在页面上告诉你图没有变。于是搜索和复制再也找不到那个词，而看着这一页的人还是读得到。要处理图本身，[图片涂黑](https://139t.cn/redact-image/)会去覆盖像素。
 
 ### 文档里那些不在页面上的部分呢？
 
@@ -87,7 +87,7 @@ This is an interactive browser tool at https://httcup.github.io/tools/redact-pdf
 - **词不会离开这个标签页，搜索也不会。** Content-Security-Policy 里写着这一页能联系的每一个地址，没有一个属于本站。这个工具没往那份名单里加任何东西，因为它没有自己的联网功能，连可选的都没有。你在搜索框里打的字，是拿来跟这个标签页内存里的文本比对的一串字符，这两样都没有地方可去。
 - **涂黑是最经不起上传的那件事。** 人们拿去涂黑的东西，正是它不该被上传的理由。证人证言、诊断书、要交给房东的银行流水、带着一个客户名字却要发给另一个客户的合同。把这些交给陌生人的服务器去掉私密部分，意味着私密部分先完完整整地到了那边，而留在他们那里的也正是那一版。这一页没有另一半。
 - **留下的部分原样传过去。** 一页上会变的字节，只有那些包含了被删字符的文字绘制指令。其他每一条指令，以及这一页用到的每一个字体、图片和线条，都按进来时的样子精确复制。不重绘，不重新编码，也不重排。删掉部分的宽度会量出来，再作为一条字距指令放回去，于是这一行的其余部分还停在文档原本安排的位置上。
-- **它拿不掉照片里的词，而且会说清哪些页面是这种。** 扫描出来的一页是一张图。上面的词是像素，不是文字，这里没有任何东西能碰到它们。要是这份扫描件带着扫描仪 OCR 做的那层看不见的可搜索文字，这个工具会把那一层拿掉，而搜索和复制原本找到的正是它。同时它会在页面上明说：图里的词还看得见。要盖住那张图是另一件事，负责覆盖像素的是[图片涂黑](https://httcup.github.io/redact-image/)。
+- **它拿不掉照片里的词，而且会说清哪些页面是这种。** 扫描出来的一页是一张图。上面的词是像素，不是文字，这里没有任何东西能碰到它们。要是这份扫描件带着扫描仪 OCR 做的那层看不见的可搜索文字，这个工具会把那一层拿掉，而搜索和复制原本找到的正是它。同时它会在页面上明说：图里的词还看得见。要盖住那张图是另一件事，负责覆盖像素的是[图片涂黑](https://139t.cn/redact-image/)。
 - **文档不再交代自己从哪里来。** 属性和 XMP 包每次都会被清掉：没有 producer 那一行，没有创建日期，没有作者，没有标题，也没有排版软件留下的那些私有块。一份从页面上删掉了姓名、属性里却还写着 `张某_和解稿3.docx` 的文件，不是一份涂黑过的文件，而这件事不该交给一个勾选框去管。
 - **加密的文件会被退回，而不是打开。** 带密码的 PDF 会被拒收，包括扫描仪用空密码生成、技术上打得开的那一类。去掉一份文档的保护，跟从里面拿走几个词是两件事，而悄悄替你做掉，对一个替你干活的工具来说是件出人意料的事。
 - **谷歌加载了什么，又拿不到什么。** 广告和统计脚本来自谷歌。这两个都拿不到关于你文档的任何东西：文件拿不到，页面拿不到，姓名、大小、页数，以及你搜过的词，都拿不到。读取、修改、写出 PDF 的每一行都由本站自己提供，也都写在仓库里。

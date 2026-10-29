@@ -4,7 +4,7 @@
 
 > 在浏览器中把 PNG 和 AVIF 转为 WebP，可选无损或更小的文件。两种模式都保留透明，无需上传或账号，也可离线使用。
 
-This is an interactive browser tool at https://httcup.github.io/tools/png-to-webp/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/png-to-webp/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 图片 are **processed in your browser**. No processing upload.
 
@@ -25,14 +25,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/png-to-web
 
 ## The longer version
 
-[同一张图片，小三分之一，透明保持完整](https://httcup.github.io/tools/guides/convert-png-to-webp/): 无损 WebP 已比 PNG 小，允许损失时更小。哪种合适取决于图片内容。这里解释两种模式、节省多少以及如何无需上传。
+[同一张图片，小三分之一，透明保持完整](https://139t.cn/guides/convert-png-to-webp/): 无损 WebP 已比 PNG 小，允许损失时更小。哪种合适取决于图片内容。这里解释两种模式、节省多少以及如何无需上传。
 
 ## Also in the box
 
-- [AVIF 转 JPG](https://httcup.github.io/tools/avif-to-jpg/): 把网站如今保存的格式，变成所有软件一直支持的格式。
-- [证件照制作](https://httcup.github.io/tools/id-photo/): 选择支持的国家和证件。公布的要求与指导值均有标注。
-- [图片堆栈](https://httcup.github.io/tools/stack-images/): 二十张变一张，不用传二十次，也不用 RAW 转换器。
-- [图片涂黑与打码](https://httcup.github.io/tools/redact-image/): 你遮住的那块是从文件里删掉的，不是藏在文件里。
+- [AVIF 转 JPG](https://139t.cn/avif-to-jpg/): 把网站如今保存的格式，变成所有软件一直支持的格式。
+- [证件照制作](https://139t.cn/id-photo/): 选择支持的国家和证件。公布的要求与指导值均有标注。
+- [图片堆栈](https://139t.cn/stack-images/): 二十张变一张，不用传二十次，也不用 RAW 转换器。
+- [图片涂黑与打码](https://139t.cn/redact-image/): 你遮住的那块是从文件里删掉的，不是藏在文件里。
 
 ## Questions
 
@@ -62,15 +62,15 @@ This is an interactive browser tool at https://httcup.github.io/tools/png-to-web
 
 ### WebP 真能到处打开吗？
 
-在网页上可以。Chrome、Edge、Firefox 和 Safari 自 2020 年起都支持，所以网站无需再考虑备用格式。浏览器之外不太一致：Windows 和 macOS 已能预览，但旧桌面软件、某些上传表单和很多电子书阅读器仍不接受。给这种目标使用 [WebP 转 JPG](https://httcup.github.io/webp-to-jpg/)，也就是反向转换。
+在网页上可以。Chrome、Edge、Firefox 和 Safari 自 2020 年起都支持，所以网站无需再考虑备用格式。浏览器之外不太一致：Windows 和 macOS 已能预览，但旧桌面软件、某些上传表单和很多电子书阅读器仍不接受。给这种目标使用 [WebP 转 JPG](https://139t.cn/webp-to-jpg/)，也就是反向转换。
 
 ### PNG 为什么原本这么大？
 
-PNG 是无损的，照片不适合这样压缩。截图和徽标有大片重复区域，很适合 PNG；照片几乎没有重复内容，效果很差。手机照片存为 PNG，常常比同图的 JPEG 大十倍。这正是有损模式适用的情况。若必须低于指定大小，[图片压缩器](https://httcup.github.io/compress-image/)可以设目标大小，而非质量。
+PNG 是无损的，照片不适合这样压缩。截图和徽标有大片重复区域，很适合 PNG；照片几乎没有重复内容，效果很差。手机照片存为 PNG，常常比同图的 JPEG 大十倍。这正是有损模式适用的情况。若必须低于指定大小，[图片压缩器](https://139t.cn/compress-image/)可以设目标大小，而非质量。
 
 ### 日期、相机和位置会保留吗？
 
-不会。画布只存像素，周围的元数据都会丢弃。PNG 通常没有重要的相机信息，因此大多无妨。[EXIF 查看与移除工具](https://httcup.github.io/exif-editor/)可查看和编辑 JPEG、PNG 和 WebP 元数据，不重新编码图片。AVIF 支持只读查看提取到的 EXIF，清理时将第一张解码后的图片转换为新的 PNG，颜色或 HDR 可能改变。
+不会。画布只存像素，周围的元数据都会丢弃。PNG 通常没有重要的相机信息，因此大多无妨。[EXIF 查看与移除工具](https://139t.cn/exif-editor/)可查看和编辑 JPEG、PNG 和 WebP 元数据，不重新编码图片。AVIF 支持只读查看提取到的 EXIF，清理时将第一张解码后的图片转换为新的 PNG，颜色或 HDR 可能改变。
 
 ### 能一次转换整个文件夹吗？
 
@@ -91,9 +91,9 @@ PNG 是无损的，照片不适合这样压缩。截图和徽标有大片重复�
 ## How the privacy claim is verifiable
 
 - **处理在这个浏览器里完成。** 本工具在浏览器里处理输入和结果，处理代码不把它们上传去处理。Content-Security-Policy 限制可用资源和连接目的地，但已允许的主机仍可接收请求。策略不检查载荷，不能单独证明什么都没有发出。请把具体操作的请求与源码核对，或断网完成该本地操作。
-- **透明区域保留，这是人们通常最关心的事。** WebP 和 PNG 一样有透明通道，透明背景的徽标仍有透明背景。无需选背景颜色，也无需填充。这与旁边的 [WebP 转 JPG](https://httcup.github.io/webp-to-jpg/) 不同：JPEG 完全没有透明通道，因此必须询问。
+- **透明区域保留，这是人们通常最关心的事。** WebP 和 PNG 一样有透明通道，透明背景的徽标仍有透明背景。无需选背景颜色，也无需填充。这与旁边的 [WebP 转 JPG](https://139t.cn/webp-to-jpg/) 不同：JPEG 完全没有透明通道，因此必须询问。
 - **无损经过验证，不只是口头保证。** 画布没有无损 WebP 的开关，浏览器根据质量值选择编码。所有当前浏览器在最高质量时输出无损编码。但这是引擎行为，不是规范保证。所以本页会重新读取每个结果，并报告字节中是否真的是无损编码。若浏览器以后改变行为，你会当场收到提示。
-- **画布不会保留的内容。** 图片解码后绘制到画布，画布只有像素。因此 PNG 中的文本块、ICC 色彩配置和 XMP 信息不会保留。像素会保留，这就是这里“无损”的含义；周围的元数据不会。[EXIF 查看与移除工具](https://httcup.github.io/exif-editor/)可查看和编辑 JPEG、PNG 和 WebP 元数据，不重新编码图片。AVIF 支持只读查看提取到的 EXIF，清理时将第一张解码后的图片转换为新的 PNG，颜色或 HDR 可能改变。
+- **画布不会保留的内容。** 图片解码后绘制到画布，画布只有像素。因此 PNG 中的文本块、ICC 色彩配置和 XMP 信息不会保留。像素会保留，这就是这里“无损”的含义；周围的元数据不会。[EXIF 查看与移除工具](https://139t.cn/exif-editor/)可查看和编辑 JPEG、PNG 和 WebP 元数据，不重新编码图片。AVIF 支持只读查看提取到的 EXIF，清理时将第一张解码后的图片转换为新的 PNG，颜色或 HDR 可能改变。
 - **Google 加载什么，又拿不到什么。** 广告和统计脚本来自 Google，捐赠按钮来自 Buy Me a Coffee。它们都不会获得你的图片信息。读取、解码和写入文件的每一行代码都来自本站，并列在代码仓库中。
 - **可以离线使用。** 先加载页面再断开网络，工具仍然照常工作。这是最简单的证明：如果转换器把图片发送出去处理，它就不可能做到这一点。
 

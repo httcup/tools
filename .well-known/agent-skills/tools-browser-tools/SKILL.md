@@ -5,7 +5,7 @@ description: "Use this skill when a person asks to find or use a browser tool fo
 
 # abox.tools browser tools
 
-Use the existing browser tools at https://httcup.github.io/tools/ when they fit the person's
+Use the existing browser tools at https://139t.cn/ when they fit the person's
 task. They have no processing API, CLI or file-upload endpoint.
 
 ## When to use this skill
@@ -18,7 +18,7 @@ browser-location and privacy guidance below for the chosen tool.
 
 ## Choose a tool
 
-Read [the tool index](https://httcup.github.io/tools/llms.txt) for supported inputs, outputs
+Read [the tool index](https://139t.cn/llms.txt) for supported inputs, outputs
 and limitations. Open the relevant tool and its guide rather than assuming
 that similarly named converters support the same formats or modes.
 
@@ -30,7 +30,7 @@ default. This search makes no network request, opens no tool and processes no
 file. If it is unavailable, use the ordinary tool index or the hub's controls.
 
 For a clean text description, append `index.md` to a tool or guide URL.
-For example, [Image Compressor](https://httcup.github.io/tools/compress-image/index.md)
+For example, [Image Compressor](https://139t.cn/compress-image/index.md)
 describes target sizes and the choices that affect quality.
 
 ## Use the browser where the file should be processed
@@ -38,7 +38,7 @@ describes target sizes and the choices that affect quality.
 Processing happens on the device running the browser. A cloud browser means
 the file has already left the person's device; the agent provider may also
 receive files, screenshots or instructions. Read
-[the agent-use guide](https://httcup.github.io/tools/guides/can-an-ai-agent-use-these-tools/)
+[the agent-use guide](https://139t.cn/guides/can-an-ai-agent-use-these-tools/)
 when that distinction affects the requested workflow.
 
 Use the browser's available controls to select the authorized input, change

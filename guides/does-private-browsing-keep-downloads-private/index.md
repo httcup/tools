@@ -34,7 +34,7 @@ Before downloading, identify the actual save location. A file in a folder access
 
 Check whether the destination is synced. Saving inside a OneDrive folder can sync the file to the cloud; Microsoft's [OneDrive documentation](https://support.microsoft.com/en-us/onedrive/sync-your-computer-s-files-and-folders-with-onedrive) explains how file changes in the folder sync with the service. Closing a private window does not control that separate application.
 
-Account for copies you deliberately create too: another export, an email attachment, or a saved version in a desktop editor. Check each destination rather than assuming the browser owns every copy. Whether a tool uploads files for processing is another question; see the [guide to processing uploads](https://httcup.github.io/tools/guides/is-it-safe-to-upload-files/).
+Account for copies you deliberately create too: another export, an email attachment, or a saved version in a desktop editor. Check each destination rather than assuming the browser owns every copy. Whether a tool uploads files for processing is another question; see the [guide to processing uploads](https://139t.cn/guides/is-it-safe-to-upload-files/).
 
 ## Try the workflow with a dummy file
 

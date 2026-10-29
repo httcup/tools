@@ -4,7 +4,7 @@
 
 > 把 PNG、JPEG、SVG 或 WebP 变成能粘进 CSS 和 HTML 的 data URI。UTF-8 SVG 走百分号编码而不是 base64，所以还看得懂，也更短。在浏览器里跑，什么都不上传。
 
-This is an interactive browser tool at https://httcup.github.io/tools/image-to-data-uri/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/image-to-data-uri/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 图片 are **processed in your browser**. No processing upload.
 
@@ -26,14 +26,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/image-to-d
 
 ## The longer version
 
-[什么时候该把图片塞进 CSS，什么时候不该](https://httcup.github.io/tools/guides/embed-an-image-in-css/): data URI 的代价在哪儿，base64 为什么多出三分之一而 gzip 又还不回来，SVG 为什么绝不该用 base64，以及那个只坑内联 SVG、还一声不吭的引号问题。
+[什么时候该把图片塞进 CSS，什么时候不该](https://139t.cn/guides/embed-an-image-in-css/): data URI 的代价在哪儿，base64 为什么多出三分之一而 gzip 又还不回来，SVG 为什么绝不该用 base64，以及那个只坑内联 SVG、还一声不吭的引号问题。
 
 ## Also in the box
 
-- [SVG 转图片](https://httcup.github.io/tools/svg-to-image/): 说个尺寸。矢量图本来就没有尺寸可丢。
-- [图片转 SVG](https://httcup.github.io/tools/image-to-svg/): 一个形状，一条轮廓。不该有的东西，点一下就好。
-- [身高对比图](https://httcup.github.io/tools/compare-heights/): 把身高打进去，把图带走。为了画它，不会往外送任何东西。
-- [商家资料预览](https://httcup.github.io/tools/business-profile-preview/): 把内容打进去，它就变成 Google 会画的那张卡片。为了画它，不会往外送任何东西。
+- [SVG 转图片](https://139t.cn/svg-to-image/): 说个尺寸。矢量图本来就没有尺寸可丢。
+- [图片转 SVG](https://139t.cn/image-to-svg/): 一个形状，一条轮廓。不该有的东西，点一下就好。
+- [身高对比图](https://139t.cn/compare-heights/): 把身高打进去，把图带走。为了画它，不会往外送任何东西。
+- [商家资料预览](https://139t.cn/business-profile-preview/): 把内容打进去，它就变成 Google 会画的那张卡片。为了画它，不会往外送任何东西。
 
 ## Questions
 
@@ -67,7 +67,7 @@ This is an interactive browser tool at https://httcup.github.io/tools/image-to-d
 
 ### 那 EXIF 和 GPS 也一起进样式表了？
 
-是的，而这正是粘出去之前值得想一想的地方。因为什么都不重新编码，相机写下的东西全都跟着画面走：位置、时间戳、机身序列号。手机照片里这些能占到 30 KB，编成 base64 就是 40 KB 压在你页面的关键路径上，同时还把一个家庭住址提交进了仓库。JPEG、PNG 和 WebP 里到底带了多少元数据，页面会读出来告诉你。想先清干净，用 [EXIF 查看与清除](https://httcup.github.io/exif-editor/)。
+是的，而这正是粘出去之前值得想一想的地方。因为什么都不重新编码，相机写下的东西全都跟着画面走：位置、时间戳、机身序列号。手机照片里这些能占到 30 KB，编成 base64 就是 40 KB 压在你页面的关键路径上，同时还把一个家庭住址提交进了仓库。JPEG、PNG 和 WebP 里到底带了多少元数据，页面会读出来告诉你。想先清干净，用 [EXIF 查看与清除](https://139t.cn/exif-editor/)。
 
 ### 为什么它用的类型跟我的扩展名不一样？
 
@@ -75,7 +75,7 @@ This is an interactive browser tool at https://httcup.github.io/tools/image-to-d
 
 ### 预览是空白，哪儿出问题了？
 
-多半不是 URI 的问题。HEIC 和 TIFF 都能生成完全合法的 data URI，可除了 Safari 没有浏览器画得出来，所以你粘到哪儿它就在哪儿缺一块。先用[图片压缩](https://httcup.github.io/compress-image/)或者[图片缩放](https://httcup.github.io/resize-image/)转成 PNG、JPEG 或 WebP 再说。要是格式本来就很普通，那多半是文件本身坏了：预览是拿这个页面生成的 URI 画的，画不出来，就说明这张图没能解码。
+多半不是 URI 的问题。HEIC 和 TIFF 都能生成完全合法的 data URI，可除了 Safari 没有浏览器画得出来，所以你粘到哪儿它就在哪儿缺一块。先用[图片压缩](https://139t.cn/compress-image/)或者[图片缩放](https://139t.cn/resize-image/)转成 PNG、JPEG 或 WebP 再说。要是格式本来就很普通，那多半是文件本身坏了：预览是拿这个页面生成的 URI 画的，画不出来，就说明这张图没能解码。
 
 ### data URI 有长度上限吗？
 

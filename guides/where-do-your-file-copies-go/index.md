@@ -6,7 +6,7 @@ Local processing describes what happens inside the tool. The copies you save, sy
 
 ## Start with one harmless file
 
-Local processing describes where a tool works on your file. Your browser's save location, cloud-sync software and backup settings determine what happens to the saved output afterwards. Closing the tool does not manage those copies for you. The [guide to processing uploads](https://httcup.github.io/tools/guides/is-it-safe-to-upload-files/) explains that first boundary; this guide follows the saved files.
+Local processing describes where a tool works on your file. Your browser's save location, cloud-sync software and backup settings determine what happens to the saved output afterwards. Closing the tool does not manage those copies for you. The [guide to processing uploads](https://139t.cn/guides/is-it-safe-to-upload-files/) explains that first boundary; this guide follows the saved files.
 
 Imagine `workshop-handout.pdf`, containing a fictional timetable and a drawing. You export a smaller version as `workshop-handout-small.pdf`, then copy that result into a folder for the event. You have an original, a downloaded export and another saved copy before considering any backup.
 

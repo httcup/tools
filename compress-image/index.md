@@ -4,7 +4,7 @@
 
 > 将 JPEG、PNG、WebP 或 AVIF 压缩到 100 KB、2 MB 等文件大小上限内。目标是达到或低于上限，并非精确匹配字节数。无需上传，可离线使用。
 
-This is an interactive browser tool at https://httcup.github.io/tools/compress-image/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/compress-image/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 图片 are **processed in your browser**. No processing upload.
 
@@ -25,14 +25,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/compress-i
 
 ## The longer version
 
-[如何将图片压缩到文件大小上限内](https://httcup.github.io/tools/guides/compress-an-image-to-a-target-size/): 上传框要 500 KB，你的照片有 4 MB。一个大小限制到底要你付出什么，先动哪个设置，以及 PNG 为什么不像 JPEG 那样能压。
+[如何将图片压缩到文件大小上限内](https://139t.cn/guides/compress-an-image-to-a-target-size/): 上传框要 500 KB，你的照片有 4 MB。一个大小限制到底要你付出什么，先动哪个设置，以及 PNG 为什么不像 JPEG 那样能压。
 
 ## Also in the box
 
-- [图片缩放](https://httcup.github.io/tools/resize-image/): 说个尺寸，拉个框，挑个格式。
-- [Image Layout](https://httcup.github.io/tools/image-layout/): Put your pictures together. Keep them on your machine.
-- [HEIC 转 JPG](https://httcup.github.io/tools/heic-to-jpg/): iPhone 拍的照片，换成什么都打得开的格式。
-- [WebP 转 JPG](https://httcup.github.io/tools/webp-to-jpg/): 把网页保存的图片，变成所有软件仍然接受的格式。
+- [图片缩放](https://139t.cn/resize-image/): 说个尺寸，拉个框，挑个格式。
+- [Image Layout](https://139t.cn/image-layout/): Put your pictures together. Keep them on your machine.
+- [HEIC 转 JPG](https://139t.cn/heic-to-jpg/): iPhone 拍的照片，换成什么都打得开的格式。
+- [WebP 转 JPG](https://139t.cn/webp-to-jpg/): 把网页保存的图片，变成所有软件仍然接受的格式。
 
 ## Questions
 
@@ -62,7 +62,7 @@ This is an interactive browser tool at https://httcup.github.io/tools/compress-i
 
 ### 压缩会把 EXIF 和 GPS 信息一起去掉吗？
 
-重新编码的结果不保留原有 EXIF、GPS、时间戳等元数据，因为画布只有像素。已小于目标大小的文件会原样返回，元数据仍保留。[EXIF 查看与清除](https://httcup.github.io/exif-editor/)可查看和编辑 JPEG、PNG 和 WebP 元数据，不重新编码图片。AVIF 支持只读查看提取到的 EXIF，清理时将第一张解码后的图片转换为新的 PNG，颜色或 HDR 可能改变。
+重新编码的结果不保留原有 EXIF、GPS、时间戳等元数据，因为画布只有像素。已小于目标大小的文件会原样返回，元数据仍保留。[EXIF 查看与清除](https://139t.cn/exif-editor/)可查看和编辑 JPEG、PNG 和 WebP 元数据，不重新编码图片。AVIF 支持只读查看提取到的 EXIF，清理时将第一张解码后的图片转换为新的 PNG，颜色或 HDR 可能改变。
 
 ### 免费吗？要注册吗？
 

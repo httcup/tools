@@ -2,13 +2,13 @@
 
 写进样式表里的图片，跟样式表一起到：不用再发一次请求，也不用等。代价是它不再是一个文件，没法单独缓存，而且它周围的东西一改，它就得重新下一遍。这一页讲这笔交易什么时候划算，什么时候悄悄地不划算。
 
-[打开图片转 Data URI](https://httcup.github.io/tools/image-to-data-uri/): 整张图变成一行文本，直接粘进 CSS 或者 HTML。
+[打开图片转 Data URI](https://139t.cn/image-to-data-uri/): 整张图变成一行文本，直接粘进 CSS 或者 HTML。
 
 最后更新 2026年10月13日
 
 ## 先说结论
 
-打开[图片转 Data URI](https://httcup.github.io/tools/image-to-data-uri/)，把图丢进去，选*一个 CSS 自定义属性*，把那一行粘到样式表开头。之后哪儿要用，就写 `background-image: var(--logo)`。
+打开[图片转 Data URI](https://139t.cn/image-to-data-uri/)，把图丢进去，选*一个 CSS 自定义属性*，把那一行粘到样式表开头。之后哪儿要用，就写 `background-image: var(--logo)`。
 
 图小的时候这么干，图标、项目符号、小箭头、底纹这类，而且每个页面都要用。照片就别这么干。下面讲的，是这两句话为什么不一样，以及怎么判断你手上是哪一种。
 
@@ -57,9 +57,9 @@ background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUg...");
 - **它压在关键路径上。**样式表会阻塞渲染，图片不会。把图片内联进去，等于把它从第二类挪进第一类：整份东西，连图带样式，全到齐之前，页面画不出来。
 - **没法并行下载。**浏览器一次能下很多东西。内联的图不是独立的一样东西，所以这份好处它一点都沾不上。
 
-几个粗略的分界线，它们是建议改变的地方，不是浏览器行为改变的地方：2 KB 以内是明摆着的赚；到 10 KB 上下，只要它每页都要用，一般还是值；过了 50 KB，那就是个错，而且没有任何报错提醒你。[这个工具](https://httcup.github.io/tools/image-to-data-uri/)会告诉你每个结果落在哪一档，字符数就摆在旁边。
+几个粗略的分界线，它们是建议改变的地方，不是浏览器行为改变的地方：2 KB 以内是明摆着的赚；到 10 KB 上下，只要它每页都要用，一般还是值；过了 50 KB，那就是个错，而且没有任何报错提醒你。[这个工具](https://139t.cn/image-to-data-uri/)会告诉你每个结果落在哪一档，字符数就摆在旁边。
 
-![输出卡片：一条含 base64 数据 URI 的 CSS 规则，旁边是原文件大小和编码后的大小。](https://httcup.github.io/screens/embed-an-image-in-css/output.webp)
+![输出卡片：一条含 base64 数据 URI 的 CSS 规则，旁边是原文件大小和编码后的大小。](https://139t.cn/screens/embed-an-image-in-css/output.webp)
 
 编码后的副本比来源文件大三分之一左右。这一节要讲的代价就是它，而且是写出来的，不是留给你自己去发现的。
 
@@ -75,7 +75,7 @@ SVG 本来是文字，URL 本来能承载文字。只需转义 `%`、`#`、`<`�
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E...");
 ```
 
-你能直接看 `viewBox`、改填充色，无须解码。[图片转 Data URI](https://httcup.github.io/tools/image-to-data-uri/) 会自动这样处理有效 UTF-8 SVG。UTF-16 等其他编码、声明不一致或无效 UTF-8 改用原字节 Base64，并说明原因，避免悄悄改文件编码。要求 `;base64` 的工具链也可勾选专用选项。
+你能直接看 `viewBox`、改填充色，无须解码。[图片转 Data URI](https://139t.cn/image-to-data-uri/) 会自动这样处理有效 UTF-8 SVG。UTF-16 等其他编码、声明不一致或无效 UTF-8 改用原字节 Base64，并说明原因，避免悄悄改文件编码。要求 `;base64` 的工具链也可勾选专用选项。
 
 ## 那个只坑 SVG 的引号问题
 
@@ -109,7 +109,7 @@ data URI 是文件的逐字节副本。没有哪一步解码再重编，这通�
 
 一张刚出手机的照片带着 EXIF：拍摄地的 GPS 坐标、时间戳、相机型号，常常还有它的序列号。这些能占到 30 KB。内联之后就是你样式表里 40 KB 的 base64，压在每个页面的关键路径上，同时还把一个家庭住址以谁也想不到去看的形式提交进了仓库。
 
-先用 [EXIF 查看与清除](https://httcup.github.io/tools/exif-editor/)清掉它，那个工具只重写容器，画面碰都不碰，[另有一篇指南](https://httcup.github.io/tools/guides/remove-exif-and-gps-data/)讲它。图片转 Data URI 会读出 JPEG、PNG 或 WebP 里到底带了多少元数据，在你复制任何东西之前就告诉你。
+先用 [EXIF 查看与清除](https://139t.cn/exif-editor/)清掉它，那个工具只重写容器，画面碰都不碰，[另有一篇指南](https://139t.cn/guides/remove-exif-and-gps-data/)讲它。图片转 Data URI 会读出 JPEG、PNG 或 WebP 里到底带了多少元数据，在你复制任何东西之前就告诉你。
 
 ## 拿到之后，该放哪儿
 
@@ -130,7 +130,7 @@ data URI 是文件的逐字节副本。没有哪一步解码再重编，这通�
 
 `alt` 留空，除非你真有一句实话可写。这张图到底有实际含义还是纯装饰，只有你知道；而拿文件名瞎猜一句描述，对用读屏软件的人来说，比没有描述更糟。
 
-![形态卡片：几个按钮决定输出什么，CSS 背景规则、img 标签或裸的 URI，另有一个 base64 与原样 SVG 的开关。](https://httcup.github.io/screens/embed-an-image-in-css/shape.webp)
+![形态卡片：几个按钮决定输出什么，CSS 背景规则、img 标签或裸的 URI，另有一个 base64 与原样 SVG 的开关。](https://139t.cn/screens/embed-an-image-in-css/shape.webp)
 
 去处决定产出，所以先问清楚，而不是丢给你当成复制粘贴的练习。
 
@@ -138,7 +138,7 @@ data URI 是文件的逐字节副本。没有哪一步解码再重编，这通�
 
 图片编码之后超过 50 KB 上下，内联就是选错了工具，编码上再怎么讲究也补不回来。替代办法，按值得一试的顺序：
 
-- **把它做小。**大到不适合内联的图片，多半本来就太大了。[图片压缩](https://httcup.github.io/tools/compress-image/)能把一张照片压到你指定的大小，[图片缩放](https://httcup.github.io/tools/resize-image/)能把像素尺寸砍到版式实际用得上的那么大，而后者往往才是真正的问题所在。
+- **把它做小。**大到不适合内联的图片，多半本来就太大了。[图片压缩](https://139t.cn/compress-image/)能把一张照片压到你指定的大小，[图片缩放](https://139t.cn/resize-image/)能把像素尺寸砍到版式实际用得上的那么大，而后者往往才是真正的问题所在。
 - **改画成 SVG。**一个导出成 40 KB PNG 的图标，常常就是一个 900 字节的 SVG。这不是压缩率的差别，是格式的差别，而且顺手把高分屏那件事也解决了。
 - **让它继续当文件，然后预加载。**`<link rel="preload" as="image">` 会立刻开始取它，同时不把这些字节挪到关键路径上。内联的好处它占了大半，缓存那笔代价它一分不付。
 
@@ -146,4 +146,4 @@ data URI 是文件的逐字节副本。没有哪一步解码再重编，这通�
 
 把一个文件编成 base64 就是做算术。用的是浏览器从一开始就带着的两个函数，`btoa` 和 `encodeURIComponent`，而一张图为了换个写法就跑一趟服务器再回来，技术上毫无理由。凡是要你上传文件才肯干这件事的转换器，都是为它自己的理由在上传，不是为你的。
 
-[这里的工具](https://httcup.github.io/tools/image-to-data-uri/)哪儿都不发：页面的 `Content-Security-Policy` 把它可能联的地址全列了出来，没有一个是本站的。与其听我们说，不如把页面打开，拔掉网线，照编一张试试。[把文件传给在线转换器安全吗？](https://httcup.github.io/tools/guides/is-it-safe-to-upload-files/)里还有另外三个检查，用在任何工具上都管用。
+[这里的工具](https://139t.cn/image-to-data-uri/)哪儿都不发：页面的 `Content-Security-Policy` 把它可能联的地址全列了出来，没有一个是本站的。与其听我们说，不如把页面打开，拔掉网线，照编一张试试。[把文件传给在线转换器安全吗？](https://139t.cn/guides/is-it-safe-to-upload-files/)里还有另外三个检查，用在任何工具上都管用。

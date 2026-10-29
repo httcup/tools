@@ -4,7 +4,7 @@
 
 > 在浏览器中将支持的 YAML 1.2 子集转换为 JSON，也可将 JSON 转回 YAML。拒绝锚点、别名、标签和多文档流；JSON 会丢失注释。不会上传内容。
 
-This is an interactive browser tool at https://httcup.github.io/tools/yaml-to-json/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/yaml-to-json/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your YAML 和 JSON are **processed in your browser**. No processing upload.
 
@@ -26,14 +26,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/yaml-to-js
 
 ## The longer version
 
-[如何互转 YAML 与 JSON](https://httcup.github.io/tools/guides/convert-yaml-and-json/): 在浏览器中将支持的 YAML 子集转为 JSON，也可将 JSON 转为 YAML。复用前检查注释丢失、未支持的结构和精确数字文本。
+[如何互转 YAML 与 JSON](https://139t.cn/guides/convert-yaml-and-json/): 在浏览器中将支持的 YAML 子集转为 JSON，也可将 JSON 转为 YAML。复用前检查注释丢失、未支持的结构和精确数字文本。
 
 ## Also in the box
 
-- [XML 格式化](https://httcup.github.io/tools/xml-formatter/): 排开了好读的 XML，压平了好发的 XML，还有两个方向的 JSON 转换。这些都不会粘进别人的服务器。
-- [文本比对](https://httcup.github.io/tools/text-diff/): 两段文本进来，每处差异都被标出来，逐行、逐词。没有一个字被贴进别人的服务器。
-- [Base64 编码解码](https://httcup.github.io/tools/base64/): Base64、百分号编码、HTML 实体、十六进制和反斜杠转义，双向都行。没有一个字被贴进别人的服务器。
-- [二维码与条形码生成](https://httcup.github.io/tools/qr-barcode/): 打进去，就变成一个码。生成过程不往外送任何东西。
+- [XML 格式化](https://139t.cn/xml-formatter/): 排开了好读的 XML，压平了好发的 XML，还有两个方向的 JSON 转换。这些都不会粘进别人的服务器。
+- [文本比对](https://139t.cn/text-diff/): 两段文本进来，每处差异都被标出来，逐行、逐词。没有一个字被贴进别人的服务器。
+- [Base64 编码解码](https://139t.cn/base64/): Base64、百分号编码、HTML 实体、十六进制和反斜杠转义，双向都行。没有一个字被贴进别人的服务器。
+- [二维码与条形码生成](https://139t.cn/qr-barcode/): 打进去，就变成一个码。生成过程不往外送任何东西。
 
 ## Questions
 
@@ -59,7 +59,7 @@ YAML 1.1 将 `yes`、`no`、`on` 和 `off` 当作布尔值，导致挪威国家�
 
 ### 这里为什么没有 YAML 格式化？
 
-因为 YAML 没有值得一写的压缩形式——短的那种是流式风格，读不了，而读不了正是把文件留成 YAML 这件事的反面。排开 JSON、XML、HTML 和 CSS 是 [JSON 格式化](https://httcup.github.io/json-formatter/)的活儿，而且它也排 YAML。
+因为 YAML 没有值得一写的压缩形式——短的那种是流式风格，读不了，而读不了正是把文件留成 YAML 这件事的反面。排开 JSON、XML、HTML 和 CSS 是 [JSON 格式化](https://139t.cn/json-formatter/)的活儿，而且它也排 YAML。
 
 ### 文件最大能有多大？
 

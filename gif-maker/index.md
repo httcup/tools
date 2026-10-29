@@ -4,7 +4,7 @@
 
 > 把 JPG、PNG、WebP 或 AVIF 图片做成 GIF 动图，免费，全程在浏览器里完成。顺序、快慢和尺寸都由你定。什么都不上传，断网也能用。
 
-This is an interactive browser tool at https://httcup.github.io/tools/gif-maker/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/gif-maker/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 图片 are **processed in your browser**. No processing upload.
 
@@ -26,14 +26,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/gif-maker/
 
 ## The longer version
 
-[怎么用图片做一个动图 GIF](https://httcup.github.io/tools/guides/make-a-gif-from-images/): 把一组图片变成一个动图 GIF：GIF 到底能放多快、调色板那个选项改的是什么，以及真正能让文件变小的三件事。
+[怎么用图片做一个动图 GIF](https://139t.cn/guides/make-a-gif-from-images/): 把一组图片变成一个动图 GIF：GIF 到底能放多快、调色板那个选项改的是什么，以及真正能让文件变小的三件事。
 
 ## Also in the box
 
-- [GIF 拆帧](https://httcup.github.io/tools/split-gif/): 每一帧都单独存成一张 PNG。
-- [GIF 分析](https://httcup.github.io/tools/gif-analyzer/): 帧、延时、调色板，以及每个字节的去向。
-- [视频压缩](https://httcup.github.io/tools/compress-video/): 说一个它最多能有多大。剩下的工具来算，做完先量一遍再交给你。
-- [MP4 转换](https://httcup.github.io/tools/convert-to-mp4/): 不管从录屏、压制还是相机里出来的是什么，都变成 MP4 里的 H.264 和 AAC。能复制的原样复制，非改不可的才重新编码。
+- [GIF 拆帧](https://139t.cn/split-gif/): 每一帧都单独存成一张 PNG。
+- [GIF 分析](https://139t.cn/gif-analyzer/): 帧、延时、调色板，以及每个字节的去向。
+- [视频压缩](https://139t.cn/compress-video/): 说一个它最多能有多大。剩下的工具来算，做完先量一遍再交给你。
+- [MP4 转换](https://139t.cn/convert-to-mp4/): 不管从录屏、压制还是相机里出来的是什么，都变成 MP4 里的 H.264 和 AAC。能复制的原样复制，非改不可的才重新编码。
 
 ## Questions
 

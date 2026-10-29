@@ -4,7 +4,7 @@
 
 > 为支持的国家准备护照或签证照片：公布尺寸、注明的裁切指导值、头高和眼线提示、背景检查、打印拼版及 JPEG 上传预设。照片始终留在你的浏览器。
 
-This is an interactive browser tool at https://httcup.github.io/tools/id-photo/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/id-photo/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 照片 are **processed in your browser**. No processing upload.
 
@@ -26,14 +26,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/id-photo/.
 
 ## The longer version
 
-[如何准备护照或证件照](https://httcup.github.io/tools/guides/make-a-passport-photo/): 编辑证件照前，先查对应证件和申请规则。了解裁切尺寸，再准备允许的打印、上传、工作证或签名副本。
+[如何准备护照或证件照](https://139t.cn/guides/make-a-passport-photo/): 编辑证件照前，先查对应证件和申请规则。了解裁切尺寸，再准备允许的打印、上传、工作证或签名副本。
 
 ## Also in the box
 
-- [图片堆栈](https://httcup.github.io/tools/stack-images/): 二十张变一张，不用传二十次，也不用 RAW 转换器。
-- [图片涂黑与打码](https://httcup.github.io/tools/redact-image/): 你遮住的那块是从文件里删掉的，不是藏在文件里。
-- [EXIF 查看与清除](https://httcup.github.io/tools/exif-editor/): 看看一张照片把你交代了多少，然后删掉。
-- [DICOM 阅片器](https://httcup.github.io/tools/dicom-viewer/): CT、MR、X 光和超声，连窗宽窗位、头信息和测量一起。
+- [图片堆栈](https://139t.cn/stack-images/): 二十张变一张，不用传二十次，也不用 RAW 转换器。
+- [图片涂黑与打码](https://139t.cn/redact-image/): 你遮住的那块是从文件里删掉的，不是藏在文件里。
+- [EXIF 查看与清除](https://139t.cn/exif-editor/): 看看一张照片把你交代了多少，然后删掉。
+- [DICOM 阅片器](https://139t.cn/dicom-viewer/): CT、MR、X 光和超声，连窗宽窗位、头信息和测量一起。
 
 ## Questions
 

@@ -14,7 +14,7 @@ Dirección General de Tráfico 对这种证件的照片有什么要求，以 202
 | 背景 | 素净而浅——没公布颜色 |
 | 上传规定 | 没有公布——这一条是给打印的 |
 
-[按这条规定制作照片](https://httcup.github.io/tools/id-photo/#es-driving-licence) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
+[按这条规定制作照片](https://139t.cn/id-photo/#es-driving-licence) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
 
 ## 这条规定还说了什么
 
@@ -34,6 +34,6 @@ Dirección General de Tráfico 对这种证件的照片有什么要求，以 202
 
 ## 西班牙 的其他证件
 
-- [护照和身份证 (⁦Pasaporte, Documento Nacional de Identidad⁩)](https://httcup.github.io/tools/id-photo/es-passport/) — ⁦26 x 32⁩ 毫米
+- [护照和身份证 (⁦Pasaporte, Documento Nacional de Identidad⁩)](https://139t.cn/id-photo/es-passport/) — ⁦26 x 32⁩ 毫米
 
-[在证件照工具里查看所有国家和证件](https://httcup.github.io/tools/id-photo/)
+[在证件照工具里查看所有国家和证件](https://139t.cn/id-photo/)

@@ -4,7 +4,7 @@
 
 > 比对两段文本，逐行、逐词看清每一处差异，并排或单列显示。比对在你的浏览器里跑，什么都不上传——尚未发布的代码从不离开你的机器。
 
-This is an interactive browser tool at https://httcup.github.io/tools/text-diff/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/text-diff/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 文本 are **processed in your browser**. No processing upload.
 
@@ -26,14 +26,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/text-diff/
 
 ## The longer version
 
-[怎样比对两个 JSON 文件](https://httcup.github.io/tools/guides/compare-two-json-files/): 两个文件用同一种方式格式化，键排好序，再比对。为什么生比 JSON 几乎全是噪音，怎么在浏览器里把两边化成规范形，以及什么能一路留到补丁里。
+[怎样比对两个 JSON 文件](https://139t.cn/guides/compare-two-json-files/): 两个文件用同一种方式格式化，键排好序，再比对。为什么生比 JSON 几乎全是噪音，怎么在浏览器里把两边化成规范形，以及什么能一路留到补丁里。
 
 ## Also in the box
 
-- [Base64 编码解码](https://httcup.github.io/tools/base64/): Base64、百分号编码、HTML 实体、十六进制和反斜杠转义，双向都行。没有一个字被贴进别人的服务器。
-- [二维码与条形码生成](https://httcup.github.io/tools/qr-barcode/): 打进去，就变成一个码。生成过程不往外送任何东西。
-- [二维码与条形码识读](https://httcup.github.io/tools/qr-barcode-reader/): 把摄像头对准码，或者把拍下来的图丢进来。读这件事只发生在这里，别处都没有。
-- [哈希与校验和](https://httcup.github.io/tools/hash-checksum/): 把下载来的文件和发布方公布的那串数字对一下，不用把它发给任何人。
+- [Base64 编码解码](https://139t.cn/base64/): Base64、百分号编码、HTML 实体、十六进制和反斜杠转义，双向都行。没有一个字被贴进别人的服务器。
+- [二维码与条形码生成](https://139t.cn/qr-barcode/): 打进去，就变成一个码。生成过程不往外送任何东西。
+- [二维码与条形码识读](https://139t.cn/qr-barcode-reader/): 把摄像头对准码，或者把拍下来的图丢进来。读这件事只发生在这里，别处都没有。
+- [哈希与校验和](https://139t.cn/hash-checksum/): 把下载来的文件和发布方公布的那串数字对一下，不用把它发给任何人。
 
 ## Questions
 

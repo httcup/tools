@@ -4,7 +4,7 @@
 
 > 把 MP4、MOV 或 WebM 反过来放，声音也一并倒过来。全在浏览器里跑：什么都不上传，没有水印，断网照样能用。
 
-This is an interactive browser tool at https://httcup.github.io/tools/reverse-video/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/reverse-video/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 视频 are **processed in your browser**. No processing upload.
 
@@ -25,14 +25,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/reverse-vi
 
 ## The longer version
 
-[怎么把视频倒过来放](https://httcup.github.io/tools/guides/reverse-a-video/): 把片子反着放：倒放对画面和声音都做了什么，为什么它绕不开重新编码，为什么比剪辑慢，以及动手之前该先做哪一步。
+[怎么把视频倒过来放](https://139t.cn/guides/reverse-a-video/): 把片子反着放：倒放对画面和声音都做了什么，为什么它绕不开重新编码，为什么比剪辑慢，以及动手之前该先做哪一步。
 
 ## Also in the box
 
-- [延时视频](https://httcup.github.io/tools/timelapse-video/): 一小时的素材，二十秒看完。
-- [视频截帧](https://httcup.github.io/tools/grab-frame/): 任意位置，一张原画质静帧。
-- [GIF 转 MP4](https://httcup.github.io/tools/gif-to-mp4/): 每一帧都带着 GIF 给它的延时，变成 MP4 里的 H.264。在你的机器上转，文件从不上传。
-- [视频转 GIF](https://httcup.github.io/tools/video-to-gif/): 挑好段落、尺寸和帧率。
+- [延时视频](https://139t.cn/timelapse-video/): 一小时的素材，二十秒看完。
+- [视频截帧](https://139t.cn/grab-frame/): 任意位置，一张原画质静帧。
+- [GIF 转 MP4](https://139t.cn/gif-to-mp4/): 每一帧都带着 GIF 给它的延时，变成 MP4 里的 H.264。在你的机器上转，文件从不上传。
+- [视频转 GIF](https://139t.cn/video-to-gif/): 挑好段落、尺寸和帧率。
 
 ## Questions
 
@@ -62,7 +62,7 @@ MP4、M4V 和 MOV 直接读，里面装什么都行：H.264、HEVC、AV1 或 VP9
 
 ### 能只倒放其中一段吗？
 
-这里不行。这个工具倒的是整段：出来的片子和进去的一样长，只是最后一帧排在最前。先用[视频剪辑](https://httcup.github.io/trim-video/)把你要的那段剪出来，那个工具剪的时候一帧都不用重新编码，然后再把剪出来的东西拿来倒。
+这里不行。这个工具倒的是整段：出来的片子和进去的一样长，只是最后一帧排在最前。先用[视频剪辑](https://139t.cn/trim-video/)把你要的那段剪出来，那个工具剪的时候一帧都不用重新编码，然后再把剪出来的东西拿来倒。
 
 ### 它免费吗，需要注册吗？
 

@@ -4,7 +4,7 @@
 
 > 在浏览器里把 WebM、MKV、MOV 或任何 MP4 变成装着 H.264 和 AAC 的 MP4，也就是每一部手机、每一个浏览器和上传表单都收的那种文件。已经是 H.264、AAC 的轨道原样复制；其余的在你的机器上重新编码。什么都不上传。
 
-This is an interactive browser tool at https://httcup.github.io/tools/convert-to-mp4/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/convert-to-mp4/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 视频 are **processed in your browser**. No processing upload.
 
@@ -24,14 +24,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/convert-to
 
 ## The longer version
 
-[如何把视频转为普遍接受的 MP4](https://httcup.github.io/tools/guides/convert-a-video-to-mp4/): 可顺利上传的 MP4 包含什么，WebM、MKV 和 iPhone MOV 为何被拒，哪些转换无损，以及如何在浏览器中无需上传完成。
+[如何把视频转为普遍接受的 MP4](https://139t.cn/guides/convert-a-video-to-mp4/): 可顺利上传的 MP4 包含什么，WebM、MKV 和 iPhone MOV 为何被拒，哪些转换无损，以及如何在浏览器中无需上传完成。
 
 ## Also in the box
 
-- [视频旋转](https://httcup.github.io/tools/rotate-video/): 转四分之一圈、半圈，或者往另一边转。使用文件头旋转时，每一帧画面保持原样。
-- [图片转视频](https://httcup.github.io/tools/images-to-video/): 一个文件夹的图片，变成一段视频。
-- [视频剪切](https://httcup.github.io/tools/trim-video/): 一边看一边标出要留的段落，最后拿回一个视频。
-- [视频裁剪](https://httcup.github.io/tools/crop-video/): 把片子切到只剩要紧的那块。
+- [视频旋转](https://139t.cn/rotate-video/): 转四分之一圈、半圈，或者往另一边转。使用文件头旋转时，每一帧画面保持原样。
+- [图片转视频](https://139t.cn/images-to-video/): 一个文件夹的图片，变成一段视频。
+- [视频剪切](https://139t.cn/trim-video/): 一边看一边标出要留的段落，最后拿回一个视频。
+- [视频裁剪](https://139t.cn/crop-video/): 把片子切到只剩要紧的那块。
 
 ## Questions
 
@@ -65,7 +65,7 @@ WebM 和 MKV，画面是 VP8、VP9、AV1、H.264 或 HEVC，声音是 Opus、Vor
 
 ### 手机上能用吗？
 
-浏览器能解码和编码视频的手机上能用，而且手机自带的硬件编码器很快。手机缺的是内存：做好的文件会一直放在内存里直到你保存它，所以一段很长的视频可能超出手机能装下的量。先用[视频剪辑](https://httcup.github.io/trim-video/)剪短，或者在笔记本上转。
+浏览器能解码和编码视频的手机上能用，而且手机自带的硬件编码器很快。手机缺的是内存：做好的文件会一直放在内存里直到你保存它，所以一段很长的视频可能超出手机能装下的量。先用[视频剪辑](https://139t.cn/trim-video/)剪短，或者在笔记本上转。
 
 ### 有大小限制吗？要钱吗？
 

@@ -14,7 +14,7 @@ Bundesministerium des Innern 对这种证件的照片有什么要求，以 2026-
 | 背景 | 纯浅灰 |
 | 上传规定 | 没有公布——这一条是给打印的 |
 
-[按这条规定制作照片](https://httcup.github.io/tools/id-photo/#de-passport) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
+[按这条规定制作照片](https://139t.cn/id-photo/#de-passport) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
 
 ## 这条规定还说了什么
 
@@ -34,6 +34,6 @@ Bundesministerium des Innern 对这种证件的照片有什么要求，以 2026-
 
 ## 德国 的其他证件
 
-- [医保卡 (⁦Gesundheitskarte⁩)](https://httcup.github.io/tools/id-photo/de-health-card/) — ⁦35 x 45⁩ 毫米
+- [医保卡 (⁦Gesundheitskarte⁩)](https://139t.cn/id-photo/de-health-card/) — ⁦35 x 45⁩ 毫米
 
-[在证件照工具里查看所有国家和证件](https://httcup.github.io/tools/id-photo/)
+[在证件照工具里查看所有国家和证件](https://139t.cn/id-photo/)

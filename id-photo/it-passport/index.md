@@ -14,7 +14,7 @@ Polizia di Stato 对这种证件的照片有什么要求，以 2026-09-17 读到
 | 背景 | 白、浅灰或浅蓝 |
 | 上传规定 | 没有公布——这一条是给打印的 |
 
-[按这条规定制作照片](https://httcup.github.io/tools/id-photo/#it-passport) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
+[按这条规定制作照片](https://139t.cn/id-photo/#it-passport) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
 
 ## 这条规定还说了什么
 
@@ -34,7 +34,7 @@ Polizia di Stato 对这种证件的照片有什么要求，以 2026-09-17 读到
 
 ## 意大利 的其他证件
 
-- [身份证 (⁦Carta d’identità elettronica⁩)](https://httcup.github.io/tools/id-photo/it-id-card/) — ⁦35 x 45⁩ 毫米
-- [驾驶证 (⁦Patente di guida⁩)](https://httcup.github.io/tools/id-photo/it-driving-licence/) — ⁦35 x 45⁩ 毫米
+- [身份证 (⁦Carta d’identità elettronica⁩)](https://139t.cn/id-photo/it-id-card/) — ⁦35 x 45⁩ 毫米
+- [驾驶证 (⁦Patente di guida⁩)](https://139t.cn/id-photo/it-driving-licence/) — ⁦35 x 45⁩ 毫米
 
-[在证件照工具里查看所有国家和证件](https://httcup.github.io/tools/id-photo/)
+[在证件照工具里查看所有国家和证件](https://139t.cn/id-photo/)

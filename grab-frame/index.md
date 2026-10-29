@@ -4,7 +4,7 @@
 
 > 把 MP4、MOV 或 WebM 的任意一帧存成原尺寸 PNG 或 JPEG。可以一帧一帧地挪，也可以每隔几秒截一张。全在浏览器里跑，什么都不上传。
 
-This is an interactive browser tool at https://httcup.github.io/tools/grab-frame/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/grab-frame/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 视频 are **processed in your browser**. No processing upload.
 
@@ -25,14 +25,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/grab-frame
 
 ## The longer version
 
-[怎么把视频里的一帧存成图片](https://httcup.github.io/tools/guides/grab-a-frame-from-a-video/): 按原分辨率从片子里取一张静帧：为什么暂停后的截屏不是同一张图、该存成什么格式，以及怎么正好停在你想要的那一帧。
+[怎么把视频里的一帧存成图片](https://139t.cn/guides/grab-a-frame-from-a-video/): 按原分辨率从片子里取一张静帧：为什么暂停后的截屏不是同一张图、该存成什么格式，以及怎么正好停在你想要的那一帧。
 
 ## Also in the box
 
-- [GIF 转 MP4](https://httcup.github.io/tools/gif-to-mp4/): 每一帧都带着 GIF 给它的延时，变成 MP4 里的 H.264。在你的机器上转，文件从不上传。
-- [视频转 GIF](https://httcup.github.io/tools/video-to-gif/): 挑好段落、尺寸和帧率。
-- [GIF 制作](https://httcup.github.io/tools/gif-maker/): 把一组图片变成一段动画。
-- [GIF 拆帧](https://httcup.github.io/tools/split-gif/): 每一帧都单独存成一张 PNG。
+- [GIF 转 MP4](https://139t.cn/gif-to-mp4/): 每一帧都带着 GIF 给它的延时，变成 MP4 里的 H.264。在你的机器上转，文件从不上传。
+- [视频转 GIF](https://139t.cn/video-to-gif/): 挑好段落、尺寸和帧率。
+- [GIF 制作](https://139t.cn/gif-maker/): 把一组图片变成一段动画。
+- [GIF 拆帧](https://139t.cn/split-gif/): 每一帧都单独存成一张 PNG。
 
 ## Questions
 
@@ -62,7 +62,7 @@ MP4 可以，而且是精确的：工具读的是文件自己的帧列表，所�
 
 ### 截下来的图之后能缩放或裁剪吗？
 
-这里不行，隔壁可以。这个工具只是把帧原样存下来；改尺寸或改形状是另一件事，里面有自己的取舍，[图片尺寸调整](https://httcup.github.io/resize-image/)两件都能做，同样什么都不上传。想在不改画面的前提下把文件变小，用[图片压缩](https://httcup.github.io/compress-image/)。
+这里不行，隔壁可以。这个工具只是把帧原样存下来；改尺寸或改形状是另一件事，里面有自己的取舍，[图片尺寸调整](https://139t.cn/resize-image/)两件都能做，同样什么都不上传。想在不改画面的前提下把文件变小，用[图片压缩](https://139t.cn/compress-image/)。
 
 ### 它免费吗，需要注册吗？
 

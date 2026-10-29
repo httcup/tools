@@ -14,7 +14,7 @@ HM Passport Office 对这种证件的照片有什么要求，以 2026-08-20 读�
 | 背景 | 浅灰或奶油色 |
 | 在线申请用的数码照片 | 至少 ⁦600 x 750⁩ px，JPEG，50.0 KB 到 10.00 MB |
 
-[按这条规定制作照片](https://httcup.github.io/tools/id-photo/#uk-passport) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
+[按这条规定制作照片](https://139t.cn/id-photo/#uk-passport) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
 
 ## 这条规定还说了什么
 
@@ -34,6 +34,6 @@ HM Passport Office 对这种证件的照片有什么要求，以 2026-08-20 读�
 
 ## 英国 的其他证件
 
-- [驾驶证（北爱尔兰）](https://httcup.github.io/tools/id-photo/uk-ni-driving-licence/) — ⁦35 x 45⁩ 毫米
+- [驾驶证（北爱尔兰）](https://139t.cn/id-photo/uk-ni-driving-licence/) — ⁦35 x 45⁩ 毫米
 
-[在证件照工具里查看所有国家和证件](https://httcup.github.io/tools/id-photo/)
+[在证件照工具里查看所有国家和证件](https://139t.cn/id-photo/)

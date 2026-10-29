@@ -2,199 +2,199 @@
 
 > 185 个单用途浏览器工具：图片压缩与转换、PDF 处理、视频音频编辑、文本编码、密码生成、双设备直连。所有处理在浏览器本地完成，文件不上传、无需注册。
 
-页面地址以 https://httcup.github.io/tools/ 为前缀。
+页面地址以 https://139t.cn/ 为前缀。
 
 ## 工具
 
 ### 图片
-- [图片压缩](https://httcup.github.io/tools/compress-image/): 说个大小，剩下的它来算。
-- [图片缩放](https://httcup.github.io/tools/resize-image/): 说个尺寸，拉个框，挑个格式。
-- [图片拼版](https://httcup.github.io/tools/image-layout/): 把图片拼成拼贴、联系表或长条，留在本机。
-- [HEIC 转 JPG](https://httcup.github.io/tools/heic-to-jpg/): iPhone 拍的照片，换成什么都打得开的格式。
-- [WebP 转 JPG](https://httcup.github.io/tools/webp-to-jpg/): 把网页保存的图片，变成所有软件仍然接受的格式。
-- [PNG 转 WebP](https://httcup.github.io/tools/png-to-webp/): 同一张图片，常常减少三分之一体积，透明区域保持完整。
-- [AVIF 转 JPG](https://httcup.github.io/tools/avif-to-jpg/): 把网站如今保存的格式，变成所有软件一直支持的格式。
-- [证件照制作](https://httcup.github.io/tools/id-photo/): 选择支持的国家和证件。公布的要求与指导值均有标注。
-- [图片堆栈](https://httcup.github.io/tools/stack-images/): 二十张变一张，不用传二十次，也不用 RAW 转换器。
-- [图片涂黑与打码](https://httcup.github.io/tools/redact-image/): 你遮住的那块是从文件里删掉的，不是藏在文件里。
-- [EXIF 查看与清除](https://httcup.github.io/tools/exif-editor/): 看看一张照片把你交代了多少，然后删掉。
-- [DICOM 阅片器](https://httcup.github.io/tools/dicom-viewer/): CT、MR、X 光和超声，连窗宽窗位、头信息和测量一起。
-- [图片转 ICO](https://httcup.github.io/tools/image-to-ico/): 进去一张图，出来的是浏览器、Windows 和 Mac 各自要的每一个尺寸。
-- [图片转 Data URI](https://httcup.github.io/tools/image-to-data-uri/): 整张图变成一行文本，直接粘进 CSS 或者 HTML。
-- [SVG 转图片](https://httcup.github.io/tools/svg-to-image/): 说个尺寸。矢量图本来就没有尺寸可丢。
-- [图片转 SVG](https://httcup.github.io/tools/image-to-svg/): 一个形状，一条轮廓。不该有的东西，点一下就好。
-- [身高对比图](https://httcup.github.io/tools/compare-heights/): 把身高打进去，把图带走。为了画它，不会往外送任何东西。
-- [商家资料预览](https://httcup.github.io/tools/business-profile-preview/): 把内容打进去，它就变成 Google 会画的那张卡片。为了画它，不会往外送任何东西。
-- [图片格式转换](https://httcup.github.io/tools/image-format-converter/): JPG、PNG、WebP 互转，批量处理，透明背景可选填色。
-- [证件加水印](https://httcup.github.io/tools/image-watermark/): 给身份证等图片平铺水印文字，防止复印件被盗用。
+- [图片压缩](https://139t.cn/compress-image/): 说个大小，剩下的它来算。
+- [图片缩放](https://139t.cn/resize-image/): 说个尺寸，拉个框，挑个格式。
+- [图片拼版](https://139t.cn/image-layout/): 把图片拼成拼贴、联系表或长条，留在本机。
+- [HEIC 转 JPG](https://139t.cn/heic-to-jpg/): iPhone 拍的照片，换成什么都打得开的格式。
+- [WebP 转 JPG](https://139t.cn/webp-to-jpg/): 把网页保存的图片，变成所有软件仍然接受的格式。
+- [PNG 转 WebP](https://139t.cn/png-to-webp/): 同一张图片，常常减少三分之一体积，透明区域保持完整。
+- [AVIF 转 JPG](https://139t.cn/avif-to-jpg/): 把网站如今保存的格式，变成所有软件一直支持的格式。
+- [证件照制作](https://139t.cn/id-photo/): 选择支持的国家和证件。公布的要求与指导值均有标注。
+- [图片堆栈](https://139t.cn/stack-images/): 二十张变一张，不用传二十次，也不用 RAW 转换器。
+- [图片涂黑与打码](https://139t.cn/redact-image/): 你遮住的那块是从文件里删掉的，不是藏在文件里。
+- [EXIF 查看与清除](https://139t.cn/exif-editor/): 看看一张照片把你交代了多少，然后删掉。
+- [DICOM 阅片器](https://139t.cn/dicom-viewer/): CT、MR、X 光和超声，连窗宽窗位、头信息和测量一起。
+- [图片转 ICO](https://139t.cn/image-to-ico/): 进去一张图，出来的是浏览器、Windows 和 Mac 各自要的每一个尺寸。
+- [图片转 Data URI](https://139t.cn/image-to-data-uri/): 整张图变成一行文本，直接粘进 CSS 或者 HTML。
+- [SVG 转图片](https://139t.cn/svg-to-image/): 说个尺寸。矢量图本来就没有尺寸可丢。
+- [图片转 SVG](https://139t.cn/image-to-svg/): 一个形状，一条轮廓。不该有的东西，点一下就好。
+- [身高对比图](https://139t.cn/compare-heights/): 把身高打进去，把图带走。为了画它，不会往外送任何东西。
+- [商家资料预览](https://139t.cn/business-profile-preview/): 把内容打进去，它就变成 Google 会画的那张卡片。为了画它，不会往外送任何东西。
+- [图片格式转换](https://139t.cn/image-format-converter/): JPG、PNG、WebP 互转，批量处理，透明背景可选填色。
+- [证件加水印](https://139t.cn/image-watermark/): 给身份证等图片平铺水印文字，防止复印件被盗用。
 
 ### 视频与动画
-- [视频压缩](https://httcup.github.io/tools/compress-video/): 说一个它最多能有多大。剩下的工具来算，做完先量一遍再交给你。
-- [MP4 转换](https://httcup.github.io/tools/convert-to-mp4/): 不管从录屏、压制还是相机里出来的是什么，都变成 MP4 里的 H.264 和 AAC。能复制的原样复制，非改不可的才重新编码。
-- [视频旋转](https://httcup.github.io/tools/rotate-video/): 转四分之一圈、半圈，或者往另一边转。使用文件头旋转时，每一帧画面保持原样。
-- [图片转视频](https://httcup.github.io/tools/images-to-video/): 一个文件夹的图片，变成一段视频。
-- [视频剪切](https://httcup.github.io/tools/trim-video/): 一边看一边标出要留的段落，最后拿回一个视频。
-- [视频裁剪](https://httcup.github.io/tools/crop-video/): 把片子切到只剩要紧的那块。
-- [视频倒放](https://httcup.github.io/tools/reverse-video/): 最后一帧排在最前，连声音一起。
-- [延时视频](https://httcup.github.io/tools/timelapse-video/): 一小时的素材，二十秒看完。
-- [视频截帧](https://httcup.github.io/tools/grab-frame/): 任意位置，一张原画质静帧。
-- [GIF 转 MP4](https://httcup.github.io/tools/gif-to-mp4/): 每一帧都带着 GIF 给它的延时，变成 MP4 里的 H.264。在你的机器上转，文件从不上传。
-- [视频转 GIF](https://httcup.github.io/tools/video-to-gif/): 挑好段落、尺寸和帧率。
-- [GIF 制作](https://httcup.github.io/tools/gif-maker/): 把一组图片变成一段动画。
-- [GIF 拆帧](https://httcup.github.io/tools/split-gif/): 每一帧都单独存成一张 PNG。
-- [GIF 分析](https://httcup.github.io/tools/gif-analyzer/): 帧、延时、调色板，以及每个字节的去向。
+- [视频压缩](https://139t.cn/compress-video/): 说一个它最多能有多大。剩下的工具来算，做完先量一遍再交给你。
+- [MP4 转换](https://139t.cn/convert-to-mp4/): 不管从录屏、压制还是相机里出来的是什么，都变成 MP4 里的 H.264 和 AAC。能复制的原样复制，非改不可的才重新编码。
+- [视频旋转](https://139t.cn/rotate-video/): 转四分之一圈、半圈，或者往另一边转。使用文件头旋转时，每一帧画面保持原样。
+- [图片转视频](https://139t.cn/images-to-video/): 一个文件夹的图片，变成一段视频。
+- [视频剪切](https://139t.cn/trim-video/): 一边看一边标出要留的段落，最后拿回一个视频。
+- [视频裁剪](https://139t.cn/crop-video/): 把片子切到只剩要紧的那块。
+- [视频倒放](https://139t.cn/reverse-video/): 最后一帧排在最前，连声音一起。
+- [延时视频](https://139t.cn/timelapse-video/): 一小时的素材，二十秒看完。
+- [视频截帧](https://139t.cn/grab-frame/): 任意位置，一张原画质静帧。
+- [GIF 转 MP4](https://139t.cn/gif-to-mp4/): 每一帧都带着 GIF 给它的延时，变成 MP4 里的 H.264。在你的机器上转，文件从不上传。
+- [视频转 GIF](https://139t.cn/video-to-gif/): 挑好段落、尺寸和帧率。
+- [GIF 制作](https://139t.cn/gif-maker/): 把一组图片变成一段动画。
+- [GIF 拆帧](https://139t.cn/split-gif/): 每一帧都单独存成一张 PNG。
+- [GIF 分析](https://139t.cn/gif-analyzer/): 帧、延时、调色板，以及每个字节的去向。
 
 ### 文档与音频
-- [PDF 合并与拆分](https://httcup.github.io/tools/merge-pdf/): 挪动页面，不用往服务器跑一趟。
-- [PDF 压缩](https://httcup.github.io/tools/compress-pdf/): 文档变小，不用送去任何地方。
-- [PDF 解锁](https://httcup.github.io/tools/unlock-pdf/): 权限限制与打开密码不同。页面会说明你的 PDF 使用哪种保护。
-- [PDF 加密](https://httcup.github.io/tools/protect-pdf/): 把文档锁上，而不是为了锁它先把它交给一个网站。
-- [PDF 水印](https://httcup.github.io/tools/watermark-pdf/): 一份写着自己去了哪里的扫描件，就没法悄悄再去别的地方。
-- [PDF 涂黑](https://httcup.github.io/tools/redact-pdf/): 字从文件里删掉，然后再搜一遍这个文件来证明。
-- [PDF 转 CSV](https://httcup.github.io/tools/pdf-to-csv/): 将检测到的 PDF 文本表格转换成电子表格可打开的行。
-- [收据与发票识别](https://httcup.github.io/tools/receipt-invoice-extractor/): 读取照片，检查字段和裁剪结果，准备供邮件应用使用的压缩附件和合计。
-- [图片转 PDF](https://httcup.github.io/tools/images-to-pdf/): 把你的图片装进一个文档。
-- [文档扫描](https://httcup.github.io/tools/document-scanner/): 把纸拍下来，回来的是一份看着像扫描的东西。
-- [从视频里提取音频](https://httcup.github.io/tools/extract-audio-from-video/): 把视频拖进来，声音就取出来了。画面从不解码，也不上传任何东西。
-- [音频剪辑](https://httcup.github.io/tools/trim-audio/): 边听边标出值得留的段落。它们会合成一个文件回来，就切在你说的位置。
-- [音频编辑](https://httcup.github.io/tools/edit-audio/): 倒着放、快慢随你调、把录轻了的声音提上来，全在你这台机器上。
-- [Markdown 转 Word](https://httcup.github.io/tools/md-to-word/): 把 AI 回答或 Markdown 下载成可编辑的 .docx，公式表格保留。
-- [随手记存为.md](https://httcup.github.io/tools/md-notes/): 记完直接存成 .md 文件。
+- [PDF 合并与拆分](https://139t.cn/merge-pdf/): 挪动页面，不用往服务器跑一趟。
+- [PDF 压缩](https://139t.cn/compress-pdf/): 文档变小，不用送去任何地方。
+- [PDF 解锁](https://139t.cn/unlock-pdf/): 权限限制与打开密码不同。页面会说明你的 PDF 使用哪种保护。
+- [PDF 加密](https://139t.cn/protect-pdf/): 把文档锁上，而不是为了锁它先把它交给一个网站。
+- [PDF 水印](https://139t.cn/watermark-pdf/): 一份写着自己去了哪里的扫描件，就没法悄悄再去别的地方。
+- [PDF 涂黑](https://139t.cn/redact-pdf/): 字从文件里删掉，然后再搜一遍这个文件来证明。
+- [PDF 转 CSV](https://139t.cn/pdf-to-csv/): 将检测到的 PDF 文本表格转换成电子表格可打开的行。
+- [收据与发票识别](https://139t.cn/receipt-invoice-extractor/): 读取照片，检查字段和裁剪结果，准备供邮件应用使用的压缩附件和合计。
+- [图片转 PDF](https://139t.cn/images-to-pdf/): 把你的图片装进一个文档。
+- [文档扫描](https://139t.cn/document-scanner/): 把纸拍下来，回来的是一份看着像扫描的东西。
+- [从视频里提取音频](https://139t.cn/extract-audio-from-video/): 把视频拖进来，声音就取出来了。画面从不解码，也不上传任何东西。
+- [音频剪辑](https://139t.cn/trim-audio/): 边听边标出值得留的段落。它们会合成一个文件回来，就切在你说的位置。
+- [音频编辑](https://139t.cn/edit-audio/): 倒着放、快慢随你调、把录轻了的声音提上来，全在你这台机器上。
+- [Markdown 转 Word](https://139t.cn/md-to-word/): 把 AI 回答或 Markdown 下载成可编辑的 .docx，公式表格保留。
+- [随手记存为.md](https://139t.cn/md-notes/): 记完直接存成 .md 文件。
 
 ### 文本、编码与密码
-- [JSON 格式化](https://httcup.github.io/tools/json-formatter/): JSON、XML、HTML、CSS 和 YAML，格式化或转换。没有一个字被贴进别人的服务器。
-- [YAML 转 JSON](https://httcup.github.io/tools/yaml-to-json/): 两个方向都有，而且会告诉你各自的代价。这些都不会粘进别人的服务器。
-- [XML 格式化](https://httcup.github.io/tools/xml-formatter/): 排开了好读的 XML，压平了好发的 XML，还有两个方向的 JSON 转换。这些都不会粘进别人的服务器。
-- [文本比对](https://httcup.github.io/tools/text-diff/): 两段文本进来，每处差异都被标出来，逐行、逐词。没有一个字被贴进别人的服务器。
-- [Base64 编码解码](https://httcup.github.io/tools/base64/): Base64、百分号编码、HTML 实体、十六进制和反斜杠转义，双向都行。没有一个字被贴进别人的服务器。
-- [二维码与条形码生成](https://httcup.github.io/tools/qr-barcode/): 打进去，就变成一个码。生成过程不往外送任何东西。
-- [二维码与条形码识读](https://httcup.github.io/tools/qr-barcode-reader/): 把摄像头对准码，或者把拍下来的图丢进来。读这件事只发生在这里，别处都没有。
-- [哈希与校验和](https://httcup.github.io/tools/hash-checksum/): 把下载来的文件和发布方公布的那串数字对一下，不用把它发给任何人。
-- [密码与密码短语生成器](https://httcup.github.io/tools/password-generator/): 在这里生成，由你自己的浏览器生成，不发往任何地方。什么都不保存，也没有历史记录。
-- [删除重复行](https://httcup.github.io/tools/dedupe-lines/): 粘贴名单，重复的行只留一条，可忽略大小写和首尾空格。
-- [删除换行](https://httcup.github.io/tools/remove-line-breaks/): 修掉从 PDF 复制出来的断行，段落结构可以保留。
-- [文本排序](https://httcup.github.io/tools/sort-lines/): 按字母、拼音、长度排序，也能反转或随机打乱。
-- [随机抽签](https://httcup.github.io/tools/random-picker/): 贴名单抽中奖者，加密级随机数，也能整队打乱。
-- [二维码生成和美化](https://httcup.github.io/tools/qr-style/): 参数化二维码：8 种点阵样式、渐变配色、内嵌标志，导出 PNG/SVG。
+- [JSON 格式化](https://139t.cn/json-formatter/): JSON、XML、HTML、CSS 和 YAML，格式化或转换。没有一个字被贴进别人的服务器。
+- [YAML 转 JSON](https://139t.cn/yaml-to-json/): 两个方向都有，而且会告诉你各自的代价。这些都不会粘进别人的服务器。
+- [XML 格式化](https://139t.cn/xml-formatter/): 排开了好读的 XML，压平了好发的 XML，还有两个方向的 JSON 转换。这些都不会粘进别人的服务器。
+- [文本比对](https://139t.cn/text-diff/): 两段文本进来，每处差异都被标出来，逐行、逐词。没有一个字被贴进别人的服务器。
+- [Base64 编码解码](https://139t.cn/base64/): Base64、百分号编码、HTML 实体、十六进制和反斜杠转义，双向都行。没有一个字被贴进别人的服务器。
+- [二维码与条形码生成](https://139t.cn/qr-barcode/): 打进去，就变成一个码。生成过程不往外送任何东西。
+- [二维码与条形码识读](https://139t.cn/qr-barcode-reader/): 把摄像头对准码，或者把拍下来的图丢进来。读这件事只发生在这里，别处都没有。
+- [哈希与校验和](https://139t.cn/hash-checksum/): 把下载来的文件和发布方公布的那串数字对一下，不用把它发给任何人。
+- [密码与密码短语生成器](https://139t.cn/password-generator/): 在这里生成，由你自己的浏览器生成，不发往任何地方。什么都不保存，也没有历史记录。
+- [删除重复行](https://139t.cn/dedupe-lines/): 粘贴名单，重复的行只留一条，可忽略大小写和首尾空格。
+- [删除换行](https://139t.cn/remove-line-breaks/): 修掉从 PDF 复制出来的断行，段落结构可以保留。
+- [文本排序](https://139t.cn/sort-lines/): 按字母、拼音、长度排序，也能反转或随机打乱。
+- [随机抽签](https://139t.cn/random-picker/): 贴名单抽中奖者，加密级随机数，也能整队打乱。
+- [二维码生成和美化](https://139t.cn/qr-style/): 参数化二维码：8 种点阵样式、渐变配色、内嵌标志，导出 PNG/SVG。
 
 ### 连接设备
-- [文本与文件分享](https://httcup.github.io/tools/share-text/): 从打开的浏览器加密分享文本与文件。默认直连，也可选择云中转。你可以逐一批准读者。
-- [本地对讲机](https://httcup.github.io/tools/walkie-talkie/): 建个频道，按住说话或免提；局域网直连或走云中转。
-- [语音寻呼台](https://httcup.github.io/tools/voice-oncall/): 打开寻呼机就听到实时语音，可设密码、单独静音或移除。
-- [远程摄像头](https://httcup.github.io/tools/remote-camera/): 一台设备开摄像头，另一台浏览器观看，可要求批准。
-- [分享浏览器标签页](https://httcup.github.io/tools/share-tab/): 把一个标签页分享给一位批准者，无需扩展、不传声音。
+- [文本与文件分享](https://139t.cn/share-text/): 从打开的浏览器加密分享文本与文件。默认直连，也可选择云中转。你可以逐一批准读者。
+- [本地对讲机](https://139t.cn/walkie-talkie/): 建个频道，按住说话或免提；局域网直连或走云中转。
+- [语音寻呼台](https://139t.cn/voice-oncall/): 打开寻呼机就听到实时语音，可设密码、单独静音或移除。
+- [远程摄像头](https://139t.cn/remote-camera/): 一台设备开摄像头，另一台浏览器观看，可要求批准。
+- [分享浏览器标签页](https://139t.cn/share-tab/): 把一个标签页分享给一位批准者，无需扩展、不传声音。
 
 ### 计算与实用
-- [BMI 计算器](https://httcup.github.io/tools/bmi/): 身高体重一填，按中国成人标准给结论与健康体重范围。
-- [房贷计算器](https://httcup.github.io/tools/loan/): 等额本息或等额本金，月供、利息总额当场算清。
-- [百分比计算器](https://httcup.github.io/tools/percentage/): 占比、求百分之几、增减幅，三种问法都算。
-- [复利计算器](https://httcup.github.io/tools/compound-interest/): 本金加每月定投，按复利滚到未来值多少。
-- [日期天数计算](https://httcup.github.io/tools/date-diff/): 两个日期差几天、几周、几个工作日。
-- [年龄计算器](https://httcup.github.io/tools/age/): 生日填进去：精确周岁、活了多少天、生日倒计时。
-- [打折计算器](https://httcup.github.io/tools/discount/): 「打 7.5 折」和「25% OFF」都认，折后价立省多少一秒出。
-- [单位换算](https://httcup.github.io/tools/unit-converter/): 长度、重量、温度、面积、数据体积，一个页面换完。
-- [时区换算](https://httcup.github.io/tools/timezone-converter/): 填一个时间，常用时区的对应时间一次排开。
-- [文字转语音](https://httcup.github.io/tools/text-to-speech/): 用系统自带语音朗读文本，调语速音调，中文英文都行。
-- [在线录音](https://httcup.github.io/tools/voice-recorder/): 浏览器直接录音，录完试听、下载，不经过服务器。
+- [BMI 计算器](https://139t.cn/bmi/): 身高体重一填，按中国成人标准给结论与健康体重范围。
+- [房贷计算器](https://139t.cn/loan/): 等额本息或等额本金，月供、利息总额当场算清。
+- [百分比计算器](https://139t.cn/percentage/): 占比、求百分之几、增减幅，三种问法都算。
+- [复利计算器](https://139t.cn/compound-interest/): 本金加每月定投，按复利滚到未来值多少。
+- [日期天数计算](https://139t.cn/date-diff/): 两个日期差几天、几周、几个工作日。
+- [年龄计算器](https://139t.cn/age/): 生日填进去：精确周岁、活了多少天、生日倒计时。
+- [打折计算器](https://139t.cn/discount/): 「打 7.5 折」和「25% OFF」都认，折后价立省多少一秒出。
+- [单位换算](https://139t.cn/unit-converter/): 长度、重量、温度、面积、数据体积，一个页面换完。
+- [时区换算](https://139t.cn/timezone-converter/): 填一个时间，常用时区的对应时间一次排开。
+- [文字转语音](https://139t.cn/text-to-speech/): 用系统自带语音朗读文本，调语速音调，中文英文都行。
+- [在线录音](https://139t.cn/voice-recorder/): 浏览器直接录音，录完试听、下载，不经过服务器。
 
 ### Shopify/DTC电商工具
-- [订单利润率与手续费估算器](https://httcup.github.io/tools/shopify-stripe-fee-profit-margin-calculator/): 扣除商品、履约、支付与广告成本后的订单贡献利润。
-- [盈亏平衡 ROAS 计算器](https://httcup.github.io/tools/break-even-roas-calculator/): 算出覆盖成本的最低广告回报率与 CPA 上限。
-- [Stripe 手续费计算器](https://httcup.github.io/tools/stripe-payment-gateway-fee-calculator/): 估算收款手续费与扣费后到账金额。
-- [跨境到岸总成本计算器](https://httcup.github.io/tools/cross-border-landed-cost-calculator/): 把头程、关税与杂费摊到每件商品。
-- [美国进口关税计算器](https://httcup.github.io/tools/us-import-duty-calculator/): 按从价税率估算美国进口关税。
-- [保本售价计算器](https://httcup.github.io/tools/shopify-break-even-price-calculator/): 覆盖全部成本所需的最低售价。
-- [加价率与利润率换算器](https://httcup.github.io/tools/markup-vs-margin-calculator/): 在成本、加价率、利润率与售价之间换算。
-- [目标利润定价计算器](https://httcup.github.io/tools/target-profit-pricing-calculator/): 从利润目标反推所需售价。
-- [批发定价计算器](https://httcup.github.io/tools/shopify-wholesale-pricing-calculator/): 算批发底价与零售商毛利空间。
-- [阶梯定价计算器](https://httcup.github.io/tools/quantity-break-pricing-calculator/): 最多六档阶梯价的利润对比。
-- [含运费毛利计算器](https://httcup.github.io/tools/gross-margin-calculator-with-shipping/): 把运费补贴也算进毛利。
-- [店铺净利润计算器](https://httcup.github.io/tools/shopify-net-profit-calculator/): 按月核算店铺净利润。
-- [组合装与买一赠一利润计算器](https://httcup.github.io/tools/bundle-bogo-profit-calculator/): 核算组合装 / BOGO 的每单贡献。
-- [折扣利润影响计算器](https://httcup.github.io/tools/discount-margin-impact-calculator/): 打折后每单利润与所需订单量。
-- [优惠券利润计算器](https://httcup.github.io/tools/coupon-profitability-calculator/): 优惠券活动的净影响与保本条件。
-- [包邮门槛计算器](https://httcup.github.io/tools/free-shipping-threshold-calculator/): 算不亏本的包邮门槛与购物车文案。
-- [运费加价计算器](https://httcup.github.io/tools/shipping-rate-markup-calculator/): 按成本设定客户运费并看补贴。
-- [单均运费计算器](https://httcup.github.io/tools/shipping-cost-per-order-calculator/): 把附加费合成真实单均运费。
-- [体积重计算器](https://httcup.github.io/tools/dimensional-weight-calculator/): 算包裹计费重，避免运费惊吓。
-- [退货成本与利润影响计算器](https://httcup.github.io/tools/ecommerce-return-cost-calculator/): 估算退货率对一段订单的贡献侵蚀。
-- [退款损失计算器](https://httcup.github.io/tools/refund-loss-calculator/): 单笔退款的真实现金影响。
-- [换货与退款成本对比计算器](https://httcup.github.io/tools/exchange-vs-refund-cost-calculator/): 一次售后走换货还是退款更划算。
-- [电商转化率计算器](https://httcup.github.io/tools/ecommerce-conversion-rate-calculator/): 五步漏斗找最大流失环节。
-- [客单价与访客收入计算器](https://httcup.github.io/tools/aov-revenue-per-visitor-calculator/): 算 RPV 并分渠道对比。
-- [库存补货计划器](https://httcup.github.io/tools/inventory-reorder-planner/): 按日销与提前期算覆盖天数与补货量。
-- [SKU 利润体检器](https://httcup.github.io/tools/bulk-sku-profit-auditor/): 单 SKU 的贡献利润与广告空间。
-- [安全库存计算器](https://httcup.github.io/tools/safety-stock-calculator/): 按服务水平算安全库存与补货点。
-- [库存覆盖天数计算器](https://httcup.github.io/tools/inventory-days-of-supply-calculator/): 可用库存还能撑多少天。
-- [季节化补货点计算器](https://httcup.github.io/tools/reorder-point-calculator/): 按季节系数调整的补货点。
-- [EOQ 经济订货批量计算器](https://httcup.github.io/tools/eoq-calculator/): 订多少次、订多少最划算。
-- [库存持有成本计算器](https://httcup.github.io/tools/inventory-carrying-cost-calculator/): 仓储、资金与损耗拆开算。
-- [缺货成本计算器](https://httcup.github.io/tools/stockout-cost-calculator/): 断货几天会损失多少贡献。
-- [盈亏销售额计算器](https://httcup.github.io/tools/break-even-sales-calculator/): 覆盖固定成本要卖多少单。
-- [混合获客成本计算器](https://httcup.github.io/tools/blended-cac-calculator/): 各渠道合成混合 CAC 并对比。
-- [LTV 与 CAC 计算器](https://httcup.github.io/tools/ltv-cac-calculator/): 客户终身价值与回本周期。
-- [ROAS 利润计算器](https://httcup.github.io/tools/roas-profit-calculator/): 把 ROAS 换算成真实利润。
-- [目标 ROAS 计算器](https://httcup.github.io/tools/target-roas-calculator/): 从目标利润倒推投放红线。
-- [MER 营销效率计算器](https://httcup.github.io/tools/mer-calculator/): 整体口径的营销效率比。
-- [FBA 与 FBM 利润对比计算器](https://httcup.github.io/tools/amazon-fba-vs-fbm-profit-calculator/): 并排比较 FBA 与自发货运费利润。
-- [Etsy 费用计算器](https://httcup.github.io/tools/etsy-fee-calculator/): 拆解 Etsy 各项费用与净利润。
-- [TikTok Shop 费用计算器](https://httcup.github.io/tools/tiktok-shop-fee-calculator/): 拆解 TikTok Shop 佣金与净利润。
-- [平台费用对比计算器](https://httcup.github.io/tools/marketplace-fee-comparison-calculator/): 同一订单在四个平台的净收入。
-- [WooCommerce 成本计算器](https://httcup.github.io/tools/woocommerce-cost-calculator/): 自建站每月真实运营成本。
-- [Amazon 卖家费用计算器](https://httcup.github.io/tools/amazon-seller-fee-calculator/): 拆解 Amazon 佣金与 FBA 费用。
-- [订阅 LTV 计算器](https://httcup.github.io/tools/subscription-ltv-calculator/): 订阅模式的客户终身价值。
-- [复购率与留存计算器](https://httcup.github.io/tools/repeat-purchase-rate-calculator/): 复购率、流失率与复购收入。
-- [Shopify 平台费计算器](https://httcup.github.io/tools/shopify-transaction-fee-calculator/): 对比各套餐的月费与交易费。
-- [商品结构化数据生成器](https://httcup.github.io/tools/shopify-product-schema-generator/): 生成 Product 与 Offer 的 JSON-LD 脚本。
-- [标题与描述 SEO 检查器](https://httcup.github.io/tools/product-title-meta-description-seo-checker/): 检查商品标题与描述的字数与预览。
-- [商品描述 HTML 清洗器](https://httcup.github.io/tools/shopify-description-html-cleaner/): 去掉粘贴内容里的样式与不安全标签。
-- [商品 CSV 检查器](https://httcup.github.io/tools/shopify-product-csv-checker/): 导入前检查 Shopify 商品 CSV。
-- [电商 UTM 链接生成器](https://httcup.github.io/tools/utm-builder/): 生成规范的 UTM 追踪链接。
-- [Google Shopping Feed 检查器](https://httcup.github.io/tools/google-shopping-feed-readiness-checker/): 上传前检查 Google Shopping 数据源。
+- [订单利润率与手续费估算器](https://139t.cn/shopify-stripe-fee-profit-margin-calculator/): 扣除商品、履约、支付与广告成本后的订单贡献利润。
+- [盈亏平衡 ROAS 计算器](https://139t.cn/break-even-roas-calculator/): 算出覆盖成本的最低广告回报率与 CPA 上限。
+- [Stripe 手续费计算器](https://139t.cn/stripe-payment-gateway-fee-calculator/): 估算收款手续费与扣费后到账金额。
+- [跨境到岸总成本计算器](https://139t.cn/cross-border-landed-cost-calculator/): 把头程、关税与杂费摊到每件商品。
+- [美国进口关税计算器](https://139t.cn/us-import-duty-calculator/): 按从价税率估算美国进口关税。
+- [保本售价计算器](https://139t.cn/shopify-break-even-price-calculator/): 覆盖全部成本所需的最低售价。
+- [加价率与利润率换算器](https://139t.cn/markup-vs-margin-calculator/): 在成本、加价率、利润率与售价之间换算。
+- [目标利润定价计算器](https://139t.cn/target-profit-pricing-calculator/): 从利润目标反推所需售价。
+- [批发定价计算器](https://139t.cn/shopify-wholesale-pricing-calculator/): 算批发底价与零售商毛利空间。
+- [阶梯定价计算器](https://139t.cn/quantity-break-pricing-calculator/): 最多六档阶梯价的利润对比。
+- [含运费毛利计算器](https://139t.cn/gross-margin-calculator-with-shipping/): 把运费补贴也算进毛利。
+- [店铺净利润计算器](https://139t.cn/shopify-net-profit-calculator/): 按月核算店铺净利润。
+- [组合装与买一赠一利润计算器](https://139t.cn/bundle-bogo-profit-calculator/): 核算组合装 / BOGO 的每单贡献。
+- [折扣利润影响计算器](https://139t.cn/discount-margin-impact-calculator/): 打折后每单利润与所需订单量。
+- [优惠券利润计算器](https://139t.cn/coupon-profitability-calculator/): 优惠券活动的净影响与保本条件。
+- [包邮门槛计算器](https://139t.cn/free-shipping-threshold-calculator/): 算不亏本的包邮门槛与购物车文案。
+- [运费加价计算器](https://139t.cn/shipping-rate-markup-calculator/): 按成本设定客户运费并看补贴。
+- [单均运费计算器](https://139t.cn/shipping-cost-per-order-calculator/): 把附加费合成真实单均运费。
+- [体积重计算器](https://139t.cn/dimensional-weight-calculator/): 算包裹计费重，避免运费惊吓。
+- [退货成本与利润影响计算器](https://139t.cn/ecommerce-return-cost-calculator/): 估算退货率对一段订单的贡献侵蚀。
+- [退款损失计算器](https://139t.cn/refund-loss-calculator/): 单笔退款的真实现金影响。
+- [换货与退款成本对比计算器](https://139t.cn/exchange-vs-refund-cost-calculator/): 一次售后走换货还是退款更划算。
+- [电商转化率计算器](https://139t.cn/ecommerce-conversion-rate-calculator/): 五步漏斗找最大流失环节。
+- [客单价与访客收入计算器](https://139t.cn/aov-revenue-per-visitor-calculator/): 算 RPV 并分渠道对比。
+- [库存补货计划器](https://139t.cn/inventory-reorder-planner/): 按日销与提前期算覆盖天数与补货量。
+- [SKU 利润体检器](https://139t.cn/bulk-sku-profit-auditor/): 单 SKU 的贡献利润与广告空间。
+- [安全库存计算器](https://139t.cn/safety-stock-calculator/): 按服务水平算安全库存与补货点。
+- [库存覆盖天数计算器](https://139t.cn/inventory-days-of-supply-calculator/): 可用库存还能撑多少天。
+- [季节化补货点计算器](https://139t.cn/reorder-point-calculator/): 按季节系数调整的补货点。
+- [EOQ 经济订货批量计算器](https://139t.cn/eoq-calculator/): 订多少次、订多少最划算。
+- [库存持有成本计算器](https://139t.cn/inventory-carrying-cost-calculator/): 仓储、资金与损耗拆开算。
+- [缺货成本计算器](https://139t.cn/stockout-cost-calculator/): 断货几天会损失多少贡献。
+- [盈亏销售额计算器](https://139t.cn/break-even-sales-calculator/): 覆盖固定成本要卖多少单。
+- [混合获客成本计算器](https://139t.cn/blended-cac-calculator/): 各渠道合成混合 CAC 并对比。
+- [LTV 与 CAC 计算器](https://139t.cn/ltv-cac-calculator/): 客户终身价值与回本周期。
+- [ROAS 利润计算器](https://139t.cn/roas-profit-calculator/): 把 ROAS 换算成真实利润。
+- [目标 ROAS 计算器](https://139t.cn/target-roas-calculator/): 从目标利润倒推投放红线。
+- [MER 营销效率计算器](https://139t.cn/mer-calculator/): 整体口径的营销效率比。
+- [FBA 与 FBM 利润对比计算器](https://139t.cn/amazon-fba-vs-fbm-profit-calculator/): 并排比较 FBA 与自发货运费利润。
+- [Etsy 费用计算器](https://139t.cn/etsy-fee-calculator/): 拆解 Etsy 各项费用与净利润。
+- [TikTok Shop 费用计算器](https://139t.cn/tiktok-shop-fee-calculator/): 拆解 TikTok Shop 佣金与净利润。
+- [平台费用对比计算器](https://139t.cn/marketplace-fee-comparison-calculator/): 同一订单在四个平台的净收入。
+- [WooCommerce 成本计算器](https://139t.cn/woocommerce-cost-calculator/): 自建站每月真实运营成本。
+- [Amazon 卖家费用计算器](https://139t.cn/amazon-seller-fee-calculator/): 拆解 Amazon 佣金与 FBA 费用。
+- [订阅 LTV 计算器](https://139t.cn/subscription-ltv-calculator/): 订阅模式的客户终身价值。
+- [复购率与留存计算器](https://139t.cn/repeat-purchase-rate-calculator/): 复购率、流失率与复购收入。
+- [Shopify 平台费计算器](https://139t.cn/shopify-transaction-fee-calculator/): 对比各套餐的月费与交易费。
+- [商品结构化数据生成器](https://139t.cn/shopify-product-schema-generator/): 生成 Product 与 Offer 的 JSON-LD 脚本。
+- [标题与描述 SEO 检查器](https://139t.cn/product-title-meta-description-seo-checker/): 检查商品标题与描述的字数与预览。
+- [商品描述 HTML 清洗器](https://139t.cn/shopify-description-html-cleaner/): 去掉粘贴内容里的样式与不安全标签。
+- [商品 CSV 检查器](https://139t.cn/shopify-product-csv-checker/): 导入前检查 Shopify 商品 CSV。
+- [电商 UTM 链接生成器](https://139t.cn/utm-builder/): 生成规范的 UTM 追踪链接。
+- [Google Shopping Feed 检查器](https://139t.cn/google-shopping-feed-readiness-checker/): 上传前检查 Google Shopping 数据源。
 
 ### 创作与设计
-- [小费计算器](https://httcup.github.io/tools/tip-calculator/): 聚餐 AA 与小费一步算清。
-- [会议成本计算器](https://httcup.github.io/tools/meeting-cost-calculator/): 一场会到底烧多少钱。
-- [时间戳转换器](https://httcup.github.io/tools/time-tools-seconds-converter/): 时间戳与日期双向换算。
-- [摩斯电码互译](https://httcup.github.io/tools/morse-code-translator/): 文本与摩斯电码双向转换并播放。
-- [花体字与特殊符号生成](https://httcup.github.io/tools/fancy-text-generator/): 把文字变成花体、方框等特殊字符。
-- [占位文本生成器](https://httcup.github.io/tools/lorem-ipsum-generator/): 生成拉丁或中文假文占位。
-- [Emoji 搜索与复制](https://httcup.github.io/tools/emoji-finder/): 按关键词找 emoji，点击复制。
-- [字幕时间轴修复](https://httcup.github.io/tools/subtitle-repair/): 整体平移或缩放 SRT 字幕时间轴。
-- [ASCII 横幅与艺术字](https://httcup.github.io/tools/ascii-art/): 把大写字母变成点阵横幅。
-- [Markdown 编辑器](https://httcup.github.io/tools/markdown-editor/): 左边写 Markdown，右边实时预览。
-- [图片裁剪](https://httcup.github.io/tools/image-crop/): 按比例框选并裁出想要的部分。
-- [圆形头像裁剪](https://httcup.github.io/tools/circle-crop/): 裁出正圆形头像并保留透明底。
-- [图片翻转](https://httcup.github.io/tools/flip-image/): 水平或垂直镜像翻转图片。
-- [轮播图无缝切分](https://httcup.github.io/tools/carousel-splitter/): 把长图切成多张衔接的轮播图。
-- [九宫格切图](https://httcup.github.io/tools/image-grid-split/): 把图片切成宫格并逐格导出。
-- [像素画转换器](https://httcup.github.io/tools/pixel-art-converter/): 把照片变成复古像素风。
-- [丝网印刷滤镜](https://httcup.github.io/tools/silk-screen/): 三色半调网点风格化照片。
-- [AI 图片元数据查看](https://httcup.github.io/tools/ai-image-metadata-viewer/): 查看 AI 生成图片里的提示词。
-- [MP3 转 WAV](https://httcup.github.io/tools/mp3-to-wav/): 解码为 WAV，本地转换不依赖服务。
-- [白噪音发生器](https://httcup.github.io/tools/noise-generator/): 白粉棕噪音与雨声助眠音。
-- [BPM 节拍检测](https://httcup.github.io/tools/bpm-detector/): 测一段音乐每分钟节拍数。
-- [节拍器](https://httcup.github.io/tools/metronome/): 可调速度与拍号的练习节拍器。
-- [LRC 歌词播放器](https://httcup.github.io/tools/lyric-visualizer/): 本地音频配 LRC 歌词同步播放。
-- [虚拟键盘钢琴](https://httcup.github.io/tools/midi-keyboard/): 用电脑键盘弹钢琴。
-- [取色器与颜色转换](https://httcup.github.io/tools/color-picker/): 屏幕取色、HEX/RGB/HSL 互转。
-- [渐变生成器](https://httcup.github.io/tools/gradient-generator/): 调线性与径向渐变，复制 CSS。
-- [图表制作器](https://httcup.github.io/tools/chart-maker/): 输入数据生成柱状或折线图。
-- [简易收据生成器](https://httcup.github.io/tools/invoice-generator/): 生成可打印的收据或报价单。
-- [手写签名板](https://httcup.github.io/tools/signature-maker/): 鼠标或手指写出签名导出 PNG。
-- [涂鸦白板](https://httcup.github.io/tools/whiteboard/): 随手画草图，导出 PNG。
-- [反应速度测试](https://httcup.github.io/tools/reaction-time-test/): 测你的视觉反应时间。
-- [打靶训练](https://httcup.github.io/tools/aim-trainer/): 30 秒内点中尽可能多的目标。
-- [手速测试](https://httcup.github.io/tools/cps-test/): 10 秒内你能点多少下。
-- [键盘测试](https://httcup.github.io/tools/keyboard-tester/): 逐键检查键盘有没有坏键。
-- [打字速度测试](https://httcup.github.io/tools/typing-test/): 测中文或英文打字速度。
-- [呼吸放松引导](https://httcup.github.io/tools/breathing-relaxation/): 4-7-8 呼吸法动画引导。
-- [麦克风与摄像头自检](https://httcup.github.io/tools/mic-camera-test/): 检测麦克风与摄像头是否正常。
-- [番茄钟](https://httcup.github.io/tools/pomodoro-timer/): 25 分钟专注 + 5 分钟休息。
-- [秒表](https://httcup.github.io/tools/stopwatch/): 带计次功能的精确秒表。
-- [倒计时](https://httcup.github.io/tools/countdown-timer/): 大字倒计时，结束提醒。
-- [世界时钟](https://httcup.github.io/tools/world-clock/): 多城市当前时间实时对照。
-- [闪卡制作与复习](https://httcup.github.io/tools/flashcard-maker/): 自制学习卡片并翻面复习。
+- [小费计算器](https://139t.cn/tip-calculator/): 聚餐 AA 与小费一步算清。
+- [会议成本计算器](https://139t.cn/meeting-cost-calculator/): 一场会到底烧多少钱。
+- [时间戳转换器](https://139t.cn/time-tools-seconds-converter/): 时间戳与日期双向换算。
+- [摩斯电码互译](https://139t.cn/morse-code-translator/): 文本与摩斯电码双向转换并播放。
+- [花体字与特殊符号生成](https://139t.cn/fancy-text-generator/): 把文字变成花体、方框等特殊字符。
+- [占位文本生成器](https://139t.cn/lorem-ipsum-generator/): 生成拉丁或中文假文占位。
+- [Emoji 搜索与复制](https://139t.cn/emoji-finder/): 按关键词找 emoji，点击复制。
+- [字幕时间轴修复](https://139t.cn/subtitle-repair/): 整体平移或缩放 SRT 字幕时间轴。
+- [ASCII 横幅与艺术字](https://139t.cn/ascii-art/): 把大写字母变成点阵横幅。
+- [Markdown 编辑器](https://139t.cn/markdown-editor/): 左边写 Markdown，右边实时预览。
+- [图片裁剪](https://139t.cn/image-crop/): 按比例框选并裁出想要的部分。
+- [圆形头像裁剪](https://139t.cn/circle-crop/): 裁出正圆形头像并保留透明底。
+- [图片翻转](https://139t.cn/flip-image/): 水平或垂直镜像翻转图片。
+- [轮播图无缝切分](https://139t.cn/carousel-splitter/): 把长图切成多张衔接的轮播图。
+- [九宫格切图](https://139t.cn/image-grid-split/): 把图片切成宫格并逐格导出。
+- [像素画转换器](https://139t.cn/pixel-art-converter/): 把照片变成复古像素风。
+- [丝网印刷滤镜](https://139t.cn/silk-screen/): 三色半调网点风格化照片。
+- [AI 图片元数据查看](https://139t.cn/ai-image-metadata-viewer/): 查看 AI 生成图片里的提示词。
+- [MP3 转 WAV](https://139t.cn/mp3-to-wav/): 解码为 WAV，本地转换不依赖服务。
+- [白噪音发生器](https://139t.cn/noise-generator/): 白粉棕噪音与雨声助眠音。
+- [BPM 节拍检测](https://139t.cn/bpm-detector/): 测一段音乐每分钟节拍数。
+- [节拍器](https://139t.cn/metronome/): 可调速度与拍号的练习节拍器。
+- [LRC 歌词播放器](https://139t.cn/lyric-visualizer/): 本地音频配 LRC 歌词同步播放。
+- [虚拟键盘钢琴](https://139t.cn/midi-keyboard/): 用电脑键盘弹钢琴。
+- [取色器与颜色转换](https://139t.cn/color-picker/): 屏幕取色、HEX/RGB/HSL 互转。
+- [渐变生成器](https://139t.cn/gradient-generator/): 调线性与径向渐变，复制 CSS。
+- [图表制作器](https://139t.cn/chart-maker/): 输入数据生成柱状或折线图。
+- [简易收据生成器](https://139t.cn/invoice-generator/): 生成可打印的收据或报价单。
+- [手写签名板](https://139t.cn/signature-maker/): 鼠标或手指写出签名导出 PNG。
+- [涂鸦白板](https://139t.cn/whiteboard/): 随手画草图，导出 PNG。
+- [反应速度测试](https://139t.cn/reaction-time-test/): 测你的视觉反应时间。
+- [打靶训练](https://139t.cn/aim-trainer/): 30 秒内点中尽可能多的目标。
+- [手速测试](https://139t.cn/cps-test/): 10 秒内你能点多少下。
+- [键盘测试](https://139t.cn/keyboard-tester/): 逐键检查键盘有没有坏键。
+- [打字速度测试](https://139t.cn/typing-test/): 测中文或英文打字速度。
+- [呼吸放松引导](https://139t.cn/breathing-relaxation/): 4-7-8 呼吸法动画引导。
+- [麦克风与摄像头自检](https://139t.cn/mic-camera-test/): 检测麦克风与摄像头是否正常。
+- [番茄钟](https://139t.cn/pomodoro-timer/): 25 分钟专注 + 5 分钟休息。
+- [秒表](https://139t.cn/stopwatch/): 带计次功能的精确秒表。
+- [倒计时](https://139t.cn/countdown-timer/): 大字倒计时，结束提醒。
+- [世界时钟](https://139t.cn/world-clock/): 多城市当前时间实时对照。
+- [闪卡制作与复习](https://139t.cn/flashcard-maker/): 自制学习卡片并翻面复习。
 
 ## 本地快用
-- [本地快用](https://httcup.github.io/tools/quick/): 编解码、哈希、时间戳等小工具合集。
+- [本地快用](https://139t.cn/quick/): 编解码、哈希、时间戳等小工具合集。

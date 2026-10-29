@@ -16,7 +16,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from batch_tools_defs import TOOLS  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE = "https://httcup.github.io/tools/"
+BASE = "https://139t.cn/"
 TODAY = date.today().isoformat()
 
 MD_TO_WORD = dict(

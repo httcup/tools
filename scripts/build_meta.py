@@ -7,7 +7,7 @@ from xml.sax.saxutils import escape
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TOOL = os.path.join(ROOT, "tool")
-BASE = "https://httcup.github.io/tools/"
+BASE = "https://139t.cn/"
 DATA = json.load(open(os.path.join(ROOT, "port", "tools.json"), encoding="utf-8"))
 
 FIX = {

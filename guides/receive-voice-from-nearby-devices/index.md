@@ -2,13 +2,13 @@
 
 One host listens while several people speak from their browsers. The host names the pager and chooses Direct or Cloud relay before starting; callers need no display name. Nearby discovery helps them find it, an optional password controls admission, and the host chooses which voices to hear. Cloud relay forwards encrypted voice through Cloudflare after callers confirm that choice.
 
-[打开Voice Oncall](https://httcup.github.io/tools/voice-oncall/): Open a pager and hear live voice from people who connect. Use Direct on your local network or choose Cloud relay over the internet, with a password and individual mute or remove controls.
+[打开Voice Oncall](https://139t.cn/voice-oncall/): Open a pager and hear live voice from people who connect. Use Direct on your local network or choose Cloud relay over the internet, with a password and individual mute or remove controls.
 
 最后更新 14 October 2026
 
 ## Open the listening pager
 
-Open [Voice Oncall](https://httcup.github.io/tools/voice-oncall/) on the device that will listen. Choose Host a pager, enter a recognisable pager name and optionally set a password. Keep Connection set to Direct, or choose Cloud relay before starting when direct access is unavailable. Start pager prepares speaker playback and advertises the pager; it does not request microphone permission.
+Open [Voice Oncall](https://139t.cn/voice-oncall/) on the device that will listen. Choose Host a pager, enter a recognisable pager name and optionally set a password. Keep Connection set to Direct, or choose Cloud relay before starting when direct access is unavailable. Start pager prepares speaker playback and advertises the pager; it does not request microphone permission.
 
 Use the website's HTTPS address. There is no installation, Python helper or account. Keep the host page open and its device awake while people are connected.
 
@@ -42,4 +42,4 @@ Internet access is required for discovery, admission and connection setup. That 
 
 Waiting participants check for the host with a one-second foreground target. Sleeping devices, background timers and connection limits can delay recovery. Guest isolation, firewalls, VPN routes or browser local-network permissions may prevent direct audio even when both devices are on the same Wi-Fi. Try the actual phones and computers you intend to use.
 
-If your goal is for one person to speak to many listeners, use [Local Walkie-Talkie](https://httcup.github.io/tools/walkie-talkie/) instead. Voice Oncall receives many separate voices at one host.
+If your goal is for one person to speak to many listeners, use [Local Walkie-Talkie](https://139t.cn/walkie-talkie/) instead. Voice Oncall receives many separate voices at one host.

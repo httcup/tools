@@ -24,14 +24,14 @@ Host and listen in your browser without installing anything. Internet access int
 
 ## The longer version
 
-[如何在局域网广播语音](https://httcup.github.io/tools/guides/broadcast-voice-on-a-local-network/): 在浏览器开设语音频道，通过链接或附近发现邀请听众。默认直接连接；选择经 Cloudflare 转发的加密云中继时，听众需要明确确认。
+[如何在局域网广播语音](https://139t.cn/guides/broadcast-voice-on-a-local-network/): 在浏览器开设语音频道，通过链接或附近发现邀请听众。默认直接连接；选择经 Cloudflare 转发的加密云中继时，听众需要明确确认。
 
 ## Also in the box
 
-- [Voice Oncall](https://httcup.github.io/tools/voice-oncall/): Open a pager and hear live voice from people who connect. Use Direct on your local network or choose Cloud relay over the internet, with a password and individual mute or remove controls.
-- [Remote Camera](https://httcup.github.io/tools/remote-camera/): Open a camera on one device and watch it in another browser, with optional viewer approval. Choose Direct or Cloud relay for encrypted live video.
-- [Share a Browser Tab](https://httcup.github.io/tools/share-tab/): Choose a tab on your computer and let one approved viewer watch it using Direct or Cloud relay. Invite by link, network discovery or a private group. No extension, sound or remote control.
-- [文本与文件分享](https://httcup.github.io/tools/share-text/): 从打开的浏览器加密分享文本与文件。默认直连，也可选择云中转。你可以逐一批准读者。
+- [Voice Oncall](https://139t.cn/voice-oncall/): Open a pager and hear live voice from people who connect. Use Direct on your local network or choose Cloud relay over the internet, with a password and individual mute or remove controls.
+- [Remote Camera](https://139t.cn/remote-camera/): Open a camera on one device and watch it in another browser, with optional viewer approval. Choose Direct or Cloud relay for encrypted live video.
+- [Share a Browser Tab](https://139t.cn/share-tab/): Choose a tab on your computer and let one approved viewer watch it using Direct or Cloud relay. Invite by link, network discovery or a private group. No extension, sound or remote control.
+- [文本与文件分享](https://139t.cn/share-text/): 从打开的浏览器加密分享文本与文件。默认直连，也可选择云中转。你可以逐一批准读者。
 
 ## Questions
 

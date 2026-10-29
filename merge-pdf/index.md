@@ -4,7 +4,7 @@
 
 > 把多个 PDF 合到一起，把一个拆成好几个，把页面拖成你要的顺序，全都在你自己的浏览器里完成。什么都不上传，不用注册，成品文件在交给你之前还会被重新打开、重新数一遍页数。
 
-This is an interactive browser tool at https://httcup.github.io/tools/merge-pdf/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/merge-pdf/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 文档 are **processed in your browser**. No processing upload.
 
@@ -25,14 +25,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/merge-pdf/
 
 ## The longer version
 
-[怎么合并、拆分和重排 PDF 页面](https://httcup.github.io/tools/guides/merge-and-split-pdf-files/): 把几个 PDF 合到一起、把一个切成好几个、把页面挪来挪去：重排之后什么留得下、什么是任何工具都带不过去的，以及为什么这些事都不必把你的文件传到别处。
+[怎么合并、拆分和重排 PDF 页面](https://139t.cn/guides/merge-and-split-pdf-files/): 把几个 PDF 合到一起、把一个切成好几个、把页面挪来挪去：重排之后什么留得下、什么是任何工具都带不过去的，以及为什么这些事都不必把你的文件传到别处。
 
 ## Also in the box
 
-- [PDF 压缩](https://httcup.github.io/tools/compress-pdf/): 文档变小，不用送去任何地方。
-- [PDF 解锁](https://httcup.github.io/tools/unlock-pdf/): 权限限制与打开密码不同。页面会说明你的 PDF 使用哪种保护。
-- [PDF 加密](https://httcup.github.io/tools/protect-pdf/): 把文档锁上，而不是为了锁它先把它交给一个网站。
-- [PDF 水印](https://httcup.github.io/tools/watermark-pdf/): 一份写着自己去了哪里的扫描件，就没法悄悄再去别的地方。
+- [PDF 压缩](https://139t.cn/compress-pdf/): 文档变小，不用送去任何地方。
+- [PDF 解锁](https://139t.cn/unlock-pdf/): 权限限制与打开密码不同。页面会说明你的 PDF 使用哪种保护。
+- [PDF 加密](https://139t.cn/protect-pdf/): 把文档锁上，而不是为了锁它先把它交给一个网站。
+- [PDF 水印](https://139t.cn/watermark-pdf/): 一份写着自己去了哪里的扫描件，就没法悄悄再去别的地方。
 
 ## Questions
 

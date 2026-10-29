@@ -14,7 +14,7 @@
 | 背景 | 纯白 |
 | 网上申请用照片 | 正好 ⁦413 x 531⁩ px，JPEG，最多 500.0 KB |
 
-[按这条规定制作照片](https://httcup.github.io/tools/id-photo/#kr-driving-licence) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
+[按这条规定制作照片](https://139t.cn/id-photo/#kr-driving-licence) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
 
 ## 这条规定还说了什么
 
@@ -34,7 +34,7 @@
 
 ## 韩国 的其他证件
 
-- [护照 (⁦여권⁩)](https://httcup.github.io/tools/id-photo/kr-passport/) — ⁦35 x 45⁩ 毫米 · ⁦413 x 531⁩ px
-- [身份证 (⁦주민등록증⁩)](https://httcup.github.io/tools/id-photo/kr-id-card/) — ⁦35 x 45⁩ 毫米
+- [护照 (⁦여권⁩)](https://139t.cn/id-photo/kr-passport/) — ⁦35 x 45⁩ 毫米 · ⁦413 x 531⁩ px
+- [身份证 (⁦주민등록증⁩)](https://139t.cn/id-photo/kr-id-card/) — ⁦35 x 45⁩ 毫米
 
-[在证件照工具里查看所有国家和证件](https://httcup.github.io/tools/id-photo/)
+[在证件照工具里查看所有国家和证件](https://139t.cn/id-photo/)

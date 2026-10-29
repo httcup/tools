@@ -4,7 +4,7 @@
 
 > 把 MP4、MOV 或 WebM 里的一段做成 GIF 动图。段落、宽度和帧率你来定，读帧和写 GIF 都在你的浏览器里完成。什么都不上传。
 
-This is an interactive browser tool at https://httcup.github.io/tools/video-to-gif/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/video-to-gif/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 视频 are **processed in your browser**. No processing upload.
 
@@ -25,14 +25,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/video-to-g
 
 ## The longer version
 
-[怎么把视频做成 GIF](https://httcup.github.io/tools/guides/turn-a-video-into-a-gif/): 该挑哪一段、多宽、每秒几帧，视频做成 GIF 为什么会大出十倍，以及什么时候压根不该用 GIF。
+[怎么把视频做成 GIF](https://139t.cn/guides/turn-a-video-into-a-gif/): 该挑哪一段、多宽、每秒几帧，视频做成 GIF 为什么会大出十倍，以及什么时候压根不该用 GIF。
 
 ## Also in the box
 
-- [GIF 制作](https://httcup.github.io/tools/gif-maker/): 把一组图片变成一段动画。
-- [GIF 拆帧](https://httcup.github.io/tools/split-gif/): 每一帧都单独存成一张 PNG。
-- [GIF 分析](https://httcup.github.io/tools/gif-analyzer/): 帧、延时、调色板，以及每个字节的去向。
-- [视频压缩](https://httcup.github.io/tools/compress-video/): 说一个它最多能有多大。剩下的工具来算，做完先量一遍再交给你。
+- [GIF 制作](https://139t.cn/gif-maker/): 把一组图片变成一段动画。
+- [GIF 拆帧](https://139t.cn/split-gif/): 每一帧都单独存成一张 PNG。
+- [GIF 分析](https://139t.cn/gif-analyzer/): 帧、延时、调色板，以及每个字节的去向。
+- [视频压缩](https://139t.cn/compress-video/): 说一个它最多能有多大。剩下的工具来算，做完先量一遍再交给你。
 
 ## Questions
 
@@ -62,7 +62,7 @@ MP4、M4V 和 MOV 直接读，里面装的是 H.264、HEVC、AV1 还是 VP9 都�
 
 ### 声音能保住吗？
 
-GIF 装不了声音。这个格式压根没有带音频的版本，这也正是后来网上大多改用无声循环视频的主要原因。声音要紧的话，那就别转，留着视频，[视频剪切](https://httcup.github.io/trim-video/)能从里面剪出一段，而且一帧都不重编。
+GIF 装不了声音。这个格式压根没有带音频的版本，这也正是后来网上大多改用无声循环视频的主要原因。声音要紧的话，那就别转，留着视频，[视频剪切](https://139t.cn/trim-video/)能从里面剪出一段，而且一帧都不重编。
 
 ### 免费吗？要注册吗？
 

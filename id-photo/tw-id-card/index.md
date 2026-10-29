@@ -14,7 +14,7 @@
 | 背景 | 纯白 |
 | 网上申请用照片 | 至少 ⁦413 x 531⁩ px，JPEG，最多 5.00 MB |
 
-[按这条规定制作照片](https://httcup.github.io/tools/id-photo/#tw-id-card) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
+[按这条规定制作照片](https://139t.cn/id-photo/#tw-id-card) 打开证件照工具，并且已经选好这条规定。它在你的浏览器里运行：照片不会上传，不用注册，也没有水印。
 
 ## 这条规定还说了什么
 
@@ -34,6 +34,6 @@
 
 ## 台湾 的其他证件
 
-- [护照 (⁦護照⁩)](https://httcup.github.io/tools/id-photo/tw-passport/) — ⁦35 x 45⁩ 毫米 · ⁦413 x 531⁩ px
+- [护照 (⁦護照⁩)](https://139t.cn/id-photo/tw-passport/) — ⁦35 x 45⁩ 毫米 · ⁦413 x 531⁩ px
 
-[在证件照工具里查看所有国家和证件](https://httcup.github.io/tools/id-photo/)
+[在证件照工具里查看所有国家和证件](https://139t.cn/id-photo/)

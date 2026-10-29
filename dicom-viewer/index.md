@@ -4,7 +4,7 @@ CT、MR、X 光和超声，连窗宽窗位、头信息和测量一起。
 
 > 免费的 DCM 文件打开工具：不用安装，直接在浏览器里打开 .dcm 格式的 CT、MR、X 光和超声影像。调窗宽窗位，翻整套序列，按毫米测量，读遍每一个 DICOM 标签，还能看清这个文件里究竟什么在指认病人。什么都不会上传。
 
-This is an interactive browser tool at https://httcup.github.io/tools/dicom-viewer/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/dicom-viewer/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 影像 are **processed in your browser**. No processing upload.
 
@@ -28,14 +28,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/dicom-view
 
 ## The longer version
 
-[DCM 文件怎么打开，以及里面有什么](https://httcup.github.io/tools/guides/open-a-dicom-file/): .dcm 文件是什么、用什么打开，医院给的光盘里都有什么，文件为什么没有后缀，怎么在浏览器里打开一份 .dcm 影像，窗宽窗位到底在做什么，以及一份影像除了图像之外还带着关于病人的哪些东西。
+[DCM 文件怎么打开，以及里面有什么](https://139t.cn/guides/open-a-dicom-file/): .dcm 文件是什么、用什么打开，医院给的光盘里都有什么，文件为什么没有后缀，怎么在浏览器里打开一份 .dcm 影像，窗宽窗位到底在做什么，以及一份影像除了图像之外还带着关于病人的哪些东西。
 
 ## Also in the box
 
-- [图片转 ICO](https://httcup.github.io/tools/image-to-ico/): 进去一张图，出来的是浏览器、Windows 和 Mac 各自要的每一个尺寸。
-- [图片转 Data URI](https://httcup.github.io/tools/image-to-data-uri/): 整张图变成一行文本，直接粘进 CSS 或者 HTML。
-- [SVG 转图片](https://httcup.github.io/tools/svg-to-image/): 说个尺寸。矢量图本来就没有尺寸可丢。
-- [图片转 SVG](https://httcup.github.io/tools/image-to-svg/): 一个形状，一条轮廓。不该有的东西，点一下就好。
+- [图片转 ICO](https://139t.cn/image-to-ico/): 进去一张图，出来的是浏览器、Windows 和 Mac 各自要的每一个尺寸。
+- [图片转 Data URI](https://139t.cn/image-to-data-uri/): 整张图变成一行文本，直接粘进 CSS 或者 HTML。
+- [SVG 转图片](https://139t.cn/svg-to-image/): 说个尺寸。矢量图本来就没有尺寸可丢。
+- [图片转 SVG](https://139t.cn/image-to-svg/): 一个形状，一条轮廓。不该有的东西，点一下就好。
 
 ## Questions
 

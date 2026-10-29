@@ -4,7 +4,7 @@
 
 > 把身高并排比出来。可以加男性、女性、男孩、女孩，也可以加物件——门、窗、白板、自动售货机——用厘米或者英尺英寸都行，做好的图能下载成 PNG 或 SVG。它是在你的浏览器里画的。
 
-This is an interactive browser tool at https://httcup.github.io/tools/compare-heights/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
+This is an interactive browser tool at https://139t.cn/compare-heights/. Files are processed on the device running that browser. Any deliberate sharing or optional network feature is described on the page. What follows is its written explanation; open the address to use it.
 
 ## Your 名字、身高，以及它们凑成的那张图 are **processed in your browser**. No processing upload.
 
@@ -28,14 +28,14 @@ This is an interactive browser tool at https://httcup.github.io/tools/compare-he
 
 ## The longer version
 
-[怎么做一张身高对比图](https://httcup.github.io/tools/guides/make-a-height-comparison-chart/): 把一串身高变成一张并排的图：身高怎么写，给小孩挑哪个图形，为什么一件眼熟的东西比第三个人更管用，以及怎么把图导出成 PNG 或 SVG。
+[怎么做一张身高对比图](https://139t.cn/guides/make-a-height-comparison-chart/): 把一串身高变成一张并排的图：身高怎么写，给小孩挑哪个图形，为什么一件眼熟的东西比第三个人更管用，以及怎么把图导出成 PNG 或 SVG。
 
 ## Also in the box
 
-- [商家资料预览](https://httcup.github.io/tools/business-profile-preview/): 把内容打进去，它就变成 Google 会画的那张卡片。为了画它，不会往外送任何东西。
-- [图片压缩](https://httcup.github.io/tools/compress-image/): 说个大小，剩下的它来算。
-- [图片缩放](https://httcup.github.io/tools/resize-image/): 说个尺寸，拉个框，挑个格式。
-- [Image Layout](https://httcup.github.io/tools/image-layout/): Put your pictures together. Keep them on your machine.
+- [商家资料预览](https://139t.cn/business-profile-preview/): 把内容打进去，它就变成 Google 会画的那张卡片。为了画它，不会往外送任何东西。
+- [图片压缩](https://139t.cn/compress-image/): 说个大小，剩下的它来算。
+- [图片缩放](https://139t.cn/resize-image/): 说个尺寸，拉个框，挑个格式。
+- [Image Layout](https://139t.cn/image-layout/): Put your pictures together. Keep them on your machine.
 
 ## Questions
 

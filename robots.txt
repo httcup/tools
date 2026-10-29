@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://httcup.github.io/tools/sitemap.xml
+Sitemap: https://139t.cn/sitemap.xml

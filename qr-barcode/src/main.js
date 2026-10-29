@@ -95,6 +95,8 @@ input.append(new Option(phrase(text),value));
 input.type=field.type;
 }
 if(field.placeholder)input.placeholder=phrase(field.placeholder);
+// 主内容框（id==='text'）的默认文字只是提示：聚焦时若仍是默认值就自动清空，失焦时若为空再恢复默认
+const def=field.id==='text'&&field.placeholder&&!field.optional?phrase(field.placeholder):'';
 const label=document.createElement('label');
 label.htmlFor=input.id;
 label.textContent=field.optional&&field.type!=='checkbox'
@@ -105,8 +107,18 @@ input.checked=fieldValue(field.id)===true;
 wrapper.append(input,label);
 }else{
 const stored=fieldValue(field.id);
-input.value=stored||(field.type==='select'?field.options[0][0]:'');
+input.value=stored||(field.type==='select'?field.options[0][0]:(def||''));
 setFieldValue(field.id,input.value);
+if(def){
+input.addEventListener('focus',()=>{if(input.value===def)input.value='';});
+input.addEventListener('blur',()=>{
+if(!String(input.value).trim()){
+input.value=def;
+setFieldValue(field.id,def);
+update();
+}
+});
+}
 wrapper.append(label,input);
 }
 input.addEventListener('input',()=>{

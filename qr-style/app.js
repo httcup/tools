@@ -503,6 +503,19 @@
 
   function bind() {
     els.text.addEventListener('input', render);
+    // 默认文字只是提示：聚焦时若仍是默认值就自动清空（输入前不用手动删），
+    // 失焦时若为空则恢复默认值（避免二维码变空）。
+    els.text.addEventListener('focus', function () {
+      if (els.text.value === DEFAULTS.text) els.text.value = '';
+    });
+    els.text.addEventListener('blur', function () {
+      if (!els.text.value.trim()) {
+        els.text.value = DEFAULTS.text;
+        design.text = DEFAULTS.text;
+        save();
+        render();
+      }
+    });
     els.ecc.addEventListener('change', function () { design.ecc = els.ecc.value; save(); render(); });
     els.fg.addEventListener('input', function () { design.fg = els.fg.value; save(); render(); });
     els.fg2.addEventListener('input', function () { design.fg2 = els.fg2.value; save(); render(); });

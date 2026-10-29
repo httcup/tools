@@ -1,5 +1,5 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
-var GA4_ID='G-XXXXXXXXXX';/* TODO: 换成你的 GA4 测量 ID */window.dataLayer=window.dataLayer||[];
+var GA4_ID='G-Z11XSCYYNM';window.dataLayer=window.dataLayer||[];
 function gtag(){dataLayer.push(arguments);}
 window.gtag=gtag;
 var notAVisit=navigator.webdriver||location.origin+'/'!=='https://139t.cn/';

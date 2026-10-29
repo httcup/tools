@@ -21,5 +21,5 @@
 
 ## 相关工具
 
-- [二维码与条形码生成](https://httcup.github.io/tools/qr-barcode/)：标准样式、支持条形码
-- [二维码与条形码识读](https://httcup.github.io/tools/qr-barcode-reader/)：从图片或摄像头读码
+- [二维码与条形码生成](https://139t.cn/qr-barcode/)：标准样式、支持条形码
+- [二维码与条形码识读](https://139t.cn/qr-barcode-reader/)：从图片或摄像头读码

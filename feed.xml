@@ -12,7 +12,14 @@
     <link href="https://httcup.github.io/tools/"/>
     <id>https://httcup.github.io/tools/</id>
     <updated>2026-10-27T02:54:58Z</updated>
-    <summary type="text">在浏览器本地运行的 184 个工具，文件不上传。</summary>
+    <summary type="text">在浏览器本地运行的 185 个工具，文件不上传。</summary>
+  </entry>
+  <entry>
+    <title type="text">二维码生成和美化</title>
+    <link href="https://httcup.github.io/tools/qr-style/"/>
+    <id>https://httcup.github.io/tools/qr-style/</id>
+    <updated>2026-10-29T00:00:00Z</updated>
+    <summary type="text">参数化二维码：8 种点阵样式、渐变配色、内嵌标志，导出 PNG/SVG。</summary>
   </entry>
   <entry>
     <title type="text">随手记存为.md</title>

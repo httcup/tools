@@ -436,6 +436,11 @@ window.SIDEBAR_CATS = [
     "slug": "markdown-editor",
     "name": "Markdown 编辑器",
     "href": "./markdown-editor/"
+   },
+   {
+    "slug": "qr-style",
+    "name": "二维码生成和美化",
+    "href": "./qr-style/"
    }
   ]
  },

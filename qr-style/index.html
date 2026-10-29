@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>二维码生成和美化：8 种点阵样式、渐变色、内嵌标志 | 小胡的工具箱</title>
+<meta name="description" content="把链接或文字做成好看的二维码：8 种点阵骨架、4 种定位点、渐变配色、内嵌标志，导出 PNG（最高 4096px）或无限放大的 SVG。全部在浏览器里生成，内容不上传。">
+<link rel="canonical" href="https://httcup.github.io/tools/qr-style/">
+<meta name="theme-color" content="#f6f7f9">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'; frame-ancestors 'none'">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="小胡的工具箱">
+<meta property="og:url" content="https://httcup.github.io/tools/qr-style/">
+<meta property="og:title" content="二维码生成和美化 — 参数化点阵、渐变、内嵌标志">
+<meta property="og:description" content="8 种骨架、4 种定位点、渐变配色，导出 PNG 或 SVG。全部本地生成，内容不上传。">
+<meta name="twitter:card" content="summary">
+<link rel="alternate" type="text/markdown" href="index.md">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="qs-page">
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="hub-head">
+  <div class="head-row">
+    <p class="brand">
+      <a class="brand-home" href="../">
+        <svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+          <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+          <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+          <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+        </svg>
+        Tools
+      </a>
+    </p>
+  </div>
+  <nav class="crumbs" aria-label="位置">
+    <a href="../">全部工具</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">二维码生成和美化</span>
+  </nav>
+  <h1>二维码生成和美化</h1>
+  <p class="lede">把链接或文字做成拿得出手的二维码：8 种点阵骨架、4 种定位点形状、前景渐变、内嵌标志，样式跟着你调。导出 PNG（最高 4096px）或可以无限放大的 SVG。生成全在你的浏览器里，内容不上传。</p>
+</header>
+
+<main id="main" class="tool-main">
+
+  <section class="qs-app" aria-label="二维码生成器">
+    <div class="qs-preview">
+      <canvas id="qs-canvas" width="640" height="640" aria-label="二维码预览"></canvas>
+      <p class="qs-size" id="qs-size"></p>
+      <p class="qs-err" id="qs-err" hidden></p>
+      <div class="qs-export">
+        <label class="qs-field-inline">导出尺寸
+          <select id="qs-export-px">
+            <option value="512">512px</option>
+            <option value="1024">1024px</option>
+            <option value="2048">2048px</option>
+            <option value="4096">4096px</option>
+          </select>
+        </label>
+        <button type="button" class="btn" id="qs-png">下载 PNG</button>
+        <button type="button" class="btn btn-alt" id="qs-svg">下载 SVG</button>
+      </div>
+    </div>
+
+    <div class="qs-controls">
+      <label class="qs-field"><span>内容（链接或文字）</span>
+        <textarea id="qs-text" rows="3" spellcheck="false" placeholder="https://example.com"></textarea>
+      </label>
+
+      <div class="qs-field"><span>点阵样式</span><div class="qs-opts" id="qs-styles"></div></div>
+      <div class="qs-field"><span>定位点形状</span><div class="qs-opts" id="qs-eyes"></div></div>
+
+      <div class="qs-row">
+        <label class="qs-field"><span>前景色</span><input type="color" id="qs-fg" value="#111111"></label>
+        <label class="qs-field"><span>渐变第二色</span><input type="color" id="qs-fg2" value="#5b21b6"></label>
+        <label class="qs-field qs-check"><span>启用渐变</span><input type="checkbox" id="qs-gradient"></label>
+      </div>
+      <label class="qs-field"><span>渐变角度<b id="qs-angle-v">45°</b></span><input type="range" id="qs-angle" min="0" max="360" value="45"></label>
+
+      <div class="qs-row">
+        <label class="qs-field"><span>背景色</span><input type="color" id="qs-bg" value="#ffffff"></label>
+        <label class="qs-field qs-check"><span>透明背景</span><input type="checkbox" id="qs-transparent"></label>
+      </div>
+      <label class="qs-field"><span>留白边距<b id="qs-margin-v">2</b></span><input type="range" id="qs-margin" min="0" max="6" value="2"></label>
+
+      <div class="qs-row">
+        <label class="qs-field"><span>容错等级</span>
+          <select id="qs-ecc">
+            <option value="L">L — 约 7% 可修复</option>
+            <option value="M" selected>M — 约 15% 可修复</option>
+            <option value="Q">Q — 约 25% 可修复</option>
+            <option value="H">H — 约 30% 可修复</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="qs-field"><span>内嵌标志（自动切到 H 级容错）</span>
+        <div class="qs-row">
+          <input type="file" id="qs-logo" accept="image/*">
+          <button type="button" class="btn btn-alt" id="qs-logo-clear" hidden>移除标志</button>
+        </div>
+        <label class="qs-field"><span>标志大小<b id="qs-logo-scale-v">22%</b></span><input type="range" id="qs-logo-scale" min="0.12" max="0.32" step="0.01" value="0.22"></label>
+      </div>
+
+      <div class="qs-field"><span>配色</span><div class="qs-opts" id="qs-palettes"></div></div>
+      <div class="qs-row">
+        <button type="button" class="btn btn-alt" id="qs-random">随机一套样式</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="facts" aria-label="处理方式">
+    <article class="fact"><h2>全程本地</h2><p>二维码在你浏览器的画布和 SVG 里画出来，编码不经过任何服务器，输入的内容不会离开这台设备。</p></article>
+    <article class="fact"><h2>扫描前先测一下</h2><p>美化过的二维码对比度可能下降。导出后先用手机扫一遍确认能识别，再印出去或发给别人；浅色前景配深色背景多数扫码器读不出来。</p></article>
+  </section>
+</main>
+
+<footer>
+  <p><a class="home-link" href="../">小胡的工具箱</a> · 所有文件都在你的浏览器内本地处理，不上传服务器 · <a href="../privacy/">隐私</a></p>
+</footer>
+
+<script src="../js/qrcode.min.js"></script>
+<script src="app.js"></script>
+<script src="../toolkit.js"></script>
+<link rel="stylesheet" href="../sidebar.css">
+<div id="site-sidebar" data-base="../"></div>
+<div id="sidebar-backdrop"></div>
+<button id="sidebar-toggle" type="button" aria-label="打开分类导航"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>分类</button>
+<script src="../js/sidebar-data.js"></script>
+<script src="../sidebar.js"></script>
+</body>
+</html>

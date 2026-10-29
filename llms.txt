@@ -1,6 +1,6 @@
 # 小胡的工具箱 Local Web Tools
 
-> 184 个单用途浏览器工具：图片压缩与转换、PDF 处理、视频音频编辑、文本编码、密码生成、双设备直连。所有处理在浏览器本地完成，文件不上传、无需注册。
+> 185 个单用途浏览器工具：图片压缩与转换、PDF 处理、视频音频编辑、文本编码、密码生成、双设备直连。所有处理在浏览器本地完成，文件不上传、无需注册。
 
 页面地址以 https://httcup.github.io/tools/ 为前缀。
 
@@ -75,7 +75,7 @@
 - [删除换行](https://httcup.github.io/tools/remove-line-breaks/): 修掉从 PDF 复制出来的断行，段落结构可以保留。
 - [文本排序](https://httcup.github.io/tools/sort-lines/): 按字母、拼音、长度排序，也能反转或随机打乱。
 - [随机抽签](https://httcup.github.io/tools/random-picker/): 贴名单抽中奖者，加密级随机数，也能整队打乱。
-
+- [二维码生成和美化](https://httcup.github.io/tools/qr-style/): 参数化二维码：8 种点阵样式、渐变配色、内嵌标志，导出 PNG/SVG。
 
 ### 连接设备
 - [文本与文件分享](https://httcup.github.io/tools/share-text/): 从打开的浏览器加密分享文本与文件。默认直连，也可选择云中转。你可以逐一批准读者。

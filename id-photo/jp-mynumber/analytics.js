@@ -105,3 +105,6 @@ selected[target]=true;
 });
 }catch(err){}
 }());
+
+/* Baidu Tongji */
+var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?d05e52c39dd9224d6370ea9f1c9f2998";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();

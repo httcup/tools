@@ -1,7 +1,7 @@
 <!-- Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check --><!doctype html> <html data-offline-version="605a402161" lang="zh"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">   <meta http-equiv="Content-Security-Policy" content="
   default-src 'none';
-  script-src 'self';
-  connect-src 'self' blob:;
+  script-src 'self' https://www.googletagmanager.com https://hm.baidu.com;
+  connect-src 'self' blob: https://*.google-analytics.com https://*.analytics.google.com;
   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
   font-src https://fonts.gstatic.com;
   img-src 'self' data: https: blob:;

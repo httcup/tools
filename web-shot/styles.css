@@ -1,0 +1,98 @@
+/* 网页文章截图 — 页面样式。变量沿用 site.css。 */
+
+.ws-page main { max-width: 1150px; }
+
+.ws-app {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.ws-input, .ws-output {
+  border: 1px solid var(--line, #e3e6ea);
+  border-radius: 12px;
+  background: #fff;
+  padding: 1rem;
+}
+
+.ws-tabs { display: flex; gap: 0.4rem; margin-bottom: 0.8rem; }
+.ws-tab {
+  border: 1px solid var(--line, #e3e6ea);
+  border-radius: 99px;
+  background: #fff;
+  font: inherit; font-size: 0.85rem;
+  padding: 0.3rem 0.9rem;
+  cursor: pointer;
+}
+.ws-tab.active { background: var(--accent, #1971c2); color: var(--accent-text, #fff); border-color: var(--accent, #1971c2); }
+
+.ws-label { display: flex; flex-direction: column; gap: 0.3rem; font-size: 0.85rem; margin-bottom: 0.6rem; }
+.ws-label input, .ws-label textarea {
+  font: inherit; font-size: 0.9rem;
+  border: 1px solid var(--line, #e3e6ea);
+  border-radius: 8px;
+  padding: 0.45rem 0.6rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.ws-label textarea { line-height: 1.6; resize: vertical; }
+.ws-label input:focus, .ws-label textarea:focus { border-color: var(--accent, #1971c2); outline: none; }
+
+.ws-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 38px;
+  padding: 0.35rem 1rem;
+  border: 1px solid var(--line, #e3e6ea);
+  border-radius: 8px;
+  background: #fff;
+  color: inherit;
+  font: inherit; font-size: 0.88rem;
+  cursor: pointer;
+}
+.ws-btn:disabled { opacity: .5; cursor: not-allowed; }
+.ws-primary { background: var(--accent, #1971c2); color: var(--accent-text, #fff); border-color: var(--accent, #1971c2); font-weight: 600; }
+
+.ws-hint { font-size: 0.8rem; color: var(--muted, #6b7280); margin: 0.5rem 0 0; }
+
+.ws-opts {
+  display: flex; flex-wrap: wrap; gap: 0.5rem 1.1rem;
+  border-top: 1px dashed var(--line, #e3e6ea);
+  margin-top: 0.8rem;
+  padding-top: 0.7rem;
+  font-size: 0.85rem;
+  align-items: center;
+}
+.ws-opts label { display: inline-flex; align-items: center; gap: 0.35rem; }
+.ws-opts select {
+  font: inherit; font-size: 0.84rem;
+  border: 1px solid var(--line, #e3e6ea);
+  border-radius: 7px;
+  padding: 0.25rem 0.35rem;
+}
+
+.ws-output-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 0.7rem;
+}
+.ws-preview-wrap {
+  position: relative;
+  max-height: 72vh;
+  overflow: auto;
+  border: 1px solid var(--line, #e3e6ea);
+  border-radius: 8px;
+  background: var(--card, #fafbfc);
+}
+.ws-preview-wrap canvas { display: block; width: 100%; height: auto; }
+.ws-empty {
+  position: absolute;
+  inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--muted, #6b7280);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .ws-app { grid-template-columns: 1fr; }
+}

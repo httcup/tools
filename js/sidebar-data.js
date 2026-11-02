@@ -201,8 +201,23 @@ window.SIDEBAR_CATS = [
    },
    {
     "slug": "pay-qr-merge",
-    "name": "收款码合并",
+    "name": "收款码拼接",
     "href": "./pay-qr-merge/"
+   },
+   {
+    "slug": "pay-qr-2in1",
+    "name": "收款码二合一",
+    "href": "./pay-qr-2in1/"
+   },
+   {
+    "slug": "weekly-report",
+    "name": "周报生成器",
+    "href": "./weekly-report/"
+   },
+   {
+    "slug": "note-cloud",
+    "name": "随手记支持云同步版（云便签）",
+    "href": "https://note.139t.cn/"
    }
   ]
  },
@@ -254,6 +269,11 @@ window.SIDEBAR_CATS = [
     "slug": "id-photo-bg",
     "name": "证件照换底色",
     "href": "./id-photo-bg/"
+   },
+   {
+    "slug": "exam-photo",
+    "name": "报名证件照处理",
+    "href": "./exam-photo/"
    },
    {
     "slug": "stack-images",
@@ -489,6 +509,11 @@ window.SIDEBAR_CATS = [
     "slug": "audio-cutter",
     "name": "在线音频剪辑",
     "href": "./audio-cutter/"
+   },
+   {
+    "slug": "web-shot",
+    "name": "网页文章截图",
+    "href": "./web-shot/"
    }
   ]
  },
@@ -518,8 +543,18 @@ window.SIDEBAR_CATS = [
    },
    {
     "slug": "whiteboard",
-    "name": "在线白板",
+    "name": "在线白板缩小版",
     "href": "./whiteboard/"
+   },
+   {
+    "slug": "multi-board",
+    "name": "多功能白板",
+    "href": "./multi-board/"
+   },
+   {
+    "slug": "mini-board",
+    "name": "极简白板",
+    "href": "./mini-board/"
    },
    {
     "slug": "invoice-generator",
@@ -729,6 +764,11 @@ window.SIDEBAR_CATS = [
     "slug": "case",
     "name": "大小写转换",
     "href": "./quick/#case"
+   },
+   {
+    "slug": "github-download",
+    "name": "GitHub 仓库下载",
+    "href": "./github-download/"
    }
   ]
  },

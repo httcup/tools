@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>极简白板：打开就能画，随手涂鸦演算 | 小胡的工具箱</title>
+<meta name="description" content="极简在线画板：没有多余按钮，六支彩笔、两档粗细、橡皮、撤销、清空，一键导出 PNG。适合随手涂鸦、讲题演算、画个示意。全部本地运行。">
+<link rel="canonical" href="https://139t.cn/mini-board/">
+<meta name="theme-color" content="#f6f7f9">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.googletagmanager.com https://hm.baidu.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://hm.baidu.com; connect-src 'self' https://ipwho.is https://ipapi.co; form-action 'none'; base-uri 'none'; frame-ancestors 'none'">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="小胡的工具箱">
+<meta property="og:url" content="https://139t.cn/mini-board/">
+<meta property="og:title" content="极简白板 — 打开就能画，随手涂鸦演算">
+<meta property="og:description" content="六支彩笔、两档粗细、橡皮撤销清空，一键导出 PNG。没有多余按钮，全部本地运行。">
+<meta name="twitter:card" content="summary">
+<link rel="alternate" type="text/markdown" href="index.md">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../i18n.css">
+<script defer src="../i18n.js"></script>
+</head>
+<body class="mb-page">
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="hub-head">
+  <div class="head-row">
+    <p class="brand">
+      <a class="brand-home" href="../">
+        <svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+          <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+          <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+          <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+        </svg>
+        Tools
+      </a>
+    </p>
+  </div>
+  <nav class="crumbs" aria-label="位置">
+    <a href="../">全部工具</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">极简白板</span>
+  </nav>
+  <h1>极简白板</h1>
+  <p class="lede">打开就能画：六支彩笔、两档粗细、橡皮、撤销、清空，画完一键导出 PNG。没有图层、没有菜单，适合随手涂鸦、讲题演算、线上课示意。画的东西只在这块画布上，不上传。</p>
+</header>
+
+<main id="main" class="tool-main">
+  <section class="mb-app" aria-label="极简白板">
+    <div class="mb-bar" role="toolbar" aria-label="画笔工具">
+      <div class="mb-colors" id="mb-colors" role="radiogroup" aria-label="颜色">
+        <button class="mb-pen active" type="button" data-color="#1f2328" style="--pc:#1f2328" aria-label="黑色" aria-pressed="true"></button>
+        <button class="mb-pen" type="button" data-color="#e03131" style="--pc:#e03131" aria-label="红色" aria-pressed="false"></button>
+        <button class="mb-pen" type="button" data-color="#f08c00" style="--pc:#f08c00" aria-label="橙色" aria-pressed="false"></button>
+        <button class="mb-pen" type="button" data-color="#2f9e44" style="--pc:#2f9e44" aria-label="绿色" aria-pressed="false"></button>
+        <button class="mb-pen" type="button" data-color="#1971c2" style="--pc:#1971c2" aria-label="蓝色" aria-pressed="false"></button>
+        <button class="mb-pen" type="button" data-color="#9c36b5" style="--pc:#9c36b5" aria-label="紫色" aria-pressed="false"></button>
+      </div>
+      <div class="mb-sizes" id="mb-sizes" role="radiogroup" aria-label="粗细">
+        <button class="mb-size" type="button" data-size="3" aria-label="细笔" aria-pressed="false"><span></span></button>
+        <button class="mb-size active" type="button" data-size="6" aria-label="中笔" aria-pressed="true"><span></span></button>
+      </div>
+      <div class="mb-actions">
+        <button class="mb-btn" id="mb-eraser" type="button" aria-pressed="false" title="橡皮（E）"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8.5 20-4.6-4.6a2 2 0 0 1 0-2.8l8-8a2 2 0 0 1 2.8 0l5 5a2 2 0 0 1 0 2.8L14 18"/><path d="M8.5 20H20"/></svg>橡皮</button>
+        <button class="mb-btn" id="mb-undo" type="button" title="撤销（Ctrl+Z）"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 14 4 9l5-5"/><path d="M4 9h10a6 6 0 0 1 0 12h-3"/></svg>撤销</button>
+        <button class="mb-btn" id="mb-clear" type="button" title="清空"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/></svg>清空</button>
+        <button class="mb-btn mb-primary" id="mb-save" type="button" title="导出 PNG"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>导出 PNG</button>
+      </div>
+    </div>
+    <div class="mb-stage" id="mb-stage">
+      <canvas id="mb-canvas" aria-label="白板画布"></canvas>
+    </div>
+  </section>
+
+  <section class="facts" aria-label="说明">
+    <article class="fact"><h2>笔迹只在本地</h2><p>画布内容不经过任何网络，导出 PNG 也由浏览器自己生成。关掉页面画就没了——它本来就是给「画完就收」的场景用的。</p></article>
+    <article class="fact"><h2>和「多功能白板」怎么选</h2><p>随手画几笔、讲个题，用这个；要做流程图、便签、多对象排版，去用 <a href="../multi-board/">多功能白板</a>。</p></article>
+  </section>
+</main>
+
+<footer>
+  <p><a class="home-link" href="../">小胡的工具箱</a> · 所有文件都在你的浏览器内本地处理，不上传服务器</p>
+</footer>
+
+<script src="../toolkit.js"></script>
+<link rel="stylesheet" href="../sidebar.css">
+<div id="site-sidebar" data-base="../"></div>
+<div id="sidebar-backdrop"></div>
+<button id="sidebar-toggle" type="button" aria-label="打开分类导航"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>分类</button>
+<script src="../js/sidebar-data.js"></script>
+<script src="../sidebar.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

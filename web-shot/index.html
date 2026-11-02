@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页文章截图：公众号文章一键转成长图 | 小胡的工具箱</title>
+<meta name="description" content="把公众号文章、网页正文转成排版精美的长图：粘贴正文或输入链接抓取，自动排标题、段落、引用与列表，导出高清 PNG，方便转发分享。渲染全部在浏览器本地完成。">
+<link rel="canonical" href="https://139t.cn/web-shot/">
+<meta name="theme-color" content="#f6f7f9">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.googletagmanager.com https://hm.baidu.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://hm.baidu.com; connect-src 'self' https://r.jina.ai https://ipwho.is https://ipapi.co; form-action 'none'; base-uri 'none'; frame-ancestors 'none'">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="小胡的工具箱">
+<meta property="og:url" content="https://139t.cn/web-shot/">
+<meta property="og:title" content="网页文章截图 — 公众号文章一键转长图">
+<meta property="og:description" content="粘贴正文或输入链接，自动排版成精美长图，导出高清 PNG。本地渲染。">
+<meta name="twitter:card" content="summary">
+<link rel="alternate" type="text/markdown" href="index.md">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../i18n.css">
+<script defer src="../i18n.js"></script>
+</head>
+<body class="ws-page">
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="hub-head">
+  <div class="head-row">
+    <p class="brand">
+      <a class="brand-home" href="../">
+        <svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+          <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+          <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+          <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+        </svg>
+        Tools
+      </a>
+    </p>
+  </div>
+  <nav class="crumbs" aria-label="位置">
+    <a href="../">全部工具</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">网页文章截图</span>
+  </nav>
+  <h1>网页文章截图</h1>
+  <p class="lede">把公众号文章、网页正文转成一张排版干净的长图：全文复制粘贴进来，或输入链接自动抓取正文，自动排好标题、段落、引用和列表，导出高清 PNG 直接转发。排版渲染全部在你的浏览器里完成。</p>
+</header>
+
+<main id="main" class="tool-main">
+  <section class="ws-app" aria-label="网页文章截图">
+    <div class="ws-input">
+      <div class="ws-tabs" role="tablist">
+        <button class="ws-tab active" type="button" data-tab="paste" aria-pressed="true">粘贴正文</button>
+        <button class="ws-tab" type="button" data-tab="url" aria-pressed="false">输入链接抓取</button>
+      </div>
+
+      <div class="ws-pane" id="ws-pane-paste">
+        <label class="ws-label">标题 <input type="text" id="ws-title" placeholder="文章标题（可空）"></label>
+        <label class="ws-label">来源 <input type="text" id="ws-meta" placeholder="公众号名 / 网址 / 日期（可空）"></label>
+        <label class="ws-label">正文 <textarea id="ws-content" rows="10" placeholder="把文章正文粘贴到这里：支持直接粘富文本（自动识别标题、段落、引用、列表），也支持纯文本和 Markdown（# 标题、- 列表、> 引用）。"></textarea></label>
+      </div>
+
+      <div class="ws-pane" id="ws-pane-url" hidden>
+        <label class="ws-label">文章链接 <input type="url" id="ws-url" placeholder="https://mp.weixin.qq.com/s/…"></label>
+        <button class="ws-btn ws-primary" id="ws-fetch" type="button">抓取正文</button>
+        <p class="ws-hint">通过公开只读代理获取正文文本（r.jina.ai），失败时请回到「粘贴正文」手动贴。图片受防盗链限制不入图，抓的是纯文字排版。</p>
+      </div>
+
+      <div class="ws-opts">
+        <label>宽度 <select id="ws-width"><option value="750">750（公众号）</option><option value="900">900</option><option value="1080">1080</option></select></label>
+        <label>主题 <select id="ws-theme"><option value="clean">素白</option><option value="paper">纸黄</option><option value="dark">夜读</option></select></label>
+        <label>字号 <select id="ws-font"><option value="16">小</option><option value="17" selected>中</option><option value="19">大</option></select></label>
+        <label><input type="checkbox" id="ws-tail" checked> 片尾署名「小胡的工具箱」</label>
+      </div>
+    </div>
+
+    <div class="ws-output">
+      <div class="ws-output-bar">
+        <strong>长图预览</strong>
+        <button class="ws-btn ws-primary" id="ws-dl" type="button" disabled>下载 PNG</button>
+      </div>
+      <div class="ws-preview-wrap"><canvas id="ws-canvas" aria-label="长图预览"></canvas><p class="ws-empty" id="ws-empty">粘贴内容后自动生成</p></div>
+    </div>
+  </section>
+
+  <section class="facts" aria-label="说明">
+    <article class="fact"><h2>图片为什么不入图</h2><p>公众号文章图片有防盗链（跨域拿不进来），硬要抓只会整图报废，所以这里做的是干净的纯文字长图——标题、正文、引用、列表排清楚，转发场景反而更清爽。需要保留图片就整页截图。</p></article>
+    <article class="fact"><h2>排版在本地</h2><p>粘贴的正文在浏览器 canvas 里排版导出，不上传。「链接抓取」会把网址发给公开只读代理换取正文文本，除此之外没有任何数据离开你的浏览器。</p></article>
+  </section>
+</main>
+
+<footer>
+  <p><a class="home-link" href="../">小胡的工具箱</a> · 所有文件都在你的浏览器内本地处理，不上传服务器</p>
+</footer>
+
+<script src="../toolkit.js"></script>
+<link rel="stylesheet" href="../sidebar.css">
+<div id="site-sidebar" data-base="../"></div>
+<div id="sidebar-backdrop"></div>
+<button id="sidebar-toggle" type="button" aria-label="打开分类导航"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>分类</button>
+<script src="../js/sidebar-data.js"></script>
+<script src="../sidebar.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+/* 报名证件照处理 — 页面样式。变量沿用 site.css。 */
+
+.ep-page main { max-width: 1050px; }
+
+.ep-app {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 1rem;
+  align-items: start;
+}
+
+.ep-panel {
+  border: 1px solid var(--line, #e3e6ea);
+  border-radius: 12px;
+  background: #fff;
+  padding: 1rem;
+}
+
+.ep-spec h2 { font-size: 1rem; margin: 0 0 0.6rem; }
+.ep-row { display: flex; flex-wrap: wrap; gap: 0.6rem 1rem; margin-bottom: 0.5rem; }
+.ep-row label { display: flex; align-items: center; gap: 0.35rem; font-size: 0.88rem; }
+.ep-row input[type="number"], .ep-row select {
+  font: inherit; font-size: 0.88rem;
+  border: 1px solid var(--line, #e3e6ea);
+  border-radius: 7px;
+  padding: 0.3rem 0.45rem;
+  min-height: 34px;
+  width: 6.2em;
+}
+.ep-row select { width: auto; }
+.ep-tip { font-size: 0.8rem; color: var(--muted, #6b7280); margin: 0.3rem 0 0; }
+
+.ep-upload {
+  display: flex; align-items: center; justify-content: center;
+  border: 2px dashed var(--line, #cfd4da);
+  border-radius: 10px;
+  padding: 2.2rem 1rem;
+  margin-top: 0.9rem;
+  color: var(--muted, #6b7280);
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-align: center;
+  transition: border-color .15s, color .15s;
+}
+.ep-upload:hover { border-color: var(--accent, #1971c2); color: var(--accent, #1971c2); }
+
+.ep-crop {
+  position: relative;
+  margin-top: 0.9rem;
+  border-radius: 8px;
+  overflow: hidden;
+  user-select: none;
+  touch-action: none;
+  background: #f0f1f3;
+}
+.ep-crop img { display: block; width: 100%; max-height: 62vh; object-fit: contain; }
+
+.ep-sel {
+  position: absolute;
+  border: 2px solid #1971c2;
+  box-shadow: 0 0 0 9999px rgba(15, 20, 30, .45);
+  cursor: move;
+}
+.ep-h {
+  position: absolute;
+  width: 16px; height: 16px;
+  background: #fff;
+  border: 2px solid #1971c2;
+  border-radius: 50%;
+}
+.ep-nw { left: -8px; top: -8px; cursor: nwse-resize; }
+.ep-ne { right: -8px; top: -8px; cursor: nesw-resize; }
+.ep-sw { left: -8px; bottom: -8px; cursor: nesw-resize; }
+.ep-se { right: -8px; bottom: -8px; cursor: nwse-resize; }
+
+.ep-actions { display: flex; gap: 0.6rem; margin-top: 0.9rem; }
+.ep-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 40px;
+  padding: 0.4rem 1.1rem;
+  border: 1px solid var(--line, #e3e6ea);
+  border-radius: 8px;
+  background: #fff;
+  color: inherit;
+  font: inherit; font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.ep-btn:disabled { opacity: .45; cursor: not-allowed; }
+.ep-primary { background: var(--accent, #1971c2); color: var(--accent-text, #fff); border-color: var(--accent, #1971c2); font-weight: 600; }
+
+.ep-result {
+  border: 1px solid var(--line, #e3e6ea);
+  border-radius: 12px;
+  background: #fff;
+  padding: 1rem;
+  position: sticky;
+  top: 1rem;
+}
+.ep-result h2 { font-size: 1rem; margin: 0 0 0.5rem; }
+.ep-meta { font-size: 0.82rem; color: var(--muted, #6b7280); margin: 0 0 0.6rem; }
+.ep-result img {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line, #e3e6ea);
+  border-radius: 6px;
+  margin-bottom: 0.8rem;
+  background: repeating-conic-gradient(#eee 0 25%, #fff 0 50%) 0 0/16px 16px;
+}
+
+@media (max-width: 860px) {
+  .ep-app { grid-template-columns: 1fr; }
+  .ep-result { position: static; }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>报名证件照处理：按考试规格裁剪压缩到指定 KB | 小胡的工具箱</title>
+<meta name="description" content="考试报名证件照处理：输入要求的宽高像素与最大体积，拖选框裁剪人像，自动压到指定 KB 以内输出 JPG，一次过审。照片只在浏览器本地处理，不上传。">
+<link rel="canonical" href="https://139t.cn/exam-photo/">
+<meta name="theme-color" content="#f6f7f9">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.googletagmanager.com https://hm.baidu.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://hm.baidu.com; connect-src 'self' https://ipwho.is https://ipapi.co; form-action 'none'; base-uri 'none'; frame-ancestors 'none'">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="小胡的工具箱">
+<meta property="og:url" content="https://139t.cn/exam-photo/">
+<meta property="og:title" content="报名证件照处理 — 裁到规格、压到 KB，一次过审">
+<meta property="og:description" content="输入报名系统要求的宽高与最大体积，拖框裁剪自动压缩输出 JPG。照片不上传，全在本地处理。">
+<meta name="twitter:card" content="summary">
+<link rel="alternate" type="text/markdown" href="index.md">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../i18n.css">
+<script defer src="../i18n.js"></script>
+</head>
+<body class="ep-page">
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="hub-head">
+  <div class="head-row">
+    <p class="brand">
+      <a class="brand-home" href="../">
+        <svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+          <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+          <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+          <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+        </svg>
+        Tools
+      </a>
+    </p>
+  </div>
+  <nav class="crumbs" aria-label="位置">
+    <a href="../">全部工具</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">报名证件照处理</span>
+  </nav>
+  <h1>报名证件照处理</h1>
+  <p class="lede">考试报名系统对照片卡得最死：宽高要精确到像素，体积要卡在 KB 区间。这里按报名要求填宽高和最大体积，拖框把人像裁正，自动压缩到 KB 以内输出 JPG。照片只读进浏览器本地处理，不上传。</p>
+</header>
+
+<main id="main" class="tool-main">
+  <section class="ep-app" aria-label="报名证件照处理">
+    <div class="ep-panel">
+      <div class="ep-spec">
+        <h2>报名规格</h2>
+        <div class="ep-row">
+          <label>常见规格 <select id="ep-preset">
+            <option value="">自定义…</option>
+            <option value="295x413">一寸 295×413</option>
+            <option value="413x579">二寸 413×579</option>
+            <option value="413x531">小二寸 413×531</option>
+            <option value="390x567">大一寸 390×567</option>
+            <option value="480x640">480×640（常见报名）</option>
+            <option value="240x320">240×320</option>
+          </select></label>
+        </div>
+        <div class="ep-row">
+          <label>宽 <input type="number" id="ep-w" value="480" min="20" max="5000"></label>
+          <label>高 <input type="number" id="ep-h" value="640" min="20" max="5000"></label>
+          <label>≤ 体积 <input type="number" id="ep-kb" value="40" min="5" max="2048"> KB</label>
+        </div>
+        <p class="ep-tip">体积留点余量更稳：要求 20–40KB 就填 38。JPG 输出。</p>
+      </div>
+
+      <label class="ep-upload" id="ep-upload">
+        <input type="file" id="ep-file" accept="image/*" hidden>
+        <span>点这里选择证件照原片（宽高不限，越清晰越好）</span>
+      </label>
+
+      <div class="ep-crop" id="ep-crop" hidden>
+        <img id="ep-img" alt="证件照原图">
+        <div class="ep-sel" id="ep-sel">
+          <span class="ep-h ep-nw" data-h="nw"></span>
+          <span class="ep-h ep-ne" data-h="ne"></span>
+          <span class="ep-h ep-sw" data-h="sw"></span>
+          <span class="ep-h ep-se" data-h="se"></span>
+        </div>
+      </div>
+
+      <div class="ep-actions">
+        <button class="ep-btn ep-primary" id="ep-gen" type="button" disabled>生成证件照</button>
+        <button class="ep-btn" id="ep-redo-file" type="button" hidden>重新选照片</button>
+      </div>
+    </div>
+
+    <div class="ep-result" id="ep-result" hidden>
+      <h2>成品（点图或按钮下载）</h2>
+      <p class="ep-meta" id="ep-meta"></p>
+      <img id="ep-out" alt="证件照成品预览">
+      <a class="ep-btn ep-primary" id="ep-dl" download="报名证件照.jpg">下载 JPG</a>
+    </div>
+  </section>
+
+  <section class="facts" aria-label="说明">
+    <article class="fact"><h2>过审小抄</h2><p>规格先看报名公告原文：宽高像素（如 480×640）、格式 JPG、体积区间（如 20–40KB）。这里输出宽高精确一致、体积不超过你填的上限；体积下限不够时换更清晰的原片，或把宽高按比例调大再生成。</p></article>
+    <article class="fact"><h2>照片不出本机</h2><p>裁剪与压缩全部在浏览器 canvas 里完成，没有任何请求带着照片离开你的设备。需要换底色（白/蓝/红/透明）请配合 <a href="../id-photo-bg/">证件照换底色</a> 使用。</p></article>
+  </section>
+</main>
+
+<footer>
+  <p><a class="home-link" href="../">小胡的工具箱</a> · 所有文件都在你的浏览器内本地处理，不上传服务器</p>
+</footer>
+
+<script src="../toolkit.js"></script>
+<link rel="stylesheet" href="../sidebar.css">
+<div id="site-sidebar" data-base="../"></div>
+<div id="sidebar-backdrop"></div>
+<button id="sidebar-toggle" type="button" aria-label="打开分类导航"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>分类</button>
+<script src="../js/sidebar-data.js"></script>
+<script src="../sidebar.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>周报生成器：把工作内容排成一份像样的周报 | 小胡的工具箱</title>
+<meta name="description" content="填写本周完成、下周计划、问题与需要的支持，自动套日期、排版成一份条理清晰的周报，一键复制或下载 Markdown。内容自动保存在浏览器本地，不上传。">
+<link rel="canonical" href="https://139t.cn/weekly-report/">
+<meta name="theme-color" content="#f6f7f9">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.googletagmanager.com https://hm.baidu.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://hm.baidu.com; connect-src 'self' https://ipwho.is https://ipapi.co; form-action 'none'; base-uri 'none'; frame-ancestors 'none'">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="小胡的工具箱">
+<meta property="og:url" content="https://139t.cn/weekly-report/">
+<meta property="og:title" content="周报生成器 — 把工作内容排成一份像样的周报">
+<meta property="og:description" content="填条目、自动套日期排版，一键复制或下载 Markdown，内容只存在本地。">
+<meta name="twitter:card" content="summary">
+<link rel="alternate" type="text/markdown" href="index.md">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../i18n.css">
+<script defer src="../i18n.js"></script>
+</head>
+<body class="wr-page">
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="hub-head">
+  <div class="head-row">
+    <p class="brand">
+      <a class="brand-home" href="../">
+        <svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+          <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+          <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+          <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+        </svg>
+        Tools
+      </a>
+    </p>
+  </div>
+  <nav class="crumbs" aria-label="位置">
+    <a href="../">全部工具</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">周报生成器</span>
+  </nav>
+  <h1>周报生成器</h1>
+  <p class="lede">把流水账排成一份像样的周报：左侧按「本周完成 / 下周计划 / 问题与需要的支持」填条目，右侧实时排出带日期、带编号的成稿，一键复制或下载 Markdown。填写内容自动存在你的浏览器里，不上传。</p>
+</header>
+
+<main id="main" class="tool-main">
+  <section class="wr-app" aria-label="周报生成器">
+    <div class="wr-editor">
+      <div class="wr-head">
+        <label>署名 <input type="text" id="wr-name" placeholder="可不填"></label>
+        <label>周期 <input type="text" id="wr-range" readonly title="自动取本周一到周日"></label>
+      </div>
+
+      <div class="wr-sec" data-sec="done">
+        <h2>本周完成 <button class="wr-add" type="button" data-add="done">＋ 加一条</button></h2>
+        <ul class="wr-list" id="wr-list-done"></ul>
+        <p class="wr-empty" data-empty="done">还没有条目，点右上角「加一条」。</p>
+      </div>
+
+      <div class="wr-sec" data-sec="plan">
+        <h2>下周计划 <button class="wr-add" type="button" data-add="plan">＋ 加一条</button></h2>
+        <ul class="wr-list" id="wr-list-plan"></ul>
+        <p class="wr-empty" data-empty="plan">还没有条目。</p>
+      </div>
+
+      <div class="wr-sec" data-sec="risk">
+        <h2>问题与需要的支持 <button class="wr-add" type="button" data-add="risk">＋ 加一条</button></h2>
+        <ul class="wr-list" id="wr-list-risk"></ul>
+        <p class="wr-empty" data-empty="risk">没有就空着，这节不会出现在周报里。</p>
+      </div>
+
+      <div class="wr-opts">
+        <label><input type="checkbox" id="wr-opt-date" checked> 标题带日期</label>
+        <label><input type="checkbox" id="wr-opt-num" checked> 条目编号</label>
+        <label><input type="checkbox" id="wr-opt-skip-empty" checked> 空章节不输出</label>
+        <label>标题 <input type="text" id="wr-title" placeholder="周报" style="width:7em"></label>
+      </div>
+    </div>
+
+    <div class="wr-output">
+      <div class="wr-output-bar">
+        <strong>周报预览</strong>
+        <span>
+          <button class="wr-btn" id="wr-copy" type="button">复制</button>
+          <button class="wr-btn" id="wr-dl-md" type="button">下载 .md</button>
+          <button class="wr-btn" id="wr-dl-txt" type="button">下载 .txt</button>
+        </span>
+      </div>
+      <pre id="wr-preview" aria-live="polite"></pre>
+    </div>
+  </section>
+
+  <section class="facts" aria-label="说明">
+    <article class="fact"><h2>写周报的小建议</h2><p>条目写「动作 + 结果」比写「做了什么」更有说服力：比如「上线了退款流程改造，退款时效从 48h 降到 6h」。拿不准详略就少而具体，别多而空。</p></article>
+    <article class="fact"><h2>内容只存本地</h2><p>填的内容自动保存在浏览器 localStorage，下次打开接着写；清浏览器数据会丢，重要内容记得下载 .md 留底。全文都在本地生成，没有任何上传。</p></article>
+  </section>
+</main>
+
+<footer>
+  <p><a class="home-link" href="../">小胡的工具箱</a> · 所有文件都在你的浏览器内本地处理，不上传服务器</p>
+</footer>
+
+<script src="../toolkit.js"></script>
+<link rel="stylesheet" href="../sidebar.css">
+<div id="site-sidebar" data-base="../"></div>
+<div id="sidebar-backdrop"></div>
+<button id="sidebar-toggle" type="button" aria-label="打开分类导航"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>分类</button>
+<script src="../js/sidebar-data.js"></script>
+<script src="../sidebar.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

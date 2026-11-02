@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>收款码二合一：微信支付宝物理合并成一张码，可打印 | 小胡的工具箱</title>
+<meta name="description" content="把微信收款码和支付宝收款码物理合并成一张二维码：微信码做底、支付宝码去角旋转后融入右下角，微信从左到右优先识别、支付宝忽略微信格式走自己的码。不用服务器不过期，生成即永久，打印贴柜台。全程本地处理。">
+<link rel="canonical" href="https://139t.cn/pay-qr-2in1/">
+<meta name="theme-color" content="#f6f7f9">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.googletagmanager.com https://hm.baidu.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://hm.baidu.com; connect-src 'self' https://ipwho.is https://ipapi.co; form-action 'none'; base-uri 'none'; frame-ancestors 'none'">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="小胡的工具箱">
+<meta property="og:url" content="https://139t.cn/pay-qr-2in1/">
+<meta property="og:title" content="收款码二合一 — 物理合并成一张码，打印即用">
+<meta property="og:description" content="微信码做底、支付宝码旋转融入，一张码两个 App 都能扫。不用服务器、永不过期，全程本地生成。">
+<meta name="twitter:card" content="summary">
+<link rel="alternate" type="text/markdown" href="index.md">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../i18n.css">
+<script defer src="../i18n.js"></script>
+</head>
+<body class="p2-page">
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="hub-head">
+  <div class="head-row">
+    <p class="brand">
+      <a class="brand-home" href="../">
+        <svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+          <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+          <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+          <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+        </svg>
+        Tools
+      </a>
+    </p>
+  </div>
+  <nav class="crumbs" aria-label="位置">
+    <a href="../">全部工具</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">收款码二合一</span>
+  </nav>
+  <h1>收款码二合一</h1>
+  <p class="lede">不是把两张码并排贴在一起，而是物理合并成<strong>一张</strong>二维码：微信码做底层，支付宝码去掉无点位角、旋转 180° 后融入右下角。微信扫码从左到右优先识别出微信；支付宝忽略微信格式、单独解出右下角自己的码。生成即永久有效，打印贴柜台就行。识别、合并全部在本地完成。</p>
+</header>
+
+<main id="main" class="tool-main">
+  <section class="p2-app" aria-label="收款码二合一">
+    <div class="p2-slots">
+      <label class="p2-slot" id="p2-slot-wx">
+        <input type="file" id="p2-file-wx" accept="image/*" hidden>
+        <span class="p2-slot-tag p2-tag-wx">微信收款码</span>
+        <span class="p2-slot-body">
+          <span class="p2-slot-hint" id="p2-hint-wx">点这里上传微信收款码截图</span>
+        </span>
+      </label>
+      <label class="p2-slot" id="p2-slot-ali">
+        <input type="file" id="p2-file-ali" accept="image/*" hidden>
+        <span class="p2-slot-tag p2-tag-ali">支付宝收款码</span>
+        <span class="p2-slot-body">
+          <span class="p2-slot-hint" id="p2-hint-ali">点这里上传支付宝收款码截图</span>
+        </span>
+      </label>
+    </div>
+
+    <div class="p2-links">
+      <label>微信码内容 <input type="text" id="p2-text-wx" placeholder="上传后自动识别，也可手动粘贴" spellcheck="false"></label>
+      <label>支付宝码内容 <input type="text" id="p2-text-ali" placeholder="一般形如 https://qr.alipay.com/…" spellcheck="false"></label>
+      <p class="p2-warn" id="p2-warn" hidden></p>
+    </div>
+
+    <div class="p2-opts">
+      <label>融合比例 <input type="range" id="p2-ratio" min="28" max="46" value="32" step="1"> <output id="p2-ratio-out">36%</output></label>
+      <label>导出尺寸 <select id="p2-size"><option value="800">800 px</option><option value="1200" selected>1200 px</option><option value="1600">1600 px</option></select></label>
+      <button class="p2-btn p2-primary" id="p2-gen" type="button" disabled>合并生成</button>
+    </div>
+
+    <div class="p2-result" id="p2-result" hidden>
+      <div class="p2-canvas-wrap"><canvas id="p2-canvas" aria-label="合并后的收款码"></canvas></div>
+      <div class="p2-check" id="p2-check" hidden>
+        <span class="p2-badge" id="p2-check-wx">微信自检…</span>
+        <span class="p2-badge" id="p2-check-ali">支付宝自检…</span>
+      </div>
+      <button class="p2-btn p2-primary" id="p2-dl" type="button">下载 PNG</button>
+      <p class="p2-note" id="p2-note">生成后请务必用微信和支付宝各扫一遍确认。</p>
+    </div>
+  </section>
+
+  <section class="facts" aria-label="原理与说明">
+    <article class="fact"><h2>为什么一张码能被两个 App 认出</h2><p>微信扫一扫「从左到右」优先识别：整图左上/右上/左下三个定位角是微信码的，右下角被覆盖的部分靠 H 级纠错（30%）恢复，解出微信链接。支付宝会忽略 <code>wxp://</code> 这类微信格式，继续在图里找下一个可解析的码——右下角旋转过方向的支付宝码定位角朝向不同，正好被单独解出。原理参考 <a href="https://github.com/httcup/PayQrcode" rel="noopener">PayQrcode</a>。</p></article>
+    <article class="fact"><h2>与「收款码拼接」怎么选</h2><p>这个工具是<strong>真·二合一</strong>：一张码、一次扫码直达对应 App，适合打印贴柜台。但它只支持两个码、抗遮挡能力下降（超 30% 污损会失败）。要并排贴两张、各自完整无损，用 <a href="../pay-qr-merge/">收款码拼接</a>。</p></article>
+    <article class="fact"><h2>图片不出本机</h2><p>上传的收款码只在浏览器里解码出链接文本，重新编码合并也在本地 canvas 完成。收款码链接属于敏感信息，别把导出的码发到公开场合。</p></article>
+  </section>
+</main>
+
+<footer>
+  <p><a class="home-link" href="../">小胡的工具箱</a> · 所有文件都在你的浏览器内本地处理，不上传服务器</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+<script src="../toolkit.js"></script>
+<link rel="stylesheet" href="../sidebar.css">
+<div id="site-sidebar" data-base="../"></div>
+<div id="sidebar-backdrop"></div>
+<button id="sidebar-toggle" type="button" aria-label="打开分类导航"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>分类</button>
+<script src="../js/sidebar-data.js"></script>
+<script src="../sidebar.js"></script>
+</body>
+</html>

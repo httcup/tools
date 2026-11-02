@@ -1,4 +1,4 @@
-/* 收款码合并 — 读取图片、裁白边、排版合成、导出与打印。零依赖。 */
+/* 收款码拼接 — 读取图片、裁白边、排版合成、导出与打印。零依赖。 */
 (function () {
   'use strict';
 
@@ -250,7 +250,7 @@
   function fileName() {
     var d = new Date();
     var p = function (n) { return (n < 10 ? '0' : '') + n; };
-    return '收款码合并-' + d.getFullYear() + p(d.getMonth() + 1) + p(d.getDate()) + '.png';
+    return '收款码拼接-' + d.getFullYear() + p(d.getMonth() + 1) + p(d.getDate()) + '.png';
   }
 
   els.download.addEventListener('click', function () {

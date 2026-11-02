@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>多功能白板：流程图、便签、手绘，一块画布全搞定 | 小胡的工具箱</title>
+<meta name="description" content="多功能在线白板缩小版：画笔、直线、箭头、矩形、椭圆、菱形、文字、便签，可平移缩放的无限画布，支持选中移动、撤销重做、保存工程与导出 PNG。适合流程图、草图构思与头脑风暴，全部本地运行。">
+<link rel="canonical" href="https://139t.cn/multi-board/">
+<meta name="theme-color" content="#f6f7f9">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.googletagmanager.com https://hm.baidu.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://hm.baidu.com; connect-src 'self' https://ipwho.is https://ipapi.co; form-action 'none'; base-uri 'none'; frame-ancestors 'none'">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="小胡的工具箱">
+<meta property="og:url" content="https://139t.cn/multi-board/">
+<meta property="og:title" content="多功能白板 — 流程图、便签、手绘，一块画布全搞定">
+<meta property="og:description" content="画笔、箭头、图形、文字、便签，无限画布可平移缩放，选中移动、撤销重做，导出 PNG。全部本地运行。">
+<meta name="twitter:card" content="summary">
+<link rel="alternate" type="text/markdown" href="index.md">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../i18n.css">
+<script defer src="../i18n.js"></script>
+</head>
+<body class="wb2-page">
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="hub-head">
+  <div class="head-row">
+    <p class="brand">
+      <a class="brand-home" href="../">
+        <svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+          <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+          <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+          <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+        </svg>
+        Tools
+      </a>
+    </p>
+  </div>
+  <nav class="crumbs" aria-label="位置">
+    <a href="../">全部工具</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">多功能白板</span>
+  </nav>
+  <h1>多功能白板</h1>
+  <p class="lede">一块可以平移缩放的画布：画笔、直线、箭头、矩形、椭圆、菱形、文字、彩色便签，随便组合成流程图、草图或头脑风暴墙。支持选中移动、撤销重做、保存工程文件和导出 PNG。内容只存在你的浏览器里，不上传。</p>
+</header>
+
+<main id="main" class="tool-main">
+  <section class="wb2-app" aria-label="多功能白板">
+    <div class="wb2-tools" role="toolbar" aria-label="工具">
+      <button class="wb2-t active" type="button" data-tool="select" title="选择/移动（V）" aria-pressed="true"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3l14 8-6.5 1.5L10 19 5 3Z"/></svg></button>
+      <button class="wb2-t" type="button" data-tool="pen" title="画笔（P）" aria-pressed="false"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3Z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5Z"/><circle cx="11" cy="11" r="2"/></svg></button>
+      <button class="wb2-t" type="button" data-tool="line" title="直线（L）" aria-pressed="false"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 19 19 5"/></svg></button>
+      <button class="wb2-t" type="button" data-tool="arrow" title="箭头（A）" aria-pressed="false"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5"/><path d="M12 5h7v7"/></svg></button>
+      <button class="wb2-t" type="button" data-tool="rect" title="矩形（R）" aria-pressed="false"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="6" width="16" height="12" rx="2"/></svg></button>
+      <button class="wb2-t" type="button" data-tool="ellipse" title="椭圆（O）" aria-pressed="false"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><ellipse cx="12" cy="12" rx="8" ry="6"/></svg></button>
+      <button class="wb2-t" type="button" data-tool="diamond" title="菱形（D）" aria-pressed="false"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l8 8-8 8-8-8 8-8Z"/></svg></button>
+      <button class="wb2-t" type="button" data-tool="text" title="文字（T）" aria-pressed="false"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 6V4h14v2"/><path d="M12 4v16"/><path d="M9 20h6"/></svg></button>
+      <button class="wb2-t" type="button" data-tool="note" title="便签（N）" aria-pressed="false"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v11l-5 5H4V4Z"/><path d="M15 20v-5h5"/></svg></button>
+      <button class="wb2-t" type="button" data-tool="eraser" title="橡皮（E）" aria-pressed="false"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8.5 20-4.6-4.6a2 2 0 0 1 0-2.8l8-8a2 2 0 0 1 2.8 0l5 5a2 2 0 0 1 0 2.8L14 18"/><path d="M8.5 20H20"/></svg></button>
+      <button class="wb2-t" type="button" data-tool="pan" title="平移画布（空格按住拖动）" aria-pressed="false"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M2 12h20"/><path d="m9 5 3-3 3 3M9 19l3 3 3-3M5 9 2 12l3 3M19 9l3 3-3 3"/></svg></button>
+    </div>
+
+    <div class="wb2-props" role="toolbar" aria-label="属性">
+      <div class="wb2-colors" id="wb2-colors" role="radiogroup" aria-label="颜色">
+        <button class="wb2-c active" type="button" data-color="#1f2328" style="--pc:#1f2328" aria-label="黑" aria-pressed="true"></button>
+        <button class="wb2-c" type="button" data-color="#e03131" style="--pc:#e03131" aria-label="红" aria-pressed="false"></button>
+        <button class="wb2-c" type="button" data-color="#f08c00" style="--pc:#f08c00" aria-label="橙" aria-pressed="false"></button>
+        <button class="wb2-c" type="button" data-color="#2f9e44" style="--pc:#2f9e44" aria-label="绿" aria-pressed="false"></button>
+        <button class="wb2-c" type="button" data-color="#1971c2" style="--pc:#1971c2" aria-label="蓝" aria-pressed="false"></button>
+        <button class="wb2-c" type="button" data-color="#9c36b5" style="--pc:#9c36b5" aria-label="紫" aria-pressed="false"></button>
+      </div>
+      <label class="wb2-prop">粗细 <select id="wb2-width"><option value="2">2</option><option value="4" selected>4</option><option value="7">7</option><option value="11">11</option></select></label>
+      <label class="wb2-prop">字号 <select id="wb2-font"><option value="16">16</option><option value="22" selected>22</option><option value="32">32</option><option value="48">48</option></select></label>
+      <label class="wb2-prop">便签 <select id="wb2-note-color"><option value="#fff59d">黄</option><option value="#bbf7d0">绿</option><option value="#bfdbfe">蓝</option><option value="#fecaca">红</option></select></label>
+    </div>
+
+    <div class="wb2-stage" id="wb2-stage">
+      <canvas id="wb2-canvas" aria-label="白板画布"></canvas>
+      <input id="wb2-editor" class="wb2-editor" type="text" aria-label="编辑文字" hidden>
+    </div>
+
+    <div class="wb2-foot">
+      <div class="wb2-foot-l">
+        <button class="wb2-b" id="wb2-undo" type="button" title="撤销（Ctrl+Z）">撤销</button>
+        <button class="wb2-b" id="wb2-redo" type="button" title="重做（Ctrl+Shift+Z）">重做</button>
+        <button class="wb2-b" id="wb2-del" type="button" title="删除选中（Delete）">删除</button>
+        <button class="wb2-b" id="wb2-clear" type="button">清空</button>
+        <span class="wb2-zoom" id="wb2-zoom">100%</span>
+        <button class="wb2-b" id="wb2-fit" type="button" title="回到全部内容">适应内容</button>
+      </div>
+      <div class="wb2-foot-r">
+        <button class="wb2-b" id="wb2-save-json" type="button" title="保存工程文件">存工程</button>
+        <label class="wb2-b" for="wb2-load-json" title="打开工程文件">开工程</label>
+        <input type="file" id="wb2-load-json" accept=".json,application/json" hidden>
+        <button class="wb2-b wb2-primary" id="wb2-export" type="button">导出 PNG</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="facts" aria-label="说明">
+    <article class="fact"><h2>操作速记</h2><p>滚轮缩放（按住 Ctrl 以鼠标为中心）、空格或中键拖动平移、V/P/L/A/R/O/D/T/N/E 快速切工具、Delete 删除选中对象。「适应内容」把视野拉回你画的所有东西。</p></article>
+    <article class="fact"><h2>内容不出本机</h2><p>画布数据只存在浏览器本地，刷新自动恢复。「存工程」导出的 JSON 也只在你的电脑上。想随手涂几笔不求排版，用更轻的 <a href="../mini-board/">极简白板</a>。</p></article>
+  </section>
+</main>
+
+<footer>
+  <p><a class="home-link" href="../">小胡的工具箱</a> · 所有文件都在你的浏览器内本地处理，不上传服务器</p>
+</footer>
+
+<script src="../toolkit.js"></script>
+<link rel="stylesheet" href="../sidebar.css">
+<div id="site-sidebar" data-base="../"></div>
+<div id="sidebar-backdrop"></div>
+<button id="sidebar-toggle" type="button" aria-label="打开分类导航"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>分类</button>
+<script src="../js/sidebar-data.js"></script>
+<script src="../sidebar.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

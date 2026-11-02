@@ -25,6 +25,9 @@
   var expanded = loadExp();
 
   function toolHref(t) {
+    if (t.href.indexOf('http://') === 0 || t.href.indexOf('https://') === 0) {
+      return t.href;
+    }
     if (t.href.indexOf('./quick/') === 0) {
       return BASE + 'quick/' + '#' + t.slug;
     }

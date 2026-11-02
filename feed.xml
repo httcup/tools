@@ -12,10 +12,66 @@
     <link href="https://139t.cn/"/>
     <id>https://139t.cn/</id>
     <updated>2026-10-27T02:54:58Z</updated>
-    <summary type="text">在浏览器本地运行的 191 个工具，文件不上传。</summary>
+    <summary type="text">在浏览器本地运行的 199 个工具，文件不上传。</summary>
   </entry>
   <entry>
-    <title type="text">收款码合并</title>
+    <title type="text">收款码二合一</title>
+    <link href="https://139t.cn/pay-qr-2in1/"/>
+    <id>https://139t.cn/pay-qr-2in1/</id>
+    <updated>2026-11-02T00:00:00Z</updated>
+    <summary type="text">微信支付宝收款码物理合并成一张码，各扫各的，永不过期可打印。</summary>
+  </entry>
+  <entry>
+    <title type="text">网页文章截图</title>
+    <link href="https://139t.cn/web-shot/"/>
+    <id>https://139t.cn/web-shot/</id>
+    <updated>2026-11-02T00:00:00Z</updated>
+    <summary type="text">公众号文章转长图，粘贴正文或抓取链接，自动排版导出高清 PNG。</summary>
+  </entry>
+  <entry>
+    <title type="text">报名证件照处理</title>
+    <link href="https://139t.cn/exam-photo/"/>
+    <id>https://139t.cn/exam-photo/</id>
+    <updated>2026-11-02T00:00:00Z</updated>
+    <summary type="text">按考试规格裁剪、压缩到指定 KB，宽高精确到像素，JPG 一次过审。</summary>
+  </entry>
+  <entry>
+    <title type="text">GitHub 仓库下载</title>
+    <link href="https://139t.cn/github-download/"/>
+    <id>https://139t.cn/github-download/</id>
+    <updated>2026-11-02T00:00:00Z</updated>
+    <summary type="text">粘贴仓库、目录或文件链接，打包成 ZIP 下载，不用装 git。</summary>
+  </entry>
+  <entry>
+    <title type="text">周报生成器</title>
+    <link href="https://139t.cn/weekly-report/"/>
+    <id>https://139t.cn/weekly-report/</id>
+    <updated>2026-11-02T00:00:00Z</updated>
+    <summary type="text">按「完成 / 计划 / 问题」填条目，自动套日期排版成稿，复制或下载。</summary>
+  </entry>
+  <entry>
+    <title type="text">多功能白板</title>
+    <link href="https://139t.cn/multi-board/"/>
+    <id>https://139t.cn/multi-board/</id>
+    <updated>2026-11-02T00:00:00Z</updated>
+    <summary type="text">画笔箭头图形文字便签，无限画布可平移缩放，导出 PNG。</summary>
+  </entry>
+  <entry>
+    <title type="text">极简白板</title>
+    <link href="https://139t.cn/mini-board/"/>
+    <id>https://139t.cn/mini-board/</id>
+    <updated>2026-11-02T00:00:00Z</updated>
+    <summary type="text">打开就能画，六支彩笔两档粗细，橡皮撤销清空，一键导出 PNG。</summary>
+  </entry>
+  <entry>
+    <title type="text">随手记支持云同步版（云便签）</title>
+    <link href="https://note.139t.cn/"/>
+    <id>https://note.139t.cn/</id>
+    <updated>2026-11-02T00:00:00Z</updated>
+    <summary type="text">随手记的云同步版，多设备同步在线使用。</summary>
+  </entry>
+  <entry>
+    <title type="text">收款码拼接</title>
     <link href="https://139t.cn/pay-qr-merge/"/>
     <id>https://139t.cn/pay-qr-merge/</id>
     <updated>2026-11-02T00:00:00Z</updated>
@@ -296,7 +352,7 @@
   </entry>
 
   <entry>
-    <title type="text">在线白板</title>
+    <title type="text">在线白板缩小版</title>
     <link href="https://139t.cn/whiteboard/"/>
     <id>https://139t.cn/whiteboard/</id>
     <updated>2026-10-27T00:00:00Z</updated>

@@ -1,0 +1,116 @@
+/* 收款码二合一 — 页面样式。变量沿用 site.css。 */
+
+.p2-page main { max-width: 860px; }
+
+.p2-app {
+  border: 1px solid var(--line, #e3e6ea);
+  border-radius: 12px;
+  background: #fff;
+  padding: 1.1rem;
+}
+
+.p2-slots { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+.p2-slot {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 130px;
+  border: 2px dashed var(--line, #cfd4da);
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: border-color .15s;
+}
+.p2-slot:hover { border-color: var(--accent, #1971c2); }
+.p2-slot-tag {
+  position: absolute;
+  top: 8px; left: 8px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.12rem 0.5rem;
+}
+.p2-tag-wx { background: #07a04f; }
+.p2-tag-ali { background: #1677ff; }
+.p2-slot-hint { font-size: 0.84rem; color: var(--muted, #6b7280); padding: 0 0.6rem; }
+
+.p2-links { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.9rem; }
+.p2-links label {
+  display: grid;
+  grid-template-columns: 7.5em 1fr;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.86rem;
+}
+.p2-links input {
+  font: 0.84rem ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  border: 1px solid var(--line, #e3e6ea);
+  border-radius: 7px;
+  padding: 0.35rem 0.55rem;
+  min-height: 36px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.p2-links input:focus { border-color: var(--accent, #1971c2); outline: none; }
+.p2-warn { font-size: 0.82rem; color: #b45309; margin: 0; }
+
+.p2-opts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.7rem 1.2rem;
+  margin-top: 0.9rem;
+  font-size: 0.88rem;
+}
+.p2-opts label { display: inline-flex; align-items: center; gap: 0.45rem; }
+.p2-opts select {
+  font: inherit; font-size: 0.86rem;
+  border: 1px solid var(--line, #e3e6ea);
+  border-radius: 7px;
+  padding: 0.3rem 0.4rem;
+}
+.p2-opts output { min-width: 2.6em; }
+
+.p2-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 42px;
+  padding: 0.4rem 1.3rem;
+  border: 1px solid var(--line, #e3e6ea);
+  border-radius: 8px;
+  background: #fff;
+  color: inherit;
+  font: inherit; font-size: 0.92rem;
+  cursor: pointer;
+}
+.p2-btn:disabled { opacity: .45; cursor: not-allowed; }
+.p2-primary { background: var(--accent, #1971c2); color: var(--accent-text, #fff); border-color: var(--accent, #1971c2); font-weight: 600; }
+
+.p2-result { margin-top: 1rem; text-align: center; }
+.p2-canvas-wrap {
+  display: inline-block;
+  border: 1px solid var(--line, #e3e6ea);
+  border-radius: 10px;
+  padding: 0.8rem;
+  background: repeating-conic-gradient(#f3f4f6 0 25%, #fff 0 50%) 0 0/18px 18px;
+}
+.p2-canvas-wrap canvas { display: block; max-width: min(420px, 100%); height: auto; }
+
+.p2-check { display: flex; justify-content: center; gap: 0.6rem; margin: 0.7rem 0; flex-wrap: wrap; }
+.p2-badge {
+  font-size: 0.8rem;
+  border-radius: 99px;
+  padding: 0.2rem 0.7rem;
+  border: 1px solid var(--line, #e3e6ea);
+  color: var(--muted, #6b7280);
+}
+.p2-badge.ok { border-color: #2f9e44; color: #2f9e44; background: rgba(47,158,68,.07); }
+.p2-badge.bad { border-color: #e03131; color: #e03131; background: rgba(224,49,49,.07); }
+
+.p2-note { font-size: 0.82rem; color: var(--muted, #6b7280); margin: 0.6rem 0 0; }
+
+@media (max-width: 640px) {
+  .p2-slots { grid-template-columns: 1fr; }
+  .p2-links label { grid-template-columns: 1fr; }
+}

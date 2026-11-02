@@ -6,17 +6,17 @@
 
 ## 功能总览
 
-首页为全中文导航（支持搜索、分类筛选、收藏），共收录 **191 个工具**：
+首页为全中文导航（支持搜索、分类筛选、收藏），共收录 **199 个工具**：
 
 | 分类 | 数量 | 来源 |
 |------|------|------|
-| PDF·文档·文本 | 40 | 移植自 [httcup/tools](https://github.com/httcup/tools)（MIT / 文字 CC BY 4.0），并归并本仓库自研的文本类工具 |
-| 图片·视频·音频 | 56 | 同上，图片 28 / 视频 14 / 音频 11 |
-| 设计与创作 | 7 | 本仓库新增（`scripts/build_toolknit.py` 生成） |
+| PDF·文档·文本 | 43 | 移植自 [httcup/tools](https://github.com/httcup/tools)（MIT / 文字 CC BY 4.0），并归并本仓库自研的文本类工具 |
+| 图片·视频·音频 | 58 | 同上，图片 28 / 视频 14 / 音频 11 |
+| 设计与创作 | 9 | 本仓库新增（`scripts/build_toolknit.py` 生成） |
 | 计算与单位 | 10 | 本仓库新增（`scripts/build_batch_tools.py` 生成） |
 | 时间与专注 | 7 | 同上 |
 | 测试与训练 | 7 | 同上 |
-| 本地快用 | 11 | 本仓库原有工具（`quick/`） |
+| 本地快用 | 12 | 本仓库原有工具（`quick/`） |
 | Shopify/DTC 电商工具 | 53 | 本仓库新增（`scripts/build_dtc_tools.py` 生成） |
 
 分类顺序由首页 `index.html` 的 `<section class="cat">` 决定，左侧导航数据由
@@ -27,7 +27,7 @@
 - **全能视频格式转换**（`video-convert/`）：canvas + MediaRecorder 实时转码，MP4/WebM 输出、分辨率与码率压缩、时间段裁剪、变速旋转翻转、提取 WAV 音轨；参考 toolwa.com/video 的功能范围自研，零依赖。
 - **在线音频剪辑**（`audio-cutter/`）：WebAudio 解码出波形，拖动选段后裁剪/删除/静音、淡入淡出、增益与峰值标准化，导出 16/24/32 位 WAV；参考 toolwa.com/audiomass 的核心功能自研。
 - **在线提词器**（`teleprompter/`）：稿子自动滚动提词，字号/速度/行宽/镜像/倒置可调，倒计时、快捷键、全屏与本地自动保存；参考 toolwa.com/tcq 自研。
-- **收款码合并**（`pay-qr-merge/`）：微信与支付宝收款码合成一张可打印图片，自动裁白边、标签与分割线、多种尺寸导出；参考 uutool.cn/wechat-alipay 的用法自研。
+- **收款码拼接**（`pay-qr-merge/`）：微信与支付宝收款码合成一张可打印图片，自动裁白边、标签与分割线、多种尺寸导出；参考 uutool.cn/wechat-alipay 的用法自研。
 - **二维码生成和美化**（`qr-style/`）：参数化二维码——8 种点阵骨架、4 种定位点、渐变配色、内嵌标志，导出 PNG/SVG；源自 httcup/qraft 的零依赖重实现。
 - **随手记存为.md**（`md-notes/`）：多本笔记 + 实时预览 + 自动保存在浏览器，一键导出纯文本 .md，支持导入已有 Markdown 与全部备份；参考 httcup/md 的用法重新自研，无任何第三方依赖。
 - **Markdown 转 Word**（`md-to-word/`）：粘贴 AI 回答或 Markdown，本地生成可编辑 .docx，LaTeX 公式转 Word 公式对象，无需任何依赖。

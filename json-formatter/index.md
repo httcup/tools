@@ -25,10 +25,6 @@ This is an interactive browser tool at https://139t.cn/json-formatter/. Files ar
 5. **在出错的地方读错误。** 这里的解析器失败时，会说它看到了什么，以及在第几行第几列，而不是“位置 4193 处有意外的 token”。通常这就足够把一份配置文件改对，不用再打开别的东西。
 6. **把结果带走。** 复制它，或者下载成文件，文件名跟着输出语言走。
 
-## The longer version
-
-[怎么不把 JSON 交给任何人也能格式化](https://139t.cn/guides/format-json-without-uploading-it/): 在自己的浏览器里排版、检查和压缩 JSON：一个格式化工具绝不该改动你文件的哪些地方、错误信息该怎么读，以及你把东西粘进哪个框里为什么要紧。
-
 ## Also in the box
 
 - [YAML 转 JSON](https://139t.cn/yaml-to-json/): 两个方向都有，而且会告诉你各自的代价。这些都不会粘进别人的服务器。

@@ -23,10 +23,6 @@ This is an interactive browser tool at https://139t.cn/timelapse-video/. Files a
 3. **看一眼间隔。** 倍数下面那行才是真正要发生的事，原片每隔多少秒取一帧。相机上设的就是这个数，开始之前值得看一眼。
 4. **做完就下载。** 活在你自己的硬件上干，所以快慢取决于你这台机器，不取决于排队。做好的视频直接交给浏览器的下载。
 
-## The longer version
-
-[怎么把长视频变成延时摄影](https://139t.cn/guides/turn-a-long-video-into-a-timelapse/): 一小时的素材浓缩成看得下去的一分钟：怎么选速度，为什么直接说成片多长比做除法更好，以及什么时候成品该做成 GIF。
-
 ## Also in the box
 
 - [视频截帧](https://139t.cn/grab-frame/): 任意位置，一张原画质静帧。

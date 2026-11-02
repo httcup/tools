@@ -23,10 +23,6 @@ This is an interactive browser tool at https://139t.cn/reverse-video/. Files are
 3. **决定花多少画质。** 画面必须重新编码，因为帧出来的顺序是原文件里根本没有为之编码过的。“均衡”会贴近原片花掉的量，“最佳画质”则花得更多。
 4. **倒过来，然后下载。** 活是在你自己的硬件上干的，所以花多久取决于你的机器，而不是排队。做好的视频直接交给浏览器的下载。
 
-## The longer version
-
-[怎么把视频倒过来放](https://139t.cn/guides/reverse-a-video/): 把片子反着放：倒放对画面和声音都做了什么，为什么它绕不开重新编码，为什么比剪辑慢，以及动手之前该先做哪一步。
-
 ## Also in the box
 
 - [延时视频](https://139t.cn/timelapse-video/): 一小时的素材，二十秒看完。

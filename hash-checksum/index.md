@@ -24,10 +24,6 @@ This is an interactive browser tool at https://139t.cn/hash-checksum/. Files are
 4. **看那句话，别只看颜色。** 页面会用一句话告诉你，这是不是那串校验和所描述的文件。对得上，说明字节和发布方量过的一模一样；对不上，说明不是，那就先重新下载，再谈打开。
 5. **需要的话把校验和带走。** 复制一个、全部复制，或者存成一个小文本文件。存的是命令行工具那种把算法名写在前面的格式，这样算法名会跟着数字一起走。
 
-## The longer version
-
-[怎样用校验和核对下载的文件](https://139t.cn/guides/verify-a-file-checksum/): 在 Windows、macOS、Linux 或浏览器里比对 MD5 与 SHA-256 校验和的办法，对上了究竟证明了什么，以及那个让整件事白做的错误。
-
 ## Also in the box
 
 - [密码与密码短语生成器](https://139t.cn/password-generator/): 在这里生成，由你自己的浏览器生成，不发往任何地方。什么都不保存，也没有历史记录。

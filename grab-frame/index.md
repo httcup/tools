@@ -23,10 +23,6 @@ This is an interactive browser tool at https://139t.cn/grab-frame/. Files are pr
 3. **挑一个格式。** PNG 会把解码出来的帧原样存下，这就是这里说的“原画质”。JPEG 和 WebP 更小，但会在视频自身的压缩之上再压一遍，用来预览没问题，用在之后还要再编辑的图上就不合适。
 4. **截一张，或者截一串。** 单张会直接进你的下载。“每 N 秒”会把片子走一遍，在每个刻度取一张，做一览图和缩略图时很好用，而且它们会打包成一个 ZIP，而不是弹一百次保存提示。
 
-## The longer version
-
-[怎么把视频里的一帧存成图片](https://139t.cn/guides/grab-a-frame-from-a-video/): 按原分辨率从片子里取一张静帧：为什么暂停后的截屏不是同一张图、该存成什么格式，以及怎么正好停在你想要的那一帧。
-
 ## Also in the box
 
 - [GIF 转 MP4](https://139t.cn/gif-to-mp4/): 每一帧都带着 GIF 给它的延时，变成 MP4 里的 H.264。在你的机器上转，文件从不上传。

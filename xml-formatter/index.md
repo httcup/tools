@@ -24,10 +24,6 @@ This is an interactive browser tool at https://139t.cn/xml-formatter/. Files are
 4. **在出错的地方读错误。** 在这里失败的解析器会告诉你*哪个标签*没闭合，在第几行第几列，而不是“第 1 行出错”——浏览器一口气读完一份文档之后说的就是那句。点击*跳转到错误位置*就能回到输入中的对应位置。输入时，焦点会留在原处，直到你主动移动它。
 5. **把结果拿走。** 复制，或者下载成文件，文件名按它出来的格式取。
 
-## The longer version
-
-[如何格式化并检查 XML](https://139t.cn/guides/format-and-check-xml/): 在本地格式化、压缩和检查 XML。定位解析错误，在转换为 JSON 前了解属性、文本和数组的映射。
-
 ## Also in the box
 
 - [文本比对](https://139t.cn/text-diff/): 两段文本进来，每处差异都被标出来，逐行、逐词。没有一个字被贴进别人的服务器。

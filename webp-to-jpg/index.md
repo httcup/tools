@@ -23,10 +23,6 @@ This is an interactive browser tool at https://139t.cn/webp-to-jpg/. Files are p
 3. **设置质量和透明区域背后的颜色。** 滑块从 92 开始，此时照片很难与原图区分。颜色控件只在列表中有透明图片时出现，因为 JPEG 必须填充这些区域。
 4. **点击“转换”，然后下载。** 每个结果显示来源、转换后大小和变化，若透明被填充或只保留动画首帧，也会提示。单个文件可直接下载，多个文件还能打包成 ZIP。
 
-## The longer version
-
-[把网页保存的图片变成所有软件仍接受的格式](https://139t.cn/guides/convert-webp-to-jpg/): 网页保存的 .webp 没有软件能打开？这里解释 WebP、转换为何增大文件、透明会怎样，以及如何无需上传完成。
-
 ## Also in the box
 
 - [PNG 转 WebP](https://139t.cn/png-to-webp/): 同一张图片，常常减少三分之一体积，透明区域保持完整。

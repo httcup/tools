@@ -22,10 +22,6 @@ This is an interactive browser tool at https://139t.cn/gif-to-mp4/. Files are pr
 2. **读那一行说明。** 一行：尺寸、帧数和它们的时间、时长、码率。没有什么要设的，除非 GIF 有透明的地方，那时会出现一个颜色框，问那里填什么。
 3. **转换，然后读那句写着「已核对」的话。** 每一帧画出来再编码，进度条会说到哪了。然后做好的文件会在这里重新打开，它必须跟 GIF 播得一样久，每一帧都在。它在下载按钮下面从内存里循环播放，你能看到接缝。
 
-## The longer version
-
-[如何把 GIF 转为 MP4，为什么会小得多](https://139t.cn/guides/convert-a-gif-to-mp4/): 为什么同一动画的 MP4 只有 GIF 的十分之一，视频缺少哪些 GIF 能力，为什么时序易错，以及如何在浏览器中无需上传地转换。
-
 ## Also in the box
 
 - [视频转 GIF](https://139t.cn/video-to-gif/): 挑好段落、尺寸和帧率。

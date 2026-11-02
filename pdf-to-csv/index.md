@@ -23,10 +23,6 @@ This is an interactive browser tool at https://139t.cn/pdf-to-csv/. Files are pr
 3. **挑一张，或者全要。** 表不止一张的时候，表格上方那个选项决定哪些进 CSV：全部一张接一张，或者只要你来找的那一张。要是某张表带着余额，表格上方那一行会说明哪些余额比较相符、哪些行无法核对。带年份的日期写成 YYYY-MM-DD，金额是带正负号的普通数字；没有年份的日期原样保留，因为它属于哪一年只能靠猜。
 4. **把 CSV 拿走。** 它按 RFC 4180 写，该加的引号都加，行尾是 CRLF，编码是带字节序标记的 UTF-8，这样 Excel 打开它的时候货币符号还是货币符号，而不会变成一串字母。所有表放在一个文件里的时候，每张表保留自己的表头行，表与表之间空一行。做出它来没有上传过任何东西。
 
-## The longer version
-
-[上传银行账单安全吗？](https://139t.cn/guides/is-it-safe-to-upload-a-bank-statement/): 账单把收款人、金额和余额放在一个文件中。了解转换器得到什么，谨慎服务如何处理，以及如何分辨上传是否必要。
-
 ## Also in the box
 
 - [收据与发票识别](https://139t.cn/receipt-invoice-extractor/): 读取照片，检查字段和裁剪结果，准备供邮件应用使用的压缩附件和合计。

@@ -25,10 +25,6 @@ This is an interactive browser tool at https://139t.cn/password-generator/. File
 5. **走之前先复制，先放好。** 这里没有历史记录，也没有办法再要回来，刷新页面它就没了。先粘进密码管理器，再粘进注册表单，让需要记住它的那一头先拿到手，中间出什么岔子都不怕。
 6. **要一批就一次生成一批。** 最下面那个滑块一次最多生成一百个，还能存成纯文本文件，内容就是页面从你屏幕上已有的东西写出来的。批量开账号或者发初始口令时好用，等它们进了更合适的地方，这个文件就该删掉：硬盘上一个装满密码的文件，仍然是一个装满密码的文件。
 
-## The longer version
-
-[用在线密码生成器安全吗？](https://139t.cn/guides/is-it-safe-to-use-an-online-password-generator/): 这份疑心是对的，值得认真对待：浏览器的随机数从哪儿来，一个生成页面可能错在哪儿，以及哪些检查能看出眼前这个页面留没留它造出来的东西。
-
 ## Also in the box
 
 - [JSON 格式化](https://139t.cn/json-formatter/): JSON、XML、HTML、CSS 和 YAML，格式化或转换。没有一个字被贴进别人的服务器。

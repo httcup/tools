@@ -19,7 +19,7 @@
   var STORE = 'abox-lang';
   var CACHE = 'abox-i18n-dict-';
   /* 词典更新后把这个版本号 +1，老用户浏览器里的旧词典会自动失效 */
-  var DICT_VER = 11;
+  var DICT_VER = 12;
   /* 可翻译属性。data-* 只放纯展示用的那几类：data-key 是侧边栏的搜索索引
    * （标题+简介+关键词拼成的一整串，翻了反而搜不到），data-t 是水印预置文字
    * （要写进输入框当用户内容），都不能动。 */

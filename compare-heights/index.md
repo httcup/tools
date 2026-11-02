@@ -26,10 +26,6 @@ This is an interactive browser tool at https://139t.cn/compare-heights/. Files a
 6. **把标尺调成你读者习惯的单位。** 在厘米和英尺之间切换，是把框里的内容重写一遍，而不是重新解释一遍，所以图本身不动，动的只是记法。要是这张图给两拨人看，每个人形上方写的身高用图表的单位，而每个框下面那行两套都有。
 7. **要粘就用 PNG，要印就用 SVG。** PNG 是一张按你设定的像素高度出的图，聊天窗口、文档或者幻灯片要的就是它。SVG 是把图表存成指令，所以放到多大都印得清楚，之后任何能打开矢量的东西都还能给它换颜色。
 
-## The longer version
-
-[怎么做一张身高对比图](https://139t.cn/guides/make-a-height-comparison-chart/): 把一串身高变成一张并排的图：身高怎么写，给小孩挑哪个图形，为什么一件眼熟的东西比第三个人更管用，以及怎么把图导出成 PNG 或 SVG。
-
 ## Also in the box
 
 - [商家资料预览](https://139t.cn/business-profile-preview/): 把内容打进去，它就变成 Google 会画的那张卡片。为了画它，不会往外送任何东西。

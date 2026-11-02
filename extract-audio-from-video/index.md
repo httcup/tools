@@ -24,10 +24,6 @@ This is an interactive browser tool at https://139t.cn/extract-audio-from-video/
 4. **存之前先听一遍。** 播放器里放的就是马上要下载的那个文件，不是视频。听着对，下载就对。
 5. **拿走，或者接着往下传。** 下载这个 WAV，或者不先保存，直接送去剪辑或编辑。
 
-## The longer version
-
-[如何从视频提取声音](https://139t.cn/guides/extract-audio-from-a-video/): 在本地将视频音轨提取为 WAV。选择 PCM16 或 Float32，保留声道或混为单声道，并在保存前检查。
-
 ## Also in the box
 
 - [音频剪辑](https://139t.cn/trim-audio/): 边听边标出值得留的段落。它们会合成一个文件回来，就切在你说的位置。

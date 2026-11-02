@@ -24,10 +24,6 @@ This is an interactive browser tool at https://139t.cn/text-diff/. Files are pro
 4. **读一读改了什么。** 删掉的行标在左边，新增的行标在右边；改动行内部，不同的词会被高亮——两段文字的比对显示的是挪动的那个词，而不是两整段。
 5. **把补丁带走。** 下载下来的是统一格式的 `.patch`，代码评审、`git apply` 和所有差异查看器认的就是它。复制会把同样的内容放进剪贴板。
 
-## The longer version
-
-[怎样比对两个 JSON 文件](https://139t.cn/guides/compare-two-json-files/): 两个文件用同一种方式格式化，键排好序，再比对。为什么生比 JSON 几乎全是噪音，怎么在浏览器里把两边化成规范形，以及什么能一路留到补丁里。
-
 ## Also in the box
 
 - [Base64 编码解码](https://139t.cn/base64/): Base64、百分号编码、HTML 实体、十六进制和反斜杠转义，双向都行。没有一个字被贴进别人的服务器。

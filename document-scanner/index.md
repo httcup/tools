@@ -24,10 +24,6 @@ This is an interactive browser tool at https://139t.cn/document-scanner/. Files 
 4. **把其余的页加进来。** 每加一张照片，就是同一份文档的下一页，顺序就是列表里的顺序，每一页各自保留自己的四个角。缩略图条上那一页的箭头可以把它往前或者往后挪。
 5. **存成 PDF，发出去之前先打开看一眼。** 文档就在这里、在这一页的内存里做出来。做它的过程没有上传任何东西，关于它也没有向任何地方报告过什么。
 
-## The longer version
-
-[怎么用手机扫描文档](https://139t.cn/guides/scan-a-document-with-your-phone/): 一张纸的照片和这张纸的扫描件之间差在哪里：倾斜、不匀的光，还有文件大小。照片怎么拍，之后要修什么，以及为什么这些都不需要服务器。
-
 ## Also in the box
 
 - [从视频里提取音频](https://139t.cn/extract-audio-from-video/): 把视频拖进来，声音就取出来了。画面从不解码，也不上传任何东西。

@@ -78,28 +78,14 @@ https://139t.cn/
 - [哈希与校验和](https://139t.cn/hash-checksum/): 把下载来的文件和发布方公布的那串数字对一下，不用把它发给任何人。
 - [密码与密码短语生成器](https://139t.cn/password-generator/): 在这里生成，由你自己的浏览器生成，不发往任何地方。什么都不保存，也没有历史记录。
 
-## 连接设备
-
-分享文本和文件、实时通话，或在另一台设备上观看摄像头或浏览器标签页。每个工具都会说明发送哪些内容，以及浏览器如何连接。
-
-- [文本与文件分享](https://139t.cn/share-text/): 从打开的浏览器加密分享文本与文件。默认直连，也可选择云中转。你可以逐一批准读者。
-- [Local Walkie-Talkie](https://139t.cn/walkie-talkie/): Start a named channel, then hold to talk or speak hands-free. Connect directly on your local network, or choose Cloud relay for listeners over the internet.
-- [Voice Oncall](https://139t.cn/voice-oncall/): Open a pager and hear live voice from people who connect. Use Direct on your local network or choose Cloud relay over the internet, with a password and individual mute or remove controls.
-- [Remote Camera](https://139t.cn/remote-camera/): Open a camera on one device and watch it in another browser, with optional viewer approval. Choose Direct or Cloud relay for encrypted live video.
-- [Share a Browser Tab](https://139t.cn/share-tab/): Choose a tab on your computer and let one approved viewer watch it using Direct or Cloud relay. Invite by link, network discovery or a private group. No extension, sound or remote control.
-
-不知道该动哪个设置，也不清楚代价？[每个工具都配了一篇指南](https://139t.cn/guides/)。
-
-后面还有，清单也是公开的。[看看接下来做什么](https://139t.cn/roadmap/)。
-
 ## 你的文件，始终归你。
 
 工具保存后，本地文件处理可离线使用。获取和分享内容需要联网。
 
-- **文件在你的设备上处理** 你的浏览器打开、读取和编辑你选的文件，处理过程不需要上传。文本与文件分享、远程摄像头会主动把内容传给另一个浏览器；连接方式在各自页面上说明。
+- **文件在你的设备上处理** 你的浏览器打开、读取和编辑你选的文件，处理过程不需要上传。需要联网的只有你主动点的那几个按钮。
 - **文件不会交给统计服务** 本站统计页面访问、固定的工具使用阶段、每次加载后的首次成功结果、部分后续操作链接，以及可选的固定反馈答案，不附带文件、文件名、内容或输入输出详情。可选的网址图片导入和收据汇率查询，会在控件旁说明发出什么信息。
-- **本地处理可以离线完成** 等工具的离线状态显示就绪，再断网处理设备上的文件。获取网络图片、查询在线汇率、连接两个浏览器，仍然需要网络。
+- **本地处理可以离线完成** 等工具的离线状态显示就绪，再断网处理设备上的文件。获取网络图片、查询在线汇率，仍然需要网络。
 
-上面这些不用你信。 [怎么判断一个工具是不是真需要你的文件](https://139t.cn/guides/is-it-safe-to-upload-files/)里有四项你自己动手就能做的检查，用在本站管用，用在别家也一样。
+上面这些不用你信。断网、看请求、读源码，这四项检查你自己动手就能做。
 
 

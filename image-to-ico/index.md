@@ -25,10 +25,6 @@ This is an interactive browser tool at https://139t.cn/image-to-ico/. Files are 
 5. **下载之前，先看那个 16 像素的。** 日常最常被看到的就是这个尺寸，细笔画和小字也正是在这儿消失的。预览里每一格都按真实尺寸、用你自己的文件画出来。最小那个要是糊成一团，该改的是画得更简单，而不是换个设置。
 6. **把文件拿走。** 一个 .ico，每个尺寸都在里面。你要的是网站图标时，它就叫 `favicon.ico`，因为浏览器就照这个地址找。勾了 macOS 的话，旁边还有一个 .icns，直接放进 Mac 应用包就行。再勾上网站那一套，就还有苹果、安卓和 Windows 磁贴用的图、一份 manifest，以及一段可以直接粘进页面的 HTML。只要不止一个文件，就打成一个 zip 下来。
 
-## The longer version
-
-[怎么做一个到十六像素还看得清的网站图标](https://139t.cn/guides/make-a-favicon/): favicon.ico 里到底该装哪几个尺寸，iPhone、安卓和 Mac 另外要哪些文件，以及为什么一个在海报上好好的 logo，到了十六像素就没了。
-
 ## Also in the box
 
 - [图片转 Data URI](https://139t.cn/image-to-data-uri/): 整张图变成一行文本，直接粘进 CSS 或者 HTML。

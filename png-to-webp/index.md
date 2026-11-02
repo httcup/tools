@@ -23,10 +23,6 @@ This is an interactive browser tool at https://139t.cn/png-to-webp/. Files are p
 3. **点击“转换”，阅读实际处理结果。** 每个结果显示新大小和变化，并说明浏览器实际写出的编码：无损，或选定质量的有损编码。这一行从完成后的文件中读取，不是复述设置。
 4. **逐个下载，或全部一起下载。** 单个文件有下载按钮，两个或更多文件还可打包成 ZIP。同名文件会在扩展名前加数字，避免归档中相互覆盖。
 
-## The longer version
-
-[同一张图片，小三分之一，透明保持完整](https://139t.cn/guides/convert-png-to-webp/): 无损 WebP 已比 PNG 小，允许损失时更小。哪种合适取决于图片内容。这里解释两种模式、节省多少以及如何无需上传。
-
 ## Also in the box
 
 - [AVIF 转 JPG](https://139t.cn/avif-to-jpg/): 把网站如今保存的格式，变成所有软件一直支持的格式。

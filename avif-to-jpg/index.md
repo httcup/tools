@@ -22,10 +22,6 @@ This is an interactive browser tool at https://139t.cn/avif-to-jpg/. Files are p
 2. **设置质量，以及透明区域背后的颜色。** 滑块从 92 开始，此时照片很难与原图区分。颜色控件只在列表中有透明图片时出现，因为 JPEG 必须填充这些区域。
 3. **点击“转换”，然后下载。** 每个结果都显示来源、转换后的大小和变化。文件通常会大不少，因为 AVIF 是更高效的编码，你用体积换取兼容性。单个文件有下载按钮，多个文件还提供 ZIP 压缩包。
 
-## The longer version
-
-[只有你正在阅读的浏览器能打开的文件](https://139t.cn/guides/convert-avif-to-jpg/): 下载图片得到无法打开的 .avif？浏览器能读取，所以转换无需上传。这里解释 AVIF、JPEG 无法保留的内容和文件为何大数倍。
-
 ## Also in the box
 
 - [证件照制作](https://139t.cn/id-photo/): 选择支持的国家和证件。公布的要求与指导值均有标注。

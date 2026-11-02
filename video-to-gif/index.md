@@ -23,10 +23,6 @@ This is an interactive browser tool at https://139t.cn/video-to-gif/. Files are 
 3. **挑宽度和帧率。** 宽 480 像素、每秒 12 帧，GIF 的常见用途基本都够。宽度砍一半，像素少四分之三；每秒十二帧已经读得出是在动，再多的那些帧谁也看不出来，白花钱。
 4. **做出来，然后下载。** 帧读进来，整段动画共用一份 256 色的配色板，每一帧只写画面里变了的那一块。做完就在页面上放给你看，那张图跟你下载到的是同一个文件。
 
-## The longer version
-
-[怎么把视频做成 GIF](https://139t.cn/guides/turn-a-video-into-a-gif/): 该挑哪一段、多宽、每秒几帧，视频做成 GIF 为什么会大出十倍，以及什么时候压根不该用 GIF。
-
 ## Also in the box
 
 - [GIF 制作](https://139t.cn/gif-maker/): 把一组图片变成一段动画。

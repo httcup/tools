@@ -24,10 +24,6 @@ This is an interactive browser tool at https://139t.cn/base64/. Files are proces
 4. **有错误就读一读。** 在这里失败的解码器会说出它遇到了什么——Base64 不用的字符、填充放错了地方、不是文本的字节——而不是返回一个貌似像样却错了的结果。
 5. **把结果带走。** 复制它，或者下载成文本文件。输入框下面的计数会告诉你进了多少字节、出了多少字节。
 
-## The longer version
-
-[Base64 算加密吗？](https://139t.cn/guides/is-base64-encryption/): 不算。而且这个区别在实际里很要命。编码、加密、哈希解决的是三个不同的问题：第一个谁都能还原，第二个持有密钥的人能还原，第三个谁也还原不了。哪个是哪个，一眼怎么认。
-
 ## Also in the box
 
 - [二维码与条形码生成](https://139t.cn/qr-barcode/): 打进去，就变成一个码。生成过程不往外送任何东西。

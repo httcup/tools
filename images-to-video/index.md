@@ -23,10 +23,6 @@ This is an interactive browser tool at https://139t.cn/images-to-video/. Files a
 3. **挑分辨率和帧率。** “跟最大的那张走”按你最大的一张图来定；预设里有 4K、1080p、720p、方形和竖屏；都不合适，还能自己填一个尺寸。
 4. **生成视频，然后下载。** 编码在你自己的硬件上跑，所以快慢取决于你这台机器，不取决于排队。做好的 MP4 直接交给浏览器的下载。
 
-## The longer version
-
-[怎么把一个文件夹的图片做成视频](https://139t.cn/guides/turn-images-into-a-video/): 用照片做一段 MP4 幻灯片：帧率和停留时间各管什么，比例不对的照片怎么办，以及成品为什么没有配乐。
-
 ## Also in the box
 
 - [视频剪切](https://139t.cn/trim-video/): 一边看一边标出要留的段落，最后拿回一个视频。

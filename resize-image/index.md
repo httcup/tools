@@ -23,10 +23,6 @@ This is an interactive browser tool at https://139t.cn/resize-image/. Files are 
 3. **说清楚出来要多大。** 给宽，给高，或者两个都给；给一个长边，这样竖构图和横构图出来一样大；或者干脆给个百分比。两个框里留空一个，图片就保持自己原来的比例。
 4. **挑好格式，然后按按钮。** 可以各自保持进来时的格式，也可以一律写成 JPEG、PNG 或 WebP。每个结果都写明它变成了什么、小了多少，点开就是全尺寸大图，背后那些数字全在，旁边还摆着原图供你对照。整批下载会打成一个 zip。
 
-## The longer version
-
-[怎么改图片尺寸而不把它弄坏](https://139t.cn/guides/resize-an-image/): 调整尺寸会改变什么：缩小丢失细节、放大需要插值、适配不同形状的框，以及何时应先裁剪。
-
 ## Also in the box
 
 - [Image Layout](https://139t.cn/image-layout/): Put your pictures together. Keep them on your machine.

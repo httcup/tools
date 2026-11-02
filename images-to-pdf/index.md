@@ -23,10 +23,6 @@ This is an interactive browser tool at https://139t.cn/images-to-pdf/. Files are
 3. **选页面大小。** “页面跟着每张图走”会让每一页正好等于那张图，不裁边，也没有白框。选 A4、Letter、Legal 这些固定尺寸，则是把每张图摆到一张固定大小的纸上，要留边就留边。
 4. **生成 PDF，然后下载。** 文档在你自己的机器上写出来，所以快慢取决于你这台机器，不取决于排队。成品直接交给浏览器的下载。
 
-## The longer version
-
-[怎么把多张图片合成一个 PDF](https://139t.cn/guides/combine-images-into-a-pdf/): 把照片或者扫描件做成一个 PDF：页面大小、顺序和旋转，JPEG 为什么进去时可以一点不掉画质，以及这份 PDF 会向收件人交代些什么。
-
 ## Also in the box
 
 - [文档扫描](https://139t.cn/document-scanner/): 把纸拍下来，回来的是一份看着像扫描的东西。

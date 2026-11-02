@@ -23,10 +23,6 @@ This is an interactive browser tool at https://139t.cn/heic-to-jpg/. Files are p
 3. **选格式，再定那些细节。** 没有特别理由就选 JPEG。转换图的本来就是到哪儿都打得开。质量滑块停在 92，这一档上照片很难跟原图区分开。那个勾选框决定日期、相机和位置要不要一起带过去。
 4. **按“转换”，然后下载。** 解码器在第一次转换时到位，大约 1.4 MB，只这一次。之后每张照片都在你自己的机器上解码、写出。一个文件给你一个下载按钮，多个文件另外给你一个 zip。
 
-## The longer version
-
-[手机存下的那张照片，和那个什么都打不开的格式](https://139t.cn/guides/convert-heic-to-jpg/): iPhone 把照片存成 HEIC，而半个互联网打不开它。这个格式是什么，为什么只有 Safari 解得了，转换要拿画质换多少，以及怎么做到不把照片交给任何人。
-
 ## Also in the box
 
 - [WebP 转 JPG](https://139t.cn/webp-to-jpg/): 把网页保存的图片，变成所有软件仍然接受的格式。

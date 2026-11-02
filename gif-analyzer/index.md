@@ -25,10 +25,6 @@ This is an interactive browser tool at https://139t.cn/gif-analyzer/. Files are 
 5. **逐帧看下去。** 每一帧都会显示自己的延时、矩形、处置方式和大小。在“每帧之后的画布”和“每帧实际存下的内容”之间切换，后者才能看出文件有没有优化：做得好的 GIF 存的是很小的矩形，做得糟的每次都把整幅画面存一遍。
 6. **需要的话把报告带走。** 整份分析的纯文本，可以贴进消息里，也可以和文件放在一起留着。它是在页面里、用你屏幕上已有的内容拼出来的。
 
-## The longer version
-
-[一个 GIF 里到底装着什么](https://139t.cn/guides/whats-inside-a-gif/): 帧、延时、处置方式和调色板都讲清楚：浏览器为什么不认最短的延时，以及怎么查出一个 GIF 的体积究竟花在了哪里。
-
 ## Also in the box
 
 - [视频压缩](https://139t.cn/compress-video/): 说一个它最多能有多大。剩下的工具来算，做完先量一遍再交给你。

@@ -26,10 +26,6 @@ This is an interactive browser tool at https://139t.cn/dicom-viewer/. Files are 
 6. **读头信息。** 文件里的每一个元素，连编号、标准给它的名字和里面的内容一起，都可以搜索。它上面是这一份文件里究竟什么在指认病人的清单，而那远不止一个姓名。
 7. **把需要的带走。** 屏幕上那一帧存成 PNG，保留你调好的窗，上面不烧任何字；或者把整份头信息存成纯文本。两样都是在这一页里用已经在页面上的东西拼出来的。
 
-## The longer version
-
-[DCM 文件怎么打开，以及里面有什么](https://139t.cn/guides/open-a-dicom-file/): .dcm 文件是什么、用什么打开，医院给的光盘里都有什么，文件为什么没有后缀，怎么在浏览器里打开一份 .dcm 影像，窗宽窗位到底在做什么，以及一份影像除了图像之外还带着关于病人的哪些东西。
-
 ## Also in the box
 
 - [图片转 ICO](https://139t.cn/image-to-ico/): 进去一张图，出来的是浏览器、Windows 和 Mac 各自要的每一个尺寸。

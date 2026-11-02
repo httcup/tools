@@ -25,10 +25,6 @@ This is an interactive browser tool at https://139t.cn/image-to-svg/. Files are 
 5. **只在需要时调平滑。** *细节*是简化时线条允许偏离像素多远，除非你另有指定，否则按形状算。*拐角锐度*决定轮廓要拐多大的弯，那个弯才保留为角而不是被磨圆。大多数图片这两项都不用碰。
 6. **拿走 SVG。** 一个文件，一条 `<path>`，没有填充规则要操心：外轮廓朝一个方向转，洞朝另一个方向转，所以一个带四十个洞的形状也只是一个元素。Illustrator、Inkscape、Figma、浏览器和切割机都打得开。
 
-## The longer version
-
-[怎么把图片描成 SVG](https://139t.cn/guides/trace-an-image-into-an-svg/): 在浏览器里把 logo、镂空模板、签名或剪影变成真正的矢量轮廓。哪些图片描得好，哪些永远描不好，以及怎么改掉描图器弄错的地方。
-
 ## Also in the box
 
 - [身高对比图](https://139t.cn/compare-heights/): 把身高打进去，把图带走。为了画它，不会往外送任何东西。

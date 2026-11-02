@@ -24,10 +24,6 @@ This is an interactive browser tool at https://139t.cn/gif-maker/. Files are pro
 4. **选尺寸，并决定颜色怎么挑。** GIF 的体积随面积和帧数一起涨，而且没有画质滑杆能把它拉回来，所以尺寸才是最要紧的那个设置。每帧 256 色最好看，也是默认值；共用一套调色板则更小、更稳。
 5. **做出 GIF，然后下载。** 它是在你自己的硬件上拼出来的，所以花多久取决于你的机器，而不是排队。做好的动画会先在页面上放一遍，然后你再保存。
 
-## The longer version
-
-[怎么用图片做一个动图 GIF](https://139t.cn/guides/make-a-gif-from-images/): 把一组图片变成一个动图 GIF：GIF 到底能放多快、调色板那个选项改的是什么，以及真正能让文件变小的三件事。
-
 ## Also in the box
 
 - [GIF 拆帧](https://139t.cn/split-gif/): 每一帧都单独存成一张 PNG。

@@ -24,10 +24,6 @@ This is an interactive browser tool at https://139t.cn/image-to-data-uri/. Files
 4. **看一眼那些提醒。** 图片要是带着 EXIF、色彩配置文件或者 XMP，页面会点名，并算出你这串结果里有多少字节是它们。扩展名跟实际格式对不上时，按实际格式来，并告诉你一声。浏览器画不出这个结果，它也会直说。
 5. **复制，或者下载。** 每个结果一个按钮，另外还有一个把全部结果一次拿走。选自定义属性时，输出外面已经套好一个 `:root` 块，粘到样式表开头就能用。
 
-## The longer version
-
-[什么时候该把图片塞进 CSS，什么时候不该](https://139t.cn/guides/embed-an-image-in-css/): data URI 的代价在哪儿，base64 为什么多出三分之一而 gzip 又还不回来，SVG 为什么绝不该用 base64，以及那个只坑内联 SVG、还一声不吭的引号问题。
-
 ## Also in the box
 
 - [SVG 转图片](https://139t.cn/svg-to-image/): 说个尺寸。矢量图本来就没有尺寸可丢。

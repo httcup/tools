@@ -80,9 +80,6 @@ var targets=Object.create(null);
 [
 'gif-maker','gif-to-mp4','split-gif','images-to-video',
 'stack-images','gif-analyzer','timelapse-video','resize-image','compress-image',
-'guides/turn-images-into-a-video','guides/stack-photos-to-reduce-noise',
-'guides/whats-inside-a-gif','guides/split-a-gif-into-frames',
-'guides/edit-a-gif-frame-by-frame',
 ].forEach(function(id){targets[id]=true;});
 document.querySelectorAll('meta[name="tools-workflow-target"]').forEach(function(tag){
 if(validPage.test(tag.content))targets[tag.content]=true;

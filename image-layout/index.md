@@ -25,10 +25,6 @@ Your images are read, arranged and written by your own browser, using the canvas
 4. **Adjust the picture inside each frame.** Select a picture in the preview or choose it from Frame. Drag to pan, or use Horizontal position, Vertical position and Zoom. Zoom out below 100% to show more background, or zoom in to enlarge and crop. At 100% zoom, “Fit whole image” keeps every edge; “Fill box (crop edges)” starts with a centred crop. Reset this frame restores the selected picture, and Reset all frames restores every picture's starting fit.
 5. **Check the preview, then save one image.** The preview shows the arrangement and crop used by the download. Choose PNG, JPEG or WebP, set a background or transparency where the format permits it, and create the image. Export draws from the original files at the output size.
 
-## The longer version
-
-[如何把多张图片排列成一张图](https://139t.cn/guides/arrange-images/): 制作拼贴、照片索引或长条图。选择网格，保留完整图片或裁切填满，设置间距，保存为 PNG、JPEG 或 WebP。无需上传。
-
 ## Also in the box
 
 - [HEIC 转 JPG](https://139t.cn/heic-to-jpg/): iPhone 拍的照片，换成什么都打得开的格式。

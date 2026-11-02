@@ -23,10 +23,6 @@ This is an interactive browser tool at https://139t.cn/exif-editor/. Files are p
 3. **按“清除全部元数据”。** 对于 JPEG、PNG 和 WebP: 对多数人来说，这一步就是全部。每一个标签，XMP 和 IPTC 块，注释，内嵌的缩略图，列表上所有照片一次全清。 AVIF 由浏览器解码并保存为新的 PNG，不复制原有元数据。这里可以查看提取到的 EXIF 标签，但无法编辑。PNG 可能更大，转换也可能改变颜色或 HDR 显示。原文件保持不变。
 4. **也可以改，而不是删。** 对于 JPEG、PNG 和 WebP: 改个日期、订正一行版权、把位置删掉而把拍摄参数留着，然后单独保存这一张。
 
-## The longer version
-
-[一张照片把你交代了多少，以及怎么把它删掉](https://139t.cn/guides/remove-exif-and-gps-data/): 手机拍的照片通常带着精确的拍摄地点、精确到秒的时间，还有相机的序列号。里面到底有什么，谁读得到，以及怎么在不动画面的前提下把它们清掉。
-
 ## Also in the box
 
 - [DICOM 阅片器](https://139t.cn/dicom-viewer/): CT、MR、X 光和超声，连窗宽窗位、头信息和测量一起。

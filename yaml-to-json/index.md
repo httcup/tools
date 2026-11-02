@@ -24,10 +24,6 @@ This is an interactive browser tool at https://139t.cn/yaml-to-json/. Files are 
 4. **在出错的地方读错误。** 在这里失败的解析器会告诉你它遇到了什么，在第几行第几列，而不是“位置 4193 处有意外的 token”。通常这就够你修好一份配置文件，不用再打开别的东西。
 5. **把结果拿走。** 复制，或者下载成文件，文件名按它出来的格式取。
 
-## The longer version
-
-[如何互转 YAML 与 JSON](https://139t.cn/guides/convert-yaml-and-json/): 在浏览器中将支持的 YAML 子集转为 JSON，也可将 JSON 转为 YAML。复用前检查注释丢失、未支持的结构和精确数字文本。
-
 ## Also in the box
 
 - [XML 格式化](https://139t.cn/xml-formatter/): 排开了好读的 XML，压平了好发的 XML，还有两个方向的 JSON 转换。这些都不会粘进别人的服务器。

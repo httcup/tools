@@ -23,10 +23,6 @@ This is an interactive browser tool at https://139t.cn/compress-image/. Files ar
 3. **按“压到这个大小”。** 每张图会被反复编码几遍，工具一步步逼近那个既能塞进去、画质又最高的档位。本来就没超标的文件，原样放行，一个字节都不动。
 4. **看看代价有多大，然后下载。** 每个结果都写明存成了什么格式、用了哪一档画质、尺寸有没有变，以及量出来跟原图有多接近。按“对比”，两张图并排放着看。
 
-## The longer version
-
-[如何将图片压缩到文件大小上限内](https://139t.cn/guides/compress-an-image-to-a-target-size/): 上传框要 500 KB，你的照片有 4 MB。一个大小限制到底要你付出什么，先动哪个设置，以及 PNG 为什么不像 JPEG 那样能压。
-
 ## Also in the box
 
 - [图片缩放](https://139t.cn/resize-image/): 说个尺寸，拉个框，挑个格式。

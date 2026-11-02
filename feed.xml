@@ -12,7 +12,7 @@
     <link href="https://139t.cn/"/>
     <id>https://139t.cn/</id>
     <updated>2026-10-27T02:54:58Z</updated>
-    <summary type="text">在浏览器本地运行的 185 个工具，文件不上传。</summary>
+    <summary type="text">在浏览器本地运行的 180 个工具，文件不上传。</summary>
   </entry>
   <entry>
     <title type="text">二维码生成和美化</title>
@@ -1307,41 +1307,6 @@
     <summary type="text">在这里生成，由你自己的浏览器生成，不发往任何地方。什么都不保存，也没有历史记录。</summary>
   </entry>
   <entry>
-    <title type="text">文本与文件分享</title>
-    <link href="https://139t.cn/share-text/"/>
-    <id>https://139t.cn/share-text/</id>
-    <updated>2026-10-27T02:54:58Z</updated>
-    <summary type="text">从打开的浏览器加密分享文本与文件。默认直连，也可选择云中转。你可以逐一批准读者。</summary>
-  </entry>
-  <entry>
-    <title type="text">本地对讲机</title>
-    <link href="https://139t.cn/walkie-talkie/"/>
-    <id>https://139t.cn/walkie-talkie/</id>
-    <updated>2026-10-27T02:54:58Z</updated>
-    <summary type="text">建个频道，按住说话或免提；局域网直连或走云中转。</summary>
-  </entry>
-  <entry>
-    <title type="text">语音寻呼台</title>
-    <link href="https://139t.cn/voice-oncall/"/>
-    <id>https://139t.cn/voice-oncall/</id>
-    <updated>2026-10-27T02:54:58Z</updated>
-    <summary type="text">打开寻呼机就听到实时语音，可设密码、单独静音或移除。</summary>
-  </entry>
-  <entry>
-    <title type="text">远程摄像头</title>
-    <link href="https://139t.cn/remote-camera/"/>
-    <id>https://139t.cn/remote-camera/</id>
-    <updated>2026-10-27T02:54:58Z</updated>
-    <summary type="text">一台设备开摄像头，另一台浏览器观看，可要求批准。</summary>
-  </entry>
-  <entry>
-    <title type="text">分享浏览器标签页</title>
-    <link href="https://139t.cn/share-tab/"/>
-    <id>https://139t.cn/share-tab/</id>
-    <updated>2026-10-27T02:54:58Z</updated>
-    <summary type="text">把一个标签页分享给一位批准者，无需扩展、不传声音。</summary>
-  </entry>
-  <entry>
     <title type="text">本地快用</title>
     <link href="https://139t.cn/quick/"/>
     <id>https://139t.cn/quick/</id>
@@ -1380,13 +1345,6 @@
     <title type="text"></title>
     <link href="https://139t.cn/roadmap/"/>
     <id>https://139t.cn/roadmap/</id>
-    <updated>2026-10-27T02:54:58Z</updated>
-    <summary type="text"></summary>
-  </entry>
-  <entry>
-    <title type="text"></title>
-    <link href="https://139t.cn/guides/"/>
-    <id>https://139t.cn/guides/</id>
     <updated>2026-10-27T02:54:58Z</updated>
     <summary type="text"></summary>
   </entry>

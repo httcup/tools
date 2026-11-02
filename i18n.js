@@ -19,7 +19,7 @@
   var STORE = 'abox-lang';
   var CACHE = 'abox-i18n-dict-';
   /* 词典更新后把这个版本号 +1，老用户浏览器里的旧词典会自动失效 */
-  var DICT_VER = 4;
+  var DICT_VER = 5;
   var ATTRS = ['placeholder', 'aria-label', 'title', 'alt'];
   var SKIP_TAGS = /^(SCRIPT|STYLE|PRE|CODE|TEXTAREA|KBD|SAMP|SVG)$/;
 

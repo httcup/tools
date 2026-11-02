@@ -61,6 +61,16 @@ def build(lang):
         words[src] = dst
         added += 1
 
+    # 人工校对覆盖（分类名、导航、品牌等高频可见文案）
+    ov_path = os.path.join(ROOT, 'i18n', 'overrides', '%s.json' % lang)
+    ov_n = 0
+    if os.path.exists(ov_path):
+        ov = json.load(open(ov_path, encoding='utf-8'))
+        for k, v in ov.items():
+            if isinstance(v, str) and v:
+                words[k] = v
+                ov_n += 1
+
     # 由带占位符的词条生成模板（更长的字面量优先匹配）
     existing_rx = {p[0] for p in patterns}
     cand = []
@@ -76,8 +86,8 @@ def build(lang):
     out['__patterns'] = patterns
     json.dump(out, open(path, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
     size = os.path.getsize(path) / 1024
-    print('[%s] 新增 %d，总计 %d 条，模板 %d 条，%.0f KB'
-          % (lang, added, len(words), len(patterns), size))
+    print('[%s] 新增 %d，校对覆盖 %d，总计 %d 条，模板 %d 条，%.0f KB'
+          % (lang, added, ov_n, len(words), len(patterns), size))
 
 
 if __name__ == '__main__':

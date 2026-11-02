@@ -327,11 +327,19 @@
   }
 
   function writeCache(id, data) {
-    try { localStorage.setItem(CACHE + DICT_VER + '-' + id, JSON.stringify(data)); } catch (e) {}
+    var key = CACHE + DICT_VER + '-';
+    try {
+      /* 词典体积不小，只保留当前语言，避免占满 localStorage */
+      for (var i = localStorage.length - 1; i >= 0; i--) {
+        var k = localStorage.key(i);
+        if (k && k.indexOf(key) === 0 && k !== key + id) localStorage.removeItem(k);
+      }
+    } catch (e) {}
+    try { localStorage.setItem(key + id, JSON.stringify(data)); } catch (e) {}
   }
 
   function getJSON(file) {
-    return fetch(BASE + 'i18n/' + file, { credentials: 'same-origin' })
+    return fetch(BASE + 'i18n/' + file + '?v=' + DICT_VER, { credentials: 'same-origin' })
       .then(function (r) { return r.ok ? r.json() : null; })
       .catch(function () { return null; });
   }

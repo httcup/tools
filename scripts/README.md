@@ -8,4 +8,5 @@ github.com/httcup/tools，合并解压后把 site-root 路径传入脚本）。
 - `build_hub.py` — 生成全中文导航首页 index.html
 - `build_meta.py` — 生成 sitemap.xml / feed.xml / llms.txt / robots.txt / manifest.json
 - `translate.py <目标目录>` — 界面短语汉化
-- `check_links.py <目标目录>` — 检查全站本地引用完整性
+- `check_links.py [目标目录]` — 检查全站本地引用完整性（不传目录则扫仓库根；
+  退出码 1 表示有缺失，2 表示没扫到任何文件、检查没真正执行）

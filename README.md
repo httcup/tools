@@ -129,4 +129,4 @@ python3 -m http.server 8080
 - `extract.py` / `build_hub.py` — 提取工具清单并生成首页
 - `build_meta.py` — 生成 sitemap / feed / llms.txt / manifest
 - `translate.py` — 界面短语汉化
-- `check_links.py` — 检查全站本地引用是否完整
+- `check_links.py` — 检查全站本地引用是否都在（默认扫仓库根目录；有缺失返回 1，没扫到文件返回 2）

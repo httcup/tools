@@ -24,7 +24,15 @@
     var v=parseFloat($('#v').value);
     if(!isFinite(v)){ $('#result').textContent='—'; $('#all').innerHTML=''; return; }
     var from=$('#from').value, to=$('#to').value;
-    $('#result').textContent=TK.fmt(convert(v,from,to),8)+' '+to;
+    // 单位名单独放一个节点，交给站点的翻译脚本处理；拼进一句话里就翻不到了
+    var box=$('#result');
+    box.textContent='';
+    var num=document.createElement('span');
+    num.textContent=TK.fmt(convert(v,from,to),8);
+    var unit=document.createElement('span');
+    unit.className='unit';
+    unit.textContent=to;
+    box.appendChild(num); box.appendChild(document.createTextNode(' ')); box.appendChild(unit);
     $('#all').innerHTML=Object.keys(DATA[DATA.current].units).map(function(u){
       return '<tr><td>'+u+'</td><td>'+TK.fmt(convert(v,from,u),8)+'</td></tr>';
     }).join('');

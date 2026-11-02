@@ -25,23 +25,41 @@ import collections
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE_DIR = '/tmp/tm'
 CJK = re.compile(r'[\u4e00-\u9fff]')
-SKIP = re.compile(r'<(script|style|pre|code|textarea)\b[\s\S]*?</\1>', re.I)
+SKIP = re.compile(r'<(script|style|pre|textarea)\b[\s\S]*?</\1>', re.I)
+INLINE_CODE = re.compile(r'<code\b[\s\S]*?</code>', re.I)
+SEP = '\x00'
 UA = ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '
       '(KHTML, like Gecko) Chrome/120.0 Safari/537.36')
 LANGS = {'ja': 'ja', 'fr': 'fr', 'es': 'es', 'en': 'en'}
 
 
 def strings_of(path):
-    s = SKIP.sub(' ', open(path, encoding='utf-8', errors='ignore').read())
+    raw = open(path, encoding='utf-8', errors='ignore').read()
     out = set()
+
+    def add(t):
+        for part in t.split(SEP):
+            part = ' '.join(part.split())
+            if part and CJK.search(part):
+                out.add(part)
+
+    # 属性先在原文上抓：整块删 <textarea> 时，它自己的 placeholder 会跟着没掉
+    for m in re.finditer(r'(?:placeholder|aria-label|title|alt)="([^"]{1,300})"', raw):
+        add(html.unescape(m.group(1)))
+    # 与 i18n.js 的 ATTRS 保持一致：这些 data-* 是纯展示文案（复制提示、强度档位）
+    for m in re.finditer(
+            r'data-(?:copied|failed|copy-failed|very-weak|weak|fair|strong|very-strong'
+            r'|instant|minutes|hours|days|months|years|centuries|ages)="([^"]{1,300})"', raw):
+        add(html.unescape(m.group(1)))
+
+    # 整块丢掉：脚本、样式、预排版块——这些内容在页面上从不作为正文出现
+    s = SKIP.sub(' ', raw)
+    # 行内 <code> 不能整块删掉，否则两侧正文会被粘成一条页面上根本不存在的
+    # 长句（运行时它们是被 <code> 隔开的两个文本节点），译文永远匹配不上。
+    # 这里把它换成占位分隔符，提取后再拆开。
+    s = INLINE_CODE.sub(SEP, s)
     for m in re.finditer(r'>([^<>]{1,800})<', s):
-        t = ' '.join(html.unescape(m.group(1)).split())
-        if t and CJK.search(t):
-            out.add(t)
-    for m in re.finditer(r'(?:placeholder|aria-label|title|alt)="([^"]{1,300})"', s):
-        t = ' '.join(html.unescape(m.group(1)).split())
-        if t and CJK.search(t):
-            out.add(t)
+        add(html.unescape(m.group(1)))
     return out
 
 

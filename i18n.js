@@ -19,8 +19,15 @@
   var STORE = 'abox-lang';
   var CACHE = 'abox-i18n-dict-';
   /* 词典更新后把这个版本号 +1，老用户浏览器里的旧词典会自动失效 */
-  var DICT_VER = 7;
-  var ATTRS = ['placeholder', 'aria-label', 'title', 'alt'];
+  var DICT_VER = 11;
+  /* 可翻译属性。data-* 只放纯展示用的那几类：data-key 是侧边栏的搜索索引
+   * （标题+简介+关键词拼成的一整串，翻了反而搜不到），data-t 是水印预置文字
+   * （要写进输入框当用户内容），都不能动。 */
+  var ATTRS = ['placeholder', 'aria-label', 'title', 'alt',
+    'data-copied', 'data-failed', 'data-copy-failed',
+    'data-very-weak', 'data-weak', 'data-fair', 'data-strong', 'data-very-strong',
+    'data-instant', 'data-minutes', 'data-hours', 'data-days', 'data-months',
+    'data-years', 'data-centuries', 'data-ages'];
   var SKIP_TAGS = /^(SCRIPT|STYLE|PRE|CODE|TEXTAREA|KBD|SAMP|SVG)$/;
 
   var script = document.currentScript;
@@ -160,11 +167,15 @@
     var tw = document.createTreeWalker(root, NodeFilter.SHOW_TEXT | NodeFilter.SHOW_ELEMENT, {
       acceptNode: function (n) {
         if (n.nodeType === 1) {
-          if (SKIP_TAGS.test(n.tagName)) return NodeFilter.FILTER_REJECT;
           if (n.hasAttribute('data-i18n-skip') || n.classList.contains('notranslate')) {
             return NodeFilter.FILTER_REJECT;
           }
+          /* SKIP_TAGS 里的元素仍要过一遍：<textarea placeholder>、<code title>
+           * 这些属性是给用户看的，整块拒绝就永远翻不到。只把它们的正文挡掉。 */
+          return NodeFilter.FILTER_ACCEPT;
         }
+        var p = n.parentNode;
+        if (p && p.nodeType === 1 && SKIP_TAGS.test(p.tagName)) return NodeFilter.FILTER_REJECT;
         return NodeFilter.FILTER_ACCEPT;
       }
     });
@@ -554,12 +565,18 @@
   var startDict = current !== 'zh-Hans' ? readCache(current) : null;
   if (startDict) setDict(startDict);
 
+  /* 首次译文应用完成的信号：工具的脚本可以等它再渲染带单位/文案的结果，
+   * 否则会读到页面加载时还没换上的中文。
+   * （i18n:change 事件在词典命中缓存时可能早于页面脚本注册监听，靠不住） */
+  var readyResolve;
+  var ready = new Promise(function (r) { readyResolve = r; });
+
   function boot() {
     mount();
-    if (current !== 'zh-Hans') applyLang(current, false);
-    else applyAll();
+    var p = current !== 'zh-Hans' ? applyLang(current, false) : (applyAll(), Promise.resolve());
     observe();
     if (!explicit) autoDetect();
+    p.then(function () { readyResolve(); }, function () { readyResolve(); });
   }
 
   if (document.readyState === 'loading') {
@@ -568,5 +585,11 @@
     boot();
   }
 
-  window.siteI18n = { switchTo: switchTo, get lang() { return current; }, languages: LANGS, get error() { return lastError; } };
+  window.siteI18n = {
+    switchTo: switchTo,
+    get lang() { return current; },
+    languages: LANGS,
+    get error() { return lastError; },
+    ready: ready
+  };
 })();

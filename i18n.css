@@ -1,11 +1,10 @@
-/* 语言切换器 —— 首页 .head-tools 与工具页 .topbar-actions 共用 */
+/* 语言切换器 —— 首页 .head-tools 与工具页 .topbar-actions 共用
+   形态与主题按钮一致：36×36 圆角图标按钮 + 下拉菜单 */
 .lang-switch {
   position: relative;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
   flex: 0 0 auto;
-  float: none;
   margin-left: 6px;
   vertical-align: middle;
   line-height: 1;
@@ -14,46 +13,106 @@
 /* 工具页的 .topbar-actions 是块级容器，让切换器和收藏按钮并排 */
 .topbar-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
 
-.lang-switch .globe,
-.lang-switch svg.globe {
-  width: 15px !important;
-  height: 15px !important;
-  flex: 0 0 15px !important;
-  margin: 0 !important;
-  color: var(--muted, var(--text-dim, #667085));
-  pointer-events: none;
-  vertical-align: middle;
+.lang-btn {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  margin: 0;
+  border: 1px solid var(--border, var(--line, #e4e7ec));
+  border-radius: 9px;
+  background: var(--surface, #fff);
+  color: var(--text, #101828);
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  font: inherit;
+  line-height: 1;
 }
 
-.lang-switch select {
-  appearance: none;
-  -webkit-appearance: none;
-  font: inherit;
-  font-size: 13px;
-  line-height: 1;
-  color: var(--text, #101828);
+.lang-btn:hover,
+.lang-switch.open .lang-btn {
+  border-color: var(--accent, #2563eb);
+  color: var(--accent, #2563eb);
+}
+
+.lang-btn:focus-visible {
+  outline: 2px solid var(--accent, #2563eb);
+  outline-offset: 2px;
+}
+
+.lang-btn svg {
+  width: 17px;
+  height: 17px;
+  display: block;
+  pointer-events: none;
+}
+
+/* ---------- 下拉菜单 ---------- */
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 90;
+  min-width: 178px;
+  padding: 5px;
   background: var(--surface, #fff);
   border: 1px solid var(--border, var(--line, #e4e7ec));
-  border-radius: 999px;
-  padding: 6px 24px 6px 8px;
-  cursor: pointer;
-  max-width: 132px;
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23667085' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 6px center;
-  background-size: 12px 12px;
+  border-radius: 11px;
+  box-shadow: 0 12px 32px -12px rgba(16, 24, 40, .28), 0 2px 8px -2px rgba(16, 24, 40, .12);
 }
 
-.lang-switch select:hover { border-color: var(--line-strong, var(--border, #d0d5dd)); }
-.lang-switch select:focus-visible { outline: 2px solid var(--accent, #2563eb); outline-offset: 2px; }
+.lang-menu[hidden] { display: none; }
 
-/* 工具页里比收藏按钮略窄一些 */
-.topbar-actions .lang-switch select { padding: 5px 22px 5px 7px; font-size: 12.5px; }
+.lang-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  padding: 8px 10px;
+  margin: 0;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--text, #101828);
+  font: inherit;
+  font-size: 13.5px;
+  text-align: left;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.lang-item:hover { background: var(--surface-2, rgba(16, 24, 40, .05)); }
+.lang-item:focus-visible { outline: 2px solid var(--accent, #2563eb); outline-offset: -2px; }
+
+.lang-item .lang-code {
+  font-size: 11px;
+  letter-spacing: .02em;
+  color: var(--muted, var(--text-dim, #667085));
+}
+
+.lang-item.is-current { color: var(--accent, #2563eb); font-weight: 600; }
+.lang-item.is-current .lang-code { color: var(--accent, #2563eb); }
+.lang-item.is-current .lang-name::after {
+  content: "✓";
+  margin-left: 6px;
+  font-size: 11px;
+}
 
 @media (max-width: 640px) {
-  .lang-switch select { max-width: 104px; font-size: 12px; }
-  .lang-switch .globe { display: none; }
+  .lang-btn { width: 34px; height: 34px; }
+  .lang-menu { min-width: 158px; }
+  .lang-item { font-size: 13px; }
 }
 
 /* 语言切换后，正在翻译的文本短暂淡入，避免闪现原文 */
 html[data-i18n-active] body { transition: opacity .12s ease; }
+
+/* 深色主题下菜单阴影更深一点 */
+html[data-theme="dark"] .lang-menu {
+  box-shadow: 0 14px 34px -12px rgba(0, 0, 0, .7), 0 2px 8px -2px rgba(0, 0, 0, .5);
+}

@@ -9,12 +9,12 @@
   'use strict';
 
   var LANGS = [
-    { id: 'zh-Hans', label: '简体中文', tag: 'zh-Hans' },
-    { id: 'zh-Hant', label: '繁體中文', tag: 'zh-Hant' },
-    { id: 'en', label: 'English', tag: 'en' },
-    { id: 'ja', label: '日本語', tag: 'ja' },
-    { id: 'fr', label: 'Français', tag: 'fr' },
-    { id: 'es', label: 'Español', tag: 'es' }
+    { id: 'zh-Hans', label: '简体中文', code: '简', tag: 'zh-Hans' },
+    { id: 'zh-Hant', label: '繁體中文', code: '繁', tag: 'zh-Hant' },
+    { id: 'en', label: 'English', code: 'EN', tag: 'en' },
+    { id: 'ja', label: '日本語', code: '日', tag: 'ja' },
+    { id: 'fr', label: 'Français', code: 'FR', tag: 'fr' },
+    { id: 'es', label: 'Español', code: 'ES', tag: 'es' }
   ];
   var STORE = 'abox-lang';
   var CACHE = 'abox-i18n-dict-';
@@ -221,6 +221,88 @@
     try { localStorage.setItem(STORE, id); } catch (e) {}
   }
 
+  /* ---------- 按访问者所在国家自动选语言 ---------- */
+  var GEO_KEY = 'abox-geo-lang';
+  var HANT = ['TW', 'HK', 'MO'];
+  var HANS = ['CN', 'SG'];
+  var FR = ['FR', 'BE', 'CH', 'MC', 'LU', 'SN', 'CI', 'ML', 'BF', 'NE', 'TG', 'BJ',
+            'GA', 'CG', 'CD', 'MG', 'CM', 'HT', 'DJ', 'KM', 'SC', 'VU', 'RE', 'GP',
+            'MQ', 'GF', 'NC', 'PF'];
+  var ES = ['ES', 'MX', 'AR', 'CO', 'CL', 'PE', 'VE', 'UY', 'PY', 'BO', 'EC', 'CR',
+            'GT', 'HN', 'NI', 'PA', 'DO', 'PR', 'CU', 'SV', 'GQ'];
+
+  function langForCountry(cc) {
+    cc = String(cc || '').toUpperCase();
+    if (!/^[A-Z]{2}$/.test(cc)) return null;
+    if (HANT.indexOf(cc) >= 0) return 'zh-Hant';
+    if (HANS.indexOf(cc) >= 0) return 'zh-Hans';
+    if (cc === 'JP') return 'ja';
+    if (FR.indexOf(cc) >= 0) return 'fr';
+    if (ES.indexOf(cc) >= 0) return 'es';
+    return 'en';
+  }
+
+  function geoCached() {
+    try {
+      var raw = sessionStorage.getItem(GEO_KEY);
+      if (!raw) return null;
+      var o = JSON.parse(raw);
+      if (o && o.l && Date.now() - o.t < 6 * 3600 * 1000) return o.l;
+    } catch (e) {}
+    return null;
+  }
+
+  function getText(url, ms) {
+    if (!window.fetch) return Promise.resolve(null);
+    return new Promise(function (resolve) {
+      var done = false, ctrl = null, timer;
+      function finish(v) {
+        if (done) return;
+        done = true;
+        clearTimeout(timer);
+        resolve(v);
+      }
+      timer = setTimeout(function () {
+        try { if (ctrl) ctrl.abort(); } catch (e) {}
+        finish(null);
+      }, ms);
+      try {
+        ctrl = window.AbortController ? new AbortController() : null;
+        fetch(url, { credentials: 'omit', cache: 'no-store', signal: ctrl ? ctrl.signal : undefined })
+          .then(function (r) { return r.ok ? r.text() : null; })
+          .then(finish, function () { finish(null); });
+      } catch (e) { finish(null); }
+    });
+  }
+
+  /* Cloudflare 的 /cdn-cgi/trace 直接给出 loc=国家码，同源、无需第三方；
+     非 Cloudflare 部署时退回公共 IP 归属地接口。 */
+  function detectByIP() {
+    var cached = geoCached();
+    if (cached) return Promise.resolve(cached);
+
+    return getText(BASE + 'cdn-cgi/trace', 1200).then(function (body) {
+      var m = body && /(?:^|\n)loc=([A-Z]{2})/.exec(body);
+      if (m) return langForCountry(m[1]);
+      return getText('https://ipwho.is/?fields=country_code', 1500).then(function (t) {
+        if (t) {
+          try {
+            var j = JSON.parse(t);
+            if (j && j.country_code) return langForCountry(j.country_code);
+          } catch (e) {}
+        }
+        return getText('https://ipapi.co/country/', 1500).then(function (c) {
+          return c && /^[A-Za-z]{2}$/.test(c.trim()) ? langForCountry(c.trim()) : null;
+        });
+      });
+    }).then(function (lang) {
+      if (lang) {
+        try { sessionStorage.setItem(GEO_KEY, JSON.stringify({ l: lang, t: Date.now() })); } catch (e) {}
+      }
+      return lang;
+    }).catch(function () { return null; });
+  }
+
   /* ---------- 读取词典 ---------- */
   function readCache(id) {
     try {
@@ -263,34 +345,103 @@
   }
 
   /* ---------- 切换器 ---------- */
+  var GLOBE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" ' +
+    'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+    '<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/>' +
+    '<path d="M12 3c2.4 2.7 2.4 15.3 0 18M12 3c-2.4 2.7-2.4 15.3 0 18"/></svg>';
+
+  function syncSwitcher(id) {
+    var items = document.querySelectorAll('.lang-item');
+    for (var i = 0; i < items.length; i++) {
+      var on = items[i].getAttribute('data-lang') === id;
+      items[i].setAttribute('aria-checked', on ? 'true' : 'false');
+      items[i].classList.toggle('is-current', on);
+    }
+    var btn = document.getElementById('lang-btn');
+    if (btn) {
+      var label = '语言 / Language';
+      for (var j = 0; j < LANGS.length; j++) {
+        if (LANGS[j].id === id) label = LANGS[j].label + ' · Language';
+      }
+      btn.title = label;
+      btn.setAttribute('aria-label', label);
+      btn.setAttribute('data-lang', id);
+    }
+  }
+
   function buildSwitcher() {
     var box = document.createElement('div');
     box.className = 'lang-switch';
     box.setAttribute('data-i18n-skip', '');
-    box.innerHTML = '<svg class="globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" ' +
-      'stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/>' +
-      '<path d="M3 12h18M12 3c2.5 2.6 2.5 15.4 0 18M12 3c-2.5 2.6-2.5 15.4 0 18"/></svg>';
 
-    var sel = document.createElement('select');
-    sel.id = 'lang-select';
-    sel.setAttribute('aria-label', '语言 / Language');
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'lang-btn';
+    btn.id = 'lang-btn';
+    btn.setAttribute('aria-haspopup', 'true');
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-label', '语言 / Language');
+    btn.title = '语言 / Language';
+    btn.innerHTML = GLOBE;
+
+    var menu = document.createElement('div');
+    menu.className = 'lang-menu';
+    menu.id = 'lang-menu';
+    menu.setAttribute('role', 'menu');
+    menu.hidden = true;
+
     LANGS.forEach(function (l) {
-      var o = document.createElement('option');
-      o.value = l.id;
-      o.textContent = l.label;
-      sel.appendChild(o);
+      var item = document.createElement('button');
+      item.type = 'button';
+      item.className = 'lang-item';
+      item.setAttribute('role', 'menuitemradio');
+      item.setAttribute('data-lang', l.id);
+      item.innerHTML = '<span class="lang-name"></span><span class="lang-code"></span>';
+      item.querySelector('.lang-name').textContent = l.label;
+      item.querySelector('.lang-code').textContent = l.code;
+      item.addEventListener('click', function () {
+        close();
+        applyLang(l.id, true);
+      });
+      menu.appendChild(item);
     });
-    sel.value = current;
-    sel.addEventListener('change', function () {
-      switchTo(sel.value);
+
+    function open() {
+      menu.hidden = false;
+      btn.setAttribute('aria-expanded', 'true');
+      box.classList.add('open');
+      var cur = menu.querySelector('.is-current');
+      if (cur && cur.focus) cur.focus();
+    }
+
+    function close() {
+      if (menu.hidden) return;
+      menu.hidden = true;
+      btn.setAttribute('aria-expanded', 'false');
+      box.classList.remove('open');
+    }
+
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      if (menu.hidden) open(); else close();
     });
-    box.appendChild(sel);
+    document.addEventListener('click', function (e) {
+      if (!menu.hidden && !box.contains(e.target)) close();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' || e.key === 'Esc') close();
+    });
+
+    box.appendChild(btn);
+    box.appendChild(menu);
 
     var host = document.querySelector('.head-tools') ||
                document.querySelector('.topbar-actions') ||
                document.querySelector('header');
     if (host) host.appendChild(box);
     else document.body.insertBefore(box, document.body.firstChild);
+
+    syncSwitcher(current);
   }
 
   function mount() {
@@ -299,38 +450,51 @@
   }
 
   /* ---------- 对外切换 ---------- */
-  function switchTo(id) {
+  function applyLang(id, persist) {
     var known = null;
     for (var i = 0; i < LANGS.length; i++) if (LANGS[i].id === id) known = LANGS[i];
     if (!known) id = 'zh-Hans';
     current = id;
-    save(id);
+    if (persist) save(id);
     var tag = (known || LANGS[0]).tag;
     document.documentElement.lang = tag;
     document.documentElement.setAttribute('data-lang', id);
+    syncSwitcher(id);
 
-    load(id).then(function () {
+    return load(id).then(function () {
       applyAll();
-      var sel = document.getElementById('lang-select');
-      if (sel && sel.value !== id) sel.value = id;
       document.dispatchEvent(new CustomEvent('i18n:change', { detail: { lang: id } }));
     });
   }
 
+  function switchTo(id) { return applyLang(id, true); }
+
+  /* 没有手动选择时，按 IP 国家自动适配；国内/日本/法语区/西语区各自落到对应语言 */
+  function autoDetect() {
+    detectByIP().then(function (lang) {
+      if (!lang || lang === current) return;
+      if (stored()) return;            // 期间用户已手动选择，尊重用户
+      applyLang(lang, false);
+    });
+  }
+
   /* ---------- 启动 ---------- */
-  current = fromQuery() || stored() || detect();
+  var explicit = fromQuery() || stored();
+  if (explicit === 'zh-Hans') explicit = 'zh-Hans';
+  current = explicit || detect();
   if (fromQuery()) save(current);
   document.documentElement.setAttribute('data-lang', current);
-  if (current !== 'zh-Hans') document.documentElement.lang = current;
+  document.documentElement.lang = current;
 
   var startDict = current !== 'zh-Hans' ? readCache(current) : null;
   if (startDict) setDict(startDict);
 
   function boot() {
     mount();
-    applyAll();
+    if (current !== 'zh-Hans') applyLang(current, false);
+    else applyAll();
     observe();
-    if (current !== 'zh-Hans') switchTo(current);
+    if (!explicit) autoDetect();
   }
 
   if (document.readyState === 'loading') {

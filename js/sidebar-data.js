@@ -468,7 +468,7 @@ window.SIDEBAR_CATS = [
    },
    {
     "slug": "whiteboard",
-    "name": "涂鸦白板",
+    "name": "在线白板",
     "href": "./whiteboard/"
    },
    {

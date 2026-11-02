@@ -175,7 +175,7 @@
 - [图表制作器](https://139t.cn/chart-maker/): 输入数据生成柱状或折线图。
 - [简易收据生成器](https://139t.cn/invoice-generator/): 生成可打印的收据或报价单。
 - [手写签名板](https://139t.cn/signature-maker/): 鼠标或手指写出签名导出 PNG。
-- [涂鸦白板](https://139t.cn/whiteboard/): 随手画草图，导出 PNG。
+- [在线白板](https://139t.cn/whiteboard/): 压感手写、图形与文字，导出 PNG。
 - [反应速度测试](https://139t.cn/reaction-time-test/): 测你的视觉反应时间。
 - [打靶训练](https://139t.cn/aim-trainer/): 30 秒内点中尽可能多的目标。
 - [手速测试](https://139t.cn/cps-test/): 10 秒内你能点多少下。

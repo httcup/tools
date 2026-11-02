@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>涂鸦白板：随手画草图，导出 PNG。 | 小胡的工具箱</title>
-<meta name="description" content="极简白板：自由画笔、直线、矩形、椭圆与文字，多色可调，适合随手画示意图，导出 PNG。">
+<title>在线白板：压感手写、随手画图，导出 PNG。 | 小胡的工具箱</title>
+<meta name="description" content="压感在线白板：画笔支持 Apple Pencil 与手写笔压感，配橡皮、直线、矩形、椭圆与文字，12 色 4 档粗细，可撤销重做，一键导出白底 PNG。">
 <link rel="canonical" href="https://139t.cn/whiteboard/">
 <meta name="theme-color" content="#f6f7f9">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
@@ -12,14 +12,55 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="小胡的工具箱">
 <meta property="og:url" content="https://139t.cn/whiteboard/">
-<meta property="og:title" content="涂鸦白板 — 全程本地处理">
-<meta property="og:description" content="极简白板：自由画笔、直线、矩形、椭圆与文字，多色可调，适合随手画示意图，导出 PNG。">
+<meta property="og:title" content="在线白板 — 全程本地处理">
+<meta property="og:description" content="压感在线白板：画笔支持 Apple Pencil 与手写笔压感，配橡皮、直线、矩形、椭圆与文字，12 色 4 档粗细，可撤销重做，一键导出白底 PNG。">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="../site.css">
 <link rel="stylesheet" href="../toolkit.css">
 <link rel="stylesheet" href="../dtc.css">
 <link rel="stylesheet" href="../i18n.css">
 <script defer src="../i18n.js"></script>
+<style>
+/* 白板专用版式：工具条 + 固定高度画布 */
+.wb-card { padding: 0.7rem 0.75rem 0.8rem; }
+.wb-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin: 0 0 0.6rem; }
+.wb-group { display: flex; align-items: center; gap: 0.15rem; padding: 0.18rem; border: 1px solid var(--border); border-radius: 9px; background: var(--surface-2); }
+.wb-tool { display: inline-flex; align-items: center; gap: 0.3rem; min-height: 32px; padding: 0.15rem 0.5rem; border: 0; border-radius: 7px; background: transparent; color: var(--text-dim); font: inherit; font-size: 0.8rem; line-height: 1; cursor: pointer; white-space: nowrap; }
+.wb-tool svg { width: 0.95rem; height: 0.95rem; flex: none; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.wb-tool:hover { color: var(--accent); }
+.wb-tool[aria-pressed="true"] { background: var(--surface); color: var(--accent); font-weight: 600; box-shadow: 0 1px 2px rgb(16 24 40 / 10%); }
+.wb-w { display: grid; place-items: center; width: 30px; height: 30px; border: 0; border-radius: 7px; background: transparent; color: var(--text-dim); cursor: pointer; }
+.wb-w i { display: block; border-radius: 99px; background: currentColor; }
+.wb-w:hover { color: var(--accent); }
+.wb-w[aria-pressed="true"] { background: var(--surface); color: var(--text); box-shadow: 0 1px 2px rgb(16 24 40 / 10%); }
+.wb-colors { gap: 0.25rem; padding: 0.28rem 0.35rem; }
+.wb-sw { width: 22px; height: 22px; padding: 0; border: 1px solid rgb(0 0 0 / 10%); border-radius: 50%; cursor: pointer; }
+.wb-sw[aria-pressed="true"] { outline: 2px solid var(--accent); outline-offset: 2px; }
+.wb-pick { position: relative; display: inline-grid; place-items: center; width: 22px; height: 22px; border: 1px solid rgb(0 0 0 / 12%); border-radius: 50%; background: conic-gradient(#ff5f6d, #ffc371, #8ee06f, #4bb3fd, #a06bff, #ff5f6d); cursor: pointer; overflow: hidden; }
+.wb-pick input { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; border: 0; padding: 0; }
+.wb-pick:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
+.wb-acts { margin-inline-start: auto; gap: 0.3rem; background: transparent; border: 0; padding: 0; }
+.wb-act { min-height: 32px; padding: 0.2rem 0.65rem; font-size: 0.8rem; }
+.wb-act[disabled] { opacity: 0.4; cursor: default; }
+.wb-act[disabled]:hover { border-color: var(--border); color: var(--text); }
+.wb-stage { position: relative; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: #fff; }
+#cv { display: block; width: 100%; height: min(62vh, 600px); min-height: 320px; touch-action: none; cursor: crosshair; }
+#stage[data-tool="eraser"] #cv { cursor: none; }
+#ring { position: absolute; inset-inline-start: 0; inset-block-start: 0; width: 40px; height: 40px; border: 1.5px solid rgb(90 100 115 / 85%); border-radius: 50%; background: rgb(255 255 255 / 30%); pointer-events: none; transform: translate(-50%, -50%); display: none; }
+.wb-txt { position: absolute; min-width: 5rem; max-width: 60%; padding: 0.1rem 0.3rem; border: 1px dashed var(--accent); border-radius: 4px; background: rgb(255 255 255 / 94%); color: #16191d; font: inherit; outline: none; }
+.wb-txt[hidden] { display: none; }
+.wb-hint { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 1.1rem; margin: 0.55rem 0 0; font-size: 0.75rem; line-height: 1.6; color: var(--text-dim); }
+.wb-keys { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0.15rem 0.45rem; }
+.wb-keys kbd { display: inline-block; min-width: 1.35em; padding: 0.05rem 0.3rem; border: 1px solid var(--border); border-bottom-width: 2px; border-radius: 4px; background: var(--surface); color: var(--text); font: 0.72rem/1.4 ui-monospace, SFMono-Regular, Consolas, monospace; text-align: center; }
+@media (max-width: 620px) {
+  .wb-tool span { display: none; }
+  .wb-tool { padding: 0.2rem 0.42rem; }
+  .wb-act { padding: 0.2rem 0.5rem; }
+  .wb-colors { gap: 0.15rem; padding: 0.24rem 0.28rem; }
+  .wb-sw, .wb-pick { width: 18px; height: 18px; }
+  #cv { height: 56vh; }
+}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">跳到主要内容</a>
@@ -34,26 +75,53 @@
 </svg>Tools</a></p>
   </div>
   <nav class="crumbs" aria-label="位置">
-    <a href="../">全部工具</a><span aria-hidden="true">›</span><span aria-current="page">涂鸦白板</span>
+    <a href="../">全部工具</a><span aria-hidden="true">›</span><span aria-current="page">在线白板</span>
   </nav>
-  <h1>涂鸦白板</h1>
-  <p class="lede">极简白板：自由画笔、直线、矩形、椭圆与文字，多色可调，适合随手画示意图，导出 PNG。</p>
+  <h1>在线白板</h1>
+  <p class="lede">压感白板：画笔、橡皮、直线、矩形、椭圆与文字，12 色 4 档粗细，支持撤销重做，一键导出白底 PNG。</p>
 </header>
 
 <main id="main" class="tool-main">
-<section class="tool-card">
-  <div class="row">
-    <label class="field"><span>工具</span><select id="tool"><option value="pen">画笔</option><option value="line">直线</option><option value="rect">矩形</option><option value="ellipse">椭圆</option><option value="text">文字</option></select></label>
-    <input type="color" id="col" value="#1a202c" style="width:2.6rem;height:38px;border:1px solid var(--border);border-radius:7px">
-    <label class="field"><span>粗细</span><input type="range" id="w" min="1" max="16" value="3"></label>
-    <button class="btn" type="button" id="undo">↩ 撤销</button>
-    <button class="btn" type="button" id="clear">清空</button>
-    <button class="btn btn-primary" type="button" id="dl">导出 PNG</button>
+<section class="tool-card wb-card">
+  <div class="wb-bar" id="bar">
+    <div class="wb-group" role="group" aria-label="绘图工具">
+      <button class="wb-tool" type="button" data-tool="pen" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7.5 18.5 3 20l1.5-4.5Z"/><path d="m14 6 4 4"/></svg><span>画笔</span></button>
+      <button class="wb-tool" type="button" data-tool="eraser" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 15.5 11.5 8a2 2 0 0 1 2.8 0l4.7 4.7a2 2 0 0 1 0 2.8L15.3 20H8.5L4 15.5Z"/><path d="M9.5 20h10.5"/></svg><span>橡皮</span></button>
+      <button class="wb-tool" type="button" data-tool="line" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 19.5 19.5 4.5"/></svg><span>直线</span></button>
+      <button class="wb-tool" type="button" data-tool="rect" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="5" width="16" height="14" rx="2"/></svg><span>矩形</span></button>
+      <button class="wb-tool" type="button" data-tool="ellipse" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><ellipse cx="12" cy="12" rx="8.5" ry="6.5"/></svg><span>椭圆</span></button>
+      <button class="wb-tool" type="button" data-tool="text" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 6.5V5h14v1.5"/><path d="M12 5v14"/><path d="M9 19h6"/></svg><span>文字</span></button>
+    </div>
+
+    <div class="wb-group" role="group" aria-label="笔刷粗细">
+      <button class="wb-w" type="button" data-w="0" aria-pressed="true" aria-label="最细"><i style="width:3px;height:3px"></i></button>
+      <button class="wb-w" type="button" data-w="1" aria-pressed="false" aria-label="细"><i style="width:6px;height:6px"></i></button>
+      <button class="wb-w" type="button" data-w="2" aria-pressed="false" aria-label="中等"><i style="width:10px;height:10px"></i></button>
+      <button class="wb-w" type="button" data-w="3" aria-pressed="false" aria-label="粗"><i style="width:15px;height:15px"></i></button>
+    </div>
+
+    <div class="wb-group wb-colors" id="palette" role="group" aria-label="颜色"></div>
+
+    <div class="wb-group wb-acts">
+      <button class="btn wb-act" type="button" id="undo" disabled>撤销</button>
+      <button class="btn wb-act" type="button" id="redo" disabled>重做</button>
+      <button class="btn wb-act" type="button" id="clear">清空</button>
+      <button class="btn btn-primary wb-act" type="button" id="save">保存 PNG</button>
+    </div>
   </div>
+
+  <div class="wb-stage" id="stage" data-tool="pen">
+    <canvas id="cv" aria-label="白板画布" role="img"></canvas>
+    <div id="ring" aria-hidden="true"></div>
+    <input class="wb-txt" id="txtIn" type="text" placeholder="输入文字后按回车" aria-label="文字内容" autocomplete="off" hidden>
+  </div>
+
+  <p class="wb-hint">
+    <span>压感手写：用 Apple Pencil 或手写笔时，下手越重线条越粗；鼠标与手指按固定粗细绘制。</span>
+    <span class="wb-keys"><kbd>B</kbd> 画笔 <kbd>E</kbd> 橡皮 <kbd>Ctrl</kbd> <kbd>Z</kbd> 撤销 <kbd>Ctrl</kbd> <kbd>S</kbd> 保存 PNG</span>
+  </p>
 </section>
-<section class="tool-card">
-  <canvas id="cv" height="460" style="width:100%;touch-action:none;border:1px solid var(--border);border-radius:10px;background:#fff;cursor:crosshair"></canvas>
-</section>
+
 <section class="facts" aria-label="处理方式">
   <article class="fact"><h2>全程本地</h2><p>所有计算都在这个页面里完成，过程不发起任何网络请求，输入的内容不会离开这台设备。</p></article>
   <article class="fact"><h2>不用注册</h2><p>没有账号、没有上传、没有水印。打开就用，关掉页面数据就没了，也不保存任何草稿。</p></article>

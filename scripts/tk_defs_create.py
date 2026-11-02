@@ -418,10 +418,12 @@ t("signature-maker", "手写签名板",
 })();""",
   "导出的 PNG 背景透明，可叠在 Word / PDF 上。")
 
-t("whiteboard", "涂鸦白板",
-  "随手画草图，导出 PNG。",
-  "极简白板：自由画笔、直线、矩形、椭圆与文字，多色可调，适合随手画示意图，导出 PNG。",
-  "白板 涂鸦 草图 画板 whiteboard",
+# whiteboard 页面已手工升级为压感版（工具栏 + 压感笔迹 + 撤销重做 + 导出 PNG），
+# 以 whiteboard/index.html 为准；这里的定义只作脚手架参考。
+t("whiteboard", "在线白板",
+  "压感手写、图形与文字，导出 PNG。",
+  "压感白板：画笔、橡皮、直线、矩形、椭圆与文字，12 色 4 档粗细，支持撤销重做，一键导出白底 PNG。",
+  "白板 涂鸦 草图 画板 压感 手写板 whiteboard",
   "creative-design", "board",
   """
 <section class="tool-card">

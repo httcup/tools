@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>文档转 PDF：Word / Excel / PPT / HTML 转成 PDF | 小胡的工具箱</title>
+<meta name="description" content="把 Word、Excel、PPT、CSV、TXT、Markdown、HTML 排成一份干净的页面，再用浏览器的打印功能存成 PDF。文件不上传，排版在自己机器上完成。">
+<link rel="canonical" href="https://139t.cn/doc-to-pdf/">
+<meta name="theme-color" content="#f6f7f9">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.googletagmanager.com https://hm.baidu.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://hm.baidu.com; media-src 'self' blob:; connect-src 'self' https://ipwho.is https://ipapi.co; form-action 'none'; base-uri 'none'; frame-ancestors 'none'">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="小胡的工具箱">
+<meta property="og:url" content="https://139t.cn/doc-to-pdf/">
+<meta property="og:title" content="文档转 PDF — 全程本地排版">
+<meta property="og:description" content="Word、Excel、PPT、CSV、TXT、Markdown、HTML 排好版，打印存成 PDF。">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="../toolkit.css">
+<link rel="stylesheet" href="../dtc.css">
+<link rel="stylesheet" href="../i18n.css">
+<script defer src="../i18n.js"></script>
+<style>
+.drop { display: grid; place-items: center; gap: 0.35rem; padding: 1.8rem 1rem; border: 1.5px dashed var(--border); border-radius: 10px; background: var(--surface-2); text-align: center; cursor: pointer; transition: border-color 0.15s, background 0.15s; }
+.drop:hover, .drop.hot { border-color: var(--accent); background: var(--surface); }
+.drop strong { font-size: 0.98rem; font-weight: 600; }
+.drop span { font-size: 0.8rem; color: var(--text-dim); }
+.hint { margin: 0.1rem 0 0; font-size: 0.78rem; color: var(--text-dim); }
+.status { margin: 0.7rem 0 0; font-size: 0.82rem; color: var(--text-dim); min-height: 1.2em; }
+.meta { display: flex; flex-wrap: wrap; gap: 0.3rem 1.1rem; margin: 0.5rem 0 0; font-size: 0.79rem; color: var(--text-dim); }
+.meta b { color: var(--text); font-weight: 600; }
+.note { margin: 0.7rem 0 0; padding: 0.55rem 0.7rem; border-left: 3px solid var(--accent); background: var(--surface-2); border-radius: 0 6px 6px 0; font-size: 0.8rem; color: var(--text-dim); }
+/* 预览用的「纸」 */
+#sheet { background: #fff; color: #111; padding: 18mm 16mm; border: 1px solid var(--border); border-radius: 4px; box-shadow: var(--shadow); font-size: 15px; line-height: 1.75; }
+#sheet h1 { font-size: 1.75em; line-height: 1.35; margin: 0 0 0.7em; }
+#sheet h2 { font-size: 1.3em; margin: 1.5em 0 0.5em; }
+#sheet h3 { font-size: 1.1em; margin: 1.2em 0 0.4em; }
+#sheet p { margin: 0 0 0.8em; }
+#sheet ul { padding-left: 1.3em; margin: 0 0 0.9em; }
+#sheet table { border-collapse: collapse; width: 100%; margin: 0.8em 0 1.2em; font-size: 0.94em; }
+#sheet th, #sheet td { border: 1px solid #d8dde5; padding: 5px 8px; text-align: left; vertical-align: top; }
+#sheet th { background: #f4f6f9; }
+#sheet img { max-width: 100%; height: auto; }
+#sheet .slide { border: 1px solid #e3e7ee; border-radius: 6px; padding: 18px 20px; margin: 0 0 14px; aspect-ratio: 16 / 9; display: flex; flex-direction: column; gap: 0.5em; }
+#sheet .slide h2 { margin: 0; font-size: 1.35em; }
+#sheet .slide p { margin: 0; }
+@media print {
+  body * { visibility: hidden; }
+  #sheet, #sheet * { visibility: visible; }
+  #sheet { position: absolute; left: 0; top: 0; width: 100%; border: 0; box-shadow: none; padding: 0; }
+  #sheet .slide { break-after: page; border: 0; aspect-ratio: auto; }
+  @page { margin: 14mm; }
+}
+[hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="hub-head">
+  <div class="head-row">
+    <p class="brand"><a class="brand-home" href="../"><svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+  <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+  <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+  <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+  <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+</svg>Tools</a></p>
+  </div>
+  <nav class="crumbs" aria-label="位置">
+    <a href="../">全部工具</a><span aria-hidden="true">›</span><span aria-current="page">文档转 PDF</span>
+  </nav>
+  <h1>文档转 PDF</h1>
+  <p class="lede">Word、PPT、Excel、CSV、TXT、Markdown、HTML 都能排成一份整齐的页面，然后用浏览器的「打印 → 存为 PDF」落成文件。</p>
+</header>
+
+<main id="main" class="tool-main">
+
+<section class="tool-card">
+  <label class="drop" id="drop" for="file">
+    <strong>选一个文件，或者拖到这里</strong>
+    <span>支持 .docx .pptx .xlsx .csv .tsv .txt .md .html</span>
+    <input id="file" type="file" accept=".docx,.pptx,.xlsx,.csv,.tsv,.txt,.md,.markdown,.html,.htm" hidden>
+  </label>
+  <p class="status" id="status" role="status"></p>
+</section>
+
+<section class="tool-card" id="opts" hidden>
+  <div class="row">
+    <label class="field"><span>纸张</span>
+      <select id="paper">
+        <option value="a4" selected>A4 竖版</option>
+        <option value="a4-land">A4 横版</option>
+      </select>
+    </label>
+    <label class="field"><span>字号</span>
+      <select id="size">
+        <option value="14">14 px</option>
+        <option value="15" selected>15 px</option>
+        <option value="17">17 px</option>
+      </select>
+    </label>
+    <label class="check check-mid"><input type="checkbox" id="pagebreak" checked> 每页之间分页</label>
+  </div>
+  <div class="row">
+    <button class="btn btn-primary" type="button" id="go">生成预览</button>
+    <button class="btn" type="button" id="print" hidden>打印 / 存为 PDF</button>
+    <button class="btn" type="button" id="reset">换一个文件</button>
+  </div>
+  <p class="meta" id="meta"></p>
+  <p class="note">PDF 由浏览器的打印功能生成：点上面的按钮后，在打印对话框里把「目标」选成「另存为 PDF」，纸张选 A4，勾上「背景图形」效果更好。整条链路都在本机完成。</p>
+</section>
+
+<section class="tool-card" id="preview" hidden>
+  <div class="card-head"><h2>预览</h2><span class="hint" id="sum"></span></div>
+  <div id="sheet"></div>
+</section>
+
+<section class="facts" aria-label="处理方式">
+  <article class="fact"><h2>全程本地</h2><p>所有计算都在这个页面里完成，过程不发起任何网络请求，输入的内容不会离开这台设备。</p></article>
+  <article class="fact"><h2>不用注册</h2><p>没有账号、没有上传、没有水印。打开就用，关掉页面数据就没了，也不保存任何草稿。</p></article>
+</section>
+</main>
+
+<footer>
+  <p><a class="home-link" href="../">小胡的工具箱</a> · 所有文件都在你的浏览器内本地处理，不上传服务器</p>
+</footer>
+
+<script src="../toolkit.js"></script>
+<script type="module" src="app.js"></script>
+<link rel="stylesheet" href="../sidebar.css">
+<div id="site-sidebar" data-base="../"></div>
+<div id="sidebar-backdrop"></div>
+<button id="sidebar-toggle" type="button" aria-label="打开分类导航"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>分类</button>
+<script src="../js/sidebar-data.js"></script>
+<script src="../sidebar.js"></script>
+</body>
+</html>

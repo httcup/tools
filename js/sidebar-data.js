@@ -168,6 +168,36 @@ window.SIDEBAR_CATS = [
     "slug": "ascii-art",
     "name": "ASCII 横幅与艺术字",
     "href": "./ascii-art/"
+   },
+   {
+    "slug": "pdf-to-image",
+    "name": "PDF 转图片",
+    "href": "./pdf-to-image/"
+   },
+   {
+    "slug": "pdf-to-word",
+    "name": "PDF 转 Word",
+    "href": "./pdf-to-word/"
+   },
+   {
+    "slug": "pdf-to-ppt",
+    "name": "PDF 转 PPT",
+    "href": "./pdf-to-ppt/"
+   },
+   {
+    "slug": "pdf-to-html",
+    "name": "PDF 转网页",
+    "href": "./pdf-to-html/"
+   },
+   {
+    "slug": "doc-to-pdf",
+    "name": "文档转 PDF",
+    "href": "./doc-to-pdf/"
+   },
+   {
+    "slug": "doc-convert",
+    "name": "文档格式互转",
+    "href": "./doc-convert/"
    }
   ]
  },

@@ -1,6 +1,6 @@
 # 小胡的工具箱 Local Web Tools
 
-> 180 个单用途浏览器工具：图片压缩与转换、PDF 处理、视频音频编辑、文本编码、密码生成、计算换算。所有处理在浏览器本地完成，文件不上传、无需注册。
+> 186 个单用途浏览器工具：图片压缩与转换、PDF 处理、视频音频编辑、文本编码、密码生成、计算换算。所有处理在浏览器本地完成，文件不上传、无需注册。
 
 页面地址以 https://139t.cn/ 为前缀。
 
@@ -52,6 +52,12 @@
 - [PDF 水印](https://139t.cn/watermark-pdf/): 一份写着自己去了哪里的扫描件，就没法悄悄再去别的地方。
 - [PDF 涂黑](https://139t.cn/redact-pdf/): 字从文件里删掉，然后再搜一遍这个文件来证明。
 - [PDF 转 CSV](https://139t.cn/pdf-to-csv/): 将检测到的 PDF 文本表格转换成电子表格可打开的行。
+- [PDF 转图片](https://139t.cn/pdf-to-image/): 逐页导出 PNG 或 JPG，多页打包，也能拼成一张长图。
+- [PDF 转 Word](https://139t.cn/pdf-to-word/): 按标题段落还原成可编辑的 .docx，扫描件可整页截图。
+- [PDF 转 PPT](https://139t.cn/pdf-to-ppt/): 每页一张幻灯片，文字是可编辑的文本框。
+- [PDF 转网页](https://139t.cn/pdf-to-html/): 导出单个 HTML，文字能选能搜，也能按原版面绝对定位。
+- [文档转 PDF](https://139t.cn/doc-to-pdf/): Word / Excel / PPT / HTML 排好版，用浏览器打印存成 PDF。
+- [文档格式互转](https://139t.cn/doc-convert/): docx、pptx、xlsx、csv、tsv、txt、md、html 互相转。
 - [收据与发票识别](https://139t.cn/receipt-invoice-extractor/): 读取照片，检查字段和裁剪结果，准备供邮件应用使用的压缩附件和合计。
 - [图片转 PDF](https://139t.cn/images-to-pdf/): 把你的图片装进一个文档。
 - [文档扫描](https://139t.cn/document-scanner/): 把纸拍下来，回来的是一份看着像扫描的东西。

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>微信支付宝收款码合并：两张收款码合成一张，可打印 | 小胡的工具箱</title>
+<meta name="description" content="把微信收款码和支付宝收款码合成一张图：上下或左右排版、自动去掉多余白边、带标签和分割线，导出高清 PNG 直接打印。图片不上传。">
+<link rel="canonical" href="https://139t.cn/pay-qr-merge/">
+<meta name="theme-color" content="#f6f7f9">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.googletagmanager.com https://hm.baidu.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://hm.baidu.com; connect-src 'self' https://ipwho.is https://ipapi.co; form-action 'none'; base-uri 'none'; frame-ancestors 'none'">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="小胡的工具箱">
+<meta property="og:url" content="https://139t.cn/pay-qr-merge/">
+<meta property="og:title" content="微信支付宝收款码合并 — 合成一张，直接打印">
+<meta property="og:description" content="两张收款码合成一张：上下或左右排版、自动裁白边、带标签，导出高清 PNG。图片不上传。">
+<meta name="twitter:card" content="summary">
+<link rel="alternate" type="text/markdown" href="index.md">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../i18n.css">
+<script defer src="../i18n.js"></script>
+</head>
+<body class="pq-page">
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="hub-head">
+  <div class="head-row">
+    <p class="brand">
+      <a class="brand-home" href="../">
+        <svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+          <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+          <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+          <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+        </svg>
+        Tools
+      </a>
+    </p>
+  </div>
+  <nav class="crumbs" aria-label="位置">
+    <a href="../">全部工具</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">收款码合并</span>
+  </nav>
+  <h1>收款码合并</h1>
+  <p class="lede">把微信收款码和支付宝收款码拼成一张图：上下或左右排、自动裁掉多余白边、带「微信支付 / 支付宝」标签和分割线，选好尺寸导出高清 PNG，打印出来贴在柜台或收银台就行。图片只在你的浏览器里合成，不上传。</p>
+</header>
+
+<main id="main" class="tool-main">
+
+  <section class="pq-app" aria-label="收款码合并">
+    <div class="pq-inputs">
+      <label class="pq-slot" id="pq-slot-w">
+        <input type="file" id="pq-file-w" accept="image/*" hidden>
+        <span class="pq-slot-tag pq-tag-wechat">微信</span>
+        <span class="pq-slot-body">
+          <img id="pq-prev-w" alt="微信收款码预览" hidden>
+          <span class="pq-slot-hint" id="pq-hint-w">点这里选择微信收款码</span>
+        </span>
+        <span class="pq-slot-file" id="pq-name-w"></span>
+      </label>
+
+      <label class="pq-slot" id="pq-slot-a">
+        <input type="file" id="pq-file-a" accept="image/*" hidden>
+        <span class="pq-slot-tag pq-tag-alipay">支付宝</span>
+        <span class="pq-slot-body">
+          <img id="pq-prev-a" alt="支付宝收款码预览" hidden>
+          <span class="pq-slot-hint" id="pq-hint-a">点这里选择支付宝收款码</span>
+        </span>
+        <span class="pq-slot-file" id="pq-name-a"></span>
+      </label>
+    </div>
+
+    <div class="pq-controls">
+      <div class="pq-row">
+        <label class="pq-field"><span>排版</span>
+          <select id="pq-layout">
+            <option value="v" selected>上下排列</option>
+            <option value="h">左右排列</option>
+          </select>
+        </label>
+        <label class="pq-field"><span>导出尺寸</span>
+          <select id="pq-size">
+            <option value="1000">1000px（发图）</option>
+            <option value="1600" selected>1600px（打印）</option>
+            <option value="2400">2400px（高清打印）</option>
+          </select>
+        </label>
+        <label class="pq-field"><span>背景</span>
+          <select id="pq-bg">
+            <option value="#ffffff" selected>白色</option>
+            <option value="#f4f6f8">浅灰</option>
+            <option value="#fdf6e8">淡黄</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="pq-row pq-checks">
+        <label class="pq-check"><input type="checkbox" id="pq-labels" checked>显示「微信支付 / 支付宝」标签</label>
+        <label class="pq-check"><input type="checkbox" id="pq-divider" checked>显示分割线</label>
+        <label class="pq-check"><input type="checkbox" id="pq-trim" checked>自动裁掉白边</label>
+        <label class="pq-check"><input type="checkbox" id="pq-round" checked>圆角卡片</label>
+      </div>
+
+      <div class="pq-row">
+        <label class="pq-field pq-field-wide"><span>上方说明文字（可留空）</span>
+          <input type="text" id="pq-title" maxlength="40" placeholder="扫码付款，微信支付宝都可以">
+        </label>
+      </div>
+
+      <div class="pq-actions">
+        <button type="button" class="btn" id="pq-download" disabled>下载 PNG</button>
+        <button type="button" class="btn btn-alt" id="pq-print" disabled>打印</button>
+        <button type="button" class="btn btn-alt" id="pq-reset">重新选择</button>
+      </div>
+      <p class="pq-status" id="pq-status">两张图都选好后会实时生成预览。</p>
+    </div>
+
+    <div class="pq-preview">
+      <canvas id="pq-canvas" width="900" height="1200" aria-label="合并预览"></canvas>
+    </div>
+  </section>
+
+  <section class="pq-how">
+    <h2>收款码从哪来</h2>
+    <ul>
+      <li><b>微信</b>：我 → 服务 → 收付款 → 二维码收款 → 保存收款码</li>
+      <li><b>支付宝</b>：首页 → 收付款 → 二维码收款 → 保存收款码（选「个人收款」）</li>
+      <li>每张图只放一个二维码，不要把两张码截在一张图里，裁剪和排版会乱。</li>
+    </ul>
+  </section>
+
+  <section class="facts" aria-label="处理方式">
+    <article class="fact"><h2>这是排版工具，不是「融合码」</h2><p>它把两张收款码画在同一张图上，扫码时仍需分别用微信、支付宝去扫。真正的「一码通用」需要支付机构提供聚合码服务，本工具不涉及，也不会改动你的码。</p></article>
+    <article class="fact"><h2>图片不出本机</h2><p>上传的收款码只读进当前页面的 canvas，合成、裁白边、导出都在本地完成，没有任何请求带着图片离开浏览器。定稿前建议先自己扫一遍确认清晰。</p></article>
+  </section>
+</main>
+
+<footer>
+  <p><a class="home-link" href="../">小胡的工具箱</a> · 所有文件都在你的浏览器内本地处理，不上传服务器</p>
+</footer>
+
+<div class="pq-print-area" id="pq-print-area" aria-hidden="true"></div>
+
+<script src="../toolkit.js"></script>
+<link rel="stylesheet" href="../sidebar.css">
+<div id="site-sidebar" data-base="../"></div>
+<div id="sidebar-backdrop"></div>
+<button id="sidebar-toggle" type="button" aria-label="打开分类导航"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>分类</button>
+<script src="../js/sidebar-data.js"></script>
+<script src="../sidebar.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>在线音频剪辑：波形选取、裁剪、淡入淡出、导出 WAV | 小胡的工具箱</title>
+<meta name="description" content="拖入 mp3、m4a、wav、ogg 等音频，看波形拖选片段，裁剪、删除选区、淡入淡出、调音量、标准化，导出无损 WAV。全部在浏览器里完成，文件不上传。">
+<link rel="canonical" href="https://139t.cn/audio-cutter/">
+<meta name="theme-color" content="#f6f7f9">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.googletagmanager.com https://hm.baidu.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://hm.baidu.com; media-src 'self' blob:; connect-src 'self' https://ipwho.is https://ipapi.co; form-action 'none'; base-uri 'none'; frame-ancestors 'none'">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="小胡的工具箱">
+<meta property="og:url" content="https://139t.cn/audio-cutter/">
+<meta property="og:title" content="在线音频剪辑 — 波形选取、裁剪、导出 WAV">
+<meta property="og:description" content="看波形拖选片段，裁剪、删除、淡入淡出、调音量，导出无损 WAV。文件不上传。">
+<meta name="twitter:card" content="summary">
+<link rel="alternate" type="text/markdown" href="index.md">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../i18n.css">
+<script defer src="../i18n.js"></script>
+</head>
+<body class="ac-page">
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="hub-head">
+  <div class="head-row">
+    <p class="brand">
+      <a class="brand-home" href="../">
+        <svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+          <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+          <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+          <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+        </svg>
+        Tools
+      </a>
+    </p>
+  </div>
+  <nav class="crumbs" aria-label="位置">
+    <a href="../">全部工具</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">在线音频剪辑</span>
+  </nav>
+  <h1>在线音频剪辑</h1>
+  <p class="lede">把录音、播客、配乐拖进来，波形一眼看清：拖动选一段，裁剪保留、删除不要、加淡入淡出、调音量、做标准化，最后导出无损 WAV。解码与剪辑都在你的浏览器里，文件一个字节都不上传。</p>
+</header>
+
+<main id="main" class="tool-main">
+
+  <section class="ac-app" aria-label="音频剪辑">
+    <div class="ac-drop" id="ac-drop">
+      <input type="file" id="ac-file" accept="audio/*,.mp3,.m4a,.aac,.wav,.ogg,.flac,.opus" hidden>
+      <p><button type="button" class="btn" id="ac-pick">选择音频文件</button></p>
+      <p class="ac-drop-hint">或者把文件拖到这里 · 支持 mp3 / m4a / wav / ogg / flac / opus</p>
+      <p class="ac-err" id="ac-err" hidden></p>
+    </div>
+
+    <div class="ac-editor" id="ac-editor" hidden>
+      <div class="ac-meta" id="ac-meta"></div>
+
+      <div class="ac-wave-wrap">
+        <canvas id="ac-wave" height="220" aria-label="波形，拖动可选取片段"></canvas>
+        <p class="ac-empty" id="ac-wave-hint">在波形上按住拖动即可选中一段，双击清除选区</p>
+      </div>
+
+      <div class="ac-transport">
+        <button type="button" class="btn" id="ac-play">播放</button>
+        <button type="button" class="btn btn-alt" id="ac-stop">停止</button>
+        <span class="ac-time"><b id="ac-cur">0:00.00</b> / <span id="ac-dur">0:00.00</span></span>
+        <span class="ac-selinfo" id="ac-selinfo">未选择片段</span>
+        <span class="ac-spacer"></span>
+        <button type="button" class="btn btn-alt" id="ac-selectall">全选</button>
+        <button type="button" class="btn btn-alt" id="ac-selectnone">清除选区</button>
+      </div>
+
+      <div class="ac-tools">
+        <div class="ac-toolgroup">
+          <h2>选区</h2>
+          <button type="button" class="btn btn-alt" id="ac-crop">裁剪保留选区</button>
+          <button type="button" class="btn btn-alt" id="ac-delete">删除选区</button>
+          <button type="button" class="btn btn-alt" id="ac-silence">选区静音</button>
+        </div>
+        <div class="ac-toolgroup">
+          <h2>效果</h2>
+          <label class="ac-field"><span>淡入<b id="ac-fi-v">0.5 秒</b></span>
+            <input type="range" id="ac-fadein" min="0" max="5" step="0.1" value="0.5">
+          </label>
+          <label class="ac-field"><span>淡出<b id="ac-fo-v">0.5 秒</b></span>
+            <input type="range" id="ac-fadeout" min="0" max="5" step="0.1" value="0.5">
+          </label>
+          <div class="ac-row">
+            <button type="button" class="btn btn-alt" id="ac-dofadein">应用淡入</button>
+            <button type="button" class="btn btn-alt" id="ac-dofadeout">应用淡出</button>
+          </div>
+        </div>
+        <div class="ac-toolgroup">
+          <h2>音量</h2>
+          <div class="ac-row">
+            <button type="button" class="btn btn-alt" id="ac-volup">＋3 dB</button>
+            <button type="button" class="btn btn-alt" id="ac-voldown">－3 dB</button>
+          </div>
+          <button type="button" class="btn btn-alt" id="ac-normalize">峰值标准化</button>
+          <button type="button" class="btn btn-alt" id="ac-undo">撤销上一步</button>
+        </div>
+      </div>
+
+      <div class="ac-export">
+        <label class="ac-field ac-field-inline"><span>导出位深</span>
+          <select id="ac-depth">
+            <option value="16" selected>16 位（通用）</option>
+            <option value="24">24 位（后期）</option>
+            <option value="32">32 位浮点</option>
+          </select>
+        </label>
+        <button type="button" class="btn" id="ac-export">导出 WAV</button>
+        <button type="button" class="btn btn-alt" id="ac-export-sel">只导出选区</button>
+        <button type="button" class="btn btn-alt" id="ac-reset">换一个文件</button>
+      </div>
+      <p class="ac-status" id="ac-status"></p>
+    </div>
+  </section>
+
+  <section class="facts" aria-label="处理方式">
+    <article class="fact"><h2>原样解码，不重压缩</h2><p>文件在你本机用 WebAudio 解成原始采样，编辑只改采样点；导出 WAV 是无损 PCM，比转成 mp3 再存一遍更保真。</p></article>
+    <article class="fact"><h2>只适合单轨粗剪</h2><p>波形、选区、淡入淡出、增益、标准化都在这里做。多轨混音、降噪、变速变调这类活儿建议用桌面软件，处理完再回来裁。</p></article>
+  </section>
+</main>
+
+<footer>
+  <p><a class="home-link" href="../">小胡的工具箱</a> · 所有文件都在你的浏览器内本地处理，不上传服务器</p>
+</footer>
+
+<script src="../toolkit.js"></script>
+<link rel="stylesheet" href="../sidebar.css">
+<div id="site-sidebar" data-base="../"></div>
+<div id="sidebar-backdrop"></div>
+<button id="sidebar-toggle" type="button" aria-label="打开分类导航"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>分类</button>
+<script src="../js/sidebar-data.js"></script>
+<script src="../sidebar.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

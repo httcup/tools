@@ -198,6 +198,11 @@ window.SIDEBAR_CATS = [
     "slug": "ascii-art",
     "name": "ASCII 横幅与艺术字",
     "href": "./ascii-art/"
+   },
+   {
+    "slug": "pay-qr-merge",
+    "name": "收款码合并",
+    "href": "./pay-qr-merge/"
    }
   ]
  },
@@ -474,6 +479,16 @@ window.SIDEBAR_CATS = [
     "slug": "voice-recorder",
     "name": "在线录音",
     "href": "./voice-recorder/"
+   },
+   {
+    "slug": "video-convert",
+    "name": "全能视频格式转换",
+    "href": "./video-convert/"
+   },
+   {
+    "slug": "audio-cutter",
+    "name": "在线音频剪辑",
+    "href": "./audio-cutter/"
    }
   ]
  },
@@ -510,6 +525,11 @@ window.SIDEBAR_CATS = [
     "slug": "invoice-generator",
     "name": "简易收据生成器",
     "href": "./invoice-generator/"
+   },
+   {
+    "slug": "teleprompter",
+    "name": "在线提词器",
+    "href": "./teleprompter/"
    }
   ]
  },

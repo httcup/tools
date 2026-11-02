@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>在线提词器：滚动提词、镜像、字号可调 | 小胡的工具箱</title>
+<meta name="description" content="把口播稿贴进来，点开始就自动滚动提词：速度、字号、行宽、黑白配色、水平/垂直镜像都能调，支持快捷键与全屏，文字自动存在本机。">
+<link rel="canonical" href="https://139t.cn/teleprompter/">
+<meta name="theme-color" content="#f6f7f9">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.googletagmanager.com https://hm.baidu.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://hm.baidu.com; connect-src 'self' https://ipwho.is https://ipapi.co; form-action 'none'; base-uri 'none'; frame-ancestors 'none'">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="小胡的工具箱">
+<meta property="og:url" content="https://139t.cn/teleprompter/">
+<meta property="og:title" content="在线提词器 — 滚动提词、镜像、字号可调">
+<meta property="og:description" content="贴入口播稿就自动滚动提词，速度和字号随手调，支持镜像与全屏。文字只存在你自己的浏览器里。">
+<meta name="twitter:card" content="summary">
+<link rel="alternate" type="text/markdown" href="index.md">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../i18n.css">
+<script defer src="../i18n.js"></script>
+</head>
+<body class="tp-page">
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="hub-head">
+  <div class="head-row">
+    <p class="brand">
+      <a class="brand-home" href="../">
+        <svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+          <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+          <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+          <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+        </svg>
+        Tools
+      </a>
+    </p>
+  </div>
+  <nav class="crumbs" aria-label="位置">
+    <a href="../">全部工具</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">在线提词器</span>
+  </nav>
+  <h1>在线提词器</h1>
+  <p class="lede">把口播稿、演讲稿、直播话术贴进来，点「开始提词」就按设定速度匀速滚动。字号、行宽、速度、黑白配色、左右/上下镜像都能调，空格暂停、方向键调速，手机平板横竖屏都好用。文字只存在你自己的浏览器里。</p>
+</header>
+
+<main id="main" class="tool-main">
+
+  <section class="tp-app" aria-label="提词器">
+    <div class="tp-panel">
+      <label class="tp-field">
+        <span>提词内容<em id="tp-count">0 字</em></span>
+        <textarea id="tp-text" rows="12" spellcheck="false" placeholder="把稿子贴进来，一段一行，空行会当作段落间距。&#10;&#10;会自动保存在当前浏览器里，关掉页面再打开还在。"></textarea>
+      </label>
+
+      <div class="tp-grid">
+        <label class="tp-field"><span>滚动速度<b id="tp-speed-v">240 字/分</b></span>
+          <input type="range" id="tp-speed" min="60" max="600" step="10" value="240">
+        </label>
+        <label class="tp-field"><span>字号<b id="tp-size-v">48px</b></span>
+          <input type="range" id="tp-size" min="24" max="120" step="2" value="48">
+        </label>
+        <label class="tp-field"><span>行宽<b id="tp-width-v">80%</b></span>
+          <input type="range" id="tp-width" min="40" max="100" step="5" value="80">
+        </label>
+        <label class="tp-field"><span>倒计时<b id="tp-delay-v">3 秒</b></span>
+          <input type="range" id="tp-delay" min="0" max="10" step="1" value="3">
+        </label>
+      </div>
+
+      <div class="tp-row">
+        <label class="tp-check"><input type="checkbox" id="tp-mirror-h">左右镜像</label>
+        <label class="tp-check"><input type="checkbox" id="tp-mirror-v">上下倒置</label>
+        <label class="tp-check"><input type="checkbox" id="tp-dark" checked>黑底白字</label>
+        <label class="tp-check"><input type="checkbox" id="tp-guide" checked>显示中线</label>
+      </div>
+
+      <div class="tp-actions">
+        <button type="button" class="btn" id="tp-start">开始提词</button>
+        <button type="button" class="btn btn-alt" id="tp-sample">填入示例稿</button>
+        <button type="button" class="btn btn-alt" id="tp-clear">清空</button>
+      </div>
+      <p class="tp-hint">快捷键：空格 开始/暂停 · ↑ ↓ 字号 · ← → 速度 · Esc 退出 · F 全屏</p>
+    </div>
+
+    <aside class="tp-tips">
+      <h2>怎么用更顺</h2>
+      <ul>
+        <li>把稿子按「一句一行」排好，滚动时更容易跟读，不要长段落挤在一起。</li>
+        <li>开始前先调字号，站得远就调大，手机自拍杆支架上 48–72px 比较合适。</li>
+        <li>用提词器 App 的双面镜（分光镜）拍摄时，勾上「左右镜像」，画面里的字才是正的。</li>
+        <li>滚太快跟不上的话，按 ← 减速；临时要说题外话，空格暂停就停住。</li>
+        <li>提词时把浏览器切到全屏（F 或 F11），地址栏不会占地方。</li>
+      </ul>
+    </aside>
+  </section>
+
+  <section class="facts" aria-label="处理方式">
+    <article class="fact"><h2>稿子不出本机</h2><p>文字只写进当前浏览器的 localStorage，不上传、不同步，换设备或清理浏览器数据就没了，重要稿子记得自己另存一份。</p></article>
+    <article class="fact"><h2>没有时长限制</h2><p>滚动速度按字号自动折算成像素，长稿短稿都能用；全部是本地 CSS 动画推进，不依赖网络。</p></article>
+  </section>
+</main>
+
+<footer>
+  <p><a class="home-link" href="../">小胡的工具箱</a> · 所有文件都在你的浏览器内本地处理，不上传服务器</p>
+</footer>
+
+<!-- 提词舞台 -->
+<div class="tp-stage" id="tp-stage" hidden>
+  <div class="tp-stage-inner" id="tp-stage-inner">
+    <div class="tp-scroll" id="tp-scroll"></div>
+  </div>
+  <div class="tp-guide-line" id="tp-guide-line" aria-hidden="true"></div>
+  <div class="tp-countdown" id="tp-countdown" hidden></div>
+  <div class="tp-bar" role="group" aria-label="提词控制">
+    <button type="button" id="tp-toggle" title="开始/暂停（空格）">暂停</button>
+    <button type="button" id="tp-faster" title="加快（→）">＋速</button>
+    <button type="button" id="tp-slower" title="减慢（←）">－速</button>
+    <button type="button" id="tp-bigger" title="放大字号（↑）">A＋</button>
+    <button type="button" id="tp-smaller" title="缩小字号（↓）">A－</button>
+    <button type="button" id="tp-full" title="全屏（F）">全屏</button>
+    <button type="button" id="tp-exit" title="退出（Esc）">退出</button>
+    <span class="tp-progress" id="tp-progress">0%</span>
+  </div>
+</div>
+
+<script src="../toolkit.js"></script>
+<link rel="stylesheet" href="../sidebar.css">
+<div id="site-sidebar" data-base="../"></div>
+<div id="sidebar-backdrop"></div>
+<button id="sidebar-toggle" type="button" aria-label="打开分类导航"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>分类</button>
+<script src="../js/sidebar-data.js"></script>
+<script src="../sidebar.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

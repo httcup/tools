@@ -1,0 +1,214 @@
+/* 在线提词器 — 页面样式。变量沿用 site.css。 */
+
+.tp-page main { max-width: 1000px; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--accent-text);
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover { filter: brightness(1.06); }
+
+.btn-alt {
+  border-color: var(--border);
+  background: var(--surface);
+  color: var(--text);
+}
+
+.btn-alt:hover { border-color: var(--accent); color: var(--accent); filter: none; }
+
+.tp-app {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 300px);
+  gap: 1.5rem;
+  align-items: start;
+  margin-top: 1.5rem;
+}
+
+.tp-panel {
+  display: grid;
+  gap: 1rem;
+  padding: 1.15rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.tp-field { display: grid; gap: 0.35rem; }
+.tp-field > span {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+}
+.tp-field em { font-style: normal; font-variant-numeric: tabular-nums; }
+.tp-field b { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+#tp-text {
+  width: 100%;
+  min-height: 260px;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  resize: vertical;
+}
+
+#tp-text:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+.tp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem 1rem;
+}
+
+input[type="range"] { width: 100%; accent-color: var(--accent); }
+
+.tp-row { display: flex; flex-wrap: wrap; gap: 0.6rem 1.2rem; }
+
+.tp-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.tp-check input { accent-color: var(--accent); }
+
+.tp-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+
+.tp-hint { margin: 0; font-size: 0.82rem; color: var(--text-dim); }
+
+.tp-tips {
+  padding: 1.1rem;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.tp-tips h2 { margin: 0 0 0.6rem; font-size: 0.95rem; }
+.tp-tips ul { margin: 0; padding-inline-start: 1.15rem; }
+.tp-tips li { margin: 0.4rem 0; font-size: 0.85rem; line-height: 1.55; color: var(--text-dim); }
+
+/* ---------- 提词舞台 ---------- */
+
+.tp-stage {
+  position: fixed;
+  inset: 0;
+  z-index: 130;
+  overflow: hidden;
+  background: #0b0d10;
+  color: #f7f8fa;
+}
+
+.tp-stage-inner {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.tp-scroll {
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  margin-inline: auto;
+  padding-block: 42vh 60vh;
+  font-weight: 650;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  text-align: center;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  will-change: transform;
+}
+
+.tp-scroll p { margin: 0 0 0.85em; }
+.tp-scroll p:last-child { margin-bottom: 0; }
+
+.tp-guide-line {
+  position: absolute;
+  inset-inline: 0;
+  top: 42%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #e05555 12%, #e05555 88%, transparent);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.tp-countdown {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: min(38vw, 22rem);
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 0 0 60px rgb(255 255 255 / 35%);
+}
+
+.tp-bar {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 0.9rem calc(0.7rem + env(safe-area-inset-bottom));
+  background: linear-gradient(transparent, rgb(0 0 0 / 78%) 40%);
+  opacity: 0.35;
+  transition: opacity 0.18s ease;
+}
+
+.tp-bar:hover, .tp-bar:focus-within { opacity: 1; }
+
+.tp-bar button {
+  min-height: 38px;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid rgb(255 255 255 / 32%);
+  border-radius: 7px;
+  background: rgb(255 255 255 / 10%);
+  color: #ffffff;
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.tp-bar button:hover { background: rgb(255 255 255 / 22%); }
+
+.tp-progress {
+  margin-inline-start: auto;
+  font-size: 0.82rem;
+  font-variant-numeric: tabular-nums;
+  color: rgb(255 255 255 / 78%);
+}
+
+@media (max-width: 860px) {
+  .tp-app { grid-template-columns: minmax(0, 1fr); }
+  .tp-tips { order: 2; }
+}
+
+@media (max-width: 560px) {
+  .tp-grid { grid-template-columns: minmax(0, 1fr); }
+  #tp-text { min-height: 200px; }
+}

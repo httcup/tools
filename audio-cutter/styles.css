@@ -1,0 +1,164 @@
+/* 在线音频剪辑 — 页面样式。变量沿用 site.css。 */
+
+.ac-page main { max-width: 1000px; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--accent-text);
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover { filter: brightness(1.06); }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; filter: none; }
+
+.btn-alt {
+  border-color: var(--border);
+  background: var(--surface);
+  color: var(--text);
+}
+
+.btn-alt:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); filter: none; }
+
+.ac-app {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+/* ---------- 拖放区 ---------- */
+
+.ac-drop {
+  padding: 2.2rem 1.25rem;
+  text-align: center;
+  background: var(--surface);
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.ac-drop.is-over { border-color: var(--accent); background: var(--accent-pale); }
+.ac-drop p { margin: 0.35rem 0; }
+.ac-drop-hint { font-size: 0.85rem; color: var(--text-dim); }
+
+.ac-err {
+  margin-top: 0.9rem !important;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #e8b4b4;
+  border-radius: 8px;
+  background: #fdf3f3;
+  color: #a03030;
+  font-size: 0.85rem;
+}
+
+/* ---------- 编辑区 ---------- */
+
+.ac-editor {
+  display: grid;
+  gap: 1rem;
+  padding: 1.15rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.ac-meta { font-size: 0.85rem; color: var(--text-dim); display: flex; flex-wrap: wrap; gap: 0.35rem 1rem; }
+.ac-meta b { color: var(--text); font-weight: 600; }
+
+.ac-wave-wrap { position: relative; }
+
+#ac-wave {
+  display: block;
+  width: 100%;
+  height: 220px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.ac-empty {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0.6rem;
+  margin: 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  pointer-events: none;
+}
+
+.ac-transport,
+.ac-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ac-spacer { flex: 1 1 auto; }
+
+.ac-time { font-variant-numeric: tabular-nums; font-size: 0.88rem; color: var(--text-dim); }
+.ac-time b { color: var(--text); }
+.ac-selinfo { font-size: 0.85rem; color: var(--text-dim); }
+
+.ac-tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.ac-toolgroup {
+  display: grid;
+  gap: 0.55rem;
+  align-content: start;
+  padding: 0.9rem;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.ac-toolgroup h2 {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.ac-field { display: grid; gap: 0.3rem; font-size: 0.82rem; color: var(--text-dim); }
+.ac-field > span { display: flex; justify-content: space-between; gap: 0.5rem; }
+.ac-field b { color: var(--text); font-variant-numeric: tabular-nums; }
+.ac-field input[type="range"] { width: 100%; accent-color: var(--accent); }
+
+.ac-field-inline { display: inline-flex; align-items: center; gap: 0.5rem; }
+.ac-field-inline select {
+  min-height: 40px;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.85rem;
+}
+
+.ac-export { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; }
+.ac-status { margin: 0; min-height: 1.2em; font-size: 0.85rem; color: var(--ok); }
+
+@media (max-width: 620px) {
+  #ac-wave { height: 170px; }
+  .ac-tools { grid-template-columns: minmax(0, 1fr); }
+}

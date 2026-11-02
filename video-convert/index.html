@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>全能视频格式转换：转 MP4/WebM、压缩、提取音频，不上传 | 小胡的工具箱</title>
+<meta name="description" content="浏览器里转码视频：MP4 / WebM 互转、按分辨率压缩、改帧率与码率、裁剪时间段、变速、旋转翻转、静音或提取 WAV 音轨。文件不上传，转完直接下载。">
+<link rel="canonical" href="https://139t.cn/video-convert/">
+<meta name="theme-color" content="#f6f7f9">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.googletagmanager.com https://hm.baidu.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://hm.baidu.com; media-src 'self' blob:; connect-src 'self' https://ipwho.is https://ipapi.co; form-action 'none'; base-uri 'none'; frame-ancestors 'none'">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="小胡的工具箱">
+<meta property="og:url" content="https://139t.cn/video-convert/">
+<meta property="og:title" content="全能视频格式转换 — 转码、压缩、提取音频">
+<meta property="og:description" content="MP4 / WebM 互转、改分辨率帧率码率、裁剪时间段、变速旋转，还能提取 WAV 音轨。文件不上传。">
+<meta name="twitter:card" content="summary">
+<link rel="alternate" type="text/markdown" href="index.md">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../i18n.css">
+<script defer src="../i18n.js"></script>
+</head>
+<body class="vc-page">
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="hub-head">
+  <div class="head-row">
+    <p class="brand">
+      <a class="brand-home" href="../">
+        <svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+          <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+          <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+          <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+        </svg>
+        Tools
+      </a>
+    </p>
+  </div>
+  <nav class="crumbs" aria-label="位置">
+    <a href="../">全部工具</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">全能视频格式转换</span>
+  </nav>
+  <h1>全能视频格式转换</h1>
+  <p class="lede">把视频丢进来，转成 MP4 或 WebM、按 1080p / 720p / 480p 压缩、改帧率和码率、只截一段、变速、旋转翻转、去掉声音，或者干脆只把音轨提成 WAV。转码靠浏览器自带的编码器，在你的设备上跑，文件不上传。</p>
+</header>
+
+<main id="main" class="tool-main">
+
+  <section class="vc-app" aria-label="视频转换">
+    <div class="vc-drop" id="vc-drop">
+      <input type="file" id="vc-file" accept="video/*,.mp4,.mov,.webm,.mkv,.avi,.m4v" hidden>
+      <p><button type="button" class="btn" id="vc-pick">选择视频文件</button></p>
+      <p class="vc-drop-hint">或者把文件拖到这里 · MP4 / MOV / WebM / MKV / AVI 都行，能不能读取决于浏览器</p>
+      <p class="vc-err" id="vc-err" hidden></p>
+    </div>
+
+    <div class="vc-editor" id="vc-editor" hidden>
+      <div class="vc-stage">
+        <video id="vc-video" playsinline preload="metadata"></video>
+        <div class="vc-stage-bar">
+          <button type="button" class="btn btn-alt" id="vc-play">播放预览</button>
+          <span class="vc-time"><b id="vc-cur">0:00</b> / <span id="vc-dur">0:00</span></span>
+          <span class="vc-spacer"></span>
+          <button type="button" class="btn btn-alt" id="vc-mark-start">起点设为当前</button>
+          <button type="button" class="btn btn-alt" id="vc-mark-end">终点设为当前</button>
+        </div>
+      </div>
+
+      <div class="vc-controls">
+        <div class="vc-meta" id="vc-meta"></div>
+
+        <div class="vc-grid">
+          <label class="vc-field"><span>输出格式</span>
+            <select id="vc-format">
+              <option value="webm" selected>WebM（VP9 / Opus）</option>
+              <option value="mp4">MP4（H.264 / AAC）</option>
+              <option value="wav">只提取音频（WAV）</option>
+            </select>
+          </label>
+          <label class="vc-field"><span>分辨率</span>
+            <select id="vc-res">
+              <option value="source" selected>保持原始</option>
+              <option value="1080">1080p</option>
+              <option value="720">720p</option>
+              <option value="480">480p</option>
+              <option value="360">360p</option>
+            </select>
+          </label>
+          <label class="vc-field"><span>帧率</span>
+            <select id="vc-fps">
+              <option value="30" selected>30 fps</option>
+              <option value="25">25 fps</option>
+              <option value="24">24 fps</option>
+              <option value="15">15 fps</option>
+            </select>
+          </label>
+          <label class="vc-field"><span>画质（码率）</span>
+            <select id="vc-bitrate">
+              <option value="8000000">高 · 8 Mbps</option>
+              <option value="4000000" selected>中 · 4 Mbps</option>
+              <option value="2000000">低 · 2 Mbps</option>
+              <option value="1000000">很小 · 1 Mbps</option>
+            </select>
+          </label>
+          <label class="vc-field"><span>变速</span>
+            <select id="vc-speed">
+              <option value="0.5">0.5×（慢放）</option>
+              <option value="0.75">0.75×</option>
+              <option value="1" selected>1×（原速）</option>
+              <option value="1.5">1.5×</option>
+              <option value="2">2×（快放）</option>
+            </select>
+          </label>
+          <label class="vc-field"><span>旋转</span>
+            <select id="vc-rotate">
+              <option value="0" selected>不旋转</option>
+              <option value="90">顺时针 90°</option>
+              <option value="180">180°</option>
+              <option value="270">逆时针 90°</option>
+            </select>
+          </label>
+          <label class="vc-field"><span>翻转</span>
+            <select id="vc-flip">
+              <option value="none" selected>不翻转</option>
+              <option value="h">水平（左右）</option>
+              <option value="v">垂直（上下）</option>
+            </select>
+          </label>
+          <label class="vc-field"><span>声音</span>
+            <select id="vc-audio">
+              <option value="keep" selected>保留音轨</option>
+              <option value="mute">去掉声音</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="vc-range">
+          <label class="vc-field"><span>开始（秒）</span><input type="number" id="vc-start" min="0" step="0.1" value="0"></label>
+          <label class="vc-field"><span>结束（秒）</span><input type="number" id="vc-end" min="0" step="0.1" value="0"></label>
+          <label class="vc-field"><span>音量<b id="vc-vol-v">100%</b></span><input type="range" id="vc-volume" min="0" max="200" step="5" value="100"></label>
+        </div>
+
+        <div class="vc-actions">
+          <button type="button" class="btn" id="vc-run">开始转换</button>
+          <button type="button" class="btn btn-alt" id="vc-cancel" hidden>取消</button>
+          <button type="button" class="btn btn-alt" id="vc-reset">换一个文件</button>
+        </div>
+
+        <div class="vc-progress" id="vc-progress-wrap" hidden>
+          <div class="vc-bar"><span id="vc-bar"></span></div>
+          <p class="vc-progress-text" id="vc-progress-text">准备中…</p>
+        </div>
+
+        <div class="vc-result" id="vc-result" hidden>
+          <p class="vc-result-name" id="vc-result-name"></p>
+          <p class="vc-result-actions">
+            <a class="btn" id="vc-download" href="#" download>下载文件</a>
+            <span class="vc-result-size" id="vc-result-size"></span>
+          </p>
+        </div>
+
+        <p class="vc-status" id="vc-status"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="facts" aria-label="处理方式">
+    <article class="fact"><h2>为什么是实时转码</h2><p>浏览器只提供实时录制接口，所以转换用时大约等于片段时长（2 倍速会缩一半）。期间请留在本页，切到后台可能掉帧。</p></article>
+    <article class="fact"><h2>能转成什么，取决于浏览器</h2><p>WebM 全支持；MP4 需要浏览器自带 H.264 编码（新版 Chrome / Safari 可以，选项里会标出来）。想转 AVI、MKV 或调 CRF 这类精细参数，得用桌面版 FFmpeg。</p></article>
+  </section>
+</main>
+
+<footer>
+  <p><a class="home-link" href="../">小胡的工具箱</a> · 所有文件都在你的浏览器内本地处理，不上传服务器</p>
+</footer>
+
+<script src="../toolkit.js"></script>
+<link rel="stylesheet" href="../sidebar.css">
+<div id="site-sidebar" data-base="../"></div>
+<div id="sidebar-backdrop"></div>
+<button id="sidebar-toggle" type="button" aria-label="打开分类导航"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>分类</button>
+<script src="../js/sidebar-data.js"></script>
+<script src="../sidebar.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

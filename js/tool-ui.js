@@ -81,3 +81,16 @@ export function download(blob, name) {
   link.remove();
   setTimeout(() => URL.revokeObjectURL(url), 30000);
 }
+
+/* 失败提示拆成「前缀 + 细节」两个文本节点。
+   拼成一整句的话，运行时替换永远匹配不上词典里的任何一条，
+   非中文界面就会漏出一句原文。拆开后两半各自可译。 */
+export function sayFail(el, head, error) {
+  const detail = (error && error.message) || '未知错误';
+  el.textContent = '';
+  const a = document.createElement('span');
+  a.textContent = head;
+  const b = document.createElement('span');
+  b.textContent = detail;
+  el.append(a, b);
+}

@@ -1,4 +1,5 @@
 import { openPdf, canvasToBlob } from '../js/pdf-kit.js';
+import { sayFail } from '../js/tool-ui.js';
 import { zip } from '../js/zip-kit.js';
 
 const $ = (id) => document.getElementById(id);
@@ -185,7 +186,7 @@ async function run() {
     }
     say('好了。');
   } catch (error) {
-    say('转换中断了：' + (error?.message || '未知错误'));
+    sayFail(statusEl, '转换中断了：', error);
   } finally {
     $('go').disabled = false;
   }

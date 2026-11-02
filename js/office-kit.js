@@ -9,7 +9,7 @@ const R = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships';
 
 function parseXml(text) {
   const doc = new DOMParser().parseFromString(text, 'application/xml');
-  if (doc.querySelector('parsererror')) throw new Error('xml.broken');
+  if (doc.querySelector('parsererror')) throw new Error('这个文件的结构看不懂，可能已经损坏。');
   return doc;
 }
 
@@ -80,7 +80,7 @@ function headingLevel(node) {
 export async function readDocx(buffer) {
   const files = await unzip(buffer);
   const main = files.get('word/document.xml');
-  if (!main) throw new Error('docx.nodoc');
+  if (!main) throw new Error('压缩包里没找到正文，可能不是 Word 文档。');
   const doc = parseXml(new TextDecoder().decode(main));
   const rels = relsOf(files, 'word/document.xml');
   const body = doc.getElementsByTagNameNS(W, 'body')[0];
@@ -173,7 +173,7 @@ export async function readXlsx(buffer, { maxRows = 2000, maxCols = 60 } = {}) {
   }
 
   const workbookXml = files.get('xl/workbook.xml');
-  if (!workbookXml) throw new Error('xlsx.nowb');
+  if (!workbookXml) throw new Error('这个表里没有工作簿，读不出数据。');
   const wb = parseXml(new TextDecoder().decode(workbookXml));
   const rels = relsOf(files, 'xl/workbook.xml');
   const sheets = [];

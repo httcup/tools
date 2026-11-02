@@ -1,7 +1,7 @@
 import { openPdf, readPage, renderPage, canvasToBlob } from '../js/pdf-kit.js';
 import { buildPptx } from '../js/pptx-kit.js';
 import { slimLines } from '../js/pdf-blocks.js';
-import { parsePages, stem, fmtSize, wireDrop } from '../js/tool-ui.js';
+import { parsePages, stem, fmtSize, wireDrop, sayFail } from '../js/tool-ui.js';
 
 const $ = (id) => document.getElementById(id);
 const W = 960;
@@ -143,7 +143,7 @@ async function run() {
     $('out').hidden = false;
     say('好了。');
   } catch (error) {
-    say('转换中断了：' + (error?.message || '未知错误'));
+    sayFail($('status'), '转换中断了：', error);
   } finally {
     $('go').disabled = false;
   }

@@ -19,7 +19,7 @@
   var STORE = 'abox-lang';
   var CACHE = 'abox-i18n-dict-';
   /* 词典更新后把这个版本号 +1，老用户浏览器里的旧词典会自动失效 */
-  var DICT_VER = 15;
+  var DICT_VER = 16;
   /* 可翻译属性。data-* 只放纯展示用的那几类：data-key 是侧边栏的搜索索引
    * （标题+简介+关键词拼成的一整串，翻了反而搜不到），data-t 是水印预置文字
    * （要写进输入框当用户内容），都不能动。 */
@@ -197,7 +197,14 @@
   var scheduled = false;
   var selfWrite = new WeakSet();   // 我们自己写进去的值，避免被当成变化再翻一遍
   function schedule() {
-    if (!scheduled) { scheduled = true; requestAnimationFrame(flush); }
+    if (!scheduled) {
+      scheduled = true;
+      requestAnimationFrame(flush);
+      /* 后台标签、被浏览器冻结的页面里 rAF 可能一次都不触发，
+         那样运行时插入的文案会一直停在原文。补一个定时器兜底，
+         两个都到也只是多跑一次空队列。 */
+      setTimeout(flush, 120);
+    }
   }
   function flush() {
     scheduled = false;

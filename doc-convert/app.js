@@ -4,7 +4,7 @@ import {
 } from '../js/office-kit.js';
 import { buildDocx } from '../js/docx-kit.js';
 import { buildXlsx } from '../js/xlsx-kit.js';
-import { stem, fmtSize, wireDrop } from '../js/tool-ui.js';
+import { stem, fmtSize, wireDrop, sayFail } from '../js/tool-ui.js';
 
 const $ = (id) => document.getElementById(id);
 let loaded = null;
@@ -166,7 +166,7 @@ async function run() {
     $('out').hidden = false;
     say('好了。');
   } catch (error) {
-    say('转换失败：' + (error?.message || '未知错误'));
+    sayFail($('status'), '转换失败：', error);
   } finally {
     $('go').disabled = false;
   }

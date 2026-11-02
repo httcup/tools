@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>证件照换底色：白底蓝底红底一键换，也能导出透明 PNG | 小胡的工具箱</title>
+<meta name="description" content="上传一张照片，自动抠出人像换成白底、蓝底、红底或任意颜色，也能导出透明背景的 PNG。模型内置在页面里，照片不上传，断网也能用。">
+<link rel="canonical" href="https://139t.cn/id-photo-bg/">
+<meta name="theme-color" content="#f6f7f9">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval' https://www.googletagmanager.com https://hm.baidu.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://hm.baidu.com; media-src 'self' blob:; connect-src 'self' https://ipwho.is https://ipapi.co; form-action 'none'; base-uri 'none'; frame-ancestors 'none'">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="小胡的工具箱">
+<meta property="og:url" content="https://139t.cn/id-photo-bg/">
+<meta property="og:title" content="证件照换底色 — 人像抠图在本地完成">
+<meta property="og:description" content="自动抠出人像，换白底、蓝底、红底或任意颜色，也能导出透明 PNG。">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="../toolkit.css">
+<link rel="stylesheet" href="../dtc.css">
+<link rel="stylesheet" href="../i18n.css">
+<script defer src="../i18n.js"></script>
+<style>
+.drop { display: grid; place-items: center; gap: 0.35rem; padding: 1.8rem 1rem; border: 1.5px dashed var(--border); border-radius: 10px; background: var(--surface-2); text-align: center; cursor: pointer; transition: border-color 0.15s, background 0.15s; }
+.drop:hover, .drop.hot { border-color: var(--accent); background: var(--surface); }
+.drop strong { font-size: 0.98rem; font-weight: 600; }
+.drop span { font-size: 0.8rem; color: var(--text-dim); }
+.status { margin: 0.7rem 0 0; font-size: 0.82rem; color: var(--text-dim); min-height: 1.2em; }
+.meta { display: flex; flex-wrap: wrap; gap: 0.3rem 1.1rem; margin: 0.5rem 0 0; font-size: 0.79rem; color: var(--text-dim); }
+.meta b { color: var(--text); font-weight: 600; }
+.swatches { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 0.15rem 0 0.6rem; }
+.swatch { width: 2.4rem; height: 2.4rem; padding: 0; border: 2px solid var(--border); border-radius: 8px; cursor: pointer; transition: border-color 0.12s, transform 0.12s; }
+.swatch:hover { transform: translateY(-1px); }
+.swatch[aria-pressed="true"] { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(37,99,235,0.28); }
+.swatch-custom { position: relative; display: grid; place-items: center; overflow: hidden; background: conic-gradient(#ff5f5f, #ffc95f, #7ed957, #5fc8ff, #9b7bff, #ff5f5f); }
+.swatch-custom input { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; opacity: 0; cursor: pointer; }
+.swatch-custom::after { content: "自定"; position: absolute; inset: auto 0 0 0; font-size: 0.6rem; line-height: 1.3; color: #fff; background: rgba(0,0,0,0.42); text-align: center; pointer-events: none; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 0.7rem; }
+.pair figure { margin: 0; min-width: 0; }
+.pair figcaption { margin: 0 0 0.3rem; font-size: 0.75rem; color: var(--text-dim); }
+.pair canvas { display: block; width: 100%; height: auto; border: 1px solid var(--border); border-radius: 8px; background: #fff; }
+canvas.checker { background-color: #fff; background-image: repeating-conic-gradient(#e9ecef 0% 25%, #fff 0% 50%); background-size: 16px 16px; }
+.range-row { display: flex; align-items: center; gap: 0.5rem; }
+.range-row input[type="range"] { flex: 1; accent-color: var(--accent); }
+.range-row output { min-width: 2.6rem; font-size: 0.78rem; color: var(--text-dim); text-align: right; font-variant-numeric: tabular-nums; }
+[hidden] { display: none !important; }
+@media (max-width: 520px) { .pair { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="hub-head">
+  <div class="head-row">
+    <p class="brand"><a class="brand-home" href="../"><svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+  <path class="logo-handle" d="M25 16.5 A7 7 0 0 1 39 16.5"/>
+  <rect class="logo-lid" x="12" y="16.5" width="40" height="9" rx="4.5"/>
+  <rect class="logo-box" x="16" y="25.5" width="32" height="27" rx="6"/>
+  <rect class="logo-latch" x="28.4" y="35" width="7.2" height="7.2" rx="1.6" transform="rotate(45 32 38.6)"/>
+</svg>Tools</a></p>
+  </div>
+  <nav class="crumbs" aria-label="位置">
+    <a href="../">全部工具</a><span aria-hidden="true">›</span><span aria-current="page">证件照换底色</span>
+  </nav>
+  <h1>证件照换底色</h1>
+  <p class="lede">上传一张照片，它先把人像抠出来，再铺上你要的底色。白底、蓝底、红底、任意颜色都行，也可以只导出人像、背景留透明。</p>
+</header>
+
+<main id="main" class="tool-main">
+
+<section class="tool-card">
+  <label class="drop" id="drop" for="file">
+    <strong>选一张照片，或者拖到这里</strong>
+    <span>正面、头肩居中的效果最好；文件不上传</span>
+    <input id="file" type="file" accept="image/*" hidden>
+  </label>
+  <p class="status" id="status" role="status"></p>
+</section>
+
+<section class="tool-card" id="opts" hidden>
+  <div class="card-head"><h2>要什么底色</h2><span class="hint" id="engine"></span></div>
+  <div class="swatches" id="swatches" role="group" aria-label="常见底色">
+    <button class="swatch" type="button" data-color="#ffffff" style="background:#ffffff" aria-pressed="true" aria-label="白底" title="白底"></button>
+    <button class="swatch" type="button" data-color="#438edb" style="background:#438edb" aria-pressed="false" aria-label="蓝底" title="蓝底"></button>
+    <button class="swatch" type="button" data-color="#d9001b" style="background:#d9001b" aria-pressed="false" aria-label="红底" title="红底"></button>
+    <button class="swatch" type="button" data-color="#f0f0f0" style="background:#f0f0f0" aria-pressed="false" aria-label="浅灰底" title="浅灰底"></button>
+    <label class="swatch swatch-custom" id="customWrap" title="自定义颜色" aria-pressed="false">
+      <input id="color" type="color" value="#438edb" aria-label="自定义颜色">
+    </label>
+  </div>
+  <div class="row">
+    <label class="field"><span>边缘收紧</span>
+      <div class="range-row">
+        <input id="edge" type="range" min="0" max="60" value="25" step="2">
+        <output id="edgeOut" for="edge">25%</output>
+      </div>
+    </label>
+  </div>
+  <div class="checks">
+    <label class="check"><input id="transparent" type="checkbox"> 背景留透明（导出 PNG）</label>
+    <label class="check"><input id="clean" type="checkbox" checked> 边缘去旧底色残留</label>
+  </div>
+  <div class="row">
+    <button class="btn" type="button" id="again">换一张照片</button>
+  </div>
+  <p class="meta" id="meta"></p>
+</section>
+
+<section class="tool-card" id="out" hidden>
+  <div class="card-head"><h2>效果</h2><span class="hint" id="sum"></span></div>
+  <div class="pair">
+    <figure><figcaption>原图</figcaption><canvas id="before"></canvas></figure>
+    <figure><figcaption>换好之后</figcaption><canvas id="after" class="checker"></canvas></figure>
+  </div>
+  <div class="row">
+    <a class="btn btn-primary" id="png" href="#" download>下载 PNG</a>
+    <a class="btn" id="jpg" href="#" download>下载 JPG</a>
+  </div>
+</section>
+
+<section class="facts" aria-label="处理方式">
+  <article class="fact"><h2>全程本地</h2><p>人像分割用的模型就打包在这个页面里，读入、推理、合成都在这台设备上完成，全程不发起网络请求。</p></article>
+  <article class="fact"><h2>不用注册</h2><p>没有账号、没有上传、没有水印。关掉页面，照片和结果都不会留下。</p></article>
+</section>
+</main>
+
+<footer>
+  <p><a class="home-link" href="../">小胡的工具箱</a> · 所有文件都在你的浏览器内本地处理，不上传服务器</p>
+</footer>
+
+<script src="../toolkit.js"></script>
+<script type="module" src="app.js"></script>
+<link rel="stylesheet" href="../sidebar.css">
+<div id="site-sidebar" data-base="../"></div>
+<div id="sidebar-backdrop"></div>
+<button id="sidebar-toggle" type="button" aria-label="打开分类导航"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>分类</button>
+<script src="../js/sidebar-data.js"></script>
+<script src="../sidebar.js"></script>
+</body>
+</html>

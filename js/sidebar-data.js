@@ -246,6 +246,11 @@ window.SIDEBAR_CATS = [
     "href": "./id-photo/"
    },
    {
+    "slug": "id-photo-bg",
+    "name": "证件照换底色",
+    "href": "./id-photo-bg/"
+   },
+   {
     "slug": "stack-images",
     "name": "图片堆栈",
     "href": "./stack-images/"

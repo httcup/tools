@@ -1,0 +1,59 @@
+/* 语言切换器 —— 首页 .head-tools 与工具页 .topbar-actions 共用 */
+.lang-switch {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex: 0 0 auto;
+  float: none;
+  margin-left: 6px;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+/* 工具页的 .topbar-actions 是块级容器，让切换器和收藏按钮并排 */
+.topbar-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+
+.lang-switch .globe,
+.lang-switch svg.globe {
+  width: 15px !important;
+  height: 15px !important;
+  flex: 0 0 15px !important;
+  margin: 0 !important;
+  color: var(--muted, var(--text-dim, #667085));
+  pointer-events: none;
+  vertical-align: middle;
+}
+
+.lang-switch select {
+  appearance: none;
+  -webkit-appearance: none;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1;
+  color: var(--text, #101828);
+  background: var(--surface, #fff);
+  border: 1px solid var(--border, var(--line, #e4e7ec));
+  border-radius: 999px;
+  padding: 6px 24px 6px 8px;
+  cursor: pointer;
+  max-width: 132px;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23667085' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 6px center;
+  background-size: 12px 12px;
+}
+
+.lang-switch select:hover { border-color: var(--line-strong, var(--border, #d0d5dd)); }
+.lang-switch select:focus-visible { outline: 2px solid var(--accent, #2563eb); outline-offset: 2px; }
+
+/* 工具页里比收藏按钮略窄一些 */
+.topbar-actions .lang-switch select { padding: 5px 22px 5px 7px; font-size: 12.5px; }
+
+@media (max-width: 640px) {
+  .lang-switch select { max-width: 104px; font-size: 12px; }
+  .lang-switch .globe { display: none; }
+}
+
+/* 语言切换后，正在翻译的文本短暂淡入，避免闪现原文 */
+html[data-i18n-active] body { transition: opacity .12s ease; }

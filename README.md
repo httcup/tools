@@ -40,6 +40,16 @@
 - 随机数全部来自 `crypto.getRandomValues`，安全可靠
 - 所有计算在浏览器本地完成，无远程接口、无埋点、无追踪
 
+## 多语言（简体 / 繁體 / English / 日本語 / Français / Español）
+
+页面只有一套中文原文，`i18n.js` 在运行时按词典替换文本，切换记在浏览器里，
+也支持 `?lang=en`、`?lang=zh-Hant` 这类直链。
+
+- `i18n.js` / `i18n.css` — 切换器与替换引擎，已注入全部页面
+- `i18n/<lang>.json` — 「中文原文 → 译文」对照表，键必须与页面文本完全一致
+- `i18n/zh-Hant.json` + `i18n/zh-Hant.chars.json` — 繁体由 OpenCC 生成，覆盖全站
+- 未收录的字符串保留中文原文，不会报错；新增文案时补词典即可
+
 ## 部署方法
 
 - **Cloudflare Pages**：站点源码直接放在仓库根目录，Cloudflare Pages 连接本仓库即可部署（自定义域名 tools.xhxh.vip）。

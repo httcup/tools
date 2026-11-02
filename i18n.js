@@ -18,6 +18,8 @@
   ];
   var STORE = 'abox-lang';
   var CACHE = 'abox-i18n-dict-';
+  /* 词典更新后把这个版本号 +1，老用户浏览器里的旧词典会自动失效 */
+  var DICT_VER = 4;
   var ATTRS = ['placeholder', 'aria-label', 'title', 'alt'];
   var SKIP_TAGS = /^(SCRIPT|STYLE|PRE|CODE|TEXTAREA|KBD|SAMP|SVG)$/;
 
@@ -50,19 +52,27 @@
     return hit ? out : null;
   }
 
+  function applyPattern(entry, text) {
+    var m = entry[0].exec(text);
+    if (!m) return null;
+    return entry[1].replace(/\{\{(\d+)(\*t)?\}\}/g, function (w, n, tr) {
+      if (m[+n] === undefined) return w;
+      if (!tr) return m[+n];
+      var inner = dict && dict[m[+n]];
+      return inner || m[+n];
+    });
+  }
+
   function lookup(text) {
     if (!text || !isCJK(text)) return null;
     if (dict && Object.prototype.hasOwnProperty.call(dict, text)) return dict[text];
-    if (patterns) {
-      for (var i = 0; i < patterns.length; i++) {
-        var m = text.match(patterns[i][0]);
-        if (m) {
-          return patterns[i][1].replace(/\{\{(\d+)(\*t)?\}\}/g, function (w, n, tr) {
-            if (m[+n] === undefined) return w;
-            if (!tr) return m[+n];
-            var inner = dict && dict[m[+n]];
-            return inner || m[+n];
-          });
+    if (patIndex) {
+      var buckets = [patIndex[text.charAt(0)] || [], patIndex[''] || []];
+      for (var b = 0; b < buckets.length; b++) {
+        var list = buckets[b];
+        for (var i = 0; i < list.length; i++) {
+          var hit = applyPattern(list[i], text);
+          if (hit !== null) return hit;
         }
       }
     }
@@ -105,19 +115,30 @@
     }
   }
 
-  function walk(root) {
-    if (!root) return;
-    if (root.nodeType === 3) {
-      if (skipNode(root)) return;
-      var orig = textOrig.get(root);
-      if (orig === undefined) { orig = root.nodeValue; textOrig.set(root, orig); }
+  var lastError = null;
+
+  function doText(node) {
+    try {
+      if (skipNode(node)) return;
+      var orig = textOrig.get(node);
+      if (orig === undefined) { orig = node.nodeValue; textOrig.set(node, orig); }
       var out = translateRaw(orig);
       var next = out === null ? orig : out;
-      if (root.nodeValue !== next) root.nodeValue = next;
-      return;
+      if (node.nodeValue !== next) node.nodeValue = next;
+    } catch (e) {
+      if (!lastError) lastError = e;
     }
+  }
+
+  function doElem(node) {
+    try { applyNode(node); } catch (e) { if (!lastError) lastError = e; }
+  }
+
+  function walk(root) {
+    if (!root) return;
+    if (root.nodeType === 3) { doText(root); return; }
     if (root.nodeType !== 1 && root.nodeType !== 9 && root.nodeType !== 11) return;
-    if (root.nodeType === 1) applyNode(root);
+    if (root.nodeType === 1) doElem(root);
 
     var tw = document.createTreeWalker(root, NodeFilter.SHOW_TEXT | NodeFilter.SHOW_ELEMENT, {
       acceptNode: function (n) {
@@ -132,14 +153,8 @@
     });
     var n;
     while ((n = tw.nextNode())) {
-      if (n.nodeType === 1) applyNode(n);
-      else {
-        var o = textOrig.get(n);
-        if (o === undefined) { o = n.nodeValue; textOrig.set(n, o); }
-        var r = translateRaw(o);
-        var v = r === null ? o : r;
-        if (n.nodeValue !== v) n.nodeValue = v;
-      }
+      if (n.nodeType === 1) doElem(n);
+      else doText(n);
     }
   }
 
@@ -306,13 +321,13 @@
   /* ---------- 读取词典 ---------- */
   function readCache(id) {
     try {
-      var raw = localStorage.getItem(CACHE + id);
+      var raw = localStorage.getItem(CACHE + DICT_VER + '-' + id);
       return raw ? JSON.parse(raw) : null;
     } catch (e) { return null; }
   }
 
   function writeCache(id, data) {
-    try { localStorage.setItem(CACHE + id, JSON.stringify(data)); } catch (e) {}
+    try { localStorage.setItem(CACHE + DICT_VER + '-' + id, JSON.stringify(data)); } catch (e) {}
   }
 
   function getJSON(file) {
@@ -321,15 +336,33 @@
       .catch(function () { return null; });
   }
 
+  /* 模板预编译 + 按首字分桶：词典里上千条占位符模板，逐条 match 会拖慢页面 */
+  var patIndex = null;
+
   function setDict(data) {
-    if (!data) { dict = null; patterns = null; return; }
+    if (!data) { dict = null; patterns = null; patIndex = null; return; }
     dict = data;
-    patterns = data.__patterns || null;
+    var raw = data.__patterns || null;
+    patterns = null;
+    patIndex = null;
+    if (raw && raw.length) {
+      patterns = [];
+      patIndex = {};
+      for (var i = 0; i < raw.length; i++) {
+        var rx;
+        try { rx = new RegExp(raw[i][0]); } catch (e) { continue; }
+        var entry = [rx, raw[i][1]];
+        patterns.push(entry);
+        var first = rx.source.charAt(0) === '^' ? rx.source.charAt(1) : rx.source.charAt(0);
+        var key = '\\^$.|?*+()[]{}'.indexOf(first) >= 0 ? '' : first;
+        (patIndex[key] || (patIndex[key] = [])).push(entry);
+      }
+    }
     if (dict) { delete dict.__patterns; }
   }
 
   function load(id) {
-    if (id === 'zh-Hans') { dict = null; patterns = null; chars = null; return Promise.resolve(); }
+    if (id === 'zh-Hans') { dict = null; patterns = null; patIndex = null; chars = null; return Promise.resolve(); }
     var cached = readCache(id);
     if (cached) { setDict(cached); if (id !== 'zh-Hant' || chars) return Promise.resolve(); }
 
@@ -503,5 +536,5 @@
     boot();
   }
 
-  window.siteI18n = { switchTo: switchTo, get lang() { return current; }, languages: LANGS };
+  window.siteI18n = { switchTo: switchTo, get lang() { return current; }, languages: LANGS, get error() { return lastError; } };
 })();

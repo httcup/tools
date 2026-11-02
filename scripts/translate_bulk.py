@@ -84,7 +84,7 @@ def protect(text):
 
     def sub(m):
         slots.append(m.group(0))
-        return '\u27e6%d\u27e7' % (len(slots) - 1)
+        return 'QZQ%dZQZ' % (len(slots) - 1)
 
     return PH.sub(sub, text), slots
 
@@ -94,7 +94,7 @@ def restore(text, slots):
         i = int(m.group(1))
         return slots[i] if i < len(slots) else m.group(0)
 
-    return re.sub('\u27e6(\\d+)\u27e7', sub, text)
+    return re.sub(r'QZQ(\d+)ZQZ', sub, text)
 
 
 def request(batch, tl):
@@ -117,7 +117,16 @@ def request(batch, tl):
     return []
 
 
-def translate_batch(batch, tl, tries=4):
+def request_gtx(text, tl):
+    url = ('https://translate.google.com/translate_a/single?' + urllib.parse.urlencode(
+        {'client': 'gtx', 'sl': 'zh-CN', 'tl': tl, 'dt': 't', 'q': text}))
+    req = urllib.request.Request(url, headers={'User-Agent': UA})
+    with urllib.request.urlopen(req, timeout=45) as r:
+        data = json.loads(r.read().decode('utf-8'))
+    return ''.join(seg[0] for seg in data[0] if seg and seg[0])
+
+
+def translate_batch(batch, tl, tries=3):
     for i in range(tries):
         try:
             res = request(batch, tl)
@@ -128,8 +137,19 @@ def translate_batch(batch, tl, tries=4):
                 return res
             out = []
             for s in batch:
-                r = translate_batch([s], tl, tries=2)
-                out.append(r[0] if r else s)
+                one = None
+                for _ in range(2):
+                    try:
+                        one = request_gtx(s, tl)
+                        break
+                    except Exception:
+                        time.sleep(2)
+                if one is None:
+                    rr = translate_batch([s], tl, tries=1)
+                    one = rr[0] if rr else None
+                if one is None:
+                    return None
+                out.append(one)
             return out
         except Exception as e:
             wait = 3 * (i + 1) + random.random() * 2
@@ -138,7 +158,7 @@ def translate_batch(batch, tl, tries=4):
     return None
 
 
-def chunks(items, max_items=18, max_chars=3500):
+def chunks(items, max_items=8, max_chars=1600):
     buf, size = [], 0
     for it in items:
         if buf and (len(buf) >= max_items or size + len(it) > max_chars):
@@ -173,7 +193,7 @@ def bad(src, dst, lang):
         return True
     if lang != 'ja' and CJK.search(dst):
         return True
-    if PH.findall(src) and len(PH.findall(src)) != len(re.findall('\u27e6\\d+\u27e7', dst)):
+    if PH.findall(src) and len(PH.findall(src)) != len(PH.findall(dst)):
         return True
     if len(dst) > max(80, len(src) * 6):
         return True
@@ -196,13 +216,19 @@ def main():
             existing = {k: v for k, v in json.load(open(p, encoding='utf-8')).items()
                         if not k.startswith('__')}
         cache = load_cache(lang)
+        retry_failed = '--retry-failed' in sys.argv
+        if retry_failed:
+            for k in [k for k, v in cache.items() if not v]:
+                del cache[k]
         todo = [t for t in ordered if t not in existing and t not in cache]
         if limit:
             todo = todo[:limit]
         print('[%s] 已有 %d，待翻 %d' % (lang, len(existing), len(todo)), flush=True)
 
         done = 0
+        fail_streak = 0
         t0 = time.time()
+        pace = float(os.environ.get('SLEEP', '0.35'))
         for batch in chunks(todo):
             prepared, slots = [], []
             for s in batch:
@@ -211,8 +237,14 @@ def main():
                 slots.append(sl)
             res = translate_batch(prepared, LANGS[lang])
             if not res:
-                print('  批量失败，跳过 %d 条' % len(batch), flush=True)
+                fail_streak += 1
+                print('  批量失败，跳过 %d 条（连续 %d 次）' % (len(batch), fail_streak), flush=True)
+                if fail_streak % 3 == 0:
+                    pause = 40 if fail_streak < 9 else 90
+                    print('  接口限流，暂停 %d 秒' % pause, flush=True)
+                    time.sleep(pause)
                 continue
+            fail_streak = 0
             for src, dst, sl in zip(batch, res, slots):
                 dst = restore(' '.join(dst.split()), sl)
                 if bad(src, dst, lang):
@@ -224,7 +256,7 @@ def main():
                 save_cache(lang, cache)
                 rate = done / max(1e-6, time.time() - t0)
                 print('  %d/%d  %.1f 条/秒' % (done, len(todo), rate), flush=True)
-            time.sleep(0.35 + random.random() * 0.35)
+            time.sleep(pace + random.random() * pace)
         save_cache(lang, cache)
         ok = sum(1 for v in cache.values() if v)
         print('[%s] 完成：成功 %d / 失败 %d' % (lang, ok, len(cache) - ok), flush=True)

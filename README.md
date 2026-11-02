@@ -42,13 +42,36 @@
 
 ## 多语言（简体 / 繁體 / English / 日本語 / Français / Español）
 
-页面只有一套中文原文，`i18n.js` 在运行时按词典替换文本，切换记在浏览器里，
-也支持 `?lang=en`、`?lang=zh-Hant` 这类直链。
+页面只有一套中文原文，`i18n.js` 在运行时按词典替换文本。切换器是页头右侧的
+地球图标按钮（首页 `.head-tools`、工具页 `.topbar-actions`），点开是六语言菜单，
+选择记在 `localStorage`，也支持 `?lang=en`、`?lang=zh-Hant` 这类直链。
+
+自动适配：首次访问时按访问者 IP 所在国家选语言——台湾/香港/澳门 → 繁體中文，
+中国大陆/新加坡 → 简体中文，日本 → 日本語，法语区 → Français，西语区 → Español，
+其余 → English。优先用 Cloudflare 的 `/cdn-cgi/trace`（同源、不经过第三方），
+非 Cloudflare 部署时退回 `ipwho.is` / `ipapi.co`；结果缓存 6 小时。
+手动选择过语言的访客不会被自动识别覆盖。
 
 - `i18n.js` / `i18n.css` — 切换器与替换引擎，已注入全部页面
 - `i18n/<lang>.json` — 「中文原文 → 译文」对照表，键必须与页面文本完全一致
 - `i18n/zh-Hant.json` + `i18n/zh-Hant.chars.json` — 繁体由 OpenCC 生成，覆盖全站
+- `__patterns` — 带占位符的句子（如 `第 {done} 帧，共 {total} 帧`）用正则模板匹配
 - 未收录的字符串保留中文原文，不会报错；新增文案时补词典即可
+
+词典更新后，把 `i18n.js` 里的 `DICT_VER` 加 1，访客浏览器里的旧词典会自动失效。
+
+### 翻译维护脚本
+
+```bash
+python3 scripts/translate_bulk.py ja            # 批量补某语言（增量、可断点续跑）
+python3 scripts/translate_bulk.py all --limit 500
+SLEEP=1.2 python3 scripts/translate_bulk.py ja --retry-failed   # 限流时降速重试失败项
+python3 scripts/merge_dict.py ja fr es en       # 合并缓存到词典并生成占位符模板
+```
+
+原站（`httcup/tools` 的历史提交）里的日语、法语、西班牙语人工译文会优先保留，
+机翻只补缺口；`scripts/` 下另有早前的移植、汉化与链接检查脚本。
+
 
 ## 部署方法
 

@@ -34,5 +34,10 @@
   "分类": "Catégories",
   "收藏": "Enregistrer",
   "复制到 LLM": "Copier pour un LLM",
-  "以 Markdown 查看": "Voir en Markdown"
+  "以 Markdown 查看": "Voir en Markdown",
+  "开源可核对": "Code source vérifiable",
+  "本地处理，不上传": "Traité localement, jamais envoyé",
+  "无需注册登录": "Sans inscription ni connexion",
+  "断网也能用": "Fonctionne hors ligne",
+  "在浏览器里处理，不上传": "Traitement dans le navigateur, aucun envoi"
 }

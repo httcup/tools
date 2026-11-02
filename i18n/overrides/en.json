@@ -34,5 +34,10 @@
   "分类": "Categories",
   "收藏": "Save",
   "复制到 LLM": "Copy for LLM",
-  "以 Markdown 查看": "View as Markdown"
+  "以 Markdown 查看": "View as Markdown",
+  "开源可核对": "Open source, verifiable",
+  "本地处理，不上传": "Processed locally, never uploaded",
+  "无需注册登录": "No sign-up needed",
+  "断网也能用": "Works offline",
+  "在浏览器里处理，不上传": "Runs in your browser, nothing uploaded"
 }

@@ -19,7 +19,7 @@
   var STORE = 'abox-lang';
   var CACHE = 'abox-i18n-dict-';
   /* 词典更新后把这个版本号 +1，老用户浏览器里的旧词典会自动失效 */
-  var DICT_VER = 6;
+  var DICT_VER = 7;
   var ATTRS = ['placeholder', 'aria-label', 'title', 'alt'];
   var SKIP_TAGS = /^(SCRIPT|STYLE|PRE|CODE|TEXTAREA|KBD|SAMP|SVG)$/;
 
@@ -32,10 +32,22 @@
   var applying = false;
   var textOrig = new WeakMap();
   var attrOrig = new WeakMap();
+  var optVal = new WeakMap();   // <option> 的原始文本 → value
 
   /* ---------- 基础工具 ---------- */
   function norm(s) {
     return String(s).replace(/\s+/g, ' ').trim();
+  }
+
+  /* 很多工具用 <option>文本</option> 建下拉框，靠 select.value 反查数据表，
+   * 而 option 没有 value 属性时 value 就等于显示文本。译文一换，脚本里的中文
+   * 键就查不到了。所以翻译前先把原文钉进 value，让取值始终是中文原文，
+   * 用户看到的仍然是译文。 */
+  function pinOptionValue(el) {
+    if (el.tagName !== 'OPTION' || el.hasAttribute('value')) return;
+    var v = optVal.get(el);
+    if (v === undefined) { v = el.textContent; optVal.set(el, v); }
+    if (el.getAttribute('value') !== v) el.setAttribute('value', v);
   }
 
   function isCJK(s) {
@@ -104,13 +116,18 @@
   /* ---------- 应用翻译 ---------- */
   function applyNode(node) {
     if (node.nodeType === 1) {
+      pinOptionValue(node);
       ATTRS.forEach(function (name) {
         if (!node.hasAttribute(name)) return;
         var rec = attrOrig.get(node) || {};
         if (!(name in rec)) rec[name] = node.getAttribute(name);
         attrOrig.set(node, rec);
         var out = rec[name] === current ? null : translateRaw(rec[name]);
-        node.setAttribute(name, out === null ? rec[name] : out);
+        var next = out === null ? rec[name] : out;
+        if (node.getAttribute(name) !== next) {
+          selfWrite.add(node);
+          node.setAttribute(name, next);
+        }
       });
     }
   }
@@ -124,7 +141,7 @@
       if (orig === undefined) { orig = node.nodeValue; textOrig.set(node, orig); }
       var out = translateRaw(orig);
       var next = out === null ? orig : out;
-      if (node.nodeValue !== next) node.nodeValue = next;
+      if (node.nodeValue !== next) { selfWrite.add(node); node.nodeValue = next; }
     } catch (e) {
       if (!lastError) lastError = e;
     }
@@ -167,9 +184,13 @@
   /* ---------- 动态内容 ---------- */
   var pending = new Set();
   var scheduled = false;
+  var selfWrite = new WeakSet();   // 我们自己写进去的值，避免被当成变化再翻一遍
+  function schedule() {
+    if (!scheduled) { scheduled = true; requestAnimationFrame(flush); }
+  }
   function flush() {
     scheduled = false;
-    if (applying) return;
+    if (applying) { schedule(); return; }   // 正在翻译：让出这一帧，别把队列丢了
     applying = true;
     try {
       pending.forEach(function (n) {
@@ -182,17 +203,20 @@
   }
   function queue(n) {
     pending.add(n);
-    if (!scheduled) { scheduled = true; requestAnimationFrame(flush); }
+    schedule();
   }
 
   function observe() {
     if (!window.MutationObserver) return;
     new MutationObserver(function (records) {
-      if (applying) return;
       for (var i = 0; i < records.length; i++) {
         var r = records[i];
-        if (r.type === 'characterData') queue(r.target);
-        else for (var j = 0; j < r.addedNodes.length; j++) queue(r.addedNodes[j]);
+        var list = r.type === 'characterData' ? [r.target] : r.addedNodes;
+        for (var j = 0; j < list.length; j++) {
+          var t = list[j];
+          if (selfWrite.has(t)) continue;   // 自己的写入，跳过
+          queue(t);                          // 翻译过程中插入的内容也要留到下一轮
+        }
       }
     }).observe(document.documentElement, { childList: true, subtree: true, characterData: true });
   }

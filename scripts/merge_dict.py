@@ -8,6 +8,7 @@
   形如 ["^第 (.+?) 帧，共 (.+?) 帧（(.+?)%）$", "{{1}} フレーム中 {{2}} フレーム（{{3}}%）"]
 """
 import json
+import glob
 import os
 import re
 import sys
@@ -52,8 +53,11 @@ def build(lang):
     words = {k: v for k, v in old.items() if not k.startswith('__') and isinstance(v, str)}
 
     cache = {}
-    if os.path.exists(CACHE % lang):
-        cache = json.load(open(CACHE % lang, encoding='utf-8'))
+    for cp in sorted(glob.glob('/tmp/tm/cache_%s*.json' % lang)):
+        try:
+            cache.update(json.load(open(cp, encoding='utf-8')))
+        except Exception:
+            pass
     added = 0
     for src, dst in cache.items():
         if not dst or src in words:

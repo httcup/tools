@@ -77,10 +77,22 @@
     });
   }
 
+  var IMG_SIZE = { 'reward-qr.jpg': [432, 480], 'feedback-qr.jpg': [480, 444] };
+
   function openImageModal(title, src, caption) {
+    var dim = IMG_SIZE[src.split('/').pop()] || [480, 480];
     openShell(title,
-      '<div class="sb-qr-img"><img src="' + src + '" alt="' + esc(title) + '"></div>' +
+      '<div class="sb-qr-img"><img src="' + src + '" alt="' + esc(title) + '"' +
+      ' width="' + dim[0] + '" height="' + dim[1] + '" decoding="async"></div>' +
       '<p>' + caption + '</p>'); /* caption 为内部固定文案，支持 <br> 换行 */
+  }
+
+  /* 空闲时预加载两张二维码，点开打赏/反馈即为秒出 */
+  function preloadImages() {
+    ['img/reward-qr.jpg', 'img/feedback-qr.jpg'].forEach(function (p) {
+      var im = new Image();
+      im.src = BASE + p;
+    });
   }
 
   /* 任何带 data-sb-scan 的按钮都能唤起扫码弹层（顶栏/页首共用） */
@@ -303,6 +315,11 @@
   build();
   buildFab(true);
   bind();
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(preloadImages, { timeout: 2500 });
+  } else {
+    setTimeout(preloadImages, 1800);
+  }
 
   /* 首页：外部筛选变化时同步宫格高亮（chips 点击 / 搜索重置） */
   var chipsBox = document.querySelector('.chips');

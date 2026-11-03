@@ -147,7 +147,7 @@
 
     var feed = fabBtn('sb-fab-feedback', '反馈与更新', ICO.feedback);
     feed.addEventListener('click', function () {
-      openImageModal('反馈与更新', BASE + 'img/feedback-qr.jpg', '扫码加入交流群：反馈问题、第一时间获取工具更新');
+      openImageModal('反馈与更新', BASE + 'img/feedback-qr.jpg', '扫码关注更新或者发送反馈');
     });
     fab.appendChild(feed);
 
@@ -156,6 +156,13 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
     fab.appendChild(top);
+
+    /* 滚过第一屏才显示「返回顶部」 */
+    function syncTop() {
+      top.classList.toggle('sb-show', window.scrollY > window.innerHeight);
+    }
+    window.addEventListener('scroll', syncTop, { passive: true });
+    syncTop();
 
     document.body.appendChild(fab);
   }

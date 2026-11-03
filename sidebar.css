@@ -68,20 +68,19 @@ html[data-theme="dark"] #sidebar-toggle {
 
 /* 分类宫格弹层：挂在按钮组上方 */
 #site-sidebar {
-  order: -1;
-  width: min(352px, calc(100vw - 32px));
+  position: fixed; right: 68px; bottom: 16px; z-index: 80;
+  width: min(352px, calc(100vw - 100px));
   background: var(--sb-bg); border: 1px solid var(--sb-line);
   border-radius: 18px;
   font-family: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 13px; color: var(--sb-text);
   box-shadow: 0 18px 48px -12px rgba(16, 24, 40, .32);
-  margin-bottom: 4px;
   display: none;
-  transform-origin: bottom center;
+  transform-origin: right bottom;
 }
 #site-sidebar.sb-open { display: block; animation: sb-pop-in .18s ease; }
 @keyframes sb-pop-in {
-  from { opacity: 0; transform: translateY(8px) scale(.95); }
+  from { opacity: 0; transform: translateX(10px) scale(.95); }
   to { opacity: 1; transform: none; }
 }
 
@@ -124,7 +123,20 @@ html[data-theme="dark"] #sidebar-toggle {
   #sb-fab { right: 12px; bottom: 12px; gap: 6px; }
   .sb-fab-btn { width: 36px; height: 36px; border-radius: 11px; }
   .sb-fab-btn svg { width: 15px; height: 15px; }
-  #site-sidebar { width: min(340px, calc(100vw - 24px)); }
+  #site-sidebar { right: 58px; bottom: 12px; width: min(340px, calc(100vw - 70px)); }
+}
+
+/* 返回顶部：滚过第一屏才显示 */
+.sb-fab-top {
+  opacity: 0; pointer-events: none;
+  transform: translateY(6px) scale(.85);
+  transition: background .15s ease, color .15s ease, transform .15s ease,
+              box-shadow .15s ease, opacity .2s ease, visibility .2s;
+  visibility: hidden;
+}
+.sb-fab-top.sb-show {
+  opacity: 1; pointer-events: auto;
+  transform: none; visibility: visible;
 }
 
 /* ---------- 手机扫码二维码弹窗（sidebar.js 渲染） ---------- */

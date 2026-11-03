@@ -1,6 +1,7 @@
 /* 全站左侧分类导航（sidebar.js 渲染，勿手工编辑生成的 DOM） */
 
-#site-sidebar {
+#site-sidebar,
+#sidebar-toggle {
   --sb-bg: #ffffff;
   --sb-line: #e4e7ec;
   --sb-text: #101828;
@@ -16,14 +17,16 @@
   --sb-shadow: 0 4px 14px -4px rgba(16, 24, 40, .25);
 }
 @media (prefers-color-scheme: dark) {
-  html:not([data-theme="light"]) #site-sidebar {
+  html:not([data-theme="light"]) #site-sidebar,
+  html:not([data-theme="light"]) #sidebar-toggle {
     --sb-bg: #161b26; --sb-line: #2a3142; --sb-text: #e6e9f0; --sb-text-2: #c3cad9;
     --sb-muted: #9aa4b8; --sb-faint: #6b768c; --sb-hover: #232a3a; --sb-chip: #232a3a;
     --sb-accent: #8ab4ff; --sb-accent-soft: #1d2a45; --sb-accent-chip: #26355a;
     --sb-input-bg: #1d2433; --sb-shadow: 0 4px 14px -4px rgba(0, 0, 0, .6);
   }
 }
-html[data-theme="dark"] #site-sidebar {
+html[data-theme="dark"] #site-sidebar,
+html[data-theme="dark"] #sidebar-toggle {
   --sb-bg: #161b26; --sb-line: #2a3142; --sb-text: #e6e9f0; --sb-text-2: #c3cad9;
   --sb-muted: #9aa4b8; --sb-faint: #6b768c; --sb-hover: #232a3a; --sb-chip: #232a3a;
   --sb-accent: #8ab4ff; --sb-accent-soft: #1d2a45; --sb-accent-chip: #26355a;
@@ -32,7 +35,7 @@ html[data-theme="dark"] #site-sidebar {
 
 #site-sidebar {
   position: fixed; top: 0; left: 0; bottom: 0; z-index: 60;
-  width: 224px;
+  width: 248px;
   display: flex; flex-direction: column;
   background: var(--sb-bg); border-right: 1px solid var(--sb-line);
   font-family: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
@@ -40,18 +43,39 @@ html[data-theme="dark"] #site-sidebar {
   transform: translateX(-100%);
   transition: transform .22s ease;
   visibility: hidden;
+  box-shadow: 0 8px 30px -8px rgba(16, 24, 40, .28);
 }
 #site-sidebar.sb-open { transform: translateX(0); visibility: visible; }
 
-/* 桌面端：常驻左侧，内容整体右移（侧栏固定显示，无折叠开关） */
-@media (min-width: 1200px) {
-  #site-sidebar { transform: none; visibility: visible; }
-  body.sb-body { margin-left: 224px; }
+/* 抽屉遮罩：所有屏宽通用（点空白处收起） */
+#sidebar-backdrop {
+  position: fixed; inset: 0; z-index: 58;
+  background: rgba(16, 24, 40, .45);
+  opacity: 0; pointer-events: none; transition: opacity .2s ease;
 }
-@media (max-width: 1199.98px) {
-  #site-sidebar { display: none; }
+#sidebar-backdrop.sb-show { opacity: 1; pointer-events: auto; }
+
+/* 悬浮开关：左下角「全部工具」 */
+#sidebar-toggle {
+  position: fixed; left: 16px; bottom: 18px; z-index: 70;
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 11px 18px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--sb-accent); background: var(--sb-accent); color: #fff;
+  font-size: 14px; font-weight: 600; font-family: inherit;
+  box-shadow: 0 6px 18px -4px rgba(29, 78, 216, .55);
+  transition: transform .15s ease, box-shadow .15s ease;
 }
-#sidebar-backdrop { display: none !important; }
+#sidebar-toggle:hover { transform: translateY(-2px); box-shadow: 0 10px 26px -6px rgba(29, 78, 216, .6); }
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) #sidebar-toggle {
+    color: #0b1220;
+    box-shadow: 0 6px 18px -4px rgba(0, 0, 0, .6);
+  }
+}
+html[data-theme="dark"] #sidebar-toggle {
+  color: #0b1220;
+  box-shadow: 0 6px 18px -4px rgba(0, 0, 0, .6);
+}
 
 .sb-head {
   flex: 0 0 auto;
@@ -66,11 +90,12 @@ html[data-theme="dark"] #site-sidebar {
 .sb-head a.sb-home:hover { color: var(--sb-accent); }
 .sb-head a.sb-home svg { flex: 0 0 auto; }
 .sb-close {
-  display: none; border: 0; background: none; cursor: pointer;
+  display: block; border: 0; background: none; cursor: pointer;
   font-size: 18px; line-height: 1; color: var(--sb-muted); padding: 4px 6px; border-radius: 6px;
 }
 .sb-close:hover { color: var(--sb-text); background: var(--sb-hover); }
-@media (max-width: 1199.98px) { .sb-close { display: block; } }
+
+.sb-title { font-weight: 700; font-size: 14px; color: var(--sb-text); }
 
 .sb-search { flex: 0 0 auto; padding: 10px 12px 6px; }
 .sb-search input {
@@ -180,11 +205,15 @@ html[data-theme="dark"] .sb-qr-box { border-color: #2a3142; }
 html[data-theme="dark"] .sb-qr-close { color: #9aa4b8; }
 html[data-theme="dark"] .sb-qr-close:hover { color: #e6e9f0; background: #232a3a; }
 
-/* ---------- 首页侧栏：极简平铺分类（ToolKnit 式） ---------- */
+/* ---------- 首页侧栏：悬浮按钮展开的分类面板（ToolKnit 式小字） ---------- */
 
+#site-sidebar .sb-head-min {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 8px; padding: 14px 14px 10px;
+}
 #site-sidebar .sb-flat {
   flex: 1 1 auto; overflow-y: auto;
-  padding: 16px 12px 18px;
+  padding: 8px 12px 18px;
 }
 .sb-flat-item {
   display: block; width: 100%; text-align: left;

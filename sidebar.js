@@ -1,6 +1,6 @@
 /* 全站导航脚本。
- * 首页：左侧极简平铺分类导航（与首页 chips 筛选联动），仅桌面端常驻。
- * 工具页：不再显示分类侧栏，注入 ToolKnit 式页首——左「返回工具箱」、
+ * 首页：悬浮「全部工具」按钮，点击展开左侧分类面板（与首页 chips 筛选联动）。
+ * 工具页：不显示分类侧栏与悬浮按钮，注入 ToolKnit 式页首——左「返回工具箱」、
  *         右「收藏 / 语言 / 手机扫码」与居中 hero 特性标签。
  * 依赖：window.SIDEBAR_CATS（js/sidebar-data.js）；容器 <div id="site-sidebar">
  * 首页容器带 data-home="1"。
@@ -132,10 +132,14 @@
     return;
   }
 
-  /* ---------- 首页：极简平铺分类导航（仅桌面端常驻，无折叠按钮） ---------- */
+  /* ---------- 首页：悬浮「全部工具」按钮 + 可展开分类面板 ---------- */
 
   function build() {
-    var html = '<nav class="sb-scroll sb-flat" aria-label="工具分类">';
+    var html = '<div class="sb-head sb-head-min">' +
+      '<span class="sb-title">全部分类</span>' +
+      '<button type="button" class="sb-close" aria-label="关闭分类面板">&times;</button>' +
+      '</div>';
+    html += '<nav class="sb-scroll sb-flat" aria-label="工具分类">';
     html += '<button type="button" class="sb-flat-item sb-active" data-cat="all" aria-pressed="true">全部工具</button>';
     window.SIDEBAR_CATS.forEach(function (cat) {
       html += '<button type="button" class="sb-flat-item" data-cat="' + esc(cat.cat) + '" aria-pressed="false">' + esc(cat.name) + '</button>';
@@ -153,16 +157,34 @@
     });
   }
 
+  function setOpen(open) {
+    root.classList.toggle('sb-open', open);
+    var backdrop = document.getElementById('sidebar-backdrop');
+    if (backdrop) backdrop.classList.toggle('sb-show', open);
+    var toggle = document.getElementById('sidebar-toggle');
+    if (toggle) toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+
   function bind() {
     root.addEventListener('click', function (e) {
+      if (e.target.closest('.sb-close')) { setOpen(false); return; }
       var btn = e.target.closest('.sb-flat-item');
       if (!btn) return;
       var chip = document.querySelector('.chip[data-cat="' + btn.dataset.cat + '"]');
       if (chip && chip.getAttribute('aria-pressed') !== 'true') chip.click();
+      setOpen(false);
     });
 
+    var toggle = document.getElementById('sidebar-toggle');
+    if (toggle) toggle.addEventListener('click', function () {
+      setOpen(!root.classList.contains('sb-open'));
+    });
+    var backdrop = document.getElementById('sidebar-backdrop');
+    if (backdrop) backdrop.addEventListener('click', function () { setOpen(false); });
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && document.querySelector('.sb-qr-backdrop')) closeQr();
+      if (e.key !== 'Escape') return;
+      if (document.querySelector('.sb-qr-backdrop')) { closeQr(); return; }
+      setOpen(false);
     });
   }
 

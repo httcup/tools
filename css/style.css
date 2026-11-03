@@ -119,11 +119,11 @@ a { color: inherit; }
 /* ---------- 搜索栏（内容区，ToolKnit 式通栏） ---------- */
 .toolbar { display: flex; padding: 10px 0 22px; }
 .search-box { position: relative; display: flex; align-items: center; width: 100%; }
-.search-box > svg { position: absolute; left: 14px; color: var(--muted); pointer-events: none; width: 17px; height: 17px; }
+.search-box > svg { position: absolute; left: 15px; color: var(--muted); pointer-events: none; width: 17px; height: 17px; }
 #q {
-  width: 100%; padding: 12px 190px 12px 40px;
-  border: 1px solid var(--line-strong); border-radius: 12px;
-  background: var(--surface); color: var(--text); font-size: 14.5px;
+  width: 100%; padding: 12px 176px 12px 42px;
+  border: 1px solid var(--line-strong); border-radius: 14px;
+  background: var(--surface); color: var(--text); font-size: 14.5px; font-weight: 500;
   font-family: inherit; box-shadow: var(--shadow-sm);
   transition: border-color .18s ease, box-shadow .18s ease;
 }
@@ -131,11 +131,13 @@ a { color: inherit; }
 #q:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
 #q::-webkit-search-cancel-button { -webkit-appearance: none; }
 .search-scope {
-  position: absolute; right: 60px; display: inline-flex; align-items: center; gap: 4px;
-  font-size: 12.5px; color: var(--muted); pointer-events: none;
-  white-space: nowrap;
+  position: absolute; right: 58px; display: inline-flex; align-items: center; gap: 5px;
+  font-size: 11.5px; font-weight: 600; color: var(--text); pointer-events: none;
+  background: var(--surface-2); border: 1px solid var(--line); border-radius: 999px;
+  padding: 4px 11px; white-space: nowrap;
 }
-.search-scope b { font-weight: 600; color: var(--text); }
+.search-scope svg { width: 12px; height: 12px; color: var(--muted); }
+.search-scope b { font-weight: 700; }
 .kbd {
   position: absolute; right: 58px; font-size: 11px; color: var(--muted);
   border: 1px solid var(--line); border-radius: 5px; padding: 0 5px; line-height: 16px;
@@ -144,12 +146,12 @@ a { color: inherit; }
 .search-scope ~ .kbd { display: none; }
 #q:focus ~ .kbd, #q:not(:placeholder-shown) ~ .kbd { display: none; }
 .search-go {
-  position: absolute; right: 6px; width: 38px; height: 38px;
+  position: absolute; right: 5px; width: 40px; height: 40px;
   border: 0; border-radius: 50%; cursor: pointer;
-  background: var(--accent); color: #fff; display: grid; place-items: center;
-  transition: background .15s ease, transform .15s ease;
+  background: var(--text); color: var(--bg); display: grid; place-items: center;
+  transition: opacity .15s ease, transform .15s ease;
 }
-.search-go:hover { background: var(--accent-ink); transform: scale(1.04); }
+.search-go:hover { opacity: .85; transform: scale(1.04); }
 .search-go svg { width: 16px; height: 16px; }
 
 /* ---------- 分类筛选（hero 下的元信息行，见 .hero-meta） ---------- */

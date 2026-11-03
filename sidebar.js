@@ -1,7 +1,7 @@
 /* 全站导航脚本。
- * 首页：左侧极简平铺分类导航（与首页 chips 筛选联动）。
+ * 首页：左侧极简平铺分类导航（与首页 chips 筛选联动），仅桌面端常驻。
  * 工具页：不再显示分类侧栏，注入 ToolKnit 式页首——左「返回工具箱」、
- *         右「手机扫码」（含收藏按钮迁移）与居中 hero 特性标签。
+ *         右「收藏 / 语言 / 手机扫码」与居中 hero 特性标签。
  * 依赖：window.SIDEBAR_CATS（js/sidebar-data.js）；容器 <div id="site-sidebar">
  * 首页容器带 data-home="1"。
  */
@@ -107,6 +107,7 @@
     var scan = document.createElement('button');
     scan.type = 'button';
     scan.className = 'tk-scan';
+    scan.setAttribute('data-sb-scan', '');
     scan.setAttribute('aria-label', '用手机扫码打开本页');
     scan.innerHTML = QR_SVG + '<span>手机扫码</span>';
     actions.appendChild(scan);
@@ -131,13 +132,10 @@
     return;
   }
 
-  /* ---------- 首页：极简平铺分类导航 ---------- */
+  /* ---------- 首页：极简平铺分类导航（仅桌面端常驻，无折叠按钮） ---------- */
 
   function build() {
-    var html = '<div class="sb-head sb-head-min">' +
-      '<button type="button" class="sb-close" aria-label="关闭导航">&times;</button>' +
-      '</div>';
-    html += '<nav class="sb-scroll sb-flat" aria-label="工具分类">';
+    var html = '<nav class="sb-scroll sb-flat" aria-label="工具分类">';
     html += '<button type="button" class="sb-flat-item sb-active" data-cat="all" aria-pressed="true">全部工具</button>';
     window.SIDEBAR_CATS.forEach(function (cat) {
       html += '<button type="button" class="sb-flat-item" data-cat="' + esc(cat.cat) + '" aria-pressed="false">' + esc(cat.name) + '</button>';
@@ -155,34 +153,16 @@
     });
   }
 
-  function setOpen(open) {
-    root.classList.toggle('sb-open', open);
-    var backdrop = document.getElementById('sidebar-backdrop');
-    if (backdrop) backdrop.classList.toggle('sb-show', open);
-  }
-
   function bind() {
     root.addEventListener('click', function (e) {
-      if (e.target.closest('.sb-close')) { setOpen(false); return; }
       var btn = e.target.closest('.sb-flat-item');
       if (!btn) return;
       var chip = document.querySelector('.chip[data-cat="' + btn.dataset.cat + '"]');
       if (chip && chip.getAttribute('aria-pressed') !== 'true') chip.click();
-      if (window.innerWidth < 1200) setOpen(false);
     });
 
-    var toggle = document.getElementById('sidebar-toggle');
-    if (toggle) toggle.addEventListener('click', function () {
-      if (window.innerWidth >= 1200) document.body.classList.toggle('sb-collapsed');
-      else setOpen(!root.classList.contains('sb-open'));
-    });
-    var backdrop = document.getElementById('sidebar-backdrop');
-    if (backdrop) backdrop.addEventListener('click', function () { setOpen(false); });
     document.addEventListener('keydown', function (e) {
-      if (e.key !== 'Escape') return;
-      if (document.querySelector('.sb-qr-backdrop')) { closeQr(); return; }
-      if (window.innerWidth >= 1200) document.body.classList.add('sb-collapsed');
-      else setOpen(false);
+      if (e.key === 'Escape' && document.querySelector('.sb-qr-backdrop')) closeQr();
     });
   }
 

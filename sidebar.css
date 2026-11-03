@@ -1,6 +1,6 @@
 /* 全站左侧分类导航（sidebar.js 渲染，勿手工编辑生成的 DOM） */
 
-#site-sidebar, #sidebar-toggle {
+#site-sidebar {
   --sb-bg: #ffffff;
   --sb-line: #e4e7ec;
   --sb-text: #101828;
@@ -16,16 +16,14 @@
   --sb-shadow: 0 4px 14px -4px rgba(16, 24, 40, .25);
 }
 @media (prefers-color-scheme: dark) {
-  html:not([data-theme="light"]) #site-sidebar,
-  html:not([data-theme="light"]) #sidebar-toggle {
+  html:not([data-theme="light"]) #site-sidebar {
     --sb-bg: #161b26; --sb-line: #2a3142; --sb-text: #e6e9f0; --sb-text-2: #c3cad9;
     --sb-muted: #9aa4b8; --sb-faint: #6b768c; --sb-hover: #232a3a; --sb-chip: #232a3a;
     --sb-accent: #8ab4ff; --sb-accent-soft: #1d2a45; --sb-accent-chip: #26355a;
     --sb-input-bg: #1d2433; --sb-shadow: 0 4px 14px -4px rgba(0, 0, 0, .6);
   }
 }
-html[data-theme="dark"] #site-sidebar,
-html[data-theme="dark"] #sidebar-toggle {
+html[data-theme="dark"] #site-sidebar {
   --sb-bg: #161b26; --sb-line: #2a3142; --sb-text: #e6e9f0; --sb-text-2: #c3cad9;
   --sb-muted: #9aa4b8; --sb-faint: #6b768c; --sb-hover: #232a3a; --sb-chip: #232a3a;
   --sb-accent: #8ab4ff; --sb-accent-soft: #1d2a45; --sb-accent-chip: #26355a;
@@ -34,54 +32,26 @@ html[data-theme="dark"] #sidebar-toggle {
 
 #site-sidebar {
   position: fixed; top: 0; left: 0; bottom: 0; z-index: 60;
-  width: 252px;
+  width: 224px;
   display: flex; flex-direction: column;
   background: var(--sb-bg); border-right: 1px solid var(--sb-line);
   font-family: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 13.5px; color: var(--sb-text);
+  font-size: 13px; color: var(--sb-text);
   transform: translateX(-100%);
   transition: transform .22s ease;
   visibility: hidden;
 }
 #site-sidebar.sb-open { transform: translateX(0); visibility: visible; }
 
-/* 桌面端：常驻左侧，内容整体右移；分类按钮可折叠侧栏 */
+/* 桌面端：常驻左侧，内容整体右移（侧栏固定显示，无折叠开关） */
 @media (min-width: 1200px) {
   #site-sidebar { transform: none; visibility: visible; }
-  body.sb-body { margin-left: 252px; transition: margin-left .22s ease; }
-  #sidebar-backdrop { display: none !important; }
-  body.sb-body.sb-collapsed { margin-left: 0; }
-  body.sb-body.sb-collapsed #site-sidebar { transform: translateX(-100%); visibility: hidden; }
-  body.sb-body:not(.sb-collapsed) #sidebar-toggle { left: 266px; }
+  body.sb-body { margin-left: 224px; }
 }
-
-/* 悬浮开关：明眼色 + 大号 */
-#sidebar-toggle {
-  position: fixed; left: 14px; bottom: 18px; z-index: 70;
-  display: inline-flex; align-items: center; gap: 7px;
-  padding: 11px 18px; border-radius: 999px; cursor: pointer;
-  border: 1px solid var(--sb-accent); background: var(--sb-accent); color: #fff;
-  font-size: 14px; font-weight: 600; font-family: inherit;
-  box-shadow: 0 6px 18px -4px rgba(29, 78, 216, .55);
-  transition: left .22s ease, transform .15s ease, box-shadow .15s ease;
+@media (max-width: 1199.98px) {
+  #site-sidebar { display: none; }
 }
-#sidebar-toggle:hover { transform: translateY(-2px); box-shadow: 0 10px 26px -6px rgba(29, 78, 216, .6); }
-@media (prefers-color-scheme: dark) {
-  html:not([data-theme="light"]) #sidebar-toggle {
-    color: #0b1220;
-    box-shadow: 0 6px 18px -4px rgba(0, 0, 0, .6);
-  }
-}
-html[data-theme="dark"] #sidebar-toggle {
-  color: #0b1220;
-  box-shadow: 0 6px 18px -4px rgba(0, 0, 0, .6);
-}
-#sidebar-backdrop {
-  position: fixed; inset: 0; z-index: 58;
-  background: rgba(16, 24, 40, .45);
-  opacity: 0; pointer-events: none; transition: opacity .2s ease;
-}
-#sidebar-backdrop.sb-show { opacity: 1; pointer-events: auto; }
+#sidebar-backdrop { display: none !important; }
 
 .sb-head {
   flex: 0 0 auto;
@@ -147,18 +117,7 @@ html[data-theme="dark"] #sidebar-toggle {
 
 .sb-empty { padding: 14px 12px; color: var(--sb-muted); font-size: 12.5px; }
 
-/* ---------- 手机扫码按钮 + 二维码弹窗（sidebar.js 渲染） ---------- */
-
-.sb-head .sb-scan {
-  margin-left: auto;
-  display: inline-flex; align-items: center; gap: 5px;
-  border: 0; background: none; cursor: pointer;
-  font-family: inherit; font-size: 12px; color: var(--sb-muted);
-  padding: 4px 8px; border-radius: 7px;
-  transition: color .15s ease, background .15s ease;
-}
-.sb-head .sb-scan:hover { color: var(--sb-accent); background: var(--sb-hover); }
-.sb-head .sb-scan svg { flex: 0 0 auto; }
+/* ---------- 手机扫码二维码弹窗（sidebar.js 渲染） ---------- */
 
 .sb-qr-backdrop {
   position: fixed; inset: 0; z-index: 120;
@@ -223,32 +182,25 @@ html[data-theme="dark"] .sb-qr-close:hover { color: #e6e9f0; background: #232a3a
 
 /* ---------- 首页侧栏：极简平铺分类（ToolKnit 式） ---------- */
 
-#site-sidebar .sb-head-min {
-  display: flex; justify-content: flex-end; align-items: center;
-  padding: 8px 10px 0;
-}
 #site-sidebar .sb-flat {
   flex: 1 1 auto; overflow-y: auto;
-  padding: 14px 12px 18px;
+  padding: 16px 12px 18px;
 }
 .sb-flat-item {
   display: block; width: 100%; text-align: left;
-  padding: 9px 14px; margin: 1px 0;
-  border: 0; border-left: 3px solid transparent;
-  border-radius: 0 8px 8px 0;
+  padding: 6px 12px; margin: 1px 0;
+  border: 0; border-left: 2px solid transparent;
+  border-radius: 0 7px 7px 0;
   background: transparent; cursor: pointer;
-  font-family: inherit; font-size: 14px; font-weight: 500; line-height: 1.4;
+  font-family: inherit; font-size: 13px; font-weight: 400; line-height: 1.5;
   color: var(--sb-muted); text-decoration: none;
   transition: color .15s ease, background .15s ease, border-color .15s ease;
 }
 .sb-flat-item:hover { color: var(--sb-text); background: var(--sb-hover); }
 .sb-flat-item.sb-active {
-  color: var(--sb-text); font-weight: 650;
+  color: var(--sb-text); font-weight: 600;
   border-left-color: var(--sb-accent);
   background: transparent;
-}
-@media (min-width: 1200px) {
-  #site-sidebar .sb-head-min { display: none; }
 }
 
 /* ---------- 工具页：ToolKnit 式页首（body.tk-tool 由 sidebar.js 注入） ---------- */
@@ -260,9 +212,9 @@ html[data-theme="dark"] .sb-qr-close:hover { color: #e6e9f0; background: #232a3a
 }
 .tk-back, .tk-scan {
   pointer-events: auto;
-  display: inline-flex; align-items: center; gap: 7px;
-  padding: 8px 14px; border-radius: 999px; cursor: pointer;
-  font-family: inherit; font-size: 13px; font-weight: 500; line-height: 1.2;
+  display: inline-flex; align-items: center; gap: 6px;
+  height: 32px; padding: 0 12px; border-radius: 999px; cursor: pointer;
+  font-family: inherit; font-size: 12.5px; font-weight: 500; line-height: 1;
   color: #344054; background: rgba(255, 255, 255, .92);
   border: 1px solid #e4e7ec; text-decoration: none;
   box-shadow: 0 1px 3px rgba(16, 24, 40, .08);
@@ -270,8 +222,22 @@ html[data-theme="dark"] .sb-qr-close:hover { color: #e6e9f0; background: #232a3a
   transition: color .15s ease, border-color .15s ease, transform .15s ease;
 }
 .tk-back:hover, .tk-scan:hover { color: #1d4ed8; border-color: #c6d8f5; transform: translateY(-1px); }
-.tk-back svg, .tk-scan svg { width: 14px; height: 14px; flex: 0 0 auto; }
+.tk-back svg, .tk-scan svg { width: 13px; height: 13px; flex: 0 0 auto; }
 .tk-actions { display: inline-flex; align-items: center; gap: 8px; pointer-events: auto; }
+
+/* 右上角三个按钮（收藏/语言/扫码）格式统一：同高、同边框、胶囊形 */
+.tk-actions .favorite-toggle {
+  min-width: 0; min-height: 0; height: 32px; padding: 0 12px;
+  border-radius: 999px; font-size: 12.5px; gap: 6px;
+}
+.tk-actions .favorite-toggle svg { width: 13px; height: 13px; }
+.tk-actions .lang-switch { margin-left: 0; }
+.tk-actions .lang-btn {
+  width: 32px; height: 32px; border-radius: 999px;
+  background: rgba(255, 255, 255, .92);
+  box-shadow: 0 1px 3px rgba(16, 24, 40, .08);
+}
+.tk-actions .lang-btn svg { width: 15px; height: 15px; }
 
 /* 居中 hero */
 .tk-tool .hub-head,
@@ -280,11 +246,14 @@ html[data-theme="dark"] .sb-qr-close:hover { color: #e6e9f0; background: #232a3a
   padding-top: 62px !important;
 }
 .tk-tool .hub-head .head-row { display: none !important; }
+/* 面包屑靠左（不再居中显示），并与内容列对齐 */
 .tk-tool .crumbs {
   display: flex; flex-wrap: wrap; align-items: center;
-  justify-content: center !important;
+  justify-content: flex-start !important;
+  text-align: left !important;
   gap: 4px 6px;
 }
+body.tk-tool > .crumbs { max-width: 940px; margin-left: auto; margin-right: auto; }
 .tk-tool .hub-head h1,
 .tk-tool .topbar h1,
 .tk-tool .topbar .brand h1 {
@@ -352,7 +321,10 @@ html[data-theme="dark"] .tk-pills span {
 @media (max-width: 640px) {
   .tk-topbar { top: 10px; left: 10px; right: 10px; }
   .tk-back span, .tk-scan span { display: none; }
-  .tk-back, .tk-scan { padding: 9px; border-radius: 50%; }
+  .tk-back, .tk-scan { width: 34px; height: 34px; padding: 0; border-radius: 50%; }
+  .tk-actions .favorite-toggle { width: 34px; height: 34px; padding: 0; }
+  .tk-actions .favorite-toggle .fav-label { display: none; }
+  .tk-actions .lang-btn { width: 34px; height: 34px; }
   .tk-tool .hub-head, .tk-tool .topbar { padding-top: 54px !important; }
 }
 

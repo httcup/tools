@@ -74,6 +74,16 @@
   }
 
   /* ---------- 过滤 ---------- */
+  var scopeEl = $('#scope-cat');
+  var CAT_NAMES = {
+    'all': '全部工具', 'pdf-docs-text': 'PDF·文档·文本', 'media': '图片·视频·音频',
+    'design-create': '设计与创作', 'calc-convert': '计算与单位', 'time-focus': '时间与专注',
+    'test-train': '测试与训练', 'quick': '本地快用', 'dtc-ecommerce': '电商工具'
+  };
+  function syncScope() {
+    if (scopeEl) scopeEl.textContent = CAT_NAMES[state.cat] || '全部工具';
+  }
+
   function apply() {
     var terms = state.q.trim().toLowerCase().split(/\s+/).filter(Boolean);
     var shown = 0;
@@ -96,6 +106,7 @@
 
     if (countEl) countEl.textContent = String(shown);
     if (emptyEl) emptyEl.classList.toggle('show', shown === 0);
+    syncScope();
   }
 
   $$('.chip[data-cat]').forEach(function (chip) {

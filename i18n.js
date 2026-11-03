@@ -519,9 +519,12 @@
     box.appendChild(menu);
 
     var host = document.querySelector('.head-tools') ||
+               document.querySelector('.tk-actions') ||
                document.querySelector('.topbar-actions') ||
                document.querySelector('header');
-    if (host) host.appendChild(box);
+    var scanBtn = host ? host.querySelector('[data-sb-scan]') : null;
+    if (host && scanBtn) host.insertBefore(box, scanBtn);
+    else if (host) host.appendChild(box);
     else document.body.insertBefore(box, document.body.firstChild);
 
     syncSwitcher(current);

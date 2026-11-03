@@ -80,7 +80,7 @@
   function openImageModal(title, src, caption) {
     openShell(title,
       '<div class="sb-qr-img"><img src="' + src + '" alt="' + esc(title) + '"></div>' +
-      '<p>' + esc(caption) + '</p>');
+      '<p>' + caption + '</p>'); /* caption 为内部固定文案，支持 <br> 换行 */
   }
 
   /* 任何带 data-sb-scan 的按钮都能唤起扫码弹层（顶栏/页首共用） */
@@ -141,7 +141,7 @@
 
     var reward = fabBtn('sb-fab-reward', '打赏一杯咖啡', ICO.reward);
     reward.addEventListener('click', function () {
-      openImageModal('打赏一杯咖啡 ☕', BASE + 'img/reward-qr.jpg', '用微信扫码，请作者喝一杯咖啡');
+      openImageModal('打赏一杯咖啡 ☕', BASE + 'img/reward-qr.jpg', '更新不易，赞助打赏支持一下！<br>谢谢你的支持！！');
     });
     fab.appendChild(reward);
 

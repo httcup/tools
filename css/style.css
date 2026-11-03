@@ -130,20 +130,11 @@ a { color: inherit; }
 #q::placeholder { color: var(--muted); }
 #q:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
 #q::-webkit-search-cancel-button { -webkit-appearance: none; }
-.search-scope {
-  position: absolute; right: 58px; display: inline-flex; align-items: center; gap: 5px;
-  font-size: 11.5px; font-weight: 600; color: var(--text); pointer-events: none;
-  background: var(--surface-2); border: 1px solid var(--line); border-radius: 999px;
-  padding: 4px 11px; white-space: nowrap;
-}
-.search-scope svg { width: 12px; height: 12px; color: var(--muted); }
-.search-scope b { font-weight: 700; }
 .kbd {
   position: absolute; right: 58px; font-size: 11px; color: var(--muted);
   border: 1px solid var(--line); border-radius: 5px; padding: 0 5px; line-height: 16px;
   font-family: ui-monospace, Menlo, monospace; pointer-events: none; background: var(--surface-2);
 }
-.search-scope ~ .kbd { display: none; }
 #q:focus ~ .kbd, #q:not(:placeholder-shown) ~ .kbd { display: none; }
 .search-go {
   position: absolute; right: 5px; width: 40px; height: 40px;

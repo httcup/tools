@@ -1,16 +1,15 @@
 /* 全站导航脚本。
- * 首页：右下角悬浮「分类」按钮，点击弹出彩色宫格分类面板（与首页 chips 筛选联动）。
- * 工具页：不显示分类侧栏与悬浮按钮，注入 ToolKnit 式页首——左「返回工具箱」、
- *         右「收藏 / 语言 / 手机扫码」与居中 hero 特性标签。
- * 依赖：window.SIDEBAR_CATS（js/sidebar-data.js）；容器 <div id="site-sidebar">
- * 首页容器带 data-home="1"。
+ * 右下角悬浮按钮组（#sb-fab）：分类（仅首页，弹出彩色宫格面板）、
+ * 回首页、打赏、反馈更新、返回顶部；工具页同样注入（无分类按钮）。
+ * 工具页另外注入 ToolKnit 式页首——左「返回工具箱」、右「收藏 / 语言 / 手机扫码」。
+ * 依赖：js/sidebar-data.js（window.SIDEBAR_CATS，仅首页宫格需要）。
  */
 (function () {
   'use strict';
   var root = document.getElementById('site-sidebar');
-  if (!root || !window.SIDEBAR_CATS) return;
+  if (!root) { root = document.createElement('div'); root.id = 'site-sidebar'; }
   var BASE = root.dataset.base || '';
-  var IS_HOME = root.dataset.home === '1';
+  var IS_HOME = !!document.querySelector('.chips-wrap');
 
   /* 当前页 slug：/bmi/ -> bmi；/quick/#hash 例外 */
   var seg = location.pathname.split('/').filter(Boolean);
@@ -27,7 +26,7 @@
     return chip ? chip.dataset.cat : 'all';
   }
 
-  /* ---------- 手机扫码：弹出当前页二维码，手机扫码直接打开 ---------- */
+  /* ---------- 弹层：手机扫码 + 图片二维码（打赏/反馈）共用外壳 ---------- */
 
   function loadQrLib() {
     if (window.qrcode) return Promise.resolve();
@@ -45,22 +44,28 @@
     if (back) back.remove();
   }
 
-  function openQr() {
+  function openShell(title, bodyHTML) {
     closeQr();
     var back = document.createElement('div');
     back.className = 'sb-qr-backdrop';
     back.innerHTML =
-      '<div class="sb-qr-modal" role="dialog" aria-modal="true" aria-label="手机扫码打开本页">' +
+      '<div class="sb-qr-modal" role="dialog" aria-modal="true" aria-label="' + esc(title) + '">' +
       '<button type="button" class="sb-qr-close" aria-label="关闭">&times;</button>' +
-      '<h3>用手机打开本页</h3>' +
-      '<div class="sb-qr-box">生成中…</div>' +
-      '<p>用手机扫码，随时随地打开这个页面</p>' +
-      '<code class="sb-qr-url"></code>' +
+      '<h3>' + esc(title) + '</h3>' +
+      bodyHTML +
       '</div>';
     back.addEventListener('click', function (e) { if (e.target === back) closeQr(); });
     back.querySelector('.sb-qr-close').addEventListener('click', closeQr);
-    back.querySelector('.sb-qr-url').textContent = location.href;
     document.body.appendChild(back);
+    return back;
+  }
+
+  function openQr() {
+    var back = openShell('用手机打开本页',
+      '<div class="sb-qr-box">生成中…</div>' +
+      '<p>用手机扫码，随时随地打开这个页面</p>' +
+      '<code class="sb-qr-url"></code>');
+    back.querySelector('.sb-qr-url').textContent = location.href;
     loadQrLib().then(function () {
       var q = window.qrcode(0, 'M');
       q.addData(location.href);
@@ -72,35 +77,125 @@
     });
   }
 
+  function openImageModal(title, src, caption) {
+    openShell(title,
+      '<div class="sb-qr-img"><img src="' + src + '" alt="' + esc(title) + '"></div>' +
+      '<p>' + esc(caption) + '</p>');
+  }
+
   /* 任何带 data-sb-scan 的按钮都能唤起扫码弹层（顶栏/页首共用） */
   document.addEventListener('click', function (e) {
     if (e.target.closest('[data-sb-scan]')) { e.preventDefault(); openQr(); }
   });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape') return;
+    if (document.querySelector('.sb-qr-backdrop')) { closeQr(); return; }
+    setOpen(false);
+  });
+  /* 点悬浮组以外的地方收起分类面板 */
+  document.addEventListener('click', function (e) {
+    if (!root.classList.contains('sb-open')) return;
+    if (e.target.closest('#sb-fab')) return;
+    setOpen(false);
+  });
 
-  var QR_SVG = '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4z"/><path d="M14 14h2.5v2.5h-2.5zM17.5 17.5H20V20h-2.5zM14 17.5h2.5V20H14zM17.5 14H20v2.5h-2.5z"/></svg>';
-  var BACK_SVG = '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>';
+  /* ---------- 右下角悬浮按钮组 ---------- */
+
+  var ICO = {
+    cat: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>',
+    home: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10.5 9-7.5 9 7.5"/><path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/></svg>',
+    reward: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 9h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M3.5 9H17v6a4 4 0 0 1-4 4H7.5a4 4 0 0 1-4-4z"/><path d="M7 2.5v3M10.5 2.5v3M14 2.5v3"/></svg>',
+    feedback: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5c-1.2 0-2.4-.25-3.4-.7L3 21l1.7-5.1A8.5 8.5 0 1 1 21 11.5z"/><path d="M8.5 10.5h7M8.5 13.5h4.5"/></svg>',
+    top: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 7-7 7 7"/><path d="m5 19.5 7-7 7 7"/></svg>'
+  };
+
+  function fabBtn(cls, label, icon) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'sb-fab-btn ' + cls;
+    b.title = label;
+    b.setAttribute('aria-label', label);
+    b.innerHTML = icon;
+    return b;
+  }
+
+  function buildFab(showCat) {
+    var fab = document.getElementById('sb-fab');
+    if (!fab) { fab = document.createElement('div'); fab.id = 'sb-fab'; }
+    fab.appendChild(root); /* 分类宫格弹层挂在按钮组上方 */
+
+    if (showCat) {
+      var cat = fabBtn('sb-fab-cat', '分类', ICO.cat);
+      cat.id = 'sidebar-toggle';
+      cat.setAttribute('aria-expanded', 'false');
+      fab.appendChild(cat);
+    }
+
+    var home = document.createElement('a');
+    home.className = 'sb-fab-btn sb-fab-home';
+    home.title = '回首页';
+    home.setAttribute('aria-label', '回首页');
+    home.href = BASE || './';
+    home.innerHTML = ICO.home;
+    fab.appendChild(home);
+
+    var reward = fabBtn('sb-fab-reward', '打赏一杯咖啡', ICO.reward);
+    reward.addEventListener('click', function () {
+      openImageModal('打赏一杯咖啡 ☕', BASE + 'img/reward-qr.jpg', '用微信扫码，请作者喝一杯咖啡');
+    });
+    fab.appendChild(reward);
+
+    var feed = fabBtn('sb-fab-feedback', '反馈与更新', ICO.feedback);
+    feed.addEventListener('click', function () {
+      openImageModal('反馈与更新', BASE + 'img/feedback-qr.jpg', '扫码加入交流群：反馈问题、第一时间获取工具更新');
+    });
+    fab.appendChild(feed);
+
+    var top = fabBtn('sb-fab-top', '返回顶部', ICO.top);
+    top.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    fab.appendChild(top);
+
+    document.body.appendChild(fab);
+  }
+
+  function setOpen(open) {
+    root.classList.toggle('sb-open', open);
+    var toggle = document.getElementById('sidebar-toggle');
+    if (toggle) toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
 
   /* ---------- 工具页：ToolKnit 式页首 ---------- */
 
   function injectToolChrome() {
     document.body.classList.add('tk-tool');
 
-    /* 分类相关元素全部移除 */
-    root.remove();
+    /* 老版遗留元素清理 */
     ['sidebar-toggle', 'sidebar-backdrop'].forEach(function (id) {
       var el = document.getElementById(id);
-      if (el) el.remove();
+      if (el && el !== root && el.parentElement && el.parentElement.id !== 'sb-fab') el.remove();
     });
+    var backdrop = document.getElementById('sidebar-backdrop');
+    if (backdrop) backdrop.remove();
 
     var bar = document.createElement('div');
     bar.className = 'tk-topbar';
-    bar.innerHTML =
-      '<a class="tk-back" href="' + (BASE || '../') + '">' + BACK_SVG + '<span>返回工具箱</span></a>' +
-      '<div class="tk-actions"></div>';
+    bar.innerHTML = '<div class="tk-actions"></div>';
     document.body.insertBefore(bar, document.body.firstChild);
 
     /* 收藏按钮原样搬进页首（appendChild 移动节点，保留已绑定事件） */
     var actions = bar.querySelector('.tk-actions');
+
+    /* 主页图标：点击返回工具箱首页 */
+    var homeLink = document.createElement('a');
+    homeLink.className = 'tk-home';
+    homeLink.title = '返回主页';
+    homeLink.setAttribute('aria-label', '返回主页');
+    homeLink.href = BASE || '../';
+    homeLink.innerHTML = ICO.home;
+    actions.appendChild(homeLink);
+
     var fav = document.querySelector('.favorite-toggle');
     if (fav) actions.appendChild(fav);
 
@@ -109,7 +204,8 @@
     scan.className = 'tk-scan';
     scan.setAttribute('data-sb-scan', '');
     scan.setAttribute('aria-label', '用手机扫码打开本页');
-    scan.innerHTML = QR_SVG + '<span>手机扫码</span>';
+    scan.innerHTML = ICO.cat.replace('viewBox', 'width="13" height="13" viewBox') +
+      '<span>手机扫码</span>';
     actions.appendChild(scan);
 
     /* 特性标签：跟在简介后面 */
@@ -124,6 +220,8 @@
       }).join('');
       host.insertAdjacentElement('afterend', pills);
     }
+
+    buildFab(false);
   }
 
   if (!IS_HOME) {
@@ -132,7 +230,7 @@
     return;
   }
 
-  /* ---------- 首页：悬浮「分类」按钮 + 彩色宫格弹层 ---------- */
+  /* ---------- 首页：分类彩色宫格弹层 ---------- */
 
   var TILE_ICONS = {
     'all': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>',
@@ -180,15 +278,6 @@
     });
   }
 
-  function setOpen(open) {
-    root.classList.toggle('sb-open', open);
-    var toggle = document.getElementById('sidebar-toggle');
-    if (toggle) {
-      toggle.classList.toggle('sb-tgl-open', open);
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    }
-  }
-
   function bind() {
     root.addEventListener('click', function (e) {
       var btn = e.target.closest('.sb-tile');
@@ -202,24 +291,13 @@
     if (toggle) toggle.addEventListener('click', function () {
       setOpen(!root.classList.contains('sb-open'));
     });
-    /* 点按钮和面板以外的地方收起 */
-    document.addEventListener('click', function (e) {
-      if (!root.classList.contains('sb-open')) return;
-      if (e.target.closest('#site-sidebar') || e.target.closest('#sidebar-toggle')) return;
-      setOpen(false);
-    });
-    document.addEventListener('keydown', function (e) {
-      if (e.key !== 'Escape') return;
-      if (document.querySelector('.sb-qr-backdrop')) { closeQr(); return; }
-      setOpen(false);
-    });
   }
 
   build();
+  buildFab(true);
   bind();
-  document.body.classList.add('sb-body');
 
-  /* 首页：外部筛选变化时同步侧栏高亮（chips 点击 / 搜索重置） */
+  /* 首页：外部筛选变化时同步宫格高亮（chips 点击 / 搜索重置） */
   var chipsBox = document.querySelector('.chips');
   if (chipsBox) {
     var observer = new MutationObserver(syncHome);

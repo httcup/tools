@@ -33,45 +33,56 @@ html[data-theme="dark"] #sidebar-toggle {
   --sb-input-bg: #1d2433; --sb-shadow: 0 4px 14px -4px rgba(0, 0, 0, .6);
 }
 
-/* 分类宫格弹层：右下角悬浮，点「分类」按钮弹出 */
+/* 右下角悬浮按钮组（archcookie 式小方圆角） + 分类宫格弹层 */
+#sb-fab {
+  position: fixed; right: 16px; bottom: 16px; z-index: 80;
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+}
+.sb-fab-btn {
+  width: 40px; height: 40px; flex: 0 0 auto;
+  display: grid; place-items: center;
+  border: 0; border-radius: 12px; cursor: pointer;
+  background: var(--sb-chip); color: var(--sb-text-2);
+  box-shadow: 0 2px 8px rgba(16, 24, 40, .1);
+  transition: background .15s ease, color .15s ease, transform .15s ease, box-shadow .15s ease;
+  text-decoration: none; padding: 0;
+}
+.sb-fab-btn svg { width: 17px; height: 17px; }
+.sb-fab-btn:hover {
+  background: var(--sb-bg); color: var(--sb-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px -4px rgba(16, 24, 40, .22);
+}
+.sb-fab-btn:active { transform: translateY(0); }
+/* 主按钮：分类（蓝色实底） */
+.sb-fab-cat {
+  background: linear-gradient(140deg, #3b82f6, #2563eb);
+  color: #fff;
+  box-shadow: 0 4px 12px -2px rgba(37, 99, 235, .5);
+}
+.sb-fab-cat:hover {
+  background: linear-gradient(140deg, #3b82f6, #2563eb);
+  color: #fff;
+  box-shadow: 0 8px 20px -4px rgba(37, 99, 235, .55);
+}
+
+/* 分类宫格弹层：挂在按钮组上方 */
 #site-sidebar {
-  position: fixed; right: 18px; bottom: 88px; z-index: 80;
+  order: -1;
   width: min(352px, calc(100vw - 32px));
   background: var(--sb-bg); border: 1px solid var(--sb-line);
   border-radius: 18px;
   font-family: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 13px; color: var(--sb-text);
   box-shadow: 0 18px 48px -12px rgba(16, 24, 40, .32);
-  opacity: 0; visibility: hidden;
-  transform: translateY(10px) scale(.96);
-  transform-origin: bottom right;
-  transition: opacity .18s ease, transform .18s ease, visibility .18s;
+  margin-bottom: 4px;
+  display: none;
+  transform-origin: bottom center;
 }
-#site-sidebar.sb-open { opacity: 1; visibility: visible; transform: none; }
-
-/* 悬浮开关：右下角方形「分类」按钮 */
-#sidebar-toggle {
-  position: fixed; right: 18px; bottom: 18px; z-index: 81;
-  width: 56px; height: 56px;
-  display: inline-flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
-  border-radius: 16px; cursor: pointer;
-  border: 1px solid var(--sb-accent); background: var(--sb-accent); color: #fff;
-  font-size: 10.5px; font-weight: 600; font-family: inherit; line-height: 1;
-  letter-spacing: .05em;
-  box-shadow: 0 6px 18px -4px rgba(29, 78, 216, .55);
-  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
-}
-#sidebar-toggle:hover { transform: translateY(-2px); box-shadow: 0 10px 26px -6px rgba(29, 78, 216, .6); }
-#sidebar-toggle.sb-tgl-open { background: var(--sb-accent-ink, #1e40af); }
-@media (prefers-color-scheme: dark) {
-  html:not([data-theme="light"]) #sidebar-toggle {
-    color: #0b1220;
-    box-shadow: 0 6px 18px -4px rgba(0, 0, 0, .6);
-  }
-}
-html[data-theme="dark"] #sidebar-toggle {
-  color: #0b1220;
-  box-shadow: 0 6px 18px -4px rgba(0, 0, 0, .6);
+#site-sidebar.sb-open { display: block; animation: sb-pop-in .18s ease; }
+@keyframes sb-pop-in {
+  from { opacity: 0; transform: translateY(8px) scale(.95); }
+  to { opacity: 1; transform: none; }
 }
 
 /* 宫格：3 列彩色图标瓦片 */
@@ -110,8 +121,10 @@ html[data-theme="dark"] #sidebar-toggle {
 .tile-dtc-ecommerce { background: linear-gradient(140deg, #fb923c, #ea580c); }
 
 @media (max-width: 640px) {
-  #site-sidebar { right: 14px; bottom: 80px; }
-  #sidebar-toggle { right: 14px; bottom: 14px; width: 52px; height: 52px; }
+  #sb-fab { right: 12px; bottom: 12px; gap: 6px; }
+  .sb-fab-btn { width: 36px; height: 36px; border-radius: 11px; }
+  .sb-fab-btn svg { width: 15px; height: 15px; }
+  #site-sidebar { width: min(340px, calc(100vw - 24px)); }
 }
 
 /* ---------- 手机扫码二维码弹窗（sidebar.js 渲染） ---------- */
@@ -141,6 +154,8 @@ html[data-theme="dark"] #sidebar-toggle {
   font-size: 13px; color: #667085;
 }
 .sb-qr-box svg { display: block; width: 208px; height: 208px; }
+.sb-qr-img { display: flex; justify-content: center; }
+.sb-qr-img img { display: block; width: 240px; max-width: 100%; height: auto; border-radius: 10px; }
 .sb-qr-modal p { margin: 12px 0 6px; font-size: 13px; color: #667085; }
 .sb-qr-url {
   display: block; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -181,10 +196,10 @@ html[data-theme="dark"] .sb-qr-close:hover { color: #e6e9f0; background: #232a3a
 
 .tk-topbar {
   position: absolute; top: 14px; left: 16px; right: 16px; z-index: 46;
-  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  display: flex; align-items: center; justify-content: flex-end; gap: 10px;
   pointer-events: none;
 }
-.tk-back, .tk-scan {
+.tk-scan, .tk-home {
   pointer-events: auto;
   display: inline-flex; align-items: center; gap: 6px;
   height: 32px; padding: 0 12px; border-radius: 999px; cursor: pointer;
@@ -195,16 +210,17 @@ html[data-theme="dark"] .sb-qr-close:hover { color: #e6e9f0; background: #232a3a
   -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
   transition: color .15s ease, border-color .15s ease, transform .15s ease;
 }
-.tk-back:hover, .tk-scan:hover { color: #1d4ed8; border-color: #c6d8f5; transform: translateY(-1px); }
-.tk-back svg, .tk-scan svg { width: 13px; height: 13px; flex: 0 0 auto; }
+.tk-scan:hover, .tk-home:hover { color: #1d4ed8; border-color: #c6d8f5; transform: translateY(-1px); }
+.tk-scan svg, .tk-home svg { width: 13px; height: 13px; flex: 0 0 auto; }
 .tk-actions { display: inline-flex; align-items: center; gap: 8px; pointer-events: auto; }
 
-/* 右上角三个按钮（收藏/语言/扫码）格式统一：同高、同边框、胶囊形 */
+/* 右上角按钮组（主页/收藏/语言/扫码）格式统一：同高、同边框、胶囊形 */
 .tk-actions .favorite-toggle {
   min-width: 0; min-height: 0; height: 32px; padding: 0 12px;
   border-radius: 999px; font-size: 12.5px; gap: 6px;
 }
 .tk-actions .favorite-toggle svg { width: 13px; height: 13px; }
+.tk-actions .tk-home { width: 32px; padding: 0; justify-content: center; }
 .tk-actions .lang-switch { margin-left: 0; }
 .tk-actions .lang-btn {
   width: 32px; height: 32px; border-radius: 999px;
@@ -269,33 +285,33 @@ body.tk-tool > .crumbs { max-width: 940px; margin-left: auto; margin-right: auto
 
 /* 深色（跟随系统） */
 @media (prefers-color-scheme: dark) {
-  html:not([data-theme="light"]) .tk-back,
-  html:not([data-theme="light"]) .tk-scan {
+  html:not([data-theme="light"]) .tk-scan,
+  html:not([data-theme="light"]) .tk-home {
     color: #c3cad9; background: rgba(22, 27, 38, .92);
     border-color: #2a3142; box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
   }
-  html:not([data-theme="light"]) .tk-back:hover,
-  html:not([data-theme="light"]) .tk-scan:hover { color: #8ab4ff; border-color: #33507e; }
+  html:not([data-theme="light"]) .tk-scan:hover,
+  html:not([data-theme="light"]) .tk-home:hover { color: #8ab4ff; border-color: #33507e; }
   html:not([data-theme="light"]) .tk-pills span {
     color: #9aa4b8; background: #1d2430; border-color: #2a3142;
   }
 }
 /* 深色（手动切换） */
-html[data-theme="dark"] .tk-back,
-html[data-theme="dark"] .tk-scan {
+html[data-theme="dark"] .tk-scan,
+html[data-theme="dark"] .tk-home {
   color: #c3cad9; background: rgba(22, 27, 38, .92);
   border-color: #2a3142; box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
 }
-html[data-theme="dark"] .tk-back:hover,
-html[data-theme="dark"] .tk-scan:hover { color: #8ab4ff; border-color: #33507e; }
+html[data-theme="dark"] .tk-scan:hover,
+html[data-theme="dark"] .tk-home:hover { color: #8ab4ff; border-color: #33507e; }
 html[data-theme="dark"] .tk-pills span {
   color: #9aa4b8; background: #1d2430; border-color: #2a3142;
 }
 
 @media (max-width: 640px) {
   .tk-topbar { top: 10px; left: 10px; right: 10px; }
-  .tk-back span, .tk-scan span { display: none; }
-  .tk-back, .tk-scan { width: 34px; height: 34px; padding: 0; border-radius: 50%; }
+  .tk-scan span { display: none; }
+  .tk-scan, .tk-home { width: 34px; height: 34px; padding: 0; border-radius: 50%; }
   .tk-actions .favorite-toggle { width: 34px; height: 34px; padding: 0; }
   .tk-actions .favorite-toggle .fav-label { display: none; }
   .tk-actions .lang-btn { width: 34px; height: 34px; }

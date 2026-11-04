@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/timelapse-video/:';
-const CACHE_VERSION='a460896e94';
+const CACHE_VERSION='5882cf8d61';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -31,7 +31,6 @@ const ASSETS=[
 'src/main.js?v=1b298d789d',
 'src/plan.js?v=1b298d789d',
 'src/playback.js?v=1b298d789d',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

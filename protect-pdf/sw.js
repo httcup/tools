@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/protect-pdf/:';
-const CACHE_VERSION='058660d3a3';
+const CACHE_VERSION='0478261520';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -30,7 +30,6 @@ const ASSETS=[
 'src/format.js?v=e73a553965',
 'src/main.js?v=e73a553965',
 'src/password-validation.js?v=e73a553965',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

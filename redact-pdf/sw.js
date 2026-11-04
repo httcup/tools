@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/redact-pdf/:';
-const CACHE_VERSION='7f31f5552f';
+const CACHE_VERSION='2ef03f68b9';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -33,7 +33,6 @@ const ASSETS=[
 'src/selection.js?v=aba738fc2c',
 'src/strings.js?v=aba738fc2c',
 'src/verify.js?v=aba738fc2c',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

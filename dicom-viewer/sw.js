@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/dicom-viewer/:';
-const CACHE_VERSION='dadc4793d5';
+const CACHE_VERSION='1ef33d6709';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -29,7 +29,6 @@ const ASSETS=[
 'src/uids.js?v=8d59eca3dc',
 'src/values.js?v=8d59eca3dc',
 'src/window.js?v=8d59eca3dc',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

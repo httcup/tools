@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/images-to-video/:';
-const CACHE_VERSION='13f8bfb1f6';
+const CACHE_VERSION='81cb5ff3cf';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -31,7 +31,6 @@ const ASSETS=[
 'src/recorder.js?v=124e2c1a91',
 'src/recording-timeline.js?v=124e2c1a91',
 'src/support.js?v=124e2c1a91',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

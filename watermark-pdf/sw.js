@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/watermark-pdf/:';
-const CACHE_VERSION='b28cb0c276';
+const CACHE_VERSION='b9992c5437';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -27,7 +27,6 @@ const ASSETS=[
 'src/main.js?v=12bfd8d2fc',
 'src/render.js?v=12bfd8d2fc',
 'src/stamp.js?v=12bfd8d2fc',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

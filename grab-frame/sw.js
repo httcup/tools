@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/grab-frame/:';
-const CACHE_VERSION='5e6c7ed535';
+const CACHE_VERSION='0fa17550c9';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -34,7 +34,6 @@ const ASSETS=[
 'src/plan.js?v=212a067387',
 'src/still.js?v=212a067387',
 'src/support.js?v=212a067387',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

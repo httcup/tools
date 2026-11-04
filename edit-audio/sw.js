@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/edit-audio/:';
-const CACHE_VERSION='b88ce1b5fe';
+const CACHE_VERSION='c60aec17bc';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -28,7 +28,6 @@ const ASSETS=[
 'src/speed.js?v=ab559ef506',
 'src/stretch.js?v=ab559ef506',
 'src/waveform.js?v=ab559ef506',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

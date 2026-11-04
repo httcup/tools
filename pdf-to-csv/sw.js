@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/pdf-to-csv/:';
-const CACHE_VERSION='59316dbba7';
+const CACHE_VERSION='f0186146a0';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -35,7 +35,6 @@ const ASSETS=[
 'src/rows.js?v=cdbecdf51b',
 'src/tables.js?v=cdbecdf51b',
 'src/values.js?v=cdbecdf51b',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

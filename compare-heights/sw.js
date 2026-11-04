@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/compare-heights/:';
-const CACHE_VERSION='0b3293b5df';
+const CACHE_VERSION='4b3042653f';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -48,7 +48,6 @@ const ASSETS=[
 'vendor/objects/window.svg',
 'vendor/objects/wine-bottle.svg',
 'vendor/woman-short-hair-and-jeans.svg',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

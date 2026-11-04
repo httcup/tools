@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/webp-to-jpg/:';
-const CACHE_VERSION='26dd823350';
+const CACHE_VERSION='0965218895';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -22,7 +22,6 @@ const ASSETS=[
 'src/shared/example-mark.js?v=c2b9d4f2ec',
 'src/example.js?v=c2b9d4f2ec',
 'src/main.js?v=c2b9d4f2ec',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

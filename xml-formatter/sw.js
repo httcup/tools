@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/xml-formatter/:';
-const CACHE_VERSION='a83f0c9e37';
+const CACHE_VERSION='f730451c16';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -22,7 +22,6 @@ const ASSETS=[
 'src/convert.js?v=3fed6d61c9',
 'src/main.js?v=3fed6d61c9',
 'src/samples.js?v=3fed6d61c9',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

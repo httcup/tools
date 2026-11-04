@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/image-to-ico/:';
-const CACHE_VERSION='48f44909fd';
+const CACHE_VERSION='c96cd863c8';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -27,7 +27,6 @@ const ASSETS=[
 'src/pack.js?v=c041768894',
 'src/render.js?v=c041768894',
 'src/sizes.js?v=c041768894',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

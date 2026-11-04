@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/crop-video/:';
-const CACHE_VERSION='b1f41c6aa2';
+const CACHE_VERSION='554d7f0478';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -31,7 +31,6 @@ const ASSETS=[
 'src/mp4.js?v=80f60e3af2',
 'src/record.js?v=80f60e3af2',
 'src/transcode.js?v=80f60e3af2',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

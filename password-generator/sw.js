@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/password-generator/:';
-const CACHE_VERSION='bc406a605a';
+const CACHE_VERSION='ba289a6a3c';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -15,7 +15,6 @@ const ASSETS=[
 'src/random.js?v=1993010730',
 'src/strength.js?v=1993010730',
 'src/wordlist.js?v=1993010730',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

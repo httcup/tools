@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/receipt-invoice-extractor/:';
-const CACHE_VERSION='c54c57aaac';
+const CACHE_VERSION='f25055ce46';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -41,7 +41,6 @@ const ASSETS=[
 'vendor/wasm-data.js',
 'vendor/worker.min.js',
 'vendor/worker.min.js.LICENSE.txt',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/merge-pdf/:';
-const CACHE_VERSION='b983654e95';
+const CACHE_VERSION='ce150fe8e2';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -33,7 +33,6 @@ const ASSETS=[
 'src/plan.js?v=2ee4aab962',
 'src/produce.js?v=2ee4aab962',
 'src/reorder.js?v=2ee4aab962',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

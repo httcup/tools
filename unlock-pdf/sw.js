@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/unlock-pdf/:';
-const CACHE_VERSION='aba3462ad9';
+const CACHE_VERSION='d8a53c69b5';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -29,7 +29,6 @@ const ASSETS=[
 'src/example.js?v=eb25226c2b',
 'src/format.js?v=eb25226c2b',
 'src/main.js?v=eb25226c2b',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

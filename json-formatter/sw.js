@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/json-formatter/:';
-const CACHE_VERSION='ddd035ffef';
+const CACHE_VERSION='d97b808abb';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -25,7 +25,6 @@ const ASSETS=[
 'src/format.js?v=6301d5b0e8',
 'src/main.js?v=6301d5b0e8',
 'src/samples.js?v=6301d5b0e8',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

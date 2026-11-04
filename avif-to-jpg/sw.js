@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/avif-to-jpg/:';
-const CACHE_VERSION='f85c3f07d1';
+const CACHE_VERSION='f0727231e6';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -21,7 +21,6 @@ const ASSETS=[
 'src/avif-support.js?v=5a3ed86192',
 'src/example.js?v=5a3ed86192',
 'src/main.js?v=5a3ed86192',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

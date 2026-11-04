@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/trim-video/:';
-const CACHE_VERSION='5960295855';
+const CACHE_VERSION='7b2d5ff3a5';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -43,7 +43,6 @@ const ASSETS=[
 'src/segments.js?v=0b0df07a29',
 'src/timeline.js?v=0b0df07a29',
 'src/transcode.js?v=0b0df07a29',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

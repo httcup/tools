@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/qr-barcode-reader/:';
-const CACHE_VERSION='99e7f76d30';
+const CACHE_VERSION='e13e7475ee';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -26,7 +26,6 @@ const ASSETS=[
 'src/qr-decode.js?v=72b32e718f',
 'src/reed-solomon.js?v=72b32e718f',
 'src/scan.js?v=72b32e718f',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

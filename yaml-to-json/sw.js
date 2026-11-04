@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/yaml-to-json/:';
-const CACHE_VERSION='4d4421e9e1';
+const CACHE_VERSION='a2d7a8aa80';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -22,7 +22,6 @@ const ASSETS=[
 'src/convert.js?v=c6131e5eca',
 'src/main.js?v=c6131e5eca',
 'src/samples.js?v=c6131e5eca',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

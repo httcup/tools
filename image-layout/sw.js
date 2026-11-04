@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/image-layout/:';
-const CACHE_VERSION='5d23786a08';
+const CACHE_VERSION='58333103cc';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -23,7 +23,6 @@ const ASSETS=[
 'src/example.js?v=1c308cf634',
 'src/main.js?v=1c308cf634',
 'src/presets.js?v=1c308cf634',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

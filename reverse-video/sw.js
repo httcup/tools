@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/reverse-video/:';
-const CACHE_VERSION='44fbc3f6c9';
+const CACHE_VERSION='af056631fd';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -36,7 +36,6 @@ const ASSETS=[
 'src/playback.js?v=efb74ee093',
 'src/reverse.js?v=efb74ee093',
 'src/timeline.js?v=efb74ee093',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

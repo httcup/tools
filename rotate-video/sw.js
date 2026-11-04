@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/rotate-video/:';
-const CACHE_VERSION='87189465ca';
+const CACHE_VERSION='e7e9e4c156';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -39,7 +39,6 @@ const ASSETS=[
 'src/plan.js?v=ccdd765627',
 'src/preview.js?v=ccdd765627',
 'src/rotate.js?v=ccdd765627',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

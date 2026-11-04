@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/extract-audio-from-video/:';
-const CACHE_VERSION='862efa73ac';
+const CACHE_VERSION='2d99990474';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -33,7 +33,6 @@ const ASSETS=[
 'src/example.js?v=21fd70089c',
 'src/main.js?v=21fd70089c',
 'src/mono.js?v=21fd70089c',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/convert-to-mp4/:';
-const CACHE_VERSION='da94e0f842';
+const CACHE_VERSION='155e130015';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -38,7 +38,6 @@ const ASSETS=[
 'src/format.js?v=3ba6faf1aa',
 'src/main.js?v=3ba6faf1aa',
 'src/plan.js?v=3ba6faf1aa',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

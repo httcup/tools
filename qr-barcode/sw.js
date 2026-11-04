@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/qr-barcode/:';
-const CACHE_VERSION='b422aa9e7f';
+const CACHE_VERSION='bafbdba1dd';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -21,7 +21,6 @@ const ASSETS=[
 'src/payload.js?v=d10c69b1a0',
 'src/render.js?v=d10c69b1a0',
 'src/scan-advice.js?v=d10c69b1a0',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

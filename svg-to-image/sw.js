@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/svg-to-image/:';
-const CACHE_VERSION='c9ffea9fc2';
+const CACHE_VERSION='30275c1a05';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -24,7 +24,6 @@ const ASSETS=[
 'src/sizing.js?v=92104b0767',
 'src/svg-linked-assets.js?v=92104b0767',
 'src/svg.js?v=92104b0767',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

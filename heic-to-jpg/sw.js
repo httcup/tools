@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/heic-to-jpg/:';
-const CACHE_VERSION='dd66ca77c7';
+const CACHE_VERSION='23f6694429';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -29,7 +29,6 @@ const ASSETS=[
 'src/main.js?v=92cc3c7eea',
 'vendor/LICENSE',
 'vendor/libheif.js',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

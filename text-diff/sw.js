@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/text-diff/:';
-const CACHE_VERSION='78bd9da653';
+const CACHE_VERSION='5280991909';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -17,7 +17,6 @@ const ASSETS=[
 'src/diff.js?v=228b42684d',
 'src/main.js?v=228b42684d',
 'src/samples.js?v=228b42684d',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

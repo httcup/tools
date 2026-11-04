@@ -1,6 +1,6 @@
 /* Built from https://github.com/httcup/tools by build.py. Verify with: python build.py --check */
 const CACHE_PREFIX='abox:/trim-audio/:';
-const CACHE_VERSION='7371af1e44';
+const CACHE_VERSION='3436766b40';
 const CACHE_NAME=CACHE_PREFIX+CACHE_VERSION;
 const ASSETS=[
 './',
@@ -25,7 +25,6 @@ const ASSETS=[
 'src/timeline.js?v=a6d7ca1ba0',
 'src/trim.js?v=a6d7ca1ba0',
 'src/waveform.js?v=a6d7ca1ba0',
-'/favorites.js?v=d5a7690519',
 'analytics.js',
 ];
 function pageVersion(text){

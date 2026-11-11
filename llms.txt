@@ -60,6 +60,7 @@
 - [PDF 转 Word](https://139t.cn/pdf-to-word/): 按标题段落还原成可编辑的 .docx，扫描件可整页截图。
 - [PDF 转 PPT](https://139t.cn/pdf-to-ppt/): 每页一张幻灯片，文字是可编辑的文本框。
 - [PDF 转网页](https://139t.cn/pdf-to-html/): 导出单个 HTML，文字能选能搜，也能按原版面绝对定位。
+- [PDF 转 Markdown](https://139t.cn/pdf-to-markdown/): 按字号还原标题层级、认出列表、去掉重复页眉页脚，输出能直接粘进笔记的 .md。
 - [文档转 PDF](https://139t.cn/doc-to-pdf/): Word / Excel / PPT / HTML 排好版，用浏览器打印存成 PDF。
 - [文档格式互转](https://139t.cn/doc-convert/): docx、pptx、xlsx、csv、tsv、txt、md、html 互相转。
 - [收据与发票识别](https://139t.cn/receipt-invoice-extractor/): 读取照片，检查字段和裁剪结果，准备供邮件应用使用的压缩附件和合计。

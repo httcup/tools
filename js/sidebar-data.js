@@ -205,6 +205,11 @@ window.SIDEBAR_CATS = [
     "href": "./pay-qr-merge/"
    },
    {
+    "slug": "pdf-to-markdown",
+    "name": "PDF 转 Markdown",
+    "href": "./pdf-to-markdown/"
+   },
+   {
     "slug": "pay-qr-2in1",
     "name": "收款码二合一",
     "href": "./pay-qr-2in1/"

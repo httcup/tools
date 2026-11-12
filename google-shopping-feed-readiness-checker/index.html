@@ -54,6 +54,59 @@
   <article class="fact"><h2>全程本地</h2><p>所有计算都在这个页面里完成，过程不发起任何网络请求，输入的内容不会离开这台设备。</p></article>
   <article class="fact"><h2>不用注册</h2><p>没有账号、没有上传、没有水印。打开就用，关掉页面数据就没了，也不保存任何草稿。</p></article>
 </section>
+
+<div class="prose" id="guide">
+<section>
+  <h2>这个工具检查什么</h2>
+  <p>Google Merchant Center 对商品数据源（feed）的字段和格式有明确要求。少一列、价格少写货币、库存状态写成中文，都可能在上传后被判为无效商品。把 feed 的表头和数据行整段贴进上面的输入框，工具会在本地逐项核对下面这些规则，并按「必须修」和「建议修」列出问题所在的行号。</p>
+  <ul>
+    <li><strong>必需字段是否齐全</strong>：<code>id</code>、<code>title</code>、<code>description</code>、<code>link</code>、<code>image_link</code>、<code>price</code>、<code>availability</code>。缺任意一列都会被标红。</li>
+    <li><strong>商品标识与商品状态</strong>：<code>brand</code>、<code>gtin</code>、<code>mpn</code> 至少要有一个；建议显式给出 <code>condition</code>（new / refurbished / used），否则容易被要求补充。</li>
+    <li><strong>价格格式</strong>：需要「数字 + 三位货币代码」，例如 <code>129.00 CNY</code>、<code>19.99 USD</code>；只写 <code>129</code> 或 <code>￥129</code> 会被提示。</li>
+    <li><strong>库存状态</strong>：<code>availability</code> 只接受 <code>in stock</code>、<code>out of stock</code>、<code>preorder</code>、<code>backorder</code>。</li>
+    <li><strong>链接与图片地址</strong>：<code>link</code>、<code>image_link</code> 需以 <code>http://</code> 或 <code>https://</code> 开头。</li>
+    <li><strong>描述质量</strong>：<code>description</code> 为空会报错，短于 50 字符会提醒补充卖点；<code>title</code> 与 <code>product_type</code> 也建议写清楚品类与关键属性。</li>
+  </ul>
+  <p>其它常用列如 <code>sale_price</code>、<code>google_product_category</code>、<code>shipping</code>、<code>item_group_id</code>（变体商品）不在本工具的规则范围内，请按 Merchant Center 的官方规格自行核对。</p>
+</section>
+
+<section>
+  <h2>怎么用</h2>
+  <ul>
+    <li>从 Merchant Center、Shopify 导出，或电商平台后台复制 CSV / TSV 全文，<strong>保留第一行表头</strong>。</li>
+    <li>整段粘贴到「粘贴 Feed 内容」框，点「检查」。工具会自动识别逗号分隔还是制表符分隔，并统计行数、列数与已满足的必需字段数。</li>
+    <li>按「检查结果」里列出的行号回到源文件修改，再贴回来复查，直到没有红色项。列顺序可以任意，工具按表头名称找列，不按位置。</li>
+  </ul>
+  <p>一段能通过检查的最小示例（CSV）：</p>
+  <pre><code>id,title,description,link,image_link,price,availability,brand,gtin,condition
+SKU-001,纯棉圆领 T 恤 白色 M,100% 精梳棉圆领短袖，常规版型，透气耐洗，适合日常通勤与叠穿，机洗不易变形。,https://example.com/p/sku-001,https://example.com/img/sku-001.jpg,129.00 CNY,in stock,示例品牌,06901234567892,new</code></pre>
+  <p>检查只读取你粘贴的文本，不会去抓取示例里的网址，也不会向任何服务器发送 feed。</p>
+</section>
+
+<section>
+  <h2>常见报错怎么改</h2>
+  <ul>
+    <li><strong>缺少必需字段 xxx</strong>：在表头补上该列，并给每一行填值；列名用 Google 规定的小写下划线写法，例如是 <code>image_link</code> 而不是「图片链接」或 <code>image url</code>。</li>
+    <li><strong>价格格式应为「数字+货币」</strong>：把 <code>129</code> 改成 <code>129.00 CNY</code>。货币代码要和目标国家/币种一致，不要把符号和代码写在同一列。</li>
+    <li><strong>availability 需为 in stock…</strong>：把「有货 / 现货」等中文值改成枚举值；大小写不敏感，但不要带引号或多余说明。</li>
+    <li><strong>link / image_link 需以 http(s):// 开头</strong>：补成完整绝对地址，图片链接要能被公开访问，不要用本地路径或后台预览地址。</li>
+    <li><strong>brand / gtin / mpn 至少要有一个</strong>：有品牌条码就填 <code>gtin</code>；自有品牌没有条码时，填 <code>brand</code> 加 <code>mpn</code> 通常更稳妥。</li>
+    <li><strong>description 短于 50 字符</strong>：补材质、尺寸、适用场景等真实信息，不要堆关键词，也不要留 HTML 标签。</li>
+  </ul>
+</section>
+
+<section>
+  <h2>常见问题</h2>
+  <h3>检查通过就一定能在 Google Shopping 上线吗？</h3>
+  <p>不能保证。本工具只做字段与格式层面的静态核对，不校验落地页是否可访问、价格是否与网站一致、商品是否合规，也不代表 Merchant Center 的审核结果。上线前仍建议看一次 Merchant Center 里的「诊断」报告。</p>
+  <h3>支持 TSV 和大文件吗？</h3>
+  <p>支持 TSV：首行含制表符时会自动按制表符切分。整个 feed 都在浏览器内存里解析，几万行也没问题；文件特别大时，可以先截取一部分表头和样本行做规则排查。</p>
+  <h3>我的商品数据会上传吗？</h3>
+  <p>不会。解析和校验全部由本页面脚本在本机完成，没有上传接口，页面关闭后粘贴的内容不会保留。带引号、逗号和换行的 CSV 字段也能正确解析。</p>
+  <h3>为什么表里还有「建议修」？</h3>
+  <p>缺少 <code>condition</code>、描述偏短、商品标识不全这类问题，有时可以由 Merchant Center 的默认值或后续补充解决，不一定导致商品被拒；但提前补齐能减少反复修改的次数。</p>
+</section>
+</div>
 </main>
 
 <footer>

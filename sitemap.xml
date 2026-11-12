@@ -61,7 +61,6 @@
   <url><loc>https://139t.cn/privacy/</loc><lastmod>2026-11-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://139t.cn/terms/</loc><lastmod>2026-10-27</lastmod><priority>0.7</priority></url>
   <url><loc>https://139t.cn/contact/</loc><lastmod>2026-10-27</lastmod><priority>0.7</priority></url>
-  <url><loc>https://139t.cn/roadmap/</loc><lastmod>2026-10-27</lastmod><priority>0.7</priority></url>
   <url><loc>https://139t.cn/md-to-word/</loc><lastmod>2026-10-27</lastmod><priority>0.7</priority></url>
   <url><loc>https://139t.cn/dedupe-lines/</loc><lastmod>2026-10-27</lastmod><priority>0.7</priority></url>
   <url><loc>https://139t.cn/remove-line-breaks/</loc><lastmod>2026-10-27</lastmod><priority>0.7</priority></url>
@@ -130,7 +129,7 @@
   <url><loc>https://139t.cn/shopify-description-html-cleaner/</loc><lastmod>2026-10-27</lastmod><priority>0.7</priority></url>
   <url><loc>https://139t.cn/shopify-product-csv-checker/</loc><lastmod>2026-10-27</lastmod><priority>0.7</priority></url>
   <url><loc>https://139t.cn/utm-builder/</loc><lastmod>2026-10-27</lastmod><priority>0.7</priority></url>
-  <url><loc>https://139t.cn/google-shopping-feed-readiness-checker/</loc><lastmod>2026-10-27</lastmod><priority>0.7</priority></url>
+  <url><loc>https://139t.cn/google-shopping-feed-readiness-checker/</loc><lastmod>2026-11-12</lastmod><priority>0.7</priority></url>
   <url><loc>https://139t.cn/tip-calculator/</loc><lastmod>2026-10-27</lastmod><priority>0.7</priority></url>
   <url><loc>https://139t.cn/meeting-cost-calculator/</loc><lastmod>2026-10-27</lastmod><priority>0.7</priority></url>
   <url><loc>https://139t.cn/time-tools-seconds-converter/</loc><lastmod>2026-10-27</lastmod><priority>0.7</priority></url>
@@ -194,5 +193,4 @@
   <url><loc>https://139t.cn/weekly-report/</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority></url>
   <url><loc>https://139t.cn/multi-board/</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority></url>
   <url><loc>https://139t.cn/mini-board/</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority></url>
-  <url><loc>https://note.139t.cn/</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority></url>
 </urlset>
